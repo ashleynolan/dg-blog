@@ -1,19 +1,19 @@
 {
-  "name": "the-visual-web",
-  "title": "The Visual Web",
-  "description": "A curated list of interaction and animation patterns from across the web.",
+  "name": "dg-blog",
+  "title": "AshleyNolan.co.uk",
+  "description": "Blog and portfolio for Ashley Nolan",
   "version": "0.1.0",
-  "homepage": "ashleynolan.github.io/the-visual-web/",
+  "homepage": "www.ashleynolan.co.uk",
   "author": {
     "name": "Ashley Nolan",
     "url": "http://www.dragongraphics.co.uk"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashleynolan/the-visual-web.git"
+    "url": "https://github.com/ashleynolan/dg-blog.git"
   },
   "bugs": {
-    "url": "https://github.com/ashleynolan/the-visual-web/issues"
+    "url": "https://github.com/ashleynolan/dg-blog/issues"
   },
   "license": "MIT",
   "engines": {
