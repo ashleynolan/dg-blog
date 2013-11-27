@@ -137,6 +137,15 @@ module.exports = function (grunt) {
 				// tasks: ['sass:dev', 'autoprefixer:dist', 'csso']
 			},
 
+			img: {
+				files: [
+					'img/**/*.jpeg',
+					'img/**/*.gif',
+					'img/**/*.png'
+				],
+				tasks : 'copy:img'
+			},
+
 			js: {
 				files: [
 					'Gruntfile.js',
@@ -223,14 +232,14 @@ module.exports = function (grunt) {
 				helpers: 'src/helpers/helper-*.js',
 				layoutdir: 'src/templates/layouts',
 				partials: ['src/templates/includes/**/*.hbs'],
-				flatten: true
+				flatten: false
 			},
 
 			site: {
 				// Target-level options
 				options: {layout: 'default.hbs'},
 				files: [
-					{ expand: true, cwd: 'src/templates/pages', src: ['*.hbs'], dest: '<%= site.destination %>/' }
+					{ expand: true, cwd: 'src/templates/pages', src: ['**/*.hbs'], dest: '<%= site.destination %>/' }
 				]
 			}
 		},
@@ -239,12 +248,18 @@ module.exports = function (grunt) {
 			dist: {
 				files: [
 					{ expand: true, cwd: './css', src: ['./**/*.*'], dest: 'dist/assets/css' },
-					{ expand: true, cwd: './js', src: ['./**/*.*'], dest: 'dist/assets/js' }
+					{ expand: true, cwd: './js', src: ['./**/*.*'], dest: 'dist/assets/js' },
+					{ expand: true, cwd: './img', src: ['./**/*.*'], dest: 'dist/assets/img' }
 				]
 			},
 			css: {
 				files: [
 					{ expand: true, cwd: './css', src: ['./**/*.*'], dest: 'dist/assets/css' }
+				]
+			},
+			img: {
+				files: [
+					{ expand: true, cwd: './img', src: ['./**/*.*'], dest: 'dist/assets/img' }
 				]
 			},
 			js: {
@@ -290,7 +305,7 @@ module.exports = function (grunt) {
 	 * run jshint, uglify and sass:dev
 	 */
 	// Default task
-	grunt.registerTask('default', ['readme', 'jshint', 'uglify', 'sass:dev', 'newer:assemble', 'copy:dist']);
+	grunt.registerTask('default', [/**'readme', 'jshint',**/ 'uglify', 'sass:dev', 'newer:assemble', 'copy:dist']);
 
 
 	grunt.registerTask('server', function (target) {

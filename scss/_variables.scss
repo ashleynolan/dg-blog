@@ -73,9 +73,9 @@ $breakpoint-single-col        : $breakpoint-mid; // Breakpoint to specifically
 // Usage
 // background: url('#{$img-path}/img.jpg') 0 0 no-repeat;
 
-$img-path                     : "/img";
+$img-path                     : "/assets/img";
 $img-ui-path                  : "#{$img-path}/ui";
-// $img-ui-sprite                : "#{$img-ui-path}/ui/kickoff-sprite.png";
+$img-ui-sprite                : "#{$img-ui-path}/icon-sprite.png";
 // $img-ui-sprite-dimensions     : 50px 300px; // Used for hiDPI sprites  - make these the same size as $imgSprite1x
 // $img-ui-sprite-2x             : "#{$img-ui-path}/kickoff-sprite-2x.png";
 

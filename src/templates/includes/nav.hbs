@@ -1,17 +1,9 @@
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <ul class="nav">
-        <li{{#is basename "index"}} class="active"{{/is}}>
-          <a href="{{#isnt basename "index"}}{{/isnt}}index.html">Home</a>
-        </li>
-        <li{{#is basename "markdown"}} class="active"{{/is}}>
-          <a href="{{#is basename "index"}}{{/is}}markdown.html">Markdown</a>
-        </li>
-        <li{{#is basename "examples"}} class="active"{{/is}}>
-          <a href="{{#is basename "index"}}{{/is}}examples.html">Examples</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+<!-- Global Navigation links -->
+<nav class="nav-global">
+	<ul>
+		<li class="nav-global-item first{{#is basename "index"}} active{{/is}}"><a href="http://www.dragongraphics.co.uk/">Home</a><span class="navArrow"></span></li>
+		<li class="nav-global-item{{#is basename "blog"}} active{{/is}}""><a href="blog/">Blog</a><span class="navArrow"></span></li>
+		<li class="nav-global-item{{#is basename "work"}} active{{/is}}""><a href="work/">My Work</a><span class="navArrow"></span></li>
+		<li class="nav-global-item last {{#is basename "about"}} active{{/is}}"><a href="about">About</a><span class="navArrow"></span></li>
+	</ul>
+</nav>

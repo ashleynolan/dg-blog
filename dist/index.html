@@ -18,31 +18,57 @@
 	</head>
   <body>
     <!-- nav partial -->
-    <div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <ul class="nav">
-        <li class="active">
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="markdown.html">Markdown</a>
-        </li>
-        <li>
-          <a href="examples.html">Examples</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+    <!--<header class="masthead masthead-home">
+	<nav class="globalNav">
+		<a href=""{% if page.navgroup == "home" %} class="is-active"{% endif %}>Overview</a>
+		<a href="/directory/"{% if page.navgroup == "index" %} class="is-active"{% endif %}>Directory</a>
+		<a href="/blog"{% if page.navgroup == "blog" %} class="is-active"{% endif %}>Updates</a>
+		<!-- <a href="https://github.com/tmwagency/the-visual-web/" class="github-link" target="_blank">View on Github</a>
+	</nav>
+
+	{% if page.navgroup != "home" %}
+		<h1>Dragon Graphics</h1>
+	{% endif %}
+</header>-->
+
+<header>
+	<h1 id="page-logo" class="logo">
+		<span>Dragon Graphics</span>
+		<a href="/"><img src="/assets/img/dg_logo.png" alt="Ashley Nolan"></a>
+	</h1>
+
+	<section id="nav-strip" class="nav-strip">
+		<!-- Global Navigation links -->
+<nav class="nav-global">
+	<ul>
+		<li class="nav-global-item first active"><a href="http://www.dragongraphics.co.uk/">Home</a><span class="navArrow"></span></li>
+		<li class="nav-global-item""><a href="blog/">Blog</a><span class="navArrow"></span></li>
+		<li class="nav-global-item""><a href="work/">My Work</a><span class="navArrow"></span></li>
+		<li class="nav-global-item last "><a href="about">About</a><span class="navArrow"></span></li>
+	</ul>
+</nav>
+
+		<!-- Social links -->
+<nav class="links-social">
+	<ul>
+		<li class="links-social-item links-social-email"><a href="mailto:contact@dragongraphics.co.uk" title="Email Me" rel="external" target="_blank"><span>Email</span></a></li>
+		<li class="links-social-item links-social-twitter"><a href="http://twitter.com/dragongraphics" title="Find me on Twitter" rel="external" target="_blank"><span>Twitter</span></a></li>
+		<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" title="My LinkedIn Profile" rel="external" target="_blank"><span>LinkedIn</span></a></li>
+	</ul>
+</nav>
+		<div id="nav-toggle" class="nav-toggle">
+			<a href="#navToggle"><span>Menu</span></a>
+		</div>
+	</section>
+</header>
 
     <div class="container">
 
       <!-- body partial, used for adding pages to layout -->
       
 
-<h1 class="gigaHeading text-centre page-title"><span class="page-title-sub"><span class="page-title-sub-text">The</span> V</span>isual Web</h1>
-<h2 class="text-intro text-centre">A curated list of interaction and animation patterns from across the web. </h2>
+<h1 class="gigaHeading text-centre page-title">Page title example</h1>
+<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>
 
       <script src="assets/highlight.js"></script>
     </div>

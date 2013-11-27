@@ -26,7 +26,7 @@
 			background: #fff;
 			padding: 13px 1px 0;
 
-			font-family: 'p22-underground-pc';
+
 			@include font-size(28);
 			letter-spacing: 0;
 			font-weight: 600;
@@ -34,7 +34,7 @@
 		}
 
 .text-intro {
-	font-family: 'p22-underground-pc';
+
 	@include font-size(28);
 	font-weight: 300;
 
@@ -42,21 +42,274 @@
 	margin: 0 auto;
 }
 
-	// .page-title-sub-text {
-	// 	position: absolute;
-	// 	top: 29px;
-	// 	left: 95px;
-	// 	background: #fff;
-	// 	padding: 13px 0 0;
 
-	// 	font-family: 'p22-underground-pc';
-	// 	@include font-size(20);
-	// 	letter-spacing: 0;
-	// 	font-weight: 600;
-	// 	line-height: 1;
 
-	// 	-webkit-transform: rotate(270deg);
-	// }
+
+
+
+/* =============================================================================
+   Navigation Elements
+   ========================================================================== */
+
+/* Main Navigation Bar
+   ========================================================================== */
+
+.nav-strip {
+	background:#000;
+	display:block;
+
+	min-width:0;
+	width:100%;
+	height:auto;
+	/*overflow:hidden;*/
+	transition:margin .25s ease-in-out;
+
+	.ie7 & {
+		min-width:0;
+	}
+}
+
+
+.nav-global {
+	float:none;
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+
+	@include respond-min(592) {
+
+	}
+}
+	.nav-global > ul {
+		float:left;
+		width:100%;
+	}
+	.nav-global-item {
+		position:relative;
+		float:left;
+		width:50%;
+
+		@include font-size(22);
+		border:1px solid $darkgrey;
+
+		padding:2px;
+		margin-bottom:0;
+
+		.no-box-sizing & {
+			width:48.5%;
+			padding:2px 0.5%;
+		}
+
+		&:first-child,
+		&:nth-child(2) {
+			border-bottom: 0;
+		}
+
+		&:nth-child(even) {
+			border-left:0;
+		}
+
+		@include respond-max(712) {
+			&:nth-child(3) {
+				clear:left;
+			}
+		}
+
+	}
+		.nav-global-item a {
+			position:relative;
+			z-index:2;
+			display:block;
+			text-decoration:none;
+
+
+
+			text-align:center;
+			letter-spacing:1px;
+			color:#ced4c9;
+
+			padding:4px 0;
+			border:1px solid #CFD5C9;
+
+			transition:color .25s linear;
+		}
+			.nav-global-item a:hover,
+			.nav-global-item.active a {
+				color:#be1e2d;
+
+				transition:color .25s ease-out;
+			}
+
+		/* Arrow highlighting active
+			couldn't do with after, as they wouldn't animate on hover :(
+		*/
+		.nav-global-item .navArrow {
+			display:none;
+			background:url(#{$img-ui-sprite}) no-repeat -45px -199px;
+			width:18px;
+			height:10px;
+			text-decoration:none;
+
+			position:absolute;
+			z-index:1;
+			left:50%;
+			bottom:0;
+			margin-left:-9px;
+
+			transition:bottom .15s linear;
+		}
+
+			/* Arrow highlighting active */
+			.nav-global-item:hover .navArrow,
+			.nav-global-item.active .navArrow {
+				bottom:-10px;
+
+				transition:bottom .15s linear;
+			}
+
+
+//  ============
+//  === LOGO ===
+//  ============
+
+.logo {
+	position:relative;
+	z-index:10;
+	float:none;
+	box-shadow: -5px -1px 14px #333;
+
+	/* Span text for accessibility */
+	& span {
+		display:block;
+		position:absolute;
+		text-indent:-99999px;
+	}
+	a {
+		display:block;
+		padding:4px 24px 6px;
+		text-align:center;
+		background:#be1e2d;
+		line-height:0;
+	}
+}
+
+//  ====================
+//  === SOCIAL LINKS ===
+//  ====================
+
+	.links-social {
+		position:relative;
+		right:0;
+		top:0;
+		float:none;
+
+		width:126px;
+		margin:0 auto;
+		overflow:hidden;
+	}
+		.links-social li,
+		.nav-toggle {
+			float:left;
+			border:1px solid $darkgrey;
+			border-left:0;
+			border-top:0;
+			margin:0;
+			padding:2px;
+			background:#000;
+		}
+
+
+		.links-social-item {
+			&:first-child {
+				border-left:1px solid $darkgrey;
+			}
+		}
+
+		.links-social-item,
+		.nav-toggle {
+			> a {
+				float:left;
+				background-color:#CED4C9;
+
+				transition:background-color .25s linear;
+			}
+
+			> a span {
+				float:left;
+				border:1px solid #cfd5c9;
+
+				width:36px;
+				height:37px;
+				text-indent:-99999px;
+
+				transition:border-color .25s linear;
+
+				/* fixing width for border-box compat */
+				.no-box-shadow & {
+					width:34px;
+				}
+			}
+		}
+
+
+				.links-social-email a span {
+					background:url(#{$img-ui-sprite}) no-repeat left -115px;
+				}
+				.links-social-linkedin a span {
+					background:url(#{$img-ui-sprite}) no-repeat left -151px;
+				}
+				.links-social-twitter a span {
+					background:url(#{$img-ui-sprite}) no-repeat left -187px;
+				}
+				.links-social-github a span {
+					background:url(#{$img-ui-sprite}) no-repeat left -223px;
+				}
+				.links-social-rss a span {
+					background:url(#{$img-ui-sprite}) no-repeat left -259px;
+				}
+				.links-social li.delicious a span {
+					background:url(#{$img-ui-sprite}) no-repeat left -295px;
+				}
+
+			.links-social-item a:hover {
+				background-color:#be1e2d;
+				text-decoration:none;
+
+				transition:background-color .25s linear;
+			}
+
+
+		.nav-toggle {
+			width:82px;
+			margin:0 auto;
+			border:1px solid $darkgrey;
+			float:none;
+			overflow:hidden;
+
+			.no-border-box & {
+				width:35px;
+			}
+
+			& a span {
+				background:url(#{$img-ui-sprite}) no-repeat left -331px;
+				@include box-sizing();
+				text-transform:uppercase;
+				color:#CED4C9;
+				font-weight:bold;
+				@include font-size(12);
+				text-indent:0;
+
+				width:auto;
+				height:36px;
+				padding:11px 30px 0 5px;
+
+				transition:color .25s linear;
+			}
+
+			& a:hover {
+				text-decoration:none;
+			}
+		}
 
 
 

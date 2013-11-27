@@ -95,12 +95,12 @@ h1, .h1, .alpha {
 	margin-top: ($base-line-height * 2) + px;
 	margin-bottom: 0;
 }
-	.gigaHeading {
-		position: relative;
-		font-family: 'Avenir LT W01 85 Heavy';
-		@include font-size(160);
-		letter-spacing: -8px;
-	}
+	// .gigaHeading {
+	// 	position: relative;
+	// 	font-family: 'Avenir LT W01 85 Heavy';
+	// 	@include font-size(120);
+	// 	letter-spacing: -8px;
+	// }
 
 h2, .h2, .beta {
 	@include font-size($h2-size);

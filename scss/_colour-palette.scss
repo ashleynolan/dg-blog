@@ -2,16 +2,19 @@
    Colour palette (yeah we're from England!)
    ========================================================================== */
 
+
 // Generic colours
 $blue                         : #3498db;
 $blueDark                     : darken($blue, 20%);
 $green                        : #1abc9c;
-$red                          : #c0392b;
+$eggshell                     : #DCE4D7;
+$red                          : #BE1E2D;
 $yellow                       : #f1c40f;
 $orange                       : #e67e22;
 $pink                         : #c3325f;
 $purple                       : #8e44ad;
 $gray                         : #7f8c8d;
+$darkgrey                     : #4E5149;
 
 // Colour Scheme
 $color-primary                : #34495e;
@@ -20,7 +23,7 @@ $color-highlight              : #ff9600;
 
 // Common colours
 $color-text                   : #000;
-$color-background             : #fff;
+$color-background             : $eggshell;
 $color-border                 : #ddd;
 
 // Text Selection
