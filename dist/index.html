@@ -17,21 +17,9 @@
 
 	</head>
   <body>
-    <!-- nav partial -->
-    <!--<header class="masthead masthead-home">
-	<nav class="globalNav">
-		<a href=""{% if page.navgroup == "home" %} class="is-active"{% endif %}>Overview</a>
-		<a href="/directory/"{% if page.navgroup == "index" %} class="is-active"{% endif %}>Directory</a>
-		<a href="/blog"{% if page.navgroup == "blog" %} class="is-active"{% endif %}>Updates</a>
-		<!-- <a href="https://github.com/tmwagency/the-visual-web/" class="github-link" target="_blank">View on Github</a>
-	</nav>
-
-	{% if page.navgroup != "home" %}
-		<h1>Dragon Graphics</h1>
-	{% endif %}
-</header>-->
-
-<header>
+	 <div class="container">
+		<!-- nav partial -->
+		<header>
 	<h1 id="page-logo" class="logo">
 		<span>Dragon Graphics</span>
 		<a href="/"><img src="/assets/img/dg_logo.png" alt="Ashley Nolan"></a>
@@ -62,15 +50,26 @@
 	</section>
 </header>
 
-    <div class="container">
 
-      <!-- body partial, used for adding pages to layout -->
-      
+		<section class="content articles">
 
-<h1 class="gigaHeading text-centre page-title">Page title example</h1>
-<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>
 
-      <script src="assets/highlight.js"></script>
-    </div>
+		</section>
+
+
+		</div>
+		<footer class="border-grey-white-top">
+	<!-- Footer links -->
+	<ul class="links-social unstyled">
+		<li class="links-social-item links-social-email"><a href="mailto:contact@dragongraphics.co.uk" title="Email Me" rel="external" target="_blank"><span>Email</span></a></li>
+		<li class="links-social-item links-social-twitter"><a href="http://twitter.com/dragongraphics" title="Find me on Twitter" rel="external" target="_blank"><span>Twitter</span></a></li>
+		<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" title="My LinkedIn Profile" rel="external" target="_blank"><span>LinkedIn</span></a></li>
+	</ul>
+
+	 <div id="footer-content">
+		 <p>I'm Ashley Nolan, a Creative Technologist at TMW, and this is where I post about whatever pops into my head (or riles me enough to write about it).  Do take a look around, or contact me in any of the usual ways - it'd be great to hear from you.</p>
+	</div>
+</footer>
+	</div>
   </body>
 </html>
