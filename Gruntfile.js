@@ -48,6 +48,11 @@ module.exports = function (grunt) {
 		},
 
 
+		clean: {
+			all: ['dist/**/*.html']
+		},
+
+
 		/**
 		 * Sass compilation
 		 * https://github.com/gruntjs/grunt-contrib-sass
@@ -157,7 +162,7 @@ module.exports = function (grunt) {
 
 			assemble : {
 				files: ['src/templates/**/*.hbs'],
-				tasks: ['assemble']
+				tasks: ['clean', 'assemble']
 			},
 
 			livereload: {
@@ -232,15 +237,27 @@ module.exports = function (grunt) {
 				helpers: 'src/helpers/helper-*.js',
 				layoutdir: 'src/templates/layouts',
 				partials: ['src/templates/includes/**/*.hbs'],
-				flatten: false
+				flatten: false,
+
+				layout: 'default.hbs',
+
+				collections: ['posts']
 			},
 
 			site: {
-				// Target-level options
-				options: {layout: 'default.hbs'},
-				files: [
-					{ expand: true, cwd: 'src/templates/pages', src: ['**/*.hbs'], dest: '<%= site.destination %>/' }
-				]
+				files: {
+					'<%= site.dest %>/': ['src/templates/pages/*.hbs']
+				}
+				/*files: [
+					{
+						expand: true,
+					}
+				]*/
+			},
+			blog: {
+				files : {
+					'<%= site.dest %>/blog/': ['src/templates/pages/blog/*.hbs' ]
+				}
 			}
 		},
 
@@ -290,6 +307,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('assemble');
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
 
 	/**
@@ -305,7 +323,7 @@ module.exports = function (grunt) {
 	 * run jshint, uglify and sass:dev
 	 */
 	// Default task
-	grunt.registerTask('default', [/**'readme', 'jshint',**/ 'uglify', 'sass:dev', 'newer:assemble', 'copy:dist']);
+	grunt.registerTask('default', [/**'readme', 'jshint',**/'clean', 'uglify', 'sass:dev', 'newer:assemble', 'copy:dist']);
 
 
 	grunt.registerTask('server', function (target) {

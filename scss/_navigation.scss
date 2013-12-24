@@ -1,0 +1,118 @@
+
+
+/* =============================================================================
+   Navigation Elements
+   ========================================================================== */
+
+/* Main Navigation Bar
+   ========================================================================== */
+
+.nav-strip {
+	background:#000;
+	display:block;
+
+	min-width:0;
+	width:100%;
+	height:auto;
+	/*overflow:hidden;*/
+	transition:margin .25s ease-in-out;
+
+	.ie7 & {
+		min-width:0;
+	}
+}
+
+
+.nav-global {
+	float:none;
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+
+
+}
+	.nav-global > ul {
+		float:left;
+		width:100%;
+	}
+	.nav-global-item {
+		position:relative;
+		float:left;
+		width:33%;
+		padding:2px;
+		margin-bottom:0;
+
+		@include font-size(18);
+		border:1px solid $darkgrey;
+
+		.no-box-sizing & {
+			width:48.5%;
+			padding:2px 0.5%;
+		}
+
+		&:first-child {
+			width: 34%;
+		}
+
+		&:first-child,
+		&:nth-child(2) {
+			border-bottom: 0;
+			border-right: 0;
+		}
+
+		// @include respond-max(712) {
+		// 	&:nth-child(3) {
+		// 		clear:left;
+		// 	}
+		// }
+
+	}
+		.nav-global-item a {
+			position:relative;
+			z-index:2;
+			display:block;
+			text-decoration:none;
+
+
+			text-align:center;
+			letter-spacing:1px;
+			color:#ced4c9;
+
+			padding:4px 0;
+			border:1px solid #CFD5C9;
+
+			transition:color .25s linear;
+		}
+			.nav-global-item a:hover,
+			.nav-global-item.active a {
+				color:#be1e2d;
+
+				transition:color .25s ease-out;
+			}
+
+		/* Arrow highlighting active
+			couldn't do with after, as they wouldn't animate on hover :(
+		*/
+		.nav-global-item .navArrow {
+			display:none;
+			background:url(#{$img-ui-sprite}) no-repeat -45px -199px;
+			width:18px;
+			height:10px;
+			text-decoration:none;
+
+			position:absolute;
+			z-index:1;
+			left:50%;
+			bottom:0;
+			margin-left:-9px;
+
+			transition:bottom .15s linear;
+		}
+
+			/* Arrow highlighting active */
+			.nav-global-item:hover .navArrow,
+			.nav-global-item.active .navArrow {
+				bottom:-10px;
+
+				transition:bottom .15s linear;
+			}

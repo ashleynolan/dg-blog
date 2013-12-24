@@ -6,10 +6,23 @@
 	width: 100%;
 	margin: 0 auto;
 }
+	.content,
+	.footer-content {
+		padding: 0 3%;
+	}
+
+	.page-footer {
+		position: relative;
+	}
 
 /*
    Masthead
    ========================================================================== */
+
+.page-header {
+	background: #000;
+	margin-bottom: $verticalRhythm + px;
+}
 
 .page-title {
 	margin-bottom: 0;
@@ -51,127 +64,6 @@
 
 
 
-/* =============================================================================
-   Navigation Elements
-   ========================================================================== */
-
-/* Main Navigation Bar
-   ========================================================================== */
-
-.nav-strip {
-	background:#000;
-	display:block;
-
-	min-width:0;
-	width:100%;
-	height:auto;
-	/*overflow:hidden;*/
-	transition:margin .25s ease-in-out;
-
-	.ie7 & {
-		min-width:0;
-	}
-}
-
-
-.nav-global {
-	float:none;
-	width:100%;
-	margin:0 auto;
-	overflow:hidden;
-
-	@include respond-min(592) {
-
-	}
-}
-	.nav-global > ul {
-		float:left;
-		width:100%;
-	}
-	.nav-global-item {
-		position:relative;
-		float:left;
-		width:50%;
-
-		@include font-size(22);
-		border:1px solid $darkgrey;
-
-		padding:2px;
-		margin-bottom:0;
-
-		.no-box-sizing & {
-			width:48.5%;
-			padding:2px 0.5%;
-		}
-
-		&:first-child,
-		&:nth-child(2) {
-			border-bottom: 0;
-		}
-
-		&:nth-child(even) {
-			border-left:0;
-		}
-
-		@include respond-max(712) {
-			&:nth-child(3) {
-				clear:left;
-			}
-		}
-
-	}
-		.nav-global-item a {
-			position:relative;
-			z-index:2;
-			display:block;
-			text-decoration:none;
-
-
-
-			text-align:center;
-			letter-spacing:1px;
-			color:#ced4c9;
-
-			padding:4px 0;
-			border:1px solid #CFD5C9;
-
-			transition:color .25s linear;
-		}
-			.nav-global-item a:hover,
-			.nav-global-item.active a {
-				color:#be1e2d;
-
-				transition:color .25s ease-out;
-			}
-
-		/* Arrow highlighting active
-			couldn't do with after, as they wouldn't animate on hover :(
-		*/
-		.nav-global-item .navArrow {
-			display:none;
-			background:url(#{$img-ui-sprite}) no-repeat -45px -199px;
-			width:18px;
-			height:10px;
-			text-decoration:none;
-
-			position:absolute;
-			z-index:1;
-			left:50%;
-			bottom:0;
-			margin-left:-9px;
-
-			transition:bottom .15s linear;
-		}
-
-			/* Arrow highlighting active */
-			.nav-global-item:hover .navArrow,
-			.nav-global-item.active .navArrow {
-				bottom:-10px;
-
-				transition:bottom .15s linear;
-			}
-
-
 //  ============
 //  === LOGO ===
 //  ============
@@ -180,15 +72,18 @@
 	position:relative;
 	z-index:10;
 	float:none;
+	overflow: hidden;
 	box-shadow: -5px -1px 14px #333;
 
 	/* Span text for accessibility */
 	& span {
 		display:block;
 		position:absolute;
-		text-indent:-99999px;
+		text-indent:100%;
 	}
 	a {
+		position: relative;
+		z-index: 2;
 		display:block;
 		padding:4px 24px 6px;
 		text-align:center;
@@ -197,31 +92,57 @@
 	}
 }
 
+.logo-dg {
+	max-height: 40px;
+
+	@include respond-min($breakpoint-mid) {
+		max-height: none;
+	}
+
+}
+
 //  ====================
 //  === SOCIAL LINKS ===
 //  ====================
 
 	.links-social {
-		position:relative;
-		right:0;
-		top:0;
 		float:none;
 
-		width:126px;
+		width: 142px;
 		margin:0 auto;
 		overflow:hidden;
-	}
-		.links-social li,
-		.nav-toggle {
-			float:left;
-			border:1px solid $darkgrey;
-			border-left:0;
-			border-top:0;
-			margin:0;
-			padding:2px;
-			background:#000;
+
+		& > ul {
+			position: relative;
+			z-index: 2;
 		}
 
+		& li {
+			float:left;
+			border:1px solid $darkgrey;
+			margin:0 0 0 3px;
+			padding:2px;
+			background: $eggshell;
+
+			&:first-child {
+				margin:0;
+			}
+		}
+
+		footer & {
+			&:before {
+				content: '';
+				position: absolute;
+				left: 3%;
+				top: 21px;
+				z-index: 1;
+
+				width: 94%;
+				height:1px;
+				border-top: 1px solid #333;
+			}
+		}
+	}
 
 		.links-social-item {
 			&:first-child {
@@ -229,8 +150,7 @@
 			}
 		}
 
-		.links-social-item,
-		.nav-toggle {
+		.links-social-item {
 			> a {
 				float:left;
 				background-color:#CED4C9;
@@ -254,7 +174,6 @@
 				}
 			}
 		}
-
 
 				.links-social-email a span {
 					background:url(#{$img-ui-sprite}) no-repeat left -115px;
@@ -282,38 +201,6 @@
 				transition:background-color .25s linear;
 			}
 
-
-		.nav-toggle {
-			width:82px;
-			margin:0 auto;
-			border:1px solid $darkgrey;
-			float:none;
-			overflow:hidden;
-
-			.no-border-box & {
-				width:35px;
-			}
-
-			& a span {
-				background:url(#{$img-ui-sprite}) no-repeat left -331px;
-				@include box-sizing();
-				text-transform:uppercase;
-				color:#CED4C9;
-				font-weight:bold;
-				@include font-size(12);
-				text-indent:0;
-
-				width:auto;
-				height:36px;
-				padding:11px 30px 0 5px;
-
-				transition:color .25s linear;
-			}
-
-			& a:hover {
-				text-decoration:none;
-			}
-		}
 
 
 
@@ -346,30 +233,3 @@
 
 }
 
-// === $breakpoint-narrow> ===
-@include respond-min($breakpoint-narrow) {
-
-}
-// === end $breakpoint-narrow> ===
-
-
-
-// === $breakpoint-mid> ===
-@include respond-min($breakpoint-mid) {
-
-}
-// === end $breakpoint-mid> ===
-
-
-// === $breakpoint-wide> ===
-@include respond-min($breakpoint-wide) {
-
-}
-// === end $breakpoint-wide> ===
-
-
-// === $breakpoint-huge> ===
-@include respond-min($breakpoint-huge) {
-
-}
-// === end $breakpoint-huge> ===

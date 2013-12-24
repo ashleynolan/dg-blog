@@ -114,7 +114,7 @@ select:focus {
 /* HiDPI */
 /* FORMS */
 /* BROWSER FIXES */
-/* 
+/*
    CSS Framework
    * Edit these
    ========================================================================== */
@@ -211,7 +211,7 @@ textarea {
   vertical-align: top;
 }
 
-/* 
+/*
    Grid System
    * Default: Choreographic Grid. Switch out for your own if you need
    ========================================================================== */
@@ -298,7 +298,7 @@ textarea {
 /* ==========================================================================
 	 Media queries
 	 ========================================================================== */
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 37.5em) {
   .g-col {
     margin-left: 2%;
     padding: 10px;
@@ -1259,7 +1259,7 @@ textarea:focus:required:invalid:focus {
   padding-left: 5px;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 37.5em) {
   /* ==========================================================================
      Horizontal-specific styles
      * add .form--horizontal to the <form> element
@@ -1891,7 +1891,7 @@ img, object, embed, video {
   height: auto;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 37.5em) {
   .l-blockGrid li {
     display: block;
     height: auto;
@@ -1930,7 +1930,7 @@ img, object, embed, video {
     margin-bottom: 1.5%;
   }
 }
-/* 
+/*
    Your app styles
    * Consider modularizing your code.
    * e.g. Create a partials directory with _header.scss, _footer.scss etc
@@ -1944,9 +1944,23 @@ img, object, embed, video {
   margin: 0 auto;
 }
 
+.content,
+.footer-content {
+  padding: 0 3%;
+}
+
+.page-footer {
+  position: relative;
+}
+
 /*
    Masthead
    ========================================================================== */
+.page-header {
+  background: #000;
+  margin-bottom: 20px;
+}
+
 .page-title {
   margin-bottom: 0;
   border-bottom: 1px solid #000;
@@ -1981,6 +1995,131 @@ img, object, embed, video {
   margin: 0 auto;
 }
 
+.logo {
+  position: relative;
+  z-index: 10;
+  float: none;
+  overflow: hidden;
+  box-shadow: -5px -1px 14px #333;
+  /* Span text for accessibility */
+}
+.logo span {
+  display: block;
+  position: absolute;
+  text-indent: 100%;
+}
+.logo a {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 4px 24px 6px;
+  text-align: center;
+  background: #be1e2d;
+  line-height: 0;
+}
+
+.logo-dg {
+  max-height: 40px;
+}
+@media screen and (min-width: 37.5em) {
+  .logo-dg {
+    max-height: none;
+  }
+}
+
+.links-social {
+  float: none;
+  width: 142px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.links-social > ul {
+  position: relative;
+  z-index: 2;
+}
+.links-social li {
+  float: left;
+  border: 1px solid #4e5149;
+  margin: 0 0 0 3px;
+  padding: 2px;
+  background: #dce4d7;
+}
+.links-social li:first-child {
+  margin: 0;
+}
+footer .links-social:before {
+  content: '';
+  position: absolute;
+  left: 3%;
+  top: 21px;
+  z-index: 1;
+  width: 94%;
+  height: 1px;
+  border-top: 1px solid #333;
+}
+
+.links-social-item:first-child {
+  border-left: 1px solid #4e5149;
+}
+
+.links-social-item > a {
+  float: left;
+  background-color: #CED4C9;
+  transition: background-color .25s linear;
+}
+.links-social-item > a span {
+  float: left;
+  border: 1px solid #cfd5c9;
+  width: 36px;
+  height: 37px;
+  text-indent: -99999px;
+  transition: border-color .25s linear;
+  /* fixing width for border-box compat */
+}
+.no-box-shadow .links-social-item > a span {
+  width: 34px;
+}
+
+.links-social-email a span {
+  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -115px;
+}
+
+.links-social-linkedin a span {
+  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -151px;
+}
+
+.links-social-twitter a span {
+  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -187px;
+}
+
+.links-social-github a span {
+  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -223px;
+}
+
+.links-social-rss a span {
+  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -259px;
+}
+
+.links-social li.delicious a span {
+  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -295px;
+}
+
+.links-social-item a:hover {
+  background-color: #be1e2d;
+  text-decoration: none;
+  transition: background-color .25s linear;
+}
+
+/*
+   Footer
+   ========================================================================== */
+/* ==========================================================================
+   Media queries for responsive design
+   ========================================================================== */
+/*
+   Retina media Queries
+   Credit: http://dev.mattnt.com/retina-results.html
+   ========================================================================== */
 /* =============================================================================
    Navigation Elements
    ========================================================================== */
@@ -2014,27 +2153,23 @@ img, object, embed, video {
 .nav-global-item {
   position: relative;
   float: left;
-  width: 50%;
-  font-size: 22px;
-  font-size: 1.1rem;
-  border: 1px solid #4e5149;
+  width: 33%;
   padding: 2px;
   margin-bottom: 0;
+  font-size: 18px;
+  font-size: 0.9rem;
+  border: 1px solid #4e5149;
 }
 .no-box-sizing .nav-global-item {
   width: 48.5%;
   padding: 2px 0.5%;
 }
+.nav-global-item:first-child {
+  width: 34%;
+}
 .nav-global-item:first-child, .nav-global-item:nth-child(2) {
   border-bottom: 0;
-}
-.nav-global-item:nth-child(even) {
-  border-left: 0;
-}
-@media screen and (max-width: 44.5em) {
-  .nav-global-item:nth-child(3) {
-    clear: left;
-  }
+  border-right: 0;
 }
 
 .nav-global-item a {
@@ -2080,145 +2215,8 @@ img, object, embed, video {
   transition: bottom .15s linear;
 }
 
-.logo {
-  position: relative;
-  z-index: 10;
-  float: none;
-  box-shadow: -5px -1px 14px #333;
-  /* Span text for accessibility */
-}
-.logo span {
-  display: block;
-  position: absolute;
-  text-indent: -99999px;
-}
-.logo a {
-  display: block;
-  padding: 4px 24px 6px;
-  text-align: center;
-  background: #be1e2d;
-  line-height: 0;
-}
-
-.links-social {
-  position: relative;
-  right: 0;
-  top: 0;
-  float: none;
-  width: 126px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.links-social li,
-.nav-toggle {
-  float: left;
-  border: 1px solid #4e5149;
-  border-left: 0;
-  border-top: 0;
-  margin: 0;
-  padding: 2px;
-  background: #000;
-}
-
-.links-social-item:first-child {
-  border-left: 1px solid #4e5149;
-}
-
-.links-social-item > a,
-.nav-toggle > a {
-  float: left;
-  background-color: #CED4C9;
-  transition: background-color .25s linear;
-}
-.links-social-item > a span,
-.nav-toggle > a span {
-  float: left;
-  border: 1px solid #cfd5c9;
-  width: 36px;
-  height: 37px;
-  text-indent: -99999px;
-  transition: border-color .25s linear;
-  /* fixing width for border-box compat */
-}
-.no-box-shadow .links-social-item > a span, .no-box-shadow
-.nav-toggle > a span {
-  width: 34px;
-}
-
-.links-social-email a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -115px;
-}
-
-.links-social-linkedin a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -151px;
-}
-
-.links-social-twitter a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -187px;
-}
-
-.links-social-github a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -223px;
-}
-
-.links-social-rss a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -259px;
-}
-
-.links-social li.delicious a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -295px;
-}
-
-.links-social-item a:hover {
-  background-color: #be1e2d;
-  text-decoration: none;
-  transition: background-color .25s linear;
-}
-
-.nav-toggle {
-  width: 82px;
-  margin: 0 auto;
-  border: 1px solid #4e5149;
-  float: none;
-  overflow: hidden;
-}
-.no-border-box .nav-toggle {
-  width: 35px;
-}
-.nav-toggle a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -331px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  color: #CED4C9;
-  font-weight: bold;
-  font-size: 12px;
-  font-size: 0.6rem;
-  text-indent: 0;
-  width: auto;
-  height: 36px;
-  padding: 11px 30px 0 5px;
-  transition: color .25s linear;
-}
-.nav-toggle a:hover {
-  text-decoration: none;
-}
-
-/*
-   Footer
-   ========================================================================== */
-/* ==========================================================================
-   Media queries for responsive design
-   ========================================================================== */
-/*
-   Retina media Queries
-   Credit: http://dev.mattnt.com/retina-results.html
-   ========================================================================== */
 /* Examples */
-/* 
+/*
    Utility classes
    * Has to be last to override when necessary
    ========================================================================== */
