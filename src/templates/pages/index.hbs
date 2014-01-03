@@ -6,6 +6,10 @@ layout: home.hbs
 <h1 class="gigaHeading text-centre page-title">Page title example</h1>
 <h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>
 
-{{#each pages.blog }}
-	{{ basename }}
-{{/each}}
+ {{!-- {{list posts}} --}}
+{{#withSort post 'data.posted'}}
+	{{#each this.pages}}
+		<h2><a href="{{replaceStr this.dirname 'dist' ''}}/{{this.basename}}">{{ this.data.title }}</a></h2>
+		<p>{{ this.data.posted }}</p>
+	{{/each}}
+{{/withSort}}

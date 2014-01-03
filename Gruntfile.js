@@ -235,30 +235,51 @@ module.exports = function (grunt) {
 				data: 'src/**/*.{json,yml}',
 				assets: '<%= site.destination %>/assets',
 				helpers: 'src/helpers/helper-*.js',
-				layoutdir: 'src/templates/layouts',
+
 				partials: ['src/templates/includes/**/*.hbs'],
 				flatten: false,
 
 				layout: 'default.hbs',
-
-				collections: ['posts']
+				layoutdir: 'src/templates/layouts'
 			},
 
-			site: {
+			posts: {
+				options: {
+					collections: [{
+						name: 'post',
+						sortby: 'posted',
+						sortorder: 'descending'
+					}]
+				},
+				files: [{
+					cwd: './src/templates/pages/',
+					dest: '<%= site.destination %>',
+					expand: true,
+					src: ['**/*.hbs', '!blog/**/*.hbs']
+				}, {
+					cwd: './src/templates/pages/' + 'blog/',
+					dest: '<%= site.destination %>/blog',
+					expand: true,
+					src: ['**/*.hbs']
+				}]
+			}
+
+
+			/*site: {
 				files: {
-					'<%= site.dest %>/': ['src/templates/pages/*.hbs']
+					'<%= site.destination %>/': ['src/templates/pages/*.hbs']
 				}
 				/*files: [
 					{
 						expand: true,
 					}
-				]*/
+				]
 			},
 			blog: {
 				files : {
 					'<%= site.dest %>/blog/': ['src/templates/pages/blog/*.hbs' ]
 				}
-			}
+			}*/
 		},
 
 		copy: {
@@ -326,7 +347,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', [/**'readme', 'jshint',**/'clean', 'uglify', 'sass:dev', 'newer:assemble', 'copy:dist']);
 
 
-	grunt.registerTask('server', function (target) {
+	grunt.registerTask('serve', function (target) {
         grunt.task.run([
             'connect',
             'open',
