@@ -234,12 +234,12 @@ module.exports = function (grunt) {
 			options: {
 				data: 'src/**/*.{json,yml}',
 				assets: '<%= site.destination %>/assets',
-				helpers: 'src/helpers/helper-*.js',
+				helpers: ['helper-moment', 'src/helpers/helper-*.js'],
 
 				partials: ['src/templates/includes/**/*.hbs'],
 				flatten: false,
 
-				layout: 'default.hbs',
+				layout: 'main.hbs',
 				layoutdir: 'src/templates/layouts'
 			},
 
