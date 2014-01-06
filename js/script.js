@@ -39,8 +39,8 @@ require.config({
 });
 
 require([
-	'font!typekit, id:[spu0ljn]]',
-	'font!monotype, projectId:[7388dc95-e286-4126-9c26-6026374b9d93], version: [12345]'
+	'font!typekit, id:[xip1pkl]]',
+	'font!monotype, projectId:[7f495bc1-d47d-4f68-b796-4c8c60df8cae], version: [12345]'
 ], function () {
 
 	// Create a closure to maintain scope of TVW

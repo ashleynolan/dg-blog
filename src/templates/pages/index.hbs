@@ -9,11 +9,14 @@ title: Home
 
 	 {{!-- {{list posts}} --}}
 	{{#withSort post 'data.posted'}}
-		{{#each this.pages}}
+		{{#each_upto this.pages 3}}
+			{{this.key}}
 			<article class="separator-bottom">
 				<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
 				<h2><a href="{{replaceStr this.dirname 'dist' ''}}/{{this.basename}}">{{ this.data.title }}</a></h2>
 			</article>
-		{{/each}}
+		{{/each_upto}}
 	{{/withSort}}
+
+	{{paginate pagination limit="3"}}
 </section>

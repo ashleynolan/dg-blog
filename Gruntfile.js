@@ -14,6 +14,8 @@ module.exports = function (grunt) {
 		'js/script.js'
 	];
 
+	var rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;
+
 	/**
 	 * Specify your output directory
 	 */
@@ -161,14 +163,16 @@ module.exports = function (grunt) {
 			},
 
 			assemble : {
-				files: ['src/templates/**/*.hbs'],
-				tasks: ['clean', 'assemble']
+				files: ['src/templates/**/*.hbs', 'src/templates/**/*.md'],
+				tasks: ['clean', 'assemble'],
+				options: {
+					livereload: true
+				}
 			},
 
 			livereload: {
 				options: { livereload: true },
 				files: [
-					'dist/*.html',
 					'css/*.css'
 				]
 			}
@@ -176,22 +180,34 @@ module.exports = function (grunt) {
 
 		connect: {
 			options: {
-                port: 9000,
-                // change this to '0.0.0.0' to access the server from outside
-                hostname: 'tvw.local'
-            },
+				port: 9000,
+				// change this to '0.0.0.0' to access the server from outside
+				hostname: 'localhost'
+			},
 			server: {
 				options: {
-					base: 'dist'
+					base: 'dist',
+
+					middleware: function(connect, options) {
+						return [
+							rewriteRulesSnippet,
+							// Serve static files
+							connect.static(require('path').resolve(options.base))
+						];
+					}
 				}
-			}
+			},
+			rules: [
+				// http://testing.com/one -> http://testing.com/one.html
+				{ from: '(^((?!css|html|js|img|fonts|\/$).)*$)', to: '$1.html' }
+			]
 		},
 
 		open: {
-            server: {
-                path: 'http://localhost:<%= connect.options.port %>'
-            }
-        },
+			server: {
+				path: 'http://localhost:<%= connect.options.port %>'
+			}
+		},
 
 
 		/**
@@ -234,7 +250,7 @@ module.exports = function (grunt) {
 			options: {
 				data: 'src/**/*.{json,yml}',
 				assets: '<%= site.destination %>/assets',
-				helpers: ['helper-moment', 'src/helpers/helper-*.js'],
+				helpers: ['helper-moment', 'handlebars-helper-eachitems', 'handlebars-helper-paginate', 'src/helpers/helper-*.js'],
 
 				partials: ['src/templates/includes/**/*.hbs'],
 				flatten: false,
@@ -260,26 +276,9 @@ module.exports = function (grunt) {
 					cwd: './src/templates/pages/' + 'blog/',
 					dest: '<%= site.destination %>/blog',
 					expand: true,
-					src: ['**/*.hbs']
+					src: ['**/*.hbs', '**/*.md']
 				}]
 			}
-
-
-			/*site: {
-				files: {
-					'<%= site.destination %>/': ['src/templates/pages/*.hbs']
-				}
-				/*files: [
-					{
-						expand: true,
-					}
-				]
-			},
-			blog: {
-				files : {
-					'<%= site.dest %>/blog/': ['src/templates/pages/blog/*.hbs' ]
-				}
-			}*/
 		},
 
 		copy: {
@@ -329,6 +328,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-connect-rewrite');
 
 
 	/**
@@ -348,12 +348,13 @@ module.exports = function (grunt) {
 
 
 	grunt.registerTask('serve', function (target) {
-        grunt.task.run([
-            'connect',
-            'open',
-            'watch'
-        ]);
-    });
+		grunt.task.run([
+			'configureRewriteRules',
+			'connect:server',
+			'open',
+			'watch'
+		]);
+	});
 
 	/*
 		NEED TO UPDATE DEV AND PROD GRUNT BUILDS AS THESE ARE JUST PLACEHOLDERS

@@ -25,6 +25,16 @@
     Typography
    ========================================================================== */
 /*
+font-family:'Avenir LT W01 35 Light';
+font-family:'Avenir LT W01 45 Book';
+font-family:'AvenirLTW01-45BookObliq';
+font-family:'Avenir LT W01 65 Medium';
+font-family:'AvenirLTW01-65MediumObl';
+font-family:'Avenir LT W01 85 Heavy';
+font-family:'AvenirLTW01-85HeavyObli';
+font-family:'Avenir LT W01 95 Black';
+font-family:'AvenirLTW01-95BlackObli';*/
+/*
    Breakpoints
    * There are no common breakpoints so these are just a suggestion
    * You'll need to define your own breakpoints to suit your design
@@ -427,7 +437,7 @@ html {
 }
 
 body {
-  font-family: "Avenir LT W01 35 Light", Helvetica, Arial, sans-serif;
+  font-family: "Avenir LT W01 45 Book", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-size: 1rem;
   line-height: 1.4;
@@ -439,7 +449,7 @@ body {
    Paragraphs
    ========================================================================== */
 p {
-  font-family: "Avenir LT W01 35 Light", Helvetica, Arial, sans-serif;
+  font-family: "Avenir LT W01 45 Book", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-size: 1rem;
   margin-top: 28px;
@@ -802,7 +812,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Avenir LT W01 35 Light", Helvetica, Arial, sans-serif;
+  font-family: "Avenir LT W01 45 Book", Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -2216,6 +2226,13 @@ footer .links-social:before {
 }
 
 /* Examples */
+time {
+  font-family: "p22-underground-pc", sans-serif;
+  font-size: 28px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 /*
    Utility classes
    * Has to be last to override when necessary
