@@ -2,17 +2,21 @@
 layout: post.hbs
 
 title: Dragon Graphics goes live
+url: dragon-graphics-goes-live
 description: "After months of finishing touches/procrastination, the redesign of my blog, Dragon Graphics, has finally been pushed out into the world to fend for itself."
-posted: <%= new Date("Sept 24 2012 09:30:00 GMT+0000 (GMT)") %>
+
+posted: 2012-09-24T09:00
 
 post:
 - post
 
+categories:
+  - "General"
+  - "Personal"
+
 ---
 
 {{#markdown}}
-
-# {{ title }}
 
 After seemingly months of 'finishing touches', the redesign of my blog, Dragon Graphics, has finally been pushed out into the world to fend for itself.
 

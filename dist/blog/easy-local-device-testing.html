@@ -8,7 +8,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<title>Easy local device testing - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
 
 		<meta name="description" content="Dragon Graphics - Blog and Portfolio for Ashley Nolan">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,8 +25,7 @@
 	</head>
 	<body>
 
-	 <div class="container">
-		<!-- nav partial -->
+	<div class="container">
 		<header class="page-header">
 	<h1 id="page-logo" class="logo">
 		<span>Dragon Graphics</span>
@@ -46,38 +45,27 @@
 	</section>
 </header>
 
-		
+		<section class="content">
+			<h1>Easy local device testing</h1>
 
-<section class="content articles">
-	<!--<h1 class="gigaHeading text-centre page-title">Page title example</h1>
-	<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>-->
+			
 
-	 
-	
-		
-			
-			<article class="separator-bottom">
-				<time>27/09/2013</time>
-				<h2><a href="/blog/speaking-up">Speaking up</a></h2>
-				<p>Where I&#x27;ll be speaking towards the end of 2013.</p>
-			</article>
-		
-			
-			<article class="separator-bottom">
-				<time>20/06/2013</time>
-				<h2><a href="/blog/the-last-year-of-my-life">BBC GoodFood - The last year of my life</a></h2>
-				<p>After a year working on the BBC Good Food responsive redesign, the site has now gone live!.</p>
-			</article>
-		
-			
-			<article class="separator-bottom">
-				<time>22/04/2013</time>
-				<h2><a href="/blog/jquery-uk-2013">JQuery UK 2013</a></h2>
-				<p>Making the short trip to Oxford to attend and speak at jQuery UK 2013.</p>
-			</article>
-		
-	
-</section>
+<p>I&#39;ve been doing a lot of device testing recently due to being involved in quite a few different responsive builds. Earlier this week, courtesy of my colleague Rick, I stumbled across a very handy service by the guys over at (37signals)[] called xip.io.</p>
+<p>Xip.io lets you access any virtualhost you have setup locally on your computer from any device on your local network; and the extra bonus is it&#39;s mega easy to use.  Once setup, it simply gives you a domain to point your devices to and hey presto! Your local site is then viewable from any device you have to hand.</p>
+<p>To set it up, you&#39;ll simply need to know your current IP address and your virtualhost address.  For example, if you have setup a virtualhost called mysite.local and your IP is 10.0.0.1 then you need to add the following to your httpd.conf file inside the related <VirtualHost> declaration:</p>
+<pre><code>ServerAlias mysite.local.*.xip.io</code></pre>
+<p>If you&#39;re using MAMP Pro, it&#39;s even easier.  Simply add it to the related hosts &#39;Customised virtual host general settings&#39;, which can be found under the &#39;Advanced&#39; tab, right at the bottom (on v1.9.6.1).</p>
+<p>After restarting your local servers, the following address will then let you view your local site on your device (exchanging your own virtualhost address and IP in place of the examples).</p>
+<pre><code>mysite.local.10.0.0.1.xip.io</code></pre>
+<p>For those shouting at their screens &#39;This is already what Adobe Edge Inspect gives you!&#39;, indeed it is, but only for one paired device if you have a free creative cloud membership. Setting up xip.io is also much easier in my opinion.</p>
+<ul>
+<li>image of opera mobile emulator *</li>
+</ul>
+<p>The other tool I&#39;ve come across is Opera&#39;s Mobile Emulator.  Although emulation can never be as good as the real thing, we don&#39;t all have every phone since 2004 sitting on our desks. This emulator goes some way to help fill in any gaps you might have and device testing your site with an emulator is better than not device testing it at all.</p>
+<p>Opera&#39;s Mobile Emulator comes packed with a whole bunch of devices, including a variety of HTC, Samsung and Sony Phones and Tablets, as well as the Kindle Fire and the Nexus 7.  The great thing about the emulator is that it sets the pixel density and resolution when choosing each device - very handy for comparing your site between high quality HD and less capable alternatives.  It can also be hooked up to Opera Dragonfly so that you can debug straight onto the emulator.</p>
+<p>I&#39;d love to know what other tools people are currently using for local device testing, so please do let me know either through the comments or on Twitter.</p>
+
+		</section>
 
 		<footer class="page-footer border-grey-white-top">
 	<!-- Social links -->

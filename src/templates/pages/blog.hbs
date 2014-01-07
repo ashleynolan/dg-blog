@@ -1,5 +1,6 @@
 ---
-title:
+title: Blog
+url: blog
 ---
 
 <section class="content articles">
@@ -8,13 +9,13 @@ title:
 
 	 {{!-- {{list posts}} --}}
 	{{#withSort post 'data.posted'}}
-		{{#each_upto this.pages 3}}
+		{{#each this.pages}}
 			{{this.key}}
 			<article class="separator-bottom">
 				<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
 				<h2><a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}">{{ this.data.title }}</a></h2>
 				<p>{{ this.data.description }}</p>
 			</article>
-		{{/each_upto}}
+		{{/each}}
 	{{/withSort}}
 </section>

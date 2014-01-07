@@ -2,18 +2,20 @@
 layout: post.hbs
 
 title: A brief history of me
+url: a-brief-history-of-me
 description: "For the curious/crazy stalkers among you, a brief 'Who am I', and how I've fallen into doing whatever it is that I do."
 
-posted: <%= new Date("Sept 24 2012 09:30:00 GMT+0000 (GMT)") %>
+posted: 2012-09-24T09:30
 
 post:
 - post
 
+categories:
+  - "Personal"
+
 ---
 
 {{#markdown}}
-
-# {{ title }}
 
 I'm not usually one for indulging in posts about myself, but I really enjoyed reading Remy's [short history](http://remysharp.com/about/) on his site when I was starting out, thus making him directly responsible for this post!
 
