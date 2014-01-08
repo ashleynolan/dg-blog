@@ -2225,6 +2225,173 @@ time {
   font-weight: 600;
 }
 
+/* Homepage Carousel
+   ========================================================================== */
+section#work {
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 352px;
+  padding-top: 50px;
+}
+
+#work h2 {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  z-index: 2;
+  background: url(../images/carousel_header.png) no-repeat left top;
+  width: 204px;
+  height: 75px;
+  padding-top: 15px;
+  margin-left: -102px;
+  color: #fff;
+  font-size: 3.2em;
+  text-transform: uppercase;
+}
+
+#work .carouselWrapper {
+  background: url(../images/carousel_bg.gif) repeat-x left top;
+  position: relative;
+  width: 3000px;
+  height: 322px;
+  left: -1590px;
+  margin: 29px 0 0 50%;
+}
+
+#work .carousel {
+  float: left;
+  width: 10000px;
+  margin: 10px 0;
+  padding: 13px 0;
+}
+
+#work .carousel article {
+  float: left;
+  border: 2px solid black;
+  margin-right: 18px;
+  -webkit-border-image: url(../images/border_double.png) 2 repeat;
+  -moz-border-image: url(../images/border_double.png) 2 repeat;
+  -o-border-image: url(../images/border_double.png) 2 repeat;
+}
+
+#work .carousel article img {
+  float: left;
+}
+
+#work .carouselWrapper #canvasFrame {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  margin-left: -240px;
+  margin-top: 23px;
+  padding: 2px 22px;
+}
+
+#work a:hover {
+  cursor: pointer;
+}
+
+#work #carLeft,
+#work #carRight {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: block;
+  width: 91px;
+  height: 91px;
+}
+
+#work #carLeft {
+  background: url("../images/carousel_btnLeft.png") no-repeat left top;
+  left: -20px;
+  -moz-transition: left .25s linear;
+  -webkit-transition: left .25s linear;
+  -o-transition: left .25s linear;
+  transition: left .25s linear;
+}
+
+#work #carLeft:hover {
+  left: -10px;
+  -moz-transition: left .25s linear;
+  -webkit-transition: left .25s linear;
+  -o-transition: left .25s linear;
+  transition: left .25s linear;
+}
+
+#work #carRight {
+  background: url("../images/carousel_btnRight.png") no-repeat left top;
+  right: -20px;
+  -moz-transition: right .25s linear;
+  -webkit-transition: right .25s linear;
+  -o-transition: right .25s linear;
+  transition: right .25s linear;
+}
+
+#work #carRight:hover {
+  right: -10px;
+  -moz-transition: right .25s linear;
+  -webkit-transition: right .25s linear;
+  -o-transition: right .25s linear;
+  transition: right .25s linear;
+}
+
+.secondaryContent section {
+  overflow: hidden;
+  height: 1%;
+  padding: 14px 20px;
+}
+
+.secondaryContent section h3 {
+  font-size: 3em;
+  text-shadow: #E9F1DD 2px 1px 0;
+}
+
+.secondaryContent section p {
+  padding-top: 2px;
+}
+
+.secondaryContent section ul {
+  margin-left: 4px;
+  padding-top: 6px;
+  list-style: none;
+}
+
+.secondaryContent section li {
+  background: url(../images/icon_arrow_list_small.png) no-repeat left 3px;
+  padding: 0 0 2px 16px;
+}
+
+.secondaryContent section li a {
+  color: #474846;
+}
+
+.secondaryContent section li a:hover {
+  color: #be1e2d;
+  text-decoration: none;
+}
+
+.secondaryContent section p,
+.secondaryContent section li {
+  font-size: 1.3em;
+  line-height: 1.6em;
+}
+
+.secondaryContent .blogArchive ul {
+  float: left;
+  margin: 0;
+}
+
+.secondaryContent .blogArchive .archiveYears {
+  border-left: 1px solid #fff;
+  padding-left: 7.6923077%;
+  /* 20 / 260 */
+  margin-left: 15.3846154%;
+  /* 40 / 260 */
+  font-style: italic;
+  box-shadow: -1px 0 0 #4E5149;
+}
+
 /*
    Utility classes
    * Has to be last to override when necessary

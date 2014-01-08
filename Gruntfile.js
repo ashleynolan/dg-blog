@@ -55,6 +55,18 @@ module.exports = function (grunt) {
 		},
 
 
+		requirejs: {
+			dist: {
+				options: {
+					mainConfigFile : "js/config.js",
+					optimize : 'uglify2',
+					generateSourceMaps : true,
+					preserveLicenseComments : false,
+					out: distDir + "/app.min.js",
+				}
+			}
+		},
+
 		/**
 		 * Sass compilation
 		 * https://github.com/gruntjs/grunt-contrib-sass
@@ -92,47 +104,6 @@ module.exports = function (grunt) {
 
 
 		/**
-		 * Uglify
-		 * https://github.com/gruntjs/grunt-contrib-uglify
-		 * Minifies and concatinates your JS
-		 * Also creates source maps
-		 */
-		uglify: {
-			options: {
-				// mangle: Turn on or off mangling
-				mangle: true,
-
-				// beautify: beautify your code for debugging/troubleshooting purposes
-				beautify: false,
-
-				// report: Show file size report
-				report: 'gzip',
-
-				// sourceMap: @string. The location of the source map, relative to the project
-				sourceMap: jsFile + '.map',
-
-				// sourceMappingURL: @string. The string that is printed to the final file
-				sourceMappingURL: '../../'+ jsFile +'.map'
-
-				// sourceMapRoot: @string. The location where your source files can be found. This sets the sourceRoot field in the source map.
-				// sourceMapRoot: 'js',
-
-				// sourceMapPrefix: @integer. The number of directories to drop from the path prefix when declaring files in the source map.
-				// sourceMapPrefix: 1,
-
-			},
-
-			/**
-			 * Use the array at the top of this file to specify which js files you include
-			 */
-			js: {
-				src: jsFileList,
-				dest: distDir + jsFile
-			}
-		},
-
-
-		/**
 		 * Watch
 		 * https://github.com/gruntjs/grunt-contrib-watch
 		 * Watches your scss, js etc for changes and compiles them
@@ -157,9 +128,10 @@ module.exports = function (grunt) {
 				files: [
 					'Gruntfile.js',
 					'js/*.js',
-					'js/libs/**/*.js'
+					'js/libs/**/*.js',
+					'js/app/**/*.js'
 				],
-				tasks: ['uglify', 'copy:js']
+				tasks: ['requirejs', 'copy:js']
 			},
 
 			assemble : {
@@ -324,7 +296,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-open');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-csso');
@@ -333,6 +304,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-connect-rewrite');
+	grunt.loadNpmTasks("grunt-contrib-requirejs");
 
 
 	/**
