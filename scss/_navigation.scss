@@ -42,6 +42,7 @@
 		padding:2px;
 		margin-bottom:0;
 
+		font-family: $alt-font-family;
 		@include font-size(18);
 		border:1px solid $darkgrey;
 
@@ -72,7 +73,6 @@
 			z-index:2;
 			display:block;
 			text-decoration:none;
-
 
 			text-align:center;
 			letter-spacing:1px;

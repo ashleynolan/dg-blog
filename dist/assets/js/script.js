@@ -11,8 +11,9 @@ require([
 	'log',
 	'mbp',
 	'setExternalLinks',
+	'modernizr',
 	'App'
 ],
-function ($, fontRplyOne, fontReplyTwo, log, MBP, App) {
+function ($, fontRplyOne, fontReplyTwo, log, MBP, Modernizr, App) {
 
 });

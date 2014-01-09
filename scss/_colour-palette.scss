@@ -32,8 +32,8 @@ $color-selection-bg           : $color-primary;
 
 
 // Links
-$color-link-default           : $color-primary;
-$color-link-visited           : $color-primary;
+$color-link-default           : $red;
+$color-link-visited           : $red;
 $color-link-hover             : darken($color-primary, 15%);
 $color-link-active            : darken($color-primary, 15%);
 

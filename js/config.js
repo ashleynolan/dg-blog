@@ -23,7 +23,7 @@ require.config({
 		// underscore: 'components/underscore/underscore',
 
 		// selectivizr: 'components/selectivizr/selectivizr',
-		// modernizr: 'components/modernizr/modernizr.min',
+		modernizr: 'components/modernizr/modernizr.min',
 		// transit: 'components/transit/transit-min',
 
 

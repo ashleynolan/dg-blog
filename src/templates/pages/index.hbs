@@ -2,7 +2,7 @@
 title:
 ---
 
-<section class="content articles">
+<section class="content articles separator-top">
 	<!--<h1 class="gigaHeading text-centre page-title">Page title example</h1>
 	<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>-->
 
@@ -10,10 +10,10 @@ title:
 	{{#withSort post 'data.posted'}}
 		{{#each_upto this.pages 3}}
 			{{this.key}}
-			<article class="separator-bottom">
+			<article class="articles-item separator-bottom">
 				<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
-				<h2><a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}">{{ this.data.title }}</a></h2>
-				<p>{{ this.data.description }}</p>
+				<h2 class="articles-item-title"><a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}">{{ this.data.title }}</a></h2>
+				<p class="articles-item-description">{{ this.data.description }}</p>
 			</article>
 		{{/each_upto}}
 	{{/withSort}}

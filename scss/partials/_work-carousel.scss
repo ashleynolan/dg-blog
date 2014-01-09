@@ -18,15 +18,16 @@
 			z-index:2;
 			background: $red;
 			border: 1px solid #fff;
-			border-bottom: 0;
+
+			box-shadow: 0px 0px 0px 1px #333;
 
 			width:204px;
 			padding: 15px 15px 10px;
 			margin-left:-102px;
 
-			color:#fff;
 			font-family: $alt-font-family;
 			@include font-size(28);
+			color:#fff;
 			text-align: center;
 
 			&:after {
@@ -45,7 +46,7 @@
 			}
 		}
 		.homeCarousel-wrapper {
-			background:url(../images/ui/carousel_bg.gif) repeat-x left top;
+			background:url(../img/ui/carousel_bg.gif) repeat-x left top;
 
 			position:relative;
 			width:3180px;
@@ -66,7 +67,7 @@
 				border:2px solid black;
 				margin-right:18px;
 
-				border-image:url(../images/ui/border_double.png) 2 repeat;
+				border-image:url(../img/ui/border_double.png) 2 repeat;
 			}
 				.homeCarousel-carousel-item img {
 					float:left;
@@ -111,7 +112,7 @@
 			margin-left:-330px;
 			margin-top:23px;
 
-			background:url(../images/ui/carousel_frame.png) no-repeat left top;
+			background:url(../img/ui/carousel_frame.png) no-repeat left top;
 
 			/*padding:2px 22px;*/
 			//display:none;
