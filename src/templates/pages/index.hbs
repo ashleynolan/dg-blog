@@ -19,34 +19,47 @@ title:
 	{{/withSort}}
 </section>
 
-<!-- Content panel -->
-<section id="work">
-	<h2>Recent Work</h2>
-	<div class="carouselWrapper">
+<!-- Homepage carousel -->
+<section id="homeCarousel" class="homeCarousel">
+	<h2 class="homeCarousel-title">Recent Work</h2>
 
-		<div class="carousel">
-			<article id="workArticle1">
-			  <img src="/assets/img/work/home-dl.jpg" />
+	<div class="homeCarousel-wrapper">
+		<div class="homeCarousel-carousel">
+			<article id="workArticle4" class="homeCarousel-carousel-item" data-name="RSPCA">
+			    <a href="work/rspca" title="RSPCA">
+			    <img class="featureImg" src="assets/img/work/home-rspca.jpg" alt="">
+			    	<div class="homeCarousel-carousel-item-title"><h3>RSPCA</h3></div>
+			    </a>
+			</article><article id="workArticle5" class="homeCarousel-carousel-item" data-name="Xbox Kinect">
+			    <a href="work/kinect" title="Xbox Kinect">
+			    <img class="featureImg" src="assets/img/work/home-kinect.jpg" alt="">
+			    	<div class="homeCarousel-carousel-item-title"><h3>Xbox Kinect</h3></div>
+			    </a>
 			</article>
-				<article id="workArticle2">
-			  <img src="/assets/img/work/home-dotnet.jpg" />
+			<article id="workArticle1" class="homeCarousel-carousel-item" data-name=".NET Mag" class="active">
+			    <a href="work/netmag" title=".NET Magazine">
+			    <img class="featureImg" src="assets/img/work/home-dotnet.jpg" alt="">
+			    	<div class="homeCarousel-carousel-item-title"><h3>.NET Magazine</h3></div>
+			    </a>
 			</article>
-				<article id="workArticle3">
-			  <img src="/assets/img/work/home-rspca.jpg" />
+			<article id="workArticle2" class="homeCarousel-carousel-item" data-name="Disturbing London">
+			    <a href="work/dl-records" title="DL Records">
+			    <img class="featureImg" src="assets/img/work/home-dl.jpg" alt="">
+			    	<div class="homeCarousel-carousel-item-title"><h3>DL Records</h3></div>
+			    </a>
 			</article>
-				<article id="workArticle4">
-			  <img src="/assets/img/work/home-ford.jpg" />
-			</article>
-				<article id="workArticle5">
-			  <img src="/assets/img/work/home-aygo.jpg" />
-			</article>
-				<article id="workArticle6">
-			  <img src="/assets/img/work/home-kinect.jpg" />
+			<article id="workArticle3" class="homeCarousel-carousel-item" data-name="Ford">
+			    <a href="work/ford" title="Ford Showcase">
+			    <img class="featureImg" src="assets/img/work/home-ford.jpg" alt="">
+			    	<div class="homeCarousel-carousel-item-title"><h3>Ford Showcase</h3></div>
+			    </a>
 			</article>
 		</div>
 
-		<div id="canvasFrame">
-			<a href=""><canvas id="carouselFeatured" width="618" height="274"></canvas></a>
+		<div id="homeCarousel-canvasFrame" class="homeCarousel-canvasFrame">
+			<a href="" id="homeCarousel-canvasFrame-link">
+				<canvas id="homeCarousel-canvasFrame-canvas" class="homeCarousel-canvasFrame-canvas" width="618" height="274"></canvas>
+			</a>
 		</div>
 	</div>
 </section><!-- End of work section panel -->

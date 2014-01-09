@@ -12,6 +12,10 @@ require.config({
 		font: 'components/require-plugins/font',
 		propertyParser: 'components/require-plugins/propertyParser',
 
+		mbp: 'helpers/mobile-plugins',
+
+		setExternalLinks: 'helpers/setExternalLinks',
+
 		//text: 'components/require-plugins/text',
 		//fastclick: 'components/fastclick/fastclick',
 
