@@ -1,12 +1,14 @@
 time {
 	display: inline-block;
 	font-family: $alt-font-family;
-	@include font-size(24);
+	@include font-size(20);
 	font-weight: 400;
+	color: #f9f9f9;
 
 	.articles & {
 		background: rgba(0, 0, 0, 0.35);
-		color: #fff;
-		padding: 4px 10px;
+		padding: 2px 10px;
+
+		text-shadow: #000 1px 1px 1px;
 	}
 }

@@ -95,8 +95,8 @@
 .logo-dg {
 	max-height: 40px;
 
-	@include respond-min($breakpoint-mid) {
-		max-height: none;
+	@include respond-min($breakpoint-narrow) {
+		max-height: 80px;
 	}
 
 	path {

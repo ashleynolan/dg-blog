@@ -182,6 +182,9 @@ a {
 			color: #333;
 			//text-decoration: underline;
 		}
+		&:hover, &:focus {
+			color: $red;
+		}
 	}
 }
 
