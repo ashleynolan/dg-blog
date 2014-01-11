@@ -180,10 +180,11 @@ a {
 		&,
 		&:visited {
 			color: #333;
-			//text-decoration: underline;
+			@include prefixer(transition, 200ms ease-in-out, webkit moz o spec);
 		}
 		&:hover, &:focus {
 			color: $red;
+			@include prefixer(transition, 200ms ease-in-out, webkit moz o spec);
 		}
 	}
 }

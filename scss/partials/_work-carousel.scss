@@ -46,7 +46,9 @@
 			}
 		}
 		.homeCarousel-wrapper {
-			background:url(../img/ui/carousel_bg.gif) repeat-x left top;
+			background: darken($eggshell, 10%);
+			border-top: 1px solid #333;
+			border-bottom: 1px solid #333;
 
 			position:relative;
 			width:3180px;
@@ -89,7 +91,6 @@
 						background:#000;
 						padding:4px 16px;
 
-						/*font-family:"Futura Condensed Medium", Arial, Helvetica, sans-serif;*/
 						font-size:2.6em;
 						font-weight:normal;
 						color:#CED4C9;
@@ -101,7 +102,7 @@
 					opacity:1;
 					bottom:-20px;
 
-					transition:all .25s linear;
+					@include prefixer(transition, 250ms, webkit moz o spec);
 				}
 
 
@@ -109,16 +110,27 @@
 			position:absolute;
 			z-index:1;
 			left:50%;
-			margin-left:-330px;
+			margin-left:-329px;
 			margin-top:23px;
 
-			background:url(../img/ui/carousel_frame.png) no-repeat left top;
+			//background:url(../img/ui/carousel_frame.png) no-repeat left top;
+			background: darken($eggshell, 10%);
+
+			border: 1px solid #333;
+			border-top: none;
+			border-bottom: none;
+
+			@include font-size(0);
 
 			/*padding:2px 22px;*/
 			//display:none;
 		}
+			.homeCarousel-canvasFrame-link {
+				display: block;
+			}
 			.homeCarousel-canvasFrame-canvas {
-				margin:2px 22px;
+				margin:0 17px 0;
+				border-image:url(../img/ui/border_double.png) 3 repeat;
 			}
 
 
@@ -129,16 +141,26 @@
 	.carLeft,
 	.carRight {
 		position:absolute;
-		top:50%;
+		top:54%;
 		z-index:2;
 
 		display:block;
-		width:91px;
-		height:91px;
+		width: 60px;
+		height: 60px;
+
+		background: #333;
+		box-shadow: 0 0 9px 0px #000 inset;
+		border-radius: 50%;
+
+		@include respond-min($breakpoint-mid) {
+			width:91px;
+			height:91px;
+			top:50%;
+		}
 	}
 	.carLeft {
-		background:url(#{$img-ui-sprite}) no-repeat -39px 0px;
 		left:-20px;
+		border-radius: 0 50% 50% 0;
 
 		transition:left .25s linear;
 
@@ -149,8 +171,8 @@
 		}
 	}
 	.carRight {
-		background:url(#{$img-ui-sprite}) no-repeat -136px 0px;
 		right:-20px;
+		border-radius: 50% 0 0 50%;
 
 		transition:right .25s linear;
 

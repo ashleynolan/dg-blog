@@ -11,11 +11,13 @@ url: blog
 	{{#withSort post 'data.posted'}}
 		{{#each this.pages}}
 			{{this.key}}
-			<article class="articles-item separator-bottom">
-				<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
-				<h2 class="articles-item-title"><a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}">{{ this.data.title }}</a></h2>
-				<p class="articles-item-description">{{ this.data.description }}</p>
-			</article>
+			<a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}">
+				<article class="articles-item separator-bottom">
+					<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
+					<h2 class="articles-item-title">{{ this.data.title }}</h2>
+					<p class="articles-item-description">{{ this.data.description }}</p>
+				</article>
+			</a>
 		{{/each}}
 	{{/withSort}}
 </section>

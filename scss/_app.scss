@@ -105,7 +105,7 @@
 	}
 
 	&:hover path {
-		fill: #333;
+		fill: #000;
 		stroke: #666;
 		stroke-width: 3;
 
@@ -232,13 +232,42 @@ img.logo-dg {
 	padding: 0;
 }
 	.articles-item {
-		padding: 0 0 20px;
+		padding: 0 10px 20px 0;
+		border-left: 8px solid transparent;
+
+		@include prefixer(transition, 300ms ease-in-out, webkit moz o spec);
+
+
+		a:hover &,
+		a:focus & {
+			.csstransitions & {
+				border-left: 8px solid #333;
+				padding: 0 0 20px 10px;
+				background: darken($eggshell, 2%);
+				@include prefixer(transition, 300ms ease-in-out, webkit moz o spec);
+			}
+ 		}
 	}
 		.articles-item-title {
 			margin: 10px 0;
 		}
 		 .articles-item-description {
 		 	margin: 0;
+		 }
+
+		 .articles-item-title,
+		 .articles-item-description {
+	 		a & {
+				color: #333;
+				@include prefixer(transition, 200ms ease-in-out, webkit moz o spec);
+			}
+		}
+		.articles-item-title {
+			a:hover &,
+			a:focus & {
+				color: $red;
+				@include prefixer(transition, 200ms ease-in-out, webkit moz o spec);
+	 		}
 		 }
 
 .separator-top {

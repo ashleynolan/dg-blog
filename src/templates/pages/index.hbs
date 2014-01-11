@@ -10,11 +10,13 @@ title:
 	{{#withSort post 'data.posted'}}
 		{{#each_upto this.pages 3}}
 			{{this.key}}
-			<article class="articles-item separator-bottom">
-				<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
-				<h2 class="articles-item-title"><a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}">{{ this.data.title }}</a></h2>
-				<p class="articles-item-description">{{ this.data.description }}</p>
-			</article>
+			<a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}">
+				<article class="articles-item separator-bottom">
+					<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
+					<h2 class="articles-item-title">{{ this.data.title }}</h2>
+					<p class="articles-item-description">{{ this.data.description }}</p>
+				</article>
+			</a>
 		{{/each_upto}}
 	{{/withSort}}
 </section>
@@ -57,8 +59,8 @@ title:
 		</div>
 
 		<div id="homeCarousel-canvasFrame" class="homeCarousel-canvasFrame">
-			<a href="" id="homeCarousel-canvasFrame-link">
-				<canvas id="homeCarousel-canvasFrame-canvas" class="homeCarousel-canvasFrame-canvas" width="618" height="274"></canvas>
+			<a href="" id="homeCarousel-canvasFrame-link" class="homeCarousel-canvasFrame-link">
+				<canvas id="homeCarousel-canvasFrame-canvas" class="homeCarousel-canvasFrame-canvas" width="618" height="272"></canvas>
 			</a>
 		</div>
 	</div>
