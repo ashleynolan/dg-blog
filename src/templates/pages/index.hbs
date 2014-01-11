@@ -10,8 +10,8 @@ title:
 	{{#withSort post 'data.posted'}}
 		{{#each_upto this.pages 3}}
 			{{this.key}}
-			<a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}">
-				<article class="articles-item separator-bottom">
+			<a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}" class="articles-item separator-bottom">
+				<article>
 					<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
 					<h2 class="articles-item-title">{{ this.data.title }}</h2>
 					<p class="articles-item-description">{{ this.data.description }}</p>

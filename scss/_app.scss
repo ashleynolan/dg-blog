@@ -74,6 +74,7 @@
 	float:none;
 	overflow: hidden;
 	box-shadow: -5px -1px 14px #333;
+	margin: 0;
 
 	/* Span text for accessibility */
 	& span {
@@ -120,107 +121,6 @@ img.logo-dg {
 	}
 }
 
-//  ====================
-//  === SOCIAL LINKS ===
-//  ====================
-
-	.links-social {
-		float:none;
-
-		width: 142px;
-		margin:0 auto;
-		overflow:hidden;
-
-		& > ul {
-			position: relative;
-			z-index: 2;
-		}
-
-		& li {
-			float:left;
-			border:1px solid $darkgrey;
-			margin:0 0 0 3px;
-			padding:2px;
-			background: $eggshell;
-
-			&:first-child {
-				margin:0;
-			}
-		}
-
-		footer & {
-			&:before {
-				content: '';
-				position: absolute;
-				left: 3%;
-				top: 21px;
-				z-index: 1;
-
-				width: 94%;
-				height:1px;
-				border-top: 1px solid #333;
-			}
-		}
-	}
-
-		.links-social-item {
-			&:first-child {
-				border-left:1px solid $darkgrey;
-			}
-		}
-
-		.links-social-item {
-			> a {
-				float:left;
-				background-color:#CED4C9;
-
-				transition:background-color .25s linear;
-			}
-
-			> a span {
-				float:left;
-				border:1px solid #cfd5c9;
-
-				width:36px;
-				height:37px;
-				text-indent:-99999px;
-
-				transition:border-color .25s linear;
-
-				/* fixing width for border-box compat */
-				.no-box-shadow & {
-					width:34px;
-				}
-			}
-		}
-
-				.links-social-email a span {
-					background:url(#{$img-ui-sprite}) no-repeat left -115px;
-				}
-				.links-social-linkedin a span {
-					background:url(#{$img-ui-sprite}) no-repeat left -151px;
-				}
-				.links-social-twitter a span {
-					background:url(#{$img-ui-sprite}) no-repeat left -187px;
-				}
-				.links-social-github a span {
-					background:url(#{$img-ui-sprite}) no-repeat left -223px;
-				}
-				.links-social-rss a span {
-					background:url(#{$img-ui-sprite}) no-repeat left -259px;
-				}
-				.links-social li.delicious a span {
-					background:url(#{$img-ui-sprite}) no-repeat left -295px;
-				}
-
-			.links-social-item a:hover {
-				background-color:#be1e2d;
-				text-decoration:none;
-
-				transition:background-color .25s linear;
-			}
-
-
 
 /*
    Article item
@@ -232,20 +132,26 @@ img.logo-dg {
 	padding: 0;
 }
 	.articles-item {
+		display: block;
 		padding: 0 10px 20px 0;
 		border-left: 8px solid transparent;
 
 		@include prefixer(transition, 300ms ease-in-out, webkit moz o spec);
 
 
-		a:hover &,
-		a:focus & {
+		&:hover,
+		&:focus {
 			.csstransitions & {
 				border-left: 8px solid #333;
 				padding: 0 0 20px 10px;
 				background: darken($eggshell, 2%);
 				@include prefixer(transition, 300ms ease-in-out, webkit moz o spec);
 			}
+ 		}
+
+ 		.blog &:last-child {
+			border: none;
+			box-shadow: none;
  		}
 	}
 		.articles-item-title {
@@ -280,6 +186,31 @@ img.logo-dg {
 }
 
 
+/*
+   About Page
+   ========================================================================== */
+
+.about-module {
+	padding-top: $verticalRhythm + px;
+}
+	.about-facts {
+		line-height: 2;
+		margin-bottom: 20px;
+	}
+		.about-facts-item {
+			position: relative;
+			padding-left: 30px;
+
+			&:before {
+				font-family: 'icons';
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+		.about-facts-age:before { content: '\e605';	}
+		.about-facts-birthplace:before { content: '\e606'; }
+		.about-facts-location:before { content: '\e607'; }
 
 /*
    Footer
@@ -289,14 +220,14 @@ footer {
 	padding-bottom: 30px;
 }
 	.footer-content {
-		margin: 0 auto;
+		margin: 20px auto 0;
 
 		@include respond-min(600) {
 			max-width: 80%;
 			text-align: center;
 		}
-
 	}
+
 
 
 

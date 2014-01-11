@@ -124,6 +124,13 @@ module.exports = function (grunt) {
 				tasks : 'copy:img'
 			},
 
+			fonts: {
+				files: [
+					'fonts/**/*.*'
+				],
+				tasks : 'copy:fonts'
+			},
+
 			js: {
 				files: [
 					'Gruntfile.js',
@@ -262,7 +269,8 @@ module.exports = function (grunt) {
 				files: [
 					{ expand: true, cwd: './css', src: ['./**/*.*'], dest: 'dist/assets/css' },
 					{ expand: true, cwd: './js', src: ['./**/*.*'], dest: 'dist/assets/js' },
-					{ expand: true, cwd: './img', src: ['./**/*.*'], dest: 'dist/assets/img' }
+					{ expand: true, cwd: './img', src: ['./**/*.*'], dest: 'dist/assets/img' },
+					{ expand: true, cwd: './fonts', src: ['./**/*.*'], dest: 'dist/assets/fonts' }
 				]
 			},
 			css: {
@@ -273,6 +281,11 @@ module.exports = function (grunt) {
 			img: {
 				files: [
 					{ expand: true, cwd: './img', src: ['./**/*.*'], dest: 'dist/assets/img' }
+				]
+			},
+			fonts: {
+				files: [
+					{ expand: true, cwd: './fonts', src: ['./**/*.*'], dest: 'dist/assets/fonts' }
 				]
 			},
 			js: {
