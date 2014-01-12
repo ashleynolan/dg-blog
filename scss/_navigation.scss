@@ -33,13 +33,17 @@
 	.nav-global-item {
 		position:relative;
 		display: inline-block;
-		width:33%;
-		padding:2px;
-		margin-bottom:0;
+		width: 33%;
+		padding: 2px;
+		margin-bottom: 0;
 
 		font-family: $alt-font-family;
 		@include font-size(18);
 		border:1px solid $darkgrey;
+
+		@include respond-min($breakpoint-midupper) {
+			width: auto;
+		}
 
 		.no-box-sizing & {
 			width:48.5%;
@@ -48,6 +52,10 @@
 
 		&:first-child {
 			width: 34%;
+
+			@include respond-min($breakpoint-midupper) {
+				width: auto;
+			}
 		}
 
 		&:first-child,
@@ -71,6 +79,10 @@
 			border:1px solid #CFD5C9;
 
 			@include prefixer(transition, color 250ms linear, webkit moz o spec);
+
+			@include respond-min($breakpoint-midupper) {
+				width: 140px;
+			}
 		}
 			.nav-global-item a:hover,
 			.nav-global-item.active a {

@@ -2037,6 +2037,7 @@ img, object, embed, video {
   overflow: hidden;
   box-shadow: -5px -1px 14px #333;
   margin: 0;
+  float: left;
   /* Span text for accessibility */
 }
 .logo span {
@@ -2048,7 +2049,7 @@ img, object, embed, video {
   position: relative;
   z-index: 2;
   display: block;
-  padding: 4px 24px 6px;
+  padding: 4px 24px 7px;
   text-align: center;
   background: #be1e2d;
   line-height: 0;
@@ -2057,6 +2058,8 @@ img, object, embed, video {
 .logo-dg {
   max-height: 40px;
   max-height: 80px;
+  max-height: 30px;
+  width: 60px;
 }
 .logo-dg path {
   fill: #fff;
@@ -2156,16 +2159,19 @@ a:hover .articles-item-title, a:focus .articles-item-title {
   padding-top: 20px;
 }
 
-.about-facts {
+.about-facts,
+.skills {
   line-height: 2;
   margin-bottom: 20px;
 }
 
-.about-facts-item {
+.about-facts-item,
+.skills-item {
   position: relative;
   padding-left: 30px;
 }
-.about-facts-item:before {
+.about-facts-item:before,
+.skills-item:before {
   font-family: 'icons';
   position: absolute;
   left: 0;
@@ -2173,7 +2179,7 @@ a:hover .articles-item-title, a:focus .articles-item-title {
 }
 
 .about-facts-age:before {
-  content: '\e605';
+  content: '\e60c';
 }
 
 .about-facts-birthplace:before {
@@ -2182,6 +2188,57 @@ a:hover .articles-item-title, a:focus .articles-item-title {
 
 .about-facts-location:before {
   content: '\e607';
+}
+
+.skills-item:before {
+  text-align: center;
+  min-width: 20px;
+}
+
+.skills-html5:before {
+  content: '\e605';
+}
+
+.skills-css:before {
+  content: '\e60a';
+}
+
+.skills-js:before {
+  content: '\e60b';
+}
+
+.skills-git:before {
+  content: '\e60e';
+}
+
+.skills-pool:before {
+  content: '\e60d';
+}
+
+.about {
+  overflow: hidden;
+}
+
+.about-module {
+  float: left;
+}
+
+.about-me {
+  width: 65%;
+  padding-left: 2%;
+  padding-right: 6%;
+  box-shadow: 1px 0 0 #4e5149;
+  border-right: 1px solid #fff;
+}
+.about-me > p {
+  max-width: 600px;
+}
+
+.about-contact,
+.about-skills {
+  width: 35%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 /*
@@ -2241,6 +2298,7 @@ footer {
   font-size: 18px;
   font-size: 1.125rem;
   border: 1px solid #4e5149;
+  width: auto;
 }
 .no-box-sizing .nav-global-item {
   width: 48.5%;
@@ -2248,6 +2306,7 @@ footer {
 }
 .nav-global-item:first-child {
   width: 34%;
+  width: auto;
 }
 .nav-global-item:first-child, .nav-global-item:nth-child(2) {
   border-bottom: 0;
@@ -2268,6 +2327,7 @@ footer {
   -moz-transition: color 250ms linear;
   -o-transition: color 250ms linear;
   transition: color 250ms linear;
+  width: 140px;
 }
 
 .nav-global-item a:hover,
@@ -2598,9 +2658,16 @@ footer .links-social:before {
   max-width: 400px;
   display: inline-block;
   margin-right: -4px;
+  display: block;
+  max-width: 300px;
+  width: auto;
+  margin: 0 auto;
 }
 .buttons-social-item:nth-child(even) {
   margin-left: 4%;
+}
+.buttons-social-item:nth-child(even) {
+  margin-left: auto;
 }
 
 .social-button {
@@ -2795,6 +2862,7 @@ time {
 }
 
 .homeCarousel-carousel-item {
+  position: relative;
   float: left;
   border: 2px solid black;
   margin-right: 18px;
@@ -2812,24 +2880,27 @@ time {
   width: 100%;
   text-align: center;
 }
-
 .csstransitions .homeCarousel-carousel-item-title {
   bottom: -25px;
-  transition: all .25s linear;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+  -o-transition: 250ms;
+  transition: 250ms;
 }
 
-.homeCarousel-carousel article h3,
-.homeCarousel #canvasFrame h3 {
+.homeCarousel-carousel-item-title h3 {
   display: inline-block;
   background: #000;
   padding: 4px 16px;
-  font-size: 2.6em;
+  font-family: "p22-underground-pc", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
   color: #CED4C9;
   border: 1px solid #fff;
 }
 
-.homeCarousel a:hover .workItemTitle {
+.homeCarousel a:hover .homeCarousel-carousel-item-title {
   opacity: 1;
   bottom: -20px;
   -webkit-transition: 250ms;

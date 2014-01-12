@@ -243,6 +243,16 @@
 			margin-left: 4%;
 		}
 	}
+	@include respond-min($breakpoint-midupper) {
+		display: block;
+		max-width: 300px;
+		width: auto;
+		margin:0 auto;
+
+		&:nth-child(even) {
+			margin-left: auto;
+		}
+	}
 }
 .social-button {
 	position: relative;

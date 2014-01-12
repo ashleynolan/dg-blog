@@ -65,6 +65,7 @@
 			padding:13px 0;
 		}
 			.homeCarousel-carousel-item {
+				position: relative;
 				float:left;
 				border:2px solid black;
 				margin-right:18px;
@@ -80,25 +81,27 @@
 					bottom:-20px;
 					width:100%;
 					text-align:center;
+
+					.csstransitions & {
+						bottom:-25px;
+						@include prefixer(transition, 250ms, webkit moz o spec);
+					}
 				}
-				.csstransitions .homeCarousel-carousel-item-title {
-					bottom:-25px;
-					transition:all .25s linear;
-				}
-					.homeCarousel-carousel article h3,
-					.homeCarousel #canvasFrame h3 {
+
+					.homeCarousel-carousel-item-title h3 {
 						display:inline-block;
 						background:#000;
 						padding:4px 16px;
 
-						font-size:2.6em;
+						font-family: $alt-font-family;
+						@include font-size(20);
 						font-weight:normal;
 						color:#CED4C9;
 
 						border:1px solid #fff;
 					}
 
-				.homeCarousel a:hover .workItemTitle {
+				.homeCarousel a:hover .homeCarousel-carousel-item-title {
 					opacity:1;
 					bottom:-20px;
 

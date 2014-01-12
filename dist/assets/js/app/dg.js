@@ -42,7 +42,7 @@ define ([
 
 			//start the Preloader init to check the images have loaded in before we render to canvas
 			if ($('#homeCarousel').length > 0) {
-				DG.Preloader.init($('#homeCarousel article img'), DG.Carousel.init);
+				DG.Preloader.init($('.featureImg'), DG.Carousel.init);
 			}
 
 			//check if we're in the work section of the site and if so initialise JS wonderment
@@ -229,8 +229,6 @@ define ([
 				//get the canvas element
 				var canvas = document.getElementById('homeCarousel-canvasFrame-canvas');
 
-				log(canvas.getContext);
-
 				//check we can get the 2d context
 				if (canvas.getContext) {
 					DG.Carousel.ctx = canvas.getContext('2d');
@@ -311,7 +309,6 @@ define ([
 			var currentImage = document.getElementById( (DG.Carousel.activeItem).attr('id') ).getElementsByTagName('img')[0],
 				newImage,
 				nextItem;
-
 
 			//not active anymore so remove class
 			(DG.Carousel.activeItem).removeClass('active');
