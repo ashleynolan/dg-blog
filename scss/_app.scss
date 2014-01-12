@@ -139,11 +139,16 @@ img.logo-dg {
 	margin: 0 auto;
 	padding: 0;
 }
+	.articles-subhead {
+		font-family: $alt-font-family;
+		@include font-size(20);
+		padding-bottom: $verticalRhythm/4 + px;
+		margin-bottom: 0;
+	}
 	.articles-item {
 		display: block;
 		padding: 0 10px 20px 0;
-		border-left: 8px solid transparent;
-
+		border: 0 solid transparent;
 		@include prefixer(transition, 300ms ease-in-out, webkit moz o spec);
 
 
@@ -152,13 +157,14 @@ img.logo-dg {
 			.csstransitions & {
 				border-left: 8px solid #333;
 				padding: 0 0 20px 10px;
+
 				background: darken($eggshell, 2%);
 				@include prefixer(transition, 300ms ease-in-out, webkit moz o spec);
 			}
  		}
 
  		.blog &:last-child {
-			border: none;
+			border-bottom: none;
 			box-shadow: none;
  		}
 	}

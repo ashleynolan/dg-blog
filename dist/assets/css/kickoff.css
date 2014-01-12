@@ -2120,10 +2120,18 @@ img.logo-dg {
   padding: 0;
 }
 
+.articles-subhead {
+  font-family: "p22-underground-pc", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
 .articles-item {
   display: block;
   padding: 0 10px 20px 0;
-  border-left: 8px solid transparent;
+  border: 0 solid transparent;
   -webkit-transition: 300ms ease-in-out;
   -moz-transition: 300ms ease-in-out;
   -o-transition: 300ms ease-in-out;
@@ -2139,7 +2147,7 @@ img.logo-dg {
   transition: 300ms ease-in-out;
 }
 .blog .articles-item:last-child {
-  border: none;
+  border-bottom: none;
   box-shadow: none;
 }
 
@@ -2375,11 +2383,11 @@ footer {
 
 .nav-global-item a:hover,
 .nav-global-item.active a {
-  color: #be1e2d;
-  -webkit-transition: color 250ms ease-out;
-  -moz-transition: color 250ms ease-out;
-  -o-transition: color 250ms ease-out;
-  transition: color 250ms ease-out;
+  color: #fff;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
 }
 
 /* Arrow highlighting active
@@ -2874,7 +2882,7 @@ time {
 .homeCarousel-title {
   position: absolute;
   left: 50%;
-  top: 36px;
+  top: 50px;
   z-index: 2;
   background: #be1e2d;
   border: 1px solid #fff;

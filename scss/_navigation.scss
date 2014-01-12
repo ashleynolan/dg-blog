@@ -68,6 +68,7 @@
 		.nav-global-item a {
 			position:relative;
 			z-index:2;
+			//overflow: hidden;
 			display:block;
 			text-decoration:none;
 
@@ -83,12 +84,32 @@
 			@include respond-min($breakpoint-midupper) {
 				width: 140px;
 			}
+
+			// &:before {
+			// 	content: attr(data-hover);
+			// 	display: block;
+			// 	width: 100%;
+
+
+			// 	position: absolute;
+			// 	top: -110%;
+			// 	left: 0;
+			// 	background: #ced4c9;
+			// 	color: #000;
+			// 	line-height: 1.9;
+
+			// 	@include prefixer(transition, 250ms ease-out, webkit moz o spec);
+			// }
 		}
 			.nav-global-item a:hover,
 			.nav-global-item.active a {
-				color:#be1e2d;
+				color:#fff;
+				//background: #ced4c9;
+				// &:before {
+				// 	top: 0;
+				// }
 
-				@include prefixer(transition, color 250ms ease-out, webkit moz o spec);
+				@include prefixer(transition, 250ms ease-out, webkit moz o spec);
 			}
 
 		/* Arrow highlighting active
