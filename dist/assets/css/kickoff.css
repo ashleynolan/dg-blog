@@ -440,7 +440,7 @@ body {
   font-family: "Avenir LT W01 45 Book", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: black;
   background-color: #dce4d7;
 }
@@ -461,13 +461,13 @@ p {
   font-family: "Avenir LT W01 45 Book", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 @media screen and (min-width: 37.5em) {
   p {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 
@@ -540,7 +540,7 @@ h6, .h6, .zeta {
 * + h4, * + .h4, * + .delta,
 * + h5, * + .h5, * + .epsilon,
 * + h6, * + .h6, * + .zeta {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 
 /*
@@ -588,10 +588,10 @@ ol {
 
 ul, ol {
   padding: 0;
-  margin: 0 0 22px 22px;
+  margin: 0 0 24px 24px;
 }
 ul ul, ul ol, ol ul, ol ol {
-  margin-left: 44px;
+  margin-left: 48px;
 }
 ul ul, ol ul {
   list-style-type: circle;
@@ -628,7 +628,7 @@ nav ul, nav ol {
    Definition lists
    ========================================================================== */
 dl {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 dt {
@@ -642,7 +642,7 @@ dt {
 }
 
 dd {
-  margin-left: 22px;
+  margin-left: 24px;
 }
 .dl-horizontal dd {
   margin-left: 240px;
@@ -652,7 +652,7 @@ dd {
    Miscellaneous rules
    ========================================================================== */
 hr {
-  margin: 22px 0;
+  margin: 24px 0;
   border: 0;
   border-top: 1px solid #b3b3b3;
   border-bottom: 1px solid #fff;
@@ -685,7 +685,7 @@ abbr.initialism {
    ========================================================================== */
 blockquote {
   padding-left: 10px;
-  margin: 22px;
+  margin: 24px;
   border-left: 4px solid #cccccc;
 }
 blockquote p {
@@ -720,7 +720,7 @@ blockquote:after {
 
 address {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   font-style: normal;
 }
 
@@ -812,7 +812,7 @@ samp {
     </ul>
    ========================================================================== */
 form {
-  margin: 0 0 22px;
+  margin: 0 0 24px;
 }
 
 /* Fieldset */
@@ -826,11 +826,11 @@ fieldset {
    Form inputs and groups
    ========================================================================== */
 .form-controlGroup {
-  margin-top: 11px;
+  margin-top: 12px;
   list-style-type: none;
 }
 legend + .form-controlGroup {
-  margin-top: 22px;
+  margin-top: 24px;
   -webkit-margin-top-collapse: separate;
 }
 
@@ -841,7 +841,7 @@ select,
 textarea {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: normal;
   vertical-align: baseline;
   *vertical-align: middle;
@@ -883,7 +883,7 @@ select,
   margin-bottom: 9px;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #4d4d4d;
   background-color: #FFF;
   border: 1px solid #cccccc;
@@ -977,10 +977,10 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #4d4d4d;
   border: 0;
   border-bottom: 1px solid #eee;
@@ -1171,9 +1171,9 @@ textarea:focus:required:invalid:focus {
    Form actions
    ========================================================================== */
 .form-actions {
-  padding: 21px 20px 22px;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  padding: 23px 20px 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   background-color: whitesmoke;
   border-top: 1px solid #ddd;
   zoom: 1;
@@ -1299,7 +1299,7 @@ textarea:focus:required:invalid:focus {
 
 .form-helpBlock {
   display: block;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .form-helpInline {
@@ -1316,7 +1316,7 @@ textarea:focus:required:invalid:focus {
      * Code: https://gist.github.com/mrmartineau/6712577#file-labels-inline-html
      ========================================================================== */
   .form--horizontal .form-controlGroup {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     zoom: 1;
   }
   .form--horizontal .form-controlGroup:before, .form--horizontal .form-controlGroup:after {
@@ -1342,7 +1342,7 @@ textarea:focus:required:invalid:focus {
     margin-left: 0;
   }
   .form--horizontal .form-helpBlock {
-    margin-top: 11px;
+    margin-top: 12px;
     margin-bottom: 0;
   }
   .form--horizontal .form-actions {
@@ -1358,11 +1358,11 @@ table {
 
 .table {
   width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 .table th, .table td {
   padding: 8px;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
@@ -1459,9 +1459,9 @@ code {
 
 pre {
   display: block;
-  padding: 10.5px;
-  margin: 0 0 11px;
-  line-height: 1.4;
+  padding: 11.5px;
+  margin: 0 0 12px;
+  line-height: 1.5;
   color: #222222;
   background-color: #f7f7f9;
   border: 1px solid #ccc;
@@ -1476,7 +1476,7 @@ pre {
   word-wrap: break-word;
 }
 pre.prettyprint {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 pre code {
   padding: 0;
@@ -1826,7 +1826,7 @@ img, object, embed, video {
 	========================================================================== */
 .tabs {
   zoom: 1;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   border-bottom: 2px solid #1abc9c;
 }
 .tabs:before, .tabs:after {
@@ -1888,7 +1888,7 @@ img, object, embed, video {
 
 .media-img {
   float: left;
-  margin-right: 22px;
+  margin-right: 24px;
 }
 
 /**
@@ -1896,7 +1896,7 @@ img, object, embed, video {
  */
 .media-img--rev {
   float: right;
-  margin-left: 22px;
+  margin-left: 24px;
 }
 
 .media-img img,
@@ -1998,6 +1998,11 @@ img, object, embed, video {
   padding: 0 3%;
 }
 
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 .page-footer {
   position: relative;
 }
@@ -2007,7 +2012,7 @@ img, object, embed, video {
    ========================================================================== */
 .page-header {
   background: #000;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .page-title {
@@ -2067,7 +2072,7 @@ img, object, embed, video {
   position: relative;
   z-index: 2;
   display: block;
-  padding: 4px 24px 7px;
+  padding: 5px 24px 8px;
   text-align: center;
   background: #be1e2d;
   line-height: 0;
@@ -2116,6 +2121,7 @@ img.logo-dg {
    ========================================================================== */
 .articles {
   width: 92%;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0;
 }
@@ -2157,6 +2163,7 @@ img.logo-dg {
 
 .articles-item-description {
   margin: 0;
+  max-width: 660px;
 }
 
 a .articles-item-title, a
@@ -2189,8 +2196,22 @@ a:hover .articles-item-title, a:focus .articles-item-title {
 /*
    About Page
    ========================================================================== */
+.about-title {
+  margin-bottom: 10px;
+}
+
 .about-module {
   padding-top: 20px;
+}
+
+.about-module-title {
+  font-family: "p22-underground-pc", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.about-speaking {
+  width: 100%;
 }
 
 .about-facts,
@@ -2252,10 +2273,15 @@ a:hover .articles-item-title, a:focus .articles-item-title {
 @media screen and (min-width: 50em) {
   .about {
     overflow: hidden;
+    margin: 0 3%;
+    padding: 0;
   }
 
   .about-module {
     float: left;
+  }
+  .about-module > p {
+    max-width: 660px;
   }
 
   .about-me {
@@ -2265,8 +2291,9 @@ a:hover .articles-item-title, a:focus .articles-item-title {
     box-shadow: 1px 0 0 #4e5149;
     border-right: 1px solid #fff;
   }
-  .about-me > p {
-    max-width: 600px;
+
+  .about-speaking {
+    padding-left: 2%;
   }
 
   .about-contact,
@@ -2274,6 +2301,13 @@ a:hover .articles-item-title, a:focus .articles-item-title {
     width: 35%;
     padding-left: 4%;
     padding-right: 4%;
+  }
+}
+@media screen and (min-width: 81.25em) {
+  .about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 /*
@@ -2288,7 +2322,7 @@ footer {
 }
 @media screen and (min-width: 37.5em) {
   .footer-content {
-    max-width: 80%;
+    max-width: 800px;
     text-align: center;
   }
 }

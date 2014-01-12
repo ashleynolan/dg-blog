@@ -11,6 +11,11 @@
 		padding: 0 3%;
 	}
 
+	.post {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
 	.page-footer {
 		position: relative;
 	}
@@ -21,7 +26,7 @@
 
 .page-header {
 	background: #000;
-	margin-bottom: $verticalRhythm + px;
+	margin-bottom: $verticalRhythm*2 + px;
 }
 
 .page-title {
@@ -90,7 +95,7 @@
 		position: relative;
 		z-index: 2;
 		display:block;
-		padding:4px 24px 7px;
+		padding:5px 24px 8px;
 		text-align:center;
 		background:#be1e2d;
 		line-height:0;
@@ -136,6 +141,7 @@ img.logo-dg {
 
 .articles {
 	width: 92%;
+	max-width: 860px;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -173,6 +179,7 @@ img.logo-dg {
 		}
 		 .articles-item-description {
 		 	margin: 0;
+		 	max-width: 660px;
 		 }
 
 		 .articles-item-title,
@@ -204,9 +211,22 @@ img.logo-dg {
    About Page
    ========================================================================== */
 
+.about-title {
+	margin-bottom: $verticalRhythm/2 + px;
+}
 .about-module {
 	padding-top: $verticalRhythm + px;
 }
+
+	.about-module-title {
+		font-family: $alt-font-family;
+		@include font-size(20);
+	}
+
+	.about-speaking {
+		width: 100%;
+	}
+
 	.about-facts,
 	.skills {
 		line-height: 2;
@@ -243,9 +263,15 @@ img.logo-dg {
 
 	.about {
 		overflow: hidden;
+		margin: 0 3%;
+		padding: 0;
 	}
 		.about-module {
 			float: left;
+
+			& > p {
+				max-width: 660px;
+			}
 		}
 		.about-me {
 			width: 65%;
@@ -254,10 +280,9 @@ img.logo-dg {
 
 			box-shadow: 1px 0 0 #4e5149;
 			border-right: 1px solid #fff;
-
-			& > p {
-				max-width: 600px;
-			}
+		}
+		.about-speaking {
+			padding-left: 2%;
 		}
 		.about-contact,
 		.about-skills {
@@ -265,6 +290,14 @@ img.logo-dg {
 			padding-left: 4%;
 			padding-right: 4%;
 		}
+}
+
+@include respond-min(1300) {
+	.about {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0;
+	}
 }
 
 /*
@@ -278,7 +311,7 @@ footer {
 		margin: 20px auto 0;
 
 		@include respond-min(600) {
-			max-width: 80%;
+			max-width: 800px;
 			text-align: center;
 		}
 	}
