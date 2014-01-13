@@ -108,6 +108,10 @@ h1, .h1, .alpha {
 	@include font-size($h1-size);
 	margin-top: 0;
 	margin-bottom: $vertical-rhythm + px;
+
+	@include respond-min($breakpoint-mid) {
+		@include font-size(48);
+	}
 }
 	// .gigaHeading {
 	// 	position: relative;

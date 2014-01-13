@@ -29,6 +29,11 @@
 }
 	.nav-global > ul {
 		width:100%;
+
+		@include respond-min($breakpoint-midupper) {
+			text-align: center;
+			margin-left: -162px;
+		}
 	}
 	.nav-global-item {
 		position:relative;
@@ -39,10 +44,11 @@
 
 		font-family: $alt-font-family;
 		@include font-size(18);
-		border:1px solid $darkgrey;
+		//border:1px solid $darkgrey;
 
 		@include respond-min($breakpoint-midupper) {
 			width: auto;
+			border: none;
 		}
 
 		.no-box-sizing & {
@@ -77,12 +83,13 @@
 			color:#ced4c9;
 
 			padding:4px 0;
-			border:1px solid #CFD5C9;
+			//border:1px solid #CFD5C9;
 
 			@include prefixer(transition, color 250ms linear, webkit moz o spec);
 
 			@include respond-min($breakpoint-midupper) {
 				width: 140px;
+				border: none;
 			}
 
 			// &:before {

@@ -490,6 +490,12 @@ h1, .h1, .alpha {
   margin-top: 0;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 37.5em) {
+  h1, .h1, .alpha {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
 
 h2, .h2, .beta {
   font-size: 30px;
@@ -2360,6 +2366,12 @@ footer {
 .nav-global > ul {
   width: 100%;
 }
+@media screen and (min-width: 50em) {
+  .nav-global > ul {
+    text-align: center;
+    margin-left: -162px;
+  }
+}
 
 .nav-global-item {
   position: relative;
@@ -2370,11 +2382,11 @@ footer {
   font-family: "p22-underground-pc", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
-  border: 1px solid #4e5149;
 }
 @media screen and (min-width: 50em) {
   .nav-global-item {
     width: auto;
+    border: none;
   }
 }
 .no-box-sizing .nav-global-item {
@@ -2403,7 +2415,6 @@ footer {
   letter-spacing: 1px;
   color: #ced4c9;
   padding: 4px 0;
-  border: 1px solid #CFD5C9;
   -webkit-transition: color 250ms linear;
   -moz-transition: color 250ms linear;
   -o-transition: color 250ms linear;
@@ -2412,6 +2423,7 @@ footer {
 @media screen and (min-width: 50em) {
   .nav-global-item a {
     width: 140px;
+    border: none;
   }
 }
 
@@ -2485,6 +2497,12 @@ footer .links-social:before {
   width: 94%;
   height: 1px;
   border-top: 1px solid #333;
+}
+@media screen and (min-width: 81.25em) {
+  footer .links-social:before {
+    width: 80%;
+    left: 10%;
+  }
 }
 
 .links-social-item:first-child {

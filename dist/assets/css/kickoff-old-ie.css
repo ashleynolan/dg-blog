@@ -483,6 +483,8 @@ h1, .h1, .alpha {
   font-size: 2.25rem;
   margin-top: 0;
   margin-bottom: 20px;
+  font-size: 48px;
+  font-size: 3rem;
 }
 
 h2, .h2, .beta {
@@ -2321,6 +2323,8 @@ footer {
 
 .nav-global > ul {
   width: 100%;
+  text-align: center;
+  margin-left: -162px;
 }
 
 .nav-global-item {
@@ -2332,8 +2336,8 @@ footer {
   font-family: "p22-underground-pc", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
-  border: 1px solid #4e5149;
   width: auto;
+  border: none;
 }
 .no-box-sizing .nav-global-item {
   width: 48.5%;
@@ -2357,12 +2361,12 @@ footer {
   letter-spacing: 1px;
   color: #ced4c9;
   padding: 4px 0;
-  border: 1px solid #CFD5C9;
   -webkit-transition: color 250ms linear;
   -moz-transition: color 250ms linear;
   -o-transition: color 250ms linear;
   transition: color 250ms linear;
   width: 140px;
+  border: none;
 }
 
 .nav-global-item a:hover,

@@ -38,6 +38,11 @@
 			width: 94%;
 			height:1px;
 			border-top: 1px solid #333;
+
+			@include respond-min(1300) {
+				width: 80%;
+				left: 10%;
+			}
 		}
 	}
 }
