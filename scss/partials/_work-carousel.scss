@@ -156,10 +156,23 @@
 		box-shadow: 0 0 9px 0px #000 inset;
 		border-radius: 50%;
 
+		font-family: 'icons';
+		@include font-size(40);
+		color: #ccc;
+		text-align: center;
+		line-height: 2.4;
+
+		@include prefixer(transition, 250ms ease-out, webkit moz o spec);
+
 		@include respond-min($breakpoint-mid) {
 			width:91px;
 			height:91px;
 			top:50%;
+		}
+
+		&:hover {
+			color: #fff;
+			@include prefixer(transition, 250ms ease-out, webkit moz o spec);
 		}
 	}
 	.carLeft {
@@ -170,19 +183,13 @@
 
 		&:hover {
 			left:-10px;
-
-			transition:left .25s linear;
 		}
 	}
 	.carRight {
 		right:-20px;
 		border-radius: 50% 0 0 50%;
 
-		transition:right .25s linear;
-
 		&:hover {
 			right:-10px;
-
-			transition:right .25s linear;
 		}
 	}

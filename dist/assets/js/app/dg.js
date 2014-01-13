@@ -224,7 +224,7 @@ define ([
 
 
 			//now we've loaded, can attach events to the carousel buttons
-			(DG.Carousel.workWrapper).append('<a id="carLeft" class="carLeft"></a><a id="carRight" class="carRight"></a>');
+			(DG.Carousel.workWrapper).append('<a id="carLeft" class="carLeft icon-arrow-left"></a><a id="carRight" class="carRight icon-arrow-right"></a>');
 
 			//work out midpoint (floored rather than rounded to get the index)
 			var midPoint = Math.floor(DG.Carousel.numOfItems / 2);

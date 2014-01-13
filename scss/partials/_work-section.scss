@@ -1,0 +1,50 @@
+.work {
+	position: relative;
+	max-width: 980px;
+	margin: 0 auto;
+
+	&:after {
+		content: '';
+		height: 100%;
+		width: 1px;
+		border-left: 1px solid #000;
+		position: absolute;
+		top: 0;
+		left: 13%;
+		z-index: -1;
+	}
+}
+	.work-item {
+		position: relative;
+		padding: $verticalRhythm + px 0;
+	}
+		.work-item-img {
+			margin-bottom: $verticalRhythm + px;
+			border: 1px solid #fff;
+			box-shadow: 0 0 0 1px #333;
+		}
+		.work-item-title,
+		.work-item-description,
+		.work-item-time {
+			margin-left: 14%;
+		}
+		.work-item-title {
+			@include respond-max($breakpoint-mid) {
+				margin-top: 0;
+			}
+		}
+		.work-item-time {
+			color: #333;
+			max-width: 50px;
+
+			@include font-size(24);
+			font-weight: bold;
+			line-height: 1;
+
+			@include respond-min($breakpoint-mid) {
+				position: absolute;
+				left: 2.5%;
+				top: 52px;
+				margin:0;
+			}
+		}

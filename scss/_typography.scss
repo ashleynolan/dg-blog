@@ -72,6 +72,8 @@ p {
 	margin-bottom: $vertical-rhythm*1.5 + px;
 	margin-top: 0;
 
+	max-width: 660px;
+
 	@include respond-min($breakpoint-mid) {
 		@include font-size(22);
 	}

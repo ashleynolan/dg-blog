@@ -37,6 +37,7 @@
 	padding-left: 1em;          /* [7] */
 	overflow:visible;           /* [8] */
 	text-align: center;
+	color: #fff;
 
 	// You may want to change this
 	background-color: $btn-background;
@@ -63,6 +64,10 @@
 		background-image: none;
 		@include opacity(65);
 		@include box-shadow(none);
+	}
+
+	&:visited {
+		color: #fff;
 	}
 }
 

@@ -461,6 +461,7 @@ p {
   font-size: 1rem;
   margin-bottom: 30px;
   margin-top: 0;
+  max-width: 660px;
   font-size: 22px;
   font-size: 1.375rem;
 }
@@ -470,7 +471,7 @@ p {
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: "Avenir LT W01 85 Heavy";
+  font-family: "Avenir LT W01 85 Heavy", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-rendering: optimizelegibility;
 }
@@ -1511,7 +1512,8 @@ pre code {
   overflow: visible;
   /* [8] */
   text-align: center;
-  background-color: white;
+  color: #fff;
+  background-color: #333333;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
@@ -1542,6 +1544,9 @@ pre code {
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
+}
+.btn:visited, .tabs a:visited {
+  color: #fff;
 }
 
 .btn--large {
@@ -2391,7 +2396,7 @@ img.logo-dg {
 }
 
 .articles-subhead {
-  font-family: "p22-underground-pc", sans-serif;
+  font-family: "p22-underground-pc", "Avenir LT W01 85 Heavy", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   padding-bottom: 5px;
@@ -2469,7 +2474,7 @@ a:hover .articles-item-title, a:focus .articles-item-title {
 }
 
 .about-module-title {
-  font-family: "p22-underground-pc", sans-serif;
+  font-family: "p22-underground-pc", "Avenir LT W01 85 Heavy", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
 }
@@ -2602,7 +2607,7 @@ footer {
   width: 33%;
   padding: 2px;
   margin-bottom: 0;
-  font-family: "p22-underground-pc", sans-serif;
+  font-family: "p22-underground-pc", "Avenir LT W01 85 Heavy", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   width: auto;
@@ -3132,17 +3137,17 @@ a:hover .links-social-icon {
   content: '\e60b';
 }
 
-.icon-arrow-right {
+.icon-arrow-right:after {
   content: '\e606';
 }
 
-.icon-arrow-left {
+.icon-arrow-left:after {
   content: '\e607';
 }
 
 time {
   display: inline-block;
-  font-family: "p22-underground-pc", sans-serif;
+  font-family: "p22-underground-pc", "Avenir LT W01 85 Heavy", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 400;
@@ -3176,7 +3181,7 @@ time {
   width: 204px;
   padding: 15px 15px 10px;
   margin-left: -102px;
-  font-family: "p22-underground-pc", sans-serif;
+  font-family: "p22-underground-pc", "Avenir LT W01 85 Heavy", Helvetica, Arial, sans-serif;
   font-size: 28px;
   font-size: 1.75rem;
   color: #fff;
@@ -3244,7 +3249,7 @@ time {
   display: inline-block;
   background: #000;
   padding: 4px 16px;
-  font-family: "p22-underground-pc", sans-serif;
+  font-family: "p22-underground-pc", "Avenir LT W01 85 Heavy", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: normal;
@@ -3303,9 +3308,27 @@ time {
   background: #333;
   box-shadow: 0 0 9px 0px #000 inset;
   border-radius: 50%;
+  font-family: 'icons';
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #ccc;
+  text-align: center;
+  line-height: 2.4;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
   width: 91px;
   height: 91px;
   top: 50%;
+}
+.carLeft:hover,
+.carRight:hover {
+  color: #fff;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
 }
 
 .carLeft {
@@ -3315,17 +3338,60 @@ time {
 }
 .carLeft:hover {
   left: -10px;
-  transition: left .25s linear;
 }
 
 .carRight {
   right: -20px;
   border-radius: 50% 0 0 50%;
-  transition: right .25s linear;
 }
 .carRight:hover {
   right: -10px;
-  transition: right .25s linear;
+}
+
+.work {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.work:after {
+  content: '';
+  height: 100%;
+  width: 1px;
+  border-left: 1px solid #000;
+  position: absolute;
+  top: 0;
+  left: 13%;
+  z-index: -1;
+}
+
+.work-item {
+  position: relative;
+  padding: 20px 0;
+}
+
+.work-item-img {
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 1px #333;
+}
+
+.work-item-title,
+.work-item-description,
+.work-item-time {
+  margin-left: 14%;
+}
+
+.work-item-time {
+  color: #333;
+  max-width: 50px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  left: 2.5%;
+  top: 52px;
+  margin: 0;
 }
 
 /*
