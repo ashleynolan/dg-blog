@@ -38,8 +38,6 @@ define ([
 
 			DG.GlobalNav.init();
 
-			//DG.ScaleText.init();
-
 			//start the Preloader init to check the images have loaded in before we render to canvas
 			if ($('#homeCarousel').length > 0) {
 				DG.Preloader.init($('.featureImg'), DG.Carousel.init);
@@ -132,14 +130,6 @@ define ([
 					DG.SiteSetup.switchLogo('hoz');
 				}
 
-				//workNavigation checks
-				DG.WorkWrapper.checkBreakpoints();
-
-			}
-
-			//any checks to fire on every resize event
-			if (DG.WorkWrapper.workNav.length > 0 && DG.ResponsiveControl.newBreakpoint >= 832) {
-				DG.WorkWrapper.resizeWrapper();
 			}
 
 
@@ -183,18 +173,6 @@ define ([
 		}
 	},
 
-	//uses fitText to scale text in certain sections
-	DG.ScaleText = {
-		init : function () {
-			$(".mainArticle h2").fitText(1, { minFontSize: '36px', maxFontSize: '90px' });
-
-			DG.ScaleText.scaleWorkText();
-		},
-
-		scaleWorkText : function () {
-			$(".workText h2").fitText(0.6, { minFontSize: '42px', maxFontSize: '60px' });
-		}
-	},
 
 	DG.Carousel = {
 		//'Global' vars
@@ -262,6 +240,8 @@ define ([
 			DG.Carousel.activeItem = (DG.Carousel.carouselItems).eq(0);
 			(DG.Carousel.activeItem).addClass('active');
 
+			DG.Carousel.initialDraw();
+
 			//retrieve the newly modifed list of articles after repositioning
 			DG.Carousel.carouselItems = $('.homeCarousel-carousel-item');
 
@@ -300,6 +280,15 @@ define ([
 					DG.Carousel.draw();
 				}
 			});
+		},
+
+		initialDraw : function () {
+
+			var img = DG.Carousel.activeItem.find('img')[0];
+
+			DG.Carousel.ctx.drawImage(img,0,0, DG.Carousel.WIDTH, DG.Carousel.HEIGHT);
+			//newCanvas = DG.Carousel.ctx.getImageData(0,0, DG.Carousel.WIDTH, DG.Carousel.HEIGHT);
+
 		},
 
 		//starts the draw process
@@ -470,230 +459,6 @@ define ([
 		}
 	},
 
-	DG.WorkWrapper = {
-		outer				: $('#work-element'),
-		frame				: $('.workWrapper'),
-		assetWrap			: $('.workAssets'),
-		items				: $('.workWrapper .workAssets li'),
-		workNav				: $('.workWrapper nav'),
-		workNavLinks		: $('.workWrapper nav a:not(".workSelectionButton")'),
-		rawElement			: '',
-		navButton			: $('.workWrapper .workSelectionButton'),
-		navAnimateDirection	: 'left',
-		navPos				: '163',
-		activeItem			: null,
-		imagesLoaded		: false,
-
-		init: function () {
-
-			DG.WorkWrapper.storeRawCarousel();
-
-			DG.WorkWrapper.checkHash();
-
-			WINDOW.hashchange(function () {
-				DG.WorkWrapper.checkHash();
-			});
-
-			//lazy load in flexslider plugin when needed
-			LazyLoad.js('/assets/js/libs/flexslider/jquery.flexslider.js', function () {
-				DG.WorkWrapper.imagesLoaded = true;
-				DG.WorkWrapper.checkBreakpoints();
-
-				$('#loadergif').fadeOut(function () {
-					DG.WorkWrapper.outer.animate({'opacity': '1'});
-				});
-
-			});
-
-
-		},
-
-		//store raw HTML so we can reinitialise different functionality later when needed
-		storeRawCarousel : function () {
-
-			//store our initial HTML
-			DG.WorkWrapper.rawElement = DG.WorkWrapper.outer.html();
-
-		},
-
-		//called by responsive resize function whenever we hit a breakpoint in the CSS
-		checkBreakpoints : function () {
-
-			//include any changes to the carousel caused by resizing
-			//should first remove() already initialised flexslider code
-			//then replace with the raw html we have stored
-			//and finally call flexslider with new values to reinitialise
-
-			//check we have a work nav
-			if (DG.WorkWrapper.workNav.length > 0 && DG.WorkWrapper.imagesLoaded !== false) {
-
-				if (DG.ResponsiveControl.newBreakpoint >= 832) {
-					DG.WorkWrapper.bindEvents('fullwidth'); //setup fullwidth bindings
-				} else if (DG.ResponsiveControl.newBreakpoint < 832) {
-					DG.WorkWrapper.bindEvents('mobile'); //setup mobile bindings
-				}
-
-			}
-
-		},
-
-		checkHash : function () {
-
-			var hash = window.location.hash,
-				hashElement = $(hash),
-				index = 0;
-
-			if (hashElement.length > 0 ) {
-				var assets = DG.WorkWrapper.frame.find('.workAssets li');
-
-				assets.removeClass('active');
-				DG.WorkWrapper.workNavLinks.removeClass('active');
-				hashElement.addClass('active');
-				DG.ScaleText.init();
-
-				//get index of hash element
-				index = assets.index(hashElement);
-			}
-
-			DG.WorkWrapper.workNavLinks.eq(index).addClass('active');
-			DG.WorkWrapper.activeItem = $('.workAssets .active');
-
-			WINDOW.trigger('resize');
-
-		},
-
-		resizeWrapper: function () {
-
-			if (DG.WorkWrapper.activeItem !== null) {
-				DG.WorkWrapper.frame.height( (DG.WorkWrapper.activeItem).find('img')[0].height );
-				DG.WorkWrapper.assetWrap.height( (DG.WorkWrapper.activeItem).find('img')[0].height );
-			}
-
-		},
-
-		resetWorkWrapper: function () {
-
-			DG.WorkWrapper.frame.remove();
-			DG.WorkWrapper.outer.append(DG.WorkWrapper.rawElement);
-
-			DG.WorkWrapper.frame = $('.workWrapper');
-			DG.WorkWrapper.assetWrap = $('.workAssets');
-			DG.WorkWrapper.items = DG.WorkWrapper.assetWrap.find('li');
-			DG.WorkWrapper.workNav	= DG.WorkWrapper.frame.find('nav');
-			DG.WorkWrapper.workNavLinks = DG.WorkWrapper.workNav.find('a:not(".workSelectionButton")');
-			DG.WorkWrapper.navButton = DG.WorkWrapper.frame.find('.workSelectionButton');
-			DG.WorkWrapper.activeItem = DG.WorkWrapper.assetWrap.find('.active');
-
-			DG.WorkWrapper.checkHash();
-
-		},
-
-		//takes care of the binding of the work nav slider
-		navSlider: function () {
-			$(DG.WorkWrapper.workNav).hover(
-				function () {
-					var direction = [];
-					direction[DG.WorkWrapper.navAnimateDirection] = '0px';
-					DG.WorkWrapper.workNav.stop().animate(direction);
-				},
-				function () {
-					var direction = [];
-					direction[DG.WorkWrapper.navAnimateDirection] = - DG.WorkWrapper.navPos + 'px';
-					DG.WorkWrapper.workNav.stop().animate(direction);
-				}
-			);
-		},
-
-		goToWorkItem: function (workItemLink) {
-			//get the id of the link, from which we can get everything else we needs
-			var workItemId = workItemLink.href.split('/')[4],
-				workItem = $('#' + workItemId);
-
-			//reset active link
-			DG.WorkWrapper.workNavLinks.removeClass('active');
-			$(workItemLink).addClass('active');
-
-			DG.WorkWrapper.activeItem.animate({
-				'left': '100%'
-			}, function () {
-				this.style = '';
-				this.className = '';
-			});
-
-			workItem.css({
-				'left': '-100%',
-				'display': 'block'
-			}).animate({
-				'left' : '0%'
-			}).addClass('active');
-
-			DG.ScaleText.init();
-
-			DG.WorkWrapper.activeItem = workItem;
-		},
-
-		bindEvents: function (type) {
-
-			//if we've got work links, then bind click event to fire goToWorkItem
-			if (DG.WorkWrapper.workNavLinks.length > 0) {
-
-				if (type === 'fullwidth') {
-
-					//
-					if ($('.flex-viewport').length > 0) {
-						DG.WorkWrapper.resetWorkWrapper();
-					}
-
-					DG.WorkWrapper.workNav.show();
-
-					DG.ScaleText.scaleWorkText();
-
-					DG.WorkWrapper.workNavLinks.on('click.fullwidth', function (e) {
-						e.preventDefault();
-
-						if (DG.WorkWrapper.navAnimateDirection === 'left' && this.className !== 'active') {
-							DG.WorkWrapper.goToWorkItem(this);
-						}
-					});
-
-					DG.WorkWrapper.workNav.show();
-
-					DG.WorkWrapper.navSlider();
-
-				} else if (type === 'mobile') {
-
-					DG.WorkWrapper.workNavLinks.off('click.fullwidth');
-
-					DG.WorkWrapper.workNav.hide();
-					DG.WorkWrapper.frame[0].style.height = '';
-					DG.WorkWrapper.items.css('left', '0');
-
-					$(".workText h2").each(function () {
-						var $this = $(this);
-						$this.clone(false).appendTo($this.parent('.workText')).end().remove();
-					});
-					$(".workText h2").css('font-size', '');
-
-
-					//reinitialise the flexslider
-					DG.WorkWrapper.frame.flexslider({
-						animation: "slide",
-						slideshow: false,
-						selector: '.workAssets > li',
-						startAt: DG.WorkWrapper.items.index(DG.WorkWrapper.activeItem)
-						/*start: function(slider) {
-							$(slider).append('<div class="pager"></div>');
-							$(slider).find('.pager').html('<p><sup>' + (slider.currentSlide + 1) + '/</sup>' + slider.count);
-						},
-						after: function(slider) {
-							$(slider).find('.pager').html('<p><sup>' + (slider.currentSlide + 1) + '/</sup>' + slider.count);
-						}*/
-					});
-
-				}
-			}
-		}
-	},
 
 	//preloader checks the images in our carousel have loaded and only attaches the click events if they have
 	DG.Preloader = {

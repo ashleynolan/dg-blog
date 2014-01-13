@@ -1967,6 +1967,293 @@ img, object, embed, video {
   margin-bottom: 1.5%;
 }
 
+/* ==========================================================================
+	Components:
+	* Embedded content
+	* Centred list
+	* Floated lists
+	* Wells
+	* Tabs
+	* Media Object
+	* Block grids
+	========================================================================== */
+/*
+	Embedded content
+	========================================================================== */
+img {
+  font-style: italic;
+  color: #c00;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+img.img--left {
+  margin: 0 20px 0 0;
+}
+img.img--right {
+  margin: 0 0 0 20px;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+img, object, embed, video {
+  max-width: 100%;
+}
+
+/*
+	Centred lists
+
+	<ul class="l-list--centred">
+		<li></li>
+	</ul>
+	========================================================================== */
+.l-list--centred, .l-list--centered {
+  text-align: center;
+}
+.l-list--centred li, .l-list--centered li {
+  display: inline;
+}
+
+/*
+	Floated lists
+
+	<ul class="l-list--floated">
+		<li></li>
+	</ul>
+	========================================================================== */
+.l-list--floated {
+  zoom: 1;
+}
+.l-list--floated:before, .l-list--floated:after {
+  display: table;
+  content: " ";
+}
+.l-list--floated:after {
+  clear: both;
+}
+.l-list--floated li {
+  float: left;
+  display: inline-block;
+}
+
+/*
+	Wells
+
+	Use the well as a simple effect on an element to give it an inset effect
+	<div class="well"></div>
+	========================================================================== */
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #eee;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.well--large {
+  padding: 24px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.well--small {
+  padding: 9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/*
+	Tabs
+
+	* Usage: 
+	<ul class="tabs">
+		<li><a href="#tabs-example-1" class="is-active">Tab 1</a></li>
+		<li><a href="#tabs-example-2">Tab 2</a></li>
+	</ul>
+	
+	<!-- Tabs Content -->
+	<ul class="l-tabsContent">
+		<li id="tabs-example-1" class="is-active">
+			Tab 1 content
+		</li>
+
+		<li id="tabs-example-2">
+			Tab 2 content
+		</li>
+	</ul>
+	========================================================================== */
+.tabs {
+  zoom: 1;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #1abc9c;
+}
+.tabs:before, .tabs:after {
+  display: table;
+  content: " ";
+}
+.tabs:after {
+  clear: both;
+}
+.tabs.tabs--alignRight li {
+  float: right;
+}
+.tabs.tabs--alignCentre, .tabs.tabs--alignCenter {
+  text-align: center;
+}
+.tabs.tabs--alignCentre > li, .tabs.tabs--alignCenter > li {
+  display: inline;
+  float: none;
+}
+.tabs > li {
+  float: left;
+  margin: 0 5px;
+}
+.tabs a {
+  background-color: #95a5a6;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+}
+.tabs a.is-active {
+  background-color: #1abc9c;
+}
+
+.l-tabsContent > li {
+  display: none;
+}
+.l-tabsContent > li.is-active {
+  display: block;
+}
+
+/*
+	Media Object
+
+	* Place any image- and text-like content side-by-side, as per:
+	* stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+	* E.g.:
+	*
+	<div class="media">
+		<img src="http://placekitten.com/100/100" alt="" class="media-img>"
+		<p class="media-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	========================================================================== */
+.media {
+  display: block;
+}
+
+.media-img {
+  float: left;
+  margin-right: 24px;
+}
+
+/**
+ * Reversed image location (right instead of left).
+ */
+.media-img--rev {
+  float: right;
+  margin-left: 24px;
+}
+
+.media-img img,
+.media-img--rev img {
+  display: block;
+}
+
+.media-body {
+  overflow: hidden;
+}
+
+.media-body,
+.media-body > :last-child {
+  margin-bottom: 0;
+}
+
+/*
+   Block grids
+
+   These are 2-up, 3-up, 4-up and 5-up ULs, suited for repeating blocks of content. Add 'mobile' to them to switch them just like the layout grid (one item per line) on phones. For IE7/8 compatibility blockGrid items need to be the same height. You can optionally uncomment the lines below to support arbitrary height, but know that IE7/8 do not support :nth-child.
+
+   Usage:
+   <ul class="l-blockGrid l-blockGrid--twoUp">
+       <li></li>
+   </ul>
+   ========================================================================== */
+.l-blockGrid {
+  display: block;
+  list-style-type: none;
+  zoom: 1;
+}
+.l-blockGrid:before, .l-blockGrid:after {
+  display: table;
+  content: " ";
+}
+.l-blockGrid:after {
+  clear: both;
+}
+.l-blockGrid li {
+  display: block;
+  height: auto;
+}
+
+.l-blockGrid li {
+  display: block;
+  height: auto;
+  float: left;
+}
+.l-blockGrid.l-blockGrid--twoUp {
+  margin-left: -4%;
+}
+.l-blockGrid.l-blockGrid--twoUp li {
+  margin-left: 4%;
+  width: 46%;
+  margin-bottom: 4%;
+}
+.l-blockGrid.l-blockGrid--threeUp {
+  margin-left: -2%;
+}
+.l-blockGrid.l-blockGrid--threeUp li {
+  margin-left: 2%;
+  width: 31.3%;
+  margin-bottom: 2%;
+}
+.l-blockGrid.l-blockGrid--fourUp {
+  margin-left: -2%;
+}
+.l-blockGrid.l-blockGrid--fourUp li {
+  margin-left: 2%;
+  width: 23%;
+  margin-bottom: 2%;
+}
+.l-blockGrid.l-blockGrid--fiveUp {
+  margin-left: -1.5%;
+}
+.l-blockGrid.l-blockGrid--fiveUp li {
+  margin-left: 1.5%;
+  width: 18.5%;
+  margin-bottom: 1.5%;
+}
+
 /*
    Your app styles
    * Consider modularizing your code.
@@ -2075,7 +2362,8 @@ img, object, embed, video {
   -o-transition: fill 300ms ease;
   transition: fill 300ms ease;
 }
-.logo-dg:hover path {
+
+.logo-link:hover path {
   fill: #000;
   stroke: #666;
   stroke-width: 3;
@@ -2209,41 +2497,13 @@ a:hover .articles-item-title, a:focus .articles-item-title {
   top: 0;
 }
 
-.about-facts-age:before {
-  content: '\e60c';
-}
-
-.about-facts-birthplace:before {
-  content: '\e606';
-}
-
-.about-facts-location:before {
-  content: '\e607';
-}
-
 .skills-item:before {
   text-align: center;
   min-width: 20px;
-}
-
-.skills-html5:before {
-  content: '\e605';
-}
-
-.skills-css:before {
-  content: '\e60a';
-}
-
-.skills-js:before {
-  content: '\e60b';
-}
-
-.skills-git:before {
-  content: '\e60e';
-}
-
-.skills-pool:before {
-  content: '\e60d';
+  font-weight: normal;
+  font-varient: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .about {
@@ -2457,49 +2717,45 @@ footer .links-social:before {
 .links-social-item > a {
   float: left;
   background-color: #CED4C9;
-  transition: background-color .25s linear;
 }
-.links-social-item > a span {
+
+.links-social-icon {
   float: left;
   border: 1px solid #cfd5c9;
   width: 36px;
   height: 37px;
-  text-indent: -99999px;
-  transition: border-color .25s linear;
+  background-color: #000;
+  color: #fff;
+  font-family: 'icons';
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.7;
+  font-weight: normal;
+  font-varient: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color 250ms linear;
+  -moz-transition: color 250ms linear;
+  -o-transition: color 250ms linear;
+  transition: color 250ms linear;
   /* fixing width for border-box compat */
 }
-.no-box-shadow .links-social-item > a span {
+.no-box-shadow .links-social-icon {
   width: 34px;
 }
-
-.links-social-email a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -115px;
-}
-
-.links-social-linkedin a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -151px;
-}
-
-.links-social-twitter a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -187px;
-}
-
-.links-social-github a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -223px;
-}
-
-.links-social-rss a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -259px;
-}
-
-.links-social li.delicious a span {
-  background: url(/assets/img/ui/icon-sprite.png) no-repeat left -295px;
-}
-
-.links-social-item a:hover {
-  background-color: #be1e2d;
+a:hover .links-social-icon {
+  color: #be1e2d;
   text-decoration: none;
-  transition: background-color .25s linear;
+  -webkit-transition: color 250ms linear;
+  -moz-transition: color 250ms linear;
+  -o-transition: color 250ms linear;
+  transition: color 250ms linear;
+}
+
+.screen-reader-text {
+  position: absolute;
+  top: 100%;
+  left: 100%;
 }
 
 .social-button,
@@ -2574,7 +2830,8 @@ footer .links-social:before {
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  font: 1.25rem/2 "icons";
+  font: 26px/1.7 "icons";
+  font-weight: normal;
   color: white;
   text-align: center;
   pointer-events: none;
@@ -2592,33 +2849,12 @@ footer .links-social:before {
   border-radius: .25rem;
 }
 
-.email .social-button-innie:after, .email
+.social-button-innie:after,
 .social-button-outie:after {
-  content: "\e608";
-}
-.twitter .social-button-innie:after, .twitter
-.social-button-outie:after {
-  content: "\e600";
-}
-.github .social-button-innie:after, .github
-.social-button-outie:after {
-  content: "\e601";
-}
-.linkedin .social-button-innie:after, .linkedin
-.social-button-outie:after {
-  content: "\e602";
-}
-.rss .social-button-innie:after, .rss
-.social-button-outie:after {
-  content: "\e603";
-}
-.gplus .social-button-innie:after, .gplus
-.social-button-outie:after {
-  content: "\e604";
-}
-.delicious .social-button-innie:after, .delicious
-.social-button-outie:after {
-  content: "\e609";
+  font-weight: normal;
+  font-varient: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .social-button-innie {
@@ -2690,12 +2926,6 @@ footer .links-social:before {
 }
 .github .social-button-outie {
   background-color: #16a085;
-}
-.rss .social-button-outie {
-  background-color: #e67e22;
-}
-.delicious .social-button-outie {
-  background-color: #8e44ad;
 }
 
 .buttons-social-item {
@@ -2836,6 +3066,80 @@ footer .links-social:before {
   transform: rotateX(50deg) scale(0.95);
 }
 
+.icon,
+[class^="icon"] {
+  position: relative;
+  font-family: 'icons';
+  font-weight: normal;
+  font-varient: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:after {
+  content: "\e608";
+}
+
+.icon-email-shaded:after {
+  content: "\e60f";
+}
+
+.icon-twitter:after {
+  content: "\e600";
+}
+
+.icon-github:after {
+  content: "\e602";
+}
+
+.icon-linkedin:after {
+  content: "\e605";
+}
+
+.icon-linkedin-shaded:after {
+  content: "\e601";
+}
+
+.icon-html5:before {
+  content: '\e603';
+}
+
+.icon-css:before {
+  content: '\e60c';
+}
+
+.icon-js:before {
+  content: '\e60d';
+}
+
+.icon-git:before {
+  content: '\e604';
+}
+
+.icon-pool:before {
+  content: '\e609';
+}
+
+.icon-calendar:before {
+  content: '\e60a';
+}
+
+.icon-home:before {
+  content: '\e60e';
+}
+
+.icon-pin:before {
+  content: '\e60b';
+}
+
+.icon-arrow-right {
+  content: '\e606';
+}
+
+.icon-arrow-left {
+  content: '\e607';
+}
+
 time {
   display: inline-block;
   font-family: "p22-underground-pc", sans-serif;
@@ -2970,6 +3274,9 @@ time {
   font-size: 0px;
   font-size: 0rem;
   /*padding:2px 22px;*/
+}
+.homeCarousel-canvasFrame .no-canvas {
+  display: none;
 }
 
 .homeCarousel-canvasFrame-link {

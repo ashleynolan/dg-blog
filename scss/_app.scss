@@ -117,15 +117,14 @@
 		fill: #fff;
 		@include prefixer(transition, fill 300ms ease, webkit moz o spec);
 	}
-
-	&:hover path {
+}
+	.logo-link:hover path {
 		fill: #000;
 		stroke: #666;
 		stroke-width: 3;
 
 		@include prefixer(transition, fill 300ms ease, webkit moz o spec);
 	}
-}
 img.logo-dg {
 	display: none;
 
@@ -244,20 +243,19 @@ img.logo-dg {
 				top: 0;
 			}
 		}
-			.about-facts-age:before { content: '\e60c';	}
-			.about-facts-birthplace:before { content: '\e606'; }
-			.about-facts-location:before { content: '\e607'; }
+
 
 
 		.skills-item:before {
 			text-align: center;
 			min-width: 20px;
+
+			font-weight: normal;
+			font-varient: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
 		}
-			.skills-html5:before { content: '\e605';	}
-			.skills-css:before { content: '\e60a';	}
-			.skills-js:before { content: '\e60b';	}
-			.skills-git:before { content: '\e60e';	}
-			.skills-pool:before { content: '\e60d';	}
+
 
 @include respond-min($breakpoint-midupper) {
 
