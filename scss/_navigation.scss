@@ -82,8 +82,7 @@
 			letter-spacing:1px;
 			color:#ced4c9;
 
-			padding:4px 0;
-			//border:1px solid #CFD5C9;
+			padding:6px 0 2px;
 
 			@include prefixer(transition, color 250ms linear, webkit moz o spec);
 

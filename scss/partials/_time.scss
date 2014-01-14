@@ -12,3 +12,8 @@ time {
 		text-shadow: #000 1px 1px 1px;
 	}
 }
+
+.post-date {
+	padding-top: $verticalRhythm*2 + px;
+	margin-top: $verticalRhythm*4 + px;
+}

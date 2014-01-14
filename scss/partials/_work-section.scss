@@ -17,12 +17,26 @@
 	.work-item {
 		position: relative;
 		padding: $verticalRhythm + px 0;
+
+		.btn {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 		.work-item-img {
 			margin-bottom: $verticalRhythm + px;
 			border: 1px solid #fff;
 			box-shadow: 0 0 0 1px #333;
 			line-height: 0;
+			text-align: center;
+
+			> img {
+				max-width: none;
+				width: 100%;
+			}
 		}
 		.work-item-title,
 		.work-item-description,
