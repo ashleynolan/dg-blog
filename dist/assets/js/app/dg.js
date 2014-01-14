@@ -56,7 +56,7 @@ define ([
 
 			if (window.addEventListener) {
 				window.addEventListener('load', function() {
-					new FastClick(document.body);
+					var swiftclick = SwiftClick.attach (document.body);
 				}, false);
 			}
 		},

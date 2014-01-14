@@ -13,7 +13,9 @@ require.config({
 		propertyParser: 'components/require-plugins/propertyParser',
 
 		mbp: 'helpers/mobile-plugins',
-
+		swiftClick: 'helpers/swiftclick',
+		adaptiveImage: 'helpers/adaptiveImage',
+		prism: 'helpers/prism',
 		setExternalLinks: 'helpers/setExternalLinks',
 
 		//text: 'components/require-plugins/text',

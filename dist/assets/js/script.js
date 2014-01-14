@@ -10,10 +10,13 @@ require([
 	'jquery',
 	'log',
 	'mbp',
+	'swiftClick',
+	'adaptiveImage',
 	'setExternalLinks',
 	'modernizr',
-	'App'
+	'App',
+	'prism'
 ],
-function (fontRplyOne, fontReplyTwo, $, log, MBP, Modernizr, App) {
+function ($, log, MBP, sw, ai, ext, Modernizr, App, prism) {
 
 });

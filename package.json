@@ -40,7 +40,8 @@
     "handlebars-helper-eachitems": "~0.1.2",
     "handlebars-helper-paginate": "~0.2.0",
     "assemble-contrib-permalinks": "~0.3.2",
-    "grunt-contrib-requirejs": "~0.4.1"
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-responsive-images": "~0.1.1"
   },
   "keywords": []
 }

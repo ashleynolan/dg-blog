@@ -159,6 +159,8 @@ img.logo-dg {
 
 		&:hover,
 		&:focus {
+			text-decoration: none;
+
 			.csstransitions & {
 				border-left: 8px solid #333;
 				padding: 0 0 20px 10px;

@@ -87,6 +87,8 @@ p {
 	// }
 }
 
+
+
 /*
    Headings
    ========================================================================== */
@@ -129,6 +131,7 @@ h2, .h2, .beta {
 
 	@include respond-min($breakpoint-mid) {
 		@include font-size(36);
+		margin-bottom: $vertical-rhythm + px;
 	}
 }
 
@@ -164,7 +167,7 @@ h6, .h6, .zeta {
 * + h4, * + .h4, * + .delta,
 * + h5, * + .h5, * + .epsilon,
 * + h6, * + .h6, * + .zeta, {
-  margin-top: $base-line-height + px;
+  margin-top: $verticalRhythm + px;
 }
 
 /*
@@ -180,7 +183,10 @@ a {
 	}
 	&:hover, &:focus {
 		color: $color-link-hover;
-		//text-decoration: underline;
+
+		p & {
+			text-decoration: underline;
+		}
 	}
 	&:active {
 		color: $color-link-active;
@@ -300,11 +306,13 @@ hr {
 
 // Emphasis
 strong, b {
-	font-weight: $bold-font-weight;
+	font-family: $headings-font-family;
 }
 em, i {
-	font-style: italic;
+	font-family: $sans-font-family-italic;
+	//font-style: italic;
 }
+
 .muted {
 	color: lighten(#000, 70%);
 }
