@@ -33,6 +33,10 @@
 			line-height: 0;
 			text-align: center;
 
+			@include respond-min($breakpoint-mid) {
+				min-height: 480px;
+			}
+
 			> img {
 				max-width: none;
 				width: 100%;

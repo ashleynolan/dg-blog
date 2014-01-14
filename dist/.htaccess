@@ -224,6 +224,7 @@ AddType text/x-vcard                        vcf
 
 # Favicon (cannot be renamed)
   ExpiresByType image/x-icon              "access plus 1 week"
+  ExpiresByType image/ico                 "access plus 1 years"
 
 # Media: images, video, audio
   ExpiresByType audio/ogg                 "access plus 1 month"
