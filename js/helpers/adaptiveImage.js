@@ -14,32 +14,31 @@ TMW.AdaptiveImage = {
 
 		// Run on resize and domready (w.load as a fallback)
 		if( w.addEventListener ) {
-			w.addEventListener( "DOMContentLoaded", function(){
-					TMW.AdaptiveImage.checkAdaptiveElements();
-					// Run once only
-					w.removeEventListener( "load", TMW.AdaptiveImage.checkAdaptiveElements, false );
+			w.addEventListener( "DOMContentLoaded", function() {
+				TMW.AdaptiveImage.checkAdaptiveElements();
+				// Run once only
+				w.removeEventListener( "load", TMW.AdaptiveImage.checkAdaptiveElements, false );
 			}, false );
 			w.addEventListener( "load", TMW.AdaptiveImage.checkAdaptiveElements, false );
 		}
 		else if( document.attachEvent ){
 			w.attachEvent( "onload", function () {
-					TMW.AdaptiveImage.checkAdaptiveElements();
+				TMW.AdaptiveImage.checkAdaptiveElements();
 			} );
 		}
 
 	},
 
 	//finds all div elements on the page with the adaptive-image data attribute set, or can be passed a subset of elements
-	checkAdaptiveElements : function (elements) {
+	checkAdaptiveElements : function (event, elements) {
 
 		var ps = elements || window.document.getElementsByTagName( "div" );// list of all div elements on our page
 
 		// Loop through each div which has the data-adaptive attribute and isn't hidden
 		for( var i = 0, il = ps.length; i < il; i++ ) {
 			if( ps[ i ].getAttribute( "data-adaptive" ) !== null &&
-					ps[ i ].style.display !== 'none' ) {
-
-					this.loadImage( ps[ i ] );
+				ps[ i ].style.display !== 'none' ) {
+				TMW.AdaptiveImage.loadImage( ps[ i ] );
 			}
 		}
 	},
@@ -102,3 +101,5 @@ TMW.AdaptiveImage = {
 		return '';
 	}
 }
+
+TMW.AdaptiveImage.init(window, false);

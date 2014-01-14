@@ -1,8 +1,8 @@
 ---
 layout: post.hbs
 
-title: Sweating the detail
-url: sweating-the-detail
+title: Sweat the detail
+url: sweat-the-detail
 description: "The last time I redesigned my blog, it took me over a year to have something to show for it. This time I gave myself a week."
 
 posted: 2014-01-15T12:30

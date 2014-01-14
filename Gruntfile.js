@@ -136,7 +136,8 @@ module.exports = function (grunt) {
 					'Gruntfile.js',
 					'js/*.js',
 					'js/libs/**/*.js',
-					'js/app/**/*.js'
+					'js/app/**/*.js',
+					'js/helpers/**/*.js'
 				],
 				tasks: ['requirejs', 'copy:js']
 			},
@@ -205,6 +206,25 @@ module.exports = function (grunt) {
 					'css/kickoff.prefixed.css': 'css/kickoff.css',
 					'css/kickoff-old-ie.prefixed.css': 'css/kickoff-old-ie.css'
 				}
+			}
+		},
+
+		responsive_images: {
+			dev: {
+				options: {
+					sizes: [{
+						name: 'small',
+						width: 320
+					},{
+						name: 'mid',
+						width: 500
+					}]
+				},
+				files: [{
+					expand: true,
+					src: ['img/work/work-*.{jpg,gif,png}'],
+					dest: ''
+				}]
 			}
 		},
 
@@ -318,6 +338,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-connect-rewrite');
 	grunt.loadNpmTasks("grunt-contrib-requirejs");
+	grunt.loadNpmTasks('grunt-responsive-images');
 
 
 	/**
