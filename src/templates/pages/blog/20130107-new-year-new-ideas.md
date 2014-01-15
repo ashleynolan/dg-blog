@@ -3,7 +3,7 @@ layout: post.hbs
 
 title: New Year, New Ideas
 url: new-year-new-ideas
-description: "Scrapping resolutions, and making some realistic plans."
+description: "Scrapping resolutions and making some realistic plans."
 
 posted: 2013-01-07T09:00
 

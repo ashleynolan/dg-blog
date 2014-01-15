@@ -198,11 +198,13 @@ img.logo-dg {
 	 		}
 		 }
 
-.separator-top {
+.separator-top,
+%separator-top {
 	box-shadow: 0 -1px 0 #4e5149;
 	border-top: 1px solid #fff;
 }
-.separator-bottom {
+.separator-bottom,
+%separator-bottom {
 	box-shadow: 0 1px 0 #fff;
 	border-bottom: 1px solid #4e5149;
 }
@@ -224,6 +226,14 @@ img.logo-dg {
 		@include font-size(20);
 	}
 
+	.about-me {
+		@extend %separator-bottom;
+
+		@include respond-min($breakpoint-midupper) {
+			border:0;
+			box-shadow: none;
+		}
+	}
 	.about-speaking {
 		width: 100%;
 	}

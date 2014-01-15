@@ -3,7 +3,7 @@ layout: post.hbs
 
 title: Responsively winging it, together
 url: responsively-winging-it-together
-description: "We're all in the same boat with RWD, but we're doing just fine so far."
+description: "After returning from Responsive Day out, I felt reflective about the state of RWD."
 
 posted: 2013-03-02T09:00
 
