@@ -34,7 +34,7 @@ The second rule was to design almost exclusively in the brower, mobile first.  I
 
 In terms of the technology the site was to be built on, I needed my content to be more easily transferrable, not hard baked into a CMS.  I write my posts in Markdown, so it made sense to have them saved like that in my site structure and parsed into HTML.  I therefore chose to use [Assemble](http://assemble.io/), a static site generator similar in nature to [Jekyll](http://jekyllrb.com/), but far less blog focussed and more flexible if I choose to extend the site down the line.
 
-So how did it go?  Any possibility of suspense is unsurprisngly ruined by the fact that the site looks completely different I‘d have thought…!
+So how did it go?  Any possibility of suspense is unsurprisingly ruined by the fact that the site looks completely different I‘d have thought…!
 
 8 days after starting, the redesign is done. I spent around 5 evenings and a Saturday in terms of actual time put in and although it‘s taken up most of my last week, it feels good that it‘s moved forward so much in a relatively short space of time.
 
