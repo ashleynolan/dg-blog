@@ -2681,7 +2681,8 @@ a:hover .articles-item-title, a:focus .articles-item-title {
   border-top: 1px solid #fff;
 }
 
-.separator-bottom {
+.separator-bottom,
+.about-me {
   box-shadow: 0 1px 0 #fff;
   border-bottom: 1px solid #4e5149;
 }
@@ -2701,6 +2702,11 @@ a:hover .articles-item-title, a:focus .articles-item-title {
   font-family: "p22-underground-pc", "Avenir LT W01 85 Heavy", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
+}
+
+.about-me {
+  border: 0;
+  box-shadow: none;
 }
 
 .about-speaking {
@@ -2958,6 +2964,8 @@ footer .links-social:before {
   font-family: 'icons';
   text-align: center;
   vertical-align: middle;
+  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.7;
   font-weight: normal;
   font-varient: normal;
@@ -3539,8 +3547,8 @@ time {
   box-shadow: 0 0 9px 0px #000 inset;
   border-radius: 50%;
   font-family: 'icons';
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 26px;
+  font-size: 1.625rem;
   color: #ccc;
   text-align: center;
   line-height: 2.4;
@@ -3551,6 +3559,8 @@ time {
   width: 91px;
   height: 91px;
   top: 50%;
+  font-size: 40px;
+  font-size: 2.5rem;
 }
 .carLeft:hover,
 .carRight:hover {

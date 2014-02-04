@@ -3,7 +3,7 @@ layout: post.hbs
 
 title: BBC GoodFood - The last year of my life
 url: the-last-year-of-my-life
-description: "After a year working on the BBC Good Food responsive redesign, the site has now gone live!."
+description: "After a year working on the BBC Good Food responsive redesign, the site has now gone live!"
 
 posted: 2013-06-20T09:00
 
