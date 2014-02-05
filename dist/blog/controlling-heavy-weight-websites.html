@@ -65,7 +65,7 @@
 <p>I love beautiful websites. They inspire the work we do and help move the industry forward in terms of what we know is achievable on the web.</p>
 <p>A recent trend on the web conflicts with this love; a large number of recently launched websites are putting a far greater emphasis on the beauty of the visual experience above and beyond considering the practical impact on the user.</p>
 <p>The site that has led me to write about this is the recently launched <a href="http://heartofthearctic.ca/">Heart of the Arctic</a> website.  Straight up, I want to say that I&#39;m not trying to single out this one website; it simply exaggerates the points I had been thinking about writing about.</p>
-<h2>But it looks great…</h2>
+<h2 id="but-it-looks-great-">But it looks great…</h2>
 <p>First of all, I can&#39;t deny that it&#39;s a beautiful looking website; the visual design is top notch and once the experience loads, it&#39;s clear a lot of great work has been put into creating and developing the site.</p>
 <p>But that doesn&#39;t hide the problem that lies under the hood.</p>
 <p>It didn&#39;t take long to notice the main issue when using the site.  At work, my connection speed (when tested this morning) comes in at ~94Mbps; Pretty quick.  Yet despite this, the Heart of the Arctic&#39;s loading screen took over 30 seconds to reach 20% and over a minute to start playing its first piece of video content.</p>
@@ -85,12 +85,18 @@
 <p>All of these sites would be better served to take a step back and consider the decisions they make and the impact the perceived beauty of their site has on all aspects of the users experience.</p>
 <p>It&#39;s not impossible to create a site that is visually beautiful while not vastly excessive.  The recently voted <a href="http://www.thefwa.com/article/fwa-site-of-the-year-2013">FWA site of the year</a>, Pharell&#39;s <a href="http://24hoursofhappy.com/">24hoursofhappy.com</a> weighs in at around 14Mb on load, progressively loading in more of its music video as the user continues to watch.  Not small, but not unreasonable for such an experience.</p>
 <p>It&#39;s also worth noting that the Oakley&#39;s site that Phil brought to attention in his post has now been optimised down to less than 15MB in size without any noticeable change in functionality – proof that with a bit more consideration, these excessive sizes can be avoided.</p>
-<h2>The impossible dream…?</h2>
+<h2 id="the-impossible-dream-">The impossible dream…?</h2>
 <p>It&#39;s hard to make visually interactive experiences that don&#39;t involve using huge assets.  Video and high-res imagery by their nature are always going to affect the page weight of your site.</p>
 <p>But we need to be thinking about two things.</p>
 <p>Are we throwing unnecessary assets at a site?  Beauty doesn&#39;t automatically require 100+ high-res images spinning your product around in 3D.  In the majority of websites of this type, restraint needs to be displayed.  Think outside of the much overused parallax trend.  We have a vast array of tools at our disposal now in the browser. Consider using SVG over high-res imagery which is much more friendly when it comes to file-size.</p>
 <p>Then, for the assets that are necessary, think about how and when you load them. Offsetting the loading of unneeded assets means users get to experience your site quicker and if they do choose to leave the site before viewing the whole experience, they haven&#39;t downloaded things they&#39;ll never even see.</p>
 <p>So don&#39;t stop creating beautiful experiences.  Just start thinking about how to control those experiences and optimise their performance to benefit the users viewing them.</p>
+<hr>
+<h2 id="update">Update</h2>
+<p>Since writing my post, <a href="https://twitter.com/MikkoH">Mikko Haapoja</a>, one of the lead developers on the Heart of the Arctic site, has written a <a href="https://medium.com/p/ddcbc73b245e">post detailing some of the decisions they made when creating the site</a>. It&#39;s great to see that the team working on the project clearly thought of some of issues raised.</p>
+<p>While I see the reasoning of many of the points mentioned, I still feel a little uneasy about any web experience that weighs 100MB up front.  Some of it does come down to the goals of the project and the audience, but that is still a huge chunk of loading time to sit through for anyone, especially when you start decreasing your bandwidth.  The difference between installing a game (or app) and loading a website is that the game continues to download and install when you get bored waiting for it to finish.  The same isn&#39;t true on the web; someone who leaves while waiting will probably never return.</p>
+<p>It would be interesting to see some kind of stats behind the drop-off rates between people who hit the loading screen and people who actually start the experience.</p>
+<p>I do however agree whole-heartedly with Mikko&#39;s point that it would be a boring web without sites made purely for entertainment. I just think that if you are making a website of that size, you have a duty to think about why it&#39;s that size and do everything you can to mitigate it – which definitely includes using a strong CDN! ;)</p>
 
 
 			<p class="post-date separator-top">Posted on the 4th February 2014</p>

@@ -72,4 +72,21 @@ Then, for the assets that are necessary, think about how and when you load them.
 
 So don't stop creating beautiful experiences.  Just start thinking about how to control those experiences and optimise their performance to benefit the users viewing them.
 
+
+---
+
+## Update
+
+Since writing my post, [Mikko Haapoja](https://twitter.com/MikkoH), one of the lead developers on the Heart of the Arctic site, has written a [post detailing some of the decisions they made when creating the site](https://medium.com/p/ddcbc73b245e). It's great to see that the team working on the project clearly thought of some of issues raised.
+
+While I see the reasoning of many of the points mentioned, I still feel a little uneasy about any web experience that weighs 100MB up front.  Some of it does come down to the goals of the project and the audience, but that is still a huge chunk of loading time to sit through for anyone, especially when you start decreasing your bandwidth.  The difference between installing a game (or app) and loading a website is that the game continues to download and install when you get bored waiting for it to finish.  The same isn't true on the web; someone who leaves while waiting will probably never return.
+
+It would be interesting to see some kind of stats behind the drop-off rates between people who hit the loading screen and people who actually start the experience.
+
+I do however agree whole-heartedly with Mikko's point that it would be a boring web without sites made purely for entertainment. I just think that if you are making a website of that size, you have a duty to think about why it's that size and do everything you can to mitigate it – which definitely includes using a strong CDN! ;)
+
+
+
+
+
 {{/markdown}}
