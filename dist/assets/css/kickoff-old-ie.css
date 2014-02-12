@@ -630,6 +630,8 @@ dl {
 
 dt {
   font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 .dl-horizontal dt {
   float: left;
@@ -639,10 +641,16 @@ dt {
 }
 
 dd {
-  margin-left: 26px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .dl-horizontal dd {
   margin-left: 240px;
+}
+dd p {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-size: 1.1875rem;
 }
 
 /*
@@ -730,7 +738,7 @@ cite {
 }
 
 dfn {
-  font-style: italic;
+  font-style: normal;
 }
 
 mark {

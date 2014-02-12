@@ -657,6 +657,12 @@ dl {
 dt {
   font-weight: bold;
 }
+@media screen and (min-width: 37.5em) {
+  dt {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
 .dl-horizontal dt {
   float: left;
   clear: left;
@@ -665,10 +671,20 @@ dt {
 }
 
 dd {
-  margin-left: 26px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .dl-horizontal dd {
   margin-left: 240px;
+}
+dd p {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 37.5em) {
+  dd p {
+    font-size: 19px;
+    font-size: 1.1875rem;
+  }
 }
 
 /*
@@ -756,7 +772,7 @@ cite {
 }
 
 dfn {
-  font-style: italic;
+  font-style: normal;
 }
 
 mark {

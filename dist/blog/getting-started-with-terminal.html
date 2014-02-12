@@ -10,7 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-		<title>AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<title>Getting started with the OSX terminal – a developers guide - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
 
 
 		<meta name="description" content="Dragon Graphics - Blog and Portfolio for Ashley Nolan">
@@ -34,8 +34,7 @@
 	</head>
 	<body>
 
-	 <div class="container">
-		<!-- nav partial -->
+	<div class="container">
 		<header class="page-header">
 	<h1 id="page-logo" class="logo">
 		<span>Dragon Graphics</span>
@@ -58,95 +57,40 @@
 	</section>
 </header>
 
-		
+		<section class="content post">
+			<h1>Getting started with the OSX terminal – a developers guide</h1>
 
-<section class="content articles">
-
-	<h2 class="articles-subhead separator-bottom">Recent Posts</h2>
-	<!--<h1 class="gigaHeading text-centre page-title">Page title example</h1>
-	<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>-->
-
-	 
-	
-		
 			
-			<a href="/blog/getting-started-with-terminal" class="articles-item separator-bottom">
-				<article>
-					<time>12/02/2014</time>
-					<h2 class="articles-item-title">Getting started with the OSX terminal – a developers guide</h2>
-					<p class="articles-item-description">An intro guide to the terminal, going over my most commonly used shortcuts and commands.</p>
-				</article>
-			</a>
-		
-			
-			<a href="/blog/sweating-the-detail" class="articles-item separator-bottom">
-				<article>
-					<time>15/01/2014</time>
-					<h2 class="articles-item-title">Sweating the detail</h2>
-					<p class="articles-item-description">The last time I redesigned my blog, it took me over a year to have something to show for it. This time I gave myself a week.</p>
-				</article>
-			</a>
-		
-			
-			<a href="/blog/speaking-up" class="articles-item separator-bottom">
-				<article>
-					<time>27/09/2013</time>
-					<h2 class="articles-item-title">Speaking up</h2>
-					<p class="articles-item-description">Where I&#x27;ll be speaking towards the end of 2013.</p>
-				</article>
-			</a>
-		
-	
-</section>
 
-<!-- Homepage carousel -->
-<section id="homeCarousel" class="homeCarousel">
-	<h2 class="homeCarousel-title">Recent Work</h2>
+<p>For around 18 months now I’ve been using the terminal more and more.  More suprising than becoming more proficient is how enjoyable it can be to use once you learn the basics.</p>
+<p>Whereas historically, it would be unusual for a front-end dev to stare too deeply into the command line abyss, now it has become a necessary part of our front-end toolkit.  Whether using git, grunt or jekyll, there are many tasks and tools that require a basic amount of terminal knowledge.</p>
+<p>So I wanted to jot down what I have learned about the terminal, and share the most useful commands and tricks that make working with the terminal a genuinely enjoyable experience.</p>
+<p>Note. The commands and shortcuts will refer directly to the OSX terminal, but many of the basics cross over to Windows command line as well.</p>
+<h2 id="the-very-basics">The very basics</h2>
+<p>The most basic terms you&#39;ll need to survive on the command line:</p>
+<dl>
+    <dt><dfn><strong>cd</strong></dfn></dt>
+    <dd>
+        <p>Short for change directory and will navigate to the directory specified after the command.</p>
+        <p>For example, <code>cd Users/Sites/</code> will move you into the Users/Sites folder.</p>
+        <p>To navigate back one directory use <code>cd ../</code> To return to your home directory type <code>cd.</code>  To return to the previous directory type <code>cd -</code>.</p>
+        <p>To navigate to a folder with spaces, use<br><code>cd /Users/Ash/My\ Folder\ Name/</code><br>or <code>cd “/Users/Ash/My Folder Name/&quot;</code></p>
+    </dd>
 
-	<div class="homeCarousel-wrapper">
-		<div class="homeCarousel-carousel">
-			<article id="workArticle4" class="homeCarousel-carousel-item" data-name="BBC GoodFood">
-				<a href="work#bbcgoodfood" title="BBC GoodFood">
-					<img class="featureImg" src="assets/img/work/home-bbc.png" alt="BBC GoodFood Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>BBC GoodFood</h3></div>
-				</a>
-			</article>
-			<article id="workArticle5" class="homeCarousel-carousel-item" data-name="TMW Kickoff">
-				<a href="work#kickoff" title="Kickoff">
-					<img class="featureImg" src="assets/img/work/home-kickoff.png" alt="Kickoff Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>TMW Kickoff</h3></div>
-				</a>
-			</article>
-			<article id="workArticle1" class="homeCarousel-carousel-item" data-name="Uncharted 3">
-				<a href="work#uncharted3" title="Uncharted 3">
-					<img class="featureImg" src="assets/img/work/home-uncharted.jpg" alt="Image of Drake from Uncharted">
-					<div class="homeCarousel-carousel-item-title"><h3>Uncharted 3 </h3></div>
-				</a>
-			</article>
-			<article id="workArticle2" class="homeCarousel-carousel-item" data-name="RSPCA">
-				<a href="work#rspca" title="RSPCA">
-					<img class="featureImg" src="assets/img/work/home-rspca.jpg" alt="Image of a Tiger">
-					<div class="homeCarousel-carousel-item-title"><h3>RSPCA</h3></div>
-				</a>
-			</article>
-			<article id="workArticle3" class="homeCarousel-carousel-item" data-name="Lynx Mass Debates">
-				<a href="work#lynxmassdebates" title="Lynx Mass Debates">
-					<img class="featureImg" src="assets/img/work/home-massdebates.jpg" alt="Picture of smiley and sad faces">
-					<div class="homeCarousel-carousel-item-title"><h3>Lynx Mass Debates</h3></div>
-				</a>
-			</article>
-		</div>
+    <dt><dfn><strong>mkdir</strong></dfn></dt>
+    <dd>Short for make directory and, as you might guess, it creates a directory.  Usage is like so <code>mkdir my-directory-name</code>.</dd>
+</dl>
 
-		<div id="homeCarousel-canvasFrame" class="homeCarousel-canvasFrame">
-			<a href="work#bbcgoodfood" id="homeCarousel-canvasFrame-link" class="homeCarousel-canvasFrame-link">
-				<canvas id="homeCarousel-canvasFrame-canvas" class="homeCarousel-canvasFrame-canvas" width="618" height="272"></canvas>
-				<div class="homeCarousel-carousel-item-title">
-					<h3>BBC GoodFood</h3>
-				</div>
-			</a>
-		</div>
-	</div>
-</section><!-- End of work section panel -->
+
+
+
+
+
+			<p class="post-date separator-top">Posted on the 12th February 2014</p>
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
 
 		<footer class="page-footer border-grey-white-top">
 	<!-- Social links -->
@@ -163,6 +107,18 @@
 	</div>
 </footer>
 	</div>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
 
