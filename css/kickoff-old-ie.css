@@ -621,6 +621,13 @@ nav ul, nav ol {
   list-style-image: none;
 }
 
+.content .unstyled, .content form ul, form .content ul, .content .tabs, .content .l-tabsContent {
+  margin: 0 0 20px;
+}
+.content .unstyled > li, .content form ul > li, form .content ul > li, .content .tabs > li, .content .l-tabsContent > li {
+  margin: 0 0 10px;
+}
+
 /*
    Definition lists
    ========================================================================== */

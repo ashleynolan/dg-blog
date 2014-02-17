@@ -271,6 +271,13 @@ nav ul, nav ol {
 	list-style: none;
 	list-style-image: none;
 }
+.content .unstyled {
+	margin: 0 0 $verticalRhythm + px;
+
+	> li {
+		margin: 0 0 $verticalRhythm/2 + px;
+	}
+}
 
 
 /*
