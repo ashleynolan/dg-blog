@@ -94,6 +94,8 @@ One of the nicest examples I’ve seen was created by Vox Product, for the [Xbox
 
 > …standard image formats like jpg, gif, or png don’t don’t always perform well when asked to enlarge or shrink dimensions as dictated by the user’s browser size. SVGs, on the other hand, take on responsive properties perfectly: vectors can increase or shrink to arbitrary sizes without any loss of fidelity, and animations and operations done on SVG elements adjust relative to its size without any additional work.
 
+D3.js is also being used widely across the web for data visualisation.  For a full list of links, check out their [examples](https://github.com/mbostock/d3/wiki/Gallery#wiki-examples) and [collections](https://github.com/mbostock/d3/wiki/Gallery#wiki-collections) lists.
+
 There are a number of other SVG animation demos popping up across the web.
 
 Codedrops has some nice examples of [how SVG animations could be used on a site](http://tympanus.net/Development/SVGDrawingAnimation/) as well as how you can animate SVG to [add more flare to your icons](http://tympanus.net/Development/AnimatedSVGIcons/) or [spice up your hover effects](http://tympanus.net/Tutorials/ShapeHoverEffectSVG/index3.html).
