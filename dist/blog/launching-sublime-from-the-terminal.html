@@ -66,19 +66,19 @@
 <p>A really useful tip that I picked up recently from <a href="http://twitter.com/MrMartineau">Zander Martineau</a> is how to open up Sublime Text straight from the Terminal.  This is done by hooking into a CLI utility that Sublime provides called <a href="http://www.sublimetext.com/docs/2/osx_command_line.html">subl</a>.</p>
 <p>The following instructions are based largely on the original <a href="https://gist.github.com/artero/1236170">gist on Github</a> by <a href="https://github.com/artero">Artero</a>, so credit for this solution should be directed to them and not myself.</p>
 <p>It’s a slightly different installation depending on whether you’re using Sublime Text 2 or 3, so I’ll split the two out below in the installaton; simply refer to the instructions that are relevant to you.</p>
-<h2>Installation</h2>
+<h2 id="installation">Installation</h2>
 <p>Assuming you installed Sublime in the Applications folder, the following command should open up the editor when you type it into the Terminal:</p>
-<h3>For Sublime Text 2:</h3>
+<h3 id="for-sublime-text-2-">For Sublime Text 2:</h3>
 <p><code>open /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl</code></p>
-<h3>For Sublime Text 3:</h3>
+<h3 id="for-sublime-text-3-">For Sublime Text 3:</h3>
 <p><code>open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl</code></p>
 <p>If that worked, you&#39;re good to go.</p>
 <p>You now need to create a symlink called <code>sublime</code> which links the subl CLI to a folder where your system usually looks to execute these binaries.  To do this, type in:</p>
-<h3>For Sublime Text 2:</h3>
+<h3 id="for-sublime-text-2-">For Sublime Text 2:</h3>
 <p><code>ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime</code></p>
-<h3>For Sublime Text 3:</h3>
+<h3 id="for-sublime-text-3-">For Sublime Text 3:</h3>
 <p><code>ln -s &quot;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&quot; /usr/local/bin/sublime</code></p>
-<h2>Check your profile</h2>
+<h2 id="check-your-profile">Check your profile</h2>
 <p>The final thing you need to do, is to check that your system profile is looking in the right place to see the symlink you have just created.</p>
 <p>Enter the following command into your Terminal:</p>
 <p><code>open ~/.bash_profile</code></p>
@@ -93,7 +93,7 @@
 <p>Finally, if you did have to add <code>/usr/local/bin</code> to your <code>PATH</code>, run the following command before continuing:</p>
 <p><code>source ~/.bash_profile</code></p>
 <p>This will reload your .bash_profile with the newly added directory in your <code>PATH</code>.</p>
-<h2>Test it works!</h2>
+<h2 id="test-it-works-">Test it works!</h2>
 <p>In your Terminal, the following commands should now work:</p>
 <ul class="unstyled">
     <li><code>sublime .</code> – opens the current directory in Sublime</li>

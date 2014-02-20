@@ -80,12 +80,13 @@ For a more in-depth look at the ways you can implement SVG and their fallbacks, 
 
 Another strength of SVG that is being used ever more frequently is for use in web animation.  Individual parts of an SVG can be animated using CSS, while techniques such as this [line drawing effect talked about by Jake Archibald](http://jakearchibald.com/2013/animated-line-drawing-svg/) are now being discovered, opening up ever more possibilities.
 
-SVG also has some very solid libraries available for drawing and animation, such as **Raphael.js** and **Snap.svg**.
+SVG also has some very solid libraries available for drawing and animation, such as **Raphael.js**, **Snap.svg** and **D3.js**.
 
 [Raphael.js](http://raphaeljs.com/) is a library that has been around for some time, providing support for SVG right back to older browsers such as IE6; it does this by falling back to render the SVG as VML instead.  It gives access to a lot of simple SVG animation and interaction options, as well as having a more graph focused library based on it called [gRaphael](http://g.raphaeljs.com/). I encourage you to take a look through the demos on both sites to see what it can do.
 
 [Snap.svg](snapsvg.io) was also made by the creator of Raphael, [Dmitry Baranovskiy](https://twitter.com/DmitryBaranovsk). It aims to provide access to many of the more advanced features of SVG. It is therefore capable of a lot more than Raphael, but at the expense of some browser support. Snap.svg is supported in all the recent versions of major browsers.
 
+[D3.js](http://d3js.org/) is a library that helps to bring data to life using a combination of HTML, SVG and CSS, created by [Mike Bostock](https://twitter.com/mbostock).  There are a whole range of examples of how D3 can be used in it’s [demo gallery](https://github.com/mbostock/d3/wiki/Gallery).  D3 also supports modern browsers, which generally means everything except IE8 and below.
 
 ## SVG Animations in the wild
 
