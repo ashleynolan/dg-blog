@@ -1,7 +1,7 @@
 ---
 layout: post.hbs
 
-title: Launch Sublime Text 2 or 3 from the Mac OSX terminal
+title: Launch Sublime Text 2 or 3 from the Mac OSX Terminal
 url: launching-sublime-from-the-terminal
 description: "A really quick win to open up Sublime Text using one quick command from the Mac OSX terminal."
 
