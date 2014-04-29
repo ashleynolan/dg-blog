@@ -48,6 +48,8 @@ define ([
 				DG.Preloader.init($('.featureImg'), DG.WorkWrapper.init);
 			}
 
+			DG.DateHandler.init();
+
 		},
 
 		mobileinit : function () {
@@ -87,6 +89,33 @@ define ([
 			}
 		}
 
+
+	},
+
+	DG.DateHandler = {
+
+		age : null,
+
+		init : function () {
+
+			this.age = $('#age');
+
+			if (this.age.length > 0) {
+				this.calculateDates();
+			}
+
+		},
+
+		calculateDates : function () {
+
+
+			var ageYears = moment().from(this.age[0].getAttribute('data-age'), true),
+				ageDays = moment().diff(this.age[0].getAttribute('data-age'), 'days'),
+				birthYearDays = moment().diff('04-09-' + moment().format('YYYY'), 'days');
+
+			$('#age').html(ageYears + ', ' + birthYearDays + ' days')
+
+		}
 
 	},
 

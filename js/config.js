@@ -16,6 +16,7 @@ require.config({
 		swiftClick: 'helpers/swiftclick',
 		adaptiveImage: 'helpers/adaptiveImage',
 		prism: 'helpers/prism',
+		moment: 'helpers/moment',
 		setExternalLinks: 'helpers/setExternalLinks',
 
 		//text: 'components/require-plugins/text',

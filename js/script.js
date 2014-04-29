@@ -15,8 +15,9 @@ require([
 	'setExternalLinks',
 	'modernizr',
 	'App',
+	'moment',
 	'prism'
 ],
-function ($, log, MBP, sw, ai, ext, Modernizr, App, prism) {
+function ($, log, MBP, sw, ai, ext, Modernizr, App, moment, prism) {
 
 });
