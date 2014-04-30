@@ -203,8 +203,8 @@ module.exports = function (grunt) {
 					browsers: ['last 2 versions', '> 1%', 'ie 8', 'ie 7']
 				},
 				files: {
-					'css/kickoff.prefixed.css': 'css/kickoff.css',
-					'css/kickoff-old-ie.prefixed.css': 'css/kickoff-old-ie.css'
+					'css/kickoff.css': 'css/kickoff.css',
+					'css/kickoff-old-ie.css': 'css/kickoff-old-ie.css'
 				}
 			}
 		},
@@ -236,9 +236,12 @@ module.exports = function (grunt) {
 		 */
 		csso: {
 			dist: {
+				options: {
+					restructure: false
+				},
 				files: {
-					'css/kickoff.min.css': ['css/kickoff.prefixed.css'],
-					'css/kickoff-old-ie.min.css': ['css/kickoff-old-ie.prefixed.css']
+					'css/kickoff.min.css': ['css/kickoff.css'],
+					'css/kickoff-old-ie.min.css': ['css/kickoff-old-ie.css']
 				},
 
 			}
@@ -381,7 +384,7 @@ module.exports = function (grunt) {
 	 * A task for your production environment
 	 * run jshint, uglify and sass:production
 	 */
-	grunt.registerTask('deploy', ['jshint', 'uglify', 'sass:production']);
+	grunt.registerTask('deploy', ['clean', 'sass:production', 'csso',  'assemble', 'copy:dist']);
 	// grunt.registerTask('production', ['jshint', 'uglify', 'sass:production', 'autoprefixer', 'csso']);
 
 };
