@@ -84,17 +84,17 @@ function mkd() {
     mkdir -p &quot;$@&quot; &amp;&amp; cd &quot;$@&quot;
 }</code></pre>
 <p>You&#39;ll notice that the above code has one alias and one function.</p>
-<p>An alias is usually used for simple shortening or chaining together terminal commands.  A function can take values passed to it by the user and manipulate those values in some way to perform tasks.</p>
+<p>An alias is usually used for simple shortening or chaining terminal commands together.  A function can take values passed to it by the user and manipulate those values in some way to perform commands.</p>
 <p>In the above code, we have defined an alias of <code>myip</code> which will output your public ip to the terminal by performing a curl request to ip.appspot.com.  We have also defined a function <code>mkd</code> which when passed a value, such as <code>mkd new-folder</code>, will first make a new directory with the name <code>new-folder</code> and then <code>cd</code> (change directory) into the newly created directory.</p>
 <p>As you add more aliases and functions, it can be a good idea to organise them into different shell scripts.  For example, it would make sense to group all of your defined git aliases into one file – perhaps called <code>.git-shortcuts.sh</code>.  This makes maintenance of your shell scripts easier, in the same way that separating out files when coding in any language helps structure and organisation.</p>
 <p>Ok, so now we have created our shell script, we need to link this into our terminal profile so that these commands can be referenced in our terminal.</p>
 <h2 id="editing-your-terminal-profile">Editing your terminal profile</h2>
-<p>The final stage is to make a reference to your newly created shell script in your terminal profile – or <em>bash profile</em>.</p>
+<p>The final stage is to make a reference to your newly created shell script in your terminal profile – or <strong>bash profile</strong>.</p>
 <p>In simple terms, the <code>.bash_profile</code> file is something that is executed when a new terminal window is opened and bash is invoked.  If you’d like to read a more detailed explanation, check out <a href="http://hacktux.com/bash/bashrc/bash_profile">this article on the subject</a>.</p>
 <p>As the <code>.bash_profile</code> file is executed when you open a new terminal window, we can add files to be run when this execution happens.  Your <code>.bash_profile</code> is located at the root of your User folder, in the same place that you will have just created your shell script file.</p>
 <p>Open up the <code>.bash_profile</code> file in a text editor, and add the following line to the bottom of the file:</p>
 <pre><code>source &quot;/Users/my-username/.aliases.sh&quot;  # General aliases and functions defined by me</code></pre>
-<p>Be sure to replace <em>my-username</em> with your OSX username – if you don&#39;t know what this is, press <code>cmd + i</code> on the .aliases.sh file in Finder and check the &#39;Where&#39; value of the file.  Once you have done this, save and close the file.</p>
+<p>Be sure to replace <code>my-username</code> with your OSX username – if you don&#39;t know what this is, press <code>cmd + i</code> on the <code>.aliases.sh</code> file in Finder and check the &#39;Where&#39; value of the file.  Once you have done this, save and close the file.</p>
 <h2 id="test-it-works">Test it works</h2>
 <p>Now that you&#39;ve created your aliases and referenced your newly created script in your bash profile, you should be able to use them in your terminal.</p>
 <p>Open up a new terminal window – make sure it&#39;s a new window, as previously open windows won&#39;t have run your newly created scripts – and type in <code>myip</code>.</p>
