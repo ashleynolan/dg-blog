@@ -1,0 +1,160 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+		<title>A beginners guide to terminal aliases and functions - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+
+
+		<meta name="description" content="Dragon Graphics - Blog and Portfolio for Ashley Nolan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/assets/css/kickoff.css">
+
+		<!-- Fonts -->
+		<script type="text/javascript" src="http://fast.fonts.net/jsapi/7f495bc1-d47d-4f68-b796-4c8c60df8cae.js" async></script>
+		<script type="text/javascript" src="//use.typekit.net/xip1pkl.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+		<!-- Require include for JS -->
+		<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min"></script>
+
+	</head>
+	<body>
+
+	<div class="container">
+		<header class="page-header">
+	<h1 id="page-logo" class="logo">
+		<span>Dragon Graphics</span>
+		<a href="/" class="logo-link">
+			<svg class="logo-dg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="234px" height="244.082px" viewBox="0 0 234 244.082" enable-background="new 0 0 234 244.082" xml:space="preserve"><g><g><path clip-rule="evenodd" d="M131.012 68.469c-20.294 5.482-35.874 16.834-38.992 43.7 C68.354 94.6 98.1 47 131 68.469z"/><path clip-rule="evenodd" d="M161.475 59.629c12.752-4.078 0 17.3 8.7 17.3 c-9.173 6.152-19.891-10.842-34.687-8.67C140.716 62 158 67.7 161.5 59.629z"/><path clip-rule="evenodd" d="M76.527 92.79c1.633 4.2 3.7 8.7 6.2 12.5 c2.608 3.9 6.1 7.4 11.2 7.159c-12.189 3.479-23.696 8.262-32.159 18.087c-8.423 9.783-13.461 22.025-16.949 34.3 c-9.061-6.983-14.794 8.593-17.451 14.883c-2.349 5.562-4.978 21.5 6.6 13.891c4.448-2.942 6.602-8.919 12.695-9.151 c-2.969 8.274-6.594 15.987-16.213 17.148c-6.54 0.793-13.054-1.491-18.517-4.962c-2.951-1.873-12.159-8.419-11.935-12.306 c0.512-8.898 10.552-1.189 11.557-8.245c0.624-4.385 0.271-8.806 1.136-13.17c0.908-4.596 2.435-9 2.911-13.689 c3.605 0.3 1.2 6.6 3.9 7.8c10.032-3.507 16.879-11.737 21.362-21.088c2.364-4.937 4.222-10.091 5.968-15.275 c1.456-4.331 1.404-9.623 4.134-13.46c2.841-3.982 7.878-4.951 12.226-6.405C68.082 99.2 72.8 96.4 76.5 92.79z"/><path clip-rule="evenodd" d="M99.255 119.897c9.81 1.9 10.7 5.8 14.9 10.4 c-6.827 6.479-9.902 22.673-5.977 28.901C95.175 156.3 96.8 135.4 99.3 119.897z"/><path clip-rule="evenodd" d="M121.206 137.488c4.894 3 4.4 9.1 6.3 13.9 c-4.936 6.197-10.997 10.411-12.33 22.914C112.079 163.8 115.3 148.9 121.2 137.488z"/><path clip-rule="evenodd" d="M121.605 0c-8.263 15.3 13.1 46.006-1.949 62.4 c-4.596 0.042-5.744-3.36-11.703-1.95C127.689 49.1 102.9 13.8 121.6 0z"/><path clip-rule="evenodd" d="M61.149 5.85c0.1 1.5 1.8 3.1 1.8 5.2 c0.022 2.82-1.059 5.84-1.923 8.48c-2.215 6.783-5.087 13.333-7.233 20.14c-2.608 8.272-5.14 16.396-3.13 25.2 c1.524 6.7 5.9 11.6 11.8 5.692c10.53-10.562 13.605-29.733 18.273-43.378c2.764-8.071 6.217-16.493 11.633-23.199 c-2.654 3.288-2.392 9.859-3.548 13.882c-1.621 5.636-4.147 11.421-3.27 17.417c1.068 7.3 7 7.1 12.4 4.2 c-2.96 1.573-4.405 7.437-6.289 9.995c-2.853 3.876-5.893 7.625-8.38 11.76c-5.954 9.899-8.374 20.95-6.517 32.4 c-7.399 4.952-11.64 13.063-25.353 11.702c-13.303 10.749-23.374 24.729-27.301 44.855c-8.519-20.394 8.5-46.808 19.502-60.457 c-2.158-18.473-6.726-26.699-3.901-40.953C43.038 31.9 62.5 25.6 61.1 5.85z"/><path clip-rule="evenodd" d="M174.777 89.915c4.768-4.601 12.5 8.9 24.8 5 c-3.096 9.324-6.504 18.33-7.452 29.802C186.195 113.3 185.1 96.9 174.8 89.915z"/><path clip-rule="evenodd" d="M96.251 171.615c-2.344 13.276-7.652 40.438-19.501 50.7 c-12.253 1.199-12.991-9.11-23.404-9.753c1.273-5.876 7.661-6.643 9.752-11.697c2.327-15.337-1.888-48.907-13.054-56.462 c6.053-10.196 13.143-22.067 26.409-25.055c-1.406 8.7 9.6 20.2 10 26.911c1.374 19.759-16.337 38.35-11.705 64.4 C85.648 209.1 89.4 183.7 96.3 171.615z"/><path clip-rule="evenodd" d="M192.558 129.948c5.485 9.1 6.5 22.7 14.6 29.3 c-5.582 5.123-22.907 35.464-17.555 23.41C189.939 164.4 194.5 150.4 192.6 129.948z"/></g><path clip-rule="evenodd" d="M99.087 116.263c0 0 10.719-54.502 47.354-40.207 c0 0 54.2 11.5 32.2 97.39C162.524 236 234 236 234 235.987s-109.006 42.894-101.854-68.795 C132.147 167.2 133.9 122.5 99.1 116.263z"/></g></svg>
+			<img src="/assets/img/dg_logo.png" class="logo-dg" alt="Ashley Nolan">
+		</a>
+	</h1>
+
+	<!-- main navigation links -->
+	<section id="nav-strip" class="nav-strip">
+		<!-- Global Navigation links -->
+<nav id="page-nav" class="nav-global">
+	<ul>
+		<li class="nav-global-item"><a href="/blog/" data-hover="Blog">Blog</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item"><a href="/work" data-hover="Work">Work</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item last "><a href="/about" data-hover="About">About</a><span class="navArrow"></span></li>
+	</ul>
+</nav>
+	</section>
+</header>
+
+		<section class="content post">
+			<h1>A beginners guide to terminal aliases and functions</h1>
+
+			
+
+<p>By far the simplest time saving tools I’ve found since working more in the OSX terminal are aliases and functions.</p>
+<p>Aliases stay true to the saying that lazy developers are efficient developers; they are simple shorthand commands that you can define to reference longer commands you find yourself commonly using.</p>
+<p>So for example, if you use git on the command line you can find yourself typing out commands like <code>git commit -m &#39;message&#39;</code>, <code>git status -s</code> or <code>git branch -r</code> pretty often.  Sure, they aren&#39;t huge commands to type out, but if you’re using them regularly it can get pretty repetitive.</p>
+<p>Likewise, you may find yourself doing the same few commands in a row over and over again.  Ever create a new directory in the terminal and then cd straight into it afterwards?</p>
+<p>This is where aliases and functions can help you out.</p>
+<p>By creating a shell script to include in your terminal profile, you can create any number of <strong>aliases</strong> and functions that you can then use in the Terminal as a replacement for the long-form commands.  If you have no idea what a shell script or a terminal profile are, read on, we’ll get to that in a second…</p>
+<p>Note. I’ll be taking you through the steps to create aliases and functions on Mac OSX.  On Windows, the concept is similar, but file locations and specifics may differ.</p>
+<h2 id="creating-your-aliases">Creating your aliases</h2>
+<p>First up, you’ll need to create a shell script that will hold the aliases and functions that you want to add.</p>
+<p>Much in the way that HTML is a language that your browser can interpret, a shell script is simply a file that your terminal, or shell, can read.  Shell script has it’s own syntax, much like any language;  I won’t go into detail about the specifics of shell scripting, but there are <a href="http://www.howtogeek.com/67469/the-beginners-guide-to-shell-scripting-the-basics/">plenty of good guides available on the web</a> for anyone who wants to learn more about this.</p>
+<p>Before you create your shell script, you’ll need to make sure that you have hidden files and folders showing in Finder.  To do this, open up your terminal and enter the following command:</p>
+<pre><code>defaults write com.apple.finder AppleShowAllFiles -bool TRUE &amp;&amp; killall Finder</code></pre>
+<p>This will make all files and folders visible in Finder and restart any currently running Finder windows that were open.</p>
+<p>You’re now ready to create your shell script.  We’ll be creating our aliases in the root of our User folder, so whatever your user name is on your computer, navigate to that folder in Finder.  Alternatively, open up a terminal window and you should find that it positions you at your User folder by default.</p>
+<p>Create a file and call it <code>.aliases.sh</code> – if you’re in terminal, type <code>mkdir .aliases.sh</code>.</p>
+<p>Open the file up in your text editor of choice and add the following lines of code to it:</p>
+<pre><code>alias myip=&#39;curl ip.appspot.com&#39;
+
+function mkd() {
+    mkdir -p &quot;$@&quot; &amp;&amp; cd &quot;$@&quot;
+}</code></pre>
+<p>You&#39;ll notice that the above code has one alias and one function.</p>
+<p>An alias is usually used for simple shortening or chaining together terminal commands.  A function can take values passed to it by the user and manipulate those values in some way to perform tasks.</p>
+<p>In the above code, we have defined an alias of <code>myip</code> which will output your public ip to the terminal by performing a curl request to ip.appspot.com.  We have also defined a function <code>mkd</code> which when passed a value, such as <code>mkd new-folder</code>, will first make a new directory with the name <code>new-folder</code> and then <code>cd</code> (change directory) into the newly created directory.</p>
+<p>As you add more aliases and functions, it can be a good idea to organise them into different shell scripts.  For example, it would make sense to group all of your defined git aliases into one file – perhaps called <code>.git-shortcuts.sh</code>.  This makes maintenance of your shell scripts easier, in the same way that separating out files when coding in any language helps structure and organisation.</p>
+<p>Ok, so now we have created our shell script, we need to link this into our terminal profile so that these commands can be referenced in our terminal.</p>
+<h2 id="editing-your-terminal-profile">Editing your terminal profile</h2>
+<p>The final stage is to make a reference to your newly created shell script in your terminal profile – or <em>bash profile</em>.</p>
+<p>In simple terms, the <code>.bash_profile</code> file is something that is executed when a new terminal window is opened and bash is invoked.  If you’d like to read a more detailed explanation, check out <a href="http://hacktux.com/bash/bashrc/bash_profile">this article on the subject</a>.</p>
+<p>As the <code>.bash_profile</code> file is executed when you open a new terminal window, we can add files to be run when this execution happens.  Your <code>.bash_profile</code> is located at the root of your User folder, in the same place that you will have just created your shell script file.</p>
+<p>Open up the <code>.bash_profile</code> file in a text editor, and add the following line to the bottom of the file:</p>
+<pre><code>source &quot;/Users/my-username/.aliases.sh&quot;  # General aliases and functions defined by me</code></pre>
+<p>Be sure to replace <em>my-username</em> with your OSX username – if you don&#39;t know what this is, press <code>cmd + i</code> on the .aliases.sh file in Finder and check the &#39;Where&#39; value of the file.  Once you have done this, save and close the file.</p>
+<h2 id="test-it-works">Test it works</h2>
+<p>Now that you&#39;ve created your aliases and referenced your newly created script in your bash profile, you should be able to use them in your terminal.</p>
+<p>Open up a new terminal window – make sure it&#39;s a new window, as previously open windows won&#39;t have run your newly created scripts – and type in <code>myip</code>.</p>
+<p>Your terminal should output your public IP to the screen.</p>
+<p>Similarly, writing <code>mkd new-folder</code> will create a folder and cd into the newly created folder.</p>
+<h2 id="next-steps-to-terminal-domination">Next steps to terminal domination</h2>
+<p>This is simply an introduction to the aliases and functions you can setup in your terminal.  There are many other useful aliases and functions you can add to your setup to save you time when working in the terminal.</p>
+<p>A full list of my <a href="https://github.com/ashleynolan/dotfiles/blob/master/.aliases">system aliases are up on github</a> as well as a <a href="https://github.com/ashleynolan/dotfiles/blob/master/.functions">separate set of functions</a>.  These have been built upon and edited from the excellent set of <a href="https://github.com/mathiasbynens/dotfiles">dot files by Mathias Bynens</a>.</p>
+<p>If you use git, or want to start using git, on the command line, aliases can help you out big-time.  I recommend taking a look at the excellent <a href="https://github.com/jakearchibald/git-convenience">git-convenience tools</a> by Jake Archibald, or check out my <a href="https://github.com/ashleynolan/dotfiles/blob/master/.functions">git alias file</a> which is an extended set of aliases built on top of what you&#39;ll find in the git convenience tools.</p>
+<p>Finally, if you just want to have a look at the sort of things that are possible using aliases and functions, check out <a href="alias.sh">alias.sh</a>, which has tonnes of useful snippets to copy and use in yur own script files.</p>
+
+
+			<p class="post-date separator-top">Posted on the 1st May 2014</p>
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
+
+		<footer class="page-footer border-grey-white-top">
+	<!-- Social links -->
+<nav class="links-social">
+	<ul>
+		<li class="links-social-item links-social-email"><a href="mailto:contact@dragongraphics.co.uk" title="Email Me" rel="external" target="_blank"><span class="links-social-icon icon-email-shaded"></span><span class="screen-reader-text">Email</span></a></li>
+		<li class="links-social-item links-social-twitter"><a href="http://twitter.com/AshNolan_" title="Find me on Twitter" rel="external" target="_blank"><span class="links-social-icon icon-twitter"></span><span class="screen-reader-text">Twitter</span></a></li>
+		<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" title="My LinkedIn Profile" rel="external" target="_blank"><span class="links-social-icon icon-linkedin"></span><span class="screen-reader-text">LinkedIn</span></a></li>
+	</ul>
+</nav>
+
+	 <div class="footer-content">
+		 <p>I'm Ashley Nolan, a Creative Technologist at TMW.  Do take a look around, or contact me in any of the usual ways – it'd be great to hear from you.</p>
+	</div>
+</footer>
+	</div>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-20668207-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</body>
+</html>
