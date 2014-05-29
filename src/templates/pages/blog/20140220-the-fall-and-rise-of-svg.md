@@ -40,29 +40,41 @@ SVG can be exported out of Adobe Illustrator, or other tools such as [Sketch](ht
 
 The simplest way to use them is to reference your SVG file as you would a standard image.
 
-	background-image: url('myNewShinySVG.svg');
+<pre>
+	<code class="language-scss">
+background-image: url('myNewShinySVG.svg');
+	</code>
+</pre>
 
 This comes with the same drawbacks as including images in this way – it costs an extra HTTP request for each file you add. Thankfully, like any other image, you can convert the SVG into a data-uri and save yourself that extra cost.  There are a number of tools for converting images to data-uri’s my personal favourite being http://duri.me/.  Remember, that to support older browsers – mainly IE8 and below – you will also need to include and maintain fallback images.  [Modernizr](http://modernizr.com/) provides a CSS class hook to help you do this:
 
-	.exampleIcon {
-		background-image: url('myNewShinySVG.svg');
-	}
+<pre>
+	<code class="language-scss">
+.exampleIcon {
+	background-image: url('myNewShinySVG.svg');
+}
 
-	.no-svg .exampleIcon {
-		background-image: url('myNewShinySVG-fallback.png');
-	}
+.no-svg .exampleIcon {
+	background-image: url('myNewShinySVG-fallback.png');
+}
+	</code>
+</pre>
 
 I’ve included these as standard file includes just for this example, but it’s worth converting both to data-uri’s in practice to save on the extra HTTP requests.
 
 If you use SASS, your CSS can be tidied up slightly:
 
-	.exampleIcon {
-		background-image: url('myNewShinySVG.svg');
+<pre>
+	<code class="language-scss">
+.exampleIcon {
+	background-image: url('myNewShinySVG.svg');
 
-		.no-svg & {
-			background-image: url('myNewShinySVG-fallback.png');
-		}
+	.no-svg & {
+		background-image: url('myNewShinySVG-fallback.png');
 	}
+}
+	</code>
+</pre>
 
 
 Including SVG in this way is fine if you are only including a small number of SVG files in your site, but maintaining a larger number in this way can get tedious, especially if the design of the SVG changes slightly and you have to redo your data-uri’s and fallback PNG’s each time. Luckily, there is a better solution.

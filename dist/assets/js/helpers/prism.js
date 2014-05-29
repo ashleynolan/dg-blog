@@ -1,16 +1,29 @@
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+css-extras+clike+javascript+scss&plugins=line-numbers */
+var self = (typeof window !== 'undefined') ? window : {};
+
 /**
  * Prism: Lightweight, robust, elegant syntax highlighting
  * MIT license http://www.opensource.org/licenses/mit-license.php/
  * @author Lea Verou http://lea.verou.me
  */
 
-(function(){
+var Prism = (function(){
 
 // Private helper vars
 var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
 
 var _ = self.Prism = {
 	util: {
+		encode: function (tokens) {
+			if (tokens instanceof Token) {
+				return new Token(tokens.type, _.util.encode(tokens.content));
+			} else if (_.util.type(tokens) === 'Array') {
+				return tokens.map(_.util.encode);
+			} else {
+				return tokens.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\u00a0/g, ' ');
+			}
+		},
+
 		type: function (o) {
 			return Object.prototype.toString.call(o).match(/\[object (\w+)\]/)[1];
 		},
@@ -130,8 +143,6 @@ var _ = self.Prism = {
 			return;
 		}
 
-		code = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\u00a0/g, ' ');
-
 		var env = {
 			element: element,
 			language: language,
@@ -174,7 +185,8 @@ var _ = self.Prism = {
 	},
 
 	highlight: function (text, grammar, language) {
-		return Token.stringify(_.tokenize(text, grammar), language);
+		var tokens = _.tokenize(text, grammar);
+		return Token.stringify(_.util.encode(tokens), language);
 	},
 
 	tokenize: function(text, grammar, language) {
@@ -323,7 +335,11 @@ Token.stringify = function(o, language, parent) {
 };
 
 if (!self.document) {
-	// In worker
+	if (!self.addEventListener) {
+		// in Node.js
+		return self.Prism;
+	}
+ 	// In worker
 	self.addEventListener('message', function(evt) {
 		var message = JSON.parse(evt.data),
 		    lang = message.language,
@@ -333,7 +349,7 @@ if (!self.document) {
 		self.close();
 	}, false);
 
-	return;
+	return self.Prism;
 }
 
 // Get current script and highlight
@@ -349,19 +365,26 @@ if (script) {
 	}
 }
 
-})();;
+return self.Prism;
+
+})();
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = Prism;
+}
+;
 Prism.languages.markup = {
-	'comment': /&lt;!--[\w\W]*?-->/g,
-	'prolog': /&lt;\?.+?\?>/,
-	'doctype': /&lt;!DOCTYPE.+?>/,
-	'cdata': /&lt;!\[CDATA\[[\w\W]*?]]>/i,
+	'comment': /<!--[\w\W]*?-->/g,
+	'prolog': /<\?.+?\?>/,
+	'doctype': /<!DOCTYPE.+?>/,
+	'cdata': /<!\[CDATA\[[\w\W]*?]]>/i,
 	'tag': {
-		pattern: /&lt;\/?[\w:-]+\s*(?:\s+[\w:-]+(?:=(?:("|')(\\?[\w\W])*?\1|[^\s'">=]+))?\s*)*\/?>/gi,
+		pattern: /<\/?[\w:-]+\s*(?:\s+[\w:-]+(?:=(?:("|')(\\?[\w\W])*?\1|[^\s'">=]+))?\s*)*\/?>/gi,
 		inside: {
 			'tag': {
-				pattern: /^&lt;\/?[\w:-]+/i,
+				pattern: /^<\/?[\w:-]+/i,
 				inside: {
-					'punctuation': /^&lt;\/?/,
+					'punctuation': /^<\/?/,
 					'namespace': /^[\w-]+?:/
 				}
 			},
@@ -381,7 +404,7 @@ Prism.languages.markup = {
 
 		}
 	},
-	'entity': /&amp;#?[\da-z]{1,8};/gi
+	'entity': /\&#?[\da-z]{1,8};/gi
 };
 
 // Plugin to make entity title show the real entity, idea by Roman Komarov
@@ -405,17 +428,17 @@ Prism.languages.css = {
 	'property': /(\b|\B)[\w-]+(?=\s*:)/ig,
 	'string': /("|')(\\?.)*?\1/g,
 	'important': /\B!important\b/gi,
-	'ignore': /&(lt|gt|amp);/gi,
-	'punctuation': /[\{\};:]/g
+	'punctuation': /[\{\};:]/g,
+	'function': /[-a-z0-9]+(?=\()/ig
 };
 
 if (Prism.languages.markup) {
 	Prism.languages.insertBefore('markup', 'tag', {
 		'style': {
-			pattern: /(&lt;|<)style[\w\W]*?(>|&gt;)[\w\W]*?(&lt;|<)\/style(>|&gt;)/ig,
+			pattern: /<style[\w\W]*?>[\w\W]*?<\/style>/ig,
 			inside: {
 				'tag': {
-					pattern: /(&lt;|<)style[\w\W]*?(>|&gt;)|(&lt;|<)\/style(>|&gt;)/ig,
+					pattern: /<style[\w\W]*?>|<\/style>/ig,
 					inside: Prism.languages.markup.tag.inside
 				},
 				rest: Prism.languages.css
@@ -436,8 +459,7 @@ Prism.languages.css.selector = {
 Prism.languages.insertBefore('css', 'ignore', {
 	'hexcode': /#[\da-f]{3,6}/gi,
 	'entity': /\\[\da-f]{1,8}/gi,
-	'number': /[\d%\.]+/g,
-	'function': /(attr|calc|cross-fade|cycle|element|hsla?|image|lang|linear-gradient|matrix3d|matrix|perspective|radial-gradient|repeating-linear-gradient|repeating-radial-gradient|rgba?|rotatex|rotatey|rotatez|rotate3d|rotate|scalex|scaley|scalez|scale3d|scale|skewx|skewy|skew|steps|translatex|translatey|translatez|translate3d|translate|url|var)/ig
+	'number': /[\d%\.]+/g
 });;
 Prism.languages.clike = {
 	'comment': {
@@ -461,13 +483,13 @@ Prism.languages.clike = {
 		}
 	},
 	'number': /\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee]-?\d+)?)\b/g,
-	'operator': /[-+]{1,2}|!|&lt;=?|>=?|={1,3}|(&amp;){1,2}|\|?\||\?|\*|\/|\~|\^|\%/g,
+	'operator': /[-+]{1,2}|!|<=?|>=?|={1,3}|&{1,2}|\|?\||\?|\*|\/|\~|\^|\%/g,
 	'ignore': /&(lt|gt|amp);/gi,
 	'punctuation': /[{}[\];(),.:]/g
 };
 ;
 Prism.languages.javascript = Prism.languages.extend('clike', {
-	'keyword': /\b(var|let|if|else|while|do|for|return|in|instanceof|function|new|with|typeof|try|throw|catch|finally|null|break|continue)\b/g,
+	'keyword': /\b(var|let|if|else|while|do|for|return|in|instanceof|function|get|set|new|with|typeof|try|throw|catch|finally|null|break|continue|this)\b/g,
 	'number': /\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee]-?\d+)?|NaN|-?Infinity)\b/g
 });
 
@@ -481,10 +503,10 @@ Prism.languages.insertBefore('javascript', 'keyword', {
 if (Prism.languages.markup) {
 	Prism.languages.insertBefore('markup', 'tag', {
 		'script': {
-			pattern: /(&lt;|<)script[\w\W]*?(>|&gt;)[\w\W]*?(&lt;|<)\/script(>|&gt;)/ig,
+			pattern: /<script[\w\W]*?>[\w\W]*?<\/script>/ig,
 			inside: {
 				'tag': {
-					pattern: /(&lt;|<)script[\w\W]*?(>|&gt;)|(&lt;|<)\/script(>|&gt;)/ig,
+					pattern: /<script[\w\W]*?>|<\/script>/ig,
 					inside: Prism.languages.markup.tag.inside
 				},
 				rest: Prism.languages.javascript
@@ -493,100 +515,43 @@ if (Prism.languages.markup) {
 	});
 }
 ;
-(function(){
-
-if(!window.Prism) {
-	return;
-}
-
-function $$(expr, con) {
-	return Array.prototype.slice.call((con || document).querySelectorAll(expr));
-}
-
-var CRLF = crlf = /\r?\n|\r/g;
-
-function highlightLines(pre, lines, classes) {
-	var ranges = lines.replace(/\s+/g, '').split(','),
-	    offset = +pre.getAttribute('data-line-offset') || 0;
-
-	var lineHeight = parseFloat(getComputedStyle(pre).lineHeight);
-
-	for (var i=0, range; range = ranges[i++];) {
-		range = range.split('-');
-
-		var start = +range[0],
-		    end = +range[1] || start;
-
-		var line = document.createElement('div');
-
-		line.textContent = Array(end - start + 2).join(' \r\n');
-		line.className = (classes || '') + ' line-highlight';
-		line.setAttribute('data-start', start);
-
-		if(end > start) {
-			line.setAttribute('data-end', end);
-		}
-
-		line.style.top = (start - offset - 1) * lineHeight + 'px';
-
-		(pre.querySelector('code') || pre).appendChild(line);
-	}
-}
-
-function applyHash() {
-	var hash = location.hash.slice(1);
-
-	// Remove pre-existing temporary lines
-	$$('.temporary.line-highlight').forEach(function (line) {
-		line.parentNode.removeChild(line);
-	});
-
-	var range = (hash.match(/\.([\d,-]+)$/) || [,''])[1];
-
-	if (!range || document.getElementById(hash)) {
-		return;
-	}
-
-	var id = hash.slice(0, hash.lastIndexOf('.')),
-	    pre = document.getElementById(id);
-
-	if (!pre) {
-		return;
-	}
-
-	if (!pre.hasAttribute('data-line')) {
-		pre.setAttribute('data-line', '');
-	}
-
-	highlightLines(pre, range, 'temporary ');
-
-	document.querySelector('.temporary.line-highlight').scrollIntoView();
-}
-
-var fakeTimer = 0; // Hack to limit the number of times applyHash() runs
-
-Prism.hooks.add('after-highlight', function(env) {
-	var pre = env.element.parentNode;
-	var lines = pre && pre.getAttribute('data-line');
-
-	if (!pre || !lines || !/pre/i.test(pre.nodeName)) {
-		return;
-	}
-
-	clearTimeout(fakeTimer);
-
-	$$('.line-highlight', pre).forEach(function (line) {
-		line.parentNode.removeChild(line);
-	});
-
-	highlightLines(pre, lines);
-
-	fakeTimer = setTimeout(applyHash, 1);
+Prism.languages.scss = Prism.languages.extend('css', {
+	'comment': {
+		pattern: /(^|[^\\])(\/\*[\w\W]*?\*\/|\/\/.*?(\r?\n|$))/g,
+		lookbehind: true
+	},
+	// aturle is just the @***, not the entire rule (to highlight var & stuffs)
+	// + add ability to highlight number & unit for media queries
+	'atrule': /@[\w-]+(?=\s+(\(|\{|;))/gi,
+	// url, compassified
+	'url': /([-a-z]+-)*url(?=\()/gi,
+	// CSS selector regex is not appropriate for Sass
+	// since there can be lot more things (var, @ directive, nesting..)
+	// a selector must start at the end of a property or after a brace (end of other rules or nesting)
+	// it can contain some caracters that aren't used for defining rules or end of selector, & (parent selector), or interpolated variable
+	// the end of a selector is found when there is no rules in it ( {} or {\s}) or if there is a property (because an interpolated var
+	// can "pass" as a selector- e.g: proper#{$erty})
+	// this one was ard to do, so please be careful if you edit this one :)
+	'selector': /([^@;\{\}\(\)]?([^@;\{\}\(\)]|&|\#\{\$[-_\w]+\})+)(?=\s*\{(\}|\s|[^\}]+(:|\{)[^\}]+))/gm
 });
 
-addEventListener('hashchange', applyHash);
+Prism.languages.insertBefore('scss', 'atrule', {
+	'keyword': /@(if|else if|else|for|each|while|import|extend|debug|warn|mixin|include|function|return|content)|(?=@for\s+\$[-_\w]+\s)+from/i
+});
 
-})();;
+Prism.languages.insertBefore('scss', 'property', {
+	// var and interpolated vars
+	'variable': /((\$[-_\w]+)|(#\{\$[-_\w]+\}))/i
+});
+
+Prism.languages.insertBefore('scss', 'ignore', {
+	'placeholder': /%[-_\w]+/i,
+	'statement': /\B!(default|optional)\b/gi,
+	'boolean': /\b(true|false)\b/g,
+	'null': /\b(null)\b/g,
+	'operator': /\s+([-+]{1,2}|={1,2}|!=|\|?\||\?|\*|\/|\%)\s+/g
+});
+;
 Prism.hooks.add('after-highlight', function (env) {
 	// works only for <code> wrapped inside <pre data-line-numbers> (not inline)
 	var pre = env.element.parentNode;

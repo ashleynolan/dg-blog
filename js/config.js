@@ -56,6 +56,10 @@ require.config({
 
 		"polyfills" : {
 			exports: "pollyfills"
+		},
+
+		"prism": {
+			exports: "Prism"
 		}
 	}
 });

@@ -20,4 +20,6 @@ require([
 ],
 function ($, log, MBP, sw, ai, ext, Modernizr, App, moment, prism) {
 
+	Prism.highlightAll();
+
 });

@@ -71,24 +71,40 @@
 <h2 id="implementing-svg-as-an-image-replacement-technique">Implementing SVG as an image replacement technique</h2>
 <p>SVG can be exported out of Adobe Illustrator, or other tools such as <a href="http://www.bohemiancoding.com/sketch/#4">Sketch</a>, by choosing ‘Save as’ and then selecting SVG from the Save as type extension drop down.  Once you have your SVG, you then have a number of options.</p>
 <p>The simplest way to use them is to reference your SVG file as you would a standard image.</p>
-<pre><code>background-image: url(&#39;myNewShinySVG.svg&#39;);</code></pre>
+<pre>
+    <code class="language-scss">
+background-image: url('myNewShinySVG.svg');
+    </code>
+</pre>
+
 <p>This comes with the same drawbacks as including images in this way – it costs an extra HTTP request for each file you add. Thankfully, like any other image, you can convert the SVG into a data-uri and save yourself that extra cost.  There are a number of tools for converting images to data-uri’s my personal favourite being <a href="http://duri.me/">http://duri.me/</a>.  Remember, that to support older browsers – mainly IE8 and below – you will also need to include and maintain fallback images.  <a href="http://modernizr.com/">Modernizr</a> provides a CSS class hook to help you do this:</p>
-<pre><code>.exampleIcon {
-    background-image: url(&#39;myNewShinySVG.svg&#39;);
+<pre>
+    <code class="language-scss">
+.exampleIcon {
+    background-image: url('myNewShinySVG.svg');
 }
 
 .no-svg .exampleIcon {
-    background-image: url(&#39;myNewShinySVG-fallback.png&#39;);
-}</code></pre>
+    background-image: url('myNewShinySVG-fallback.png');
+}
+    </code>
+</pre>
+
 <p>I’ve included these as standard file includes just for this example, but it’s worth converting both to data-uri’s in practice to save on the extra HTTP requests.</p>
 <p>If you use SASS, your CSS can be tidied up slightly:</p>
-<pre><code>.exampleIcon {
-    background-image: url(&#39;myNewShinySVG.svg&#39;);
+<pre>
+    <code class="language-scss">
+.exampleIcon {
+    background-image: url('myNewShinySVG.svg');
 
-    .no-svg &amp; {
-        background-image: url(&#39;myNewShinySVG-fallback.png&#39;);
+    .no-svg & {
+        background-image: url('myNewShinySVG-fallback.png');
     }
-}</code></pre>
+}
+    </code>
+</pre>
+
+
 <p>Including SVG in this way is fine if you are only including a small number of SVG files in your site, but maintaining a larger number in this way can get tedious, especially if the design of the SVG changes slightly and you have to redo your data-uri’s and fallback PNG’s each time. Luckily, there is a better solution.</p>
 <p>Using Grunt, you can implement a task called <a href="https://github.com/filamentgroup/grunticon">Grunticon</a> which was created by the talented guys at <a href="https://github.com/filamentgroup">Filament Group</a>.  Grunticon let’s you specify a folder, or folders, in which you keep you SVG files.  It will go through each of your SVG files and create the CSS needed to include them in your site, as well as generating fallback PNG’s.  It then gives you a tiny piece of JavaScript to add into your site header which detects relevant feature support and serves up the most appropriate CSS file for that browser to load in your SVG or fallback PNG’s.</p>
 <p>Grunticon is the best solution I have found for maintaining SVG in a site, and I’d definitely encourage you to check it out if you want to start using SVG more in your development.</p>
