@@ -1,0 +1,270 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+		<title>Getting started with the OSX terminal - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+
+
+		<meta name="description" content="Dragon Graphics - Blog and Portfolio for Ashley Nolan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/assets/css/kickoff.css">
+
+		<!-- Fonts -->
+		<script type="text/javascript" src="http://fast.fonts.net/jsapi/7f495bc1-d47d-4f68-b796-4c8c60df8cae.js" async></script>
+		<script type="text/javascript" src="//use.typekit.net/xip1pkl.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+		<!-- Require include for JS -->
+		<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min"></script>
+
+	</head>
+	<body>
+
+	<div class="container">
+		<header class="page-header">
+	<h1 id="page-logo" class="logo">
+		<span>Dragon Graphics</span>
+		<a href="/" class="logo-link">
+			<svg class="logo-dg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="234px" height="244.082px" viewBox="0 0 234 244.082" enable-background="new 0 0 234 244.082" xml:space="preserve"><g><g><path clip-rule="evenodd" d="M131.012 68.469c-20.294 5.482-35.874 16.834-38.992 43.7 C68.354 94.6 98.1 47 131 68.469z"/><path clip-rule="evenodd" d="M161.475 59.629c12.752-4.078 0 17.3 8.7 17.3 c-9.173 6.152-19.891-10.842-34.687-8.67C140.716 62 158 67.7 161.5 59.629z"/><path clip-rule="evenodd" d="M76.527 92.79c1.633 4.2 3.7 8.7 6.2 12.5 c2.608 3.9 6.1 7.4 11.2 7.159c-12.189 3.479-23.696 8.262-32.159 18.087c-8.423 9.783-13.461 22.025-16.949 34.3 c-9.061-6.983-14.794 8.593-17.451 14.883c-2.349 5.562-4.978 21.5 6.6 13.891c4.448-2.942 6.602-8.919 12.695-9.151 c-2.969 8.274-6.594 15.987-16.213 17.148c-6.54 0.793-13.054-1.491-18.517-4.962c-2.951-1.873-12.159-8.419-11.935-12.306 c0.512-8.898 10.552-1.189 11.557-8.245c0.624-4.385 0.271-8.806 1.136-13.17c0.908-4.596 2.435-9 2.911-13.689 c3.605 0.3 1.2 6.6 3.9 7.8c10.032-3.507 16.879-11.737 21.362-21.088c2.364-4.937 4.222-10.091 5.968-15.275 c1.456-4.331 1.404-9.623 4.134-13.46c2.841-3.982 7.878-4.951 12.226-6.405C68.082 99.2 72.8 96.4 76.5 92.79z"/><path clip-rule="evenodd" d="M99.255 119.897c9.81 1.9 10.7 5.8 14.9 10.4 c-6.827 6.479-9.902 22.673-5.977 28.901C95.175 156.3 96.8 135.4 99.3 119.897z"/><path clip-rule="evenodd" d="M121.206 137.488c4.894 3 4.4 9.1 6.3 13.9 c-4.936 6.197-10.997 10.411-12.33 22.914C112.079 163.8 115.3 148.9 121.2 137.488z"/><path clip-rule="evenodd" d="M121.605 0c-8.263 15.3 13.1 46.006-1.949 62.4 c-4.596 0.042-5.744-3.36-11.703-1.95C127.689 49.1 102.9 13.8 121.6 0z"/><path clip-rule="evenodd" d="M61.149 5.85c0.1 1.5 1.8 3.1 1.8 5.2 c0.022 2.82-1.059 5.84-1.923 8.48c-2.215 6.783-5.087 13.333-7.233 20.14c-2.608 8.272-5.14 16.396-3.13 25.2 c1.524 6.7 5.9 11.6 11.8 5.692c10.53-10.562 13.605-29.733 18.273-43.378c2.764-8.071 6.217-16.493 11.633-23.199 c-2.654 3.288-2.392 9.859-3.548 13.882c-1.621 5.636-4.147 11.421-3.27 17.417c1.068 7.3 7 7.1 12.4 4.2 c-2.96 1.573-4.405 7.437-6.289 9.995c-2.853 3.876-5.893 7.625-8.38 11.76c-5.954 9.899-8.374 20.95-6.517 32.4 c-7.399 4.952-11.64 13.063-25.353 11.702c-13.303 10.749-23.374 24.729-27.301 44.855c-8.519-20.394 8.5-46.808 19.502-60.457 c-2.158-18.473-6.726-26.699-3.901-40.953C43.038 31.9 62.5 25.6 61.1 5.85z"/><path clip-rule="evenodd" d="M174.777 89.915c4.768-4.601 12.5 8.9 24.8 5 c-3.096 9.324-6.504 18.33-7.452 29.802C186.195 113.3 185.1 96.9 174.8 89.915z"/><path clip-rule="evenodd" d="M96.251 171.615c-2.344 13.276-7.652 40.438-19.501 50.7 c-12.253 1.199-12.991-9.11-23.404-9.753c1.273-5.876 7.661-6.643 9.752-11.697c2.327-15.337-1.888-48.907-13.054-56.462 c6.053-10.196 13.143-22.067 26.409-25.055c-1.406 8.7 9.6 20.2 10 26.911c1.374 19.759-16.337 38.35-11.705 64.4 C85.648 209.1 89.4 183.7 96.3 171.615z"/><path clip-rule="evenodd" d="M192.558 129.948c5.485 9.1 6.5 22.7 14.6 29.3 c-5.582 5.123-22.907 35.464-17.555 23.41C189.939 164.4 194.5 150.4 192.6 129.948z"/></g><path clip-rule="evenodd" d="M99.087 116.263c0 0 10.719-54.502 47.354-40.207 c0 0 54.2 11.5 32.2 97.39C162.524 236 234 236 234 235.987s-109.006 42.894-101.854-68.795 C132.147 167.2 133.9 122.5 99.1 116.263z"/></g></svg>
+			<img src="/assets/img/dg_logo.png" class="logo-dg" alt="Ashley Nolan">
+		</a>
+	</h1>
+
+	<!-- main navigation links -->
+	<section id="nav-strip" class="nav-strip">
+		<!-- Global Navigation links -->
+<nav id="page-nav" class="nav-global">
+	<ul>
+		<li class="nav-global-item"><a href="/blog/" data-hover="Blog">Blog</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item"><a href="/work" data-hover="Work">Work</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item last "><a href="/about" data-hover="About">About</a><span class="navArrow"></span></li>
+	</ul>
+</nav>
+	</section>
+</header>
+
+		<section class="content post">
+			<h1>Getting started with the OSX terminal</h1>
+
+			
+
+<p>For around 18 months now I’ve been using the terminal more and more.  Perhaps the most suprising part of this has been just how enjoyable it is to use once you move past the very basics and become more proficient with what can at first seem on a level with black magic.</p>
+<p>Whereas historically it was unusual for a front-end dev to stare too deeply into the command line abyss, it has now become a tool that can aid many front-end tasks.  Whether using git, grunt or jekyll, there are many tools that require a small amount of terminal knowledge.</p>
+<p>So I wanted to jot down the basics when starting out with the terminal and share some of the most common and useful commands that I tend to use most often.</p>
+<p>Note. The commands and shortcuts will refer directly to the OSX terminal, but many of the basics cross over to Windows command line as well.</p>
+<h2 id="the-very-basics">The very basics</h2>
+<p>The most basic terms you&#39;ll need to survive on the command line:</p>
+<dl>
+    <dt><dfn><strong>cd</strong></dfn></dt>
+    <dd>
+        <p>Short for change directory and will navigate to the directory specified after the command.</p>
+        <p>For example, <code>cd Users/Sites/</code> will move you into the Users/Sites folder.</p>
+        <p>To navigate back one directory (to the current locations parent directory) use <code>cd ../</code>. To return to your home directory type <code>cd</code>.  To return to the previous directory you were located in type <code>cd -</code>.</p>
+        <p>Using the <code>~</code> character means to use the $HOME internal variable, which is usually the root directory of the current user.  So for example typing <code>cd ~/</code> means to traverse from the users home directory.</p>
+        <p>To navigate to a folder which has spaces in its folder name, use <code>cd /Users/Ash/My\ Folder\ Name/</code> where the <code>\</code> escapes each space or <code>cd “/Users/Ash/My Folder Name/&quot;</code>.</p>
+    </dd>
+
+    <dt><dfn><strong>mkdir</strong></dfn></dt>
+    <dd>Short for make directory and, as you might have guessed, this command creates a directory.  Usage is like so <code>mkdir my-directory-name</code>.</dd>
+
+    <dt><dfn><strong>pwd</strong></dfn></dt>
+    <dd>Displays the path of the current directory.  Useful for finding your current terminal location in the filesystem.</dd>
+
+    <dt><dfn><strong>cp</strong></dfn></dt>
+    <dd>Short for copy.  Used like so: <code>cp /Users/Ash/originalfile.txt tmp/copiedfile.txt</code>.</dd>
+
+    <dt><dfn><strong>ls</strong></dfn></dt>
+    <dd>
+        <p>Short for list.  Lists all files in a directory.</p>
+        <p>To view files as a vertical list use <code>ls -l</code>.</p>
+        <p>To view all files including hidden ones use <code>ls -a</code>.</p>
+        <p>To view only directories, type <code>ls -l | grep &#39;^d&#39;</code></p>
+    </dd>
+
+    <dt><dfn><strong>mv</strong></dfn></dt>
+    <dd>Short for move.  Used in the same way as copy (cp).</dd>
+
+    <dt><dfn><strong>rm</strong></dfn></dt>
+    <dd>Short for remove (more commonly known as deleting).  To remove a folder use <code>rm -rf folder-name</code>.</dd>
+
+    <dt><dfn><strong>open</strong></dfn></dt>
+    <dd><p>Opens a file.</p>
+        <p><code>open .</code> opens the current directory in a Finder window.</p>
+    </dd>
+
+    <dt><dfn><strong>man</strong></dfn></dt>
+    <dd>Short for manual.  For example, <code>man rm</code> will display information about the <code>rm</code> command.</dd>
+</dl>
+
+<p>A useful reference if you&#39;d like to see more detail about what specific characters mean when using them on the command line is <a href="http://tldp.org/LDP/abs/html/special-chars.html">Chapter 3 of The Bash Reference Manual</a>.</p>
+<h2 id="useful-keyboard-shortcuts">Useful Keyboard Shortcuts</h2>
+<dl>
+    <dt><dfn><strong>Tab</strong></dfn></dt>
+    <dd>Autocomplete a path.  When entering a long path name it can be tedious to type out, hitting tab will autocomplete as much of the filename as it can match from what you have already typed.  Hitting tab twice will show all options available that match what you have written.  This enables quicker traversing of folders and files.</dd>
+
+    <dt><dfn><strong>↑ (Up Arrow)</strong></dfn></dt>
+    <dd>Toggles trough previously entered commands.  Useful for repeating long commands that are still in the terminal history.</dd>
+
+    <dt><dfn><strong>Alt + ← or →  (Left or Right Arrow)</strong></dfn></dt>
+    <dd>Skips word. Useful when navigating through long commands you have typed.</dd>
+
+    <dt><dfn><strong>Alt + Mouse click</strong></dfn></dt>
+    <dd>Holding down the Alt key and then using your mouse enables you to move your cursor to a specific part of the typed command.  Useful when needing to edit commands that are quite long.</dd>
+
+    <dt><dfn><strong>Cmd + T</strong></dfn></dt>
+    <dd>Opens up a new terminal window in a separate tab.</dd>
+
+    <dt><dfn><strong>Cmd + Shift + ← or → (Left or Right Arrow)</strong></dfn></dt>
+    <dd>Navigate between open terminal tabs.</dd>
+
+    <dt><dfn><strong>Ctrl + C</strong></dfn></dt>
+    <dd>Stop Process from running.  Useful when running grunt or git commands for example if you realise you don&#39;t want them to run after executing them.</dd>
+
+    <dt><dfn><strong>Ctrl + Z</strong></dfn></dt>
+    <dd>Quit process.  Different to <code>Ctrl + C</code> as the process doesn’t stop – it will still run in the background.</dd>
+
+    <dt><dfn><strong>Ctrl + R</strong></dfn></dt>
+    <dd>Search through your terminal history.  Let’s you start typing to find a command you have previously written.  Hugely useful for recalling longer commands you have previously written.</dd>
+</dl>
+
+
+<h2 id="building-on-the-basics">Building on the basics</h2>
+<dl>
+
+    <dt><dfn><strong>clear</strong></dfn></dt>
+    <dd>
+        <p>Clears the current window, although you will still be able to scroll back up to see your history.  You can also use <code>Ctrl + L</code> as a shortcut.</p>
+        <p>If you use iTerm (see later in article), you can also clear the screen with <code>Cmd + K</code></p>
+    </dd>
+
+    <dt><dfn><strong>!!</strong></dfn></dt>
+    <dd>Repeat the previous command executed.  For example, if you needed to repeat the previous command with admin privileges, you could type <code>sudo !!</code>.</dd>
+
+    <dt><dfn><strong>&amp;&amp;</strong></dfn></dt>
+    <dd>Lets you chain commands.  So <code>cd Sites/AshsFolder &amp;&amp; mkdir css</code> will change the directory to the Folder “Sites/AshsFolder” and create a new folder called &quot;css&quot;.</dd>
+
+    <dt><dfn><strong>killall</strong></dfn></dt>
+    <dd>Kills an Application dead.  So for example, typing <code>killall Finder</code> will restart all Finder windows.</dd>
+
+    <dt><dfn><strong>caffeinate</strong></dfn></dt>
+    <dd>Prevents Mac from sleeping.</dd>
+
+    <dt><dfn><strong>-v</strong></dfn></dt>
+    <dd>
+        <p>Requests the version of the operator being called.  So <code>ruby -v</code> will display the version of ruby installed.</p>
+        <p>Sometimes, packages can use a slightly different terminology such as Git which uses <code>git —version</code>.</p>
+    </dd>
+
+    <dt><dfn><strong>ping</strong></dfn></dt>
+    <dd>Will attempt to ping a web server and give a response.  Ping sends very small bits of information over a network to a remote computer, timing how long it takes for a response to be received.  So typing <code>ping www.bbc.co.uk</code> attempts to get a response from www.bbc.co.uk and will tell you the response time.  Useful for checking if a server is responding or to find the external IP of a web address.</dd>
+
+    <dt><dfn><strong>top</strong></dfn></dt>
+    <dd>View all active processes.</dd>
+
+    <dt><dfn><strong>grep</strong></dfn></dt>
+    <dd>Find text inside files.</dd>
+
+    <dt><dfn><strong>Find local IP Address</strong></dfn></dt>
+    <dd><code>ipconfig getifaddr en1</code></dd>
+
+    <dt><dfn><strong>Find external IP Address</strong></dfn></dt>
+    <dd><code>curl ipecho.net/plain; echo</code></dd>
+
+    <dt><dfn><strong>View file system usage in realtime</strong></dfn></dt>
+    <dd><code>sudo fs_usage</code></dd>
+
+    <dt><dfn><strong>Changing system preferences</strong></dfn></dt>
+    <dd>
+        <p>You can change all sorts of OSX preferences straight from your command line.  If you know about <a href="http://dotfiles.github.io/">dotfiles</a>, then an OSX dotfile simply runs a set of bash commands on your command line to make a set of preference changes.
+        <p>For example, to show hidden files and folders in Finder windows, you can run this command in your terminal – <code>defaults write com.apple.finder AppleShowAllFiles -bool TRUE; killall Finder</code>.</p>
+        <p>To see more examples of preference command line, <a href="https://github.com/ashleynolan/dotfiles/blob/master/.osx">checkout my OSX dotfile</a>.</p>
+    </dd>
+</dl>
+
+
+<h2 id="aliases">Aliases</h2>
+<p>Aliases are a godsend for making short work of commonly used commands.  They are basically a way of creating a shorthand of a longer command, so that you can then type the shorter command in order to execute it.</p>
+<p> I have written a separate article about <a href="/blog/beginners-guide-to-terminal-aliases-and-functions">how to create terminal aliases and functions</a>, so if you&#39;re interested in finding out more, go take a look.</p>
+<h2 id="iterm">iTerm</h2>
+<p>An emulator for the default terminal provided by Mac OSX, iTerm provides extra features that the default terminal doesn&#39;t.</p>
+<p>Especially useful for creating profiles – shortcuts for common directories and commands – and providing split pane views, a number of its features are <a href="http://www.iterm2.com/#/section/features">detailed on its site</a>.</p>
+<p>If you want to know more about iTerm, <a href="http://www.iterm2.com/">checkout its website</a>.</p>
+<h2 id="-and-finally-for-shits-and-giggles">…and finally, for shits and giggles</h2>
+<dl>
+    <dt><dfn><strong>See your most used terminal commands</strong></dfn></dt>
+    <dd><code>history | awk &#39;{print $2}&#39; | awk &#39;BEGIN {FS=&quot;|&quot;}{print $1}&#39; | sort | uniq -c | sort -nr | head</code></dd>
+
+    <dt><dfn><strong>Shutdown your Mac with a delay</strong></dfn></dt>
+    <dd>Useful for when you have a grudge that needs satisfying; <code>sudo shutdown -r +60</code>.</dd>
+</dl>
+
+
+<h2 id="got-any-more-">Got any more?</h2>
+<p>I’m always interested in seeing what terminal commands people find most useful, so if you haveof a command that you can’t live without, I’d love to hear about it in the comments!</p>
+
+
+			<p class="post-date separator-top">Posted on the 24th June 2014</p>
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
+
+		<footer class="page-footer border-grey-white-top">
+	<!-- Social links -->
+<nav class="links-social">
+	<ul>
+		<li class="links-social-item links-social-email"><a href="mailto:contact@dragongraphics.co.uk" title="Email Me" rel="external" target="_blank"><span class="links-social-icon icon-email-shaded"></span><span class="screen-reader-text">Email</span></a></li>
+		<li class="links-social-item links-social-twitter"><a href="http://twitter.com/AshNolan_" title="Find me on Twitter" rel="external" target="_blank"><span class="links-social-icon icon-twitter"></span><span class="screen-reader-text">Twitter</span></a></li>
+		<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" title="My LinkedIn Profile" rel="external" target="_blank"><span class="links-social-icon icon-linkedin"></span><span class="screen-reader-text">LinkedIn</span></a></li>
+	</ul>
+</nav>
+
+	 <div class="footer-content">
+		 <p>I'm Ashley Nolan, a Creative Technologist at TMW.  Do take a look around, or contact me in any of the usual ways – it'd be great to hear from you.</p>
+	</div>
+</footer>
+	</div>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-20668207-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</body>
+</html>
