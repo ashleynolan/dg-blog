@@ -10,7 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-		<title>AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<title>Creating button effects with box shadows and border radius - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
 
 
 		<meta name="description" content="Dragon Graphics - Blog and Portfolio for Ashley Nolan">
@@ -34,8 +34,7 @@
 	</head>
 	<body>
 
-	 <div class="container">
-		<!-- nav partial -->
+	<div class="container">
 		<header class="page-header">
 	<h1 id="page-logo" class="logo">
 		<span>Dragon Graphics</span>
@@ -58,95 +57,24 @@
 	</section>
 </header>
 
-		
+		<section class="content post">
+			<h1>Creating button effects with box shadows and border radius</h1>
 
-<section class="content articles">
-
-	<h2 class="articles-subhead separator-bottom">Recent Posts</h2>
-	<!--<h1 class="gigaHeading text-centre page-title">Page title example</h1>
-	<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>-->
-
-	 
-	
-		
 			
-			<a href="/blog/creating-button-effects-with-box-shadows-and-border-radius" class="articles-item separator-bottom">
-				<article>
-					<time>16/07/2014</time>
-					<h2 class="articles-item-title">Creating button effects with box shadows and border radius</h2>
-					<p class="articles-item-description">How to make some simple looking button effects using box-shadow and border-radius. </p>
-				</article>
-			</a>
-		
-			
-			<a href="/blog/getting-started-with-terminal" class="articles-item separator-bottom">
-				<article>
-					<time>24/06/2014</time>
-					<h2 class="articles-item-title">Getting started with the OSX terminal</h2>
-					<p class="articles-item-description">An intro guide to the terminal, going over my most commonly used shortcuts and commands.</p>
-				</article>
-			</a>
-		
-			
-			<a href="/blog/are-we-getting-too-sassy" class="articles-item separator-bottom">
-				<article>
-					<time>29/05/2014</time>
-					<h2 class="articles-item-title">Are we getting too Sassy?</h2>
-					<p class="articles-item-description">A look at the recent trend of micro-optimisation versus maintainability</p>
-				</article>
-			</a>
-		
-	
-</section>
 
-<!-- Homepage carousel -->
-<section id="homeCarousel" class="homeCarousel">
-	<h2 class="homeCarousel-title">Recent Work</h2>
+<p>As I had a free evening last night, I decided to have a bit of a play around on CodePen – yeh, I know, I totally know how to live.</p>
+<p>I wanted to make use of an <a href="http://beemuse.com/paper">effect I saw a while ago on the Beemuse site</a>, which used CSS3 box-shadows and border-radius to create a kind of 3D paper effect in the way the elements were styled.  Thinking this could be used to make some simple but nice looking buttons with interesting state effects, <a href="http://codepen.io/ashleynolan/full/djpCG/">I made this demo</a>.</p>
+<p>The effect uses box-shadows, borders and border-radius to vary the depth when the user interacts with each button.</p>
+<p>Hopefully it‘s clear from looking through the code how each effect has been created, but get in touch if you have any questions about any of the effects in the demo.</p>
+<p>As I started to play around with different effects last night, I kept finding new and interesting variations on the same theme.  I‘m sure you can probably think of some more – if you can, <a href="http://codepen.io/ashleynolan/details/djpCG/">fork the demo</a> and play around with the code yourself; I‘d love to see what you all can think of and create!</p>
+<p>Since I put up the demo last night, it‘s actually hit the CodePen homepage top picks list, and has now been viewed over 2000 times and hearted 70+ times (and counting).  Thanks for the great feedback so far!</p>
 
-	<div class="homeCarousel-wrapper">
-		<div class="homeCarousel-carousel">
-			<article id="workArticle4" class="homeCarousel-carousel-item" data-name="BBC GoodFood">
-				<a href="work#bbcgoodfood" title="BBC GoodFood">
-					<img class="featureImg" src="assets/img/work/home-bbc.png" alt="BBC GoodFood Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>BBC GoodFood</h3></div>
-				</a>
-			</article>
-			<article id="workArticle5" class="homeCarousel-carousel-item" data-name="TMW Kickoff">
-				<a href="work#kickoff" title="Kickoff">
-					<img class="featureImg" src="assets/img/work/home-kickoff.png" alt="Kickoff Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>TMW Kickoff</h3></div>
-				</a>
-			</article>
-			<article id="workArticle1" class="homeCarousel-carousel-item" data-name="Uncharted 3">
-				<a href="work#uncharted3" title="Uncharted 3">
-					<img class="featureImg" src="assets/img/work/home-uncharted.jpg" alt="Image of Drake from Uncharted">
-					<div class="homeCarousel-carousel-item-title"><h3>Uncharted 3 </h3></div>
-				</a>
-			</article>
-			<article id="workArticle2" class="homeCarousel-carousel-item" data-name="RSPCA">
-				<a href="work#rspca" title="RSPCA">
-					<img class="featureImg" src="assets/img/work/home-rspca.jpg" alt="Image of a Tiger">
-					<div class="homeCarousel-carousel-item-title"><h3>RSPCA</h3></div>
-				</a>
-			</article>
-			<article id="workArticle3" class="homeCarousel-carousel-item" data-name="Lynx Mass Debates">
-				<a href="work#lynxmassdebates" title="Lynx Mass Debates">
-					<img class="featureImg" src="assets/img/work/home-massdebates.jpg" alt="Picture of smiley and sad faces">
-					<div class="homeCarousel-carousel-item-title"><h3>Lynx Mass Debates</h3></div>
-				</a>
-			</article>
-		</div>
 
-		<div id="homeCarousel-canvasFrame" class="homeCarousel-canvasFrame">
-			<a href="work#bbcgoodfood" id="homeCarousel-canvasFrame-link" class="homeCarousel-canvasFrame-link">
-				<canvas id="homeCarousel-canvasFrame-canvas" class="homeCarousel-canvasFrame-canvas" width="618" height="272"></canvas>
-				<div class="homeCarousel-carousel-item-title">
-					<h3>BBC GoodFood</h3>
-				</div>
-			</a>
-		</div>
-	</div>
-</section><!-- End of work section panel -->
+			<p class="post-date separator-top">Posted on the 16th July 2014</p>
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
 
 		<footer class="page-footer border-grey-white-top">
 	<!-- Social links -->
@@ -163,6 +91,18 @@
 	</div>
 </footer>
 	</div>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
 
