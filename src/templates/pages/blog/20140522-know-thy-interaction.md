@@ -42,18 +42,18 @@ The design guidelines by Mapbox that I reference [are available on their blog](h
 
 ## Codepen examples
 
-Checkout the great work being created on Codepen, as well as the [top 100 list from 2013 on Codepen](codepen.io/2013/popular/) – some great examples of what can be achieved now with HTML/CSS/JS.
+Checkout the great work being created on Codepen, as well as the [top 100 list from 2013 on Codepen](http://codepen.io/2013/popular/) – some great examples of what can be achieved now with HTML/CSS/JS.
 
-- [Ladda – Progress indicators](codepen.io/hakimel/full/gkeha)
-- [Loading Indicators](codepen.io/CreativeJuiz/pen/vFBIh)
-- [Alternative Text input boxes](codepen.io/MichaelArestad/full/ohLIa)
-- [Shadow effects](codepen.io/juanbrujo/full/yGpAK)
-- [3d Dropdown concept](codepen.io/soulwire/full/EKmwC)
-- [Opening Type](codepen.io/diegopardo/full/GqEho)
-- [Falling petals animation](codepen.io/anandylaanbaatar/full/tqdmv)
-- [Direction aware hover](codepen.io/noeldelgado/full/pGwFx)
-- [Navicon Transformations](codepen.io/bennettfeely/full/twbyA)
-- [Perspective Button](codepen.io/bennettfeely/full/ErFGv)
+- [Ladda – Progress indicators](http://codepen.io/hakimel/full/gkeha)
+- [Loading Indicators](http://codepen.io/CreativeJuiz/pen/vFBIh)
+- [Alternative Text input boxes](http://codepen.io/MichaelArestad/full/ohLIa)
+- [Shadow effects](http://codepen.io/juanbrujo/full/yGpAK)
+- [3d Dropdown concept](http://codepen.io/soulwire/full/EKmwC)
+- [Opening Type](http://codepen.io/diegopardo/full/GqEho)
+- [Falling petals animation](http://codepen.io/anandylaanbaatar/full/tqdmv)
+- [Direction aware hover](http://codepen.io/noeldelgado/full/pGwFx)
+- [Navicon Transformations](http://codepen.io/bennettfeely/full/twbyA)
+- [Perspective Button](http://codepen.io/bennettfeely/full/ErFGv)
 
 ## Codrops Examples
 
@@ -61,18 +61,18 @@ Checkout the great work being created on Codepen, as well as the [top 100 list f
 
 These are the links I showed in the talk, and a few others I've picked out that I like, although there are many more great tutorials on the site.
 
-- [Dot Navigation Styles](tympanus.net/Development/DotNavigationStyles/)
-- [Creative Buttons](tympanus.net/Development/CreativeButtons/)
-- [Icon Hover Effects](tympanus.net/Development/IconHoverEffects/#set-1)
-- [Grid Loading Effect](tympanus.net/Tutorials/SamsungGrid/index2.html)
-- [Morphing Buttons](tympanus.net/Development/ButtonComponentMorph/)
-- [Progress Buttons](tympanus.net/Tutorials/CircularProgressButton/)
-- [More Progress Buttons](tympanus.net/Development/ProgressButtonStyles/)
-- [Minimal Form](tympanus.net/Development/MinimalForm/)
-- [Natural Language Form](http://tympanus.net/Tutorials/NaturalLanguageForm/)
-- [Border Animations](tympanus.net/Tutorials/BorderAnimationSVG/)
-- [Shape Hover Effects](tympanus.net/Tutorials/ShapeHoverEffectSVG/index.html)
-- [3D Offscreen Navigation](tympanus.net/Development/PerspectivePageViewNavigation/index.html)
+- [Dot Navigation Styles](http://tympanus.net/Development/DotNavigationStyles/)
+- [Creative Buttons](http://tympanus.net/Development/CreativeButtons/)
+- [Icon Hover Effects](http://tympanus.net/Development/IconHoverEffects/#set-1)
+- [Grid Loading Effect](http://tympanus.net/Tutorials/SamsungGrid/index2.html)
+- [Morphing Buttons](http://tympanus.net/Development/ButtonComponentMorph/)
+- [Progress Buttons](http://tympanus.net/Tutorials/CircularProgressButton/)
+- [More Progress Buttons](http://tympanus.net/Development/ProgressButtonStyles/)
+- [Minimal Form](http://tympanus.net/Development/MinimalForm/)
+- [Natural Language Form](http://http://tympanus.net/Tutorials/NaturalLanguageForm/)
+- [Border Animations](http://tympanus.net/Tutorials/BorderAnimationSVG/)
+- [Shape Hover Effects](http://tympanus.net/Tutorials/ShapeHoverEffectSVG/index.html)
+- [3D Offscreen Navigation](http://tympanus.net/Development/PerspectivePageViewNavigation/index.html)
 
 ## Effeckt.css
 
@@ -106,7 +106,7 @@ These are the links I showed in the talk, and a few others I've picked out that 
 
 ## Further Reading
 
-[Interaction Evolved](12devsofxmas.co.uk/2013/12/day-3-interaction-evolved/) – an article I wrote for 12Devs at the start of the year.
+[Interaction Evolved](http://12devsofxmas.co.uk/2013/12/day-3-interaction-evolved/) – an article I wrote for 12Devs at the start of the year.
 
 
 {{/markdown}}

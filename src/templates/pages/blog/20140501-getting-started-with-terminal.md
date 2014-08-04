@@ -3,14 +3,14 @@ layout: post.hbs
 
 title: Getting started with the OSX terminal – a developers guide
 url: getting-started-with-terminal
-description: "An intro guide to the terminal, going over my most commonly used shortcuts and commands."
+description: "An intro guide to the terminal, going over some of the most commonly used shortcuts and commands."
 
-posted: 2014-02-12T10:00
+posted: 2014-06-04T10:00
 
 post:
 - post
 
-published: false
+published: true
 
 categories:
   - "Web Development"
