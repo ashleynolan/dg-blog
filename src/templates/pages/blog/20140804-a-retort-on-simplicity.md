@@ -65,6 +65,6 @@ As Stephen Hay recently said at his talk at Beyond Tellerrand:
 
 For me personally, this means grabbing a core structure of code and tools that enables me to just start coding.  To you, it might mean something different and that’s fine.  The main thing is that your chosen process gives you the simplicity that you need to start creating.
 
-So let’s all stop blaming the tools for hindering simplicity; instead blame ourselves for the ways in which we choose to use them.
+So let’s all stop blaming our tools for hindering simplicity; instead blame ourselves for the ways in which we choose to use them.
 
 {{/markdown}}
