@@ -3,7 +3,7 @@ layout: post.hbs
 
 title: A Retort on Simplicity
 url: a-retort-on-simplicity
-description: "Simplicity isn’t about not using development tools – it’s about using the right tool for the right task."
+description: "Simplicity isn’t about using out development tools less – it’s about using the right tool for the right task."
 
 posted: 2014-08-04T23:20
 
