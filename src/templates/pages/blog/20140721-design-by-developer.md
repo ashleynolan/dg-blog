@@ -20,13 +20,21 @@ categories:
 
 {{#markdown}}
 
-The role of a front-end developer has changed massively since I started out in the industry.
+I first started out in the industry around 9 years ago.  It’s fair to say, the role of a front-end developer has changed pretty massively since then.
 
-Whereas in the past front-end developers could get away with knowing very little about design, it's now very important to, at the very least, know the basic fundamentals and principles of design.  Some developers are equally skilled in design as they are in front-end coding, capable of creating great looking sites on their own.
+Whereas in the past front-end developers could get away with knowing very little about design, it's now very important to know the basic fundamentals and principles of design, at the very least.  Some developers are equally skilled in design as they are in front-end coding, capable of creating great looking sites on their own; these people I like to refer to as ‘lucky gits’.
 
-Having originally come from a more technical Computer Science background, I’m still learning my trade in design.  When I started out in front-end development I always felt that I had a 'good eye' for a design, but without ever really knowing the underlying principles to back it up; Why did
+Having originally come from a more technical Computer Science background, I still consider myself to be learning my trade in design.  When starting out, I always felt that I had a 'good eye' for a design, but without ever really knowing the underlying principles to back it up. Why did certain typefaces look better to me than others in certain scenarios?
 
-On many of the projects I now work on, I take great pride in collaborating closely with our designers to create a great design together, but this wouldn't have been possible without first learning some of the fundamental skills and techniques that I think all front-end developers should know.
+On many of the projects I now work on, I take great pride in collaborating closely with designers to create a great design together, but this wouldn't have been possible without first learning some of the fundamental skills and techniques that I think all front-end developers should know.  This article is my attempt at collating some of the things that have helped me get to grips with some of the technical hows and whys of design.
+
+## Resources
+
+Mark Boulton 5 simple steps
+Course with
+
+
+
 
 
 
