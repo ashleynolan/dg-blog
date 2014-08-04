@@ -361,12 +361,10 @@ abbr.initialism {
 blockquote {
 	padding-left: 10px;
 	margin: ($base-line-height + px);
-	border-left: 4px solid lighten(#000, 80%);
+	border-left: 4px solid #000;
 
 	& p {
 		margin-bottom: 0;
-		@include font-size($base-font-size);
-		font-weight: 300;
 	}
 
 	& small {
