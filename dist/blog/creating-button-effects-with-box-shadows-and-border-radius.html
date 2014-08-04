@@ -10,7 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-		<title>Launch Sublime Text 2 or 3 from the Mac OSX Terminal - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<title>Creating button effects with box shadows and border radius - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
 
 
 		<meta name="description" content="Dragon Graphics - Blog and Portfolio for Ashley Nolan">
@@ -58,54 +58,19 @@
 </header>
 
 		<section class="content post">
-			<h1>Launch Sublime Text 2 or 3 from the Mac OSX Terminal</h1>
+			<h1>Creating button effects with box shadows and border radius</h1>
 
 			
 
-<p>As I’m working in the OSX Terminal more and more these days, I&#39;m always on the lookout for time saving shortcuts.</p>
-<p>A really useful tip that I picked up recently from <a href="http://twitter.com/MrMartineau">Zander Martineau</a> is how to open up Sublime Text straight from the Terminal.  This is done by hooking into a CLI utility that Sublime provides called <a href="http://www.sublimetext.com/docs/2/osx_command_line.html">subl</a>.</p>
-<p>The following instructions are based largely on the original <a href="https://gist.github.com/artero/1236170">gist on Github</a> by <a href="https://github.com/artero">Artero</a>, so credit for this solution should be directed to them and not myself.</p>
-<p>It’s a slightly different installation depending on whether you’re using Sublime Text 2 or 3, so I’ll split the two out below in the installaton; simply refer to the instructions that are relevant to you.</p>
-<h2 id="installation">Installation</h2>
-<p>Assuming you installed Sublime in the Applications folder, the following command should open up the editor when you type it into the Terminal:</p>
-<h3 id="for-sublime-text-2-">For Sublime Text 2:</h3>
-<p><code>open /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl</code></p>
-<h3 id="for-sublime-text-3-">For Sublime Text 3:</h3>
-<p><code>open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl</code></p>
-<p>If that worked, you&#39;re good to go.</p>
-<p>You now need to create a symlink called <code>sublime</code> which links the subl CLI to a folder where your system usually looks to execute these binaries.  To do this, type in:</p>
-<h3 id="for-sublime-text-2-">For Sublime Text 2:</h3>
-<p><code>ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime</code></p>
-<h3 id="for-sublime-text-3-">For Sublime Text 3:</h3>
-<p><code>ln -s &quot;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&quot; /usr/local/bin/sublime</code></p>
-<h2 id="check-your-profile">Check your profile</h2>
-<p>The final thing you need to do, is to check that your system profile is looking in the right place to see the symlink you have just created.</p>
-<p>Enter the following command into your Terminal:</p>
-<p><code>open ~/.bash_profile</code></p>
-<p>Note that in some cases the profile may be called <code>~/.profile</code>.</p>
-<p>This should open up your profile in a text editor.  What you’re looking for is a line towards the top of the file that starts with <code>export PATH=</code>.  Your <code>PATH</code> contains all the directories that will be checked for executable binaries when you type a command into your Terminal.  Since we created a symlink in the <code>/usr/local/bin</code> folder, we want to make sure that that folder is being checked too.</p>
-<p>Hopefully, you’ll be able to see something similar to this:</p>
-<p><code>export PATH=/usr/local/bin:(...)</code></p>
-<p>If not, simply add this folder to your <code>PATH</code> and save the file.</p>
-<p>Note: The <code>(...)</code> in this example represents other folders that would be listed on the same line and separated by a colon.</p>
-<p>If you don&#39;t already have a <code>PATH</code> set in your bash_profile you can type the following on a new line:</p>
-<p><code>export PATH=/usr/local/bin:$PATH</code></p>
-<p>Finally, if you did have to add <code>/usr/local/bin</code> to your <code>PATH</code>, run the following command before continuing:</p>
-<p><code>source ~/.bash_profile</code></p>
-<p>This will reload your .bash_profile with the newly added directory in your <code>PATH</code>.</p>
-<h2 id="test-it-works-">Test it works!</h2>
-<p>In your Terminal, the following commands should now work:</p>
-<ul class="unstyled">
-    <li><code>sublime .</code> – opens the current directory in Sublime</li>
-    <li><code>sublime filename</code> – opens a file where <code>filename</code> is the file to be opened</li>
-    <li><code>sublime foldername</code> – opens a folder where <code>foldername</code> is the folder to be opened</li>
-</ul>
-
-<p>And there you have it – you can now open any file or folder in Sublime straight from the Terminal.</p>
-<p>Thanks and credit for this great solution again goes to <a href="https://www.github.com/artero">Artero</a>.  If you have any problems getting it working, let me know and I’ll do my best to help you out.</p>
+<p>As I had a free evening last night, I decided to have a bit of a play around on CodePen – yeh, I know, I totally know how to live.</p>
+<p>I wanted to make use of an <a href="http://beemuse.com/paper">effect I saw a while ago on the Beemuse site</a>, which used CSS3 box-shadows and border-radius to create a kind of 3D paper effect in the way the elements were styled.  Thinking this could be used to make some simple but nice looking buttons with interesting state effects, <a href="http://codepen.io/ashleynolan/full/djpCG/">I made this demo</a>.</p>
+<p>The effect uses box-shadows, borders and border-radius to vary the depth when the user interacts with each button.</p>
+<p>Hopefully it‘s clear from looking through the code how each effect has been created, but get in touch if you have any questions about any of the effects in the demo.</p>
+<p>As I started to play around with different effects last night, I kept finding new and interesting variations on the same theme.  I‘m sure you can probably think of some more – if you can, <a href="http://codepen.io/ashleynolan/details/djpCG/">fork the demo</a> and play around with the code yourself; I‘d love to see what you all can think of and create!</p>
+<p>Since I put up the demo last night, it‘s actually hit the CodePen homepage top picks list, and has now been viewed over 2000 times and hearted 70+ times (and counting).  Thanks for the great feedback so far!</p>
 
 
-			<p class="post-date separator-top">Posted on the 17th February 2014</p>
+			<p class="post-date separator-top">Posted on the 16th July 2014</p>
 
 			
 

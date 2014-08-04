@@ -10,6 +10,10 @@
 
 			<p class="post-date separator-top">Posted on the {{moment posted format="Do MMMM YYYY" }}</p>
 
+			{{#if updated}}
+				<p>Updated on the <date>{{moment updated format="Do MMMM YYYY" }}</date></p>
+			{{/if}}
+
 			<div id="disqus_thread" class="comments separator-top"></div>
 
 		</section>
