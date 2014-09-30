@@ -178,7 +178,7 @@ module.exports = function (grunt) {
 				}
 			},
 			rules: [
-				{ from: '(^((?!css|html|js|img|fonts|\/$).)*$)', to: '$1.html' }
+				{ from: '(^((?!\/css|html|\/js|img|fonts|\/$).)*$)', to: '$1.html' }
 			]
 		},
 

@@ -69,8 +69,7 @@
 <p>Deeper into the article, he goes on to show how to DRY out a mixin to the point where we have the following Sass:</p>
 <h3 id="scss">SCSS</h3>
 <pre>
-    <code class="language-scss">
-$Placeholder-Selectors: ();
+<code class="language-scss">$Placeholder-Selectors: ();
 
 @mixin button($color, $extend: true) {
     @include button-static($extend);
@@ -107,15 +106,13 @@ $Placeholder-Selectors: ();
             cursor: pointer;
         }
     }
-}
-</code>
+}</code>
 </pre>
 
 <p>Which can then be used in the following way:</p>
 <h3 id="scss">SCSS</h3>
 <pre>
-    <code class="language-scss">
-.button-badass {
+<code class="language-scss">.button-badass {
     @include button(#b4d455);
 }
 
@@ -125,14 +122,12 @@ $Placeholder-Selectors: ();
 
 .button-decaff {
     @include button(#decaff);
-}
-</code>
+}</code>
 </pre>
 
 <h3 id="css">CSS</h3>
 <pre>
-    <code class="language-css">
-.button-badass {
+<code class="language-css">.button-badass {
     background-color: #b4d455;
     border-color: #879f3f;
 }
@@ -169,8 +164,7 @@ $Placeholder-Selectors: ();
 .button-decaff:hover {
     background-color: #bcabd8;
     border-color: #857999;
-}
-    </code>
+}</code>
 </pre>
 
 <p>First off – creating a mixin that can do this is hugely skilled.  It does exactly what it was written to do, plus it&#39;s uber DRY.  Mission accomplished right?</p>

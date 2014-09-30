@@ -31,11 +31,9 @@ Having previously read Jeremy's blog post, I knew that a version of what I wante
 First, create the div element.  As Jeremy's points out in his blog post, a z-index applied to the body wouldn't work - webkit always returns a value of auto in this case - but doing so on an element within the body allows the JavaScript to retrieve the z-index value as we need to.  This is added with JS, to keep the solution out of the markup:
 
 <pre>
-	<code class="language-javascript">
-	var breakpointTest = document.createElement('div');
+<code class="language-javascript">var breakpointTest = document.createElement('div');
 	breakpointTest.setAttribute('id', 'breakpoint-test');
-	document.body.appendChild(breakpointTest);
-	</code>
+	document.body.appendChild(breakpointTest);</code>
 </pre>
 
 Next, we add a set of media queries that manipulate the z-index of our div element.  Rather than using arbitrary numbers to represent the breakpoints, setting the z-index to the min-width of the media query makes our JavaScript checks make more sense when read in isolation.
@@ -43,47 +41,43 @@ Next, we add a set of media queries that manipulate the z-index of our div eleme
 So as an example here, we'll set checks for 480px and 850px:
 
 <pre>
-	<code class="language-css">
-	#breakpoint-test {
-	    z-index:1;
-	    position:relative;
-	}
+<code class="language-css">#breakpoint-test {
+	z-index:1;
+	position:relative;
+}
 
-	@media all and (min-width: 480px) {
-	    #breakpoint-test {
-	        z-index:480;
-	    }
+@media all and (min-width: 480px) {
+	#breakpoint-test {
+		z-index:480;
 	}
-	@media all and (min-width: 850px) {
-	    #breakpoint-test {
-	        z-index:850;
-	    }
+}
+@media all and (min-width: 850px) {
+	#breakpoint-test {
+		z-index:850;
 	}
-	...
-	</code>
+}
+...</code>
 </pre>
 
 So, we've now got a div that will have a z-index equal to the min-width value of the currently active media query.  All that's left is to check for this value back in the JavaScript.  I'll do this on resize, but you could just do this on page load if you don't need it to fire on window resize.  Note that although I'm not throttling my resize event here to keep the example concise, [it's a good idea to do this](http://paulirish.com/2009/throttled-smartresize-jquery-event-handler/).
 
 <pre>
-	<code class="language-javascript">
-	var lastminwidth = 0, //keep track of last fired minwidth
-	    minwidth = 1; //the current minwidth
+<code class="language-javascript">var lastminwidth = 0, //keep track of last fired minwidth
+	minwidth = 1; //the current minwidth
 
-	window.onresize = function(event){
-	    minwidth = window.getComputedStyle(document.getElementById('breakpoint-test'), null).getPropertyValue("z-index");
+window.onresize = function(event){
+	minwidth = window.getComputedStyle(document.getElementById('breakpoint-test'), null).getPropertyValue("z-index");
 
-	    if (lastminwidth !== minwidth) {
-	        if (minwidth >= 480) {
-	            //fire js bindings for over 480px
-	        } else if ( minwidth < 480 ) {
-	            //fire js bindings for under 480px
-	        }
-	    }
+	if (lastminwidth !== minwidth) {
+		if (minwidth >= 480) {
+			//fire js bindings for over 480px
+		} else if ( minwidth < 480 ) {
+			//fire js bindings for under 480px
+		}
 	}
+}
 
-	window.fireEvent('resize'); //trigger resize on load for first run
-	</code>
+window.fireEvent('resize'); //trigger resize on load for first run</code>
 </pre>
 
 
