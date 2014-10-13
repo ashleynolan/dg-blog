@@ -24,7 +24,7 @@
 	display:inline-block;       /* [1] */
 	vertical-align:middle;      /* [2] */
 	white-space:nowrap;         /* [3] */
-	font-family:inherit;        /* [4] */
+	font-family: $alt-font-family;        /* [4] */
 	font-size:100%;             /* [4] */
 	cursor:pointer;             /* [5] */
 	border:none;                /* [6] */
@@ -47,8 +47,15 @@
 	$shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 2px rgba(0,0,0,.05);
 	@include box-shadow($shadow);
 
+	transition: 250ms;
+
 	&, &:hover, &:active, &:focus, &:visited {
 		text-decoration: none;
+	}
+
+	&:hover,
+	&.active {
+		background-color: $btn-background-highlight;
 	}
 
 	&:active,

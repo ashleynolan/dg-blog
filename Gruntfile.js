@@ -222,7 +222,13 @@ module.exports = function (grunt) {
 				},
 				files: [{
 					expand: true,
-					src: ['img/work/work-*.{jpg,gif,png}'],
+					src: [
+						'img/work/work-*.{jpg,gif,png}',
+						'!**/*-small.{jpg,gif,png}',
+						'!**/*-mid.{jpg,gif,png}',
+
+						'!**/*-loaders.{jpg,gif,png}'
+					],
 					dest: ''
 				}]
 			}
@@ -369,6 +375,13 @@ module.exports = function (grunt) {
 		]);
 	});
 
+
+	/**
+	 * A task for your production environment
+	 * run jshint, uglify and sass:production
+	 */
+	grunt.registerTask('deploy', ['clean', 'sass:production', 'csso',  'assemble', 'copy:dist']);
+
 	/*
 		NEED TO UPDATE DEV AND PROD GRUNT BUILDS AS THESE ARE JUST PLACEHOLDERS
 
@@ -380,11 +393,5 @@ module.exports = function (grunt) {
 	 */
 	grunt.registerTask('dev', ['jshint', 'uglify', 'sass:dev']);
 
-	/**
-	 * A task for your production environment
-	 * run jshint, uglify and sass:production
-	 */
-	grunt.registerTask('deploy', ['clean', 'sass:production', 'csso',  'assemble', 'copy:dist']);
-	// grunt.registerTask('production', ['jshint', 'uglify', 'sass:production', 'autoprefixer', 'csso']);
 
 };

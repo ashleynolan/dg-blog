@@ -40,7 +40,7 @@ $color-link-active            : #000;
 
 // Buttons
 $btn-background               : #333;
-$btn-background-highlight     : darken(#fff, 10%);
+$btn-background-highlight     : $red;
 $btn-border                   : #ccc;
 
 $btn-primary-background       : $color-link-default;

@@ -44,8 +44,8 @@ define ([
 			}
 
 			//check if we're in the work section of the site and if so initialise JS wonderment
-			if ($('.workWrapper').length > 0) {
-				DG.Preloader.init($('.featureImg'), DG.WorkWrapper.init);
+			if ($('.work').length > 0) {
+				DG.Work.init();
 			}
 
 			DG.DateHandler.init();
@@ -113,7 +113,7 @@ define ([
 				ageDays = moment().diff(this.age[0].getAttribute('data-age'), 'days'),
 				birthYearDays = moment().diff('04-09-' + moment().format('YYYY'), 'days');
 
-			$('#age').html(ageYears + ', ' + birthYearDays + ' days')
+			$('#age').html(ageYears + ', ' + birthYearDays + ' days');
 
 		}
 
@@ -200,6 +200,42 @@ define ([
 
 			DG.GlobalNav.open ^= true;
 		}
+	},
+
+	DG.Work = {
+
+		navItems : $('.nav-work-link'),
+		sections : $('.work-section'),
+		APPENDED_CLASS : 'active',
+
+		init : function () {
+
+			this.eventListeners.setup();
+
+		},
+
+		eventListeners : {
+
+			setup : function () {
+
+				DG.Work.navItems.on('click', this.navItemSelected);
+
+			},
+
+			navItemSelected : function (e) {
+				e.preventDefault();
+
+				var navItemIndex = DG.Work.navItems.index(this);
+
+				DG.Work.sections.removeClass(DG.Work.APPENDED_CLASS)
+					.eq(navItemIndex).addClass(DG.Work.APPENDED_CLASS);
+
+				DG.Work.navItems.removeClass(DG.Work.APPENDED_CLASS)
+					.eq(navItemIndex).addClass(DG.Work.APPENDED_CLASS);
+			}
+
+		}
+
 	},
 
 
