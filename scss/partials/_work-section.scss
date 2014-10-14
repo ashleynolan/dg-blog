@@ -38,33 +38,33 @@
 
 	.work-content {
 		position: relative;
-		perspective: 20000px; //wide perspective
-		transform-style: preserve-3d;
 	}
 
-	.work-section {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		//transform: rotateY(180deg);
-
-		transition: 750ms ease-in-out;
-		backface-visibility: hidden;
-
-		&.work-section--clients {
-			transform: translateX(-120%);
-		}
-		&.work-section--labs {
-			transform: translateX(120%);
-		}
+	//only for users with JS enabled
+	.js .work-section {
+		 width: 100%;
 
 		&.active {
 			position: relative;
 			display: block;
-		//	transform: rotateY(0deg);
 			transform: translateX(0%);
 		}
+		&.inactive {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			&.work-section--clients {
+				transform: translateX(-120%);
+			}
+			&.work-section--labs {
+				transform: translateX(120%);
+			}
+		}
+	}
+	//only add transition once the page has loaded so we don’t get flashes of content
+	.loaded .work-section {
+		transition: 750ms ease-in-out;
 	}
 
 	.work-item {

@@ -204,6 +204,7 @@ define ([
 
 	DG.Work = {
 
+		wrapper : $('.work'),
 		navItems : $('.nav-work-link'),
 		sections : $('.work-section'),
 		APPENDED_CLASS : 'active',
@@ -211,6 +212,8 @@ define ([
 		init : function () {
 
 			this.eventListeners.setup();
+
+			this.checkActiveSection();
 
 		},
 
@@ -227,13 +230,36 @@ define ([
 
 				var navItemIndex = DG.Work.navItems.index(this);
 
-				DG.Work.sections.removeClass(DG.Work.APPENDED_CLASS)
-					.eq(navItemIndex).addClass(DG.Work.APPENDED_CLASS);
-
-				DG.Work.navItems.removeClass(DG.Work.APPENDED_CLASS)
-					.eq(navItemIndex).addClass(DG.Work.APPENDED_CLASS);
+				DG.Work.changeActiveSection(navItemIndex);
 			}
 
+		},
+
+		checkActiveSection : function () {
+
+			var hash = window.location.hash;
+
+			if (hash.indexOf('#labs') !== -1) {
+				DG.Work.changeActiveSection(1);
+			} else {
+				DG.Work.changeActiveSection(0);
+			}
+
+			//hacky – sets a loaded state once we have appended our classes correctly for the active sections
+			window.setTimeout(function () {
+				DG.Work.wrapper.addClass('loaded');
+			}, 100);
+
+
+		},
+
+		changeActiveSection : function (index) {
+			DG.Work.sections.removeClass(DG.Work.APPENDED_CLASS).removeClass('inactive')
+				.not(':eq(' + index + ')').addClass('inactive').end()
+				.eq(index).addClass(DG.Work.APPENDED_CLASS);
+
+			DG.Work.navItems.removeClass(DG.Work.APPENDED_CLASS)
+				.eq(index).addClass(DG.Work.APPENDED_CLASS);
 		}
 
 	},
