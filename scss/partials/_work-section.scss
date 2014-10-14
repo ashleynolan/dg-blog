@@ -41,30 +41,39 @@
 	}
 
 	//only for users with JS enabled
-	.js .work-section {
+	.work-section {
 		 width: 100%;
 
-		&.active {
+		.js &.active {
 			position: relative;
 			display: block;
-			transform: translateX(0%);
+			@include prefixer(transform, translateX(0%), webkit moz o spec);
 		}
-		&.inactive {
+		.js &.inactive {
 			position: absolute;
 			top: 0;
 			left: 0;
-
-			&.work-section--clients {
-				transform: translateX(-120%);
-			}
-			&.work-section--labs {
-				transform: translateX(120%);
-			}
 		}
+			.js.csstransforms3d &.inactive {
+				&.work-section--clients {
+					@include prefixer(transform, translateX(-120%), webkit moz o spec);
+				}
+				&.work-section--labs {
+					@include prefixer(transform, translateX(120%), webkit moz o spec);
+				}
+			}
+			.js.no-csstransforms3d &.inactive {
+				&.work-section--clients {
+					left: -120%;
+				}
+				&.work-section--labs {
+					left: 120%;
+				}
+			}
 	}
 	//only add transition once the page has loaded so we don’t get flashes of content
 	.loaded .work-section {
-		transition: 750ms ease-in-out;
+		@include prefixer(transition, 750ms ease-in-out, webkit moz o spec);
 	}
 
 	.work-item {
