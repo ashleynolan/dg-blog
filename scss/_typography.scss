@@ -442,6 +442,13 @@ samp {
 	font-family: $mono-font-family;
 }
 
+figure {
+	margin-bottom: $vertical-rhythm*3 + px;
+}
+figcaption {
+	text-align: center;
+}
+
 
 /*
    Utilities

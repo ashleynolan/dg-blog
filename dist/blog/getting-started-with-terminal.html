@@ -85,6 +85,9 @@
     <dt><dfn><strong>pwd</strong></dfn></dt>
     <dd>Displays the path of the current directory.  Useful for finding your current terminal location in the filesystem.</dd>
 
+    <dt><dfn><strong>touch</strong></dfn></dt>
+    <dd>Creates a file.  Used like so: <code>touch index.html</code> or can be used to create multiple files by writing <code>touch index.html default.css</code>.</dd>
+
     <dt><dfn><strong>cp</strong></dfn></dt>
     <dd>Short for copy.  Used like so: <code>cp /Users/Ash/originalfile.txt tmp/copiedfile.txt</code>.</dd>
 
@@ -126,6 +129,24 @@
     <dt><dfn><strong>Alt + Mouse click</strong></dfn></dt>
     <dd>Holding down the Alt key and then using your mouse enables you to move your cursor to a specific part of the typed command.  Useful when needing to edit commands that are quite long.</dd>
 
+    <dt><dfn><strong>Ctrl + A</strong></dfn></dt>
+    <dd>Move the terminal cursor position to the start of the line.</dd>
+
+    <dt><dfn><strong>Ctrl + E</strong></dfn></dt>
+    <dd>Move the terminal cursor position to the end of the line.</dd>
+
+    <dt><dfn><strong>Ctrl + XX (X pressed twice)</strong></dfn></dt>
+    <dd>Toggle the cursor position between the start of the line and its current position.</dd>
+
+    <dt><dfn><strong>Ctrl + U</strong></dfn></dt>
+    <dd>Clear all text behind the terminal cursor.  So pressing this when at the end of a line will clear the whole line.</dd>
+
+    <dt><dfn><strong>Ctrl + W</strong></dfn></dt>
+    <dd>Cut the word before the cursor to the terminal clipboard.</dd>
+
+    <dt><dfn><strong>Ctrl + Y</strong></dfn></dt>
+    <dd>Paste the last thing to be cut to the clipboard.</dd>
+
     <dt><dfn><strong>Cmd + T</strong></dfn></dt>
     <dd>Opens up a new terminal window in a separate tab.</dd>
 
@@ -136,7 +157,7 @@
     <dd>Stop Process from running.  Useful when running grunt or git commands for example if you realise you don&#39;t want them to run after executing them.</dd>
 
     <dt><dfn><strong>Ctrl + Z</strong></dfn></dt>
-    <dd>Quit process.  Different to <code>Ctrl + C</code> as the process doesn’t stop – it will still run in the background.</dd>
+    <dd>Suspend process.  Different to <code>Ctrl + C</code> as it doesn’t completely stop the process – you can return to it later by entering <code>fg &#39;process name&#39;</code> where <code>fg</code> stands for foreground.</dd>
 
     <dt><dfn><strong>Ctrl + R</strong></dfn></dt>
     <dd>Search through your terminal history.  Let’s you start typing to find a command you have previously written.  Hugely useful for recalling longer commands you have previously written.</dd>
@@ -161,14 +182,14 @@
     <dt><dfn><strong>killall</strong></dfn></dt>
     <dd>Kills an Application dead.  So for example, typing <code>killall Finder</code> will restart all Finder windows.</dd>
 
-    <dt><dfn><strong>caffeinate</strong></dfn></dt>
-    <dd>Prevents Mac from sleeping.</dd>
-
     <dt><dfn><strong>-v</strong></dfn></dt>
     <dd>
         <p>Requests the version of the operator being called.  So <code>ruby -v</code> will display the version of ruby installed.</p>
         <p>Sometimes, packages can use a slightly different terminology such as Git which uses <code>git —version</code>.</p>
     </dd>
+
+    <dt><dfn><strong>caffeinate</strong></dfn></dt>
+    <dd>Prevents Mac from sleeping.</dd>
 
     <dt><dfn><strong>ping</strong></dfn></dt>
     <dd>Will attempt to ping a web server and give a response.  Ping sends very small bits of information over a network to a remote computer, timing how long it takes for a response to be received.  So typing <code>ping www.bbc.co.uk</code> attempts to get a response from www.bbc.co.uk and will tell you the response time.  Useful for checking if a server is responding or to find the external IP of a web address.</dd>
@@ -218,8 +239,11 @@
 <p>I’m always interested in seeing what terminal commands people find most useful, so if you haveof a command that you can’t live without, I’d love to hear about it in the comments!</p>
 
 
+
 			<p class="post-date separator-top">Posted on the 24th June 2014</p>
 
+			
+				<p>Last updated on the <date>21st January 2015</date></p>
 			
 
 			<div id="disqus_thread" class="comments separator-top"></div>

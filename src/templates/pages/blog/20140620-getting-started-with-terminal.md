@@ -6,6 +6,7 @@ url: getting-started-with-terminal
 description: "An intro guide to the terminal, going over my most commonly used shortcuts and commands."
 
 posted: 2014-06-24T13:00
+updated: 2015-01-21T11:00
 
 post:
 - post
@@ -48,6 +49,9 @@ The most basic terms you'll need to survive on the command line:
 
 	<dt><dfn>**pwd**</dfn></dt>
 	<dd>Displays the path of the current directory.  Useful for finding your current terminal location in the filesystem.</dd>
+
+	<dt><dfn>**touch**</dfn></dt>
+	<dd>Creates a file.  Used like so: `touch index.html` or can be used to create multiple files by writing `touch index.html default.css`.</dd>
 
 	<dt><dfn>**cp**</dfn></dt>
 	<dd>Short for copy.  Used like so: `cp /Users/Ash/originalfile.txt tmp/copiedfile.txt`.</dd>
@@ -94,6 +98,24 @@ A useful reference if you'd like to see more detail about what specific characte
 	<dt><dfn>**Alt + Mouse click**</dfn></dt>
 	<dd>Holding down the Alt key and then using your mouse enables you to move your cursor to a specific part of the typed command.  Useful when needing to edit commands that are quite long.</dd>
 
+	<dt><dfn>**Ctrl + A**</dfn></dt>
+	<dd>Move the terminal cursor position to the start of the line.</dd>
+
+	<dt><dfn>**Ctrl + E**</dfn></dt>
+	<dd>Move the terminal cursor position to the end of the line.</dd>
+
+	<dt><dfn>**Ctrl + XX (X pressed twice)**</dfn></dt>
+	<dd>Toggle the cursor position between the start of the line and its current position.</dd>
+
+	<dt><dfn>**Ctrl + U**</dfn></dt>
+	<dd>Clear all text behind the terminal cursor.  So pressing this when at the end of a line will clear the whole line.</dd>
+
+	<dt><dfn>**Ctrl + W**</dfn></dt>
+	<dd>Cut the word before the cursor to the terminal clipboard.</dd>
+
+	<dt><dfn>**Ctrl + Y**</dfn></dt>
+	<dd>Paste the last thing to be cut to the clipboard.</dd>
+
 	<dt><dfn>**Cmd + T**</dfn></dt>
 	<dd>Opens up a new terminal window in a separate tab.</dd>
 
@@ -104,7 +126,7 @@ A useful reference if you'd like to see more detail about what specific characte
 	<dd>Stop Process from running.  Useful when running grunt or git commands for example if you realise you don't want them to run after executing them.</dd>
 
 	<dt><dfn>**Ctrl + Z**</dfn></dt>
-	<dd>Quit process.  Different to `Ctrl + C` as the process doesn’t stop – it will still run in the background.</dd>
+	<dd>Suspend process.  Different to `Ctrl + C` as it doesn’t completely stop the process – you can return to it later by entering `fg 'process name'` where `fg` stands for foreground.</dd>
 
 	<dt><dfn>**Ctrl + R**</dfn></dt>
 	<dd>Search through your terminal history.  Let’s you start typing to find a command you have previously written.  Hugely useful for recalling longer commands you have previously written.</dd>
@@ -130,14 +152,14 @@ A useful reference if you'd like to see more detail about what specific characte
 	<dt><dfn>**killall**</dfn></dt>
 	<dd>Kills an Application dead.  So for example, typing `killall Finder` will restart all Finder windows.</dd>
 
-	<dt><dfn>**caffeinate**</dfn></dt>
-	<dd>Prevents Mac from sleeping.</dd>
-
 	<dt><dfn>**-v**</dfn></dt>
 	<dd>
 		<p>Requests the version of the operator being called.  So `ruby -v` will display the version of ruby installed.</p>
 		<p>Sometimes, packages can use a slightly different terminology such as Git which uses `git —version`.</p>
 	</dd>
+
+	<dt><dfn>**caffeinate**</dfn></dt>
+	<dd>Prevents Mac from sleeping.</dd>
 
 	<dt><dfn>**ping**</dfn></dt>
 	<dd>Will attempt to ping a web server and give a response.  Ping sends very small bits of information over a network to a remote computer, timing how long it takes for a response to be received.  So typing `ping www.bbc.co.uk` attempts to get a response from www.bbc.co.uk and will tell you the response time.  Useful for checking if a server is responding or to find the external IP of a web address.</dd>

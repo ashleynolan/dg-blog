@@ -44,7 +44,7 @@ pre {
 	& code {
 		padding: 0;
 		color: $color-pre;
-		background-color: $color-pre-background;
+		background-color: inherit;
 		border: 0;
 	}
 }
