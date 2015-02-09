@@ -108,10 +108,11 @@ define ([
 
 		calculateDates : function () {
 
-
-			var ageYears = moment().from(this.age[0].getAttribute('data-age'), true),
+			var ageYears = moment().diff(this.age[0].getAttribute('data-age'), 'years'),
 				ageDays = moment().diff(this.age[0].getAttribute('data-age'), 'days'),
 				birthYearDays = moment().diff('04-09-' + moment().format('YYYY'), 'days');
+
+			birthYearDays = (birthYearDays < 0) ? 365 + birthYearDays : birthYearDays;
 
 			$('#age').html(ageYears + ', ' + birthYearDays + ' days');
 
