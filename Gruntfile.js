@@ -227,7 +227,9 @@ module.exports = function (grunt) {
 						'!**/*-small.{jpg,gif,png}',
 						'!**/*-mid.{jpg,gif,png}',
 
-						'!**/*-loaders.{jpg,gif,png}'
+						'!**/*-loaders.{jpg,gif,png}',
+						'!**/*-textshadow.{jpg,gif,png}',
+						'!**/*-toggles.{jpg,gif,png}'
 					],
 					dest: ''
 				}]
