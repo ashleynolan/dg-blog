@@ -114,7 +114,7 @@ define ([
 
 			birthYearDays = (birthYearDays < 0) ? 365 + birthYearDays : birthYearDays;
 
-			$('#age').html(ageYears + ', ' + birthYearDays + ' days');
+			$('#age').html(ageYears + ' years, ' + birthYearDays + ' days');
 
 		}
 
