@@ -19,15 +19,7 @@ require.config({
 		moment: 'helpers/moment',
 		setExternalLinks: 'helpers/setExternalLinks',
 
-		//text: 'components/require-plugins/text',
-		//fastclick: 'components/fastclick/fastclick',
-
-
-		// underscore: 'components/underscore/underscore',
-
-		// selectivizr: 'components/selectivizr/selectivizr',
 		modernizr: 'components/modernizr/modernizr.min',
-		// transit: 'components/transit/transit-min',
 
 
 		// ---------------------------------------------
