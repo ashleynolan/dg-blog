@@ -1,0 +1,37 @@
+{{> html_start }}
+
+	<div id="mainContent" class="l-container" role="main">
+		{{> masthead }}
+
+		<section class="content post">
+			<h1>{{ title }}</h1>
+
+			{{> body }}
+
+			<p class="post-date separator-top">Posted on the {{moment posted format="Do MMMM YYYY" }}</p>
+
+			{{#if updated}}
+				<p>Last updated on the <date>{{moment updated format="Do MMMM YYYY" }}</date></p>
+			{{/if}}
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
+
+		{{> footer }}
+	</div>
+
+
+<!-- DISCUSS CONFIG VARS -->
+<script type="text/javascript">
+var disqus_shortname = 'ashleynolan';
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+{{> html_end }}

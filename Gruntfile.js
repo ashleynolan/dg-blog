@@ -1,399 +1,156 @@
 module.exports = function (grunt) {
-
 	'use strict';
 
-	/*
-	   Javascript settings - Edit this section
-	   ========================================================================== */
-	/**
-	 * Specify which js files you want to include
-	 */
-	var jsFileList = [
-		'js/helpers/helpers.js',
-		'js/helpers/console.js',
-		'js/script.js'
-	];
+	var options = {
+		pkg: require('./package'), // <%=pkg.name%>
 
-	var rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;
+		site: grunt.file.readYAML('statix/src/data/site.yml'),
 
-	/**
-	 * Specify your output directory
-	 */
-	var distDir = 'js/dist/';
+		// Global Grunt vars. Edit this file to change vars
+		config : require('./_grunt-configs/config.js')
+	};
 
-	/**
-	 * Specify the name of your compiled JS file
-	 * which will be placed in the directory you define above
-	 */
-	var jsFile = 'app.min.js';
-
-	/* ==================== */
-
-	/**
-	 * Project configuration
-	 */
-	grunt.initConfig({
-		pkg: require('./package'),
-		site: grunt.file.readYAML('src/data/site.yml'),
+	// Load grunt tasks automatically
+	require('load-grunt-tasks')(grunt, {pattern: ["grunt-*", "chotto", "assemble"]});
 
 
-		/**
-		 * JSHint
-		 * https://github.com/gruntjs/grunt-contrib-jshint
-		 * Manage the options inside .jshintrc file
-		 */
-		jshint: {
-			all: jsFileList,
-			options: {
-				jshintrc: '.jshintrc'
-			}
-		},
+	// Load grunt configurations automatically
+	var configs = require('load-grunt-configs')(grunt, options);
 
-
-		clean: {
-			all: ['dist/**/*.html']
-		},
-
-
-		requirejs: {
-			dist: {
-				options: {
-					mainConfigFile : "js/config.js",
-					optimize : 'uglify2',
-					generateSourceMaps : true,
-					preserveLicenseComments : false,
-					out: distDir + "/app.min.js",
-				}
-			}
-		},
-
-		/**
-		 * Sass compilation
-		 * https://github.com/gruntjs/grunt-contrib-sass
-		 * Separate options for dev and production environments
-		 * Includes kickoff.scss and kickoff-old-ie.scss by default
-		 * Also creates source maps
-		 */
-		sass: {
-			dev: {
-				options: {
-					unixNewlines: true,
-					style: 'expanded',
-					lineNumbers: false,
-					debugInfo : false,
-					precision : 8,
-					sourcemap : true
-				},
-				files: {
-					'css/kickoff.css': 'scss/kickoff.scss',
-					'css/kickoff-old-ie.css': 'scss/kickoff-old-ie.scss'
-				}
-			},
-			production: {
-				options: {
-					style: 'compressed',
-					precision : 8
-				},
-				files: {
-					'css/kickoff.css': 'scss/kickoff.scss',
-					'css/kickoff-old-ie.css': 'scss/kickoff-old-ie.scss'
-				}
-
-			}
-		},
-
-
-		/**
-		 * Watch
-		 * https://github.com/gruntjs/grunt-contrib-watch
-		 * Watches your scss, js etc for changes and compiles them
-		 */
-		watch: {
-			scss: {
-				files: ['scss/**/*.scss'],
-				tasks: ['sass:dev', 'copy:css']
-				// tasks: ['sass:dev', 'autoprefixer:dist', 'csso']
-			},
-
-			img: {
-				files: [
-					'img/**/*.jpeg',
-					'img/**/*.gif',
-					'img/**/*.png'
-				],
-				tasks : 'copy:img'
-			},
-
-			fonts: {
-				files: [
-					'fonts/**/*.*'
-				],
-				tasks : 'copy:fonts'
-			},
-
-			js: {
-				files: [
-					'Gruntfile.js',
-					'js/*.js',
-					'js/libs/**/*.js',
-					'js/app/**/*.js',
-					'js/helpers/**/*.js'
-				],
-				tasks: ['requirejs', 'copy:js']
-			},
-
-			assemble : {
-				files: ['src/templates/**/*.hbs', 'src/templates/**/*.md'],
-				tasks: ['clean', 'assemble'],
-				options: {
-					livereload: true
-				}
-			},
-
-			livereload: {
-				options: { livereload: true },
-				files: [
-					'css/*.css'
-				]
-			}
-		},
-
-		connect: {
-			options: {
-				port: 9000,
-				// change this to '0.0.0.0' to access the server from outside
-				hostname: 'localhost'
-			},
-			server: {
-				options: {
-					base: 'dist',
-
-					middleware: function(connect, options) {
-						return [
-							rewriteRulesSnippet,
-							// Serve static files
-							connect.static(require('path').resolve(options.base))
-						];
-					}
-				}
-			},
-			rules: [
-				{ from: '(^((?!\/css|html|\/js|img|fonts|\/$).)*$)', to: '$1.html' }
-			]
-		},
-
-		open: {
-			server: {
-				path: 'http://localhost:<%= connect.options.port %>'
-			}
-		},
-
-
-		/**
-		 * Autoprefixer
-		 * https://github.com/ai/autoprefixer
-		 * Auto prefixes your CSS using caniuse data
-		 */
-		autoprefixer: {
-			dist : {
-				options: {
-					// Task-specific options go here - we are supporting
-					// the last 2 browsers, any browsers with >1% market share,
-					// and ensuring we support IE7 + 8 with prefixes
-					browsers: ['last 2 versions', '> 1%', 'ie 8', 'ie 7']
-				},
-				files: {
-					'css/kickoff.css': 'css/kickoff.css',
-					'css/kickoff-old-ie.css': 'css/kickoff-old-ie.css'
-				}
-			}
-		},
-
-		responsive_images: {
-			dev: {
-				options: {
-					sizes: [{
-						name: 'small',
-						width: 320
-					},{
-						name: 'mid',
-						width: 500
-					}]
-				},
-				files: [{
-					expand: true,
-					src: [
-						'img/work/work-*.{jpg,gif,png}',
-						'!**/*-small.{jpg,gif,png}',
-						'!**/*-mid.{jpg,gif,png}',
-
-						'!**/*-loaders.{jpg,gif,png}',
-						'!**/*-textshadow.{jpg,gif,png}',
-						'!**/*-toggles.{jpg,gif,png}'
-					],
-					dest: ''
-				}]
-			}
-		},
-
-
-		/**
-		 * CSSO
-		 * https://github.com/t32k/grunt-csso
-		 * Minify CSS files with CSSO
-		 */
-		csso: {
-			dist: {
-				options: {
-					restructure: false
-				},
-				files: {
-					'css/kickoff.min.css': ['css/kickoff.css'],
-					'css/kickoff-old-ie.min.css': ['css/kickoff-old-ie.css']
-				},
-
-			}
-		},
-
-		assemble: {
-			options: {
-				data: 'src/**/*.{json,yml}',
-				assets: '<%= site.destination %>/assets',
-				helpers: ['helper-moment', 'handlebars-helper-eachitems', 'handlebars-helper-paginate', 'src/helpers/helper-*.js'],
-
-				plugins: ['assemble-contrib-permalinks'],
-
-				partials: ['src/templates/includes/**/*.hbs'],
-				flatten: false,
-
-				layout: 'main.hbs',
-				layoutdir: 'src/templates/layouts'
-			},
-
-			posts: {
-				options: {
-					collections: [{
-						name: 'post',
-						sortby: 'posted',
-						sortorder: 'descending'
-					}],
-					permalinks: {
-						structure: ':url.html'
-					}
-				},
-				files: [{
-					cwd: './src/templates/pages/',
-					dest: '<%= site.destination %>',
-					expand: true,
-					src: ['**/*.hbs', '!blog/**/*.hbs']
-				}, {
-					cwd: './src/templates/pages/' + 'blog/',
-					dest: '<%= site.destination %>/blog',
-					expand: true,
-					src: ['**/*.hbs', '**/*.md']
-				}]
-			}
-		},
-
-		copy: {
-			dist: {
-				files: [
-					{ expand: true, cwd: './css', src: ['./**/*.*'], dest: 'dist/assets/css' },
-					{ expand: true, cwd: './js', src: ['./**/*.*'], dest: 'dist/assets/js' },
-					{ expand: true, cwd: './img', src: ['./**/*.*'], dest: 'dist/assets/img' },
-					{ expand: true, cwd: './fonts', src: ['./**/*.*'], dest: 'dist/assets/fonts' }
-				]
-			},
-			css: {
-				files: [
-					{ expand: true, cwd: './css', src: ['./**/*.*'], dest: 'dist/assets/css' }
-				]
-			},
-			img: {
-				files: [
-					{ expand: true, cwd: './img', src: ['./**/*.*'], dest: 'dist/assets/img' }
-				]
-			},
-			fonts: {
-				files: [
-					{ expand: true, cwd: './fonts', src: ['./**/*.*'], dest: 'dist/assets/fonts' }
-				]
-			},
-			js: {
-				files: [
-					{ expand: true, cwd: './js', src: ['./**/*.*'], dest: 'dist/assets/js' }
-				]
-			}
-		},
-
-		readme: {
-			options: {
-				sep: '',
-				docs: ['docs/']
-			}
-		}
-	});
-
-	// Load some stuff
-	grunt.loadNpmTasks('grunt-readme');
-	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-open');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-csso');
-	grunt.loadNpmTasks('assemble');
-	grunt.loadNpmTasks('grunt-newer');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-connect-rewrite');
-	grunt.loadNpmTasks("grunt-contrib-requirejs");
-	grunt.loadNpmTasks('grunt-responsive-images');
+	// Define the configuration for all the tasks
+	grunt.initConfig(configs);
 
 
 	/**
 	 * Available tasks:
-	   * grunt        : run jshint, uglify and sass:dev
-	   * grunt watch  : run sass:dev, uglify and livereload
-	   * grunt dev    : run jshint, uglify and sass:dev
-	   * grunt deploy : run jshint, uglify and sass:production
+	 * grunt            : Alias for 'serve' task, below
+	 * grunt serve      : watch js, images & scss and run a local server
+	 * grunt watch      : run sass:kickoff, uglify and livereload
+	 * grunt dev        : run uglify, sass:kickoff & autoprefixer:kickoff
+	 * grunt deploy     : run jshint, uglify, sass:kickoff and csso
+	 * grunt styleguide : watch js & scss, run a local server for editing the styleguide
+	 * grunt icons      : generate the icons. uses svgmin and grunticon
+	 * grunt checks     : run jshint & scsslint
 	 */
 
 	/**
-	 * Default task
-	 * run jshint, uglify and sass:dev
+	 * GRUNT * Alias for 'serve' task, below
 	 */
-	// Default task
-	grunt.registerTask('default', [/**'readme', 'jshint',**/'clean', 'uglify', 'sass:dev', 'newer:assemble', 'copy:dist']);
-
-
-	grunt.registerTask('serve', function (target) {
-		grunt.task.run([
-			'configureRewriteRules',
-			'connect:server',
-			'open',
-			'watch'
-		]);
-	});
+	grunt.registerTask('default', ['serve']);
 
 
 	/**
-	 * A task for your production environment
+	 * GRUNT SERVE * A task for a static server with a watch
+	 * run browserSync and watch
+	 */
+	grunt.registerTask('serve', [
+		'clean:all',
+		'shimly',
+		'compileJS',
+		'compileCSS',
+		'clean:tempCSS',
+		'images',
+		'copy',
+		'assemble',
+		'browserSync:serve',
+		'watch'
+	]);
+
+
+	/**
+	 * GRUNT DEV * A task for development
+	 * run uglify, sass:kickoff & autoprefixer:kickoff
+	 */
+	grunt.registerTask('dev', [
+		'clean:all',
+		'shimly',
+		'compileJS',
+		'compileCSS',
+		'clean:tempCSS',
+		'images',
+		'copy',
+		'assemble'
+	]);
+
+
+	/**
+	 * GRUNT DEPLOY * A task for your production environment
 	 * run jshint, uglify and sass:production
 	 */
-	grunt.registerTask('deploy', ['clean', 'sass:production', 'csso',  'assemble', 'copy:dist']);
+	grunt.registerTask('deploy', [
+		'clean:all',
+		'shimly',
+		'compileJS',
+		'compileCSS',
+		'csso',
+		'clean:tempCSS',
+		'images',
+		'copy',
+		'assemble'
+	]);
 
-	/*
-		NEED TO UPDATE DEV AND PROD GRUNT BUILDS AS THESE ARE JUST PLACEHOLDERS
-
-	 */
 
 	/**
-	 * A task for development
-	 * run jshint, uglify and sass:dev
+	 * GRUNT STYLEGUIDE * A task to view the styleguide
 	 */
-	grunt.registerTask('dev', ['jshint', 'uglify', 'sass:dev']);
+	grunt.registerTask('styleguide', [
+		'clean:all',
+		'shimly',
+		'compileJS',
+		'compileCSS',
+		'clean:tempCSS',
+		'images',
+		'copy',
+		'assemble',
+		'browserSync:styleguide',
+		'watch'
+	]);
 
 
+	/**
+	 * GRUNT IMAGES * A task to compress all non-grunticon images
+	 */
+	grunt.registerTask('images', [
+		'imagemin:images',
+		'icons'
+	]);
+
+
+	/**
+	 * GRUNT ICONS * A task to create all icons using grunticon
+	 * run clean, svgmin and grunticon
+	 */
+	grunt.registerTask('icons', [
+		'clean:icons',
+		'imagemin:grunticon',
+		'grunticon'
+	]);
+
+
+	/**
+	 * GRUNT CHECKS * Check code for errors
+	 * run jshint
+	 */
+	grunt.registerTask('checks', [
+		'jshint:project',
+		'scsslint',
+		'validation'
+	]);
+
+
+	/**
+	 * Utility tasks
+	 */
+	// Compile JS
+
+	grunt.registerTask('compileJS', [
+		'browserify:dev'
+	]);
+
+
+	// Compile CSS
+	grunt.registerTask('compileCSS', [
+		'sass',
+		'autoprefixer'
+	]);
 };

@@ -1,9 +1,9 @@
-AshleyNolan.co.uk
-=================
+# AshleyNolan.co.uk
+Blog and Portfolio for Ashley Nolan
 
-My web space - sligth redesign based on old design, but built on assemble so it's easier to update
-
-####Tech Stack
-- Assemble
+## Developers: 
+Ashley Nolan
 
 
+---
+This project was built with Kickoff, a lightweight front-end framework for creating scalable, responsive sites. To find out more please visit [trykickoff.github.io](http://trykickoff.github.io)

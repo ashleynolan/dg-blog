@@ -1,13 +1,29 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
 
-    Ashley Nolan -- Creative Technologist -- http://twitter.com/dragongraphics
+# AshleyNolan.co.uk
+Blog and Portfolio for Ashley Nolan
+
+## Developers:
+Ashley Nolan
+
+
+# KICKOFF TEAM
+
+    Zander Martineau -- @MrMartineau
+    Ashley Nolan     -- @AshNolan_
+    Nic Bell         -- @nicbell
+    Contributors     -- https://github.com/tmwagency/kickoff/graphs/contributors
 
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    HTML
+    CSS
+    Sass
+    Grunt.js
+    Bower
+    BrowserSync
+    Node.js / NPM
     Sublime Text

@@ -1,0 +1,38 @@
+/**
+ * Global app/site styles
+ */
+body {
+	background-color: $color-bg;
+}
+
+/**
+ * Default layout container
+ */
+.l-container {
+	width: 100%;
+	max-width: #{$layout-max-width}px;
+	margin: 0 auto;
+
+	.lt-ie9 & {
+		min-width: #{$layout-min-width}px;
+	}
+}
+
+
+/* ==========================================================================
+   Global app/site styles
+   ========================================================================== */
+
+	.content,
+	.footer-content {
+		padding: 0 3%;
+	}
+
+	.post {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	.page-footer {
+		position: relative;
+	}
