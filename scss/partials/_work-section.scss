@@ -97,8 +97,9 @@
 			line-height: 0;
 			text-align: center;
 
-			@include respond-min($breakpoint-mid) {
-				//min-height: 480px;
+			@include respond-min($breakpoint-wide) {
+				min-height: 474px;
+				background: rgba(0, 0, 0, 0.5);
 			}
 
 			> img {
