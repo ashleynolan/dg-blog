@@ -1,9 +1,9 @@
 ---
 layout: post.hbs
 
-title: A New Challenge
-url: a-new-challenge
-description: "Looking forward to new challenges and experiences as I move out of London."
+title: Navigating the Interview Process – a front-end developers guide
+url: navigating-the-front-end-interview-process
+description: "A front-end developers guide to navigating the gauntlet of varying interview processes."
 
 posted: 2015-04-14T10:00
 
@@ -20,8 +20,11 @@ categories:
 
 {{#markdown}}
 
-Interviewing for the first time in over 3 years was tough – the best jobs are looking for the best devs and the interview process is pretty rigourous.
+One of my [former bosses](https://twitter.com/TheG) once told me that even if you aren’t actively looking for a job, it’s a good idea to go to a job interview once in a while to keep yourself sharp.
 
-One of my former bosses used to tell me that even when you’re not looking for a job, you should go to an interview once in a while, and I can see why now
+Having recently changed job myself, I can now see what he meant.  Interviewing for the first time in over 3 years was tough; the best jobs are – pretty obviously – looking for the best devs and the interview process can be very rigourous.
+
+
+
 
 {{/markdown}}

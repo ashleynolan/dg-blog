@@ -7,13 +7,8 @@
 
 **Ashley Nolan*
 
-+ [twitter.com/dragongraphics](http://twitter.com/dragongraphics)
++ [twitter.com/AshNolan_](http://twitter.com/AshNolan_)
 + [github.com/ashleynolan](http://github.com/ashleynolan)
-
-**Owain Llewellyn**
-
-+ [twitter.com/owzzz](http://twitter.com/owzzz)
-+ [github.com/owzzz](http://github.com/owzzz)
 
 
 ## Release History
