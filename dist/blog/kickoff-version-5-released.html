@@ -10,8 +10,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-		<title>AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
-		<meta name="description" content="AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+		<title>Kickoff Version 5 released - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="Kickoff Version 5 released - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
 
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,8 +42,7 @@
 	<body>
 
 
-	 <div class="container">
-		<!-- nav partial -->
+	<div class="container">
 		<header class="page-header">
 	<h1 id="page-logo" class="logo">
 		<span>Ashley Nolan – Front End Developer</span>
@@ -67,96 +66,56 @@
 </header>
 
 
-		
+		<section class="content post">
+			<h1>Kickoff Version 5 released</h1>
 
-<section class="content articles">
-
-	<h2 class="articles-subhead separator-bottom">Recent Posts</h2>
-	<!--<h1 class="gigaHeading text-centre page-title">Page title example</h1>
-	<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>-->
-
-	 
-	
-		
 			
-			<a href="/blog/kickoff-version-5-released" class="articles-item separator-bottom">
-				<article>
-					<time>16/06/2015</time>
-					<h2 class="articles-item-title">Kickoff Version 5 released</h2>
-					<p class="articles-item-description">A new version of the lightweight front-end framework has been released.</p>
-				</article>
-			</a>
-		
+
+<p>After much tweaking and testing, <a href="http://trykickoff.github.io/">Version 5 of Kickoff</a> has now been released!</p>
+<p>We’ve also been working hard to update Kickoff’s associated projects.  Both <a href="https://github.com/TryKickoff/statix">Statix</a> and the <a href="https://github.com/TryKickoff/generator-kickoff">Kickoff generator</a> have been developed to reflect the V5 changes.</p>
+<p>You may notice that Kickoff and it’s related projects have been moved into a shiny new <a href="https://github.com/trykickoff/">Github organisation – TryKickoff</a>.  We did this mainly to move aweay from being aligned to a speicifc company – especially as I recently left TMW to work at Just Eat.  We’ve got big plans for these projects and are looking for contributors to help us so if you’d like to get involved, please do <a href="trykickoff@gmail.com">get in touch</a>.</p>
+<p>If you’ve never heard of Kickoff or any of it’s related projects, here’s a quick overview along with the most recent updates:</p>
+<h2 id="kickoff">Kickoff</h2>
+<p><a href="http://trykickoff.github.io/">Kickoff</a> is a lightweight front-end framework that aims to help with consistency of structure across development projects and teams.</p>
+<p>We don’t like comparing it to frameworks like Bootstrap and Foundation, as rather than trying to give you everything you might ever need for a front-end project, Kickoff aims to give you just the essentials needed when starting a front-end build.</p>
+<p>The base setup of Kickoff will help get you up and running with Grunt, Sass and provide a consistent code structure for use in any front-end project.  By using the <a href="https://github.com/TryKickoff/generator-kickoff">Kickoff Yeoman generator</a> you can also use Browserify for JavaScript dependencies with the Grunt config taken care of automatically.</p>
+<p>If you’re new to Kickoff, check out the <a href="http://trykickoff.github.io/learn/index.html">documentation for more details</a>.</p>
+<p>Some of the features of Kickoff V5 include:</p>
+<ul>
+<li><p><strong>Simplifying and Restructuring</strong></p>
+<p>One of Kickoff’s strengths is how simple it is to get up and running.</p>
+<p>Previous versions of Kickoff have been good, but we wanted to do better – the folder structure throughout the framework has been adjusted to make Kickoff more intuitive than ever.  The Grunt tasks have also been overhauled to make it much easier to understand and edit should you ever need to.</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>Redesigned Styleguide</strong></p>
+<p>Keeping track of the base styles in your project can be difficult – Kickoff’s built-in styleguide aims to help you keep track of these and in V5 it has had a massive facelift.</p>
+<p>The styleguide is auto-generated alongside all Kickoff projects, so no configuration is needed to use it;  Just start coding your Sass in the usual way and any changes are reflected in the styleguide as and when you change them.</p>
+</li>
+</ul>
+<h2 id="statix">Statix</h2>
+<p><a href="https://github.com/TryKickoff/statix">Statix</a> aims to make static template building and prototyping quick and easy.</p>
+<p>It was created to allow developers to quickly start writing front-end templates in which you can re-use HTML snippets across files.  For example, if you wanted to code up a bunch of HTML pages and (quite sensibly) only want to maintain one header and footer code snippet across all of your files, Statix lets you do this very easily.</p>
+<p>It is essentially a combination of <a href="https://github.com/assemble/assemble">Assemble</a> – a brilliant static site generator – Kickoff and Grunt, configured so that you can get down to actually coding as quickly as possible.</p>
+<p>Statix can also be used for building fully static websites – such as the one you are currently reading now.</p>
+<h2 id="kickoff-generator">Kickoff Generator</h2>
+<p>The <a href="https://github.com/TryKickoff/generator-kickoff">Kickoff Generator</a> is a really powerful tool that uses Yeoman to generate your front-end setup exactly as you want it when you start a new project.</p>
+<p>Running the generator will ask you a bunch of questions, allowing you to specify the exact components of Kickoff that you wish to use on your project.  It then sets up only those parts, meaning you end up with a boilerplate tailored completely to each project.</p>
+<p>For example, if you start developing a new project and want to use a combination of Browserify and Statix, but you don’t need icon generation or any of Kickoff’s JavaScript shims, the generator will set this up for you, installing only the parts you choose.</p>
+<p>Give it a try – take a look at <a href="http://trykickoff.github.io/learn/yeoman.html">how to use the Kickoff Generator in our documentation</a>.</p>
+<h2 id="help-contribute-">Help Contribute!</h2>
+<p>If you use <a href="http://trykickoff.github.io/">Kickoff</a> or <a href="https://github.com/TryKickoff/statix">Statix</a>, we’d love to hear about how we can improve the framework in future releases – simply submit an issue or suggestion on the associated Github repo.  Likewise if you’d like to get involved in contributing to any of the projects, <a href="trykickoff@gmail.com">just get in touch</a>.  We’re always looking for new ideas that can add value to the framework and people that can help us to move faster in doing just that.</p>
+<p>Lastly, if you like using Kickoff or any of the Kickoff family of projects, please do give us a mention on Twitter.  As with any Open Source project, we rely massively on word-of-mouth to spread the reach of the framework and we’d love for as many developers to benefit from the work we do as possible :)</p>
+
+
+
+			<p class="post-date separator-top">Posted on the 16th June 2015</p>
+
 			
-			<a href="/blog/a-new-challenge" class="articles-item separator-bottom">
-				<article>
-					<time>16/04/2015</time>
-					<h2 class="articles-item-title">A New Challenge</h2>
-					<p class="articles-item-description">Looking forward to new challenges and experiences as I move out of London.</p>
-				</article>
-			</a>
-		
-			
-			<a href="/blog/playing-around-with-css-text-shadow" class="articles-item separator-bottom">
-				<article>
-					<time>29/01/2015</time>
-					<h2 class="articles-item-title">Playing around with CSS text-shadow</h2>
-					<p class="articles-item-description">What I learned playing around with CSS text-shadow for a couple of hours.</p>
-				</article>
-			</a>
-		
-	
-</section>
 
-<!-- Homepage carousel -->
-<section id="homeCarousel" class="homeCarousel">
-	<h2 class="homeCarousel-title">Recent Work</h2>
+			<div id="disqus_thread" class="comments separator-top"></div>
 
-	<div class="homeCarousel-wrapper">
-		<div class="homeCarousel-carousel">
-			<article id="workArticle1" class="homeCarousel-carousel-item" data-name="Just Eat">
-				<a href="work#justeat" title="JUST EAT">
-					<img class="featureImg" src="assets/img/work/home-justeat.png" alt="JUST EAT Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>JUST EAT</h3></div>
-				</a>
-			</article>
-			<article id="workArticle4" class="homeCarousel-carousel-item" data-name="BBC GoodFood">
-				<a href="work#bbcgoodfood" title="BBC GoodFood">
-					<img class="featureImg" src="assets/img/work/home-bbc.png" alt="BBC GoodFood Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>BBC GoodFood</h3></div>
-				</a>
-			</article>
-			<article id="workArticle2" class="homeCarousel-carousel-item" data-name="Lynx Peace">
-				<a href="work#lynxpeace" title="Lynx Peace">
-					<img class="featureImg" src="assets/img/work/home-peace.png" alt="Lynx Peace Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>Lynx Peace</h3></div>
-				</a>
-			</article>
-			<article id="workArticle3" class="homeCarousel-carousel-item" data-name="Christmas Tracker">
-				<a href="work#labs-christmastracker" title="Christmas Tracker">
-					<img class="featureImg" src="assets/img/work/home-christmastracker.png" alt="Logo for ChristmasTracker.com">
-					<div class="homeCarousel-carousel-item-title"><h3>Christmas Tracker</h3></div>
-				</a>
-			</article>
-			<article id="workArticle5" class="homeCarousel-carousel-item" data-name="TMW Kickoff">
-				<a href="work#labs-kickoff" title="Kickoff">
-					<img class="featureImg" src="assets/img/work/home-kickoff.png" alt="Kickoff Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>TMW Kickoff</h3></div>
-				</a>
-			</article>
-		</div>
-
-		<div id="homeCarousel-canvasFrame" class="homeCarousel-canvasFrame">
-			<a href="work#justeat" id="homeCarousel-canvasFrame-link" class="homeCarousel-canvasFrame-link">
-				<canvas id="homeCarousel-canvasFrame-canvas" class="homeCarousel-canvasFrame-canvas" width="618" height="272"></canvas>
-				<div class="homeCarousel-carousel-item-title">
-					<h3>JUST EAT</h3>
-				</div>
-			</a>
-		</div>
-	</div>
-</section><!-- End of work section panel -->
-
+		</section>
 
 		<footer class="page-footer border-grey-white-top">
 	<!-- Social links -->
@@ -175,6 +134,18 @@
 </footer>
 
 	</div>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
 
