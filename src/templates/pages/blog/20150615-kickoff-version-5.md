@@ -23,9 +23,11 @@ After much tweaking and testing, [Version 5 of Kickoff](http://trykickoff.github
 
 We’ve also been working hard to update Kickoff’s associated projects.  Both [Statix](https://github.com/TryKickoff/statix) and the [Kickoff generator](https://github.com/TryKickoff/generator-kickoff) have been developed to reflect the V5 changes.
 
-You may notice that Kickoff and it’s related projects have been moved into a shiny new [Github organisation – TryKickoff](https://github.com/trykickoff/).  We did this mainly to move aweay from being aligned to a speicifc company – especially as I recently left TMW to work at Just Eat.  We’ve got big plans for these projects and are looking for contributors to help us so if you’d like to get involved, please do [get in touch](trykickoff@gmail.com).
+You may notice that Kickoff and it’s related projects have been moved into a shiny new [Github organisation – TryKickoff](https://github.com/trykickoff/).  We did this mainly to move aweay from being aligned to a specific company – especially as I recently moved from TMW to [work at Just Eat](/blog/a-new-challenge).  We’ve got big plans for these projects and are looking for contributors to help us so if you’d like to get involved, please do [get in touch](trykickoff@gmail.com).
 
-If you’ve never heard of Kickoff or any of it’s related projects, here’s a quick overview along with the most recent updates:
+If you’ve never heard of Kickoff or any of it’s related projects, here’s a quick overview along with the most recent updates.
+
+---
 
 ## Kickoff
 
@@ -52,6 +54,10 @@ Some of the features of Kickoff V5 include:
 
   The styleguide is auto-generated alongside all Kickoff projects, so no configuration is needed to use it;  Just start coding your Sass in the usual way and any changes are reflected in the styleguide as and when you change them.
 
+**[Try out Kickoff for yourself](http://trykickoff.github.io/learn/get.html)**
+
+---
+
 
 ## Statix
 
@@ -63,6 +69,9 @@ It is essentially a combination of [Assemble](https://github.com/assemble/assemb
 
 Statix can also be used for building fully static websites – such as the one you are currently reading now.
 
+**[Download Statix](https://github.com/TryKickoff/statix#getting-started-with-statix)**
+
+---
 
 ## Kickoff Generator
 
@@ -74,6 +83,7 @@ For example, if you start developing a new project and want to use a combination
 
 Give it a try – take a look at [how to use the Kickoff Generator in our documentation](http://trykickoff.github.io/learn/yeoman.html).
 
+---
 
 ## Help Contribute!
 
