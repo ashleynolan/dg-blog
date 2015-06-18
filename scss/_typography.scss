@@ -210,11 +210,9 @@ a {
 	h6 & {
 		&,
 		&:visited {
-			color: #333;
 			@include prefixer(transition, 200ms ease-in-out, webkit moz o spec);
 		}
 		&:hover, &:focus {
-			color: $red;
 			@include prefixer(transition, 200ms ease-in-out, webkit moz o spec);
 		}
 	}

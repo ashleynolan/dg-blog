@@ -10,8 +10,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-		<title>AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
-		<meta name="description" content="AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+		<title>Help to get Picture and Srcset fully implemented in Microsoft Edge - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="Help to get Picture and Srcset fully implemented in Microsoft Edge - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
 
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,8 +42,7 @@
 	<body>
 
 
-	 <div class="container">
-		<!-- nav partial -->
+	<div class="container">
 		<header class="page-header">
 	<h1 id="page-logo" class="logo">
 		<span>Ashley Nolan – Front End Developer</span>
@@ -67,96 +66,44 @@
 </header>
 
 
-		
+		<section class="content post">
+			<h1>Help to get Picture and Srcset fully implemented in Microsoft Edge</h1>
 
-<section class="content articles">
-
-	<h2 class="articles-subhead separator-bottom">Recent Posts</h2>
-	<!--<h1 class="gigaHeading text-centre page-title">Page title example</h1>
-	<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>-->
-
-	 
-	
-		
 			
-			<a href="/blog/help-make-picture-and-srcset-fully-implemented-in-ms-edge" class="articles-item separator-bottom">
-				<article>
-					<time>18/06/2015</time>
-					<h2 class="articles-item-title">Help to get Picture and Srcset fully implemented in Microsoft Edge</h2>
-					<p class="articles-item-description">If you care about the future of Responsive Images, please carry out the following two requests.</p>
-				</article>
-			</a>
-		
+
+<p><strong>TL:DR</strong></p>
+<ol>
+<li><p>If you use <a href="https://github.com/scottjehl/picturefill">Picturefill</a> on any of your websites, update it to v2.3.1.</p>
+</li>
+<li><p>Upvote the proposals for <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/8204535-support-of-the-width-descriptor-in-srcset-and-the">extended scrset features</a> and <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6261271-picture-element">the Picture element</a> to be prioristied for implementation in Microsoft Edge.</p>
+</li>
+</ol>
+<hr>
+<p>This morning I was reading about how <code>srcset</code> is <a href="(http://blogs.windows.com/msedgedev/2015/06/08/introducing-srcset-responsive-images-in-microsoft-edge">coming to Microsoft Edge in Windows 10</a> – Hooray!</p>
+<p>But before we all celebrate too wildly, it’s worth noting that it’s not yet the full implementation of <code>srcset</code>.  Microsoft are doing a great job of moving towards fully native Responsive Image support but this is simply the first step.</p>
+<h2 id="what-can-i-do-to-help-">What can I do to help?</h2>
+<p>I’m glad you asked.  There are two, very simple, things that you can do to help us all get full support for native responsive images sooner.</p>
+<h3 id="1-update-picturefill-to-v2-3-1">1. Update Picturefill to v2.3.1</h3>
+<p>As you <a href="https://css-tricks.com/please-update-picturefill/">may have recently read</a>, for Edge and Webkit to fully implement <code>srcset</code> – in particular the <code>currentSrc</code> attribute – the use of <a href="https://github.com/scottjehl/picturefill">Picturefill</a> pre v2.3.1 needs to drop.</p>
+<p>Currenty if Microsoft and Apple were to ship the <code>currentSrc</code> implementation in Edge and Safari, a whole bunch of websites would simply break due to a small but important bug in old versions of Picturefill.</p>
+<p>The sooner we update any old versions of Picturefill that are used on websites that we have developed, the sooner they can implement <code>currentSrc</code> into Edge and Webkit.</p>
+<h3 id="2-upvote-the-proposals-for-picture-element-support-https-wpdev-uservoice-com-forums-257854-microsoft-edge-developer-suggestions-6261271-picture-element-and-full-srcset-implementation-https-wpdev-uservoice-com-forums-257854-microsoft-edge-developer-suggestions-8204535-support-of-the-width-descriptor-in-srcset-and-the-in-microsoft-edge-">2. Upvote the proposals for <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6261271-picture-element">picture element support</a> and <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/8204535-support-of-the-width-descriptor-in-srcset-and-the">full srcset implementation</a> in Microsoft Edge.</h3>
+<p>Microsoft uses this to gauge and rank new features to implement in Edge and so the more upvotes they receive, the higher a priority both of these features will become.</p>
+<p>The sooner we have native Responsive Image support across all browsers for both the <a href="http://caniuse.com/#search=picture">Picture element</a> and the <a href="http://caniuse.com/#search=srcse">extended srcset feature-set</a>, the closer we will be to not having to rely on polyfills for these features in the future.</p>
+<p>Obviously, we’ll also need to kick Apple in the nuts to get native support for <code>picture</code> into Webkit as well, but hopefully getting this implemented fully in Edge will help push them into action on this front.</p>
+<h2 id="do-your-bit">Do your bit</h2>
+<p>Responsive Images have come a long way, but there’s still a little way to go before we have native implementation across the board.</p>
+<p>By acting on the two simple steps above, you’ll be helping developers everywhere get a step closer to that goal.</p>
+
+
+
+			<p class="post-date separator-top">Posted on the 18th June 2015</p>
+
 			
-			<a href="/blog/kickoff-version-5-released" class="articles-item separator-bottom">
-				<article>
-					<time>16/06/2015</time>
-					<h2 class="articles-item-title">Kickoff Version 5 released</h2>
-					<p class="articles-item-description">A new version of the lightweight front-end framework has been released.</p>
-				</article>
-			</a>
-		
-			
-			<a href="/blog/a-new-challenge" class="articles-item separator-bottom">
-				<article>
-					<time>16/04/2015</time>
-					<h2 class="articles-item-title">A New Challenge</h2>
-					<p class="articles-item-description">Looking forward to new challenges and experiences as I move out of London.</p>
-				</article>
-			</a>
-		
-	
-</section>
 
-<!-- Homepage carousel -->
-<section id="homeCarousel" class="homeCarousel">
-	<h2 class="homeCarousel-title">Recent Work</h2>
+			<div id="disqus_thread" class="comments separator-top"></div>
 
-	<div class="homeCarousel-wrapper">
-		<div class="homeCarousel-carousel">
-			<article id="workArticle1" class="homeCarousel-carousel-item" data-name="Just Eat">
-				<a href="work#justeat" title="JUST EAT">
-					<img class="featureImg" src="assets/img/work/home-justeat.png" alt="JUST EAT Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>JUST EAT</h3></div>
-				</a>
-			</article>
-			<article id="workArticle4" class="homeCarousel-carousel-item" data-name="BBC GoodFood">
-				<a href="work#bbcgoodfood" title="BBC GoodFood">
-					<img class="featureImg" src="assets/img/work/home-bbc.png" alt="BBC GoodFood Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>BBC GoodFood</h3></div>
-				</a>
-			</article>
-			<article id="workArticle2" class="homeCarousel-carousel-item" data-name="Lynx Peace">
-				<a href="work#lynxpeace" title="Lynx Peace">
-					<img class="featureImg" src="assets/img/work/home-peace.png" alt="Lynx Peace Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>Lynx Peace</h3></div>
-				</a>
-			</article>
-			<article id="workArticle3" class="homeCarousel-carousel-item" data-name="Christmas Tracker">
-				<a href="work#labs-christmastracker" title="Christmas Tracker">
-					<img class="featureImg" src="assets/img/work/home-christmastracker.png" alt="Logo for ChristmasTracker.com">
-					<div class="homeCarousel-carousel-item-title"><h3>Christmas Tracker</h3></div>
-				</a>
-			</article>
-			<article id="workArticle5" class="homeCarousel-carousel-item" data-name="TMW Kickoff">
-				<a href="work#labs-kickoff" title="Kickoff">
-					<img class="featureImg" src="assets/img/work/home-kickoff.png" alt="Kickoff Logo">
-					<div class="homeCarousel-carousel-item-title"><h3>TMW Kickoff</h3></div>
-				</a>
-			</article>
-		</div>
-
-		<div id="homeCarousel-canvasFrame" class="homeCarousel-canvasFrame">
-			<a href="work#justeat" id="homeCarousel-canvasFrame-link" class="homeCarousel-canvasFrame-link">
-				<canvas id="homeCarousel-canvasFrame-canvas" class="homeCarousel-canvasFrame-canvas" width="618" height="272"></canvas>
-				<div class="homeCarousel-carousel-item-title">
-					<h3>JUST EAT</h3>
-				</div>
-			</a>
-		</div>
-	</div>
-</section><!-- End of work section panel -->
-
+		</section>
 
 		<footer class="page-footer border-grey-white-top">
 	<!-- Social links -->
@@ -176,6 +123,18 @@
 
 	</div>
 
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -188,3 +147,4 @@
 	</script>
 </body>
 </html>
+
