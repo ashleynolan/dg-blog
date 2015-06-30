@@ -1,0 +1,187 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+		<title>A Guide to the Front-End Interview Process - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="A Guide to the Front-End Interview Process - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/assets/css/kickoff.css">
+
+		<!-- Fonts – non blocking -->
+		<script type="text/javascript" src="http://fast.fonts.net/jsapi/7f495bc1-d47d-4f68-b796-4c8c60df8cae.js" async></script>
+		<script>
+			(function(d) {
+				var config = {
+					kitId: 'xxf1gwm',
+					scriptTimeout: 3000
+				},
+				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+			})(document);
+		</script>
+
+
+		<!-- Require include for JS -->
+		<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min" async></script>
+
+	</head>
+	<body>
+
+
+	<div class="container">
+		<header class="page-header">
+	<h1 id="page-logo" class="logo">
+		<span>Ashley Nolan – Front End Developer</span>
+		<a href="/" class="logo-link">
+			<svg class="logo-dg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="234px" height="244.082px" viewBox="0 0 234 244.082" enable-background="new 0 0 234 244.082" xml:space="preserve"><g><g><path clip-rule="evenodd" d="M131.012 68.469c-20.294 5.482-35.874 16.834-38.992 43.7 C68.354 94.6 98.1 47 131 68.469z"/><path clip-rule="evenodd" d="M161.475 59.629c12.752-4.078 0 17.3 8.7 17.3 c-9.173 6.152-19.891-10.842-34.687-8.67C140.716 62 158 67.7 161.5 59.629z"/><path clip-rule="evenodd" d="M76.527 92.79c1.633 4.2 3.7 8.7 6.2 12.5 c2.608 3.9 6.1 7.4 11.2 7.159c-12.189 3.479-23.696 8.262-32.159 18.087c-8.423 9.783-13.461 22.025-16.949 34.3 c-9.061-6.983-14.794 8.593-17.451 14.883c-2.349 5.562-4.978 21.5 6.6 13.891c4.448-2.942 6.602-8.919 12.695-9.151 c-2.969 8.274-6.594 15.987-16.213 17.148c-6.54 0.793-13.054-1.491-18.517-4.962c-2.951-1.873-12.159-8.419-11.935-12.306 c0.512-8.898 10.552-1.189 11.557-8.245c0.624-4.385 0.271-8.806 1.136-13.17c0.908-4.596 2.435-9 2.911-13.689 c3.605 0.3 1.2 6.6 3.9 7.8c10.032-3.507 16.879-11.737 21.362-21.088c2.364-4.937 4.222-10.091 5.968-15.275 c1.456-4.331 1.404-9.623 4.134-13.46c2.841-3.982 7.878-4.951 12.226-6.405C68.082 99.2 72.8 96.4 76.5 92.79z"/><path clip-rule="evenodd" d="M99.255 119.897c9.81 1.9 10.7 5.8 14.9 10.4 c-6.827 6.479-9.902 22.673-5.977 28.901C95.175 156.3 96.8 135.4 99.3 119.897z"/><path clip-rule="evenodd" d="M121.206 137.488c4.894 3 4.4 9.1 6.3 13.9 c-4.936 6.197-10.997 10.411-12.33 22.914C112.079 163.8 115.3 148.9 121.2 137.488z"/><path clip-rule="evenodd" d="M121.605 0c-8.263 15.3 13.1 46.006-1.949 62.4 c-4.596 0.042-5.744-3.36-11.703-1.95C127.689 49.1 102.9 13.8 121.6 0z"/><path clip-rule="evenodd" d="M61.149 5.85c0.1 1.5 1.8 3.1 1.8 5.2 c0.022 2.82-1.059 5.84-1.923 8.48c-2.215 6.783-5.087 13.333-7.233 20.14c-2.608 8.272-5.14 16.396-3.13 25.2 c1.524 6.7 5.9 11.6 11.8 5.692c10.53-10.562 13.605-29.733 18.273-43.378c2.764-8.071 6.217-16.493 11.633-23.199 c-2.654 3.288-2.392 9.859-3.548 13.882c-1.621 5.636-4.147 11.421-3.27 17.417c1.068 7.3 7 7.1 12.4 4.2 c-2.96 1.573-4.405 7.437-6.289 9.995c-2.853 3.876-5.893 7.625-8.38 11.76c-5.954 9.899-8.374 20.95-6.517 32.4 c-7.399 4.952-11.64 13.063-25.353 11.702c-13.303 10.749-23.374 24.729-27.301 44.855c-8.519-20.394 8.5-46.808 19.502-60.457 c-2.158-18.473-6.726-26.699-3.901-40.953C43.038 31.9 62.5 25.6 61.1 5.85z"/><path clip-rule="evenodd" d="M174.777 89.915c4.768-4.601 12.5 8.9 24.8 5 c-3.096 9.324-6.504 18.33-7.452 29.802C186.195 113.3 185.1 96.9 174.8 89.915z"/><path clip-rule="evenodd" d="M96.251 171.615c-2.344 13.276-7.652 40.438-19.501 50.7 c-12.253 1.199-12.991-9.11-23.404-9.753c1.273-5.876 7.661-6.643 9.752-11.697c2.327-15.337-1.888-48.907-13.054-56.462 c6.053-10.196 13.143-22.067 26.409-25.055c-1.406 8.7 9.6 20.2 10 26.911c1.374 19.759-16.337 38.35-11.705 64.4 C85.648 209.1 89.4 183.7 96.3 171.615z"/><path clip-rule="evenodd" d="M192.558 129.948c5.485 9.1 6.5 22.7 14.6 29.3 c-5.582 5.123-22.907 35.464-17.555 23.41C189.939 164.4 194.5 150.4 192.6 129.948z"/></g><path clip-rule="evenodd" d="M99.087 116.263c0 0 10.719-54.502 47.354-40.207 c0 0 54.2 11.5 32.2 97.39C162.524 236 234 236 234 235.987s-109.006 42.894-101.854-68.795 C132.147 167.2 133.9 122.5 99.1 116.263z"/></g></svg>
+			<img src="/assets/img/dg_logo.png" class="logo-dg" alt="Ashley Nolan">
+		</a>
+	</h1>
+
+	<!-- main navigation links -->
+	<section id="nav-strip" class="nav-strip">
+		<!-- Global Navigation links -->
+<nav id="page-nav" class="nav-global">
+	<ul>
+		<li class="nav-global-item"><a href="/blog/" data-hover="Blog">Blog</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item"><a href="/work" data-hover="Work">Work</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item last "><a href="/about" data-hover="About">About</a><span class="navArrow"></span></li>
+	</ul>
+</nav>
+	</section>
+</header>
+
+
+		<section class="content post">
+			<h1>A Guide to the Front-End Interview Process</h1>
+
+			
+
+<p>One of my former bosses used to tell me that even if you aren’t actively looking for a job, it can be a good idea to go along to a job interview once in a while to keep yourself sharp.</p>
+<p>Having very recently changed job myself, I can now see what he meant.</p>
+<p>Interviewing for the first time in over 3 years was tough.  Although, as front-end developers, we’re very lucky to be working in an industry in which there are plenty of jobs available, the very best roles are – as expected – looking for the very best devs and the interview process can be very rigourous.</p>
+<p>So I wanted to share what I have learned from my recent experiences, as a recent candidate and previously as an interviewer.  Although my observations come from my experience with front-end roles, some of the points raised could easily be made relevant when applying for any technical role.</p>
+<h2 id="refresh-the-basics">Refresh the basics</h2>
+<p>As someone who has led interviews in the past, I can verify just how difficult it can be to judge just how good some developers are by simply talking to them.</p>
+<p>Interviewers only get to see a brief snapshot of you and your work.  This is especially true when the first stage of an application is over the phone.  This inevitably means that you will be asked questions that will try to roughly gauge your ability.  No matter how good you may be when it comes to writing code, if you can’t answer these kind of questions, then chances are the interview won’t go very well.</p>
+<p>The problem with this is that developers rarely have to explain the basics in their day-to-day jobs, as it’s what could be thought of as <strong> <em>implied knowledge</em> </strong>.  By this I mean that it’s knowledge that all front-end developers should have, but can be so fundamental to our jobs that we simply take it for granted; so much so that explaining it verbally can be awkward or unfamiliar.</p>
+<p> For example, how many times recently have you had to explain out loud the difference between using <code>position: relative</code>, <code>position: absolute</code> and <code>position: fixed</code>?  My guess would be not very often. This is a fundamental piece of knowledge for any front–end developer, but ensuring you can effectively convey your understanding in areas such as this is key.</p>
+<p>Here are a few examples of front-end specific questions that I have been asked during recent interviews:</p>
+<ul>
+<li>Explain the box-model and how it affects various CSS properties.</li>
+<li>What is the difference between <code>display: block</code>, <code>display: inline</code> and <code>display: inline-block</code>?</li>
+<li>What is a normal HTTP request made up of?</li>
+<li>List some common HTTP response codes and describe what they mean.</li>
+<li>Describe some of the steps you might take to ensure your website is accessible.</li>
+<li>What is BEM and explain why using something like it could be useful in your CSS?</li>
+</ul>
+<p>While JavaScript specific questions included:</p>
+<ul>
+<li>Explain the concept of closure and what it is used for.</li>
+<li>What does the <code>$</code> represent when using jQuery?</li>
+<li>Explain the <code>this</code> keyword and it’s behaviour in JS.</li>
+<li>What is the difference between the <code>DOMContentLoaded</code> and <code>window.load</code> events?</li>
+<li>Give a brief explanation of the JavaScript frameworks that you know of or have used, giving examples of the kind of projects that they are best suited towards.</li>
+</ul>
+<p>Questions such as these act as the baseline for any front-end interview, therefore being able to answer examples like these correctly and succinctly is something that you should practice before any interview.</p>
+<p>The HTML5 boilerplate team maintains a <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions">more exhaustive list</a> of possible interview questions for front–end devs – I highly recommend checking it out.</p>
+<h2 id="know-what-s-current">Know what’s current</h2>
+<p>It may sound obvious, but make sure you are up-to-date with the current hot topics in front-end development.</p>
+<p>For example, if you were to go to a front-end interview right now, you would almost certainly be asked a question on the subject of JS frameworks.</p>
+<p>Even if you’ve never used one, make sure that you know what’s out there and the type of projects that are best suited to each one.  There’s no right or wrong answer to the question &#39;What’s your favourite JS framework?&#39; (some people may disagree!).  If I was asking that question, I’d expect the candidate to be objective and to be to able explain the pros and cons of the most popular current frameworks.</p>
+<p>Other currently talked about topics include Responsive Images, Element Queries, Build Tools (such as Grunt and Gulp), CSS Naming Schemes and Methodologies, Web Components and front-end performance, to name just a few.  Also check out Rebecca Murphy’s excellent <a href="http://rmurphey.com/blog/2015/03/23/a-baseline-for-front-end-developers-2015/">baseline for JavaScript developers</a>, for more details around JS specific knowledge you are likely to need to know about.</p>
+<p>If you like to keep on top of this kind of stuff – which if you’re reading this post, you likely do – you’ll be in a great position come interview time.</p>
+<h2 id="admit-what-you-don-t-know">Admit what you don’t know</h2>
+<p>The best interviewers will not only be looking for what you <em>do</em> know, but also what you <em>don’t</em>.</p>
+<p>Part of working effectively with others is knowing when to be able to ask for help from those around you when needed.  I’ve found that the better the role I have applied for, the more likely it will be that the interviewer(s) will look to explore topics that I clearly have less experience on.</p>
+<p>The goal of this type of questioning is to see how far the candidate needs to be questioned before they stop looking for the &#39;correct&#39; answer – of which there sometimes isn’t one – and concedes that they don’t know and would ask someone else for advice on the subject.  Not only does this show more humility towards the candidates own ability, but it also gives the impression that they would be less likely to relentlessly plough on attempting to solve a problem on their own when the best option would be to ask for some help.</p>
+<p>A classic example of this was actually during my interview with Just Eat.  At one stage in the process I was asked to sketch and explain how I would structure a takeaway ordering application – right through to envisaging the sort of database structure the system might have.</p>
+<p>Interviewing for a UI development role this question was designed to take me out of my comfort zone to see how I would try to solve problems that I wouldn’t have all the answers to.  As the conversation went deeper into specifics, the more I struggled to find concrete solutions.  I finally concluded that it would be advisable to ask those with more specialist experience in areas such as databases, constructing API’s and server scaling to explore my assumptions.  This is completely understandable – I would be working with people specialising in these areas, so trying to solve these problems myself would be pretty futile.</p>
+<p>It’s ok not to know things – the best front-end developers in the world don’t know everything about all aspects of the web.  If you definitely don’t know the answer to a question, it’s much better to admit it rather than trying to fabricate a solution.</p>
+<h2 id="practice-live-coding">Practice Live Coding</h2>
+<p>As teams can be potentially quite remotely located, the chance of having a job interview via Skype or Google Hangouts increases.  One tool that has become increasingly popular in interviews is live coding.</p>
+<p>The concept is pretty simple – the candidate is asked to live code the solution to a programming question while explaining their thinking out loud to the interviewer.  Simple enough, but this comes more naturally to some devs than others. If you’ve ever pair programmed, you’ll probably be very comfortable as the experience can be pretty similar.</p>
+<p>If you’ve never done something like this before, make sure you practice it beforehand.  Use an online editor such as <a href="http://codepen.io/">CodePen</a> or <a href="http://jsbin.com/?html,output">JSBin</a>, as usually these tests will utilise a similar online text editor.  If you have a friend who is happy to help you out, put them in the position of interviewer and let them provide feedback on areas you could improve upon.</p>
+<p>Companies will likely tell you beforehand if they’re expecting you to live code, so if this does happen just make sure you prepare in the right way.</p>
+<h2 id="show-your-passion">Show your passion</h2>
+<p>This is the one facet that I used to look for most whenever I conducted interviews.</p>
+<p>Personally, I love working with developers who are passionate about the industry we work in.  If I interviewed Developer A with 10 years experience, but they couldn’t tell me anything about future standards on the web, or Developer B with just a couple of years experience but could talk about web components and ES6 all day long, I’d want to work with developer B.</p>
+<p>The best front-end developers I know don’t read about future web standards and articles because they have to – they do it because they love learning about the latest developments in front-end.  They will happily lose an entire evening playing with the latest JS framework or a new CSS property.  They see their work as a hobby.</p>
+<p>This passion is impossible to teach and so if someone has it, they will always be sought after when looking for new roles.  The hard part can be showing it when you’re starting out – make sure you put your projects on <a href="https://github.com/">Github</a> or <a href="http://codepen.io/">CodePen</a> so you can send links in with your application, or blog about the things that you’re most passionate about.  The more visible you make your skills, the more you will stand out from the crowd.</p>
+<h2 id="basic-cs-knowledge">Basic CS knowledge</h2>
+<p>There was one final aspect of interviewing that took me a little by surprise – an emphasis on basic Computer Science (CS) knowledge.</p>
+<p>One interview in particular took this area very seriously.  While on a live coding interview over Skype, I was asked to explain the complexity of the JavaScript code I was writing using <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/">Big O notation</a>, while offering alternatives that may improve upon that complexity and why it is more or less efficient.</p>
+<p>I’m lucky to have a background in CS and so knew what this meant, but was nonetheless surprised that this formed part of an interview for a front-end development role – perhaps a sign of how far the expectation for JavaScript developers has moved on in the past few years.</p>
+<p>I would caveat this advice by saying that I by no means think that this is required learning for all front-end interviews.  However, when going for roles with companies renowned for their rigorous interview process – or more JavaScript focussed roles – you are highly likely to be asked questions in relation to code complexity and algorithms.  This could involve explaining some common sort algorithms, differences between data storage techniques, recursion and some other common CS concepts such as State Machines.</p>
+<h2 id="summary">Summary</h2>
+<p>Interviewers ultimately want you to be successful – they aren’t trying to set you up to fail.  These points should help you focus on some of the key areas that you should prepare for.</p>
+<p>I’ve avoided going over general interview advice, but make sure you do the expected groundwork around knowing a bit about what the company you’re applying for actually does – it usually helps!</p>
+<p>If you’ve had any recent experiences interviewing for front-end positions which you’d like to share, I’d love to hear from you in the comments.</p>
+
+
+
+			<p class="post-date separator-top">Posted on the 30th June 2015</p>
+
+			
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
+
+		<footer class="page-footer border-grey-white-top">
+	<!-- Social links -->
+<nav class="links-social">
+	<ul>
+		<li class="links-social-item links-social-email"><a href="mailto:hello@ashleynolan.co.uk" title="Email Me" rel="external" target="_blank"><span class="links-social-icon icon-email-shaded"></span><span class="screen-reader-text">Email</span></a></li>
+		<li class="links-social-item links-social-twitter"><a href="http://twitter.com/AshNolan_" title="Find me on Twitter" rel="external" target="_blank"><span class="links-social-icon icon-twitter"></span><span class="screen-reader-text">Twitter</span></a></li>
+		<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" title="My LinkedIn Profile" rel="external" target="_blank"><span class="links-social-icon icon-linkedin"></span><span class="screen-reader-text">LinkedIn</span></a></li>
+	</ul>
+</nav>
+
+
+	 <div class="footer-content">
+		 <p>I'm Ashley Nolan, a Senior Web UI Engineer at JUST EAT.  Do take a look around, or contact me in any of the usual ways – it'd be great to hear from you.</p>
+	</div>
+</footer>
+
+	</div>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-20668207-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
+
