@@ -261,13 +261,18 @@ module.exports = function (grunt) {
 				assets: '<%= site.destination %>/assets',
 				helpers: ['helper-moment', 'handlebars-helper-eachitems', 'handlebars-helper-paginate', 'src/helpers/helper-*.js'],
 
-				plugins: ['assemble-contrib-permalinks'],
+				plugins: ['assemble-contrib-permalinks', 'assemble-middleware-rss'],
 
 				partials: ['src/templates/includes/**/*.hbs'],
 				flatten: false,
 
 				layout: 'main.hbs',
-				layoutdir: 'src/templates/layouts'
+				layoutdir: 'src/templates/layouts',
+
+				rss: {
+					title: 'AshleyNolan.co.uk',
+					description: 'Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT'
+				}
 			},
 
 			posts: {

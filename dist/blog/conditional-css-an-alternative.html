@@ -14,6 +14,8 @@
 		<meta name="description" content="Conditional CSS – an alternative - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
 
 
+		<link href="http://feeds.feedburner.com/ashleynolan" rel="alternate" type="application/rss+xml" title="Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
@@ -127,6 +129,7 @@ window.fireEvent('resize'); //trigger resize on load for first run</code>
 
 <p>We keep a track of our lastminwidth to ensure checks only happen when our media queries actually change, rather than every time the window resizes.  One caveat here is that getComputedStyle isn&#39;t supported by lower versions of IE.  You have two optons to solve this; you can <a href="http://snipplr.com/view/13523/">patch it</a>, or if you&#39;re using jQuery, you can return the z-index using <code>$(&#39;#breakpoint-test&#39;).css(&#39;zIndex&#39;)</code> instead.</p>
 <p>This now lets you fire different functions based on your minwidth checks.  I think it&#39;s a fairly elegant cross-browser solution, but if you have any ideas as to how it can be improved, let me know in the comments.</p>
+
 
 
 			<p class="post-date separator-top">Posted on the 24th September 2012</p>
