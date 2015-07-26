@@ -45,27 +45,15 @@ $vertical-rhythm               : 20;
 $bold-font-weight             : bold;
 
 // Font stacks
-$sans-font-family             : "Avenir LT W01 45 Book", Helvetica, Arial, sans-serif;
-$sans-font-family-italic      : "AvenirLTW01-45BookObliq", Helvetica, Arial, sans-serif;
+$sans-font-family             : 'Muli', Helvetica, Arial, sans-serif;
 $serif-font-family            : Georgia, "Times New Roman", Times, serif;
 $mono-font-family             : Menlo, Monaco, "Courier New", monospace;
 
 $base-font-family             : $sans-font-family;
-$alt-font-family              : "p22-underground-pc", 'Avenir LT W01 85 Heavy', Helvetica, Arial, sans-serif;
+$alt-font-family              : "p22-underground-pc", 'Muli', Helvetica, Arial, sans-serif;
 
-$headings-font-family         : 'Avenir LT W01 85 Heavy', Helvetica, Arial, sans-serif; // empty to use Kickoff default $base-font-family
-$headings-font-weight         : normal;    // instead of browser default, bold
-
-/*
-font-family:'Avenir LT W01 35 Light';
-font-family:'Avenir LT W01 45 Book';
-font-family:'AvenirLTW01-45BookObliq';
-font-family:'Avenir LT W01 65 Medium';
-font-family:'AvenirLTW01-65MediumObl';
-font-family:'Avenir LT W01 85 Heavy';
-font-family:'AvenirLTW01-85HeavyObli';
-font-family:'Avenir LT W01 95 Black';
-font-family:'AvenirLTW01-95BlackObli';*/
+$headings-font-family         : $sans-font-family;
+$headings-font-weight         : 800;    // instead of browser default, bold
 
 /*
    Breakpoints
