@@ -36,6 +36,7 @@ body {
 	line-height: $base-leading;
 	color: $color-text;
 	background-color: $color-background;
+	font-weight: 300;
 
 	// Two ways to smoothen type, they are disabled by default
 	// Enable only one of them if you need them
@@ -124,7 +125,7 @@ h1, .h1, .alpha {
 }
 	// .gigaHeading {
 	// 	position: relative;
-	// 	font-family: 'Avenir LT W01 85 Heavy';
+	// 	font-family: 'Muli';
 	// 	@include font-size(120);
 	// 	letter-spacing: -8px;
 	// }
@@ -335,8 +336,7 @@ strong, b {
 	font-family: $headings-font-family;
 }
 em, i {
-	font-family: $sans-font-family-italic;
-	font-style: normal;
+	font-style: italic;
 }
 
 .muted {
