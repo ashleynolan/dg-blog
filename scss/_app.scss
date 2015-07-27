@@ -167,6 +167,7 @@ img.logo-dg {
 		display: block;
 		padding: 0 10px 20px 0;
 		border: 0 solid transparent;
+		border-right: 8px solid transparent;
 		@include prefixer(transition, 300ms ease-in-out, webkit moz o spec);
 
 
@@ -176,6 +177,7 @@ img.logo-dg {
 
 			.csstransitions & {
 				border-left: 8px solid #333;
+				border-right: 0 solid transparent;
 				padding: 0 0 20px 10px;
 
 				background: darken($eggshell, 2%);
