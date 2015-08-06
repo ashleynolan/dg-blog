@@ -259,7 +259,7 @@ ul, ol {
 }
 li {
 	@include respond-min($breakpoint-mid) {
-		@include font-size(20);
+		@include font-size(22);
 	}
 }
 
@@ -270,7 +270,8 @@ nav ul, nav ol {
 	list-style: none;
 	list-style-image: none;
 }
-.content .unstyled {
+.content .unstyled,
+.content ol {
 	margin: 0 0 $verticalRhythm + px;
 
 	> li {
