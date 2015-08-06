@@ -10,8 +10,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-		<title>A beginners guide to terminal aliases and functions - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
-		<meta name="description" content="A beginners guide to terminal aliases and functions - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+		<title>Managing Inline Images in CSS - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="Managing Inline Images in CSS - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
 
 
 		<link href="http://feeds.feedburner.com/ashleynolan" rel="alternate" type="application/rss+xml" title="Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT" />
@@ -69,57 +69,48 @@
 
 
 		<section class="content post">
-			<h1>A beginners guide to terminal aliases and functions</h1>
+			<h1>Managing Inline Images in CSS</h1>
 
 			
 
-<p>By far the simplest time saving tools I’ve found since working more in the OSX terminal are aliases and functions.</p>
-<p>Aliases stay true to the saying that lazy developers are efficient developers; they are simple shorthand commands that you can define to reference longer commands you find yourself commonly using.</p>
-<p>So for example, if you use git on the command line you can find yourself typing out commands like <code>git commit -m &#39;message&#39;</code>, <code>git status -s</code> or <code>git branch -r</code> pretty often.  Sure, they aren&#39;t huge commands to type out, but if you’re using them regularly it can get pretty repetitive.</p>
-<p>Likewise, you may find yourself doing the same few commands in a row over and over again.  Ever create a new directory in the terminal and then cd straight into it afterwards?</p>
-<p>This is where aliases and functions can help you out.</p>
-<p>By creating a shell script to include in your terminal profile, you can create any number of <strong>aliases</strong> and functions that you can then use in the Terminal as a replacement for the long-form commands.  If you have no idea what a shell script or a terminal profile are, read on, we’ll get to that in a second…</p>
-<p>Note. I’ll be taking you through the steps to create aliases and functions on Mac OSX.  On Windows, the concept is similar, but file locations and specifics may differ.</p>
-<h2 id="creating-your-aliases">Creating your aliases</h2>
-<p>First up, you’ll need to create a shell script that will hold the aliases and functions that you want to add.</p>
-<p>Much in the way that HTML is a language that your browser can interpret, a shell script is simply a file that your terminal, or shell, can read.  Shell script has it’s own syntax, much like any language;  I won’t go into detail about the specifics of shell scripting, but there are <a href="http://www.howtogeek.com/67469/the-beginners-guide-to-shell-scripting-the-basics/">plenty of good guides available on the web</a> for anyone who wants to learn more about this.</p>
-<p>Before you create your shell script, you’ll need to make sure that you have hidden files and folders showing in Finder.  To do this, open up your terminal and enter the following command:</p>
-<pre><code>defaults write com.apple.finder AppleShowAllFiles -bool TRUE &amp;&amp; killall Finder</code></pre>
-<p>This will make all files and folders visible in Finder and restart any currently running Finder windows that were open.</p>
-<p>You’re now ready to create your shell script.  We’ll be creating our aliases in the root of our User folder, so whatever your user name is on your computer, navigate to that folder in Finder.  Alternatively, open up a terminal window and you should find that it positions you at your User folder by default.</p>
-<p>Create a file and call it <code>.aliases.sh</code> – if you’re in terminal, type <code>touch .aliases.sh</code>.</p>
-<p>Open the file up in your text editor of choice and add the following lines of code to it:</p>
-<pre><code>alias myip=&#39;curl ip.appspot.com&#39;
+<p>It’s fairly old news that it’s a good idea to make as few requests as possible when creating a website of any size.</p>
+<p>Latency from HTTP requests can potentially be very expensive, <a href="https://developers.google.com/speed/docs/insights/mobile?hl=en">especially on mobile</a> where it can take around 200-300 ms roundtrip on a 3G network and around 50-100 ms on 4G.  This can soon start to add up when requesting multiple assets on your website.</p>
+<p><a href="https://css-tricks.com/data-uris/">Inlining images</a> in your CSS using data URIs is one way to help minify these requests, but this can lead to a couple of issues,  namely:</p>
+<ol>
+<li>It isn’t always clear where the original image file, from which the data URI was generated, is actually located within a project – or even if it has been saved somewhere in the project at all</li>
+<li>You have no idea just from looking at a data URI what it actually represents.  Unless you can somehow read base64 encoded strings, It just looks like <a href="https://en.wikipedia.org/wiki/Gibberish">gobbledygook</a>.</li>
+<li>If you, or someone else, wants to modify the original image in some way and can only find the data URI in your CSS, it makes things way more awkward than they should be to make these modifications.</li>
+</ol>
+<p>So what can we do to help combat this?</p>
+<h2 id="tool-me-up-scotty">Tool me up Scotty</h2>
+<p>So the best way to manage inline images is to have some sort of reference to the original image in your CSS, which then gets converted into a data URI using some kind of processing tool.</p>
+<p>There are a number of tools out there that can help you do this.</p>
+<p>If you are using <a href="http://compass-style.org/">Compass</a> with <a href="http://sass-lang.com/">Sass</a>, you can make use of the <a href="http://compass-style.org/reference/compass/helpers/inline-data/">inline-image helper</a>.  However, not everyone uses Sass – or extends Sass with Compass if they do.</p>
+<p>Tools also exist for Gulp and Grunt, such as <a href="https://www.npmjs.com/package/gulp-inline-base64">gulp-inline-base64</a> or <a href="https://www.npmjs.com/package/grunt-image-embed">grunt-image-embed</a>.  Such tools allow you to skip images that you don’t want to encode and set a maximum file size, which can be handy.</p>
+<p>However, my preferred method is to use the PostCSS plugin <a href="https://github.com/borodean/postcss-assets">postcss-assets</a>.  This can be run to supplement a preprocessor such as Sass or Less, or you can just use it to power up your Vanilla CSS – the choice is yours.</p>
+<p>Setting up the plugin is easy.  If you haven’t already got a PostCSS task configured in your build tool, check out the steps to do so via their <a href="https://github.com/postcss/postcss#usage">documentation online</a>.</p>
+<p>Then, install the <a href="https://github.com/borodean/postcss-assets">postcss-assets</a> plugin via NPM using <code>npm install postcss-assets --save-dev</code>, adding it to your PostCSS task by specifying the base directory in which it can find your projects images:</p>
+<pre>
+<code class="language-javascript">require('postcss-assets')({
+    loadPaths: [ '/basePathToImgs' ]
+})</code>
+</pre>
 
-function mkd() {
-    mkdir -p &quot;$@&quot; &amp;&amp; cd &quot;$@&quot;
-}</code></pre>
-<p>You&#39;ll notice that the above code has one alias and one function.</p>
-<p>An alias is usually used for simple shortening or chaining terminal commands together.  A function can take values passed to it by the user and manipulate those values in some way to perform commands.</p>
-<p>In the above code, we have defined an alias of <code>myip</code> which will output your public ip to the terminal by performing a curl request to ip.appspot.com.  We have also defined a function <code>mkd</code> which when passed a value, such as <code>mkd new-folder</code>, will first make a new directory with the name <code>new-folder</code> and then <code>cd</code> (change directory) into the newly created directory.</p>
-<p>As you add more aliases and functions, it can be a good idea to organise them into different shell scripts.  For example, it would make sense to group all of your defined git aliases into one file – perhaps called <code>.git-shortcuts.sh</code>.  This makes maintenance of your shell scripts easier, in the same way that separating out files when coding in any language helps structure and organisation.</p>
-<p>Ok, so now we have created our shell script, we need to link this into our terminal profile so that these commands can be referenced in our terminal.</p>
-<h2 id="editing-your-terminal-profile">Editing your terminal profile</h2>
-<p>The final stage is to make a reference to your newly created shell script in your terminal profile – or <strong>bash profile</strong>.</p>
-<p>In simple terms, the <code>.bash_profile</code> file is something that is executed when a new terminal window is opened and bash is invoked.  If you’d like to read a more detailed explanation, check out <a href="http://hacktux.com/bash/bashrc/bash_profile">this article on the subject</a>.</p>
-<p>As the <code>.bash_profile</code> file is executed when you open a new terminal window, we can add files to be run when this execution happens.  Your <code>.bash_profile</code> is located at the root of your User folder, in the same place that you will have just created your shell script file.</p>
-<p>Open up the <code>.bash_profile</code> file in a text editor, and add the following line to the bottom of the file:</p>
-<pre><code>source &quot;/Users/my-username/.aliases.sh&quot;  # General aliases and functions defined by me</code></pre>
-<p>Be sure to replace <code>my-username</code> with your OSX username – if you don&#39;t know what this is, press <code>cmd + i</code> on the <code>.aliases.sh</code> file in Finder and check the &#39;Where&#39; value of the file.  Once you have done this, save and close the file.</p>
-<h2 id="test-it-works">Test it works</h2>
-<p>Now that you&#39;ve created your aliases and referenced your newly created script in your bash profile, you should be able to use them in your terminal.</p>
-<p>Open up a new terminal window – make sure it&#39;s a new window, as previously open windows won&#39;t have run your newly created scripts – and type in <code>myip</code>.</p>
-<p>Your terminal should output your public IP to the screen.</p>
-<p>Similarly, writing <code>mkd new-folder</code> will create a folder and cd into the newly created folder.</p>
-<h2 id="next-steps-to-terminal-domination">Next steps to terminal domination</h2>
-<p>This is simply an introduction to the aliases and functions you can setup in your terminal.  There are many other useful aliases and functions you can add to your setup to save you time when working in the terminal.</p>
-<p>A full list of my <a href="https://github.com/ashleynolan/dotfiles/blob/master/.aliases">system aliases are up on github</a> as well as a <a href="https://github.com/ashleynolan/dotfiles/blob/master/.functions">separate set of functions</a>.  These have been built upon and edited from the excellent set of <a href="https://github.com/mathiasbynens/dotfiles">dot files by Mathias Bynens</a>.</p>
-<p>If you use git, or want to start using git, on the command line, aliases can help you out big-time.  I recommend taking a look at the excellent <a href="https://github.com/jakearchibald/git-convenience">git-convenience tools</a> by Jake Archibald, or check out my <a href="https://github.com/ashleynolan/dotfiles/blob/master/.git-shortcuts.sh">git alias file</a> which is an extended set of aliases built on top of what you&#39;ll find in the git convenience tools.</p>
-<p>Finally, if you just want to have a look at the sort of things that are possible using aliases and functions, check out <a href="alias.sh">alias.sh</a>, which has tonnes of useful snippets to copy and use in yur own script files.</p>
+<p>Once you have this configured, you can tell the plugin to convert images to data URI’s by writing the following in your CSS (or preprocessor) files:</p>
+<pre>
+<code class="language-scss">background-image: inline('img/logo.png'); //inline image files
+background-image: inline('img/icons/icon-arrow.svg'); // also inlines SVGs unencoded (see https://css-tricks.com/probably-dont-base64-svg/)</code>
+</pre>
+
+<p>This will then take the referenced asset and convert it to a data URI when the CSS is compiled, as well as keeping a reference to the original asset in your CSS should it need to be modified in the future – huzzah!</p>
+<p>So, the next time you think about putting a data URI straight into your CSS, take a look at <a href="https://github.com/borodean/postcss-assets">postcss-assets</a> – it really could help you out when it comes to maintaining inline assets on a project.</p>
 
 
 
-			<p class="post-date separator-top">Posted on the 1st May 2014</p>
+
+
+
+			<p class="post-date separator-top">Posted on the 6th August 2015</p>
 
 			
 

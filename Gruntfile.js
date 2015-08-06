@@ -111,7 +111,7 @@ module.exports = function (grunt) {
 		watch: {
 			scss: {
 				files: ['scss/**/*.scss'],
-				tasks: ['sass:dev', 'copy:css']
+				tasks: ['sass:dev', 'csso', 'copy:css']
 				// tasks: ['sass:dev', 'autoprefixer:dist', 'csso']
 			},
 
