@@ -49,6 +49,8 @@ define ([
 
 			DG.DateHandler.init();
 
+			this.widowCheck();
+
 		},
 
 		mobileinit : function () {
@@ -86,6 +88,19 @@ define ([
 				$(DG.SiteSetup.logo).find('a').css({'width': 'auto', 'padding': '4px 24px 6px' });
 				DG.SiteSetup.logoOrientation = 'hoz';
 			}
+		},
+
+		widowCheck: function () {
+
+			$(".post h1").each(function() {
+				var wordArray = $(this).text().split(" ");
+				if (wordArray.length > 1) {
+					wordArray[wordArray.length-2] += "&nbsp;" + wordArray[wordArray.length-1];
+					wordArray.pop();
+					$(this).html(wordArray.join(" "));
+				}
+			});
+
 		}
 
 
