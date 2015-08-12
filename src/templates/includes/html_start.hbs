@@ -24,6 +24,14 @@
 		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
 		<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
 
+{{#ifCond page.title 'null'}}{{else}}
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@AshNolan_" />
+		<meta name="twitter:title" content="{{ page.title }}" />
+		<meta name="twitter:description" content="{{#ifCond page.description undefined}}Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT{{else}}{{ page.description }}{{/ifCond}}" />
+		<meta name="twitter:image" content="http://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+{{/ifCond}}
+
 		<!-- CSS -->
 		<link rel="stylesheet" href="/assets/css/kickoff.min.css">
 
