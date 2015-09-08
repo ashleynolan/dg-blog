@@ -18,16 +18,22 @@ table {
 
 .table {
 	width: 100%;
-	margin-bottom: $base-line-height + px;
+	margin-bottom: $verticalRhythm*1.5 + px;
 
 	// Cells
 	& th,
 	& td {
 		padding: 8px;
 		line-height: $base-leading;
-		text-align: left;
 		vertical-align: top;
 		border-top: 1px solid $table-border;
+
+		&:first-child {
+			text-align: left;
+		}
+		&:nth-child(n+2) {
+			text-align: center;
+		}
 	}
 	& th,
 	& tfoot td {
@@ -36,6 +42,7 @@ table {
 	// Bottom align for column headings
 	& thead th {
 		vertical-align: bottom;
+		background-color: $table-background-accent;
 	}
 	// Remove top border from thead by default
 	& caption + thead,

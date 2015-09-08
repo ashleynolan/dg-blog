@@ -224,6 +224,7 @@ module.exports = function (grunt) {
 					expand: true,
 					src: [
 						'img/work/work-*.{jpg,gif,png}',
+						'img/blog/tooling-survey/2015/*.{jpg,gif,png}',
 						'!**/*-small.{jpg,gif,png}',
 						'!**/*-mid.{jpg,gif,png}',
 

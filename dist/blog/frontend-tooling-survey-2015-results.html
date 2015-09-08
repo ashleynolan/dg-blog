@@ -1,0 +1,663 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+		<title>The State of Front-End Tooling – 2015 - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="The State of Front-End Tooling – 2015 - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+
+
+		<link href="http://feeds.feedburner.com/ashleynolan" rel="alternate" type="application/rss+xml" title="Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@AshNolan_" />
+		<meta name="twitter:title" content="The State of Front-End Tooling – 2015" />
+		<meta name="twitter:description" content="I asked front-end developers to fill in a survey about their their knowledge and usage patterns across a number of front-end tools.  Check out the results." />
+		<meta name="twitter:image" content="http://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/assets/css/kickoff.min.css">
+
+		<!-- Fonts – non blocking -->
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+		<script>
+			(function(d) {
+				var config = {
+					kitId: 'xxf1gwm',
+					scriptTimeout: 3000
+				},
+				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+			})(document);
+		</script>
+
+
+		<!-- Require include for JS -->
+		<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min" async></script>
+
+	</head>
+	<body>
+
+
+	<div class="container">
+		<header class="page-header">
+	<div id="page-logo" class="logo">
+		<span>Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT</span>
+		<a href="/" class="logo-link">
+			<svg class="logo-dg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="234px" height="244.082px" viewBox="0 0 234 244.082" enable-background="new 0 0 234 244.082" xml:space="preserve"><g><g><path clip-rule="evenodd" d="M131.012 68.469c-20.294 5.482-35.874 16.834-38.992 43.7 C68.354 94.6 98.1 47 131 68.469z"/><path clip-rule="evenodd" d="M161.475 59.629c12.752-4.078 0 17.3 8.7 17.3 c-9.173 6.152-19.891-10.842-34.687-8.67C140.716 62 158 67.7 161.5 59.629z"/><path clip-rule="evenodd" d="M76.527 92.79c1.633 4.2 3.7 8.7 6.2 12.5 c2.608 3.9 6.1 7.4 11.2 7.159c-12.189 3.479-23.696 8.262-32.159 18.087c-8.423 9.783-13.461 22.025-16.949 34.3 c-9.061-6.983-14.794 8.593-17.451 14.883c-2.349 5.562-4.978 21.5 6.6 13.891c4.448-2.942 6.602-8.919 12.695-9.151 c-2.969 8.274-6.594 15.987-16.213 17.148c-6.54 0.793-13.054-1.491-18.517-4.962c-2.951-1.873-12.159-8.419-11.935-12.306 c0.512-8.898 10.552-1.189 11.557-8.245c0.624-4.385 0.271-8.806 1.136-13.17c0.908-4.596 2.435-9 2.911-13.689 c3.605 0.3 1.2 6.6 3.9 7.8c10.032-3.507 16.879-11.737 21.362-21.088c2.364-4.937 4.222-10.091 5.968-15.275 c1.456-4.331 1.404-9.623 4.134-13.46c2.841-3.982 7.878-4.951 12.226-6.405C68.082 99.2 72.8 96.4 76.5 92.79z"/><path clip-rule="evenodd" d="M99.255 119.897c9.81 1.9 10.7 5.8 14.9 10.4 c-6.827 6.479-9.902 22.673-5.977 28.901C95.175 156.3 96.8 135.4 99.3 119.897z"/><path clip-rule="evenodd" d="M121.206 137.488c4.894 3 4.4 9.1 6.3 13.9 c-4.936 6.197-10.997 10.411-12.33 22.914C112.079 163.8 115.3 148.9 121.2 137.488z"/><path clip-rule="evenodd" d="M121.605 0c-8.263 15.3 13.1 46.006-1.949 62.4 c-4.596 0.042-5.744-3.36-11.703-1.95C127.689 49.1 102.9 13.8 121.6 0z"/><path clip-rule="evenodd" d="M61.149 5.85c0.1 1.5 1.8 3.1 1.8 5.2 c0.022 2.82-1.059 5.84-1.923 8.48c-2.215 6.783-5.087 13.333-7.233 20.14c-2.608 8.272-5.14 16.396-3.13 25.2 c1.524 6.7 5.9 11.6 11.8 5.692c10.53-10.562 13.605-29.733 18.273-43.378c2.764-8.071 6.217-16.493 11.633-23.199 c-2.654 3.288-2.392 9.859-3.548 13.882c-1.621 5.636-4.147 11.421-3.27 17.417c1.068 7.3 7 7.1 12.4 4.2 c-2.96 1.573-4.405 7.437-6.289 9.995c-2.853 3.876-5.893 7.625-8.38 11.76c-5.954 9.899-8.374 20.95-6.517 32.4 c-7.399 4.952-11.64 13.063-25.353 11.702c-13.303 10.749-23.374 24.729-27.301 44.855c-8.519-20.394 8.5-46.808 19.502-60.457 c-2.158-18.473-6.726-26.699-3.901-40.953C43.038 31.9 62.5 25.6 61.1 5.85z"/><path clip-rule="evenodd" d="M174.777 89.915c4.768-4.601 12.5 8.9 24.8 5 c-3.096 9.324-6.504 18.33-7.452 29.802C186.195 113.3 185.1 96.9 174.8 89.915z"/><path clip-rule="evenodd" d="M96.251 171.615c-2.344 13.276-7.652 40.438-19.501 50.7 c-12.253 1.199-12.991-9.11-23.404-9.753c1.273-5.876 7.661-6.643 9.752-11.697c2.327-15.337-1.888-48.907-13.054-56.462 c6.053-10.196 13.143-22.067 26.409-25.055c-1.406 8.7 9.6 20.2 10 26.911c1.374 19.759-16.337 38.35-11.705 64.4 C85.648 209.1 89.4 183.7 96.3 171.615z"/><path clip-rule="evenodd" d="M192.558 129.948c5.485 9.1 6.5 22.7 14.6 29.3 c-5.582 5.123-22.907 35.464-17.555 23.41C189.939 164.4 194.5 150.4 192.6 129.948z"/></g><path clip-rule="evenodd" d="M99.087 116.263c0 0 10.719-54.502 47.354-40.207 c0 0 54.2 11.5 32.2 97.39C162.524 236 234 236 234 235.987s-109.006 42.894-101.854-68.795 C132.147 167.2 133.9 122.5 99.1 116.263z"/></g></svg>
+			<img src="/assets/img/dg_logo.png" class="logo-dg" alt="Ashley Nolan">
+		</a>
+	</div>
+
+	<!-- main navigation links -->
+	<section id="nav-strip" class="nav-strip">
+		<!-- Global Navigation links -->
+<nav id="page-nav" class="nav-global">
+	<ul>
+		<li class="nav-global-item"><a href="/blog/" data-hover="Blog">Blog</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item"><a href="/work" data-hover="Work">Work</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item last "><a href="/about" data-hover="About">About</a><span class="navArrow"></span></li>
+	</ul>
+</nav>
+	</section>
+</header>
+
+
+		<section class="content post">
+			<h1>The State of Front-End Tooling – 2015</h1>
+
+			
+
+<p>A couple of weeks ago, <a href="https://twitter.com/AshNolan_/status/636499157079998464">I put out a request for front-end developers</a> to fill-out a very brief survey on front-end tooling.</p>
+<p>The aim?  I simply wanted to find out more information about current knowledge and usage levels across the community.  I often hear that Sass is now the defacto preprocessor of choice, or that {insert JS framework here} is the latest and greatest thing since sliced bread, but I’ve often wondered how that would be reflected if I could ask developers directly about what tools they have knowledge of and use in their projects.</p>
+<p>Before I put the survey together, I was pretty conservative in terms of the number of responses I was aiming to reach.  People are busy actually doing work and getting them to fill out a survey without any tangible reward can be a pretty hard sell.  However, at the time of writing this article, I’ve had an incredible <strong>649 responses</strong> – easily surpassing my modest expectations!  Thanks to all those who took the time to fill in the survey – I really do appreciate it.</p>
+<p>So, it’s time to go through the results!  Grab yourself a cup of tea/coffee and let’s take a look…</p>
+<hr>
+<h2 id="pre-amble-disclaimers">Pre-amble Disclaimers</h2>
+<p>These results represent a small sample of front-end developers working in the industry – therefore, they shouldn’t be taken as gospel, simply as pointing towards a rough trend.</p>
+<p>If you missed the initial survey but would still like to take part, <a href="http://ashn.uk/survey-tooling">I’ll be leaving the survey open</a> for another couple of weeks and will update these results if a meaningful number of additional responses come in.</p>
+<hr>
+<h2 id="q1-preprocessors">Q1 – Preprocessors</h2>
+<p>The first question I asked was <strong>What is your CSS Preprocessing tool of choice?</strong></p>
+<p>The possible answers included all the usual suspects, however I chose to leave PostCSS off the list of answers simply as I didn’t want to confuse anyone who uses PostCSS in addition to another preprocessor in their workflow.  I figured people who did solely use PostCSS would use the &#39;Other&#39; option to specify this.</p>
+<p>Here are the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Preprocessor</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Sass</th>
+            <td>433</td>
+            <td>66.72%</td>
+        </tr>
+        <tr>
+            <th>Less</th>
+            <td>84</td>
+            <td>12.94%</td>
+        </tr>
+        <tr>
+            <th>Stylus</th>
+            <td>30</td>
+            <td>4.62%</td>
+        </tr>
+        <tr>
+            <th>No Preprocessor</th>
+            <td>81</td>
+            <td>12.48%</td>
+        </tr>
+        <tr>
+            <th>Other</th>
+            <td>21</td>
+            <td>3.24%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q1-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q1-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q1.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2015/q1.jpg" width="720" height="500" alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>As you can see, Sass was the preprocessor of choice for the majority of respondents with <strong>66.72%</strong>.  Only 12.5% of those questioned use no preprocessing tool when authoring their CSS, indicating that we may now be close to &#39;peak preprocessor adoption&#39;!</p>
+<p>One thing that I would take away from these results is that CSS preprocessing is without a doubt a skill that all front-end developers should learn if they haven’t got experience in this area already, as most projects and job roles will require it.</p>
+<p>Of those who specified &#39;Other&#39;, 15 respondents (2.3%) specified that they use PostCSS as their preprocessor of choice.</p>
+<hr>
+<h2 id="q2-postcss-and-rework">Q2 – PostCSS and Rework</h2>
+<p>Next, I wanted to find out how many devs had heard of so called &#39;post-processing&#39; tools such as PostCSS or Rework.  I therefore asked <strong>Have you heard of the following CSS processing tools?</strong></p>
+<p>The results were as follows:</p>
+<div class="table-wrapper">
+    <table class="table table--bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Heard of/Read About</th>
+                <th>Used a little</th>
+                <th>Feel Comfortable Using</th>
+                <th>Never Heard of</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>PostCSS</th>
+                <td>55.9% (363)</td>
+                <td>9.3% (60)</td>
+                <td>9.7% (63)</td>
+                <td>25.1% (163)</td>
+            </tr>
+            <tr>
+                <th>Rework</th>
+                <td>22.6% (147)</td>
+                <td>2.2% (14)</td>
+                <td>1.1% (7)</td>
+                <td>74.1% (481)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q2-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q2-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q2.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2015/q2.jpg" width="801" height="282" alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Looking at the raw results, 74.9% of respondents had either heard of or used PostCSS, compared with just 25.9% for Rework.  Only a small percentage of developers responding said that they felt comfortable using either tool.</p>
+<p>Analysing the results further across both tools, 157 devs (almost 25%) said they hadn’t heard of either PostCSS or Rework, compared to 65 devs (10%) who said they felt comfortable using at least one of the two tools.</p>
+<p>I think these results reflect how new an area this is for many front-end developers and I would expect these numbers to rise in the future.</p>
+<hr>
+<h2 id="q3-task-runners">Q3 – Task Runners</h2>
+<p>Next up was one of the questions I was most interested in seeing the results to – <strong>What task runner do you prefer using, if any, in your typical project workflow?</strong></p>
+<p>Looking at the NPM download stats, Grunt is downloaded roughly 1.45 million times a month, with Gulp having 1.34 million, so in terms of shear usage stats, they seem very equal, although there seems to have been a shift towards people moving to using Gulp over Grunt recently.</p>
+<p>So what did the survey results say?</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Task Runner</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Gulp</th>
+            <td>318</td>
+            <td>49.00%</td>
+        </tr>
+        <tr>
+            <th>Grunt</th>
+            <td>173</td>
+            <td>26.66%</td>
+        </tr>
+        <tr>
+            <th>NPM</th>
+            <td>23</td>
+            <td>3.54%</td>
+        </tr>
+        <tr>
+            <th>Broccoli</th>
+            <td>4</td>
+            <td>0.62%</td>
+        </tr>
+        <tr>
+            <th>Other</th>
+            <td>26</td>
+            <td>4.01%</td>
+        </tr>
+        <tr>
+            <th>Don’t Use a Task Runner</th>
+            <td>105</td>
+            <td>16.18%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q3-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q3-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q3.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2015/q3.jpg" width="720" height="500" alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Somewhat surprisingly, Gulp came out a fair distance ahead with <strong>49%</strong> of respondents saying they preferred using it compared with just <strong>26.7%</strong> for Grunt.</p>
+<p>16.2% of respondents said that they don’t use a task runner at all on their projects – signifying that the majority of front-end developers are seeing the benefits of using a task runner to help keep consistency across projects and teams.</p>
+<hr>
+<h2 id="q4-knowledge-of-javascript-libraries-and-frameworks">Q4 – Knowledge of JavaScript Libraries and Frameworks</h2>
+<p>Another question that really interested me was current knowledge levels across the most popular JavaScript libraries and frameworks, so this question was for respondents to indicate their experience levels in each.</p>
+<p>Here is how people responded:</p>
+<div class="table-wrapper">
+    <table class="table table--bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Heard of/Read About</th>
+                <th>Used a little</th>
+                <th>Feel Comfortable Using</th>
+                <th>Never Heard of</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>jQuery</th>
+                <td>2.0% (13)</td>
+                <td>7.1% (46)</td>
+                <td>90.9% (590)</td>
+                <td>0% (0)</td>
+            </tr>
+            <tr>
+                <th>Underscore</th>
+                <td>31.6% (205)</td>
+                <td>19.7% (128)</td>
+                <td>40.5% (263)</td>
+                <td>8.2% (53)</td>
+            </tr>
+            <tr>
+                <th>Backbone</th>
+                <td>57.2% (371)</td>
+                <td>20.0% (130)</td>
+                <td>21.3% (138)</td>
+                <td>1.5% (10)</td>
+            </tr>
+            <tr>
+                <th>AngularJS</th>
+                <td>36.5% (237)</td>
+                <td>35.1% (228)</td>
+                <td>28.1% (182)</td>
+                <td>0.3% (2)</td>
+            </tr>
+            <tr>
+                <th>Ember</th>
+                <td>78.6% (510)</td>
+                <td>15.1% (98)</td>
+                <td>4.0% (26)</td>
+                <td>2.3% (15)</td>
+            </tr>
+            <tr>
+                <th>React</th>
+                <td>57.5% (373)</td>
+                <td>22.2% (144)</td>
+                <td>17.4% (113)</td>
+                <td>2.9% (19)</td>
+            </tr>
+            <tr>
+                <th>Polymer</th>
+                <td>70.7% (459)</td>
+                <td>12.5% (81)</td>
+                <td>3.7% (24)</td>
+                <td>13.1% (85)</td>
+            </tr>
+            <tr>
+                <th>Knockout</th>
+                <td>67.9% (441)</td>
+                <td>11.3% (73)</td>
+                <td>4.6% (30)</td>
+                <td>16.2% (105)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q4-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q4-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q4.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2015/q4.jpg" width="750" height="330" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Unsurprisingly, jQuery was the JavaScript library or framework with the highest percentage – <strong>90.9%</strong> – of respondents saying that they felt comfortable using it.  In terms of pure knowledge levels it was by far the most far-reaching of any of the libraries or frameworks listed.</p>
+<p>Looking down the list of JS frameworks, Angular came out on top in terms of the number of developers (28.1%) who said they felt comfortable using it.  21.3% of respondents said they felt comfortable using Backbone, with 17.4% saying the same for React.</p>
+<p>Looking at knowledge levels across the MV* frameworks – so everything in the list except jQuery and Underscore – just over 50% of respondents (331) said they felt comfortable using at least one of these frameworks.  Clearly being able to develop using at least one of these is an increasingly important skill for any front-end developer to have in their toolkit.</p>
+<p>One addition I would like to make if I ever run this survey again would be how many devs have started using ES2015 features – I’m sure this will be an area of huge growth and it will be interesting to see how the amount of knowledge in this area increases over time.</p>
+<hr>
+<h2 id="q5-which-javascript-library-or-framework-do-you-use-on-the-majority-of-your-projects-">Q5 – Which JavaScript library or framework do you use on the majority of your projects?</h2>
+<p>The next question was a late addition to the survey, as it was something I wished I had asked from the start.  Because of this, there are just 91 responses, so bear in mind that this will impact how much can be drawn from the results, however I wanted to include the results for completeness.</p>
+<p>The question was <strong>Which JavaScript library or framework do you use on the majority of your projects?</strong></p>
+<p>Here are the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>None – I just use native JS</th>
+            <td>9</td>
+            <td>9.89%</td>
+        </tr>
+        <tr>
+            <th>jQuery</th>
+            <td>56</td>
+            <td>61.54%</td>
+        </tr>
+        <tr>
+            <th>AnguiarJS</th>
+            <td>16</td>
+            <td>17.58%</td>
+        </tr>
+        <tr>
+            <th>React</th>
+            <td>4</td>
+            <td>4.40%</td>
+        </tr>
+        <tr>
+            <th>Ember</th>
+            <td>2</td>
+            <td>2.20%</td>
+        </tr>
+        <tr>
+            <th>Underscore</th>
+            <td>1</td>
+            <td>1.10%</td>
+        </tr>
+        <tr>
+            <th>Backbone</th>
+            <td>1</td>
+            <td>1.10%</td>
+        </tr>
+        <tr>
+            <th>Polymer</th>
+            <td>1</td>
+            <td>1.10%</td>
+        </tr>
+        <tr>
+            <th>Knockout</th>
+            <td>1</td>
+            <td>1.10%</td>
+        </tr>
+        <tr>
+            <th>Other (please specify)</th>
+            <td>0</td>
+            <td>0.00%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q5-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q5-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q5.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2015/q5.jpg" width="720" height="500" alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Even with a small number of responses, jQuery was the most used library or framework by quite some distance, with 61.54% (56 responses), followed by Angular with 17.58% (16).</p>
+<p>I won’t try to draw too many conclusions from these results simply due to the relatively small number of responses, but it’s still interesting to see that most of the respondents use jQuery on the majority of their projects – I would expect this number to decrease over time as people’s knowledge of ES2015 increases and move back towards using native JavaScript and smaller libraries.</p>
+<hr>
+<h2 id="q6-javascript-module-bundlers">Q6 – JavaScript Module Bundlers</h2>
+<p>Module bundlers are something I’ve been using for some time, but I wanted to know if the majority of front-end devs were also using them, and if so, which tool?</p>
+<p>The question I therefore asked was <strong>Do you use a JavaScript module bundler in your workflow?</strong></p>
+<p>Responses were as follows:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Module Bundler</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>I don’t use a module bundler</th>
+            <td>314</td>
+            <td>48.38%</td>
+        </tr>
+        <tr>
+            <th>Browserify</th>
+            <td>126</td>
+            <td>19.41%</td>
+        </tr>
+        <tr>
+            <th>RequireJS</th>
+            <td>91</td>
+            <td>14.02%</td>
+        </tr>
+        <tr>
+            <th>Webpack</th>
+            <td>79</td>
+            <td>12.17%</td>
+        </tr>
+        <tr>
+            <th>JSPM</th>
+            <td>19</td>
+            <td>2.93%</td>
+        </tr>
+        <tr>
+            <th>Other</th>
+            <td>20</td>
+            <td>3.08%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q6-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q6-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q6.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2015/q6.jpg" width="720" height="500" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Overall, a small majority of respondents (51.62%) are now using a module bundler to manage the dependencies in their JavaScript.  Of those, 19.41% use Browserify, 14.02% use RequireJS and 12.17% are using Webpack.  Webpack has been gaining a lot of traction of late and so it’s interesting to see that it isn’t all that far behind the two most well known tools in terms of usage.</p>
+<p>It’ll again be interesting to see how these numbers change as more developers jump on the ES2015 bandwagon and start using the tools that lend themself well to transpiling JavaScript using Babel.</p>
+<p>Overall though, it’s great to see so many developers embracing module bundlers and I’d fully expect the number of people not using a module bundler to decrease as knowledge levels continue to rise.</p>
+<hr>
+<h2 id="q7-javascript-testing">Q7 – JavaScript Testing</h2>
+<p>Testing!  So, do people actually test their JavaScript, or is it still on everyones bucket list to setup on their project?</p>
+<p>The question I asked was <strong>What tool do you use to test your JavaScript? (if any)</strong></p>
+<p>The results were as follows:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Tool</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>I don’t use a tool to test my JS</th>
+            <td>369</td>
+            <td>56.86%</td>
+        </tr>
+        <tr>
+            <th>Mocha</th>
+            <td>108</td>
+            <td>16.64%</td>
+        </tr>
+        <tr>
+            <th>Jasmine</th>
+            <td>101</td>
+            <td>15.56%</td>
+        </tr>
+        <tr>
+            <th>QUnit</th>
+            <td>23</td>
+            <td>3.54%</td>
+        </tr>
+        <tr>
+            <th>Tape</th>
+            <td>14</td>
+            <td>2.16%</td>
+        </tr>
+        <tr>
+            <th>Jest</th>
+            <td>10</td>
+            <td>1.54%</td>
+        </tr>
+        <tr>
+            <th>Karma</th>
+            <td>6</td>
+            <td>0.92%</td>
+        </tr>
+        <tr>
+            <th>Intern</th>
+            <td>5</td>
+            <td>0.77%</td>
+        </tr>
+        <tr>
+            <th>Other</th>
+            <td>13</td>
+            <td>2.00%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q7-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q7-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q7.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2015/q7.jpg" width="720" height="500" alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>So, the majority of respondents – <strong>56.86%</strong> – aren’t using any tool to help with their JavaScript testing.  Given how long the subject of testing in JavaScript has been around, I find this a surprisingly large percentage – but it is often the area that gets most overlooked in a project.</p>
+<p>Of those testing their JS, the majority of respondents are using either Mocha – 16.64% – or Jasmine – 15.56%.</p>
+<p>All in all, there’s obviously still a gap in developer knowledge when it comes to JS testing.</p>
+<hr>
+<h2 id="q8-miscellaneous-tools">Q8 – Miscellaneous Tools</h2>
+<p>The final question of the survey asked about tools typically used for package and workflow management, with me asking <strong>Which of these tools do you have experience in?</strong></p>
+<p>Here is how people responded:</p>
+<div class="table-wrapper">
+    <table class="table table--bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Heard of/Read About</th>
+                <th>Used a little</th>
+                <th>Feel Comfortable Using</th>
+                <th>Never Heard of</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Bower</th>
+                <td>21.42% (139)</td>
+                <td>26.19% (170)</td>
+                <td>50.23% (326)</td>
+                <td>2.16% (14)</td>
+            </tr>
+            <tr>
+                <th>Yeoman</th>
+                <td>35.44% (230)</td>
+                <td>30.20% (196)</td>
+                <td>26.81% (174)</td>
+                <td>7.55% (49)</td>
+            </tr>
+            <tr>
+                <th>Ender</th>
+                <td>32.36% (210)</td>
+                <td>2.47% (16)</td>
+                <td>1.08% (7)</td>
+                <td>64.10% (416)</td>
+            </tr>
+            <tr>
+                <th>NPM</th>
+                <td>7.40% (48)</td>
+                <td>14.79% (96)</td>
+                <td>72.73% (472)</td>
+                <td>5.08% (33)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these tools do you have experience in? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q8-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q8-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q8.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2015/q8.jpg" width="776" height="302" alt="Which of these tools do you have experience in? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>The majority of respondents felt comfortable using NPM and Bower, with a large number never having heard of Ender at all.</p>
+<p>Knowledge of Yeoman – in my opinion, one of the most useful tools I use – was quite low in terms of those that feel comfortable using it (26.81%), although not many people had never heard of it (7.55%).  In my experience, putting in the time to grips with it is hugely worthwhile, as it makes setting up projects so simple.</p>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>So, what can be summarised overall?  Well, it seems that the adoption rate of front-end tools across the board is pretty high.  If you’re someone who has been putting off learning more about workflow tools in whatever area, be it CSS, JavaScript module bundlers, or Task Runners, you are in the minority and these skills are now a very important part of being a front-end developer in 2015.</p>
+<p>On the flip side, use of JavaScript testing tools seems to be lagging behind the adoption rate of tools in other areas – something that can only be solved by better edutcaion of how to use and integrate these tools into peoples projects and as importantly, how to write JavaScript that is easy to test.</p>
+<p>If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, message me on Twitter and I’ll do my best to help!</p>
+<p>Also, like I mentioned at the start of the article, if you missed my initial call for responses but would still like to take part, <a href="http://ashn.uk/survey-tooling">I’ll be leaving the survey open</a> for another couple of weeks and will look to update these results if a meaningful number of additional responses come in.</p>
+
+
+
+
+
+
+			<p class="post-date separator-top">Posted on the 8th September 2015</p>
+
+			
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
+
+		<footer class="page-footer border-grey-white-top">
+	<!-- Social links -->
+<nav class="links-social">
+	<ul>
+		<li class="links-social-item links-social-email"><a href="mailto:hello@ashleynolan.co.uk" title="Email Me" rel="external" target="_blank"><span class="links-social-icon icon-email-shaded"></span><span class="screen-reader-text">Email</span></a></li>
+		<li class="links-social-item links-social-twitter"><a href="http://twitter.com/AshNolan_" title="Find me on Twitter" rel="external" target="_blank"><span class="links-social-icon icon-twitter"></span><span class="screen-reader-text">Twitter</span></a></li>
+		<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" title="My LinkedIn Profile" rel="external" target="_blank"><span class="links-social-icon icon-linkedin"></span><span class="screen-reader-text">LinkedIn</span></a></li>
+	</ul>
+</nav>
+
+
+	 <div class="footer-content">
+		 <p>I'm Ashley Nolan, a Senior Web UI Engineer at JUST EAT.  Do take a look around, or contact me in any of the usual ways – it'd be great to hear from you.</p>
+	</div>
+</footer>
+
+	</div>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-20668207-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
+

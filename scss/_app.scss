@@ -136,10 +136,19 @@ img.logo-dg {
 
 .post .img {
 	margin: 0 0 $verticalRhythm+px;
+
 	> img {
 		border: 1px solid #333;
 	}
 
+	@include respond-min(900) {
+		width: 140%;
+		margin: 0 0 $verticalRhythm+px -20%;
+		text-align: center;
+	}
+}
+
+.post .table-wrapper {
 	@include respond-min(900) {
 		width: 140%;
 		margin: 0 0 $verticalRhythm+px -20%;
