@@ -340,7 +340,7 @@ Here are the results:
 			<td>61.54%</td>
 		</tr>
 		<tr>
-			<th>AnguiarJS</th>
+			<th>AngularJS</th>
 			<td>16</td>
 			<td>17.58%</td>
 		</tr>
