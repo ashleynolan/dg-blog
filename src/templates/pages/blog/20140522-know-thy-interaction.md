@@ -69,7 +69,7 @@ These are the links I showed in the talk, and a few others I've picked out that 
 - [Progress Buttons](http://tympanus.net/Tutorials/CircularProgressButton/)
 - [More Progress Buttons](http://tympanus.net/Development/ProgressButtonStyles/)
 - [Minimal Form](http://tympanus.net/Development/MinimalForm/)
-- [Natural Language Form](http://http://tympanus.net/Tutorials/NaturalLanguageForm/)
+- [Natural Language Form](http://tympanus.net/Tutorials/NaturalLanguageForm/)
 - [Border Animations](http://tympanus.net/Tutorials/BorderAnimationSVG/)
 - [Shape Hover Effects](http://tympanus.net/Tutorials/ShapeHoverEffectSVG/index.html)
 - [3D Offscreen Navigation](http://tympanus.net/Development/PerspectivePageViewNavigation/index.html)

@@ -27,7 +27,7 @@ I’ve been a little quiet on my blog of late – and for once it’s not just t
 
 Christmas Tracker watches what Christmassy things people are mentioning in realtime on Twitter.  It’s built using NodeJS and front–end technologies, with some heavy use of SVG for the illustrations.
 
-The illustrations on the site were designed by my good friends [Lorena Teruel](http://loreipsum.eu/) and [Simon Kinslow](https://twitter.com/kinslowdian) – they did a beautiful job in a very short space of time and I’m really happy with how the site looks!  I’ve also separated out the illustration effect and [posted it up on CodePen](http://codepen.io/ashleynolan/pen/WbxNap).
+The illustrations on the site were designed by my good friends [Lorena Teruel](https://www.behance.net/lorenateruel) and [Simon Kinslow](https://twitter.com/kinslowdian) – they did a beautiful job in a very short space of time and I’m really happy with how the site looks!  I’ve also separated out the illustration effect and [posted it up on CodePen](http://codepen.io/ashleynolan/pen/WbxNap).
 
 Aside from the illustrations, my other favourite feature is the top words view which you can see by clicking the 'See Top Words' button in the top left of the site.  I’m storing all of the historical data for each day and plan to graph this to see if there are any interesting data insights as Christmas approaches.
 

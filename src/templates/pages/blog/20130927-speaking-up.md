@@ -24,7 +24,7 @@ Earlier this year I did my first short talk as a part of the Rising Stars track 
 
 A couple of weeks ago I gave my first full length talk at AKQA Anoraks (soon to be rebranded as [London Tech Insight](http://www.techinsight.io/), on my experience as part of the BBC Good Food responsive redesign over the last year. Thanks to those who came along. Those I chatted to after the event were really positive; hearing that at least a few people learned something from me talking about my experiences makes it's a worthwhile thing to keep on doing. The abject terror of the first few talks I did has definitely now subsided to just healthy nerves!
 
-I'll be giving the talk a couple more times in the coming months, with the first being at Front End London this weekend, followed by a trip up to Barnsley at the start of October for [The Digital Barn](http://makedo.in/thedigitalbarn/).  Tickets for the former have already been snapped up, but for those interested in coming along to The Digital Barn, you can use the discount code AshleyTEN to get an extra £10 off the price of ticket.
+I'll be giving the talk a couple more times in the coming months, with the first being at Front End London this weekend, followed by a trip up to Barnsley at the start of October for [The Digital Barn](http://lanyrd.com/2013/digitalbarn/).  Tickets for the former have already been snapped up, but for those interested in coming along to The Digital Barn, you can use the discount code AshleyTEN to get an extra £10 off the price of ticket.
 
 I'm really excited to get going as both events are another step up in the number of faces staring back at me (ideally not blankly!).
 

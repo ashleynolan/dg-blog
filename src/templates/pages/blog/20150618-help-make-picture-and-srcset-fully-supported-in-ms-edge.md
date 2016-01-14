@@ -27,7 +27,7 @@ categories:
 
 ---
 
-This morning I was reading about how `srcset` is [coming to Microsoft Edge in Windows 10]((http://blogs.windows.com/msedgedev/2015/06/08/introducing-srcset-responsive-images-in-microsoft-edge) – Hooray!
+This morning I was reading about how `srcset` is [coming to Microsoft Edge in Windows 10]((https://blogs.windows.com/msedgedev/2015/06/08/introducing-srcset-responsive-images-in-microsoft-edge/) – Hooray!
 
 But before we all celebrate too wildly, it’s worth noting that it’s not yet the full implementation of `srcset`.  Microsoft are doing a great job of moving towards fully native Responsive Image support but this is simply the first step.
 

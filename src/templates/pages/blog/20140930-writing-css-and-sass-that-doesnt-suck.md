@@ -84,7 +84,7 @@ By writing a selector in this way, not only do you make your styles more specifi
 
 ### Specificity – some further reading
 
-I’ve written a bit more about specificity in the [Front–end Guidelines](http://tmwagency.github.io/TMW-frontend-guidelines/#section-css-specificity) I help maintain at TMW.
+I’ve written a bit more about specificity in the [Front–end Guidelines](http://tech.tmw.co.uk/code/TMW-frontend-guidelines#section-css-specificity) I help maintain at TMW.
 
 Harry Roberts has written some great pieces on the subject of specificity – if you haven’t read them, [check](http://csswizardry.com/2012/05/keep-your-css-selectors-short/) [them out](http://cssguidelin.es/#specificity).
 

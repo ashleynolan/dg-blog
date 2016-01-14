@@ -74,7 +74,7 @@ During my time at TMW, one of the most enjoyable aspects of my work has been the
 
 [Kickoff](http://tmwagency.github.io/kickoff/) and [Statix](https://github.com/tmwagency/statix) – the two main projects I help maintain in collaboration with Zander – will continue to be developed as normal.  In fact, the next version is currently in the pipeline and we will shortly be moving both projects to their own organisation repo, to help encourage other developers to contribute to their growth.
 
-We also have plans to expand upon the [front-end guidelines](http://tmwagency.github.io/TMW-frontend-guidelines/) that have been written during my time at TMW and build these into a more specific set of resources for developers.  More details to come on that in the coming months.
+We also have plans to expand upon the [front-end guidelines](http://tech.tmw.co.uk/code/TMW-frontend-guidelines/) that have been written during my time at TMW and build these into a more specific set of resources for developers.  More details to come on that in the coming months.
 
 
 ## To the future

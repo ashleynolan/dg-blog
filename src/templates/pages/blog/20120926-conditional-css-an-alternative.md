@@ -24,7 +24,7 @@ This should be pretty simple; surely just compare the media query width to the c
 
 For anyone lucky enough to be working on projects that don't suport IE8<, MatchMedia takes care of this problem (with a fix for resize support).  Unfortunately, I needed to support down to IE7 and there isn't a polyfill to patch MatchMedia with resizing for IE7/8 as yet.
 
-Having previously read Jeremy's blog post, I knew that a version of what I wanted existed using pseudo elements.  It wasn't until speaking to a friend of mine, [Rich](https://[twitter.com/middric), about the problem, that he suggested manipulating the z-index of an arbitrary](http://paulirish.com/2009/throttled-smartresize-jquery-event-handler/) div to perform this role.  This is the resulting solution that came out of his suggestion.
+Having previously read Jeremy's blog post, I knew that a version of what I wanted existed using pseudo elements.  It wasn't until speaking to a friend of mine, [Rich](https://twitter.com/middric), about the problem, that he suggested manipulating the z-index of an arbitrary](http://paulirish.com/2009/throttled-smartresize-jquery-event-handler/) div to perform this role.  This is the resulting solution that came out of his suggestion.
 
 ## The Solution
 
