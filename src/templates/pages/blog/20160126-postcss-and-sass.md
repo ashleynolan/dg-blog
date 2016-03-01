@@ -32,7 +32,7 @@ I figured writing a quick post would be easier than trying to fit my answer into
 
 For those who’ve not heard of PostCSS until now, here’s a very quick analogy.
 
-Think of a preprocessor such as Sass like buying a house that is fully built.  You know it’s features because it’s already fully formed – it’s rooms and features are already defined.  However, adding new rooms and features to that house can be difficult.
+Think of a preprocessor such as Sass like buying a house that is fully built.  You know its features because it’s already fully formed – its rooms and features are already defined.  However, adding new rooms and features to that house can be difficult.
 
 On the other hand, PostCSS is like you have inherited a plot of land and a load of bricks.  You can essentially create whatever you want, with whatever features you need.
 
@@ -43,7 +43,7 @@ Neither of these is the 'right' tool to use.  A lot depends on your own workflow
 
 ## Supplementing the Sass featureset
 
-Many posts on PostCSS compare it’s features to Sass equivalents, but PostCSS doesn’t have to be used as an alternative to Sass.  It can instead be used to add additional features to your workflow that Sass doesn’t provide.  Why not add those extra features to your house using a tool that’s suited to that exact job?!
+Many posts on PostCSS compare its features to Sass equivalents, but PostCSS doesn’t have to be used as an alternative to Sass.  It can instead be used to add additional features to your workflow that Sass doesn’t provide.  Why not add those extra features to your house using a tool that’s suited to that exact job?!
 
 These extra tasks can run either before or after your Sass compilation, as PostCSS can parse both SCSS and CSS.
 

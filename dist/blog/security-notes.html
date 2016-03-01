@@ -10,8 +10,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-		<title>Extending Sass with PostCSS - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
-		<meta name="description" content="Extending Sass with PostCSS - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+		<title>Security Notes - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="Security Notes - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
 
 
 		<link href="http://feeds.feedburner.com/ashleynolan" rel="alternate" type="application/rss+xml" title="Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT" />
@@ -24,8 +24,8 @@
 
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@AshNolan_" />
-		<meta name="twitter:title" content="Extending Sass with PostCSS" />
-		<meta name="twitter:description" content="A brief overview of why I find it useful extending Sass by adding PostCSS into the mix." />
+		<meta name="twitter:title" content="Security Notes" />
+		<meta name="twitter:description" content="" />
 		<meta name="twitter:image" content="http://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
 
 
@@ -77,65 +77,49 @@
 
 
 		<section class="content post">
-			<h1>Extending Sass with PostCSS</h1>
+			<h1>Security Notes</h1>
 
 			
 
-<p>This morning, I got asked an interesting question on Twitter while discussing PostCSS:</p>
-<p><blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/AshNolan_">@AshNolan_</a> <a href="https://twitter.com/NaveenS16">@NaveenS16</a> Can you tell me exactly why you are using PostCSS with Sass, what does it offer you? Help me understand the need?</p>&mdash; Ahmad Awais (@mrahmadawais) <a href="https://twitter.com/mrahmadawais/status/691893845638930437">January 26, 2016</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>I figured writing a quick post would be easier than trying to fit my answer into 140 characters, so here’s a brief explanation of how I use PostCSS in combination with Sass.</p>
-<h2 id="a-quick-overview">A quick overview</h2>
-<p>For those who’ve not heard of PostCSS until now, here’s a very quick analogy.</p>
-<p>Think of a preprocessor such as Sass like buying a house that is fully built.  You know its features because it’s already fully formed – its rooms and features are already defined.  However, adding new rooms and features to that house can be difficult.</p>
-<p>On the other hand, PostCSS is like you have inherited a plot of land and a load of bricks.  You can essentially create whatever you want, with whatever features you need.</p>
-<p>Sass is a fully featured preprocessor with a number of great features already defined.  PostCSS is a tool that lets you add PostCSS plugins that enable you to manipulate your CSS in different ways.</p>
-<p>Neither of these is the &#39;right&#39; tool to use.  A lot depends on your own workflow, situation and preferences.</p>
-<h2 id="supplementing-the-sass-featureset">Supplementing the Sass featureset</h2>
-<p>Many posts on PostCSS compare its features to Sass equivalents, but PostCSS doesn’t have to be used as an alternative to Sass.  It can instead be used to add additional features to your workflow that Sass doesn’t provide.  Why not add those extra features to your house using a tool that’s suited to that exact job?!</p>
-<p>These extra tasks can run either before or after your Sass compilation, as PostCSS can parse both SCSS and CSS.</p>
-<p>As an example, a lot of developers now use <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> to add vendor prefixes to their CSS.  Although some use Autoprefixer as a Gulp or Grunt plugin, it is in fact a PostCSS plugin – it’s simply been wrapped up so that it can be used directly by these task-runners.</p>
-<p>I’d recommend anyone who uses Autoprefxer to set it up directly through PostCSS – it’s no more difficult than setting up the equivalent Gulp/Grunt plugin.  Once setup you will be able to easily add and experiment with other PostCSS plugins in your workflow.  PostCSS is still a pretty new tool and so having the flexibility to easily try out any new plugins that emerge is a real benefit.</p>
-<p>Another handy plugin I use is <a href="https://github.com/assetsjs/postcss-assets">postcss-assets</a> which inlines image files into my CSS as <a href="https://css-tricks.com/data-uris/">data URI’s</a>.  This let’s me keep a reference to the original image file in my SCSS files, converting it as part of my PostCSS task to provide better page performance.</p>
-<p>There are many other useful <a href="http://postcss.parts/">PostCSS plugins</a>, that run tasks such as <a href="https://github.com/ben-eb/cssnano">CSS minification</a>, <a href="https://github.com/ben-eb/postcss-svgo">SVG optimisation</a>, <a href="https://github.com/morishitter/postcss-style-guide">creating simple styleguides</a>, or to ensure <a href="https://github.com/postcss/postcss-bem-linter">conformance to a set naming scheme</a>.</p>
-<p>The PostCSS community is an extremely active one, so I expect that in time there will be an even larger selection of plugins that will become useful in our CSS workflows.  Being able to tap into these features to supplement the features that Sass provides can only be a positive thing.</p>
-<h2 id="scss-linting">SCSS Linting</h2>
-<p>Before using PostCSS, the best linter for Sass that I’d come across was <a href="https://github.com/brigade/scss-lint">SCSS-lint</a>.  My only gripe with this plugin is that it comes with an additional Ruby dependency – I prefer to keep the number of language dependencies that people need to install to get a project up and running to a minimum.</p>
-<p>When looking for alternatives, I came across <a href="https://github.com/stylelint/stylelint">Stylelint</a> – a PostCSS linting plugin.  Because the linter is powered by PostCSS, it has no additional language dependencies (it’s built with JavaScript), which was exactly what I was looking for.</p>
-<p>In my projects, I now run PostCSS before and after my Sass compilation.  Beforehand, I run Stylelint to lint my code, and then after Sass has converted my SCSS into CSS files, I run any PostCSS plugins that I have included, such as Autoprefixer, to give me additonal functionality.</p>
-<p>In Gulp that would look something like this:</p>
-<pre><code class="language-javascript"><span class="keyword">return</span> gulp.src( [<span class="string">'/**/*.scss'</span>] )
-    <span class="comment">// PostCSS Tasks before Sass compilation</span>
-    .pipe(
-        postcss([
-            stylelint(),
-            reporter({ clearMessages: <span class="literal">true</span>, throwError: <span class="literal">true</span> })
-        ],
-        { syntax: scss })
-    )
-
-    <span class="comment">// Sass Compilation</span>
-    .pipe( sass({
-        errLogToConsole: <span class="literal">true</span>
-    }) )
-
-    <span class="comment">// PostCSS tasks after Sass compilation</span>
-    .pipe( postcss([
-        assets({ loadPaths: [ IMG_SRC_PATH ] }), <span class="comment">// Converts any specified assets to data URIs</span>
-        autoprefixer({ browsers: [<span class="string">'&gt; 5%'</span>, <span class="string">'last 2 versions'</span>, <span class="string">'ie &gt; 7'</span>] }) <span class="comment">// Autoprefixes CSS properties for various browsers</span>
-        … <span class="comment">// any other PostCSS plugins to be run can be added in here</span>
-    ]) )
-    .pipe( gulp.dest( CSS_DEST_PATH ) );</code></pre>
-<h2 id="summary">Summary</h2>
-<p>I hope that this post has helped to explain how PostCSS can be used to compliment using a preprocessor such as Sass.</p>
-<p>If you already use Autoprefixer, I honestly believe that setting up PostCSS in your workflow is a no-brainer, as it will enable you to explore and have easy access to the rest of the PostCSS plugin ecosystem.</p>
-<p>If you don’t use Autoprefixer currently, then <a href="http://postcss.parts/">take a look at the PostCSS plugins</a> that are currently available to see if PostCSS can help to improve your current workflow.</p>
-<p>If you want to find out a bit more about PostCSS, then check out <a href="http://julian.io/some-things-you-may-think-about-postcss-and-you-might-be-wrong/">this excellent article</a> by Julian Ćwirko, or take a look at <a href="http://ashleynolan.co.uk/blog/postcss-a-review">my previous post on the subject</a>.</p>
+<p>pw: 3ara</p>
+<p>Securtity Risks on Account Page:</p>
+<ul>
+<li>Mixed Content on HTTPS</li>
+<li>Password cannot be longer than 10 characters</li>
+</ul>
+<p>XSS Attack
+Hijacking search forms, through inserting JS into the page.  Works on sites that use things like ?search=</p>
+<p>Could make a request by using an img path to make a request (with any cookie info in).</p>
+<ul>
+<li>Can use document.cookie to get the auth code of anyone who clicks your link</li>
+</ul>
+<p>Way to stop it = encoding for JS/HTML so that any text coming in gets encoded and not output as code.</p>
+<ul>
+<li>Check out the OWASP XXS Filter Evasion Cheat Sheet</li>
+</ul>
+<p>window.location = &#39;<a href="http://lmgtfy.com/?q=I%E2%80%99m+a+dumbass+for+clicking+that+link">http://lmgtfy.com/?q=I%E2%80%99m+a+dumbass+for+clicking+that+link</a>&#39;;</p>
+<p>&#39;); console.log(document.cookie); $(&#39;#searchTerm&#39;).val(&#39;Hello</p>
+<p>SQL Injection</p>
+<p><a href="http://hackyourselffirst.troyhunt.com/Make/8?orderby=supercarid">http://hackyourselffirst.troyhunt.com/Make/8?orderby=supercarid</a></p>
+<p>select * from supercar where makeid = 8 order by supercarid</p>
+<p>havij</p>
+<p>select * from sys.tables where makeid = 8 order by supercarid</p>
+<p>select top 1 password*1 from userprofile where userid &gt; 1</p>
+<p>SELECT @@version</p>
+<p>select * from supercar where makeid = 1 AND 1=2 UNION SELECT table_schema, table_name, 1 FROM information_schema.table</p>
+<p>select <em> from supercar order by case when (select count (</em>) from userprofile) = 1 then powerkw else topspeedkm end desc</p>
+<p>V12 &#39;union select 0, concat (email, &#39; - &#39;, password) COLLATE DATABASE_DEFAULT from userprofile --</p>
+<p>Shodan – search engine for connected devices
+Elmah – error logs
+AsafaWeb</p>
+<p>Wappalyser</p>
+<p>HSTS preload</p>
+<p>report-uri.io – shows CSP (allowed sources)
+content-security-policy = -report-only (gives just a report)</p>
 
 
 
-			<p class="post-date separator-top">Posted on the 26th January 2016</p>
+			<p class="post-date separator-top">Posted on the 27th January 2016</p>
 
 			
 
