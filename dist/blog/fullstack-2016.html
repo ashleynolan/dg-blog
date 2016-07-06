@@ -10,8 +10,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-		<title>Security Notes - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
-		<meta name="description" content="Security Notes - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+		<title>Attending FullStack 2016 - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="Attending FullStack 2016 - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
 
 
 		<link href="http://feeds.feedburner.com/ashleynolan" rel="alternate" type="application/rss+xml" title="Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT" />
@@ -24,8 +24,8 @@
 
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@AshNolan_" />
-		<meta name="twitter:title" content="Security Notes" />
-		<meta name="twitter:description" content="" />
+		<meta name="twitter:title" content="Attending FullStack 2016" />
+		<meta name="twitter:description" content="A short overview of what I’ll be talking about at FullStack 2016 next week." />
 		<meta name="twitter:image" content="http://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
 
 
@@ -77,49 +77,20 @@
 
 
 		<section class="content post">
-			<h1>Security Notes</h1>
+			<h1>Attending FullStack 2016</h1>
 
 			
 
-<p>pw: 3ara</p>
-<p>Securtity Risks on Account Page:</p>
-<ul>
-<li>Mixed Content on HTTPS</li>
-<li>Password cannot be longer than 10 characters</li>
-</ul>
-<p>XSS Attack
-Hijacking search forms, through inserting JS into the page.  Works on sites that use things like ?search=</p>
-<p>Could make a request by using an img path to make a request (with any cookie info in).</p>
-<ul>
-<li>Can use document.cookie to get the auth code of anyone who clicks your link</li>
-</ul>
-<p>Way to stop it = encoding for JS/HTML so that any text coming in gets encoded and not output as code.</p>
-<ul>
-<li>Check out the OWASP XXS Filter Evasion Cheat Sheet</li>
-</ul>
-<p>window.location = &#39;<a href="http://lmgtfy.com/?q=I%E2%80%99m+a+dumbass+for+clicking+that+link">http://lmgtfy.com/?q=I%E2%80%99m+a+dumbass+for+clicking+that+link</a>&#39;;</p>
-<p>&#39;); console.log(document.cookie); $(&#39;#searchTerm&#39;).val(&#39;Hello</p>
-<p>SQL Injection</p>
-<p><a href="http://hackyourselffirst.troyhunt.com/Make/8?orderby=supercarid">http://hackyourselffirst.troyhunt.com/Make/8?orderby=supercarid</a></p>
-<p>select * from supercar where makeid = 8 order by supercarid</p>
-<p>havij</p>
-<p>select * from sys.tables where makeid = 8 order by supercarid</p>
-<p>select top 1 password*1 from userprofile where userid &gt; 1</p>
-<p>SELECT @@version</p>
-<p>select * from supercar where makeid = 1 AND 1=2 UNION SELECT table_schema, table_name, 1 FROM information_schema.table</p>
-<p>select <em> from supercar order by case when (select count (</em>) from userprofile) = 1 then powerkw else topspeedkm end desc</p>
-<p>V12 &#39;union select 0, concat (email, &#39; - &#39;, password) COLLATE DATABASE_DEFAULT from userprofile --</p>
-<p>Shodan – search engine for connected devices
-Elmah – error logs
-AsafaWeb</p>
-<p>Wappalyser</p>
-<p>HSTS preload</p>
-<p>report-uri.io – shows CSP (allowed sources)
-content-security-policy = -report-only (gives just a report)</p>
+<p>Next week, I’m excited to be making the short trip down the M4 to speak at FullStack 2016 in London.</p>
+<p>I’ll be talking about &#39;Developing for the Unknown&#39; and how keeping this in mind has influenced the work that I’ve been a part of over the last year at JUST EAT.  Ultimately, the aim of my talk is to get more developers thinking about the long term implications of the work they do – something that I plan to write about in more detail in the near future.</p>
+<p>So if you want to hear about how we approach front-end development at JUST EAT and some of the best practices I recommend when working with CSS and JavaScript, then my talk is most definitely for you.</p>
+<p>I’m personally looking forward to learning more about the latest developments around developing progressive web applications and how other companies – such as the BBC – are building scalable JavaScript applications and the processes that they are using that can help inform the work that we do.</p>
+<h2 id="come-along">Come along</h2>
+<p>If you work with JavaScript and you’re based in and around London (or fancy making the trip down), be sure to <a href="https://skillsmatter.com/conferences/7278-fullstack-2016-the-conference-on-javascript-node-and-internet-of-things#overview">check out the full lineup for the event</a> – it looks like it should be a great few days!</p>
 
 
 
-			<p class="post-date separator-top">Posted on the 27th January 2016</p>
+			<p class="post-date separator-top">Posted on the 5th July 2016</p>
 
 			
 
