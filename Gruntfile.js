@@ -51,7 +51,10 @@ module.exports = function (grunt) {
 
 
 		clean: {
-			all: ['dist/**/*.html']
+			all: [
+				'dist/**/*.html',
+				'!dist/google8f6499a7bb1be4ea.html'
+			]
 		},
 
 
