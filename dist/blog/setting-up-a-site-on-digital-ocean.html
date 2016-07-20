@@ -1,0 +1,179 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+		<title>Setting up a site on Digital Ocean - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="Setting up a site on Digital Ocean - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+
+
+		<link href="http://feeds.feedburner.com/ashleynolan" rel="alternate" type="application/rss+xml" title="Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@AshNolan_" />
+		<meta name="twitter:title" content="Setting up a site on Digital Ocean" />
+		<meta name="twitter:description" content="An explanation of the steps involved in moving your hosting to Digital Ocean." />
+		<meta name="twitter:image" content="http://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/assets/css/kickoff.min.css">
+
+		<!-- Fonts – non blocking -->
+		<link href='https://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+		<script>
+			(function(d) {
+				var config = {
+					kitId: 'xxf1gwm',
+					scriptTimeout: 3000
+				},
+				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+			})(document);
+		</script>
+
+
+		<!-- Require include for JS -->
+		<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min" async></script>
+
+	</head>
+	<body>
+
+
+	<div class="container">
+		<header class="page-header">
+	<div id="page-logo" class="logo">
+		<span>Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT</span>
+		<a href="/" class="logo-link">
+			<svg class="logo-dg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="234px" height="244.082px" viewBox="0 0 234 244.082" enable-background="new 0 0 234 244.082" xml:space="preserve"><g><g><path clip-rule="evenodd" d="M131.012 68.469c-20.294 5.482-35.874 16.834-38.992 43.7 C68.354 94.6 98.1 47 131 68.469z"/><path clip-rule="evenodd" d="M161.475 59.629c12.752-4.078 0 17.3 8.7 17.3 c-9.173 6.152-19.891-10.842-34.687-8.67C140.716 62 158 67.7 161.5 59.629z"/><path clip-rule="evenodd" d="M76.527 92.79c1.633 4.2 3.7 8.7 6.2 12.5 c2.608 3.9 6.1 7.4 11.2 7.159c-12.189 3.479-23.696 8.262-32.159 18.087c-8.423 9.783-13.461 22.025-16.949 34.3 c-9.061-6.983-14.794 8.593-17.451 14.883c-2.349 5.562-4.978 21.5 6.6 13.891c4.448-2.942 6.602-8.919 12.695-9.151 c-2.969 8.274-6.594 15.987-16.213 17.148c-6.54 0.793-13.054-1.491-18.517-4.962c-2.951-1.873-12.159-8.419-11.935-12.306 c0.512-8.898 10.552-1.189 11.557-8.245c0.624-4.385 0.271-8.806 1.136-13.17c0.908-4.596 2.435-9 2.911-13.689 c3.605 0.3 1.2 6.6 3.9 7.8c10.032-3.507 16.879-11.737 21.362-21.088c2.364-4.937 4.222-10.091 5.968-15.275 c1.456-4.331 1.404-9.623 4.134-13.46c2.841-3.982 7.878-4.951 12.226-6.405C68.082 99.2 72.8 96.4 76.5 92.79z"/><path clip-rule="evenodd" d="M99.255 119.897c9.81 1.9 10.7 5.8 14.9 10.4 c-6.827 6.479-9.902 22.673-5.977 28.901C95.175 156.3 96.8 135.4 99.3 119.897z"/><path clip-rule="evenodd" d="M121.206 137.488c4.894 3 4.4 9.1 6.3 13.9 c-4.936 6.197-10.997 10.411-12.33 22.914C112.079 163.8 115.3 148.9 121.2 137.488z"/><path clip-rule="evenodd" d="M121.605 0c-8.263 15.3 13.1 46.006-1.949 62.4 c-4.596 0.042-5.744-3.36-11.703-1.95C127.689 49.1 102.9 13.8 121.6 0z"/><path clip-rule="evenodd" d="M61.149 5.85c0.1 1.5 1.8 3.1 1.8 5.2 c0.022 2.82-1.059 5.84-1.923 8.48c-2.215 6.783-5.087 13.333-7.233 20.14c-2.608 8.272-5.14 16.396-3.13 25.2 c1.524 6.7 5.9 11.6 11.8 5.692c10.53-10.562 13.605-29.733 18.273-43.378c2.764-8.071 6.217-16.493 11.633-23.199 c-2.654 3.288-2.392 9.859-3.548 13.882c-1.621 5.636-4.147 11.421-3.27 17.417c1.068 7.3 7 7.1 12.4 4.2 c-2.96 1.573-4.405 7.437-6.289 9.995c-2.853 3.876-5.893 7.625-8.38 11.76c-5.954 9.899-8.374 20.95-6.517 32.4 c-7.399 4.952-11.64 13.063-25.353 11.702c-13.303 10.749-23.374 24.729-27.301 44.855c-8.519-20.394 8.5-46.808 19.502-60.457 c-2.158-18.473-6.726-26.699-3.901-40.953C43.038 31.9 62.5 25.6 61.1 5.85z"/><path clip-rule="evenodd" d="M174.777 89.915c4.768-4.601 12.5 8.9 24.8 5 c-3.096 9.324-6.504 18.33-7.452 29.802C186.195 113.3 185.1 96.9 174.8 89.915z"/><path clip-rule="evenodd" d="M96.251 171.615c-2.344 13.276-7.652 40.438-19.501 50.7 c-12.253 1.199-12.991-9.11-23.404-9.753c1.273-5.876 7.661-6.643 9.752-11.697c2.327-15.337-1.888-48.907-13.054-56.462 c6.053-10.196 13.143-22.067 26.409-25.055c-1.406 8.7 9.6 20.2 10 26.911c1.374 19.759-16.337 38.35-11.705 64.4 C85.648 209.1 89.4 183.7 96.3 171.615z"/><path clip-rule="evenodd" d="M192.558 129.948c5.485 9.1 6.5 22.7 14.6 29.3 c-5.582 5.123-22.907 35.464-17.555 23.41C189.939 164.4 194.5 150.4 192.6 129.948z"/></g><path clip-rule="evenodd" d="M99.087 116.263c0 0 10.719-54.502 47.354-40.207 c0 0 54.2 11.5 32.2 97.39C162.524 236 234 236 234 235.987s-109.006 42.894-101.854-68.795 C132.147 167.2 133.9 122.5 99.1 116.263z"/></g></svg>
+			<img src="/assets/img/dg_logo.png" class="logo-dg" alt="Ashley Nolan">
+		</a>
+	</div>
+
+	<!-- main navigation links -->
+	<section id="nav-strip" class="nav-strip">
+		<!-- Global Navigation links -->
+<nav id="page-nav" class="nav-global">
+	<ul>
+		<li class="nav-global-item"><a href="/blog/" data-hover="Blog">Blog</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item"><a href="/work" data-hover="Work">Work</a><span class="navArrow"></span></li><!--
+		--><li class="nav-global-item last "><a href="/about" data-hover="About">About</a><span class="navArrow"></span></li>
+	</ul>
+</nav>
+	</section>
+</header>
+
+
+		<section class="content post">
+			<h1>Setting up a site on Digital Ocean</h1>
+
+			
+
+<p>A couple of weeks ago, I successfully made the switch from hosting my site on GoDaddy to setting up a droplet on Digital Ocean.</p>
+<p>My main reason for making the move was that I wanted a hosting environment that I felt I could truly control, as well as wanting to secure my site using HTTPS – <a href="/blog/moving-to-https-with-letsencrypt">a potentially free service</a> that GoDaddy wanted to charge me for enabling.</p>
+<h2 id="why-digital-ocean-">Why Digital Ocean?</h2>
+<p>I had done a bit of research into hosting providers along with their costs and they seemed very reasonable for the service provided.  Also, being a bit of a server noob, the extensive step-by-step tutorials they provide really appealed to me.  Having now completed the switch I can safely say that their articles were extremely useful throughout the process.</p>
+<p>This post isn’t intended to be an in-depth guide to setting up a droplet on Digital Ocean – simply because their own tutorials are so good that I don’t feel that there’s a need for me to rehash that content.  But I did want to document the main steps that I went through when moving my hosting – including the tutorials that I used – as a reference for anyone else thinking of making a similar switch.</p>
+<h2 id="starting-up">Starting up</h2>
+<p>Digital Ocean gives you a couple of options when it comes to setting up a server with them.</p>
+<p>You can either pick a distribution OS, such as Ubuntu, and go <a href="http://www.thefreedictionary.com/carte+blanche">carte blanche</a>, or you can choose a one-click setup, which will give you a server droplet pre-installed with a certain stack, such as LAMP or Node.</p>
+<p>As I wanted to learn more about how to setup my own server, I chose to setup my own distribution from scratch, going with an Ubuntu distribution.</p>
+<h2 id="connecting-to-your-server-and-initial-setup-tasks">Connecting to your server and initial setup tasks</h2>
+<p>Once you have your droplet, it’s important to make sure you can connect to it via SSH, which stands for Secure Shell.</p>
+<p>To do this, I followed the <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04">relevant tutorial on Digital Ocean</a>, creating my own user with root privileges.</p>
+<p>Once you have completed steps 1-6, you can also set up a basic firewall (Step 7).  I’d also recommend completing the tasks <a href="https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-ubuntu-14-04-servers">in this tutorial</a> relating to your servers timezone and setting up NTP (Network Time Protocol); although the tutorial relates to Ubuntu v14.04 it is still relevant for newer versions.</p>
+<p>Once complete, you are ready to choose and install your server software.</p>
+<h2 id="apache-or-nginx">Apache or NGINX</h2>
+<p>The two most popular open source web servers available are Apache and NGINX.</p>
+<p>I won’t pretend to know all the pros and cons of both tools; they are both powerful and highly capable choices.  I decided to go with NGINX purely because, after doing some research, I discovered it was slightly better at serving static content; perfect for my setup as I compile my site into a set of static web pages using <a href="http://assemble.io/">Assemble</a>.</p>
+<p>If you’d like to read more about both pieces of software, I’d <a href="https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations">recommend reading this article on the subject</a>.</p>
+<h2 id="installing-nginx">Installing NGINX</h2>
+<p>Unsurprisingly, Digital Ocean has another great tutorial detailing <a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04">exactly how to install NGINX on an Ubuntu server</a>.</p>
+<p>It’s a very straightforward process using the <code>apt</code> packaging system.  Following through the steps outlined should get you to the point where you are serving up a test HTML page on your new server.</p>
+<h2 id="managing-your-site-with-git">Managing your site with Git</h2>
+<p>Now that you have your server setup and serving content, a nice addition is to install Git on your server so that you can easily release your code when pushing changes to source control.</p>
+<p>Guess what?  That’s right, Digital Ocean have a tutorial on how to do this – simply <a href="https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-16-04">follow the steps outlined</a> to install git using <code>apt</code> (much like we did previously when installing NGINX).</p>
+<p>Once installed, you should define your workflow for updating newly pushed content on your server.  If you are using a static site generator, you have a couple of choices.</p>
+<p>You can either set up your Git repo to have a production folder that you compile and commit along with any updates you make.  This means that you then will need to SSH into your server and do a <code>git pull</code> to update your production site.</p>
+<p>A better alternative is to <a href="https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks">set up git hooks</a>, so that when the master branch of your git repository is updated with new commits, it will subsequently run a predefined task (or tasks), via a tool like Grunt, Gulp or NPM scripts.  In the case of a statically generated site, we would run a set of tasks to compile your site and front-end assets on your server.</p>
+<p>Setting up a git workflow such as this means that you don’t have to manually transfer files, which is time-consuming and error prone.  Automating your updates like this is well worth the effort!</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>You should now have a web server all ready to go!  But before you’re done, there are a couple of additional tasks that are well worth completing.</p>
+<h3 id="https">HTTPS</h3>
+<p>If you’d like to enable HTTPS on your site – which is recommended for a <a href="https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https?hl=en">number of reasons</a> – then take a look at <a href="/blog/moving-to-https-with-letsencrypt">this associated blog post</a> that I have written explaining how to secure your site using a tool called LetsEncrypt.</p>
+<h3 id="email">Email</h3>
+<p>Having a custom email address for your site is a nice additional feature.  For my site I use <a href="https://www.zoho.com/signup.html">Zoho</a>, who let you setup a custom domain email for free (Google also provide this service, but charge for it).</p>
+<p>When creating an account, Zoho provide excellent information on configuring your DNS with their mailservers, but if you need additional help then I’d recommend <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-zoho-mail-with-a-custom-domain-managed-by-digitalocean-dns">this article which provides all the details you should need</a>.</p>
+<h3 id="cdn">CDN</h3>
+<p>If you would like to configure a CDN for your site, services like <a href="https://www.cloudflare.com/plans/">CloudFlare</a> provide a free account tier worth checking out.</p>
+<p>For more details, <a href="https://www.digitalocean.com/community/tutorials/how-to-mitigate-ddos-attacks-against-your-website-with-cloudflare">check out this tutorial</a> which covers how to set up a CDN for your site.  Enabling a CDN is especially recommended if you think your site will experience traffic spikes as this will give you better control over the caching of your sites front-end assets, such as CSS, JavaScript and images.</p>
+<h2 id="-and-we-re-done-">…and we’re done!</h2>
+<p>Hopefully you can now see that setting up your own server isn’t such a daunting task.  There are lots of great tutorials out there explaining how, and more importantly why, you can configure your server in certain ways, giving you help every step of the way.</p>
+<p>In total I spent a couple of nights completing the above steps to migrate my site across to Digital Ocean, but I think the time spent was massively worthwhile.  I now feel a lot more confident configuring aspects of my server that I previously knew little about.</p>
+<p>If you have any questions or general comments about anything I’ve mentioned, please do get in touch – I’d love to hear other people’s experiences when setting up their own servers!</p>
+
+
+
+			<p class="post-date separator-top">Posted on the 20th July 2016</p>
+
+			
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
+
+		<footer class="page-footer border-grey-white-top">
+	<!-- Social links -->
+<nav class="links-social">
+	<ul>
+		<li class="links-social-item links-social-email"><a href="mailto:hello@ashleynolan.co.uk" title="Email Me" rel="external" target="_blank"><span class="links-social-icon icon-email-shaded"></span><span class="screen-reader-text">Email</span></a></li>
+		<li class="links-social-item links-social-twitter"><a href="http://twitter.com/AshNolan_" title="Find me on Twitter" rel="external" target="_blank"><span class="links-social-icon icon-twitter"></span><span class="screen-reader-text">Twitter</span></a></li>
+		<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" title="My LinkedIn Profile" rel="external" target="_blank"><span class="links-social-icon icon-linkedin"></span><span class="screen-reader-text">LinkedIn</span></a></li>
+	</ul>
+</nav>
+
+
+	 <div class="footer-content">
+		 <p>I'm Ashley Nolan, a Senior UI Engineer at JUST EAT.  Do take a look around, or contact me in any of the usual ways – it'd be great to hear from you.</p>
+	</div>
+</footer>
+
+	</div>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ashleynolan'; // required: replace example with your forum shortname
+
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-20668207-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
+
