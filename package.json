@@ -3,10 +3,10 @@
   "title": "AshleyNolan.co.uk",
   "description": "Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT",
   "version": "0.1.0",
-  "homepage": "www.ashleynolan.co.uk",
+  "homepage": "https://www.ashleynolan.co.uk/",
   "author": {
     "name": "Ashley Nolan",
-    "url": "http://www.ashleynolan.co.uk"
+    "url": "https://www.ashleynolan.co.uk"
   },
   "repository": {
     "type": "git",
