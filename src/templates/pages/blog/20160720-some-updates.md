@@ -5,7 +5,7 @@ title: Some Updates…
 url: some-updates
 description: "A brief post on some of the updates I’ve made to my site’s hosting recently."
 
-posted: 2016-07-20:30
+posted: 2016-07-20T09:30
 
 post:
 - post
