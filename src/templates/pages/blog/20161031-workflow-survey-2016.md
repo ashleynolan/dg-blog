@@ -37,6 +37,10 @@ I’m aiming to run the survey for up to a month, after which I’ll write up th
 
 So what are you waiting for?! [Fill in the Survey right now](http://ashn.uk/survey-tooling-2016)!
 
+---
+
+N.b. Thanks to [Hugo Giraudel](https://twitter.com/HugoGiraudel), [Zander Martineau](https://twitter.com/MrMartineau) and [Damian Mullins](https://twitter.com/DamianMullins) for looking over the survey beforehand and providing feedback.
+
 {{/markdown}}
 
 
