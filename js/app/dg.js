@@ -56,12 +56,6 @@ define ([
 		mobileinit : function () {
 			MBP.scaleFix();
 			MBP.hideUrlBar();
-
-			if (window.addEventListener) {
-				window.addEventListener('load', function() {
-					var swiftclick = SwiftClick.attach (document.body);
-				}, false);
-			}
 		},
 
 		elementAdditions : function () {
