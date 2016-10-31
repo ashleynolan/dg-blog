@@ -86,32 +86,6 @@ MBP.hideUrlBarOnLoad = function () {
 };
 
 
-MBP.ghostClickHandler = function (event) {
-  if (!MBP.hadTouchEvent && 'ontouchstart' in window) {
-    // This is a bit of fun for Android 2.3...
-    // If you change window.location via fastButton, a click event will fire
-    // on the new page, as if the events are continuing from the previous page.
-    // We pick that event up here, but MBP.coords is empty, because it's a new page,
-    // so we don't prevent it. Here's we're assuming that click events on touch devices
-    // that occur without a preceding touchStart are to be ignored.
-    event.stopPropagation();
-    event.preventDefault();
-    return;
-  }
-  for(var i = 0, len = MBP.coords.length; i < len; i += 2) {
-    var x = MBP.coords[i];
-    var y = MBP.coords[i + 1];
-    if(Math.abs(event.clientX - x) < 25 && Math.abs(event.clientY - y) < 25) {
-      event.stopPropagation();
-      event.preventDefault();
-    }
-  }
-};
-
-if (document.addEventListener) {
-  document.addEventListener('click', MBP.ghostClickHandler, true);
-}
-
 addEvt( document.documentElement, 'touchstart', function() {
   MBP.hadTouchEvent = true;
 }, false);

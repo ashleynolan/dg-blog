@@ -10,6 +10,7 @@ require([
 	'jquery',
 	'log',
 	'mbp',
+	'swiftClick',
 	'adaptiveImage',
 	'setExternalLinks',
 	'modernizr',
