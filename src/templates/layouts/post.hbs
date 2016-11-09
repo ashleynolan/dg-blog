@@ -8,11 +8,14 @@
 
 			{{> body }}
 
-			<p class="post-date separator-top">Posted on the {{moment posted format="Do MMMM YYYY" }}</p>
+			{{> promos }}
+
+			<p class="post-info separator-top">Article posted on the {{moment posted format="Do MMMM YYYY" }}</p>
 
 			{{#if updated}}
 				<p>Last updated on the <date>{{moment updated format="Do MMMM YYYY" }}</date></p>
 			{{/if}}
+
 
 			<div id="disqus_thread" class="comments separator-top"></div>
 

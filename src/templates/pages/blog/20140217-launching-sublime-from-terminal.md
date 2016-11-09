@@ -14,6 +14,8 @@ categories:
   - "Web Development"
   - "terminal"
 
+promo: sublime
+
 ---
 
 {{#markdown}}
@@ -25,7 +27,6 @@ A really useful tip that I picked up recently from [Zander Martineau](http://twi
 The following instructions are based largely on the original [gist on Github](https://gist.github.com/artero/1236170) by [Artero](https://github.com/artero), so credit for this solution should be directed to them and not myself.
 
 It’s a slightly different installation depending on whether you’re using Sublime Text 2 or 3, so I’ll split the two out below in the installaton; simply refer to the instructions that are relevant to you.
-
 
 ##Installation
 

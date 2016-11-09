@@ -1,0 +1,28 @@
+{{#if promo}}
+<div class="promotion separator-both">
+	<h2 class="promotion-header text-bg">Recommended Resource</h2>
+	<div class="promotion-content">
+	{{#ifCond promo 'sublime'}}
+		<a href="https://SublimeTextBook.com/friend/NOLAN">
+			<img class="promotion-img" src="/assets/img/resources/wesbos.jpg" />
+			<h3 class="promotion-title">Sublime Text Power User</h2>
+			<p class="promotion-text">Level up your Sublime Text skills with this excellent book and video course by Wes Bos.</p>
+		</a>
+	{{/ifCond}}
+	{{#ifCond promo 'react'}}
+		<a href="https://ReactForBeginners.com/friend/NOLAN">
+			<img class="promotion-img" src="/assets/img/resources/wesbos.jpg" />
+			<h3 class="promotion-title">React For Beginners</h2>
+			<p class="promotion-text">Upgrade your JavaScript skills – Learn React in just a couple of afternoons with this course by Web Bos.</p>
+		</a>
+	{{/ifCond}}
+	{{#ifCond promo 'es6'}}
+		<a href="https://ES6.io/friend/NOLAN">
+			<img class="promotion-img" src="/assets/img/resources/wesbos.jpg" />
+			<h3 class="promotion-title">ES6 For Everyone</h2>
+			<p class="promotion-text">A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer, by Wes Bos.</p>
+		</a>
+	{{/ifCond}}
+	</div>
+</div>
+{{/if}}

@@ -15,6 +15,17 @@
 		max-width: 720px;
 		margin: 0 auto;
 	}
+	.post-info {
+		padding-top: $verticalRhythm*2 + px;
+
+		p + & {
+			margin-top: $verticalRhythm*4 + px;
+		}
+		.promotion + & {
+			box-shadow: none;
+			border-top: 0;
+		}
+	}
 
 	.page-footer {
 		position: relative;
@@ -230,6 +241,12 @@ img.logo-dg {
 .separator-bottom,
 %separator-bottom {
 	box-shadow: 0 1px 0 #fff;
+	border-bottom: 1px solid #4e5149;
+}
+.separator-both,
+%separator-both {
+	box-shadow: 0 -1px 0 #4e5149, 0 1px 0 #fff;
+	border-top: 1px solid #fff;
 	border-bottom: 1px solid #4e5149;
 }
 
