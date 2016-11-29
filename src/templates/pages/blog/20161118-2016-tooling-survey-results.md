@@ -1,7 +1,7 @@
 ---
 layout: post.hbs
 
-title: The State of Front-End Tooling – 2016
+title: The State of Front-End Tooling 2016 - Results
 url: frontend-tooling-survey-2016-results
 description: "The results of the 2016 Front-End Tooling Survey are out! Check out the results and analysis of the responses here."
 
