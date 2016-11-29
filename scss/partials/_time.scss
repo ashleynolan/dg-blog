@@ -33,12 +33,18 @@ time,
 		.promotion-img {
 			float: left;
 			width: 80px;
-			height: 80px;
 			margin-right: 20px;
 			margin-left: 1px;
 			border: 2px solid $color-border;
 			box-shadow: 0 0 0 1px $darkgrey;
 		}
+			.promotion-img--react {
+				width: 100px;
+				min-height: 97px;
+			}
+			.promotion-img--es6 {
+				width: 100px;
+			}
 		.promotion-title {
 			margin-top: 0;
 			margin-bottom: 0;

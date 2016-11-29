@@ -1,0 +1,1576 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>The State of Front-End Tooling – 2016 - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
+		<meta name="description" content="The State of Front-End Tooling – 2016 - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
+
+		<link href="https://ashleynolan.co.uk/feed.xml" rel="alternate" type="application/rss+xml" title="Front-end development Blog and Portfolio for Ashley Nolan" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@AshNolan_" />
+		<meta name="twitter:title" content="The State of Front-End Tooling – 2016" />
+		<meta name="twitter:description" content="The results of the 2016 Front-End Tooling Survey are out! Check out the results and analysis of the responses here." />
+		<meta name="twitter:image" content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/assets/css/kickoff.min.css">
+
+		<!-- Fonts – non blocking -->
+		<link href='https://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+		<script>
+			(function(d) {
+				var config = {
+					kitId: 'xxf1gwm',
+					scriptTimeout: 3000
+				},
+				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+			})(document);
+		</script>
+
+
+		<!-- Require include for JS -->
+		<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min" async></script>
+
+	</head>
+	<body>
+
+	<div class="container">
+		<header class="page-header">
+			<div id="page-logo" class="logo">
+				<span>Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT</span>
+				<a href="/" class="logo-link">
+					<svg class="logo-dg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="234px" height="244.082px" viewBox="0 0 234 244.082" enable-background="new 0 0 234 244.082" xml:space="preserve"><g><g><path clip-rule="evenodd" d="M131.012 68.469c-20.294 5.482-35.874 16.834-38.992 43.7 C68.354 94.6 98.1 47 131 68.469z"/><path clip-rule="evenodd" d="M161.475 59.629c12.752-4.078 0 17.3 8.7 17.3 c-9.173 6.152-19.891-10.842-34.687-8.67C140.716 62 158 67.7 161.5 59.629z"/><path clip-rule="evenodd" d="M76.527 92.79c1.633 4.2 3.7 8.7 6.2 12.5 c2.608 3.9 6.1 7.4 11.2 7.159c-12.189 3.479-23.696 8.262-32.159 18.087c-8.423 9.783-13.461 22.025-16.949 34.3 c-9.061-6.983-14.794 8.593-17.451 14.883c-2.349 5.562-4.978 21.5 6.6 13.891c4.448-2.942 6.602-8.919 12.695-9.151 c-2.969 8.274-6.594 15.987-16.213 17.148c-6.54 0.793-13.054-1.491-18.517-4.962c-2.951-1.873-12.159-8.419-11.935-12.306 c0.512-8.898 10.552-1.189 11.557-8.245c0.624-4.385 0.271-8.806 1.136-13.17c0.908-4.596 2.435-9 2.911-13.689 c3.605 0.3 1.2 6.6 3.9 7.8c10.032-3.507 16.879-11.737 21.362-21.088c2.364-4.937 4.222-10.091 5.968-15.275 c1.456-4.331 1.404-9.623 4.134-13.46c2.841-3.982 7.878-4.951 12.226-6.405C68.082 99.2 72.8 96.4 76.5 92.79z"/><path clip-rule="evenodd" d="M99.255 119.897c9.81 1.9 10.7 5.8 14.9 10.4 c-6.827 6.479-9.902 22.673-5.977 28.901C95.175 156.3 96.8 135.4 99.3 119.897z"/><path clip-rule="evenodd" d="M121.206 137.488c4.894 3 4.4 9.1 6.3 13.9 c-4.936 6.197-10.997 10.411-12.33 22.914C112.079 163.8 115.3 148.9 121.2 137.488z"/><path clip-rule="evenodd" d="M121.605 0c-8.263 15.3 13.1 46.006-1.949 62.4 c-4.596 0.042-5.744-3.36-11.703-1.95C127.689 49.1 102.9 13.8 121.6 0z"/><path clip-rule="evenodd" d="M61.149 5.85c0.1 1.5 1.8 3.1 1.8 5.2 c0.022 2.82-1.059 5.84-1.923 8.48c-2.215 6.783-5.087 13.333-7.233 20.14c-2.608 8.272-5.14 16.396-3.13 25.2 c1.524 6.7 5.9 11.6 11.8 5.692c10.53-10.562 13.605-29.733 18.273-43.378c2.764-8.071 6.217-16.493 11.633-23.199 c-2.654 3.288-2.392 9.859-3.548 13.882c-1.621 5.636-4.147 11.421-3.27 17.417c1.068 7.3 7 7.1 12.4 4.2 c-2.96 1.573-4.405 7.437-6.289 9.995c-2.853 3.876-5.893 7.625-8.38 11.76c-5.954 9.899-8.374 20.95-6.517 32.4 c-7.399 4.952-11.64 13.063-25.353 11.702c-13.303 10.749-23.374 24.729-27.301 44.855c-8.519-20.394 8.5-46.808 19.502-60.457 c-2.158-18.473-6.726-26.699-3.901-40.953C43.038 31.9 62.5 25.6 61.1 5.85z"/><path clip-rule="evenodd" d="M174.777 89.915c4.768-4.601 12.5 8.9 24.8 5 c-3.096 9.324-6.504 18.33-7.452 29.802C186.195 113.3 185.1 96.9 174.8 89.915z"/><path clip-rule="evenodd" d="M96.251 171.615c-2.344 13.276-7.652 40.438-19.501 50.7 c-12.253 1.199-12.991-9.11-23.404-9.753c1.273-5.876 7.661-6.643 9.752-11.697c2.327-15.337-1.888-48.907-13.054-56.462 c6.053-10.196 13.143-22.067 26.409-25.055c-1.406 8.7 9.6 20.2 10 26.911c1.374 19.759-16.337 38.35-11.705 64.4 C85.648 209.1 89.4 183.7 96.3 171.615z"/><path clip-rule="evenodd" d="M192.558 129.948c5.485 9.1 6.5 22.7 14.6 29.3 c-5.582 5.123-22.907 35.464-17.555 23.41C189.939 164.4 194.5 150.4 192.6 129.948z"/></g><path clip-rule="evenodd" d="M99.087 116.263c0 0 10.719-54.502 47.354-40.207 c0 0 54.2 11.5 32.2 97.39C162.524 236 234 236 234 235.987s-109.006 42.894-101.854-68.795 C132.147 167.2 133.9 122.5 99.1 116.263z"/></g></svg>
+					<img src="/assets/img/dg_logo.png" class="logo-dg" alt="Ashley Nolan">
+				</a>
+			</div>
+		
+			<!-- main navigation links -->
+			<section id="nav-strip" class="nav-strip">
+				<!-- Global Navigation links -->
+				<nav id="page-nav" class="nav-global">
+					<ul>
+						<li class="nav-global-item"><a href="/blog/" data-hover="Blog">Blog</a><span class="navArrow"></span></li><!--
+						--><li class="nav-global-item"><a href="/work" data-hover="Work">Work</a><span class="navArrow"></span></li><!--
+						--><li class="nav-global-item last "><a href="/about" data-hover="About">About</a><span class="navArrow"></span></li>
+					</ul>
+				</nav>	</section>
+		</header>
+
+		<section class="content post">
+			<h1>The State of Front-End Tooling – 2016</h1>
+
+			
+
+<hr>
+<p>About a month ago, I put out the <a href="http://ashn.uk/survey-tooling-2016">2016 Front-End Tooling Survey</a>.  The response has been <em>phenomenal</em> – to date, 4,715 developers have taken the time to fill it in.  <strong>Thank you</strong> to all of you who have taken the time to do so.</p>
+<p>Continuing on from <a href="/blog/frontend-tooling-survey-2015-results">last years survey</a>, the aim was pretty straight-forward; To find out more details about the tools front-end developers are currently using in their own workflows.  In our industry, it’s all too easy to take for granted what people are using based on your own knowledge.  This survey aims to give more of an insight into the current trends in front-end tooling from a broader perspective.</p>
+<p>This year the survey was made up of 19 questions – up from 8 questions last year – covering a wide range of front-end tools and methodologies.</p>
+<p>For anyone who hasn’t completed the survey, I’ll be leaving it open for a couple more weeks and updating the results here, so please do <a href="http://ashn.uk/survey-tooling-2016">take the time to fill it in</a>.</p>
+<h3 id="quick-thanks">Quick Thanks</h3>
+<p>This survey would have been a whole lot harder to put together without the support of Just Eat (my employer) and Wes Bos, who has kindly affiliated with this years survey, which has enabled me to spend more time analysing the results.</p>
+<p>Wes is renowned for creating great learning materials for web developers.  His courses are a great place to start if you’re looking to learn more about topics such as <a href="https://ReactForBeginners.com/friend/NOLAN">React</a> and <a href="https://ES6.io/friend/NOLAN">ES6</a>.  You’ll find links to some of Wes’ courses where relevant in the results.</p>
+<h3 id="the-results">The results</h3>
+<p>So, without further ado, let’s take a look at the results!  Grab yourself a cup of tea/coffee and let’s take a look…</p>
+<hr>
+<h2 id="pre-amble-disclaimer">Pre-amble Disclaimer</h2>
+<p>These results represent a sample of front-end developers working in the industry – therefore, they shouldn’t be taken as gospel, simply as pointing towards a rough trend.</p>
+<hr>
+<h2 id="the-responses">The responses</h2>
+<p>As I mentioned above, this years survey has had 4,715 responses to date.  In comparison, when I released the first set of results in 2015, the survey had received just 648 responses which then rose to a final figure of 2,028 responses when the survey closed.  So that’s almost 2 and a half times the number of responses in comparison to last years final numbers, or a 132% increase for people who like percentages.</p>
+<p>In terms of where the responses have come from, I posted the survey on Twitter, Reddit, HackerNews, DesignerNews, Echo.js, LinkedIn and Frontendfront.  It was also featured by a number of newsletters such as Responsive Design Weekly, Sitepoint Weekly and FrontEnd Focus, among others.</p>
+<p>The reason I want to highlight these sources is to show that there has been a good spread of response across various channels; respondents haven’t all come from one social channel.</p>
+<hr>
+<h2 id="question-index">Question Index</h2>
+
+<div class="no-external">
+
+<ul>
+<li><a href="#experience-general">Q1 – General Front-end Experience</a></li>
+<li><a href="#knowledge-css">Q2  – CSS Knowledge Levels</a></li>
+<li><a href="#css-processors">Q3 – CSS Processor Usage</a></li>
+<li><a href="#css-processor-experience">Q4 – CSS Processor Experience</a></li>
+<li><a href="#css-naming">Q5 – CSS Naming Schemes</a></li>
+<li><a href="#css-linting">Q6 – CSS Linting</a></li>
+<li><a href="#css-tool-experience">Q7 – CSS Tool Experience</a></li>
+<li><a href="#css-methodologies">Q8 – CSS Methodologies and Naming Scheme Experience</a></li>
+<li><a href="#css-tool-usage">Q9 – CSS Tool Usage</a></li>
+<li><a href="#js-knowledge">Q10 – JavaScript Knowledge Levels</a></li>
+<li><a href="#js-task-runners">Q11 – Task Runners</a></li>
+<li><a href="#js-frameworks">Q12 – Knowledge of JavaScript Libraries and Frameworks</a></li>
+<li><a href="#js-framework-usage">Q13 – Most frequently used JS tools</a></li>
+<li><a href="#js-framework-essential">Q14 – Most essential JS tool</a></li>
+<li><a href="#js-bundlers">Q15 – JavaScript Module Bundlers</a></li>
+<li><a href="#js-transpilers">Q16 – JavaScript Transpilers</a></li>
+<li><a href="#js-linters">Q17 – JavaScript Linting</a></li>
+<li><a href="#js-testing">Q18 – JavaScript Testing</a></li>
+<li><a href="#js-misc">Q19 – Miscellaneous Tools</a></li>
+</ul>
+
+</div>
+
+<hr>
+<p><a name="experience-general"></a></p>
+<h2 id="q1-general-front-end-experience">Q1 – General Front-end Experience</h2>
+<p>The first question I asked was to get an idea of the experience level of those responding; something that wasn’t recorded in last year’s survey.  The question was <strong>Roughly how long have you been working with front-end technologies?</strong></p>
+<p>Here are the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Answer</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0-1 Year</th>
+            <td>232</td>
+            <td>4.92%</td>
+        </tr>
+        <tr>
+            <th>1-2 Years</th>
+            <td>589</td>
+            <td>12.49%</td>
+        </tr>
+        <tr>
+            <th>2-5 Years</th>
+            <td>1,508</td>
+            <td>31.98%</td>
+        </tr>
+        <tr>
+            <th>5-10 Years</th>
+            <td>1,323</td>
+            <td>28.06%</td>
+        </tr>
+        <tr>
+            <th>10-15 Years</th>
+            <td>673</td>
+            <td>14.27%</td>
+        </tr>
+        <tr>
+            <th>Over 15 Years</th>
+            <td>390</td>
+            <td>8.27%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-tall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Roughly how long have you been working with front-end technologies? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q1-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q1-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q1.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q1.jpg" width="720" height="500" alt="Roughly how long have you been working with front-end technologies? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>The majority of respondents said that they have been working with front-end technologies for either 2-5 years or 5-10 years, which together accounted for 60.04% (2,831) of responses.</p>
+<p>Interestingly, there is a very even split between those who have been working with front-end for up to 5 years (49.39%) when compared to those with over 5 years experience (50.6%).  Positively, this implies that the results of the survey come from a fairly even distribution of experience levels.</p>
+<hr>
+<p><a name="knowledge-css"></a></p>
+<h2 id="q2-css-knowledge">Q2 – CSS Knowledge</h2>
+<p>The second question was a subjective look at how respondents rated their own knowledge of CSS.</p>
+<p>It goes without saying that this question is pretty relative, as this can be interpreted differently by each respondent as well as relying on a level of modesty when it comes to rating your own skill level – but it is none-the-less interesting to see the results!</p>
+<p>The question was <strong>How do you rate your own knowledge of CSS and its associated tools and methodologies?</strong></p>
+<p>Here’s what the responses looked like:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Level</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Beginner</th>
+            <td>78</td>
+            <td>1.65%</td>
+        </tr>
+        <tr>
+            <th>Novice (between Beginner and Intermediate)</th>
+            <td>424</td>
+            <td>8.99%</td>
+        </tr>
+        <tr>
+            <th>Intermediate</th>
+            <td>1,243</td>
+            <td>26.36%</td>
+        </tr>
+        <tr>
+            <th>Advanced (between Intermediate and Expert)</th>
+            <td>2,203</td>
+            <td>46.72%</td>
+        </tr>
+        <tr>
+            <th>Expert</th>
+            <td>767</td>
+            <td>16.27%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-tall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="How do you rate your own knowledge of CSS and its associated tools and methodologies? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q2-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q2-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q2.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q2.jpg" width="720" height="500" alt="How do you rate your own knowledge of CSS and its associated tools and methodologies? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Looking at the results, <strong>89.36%</strong> (4,213) of respondents rated themselves as having an intermediate level of CSS knowledge or higher, with most – 46.72% (2,203) – saying that they are at an advanced level.  Just 16.27% (767) of respondents rated themselves as having expert knowledge.</p>
+<p>When digging a little deeper into these results and filtering based on the answers given to question 1, of those who have up to 12 months experience working with front-end technologies 10% rated themselves as having advanced knowledge of CSS or higher (although no-one in this subcategory rated themselves as an expert).  That percentage rose to 22% for respondents with up to 2 years experience.</p>
+<p>This can be interpreted in different ways, but it seems a relatively high percentage considering the short amount of time they have spent working with CSS.  It could also reflect how CSS can often be perceived to be simpler to learn when compared to other languages such as JavaScript – something I wouldn’t necessarily agree with when it comes to learning the intricacies and nuances of the language and it’s methodologies.</p>
+<p>We’ll look to reference these results in the following questions.</p>
+<hr>
+<p><a name="css-processors"></a></p>
+<h2 id="q3-css-processor-usage">Q3 – CSS Processor Usage</h2>
+<p>The next question was the first technology specific question, asking <strong>What is your CSS Processing tool of choice?</strong></p>
+<p>This question was asked on last years survey, with Sass being the choice for the majority of developers back in 2015.  The possible answers included all of those available last year plus the addition of PostCSS and Rework, two more modular CSS Processors.</p>
+<p>The results below also show the percentage difference between this years and last years results where applicable.</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Preprocessor</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+            <th>% Diff (to 2015)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Sass</th>
+            <td>2,989</td>
+            <td>63.39%</td>
+            <td>-0.56%</td>
+        </tr>
+        <tr>
+            <th>Less</th>
+            <td>478</td>
+            <td>10.14%</td>
+            <td>-5.05%</td>
+        </tr>
+        <tr>
+            <th>Stylus</th>
+            <td>137</td>
+            <td>2.91%</td>
+            <td>-0.84%</td>
+        </tr>
+        <tr>
+            <th>PostCSS</th>
+            <td>392</td>
+            <td>8.31%</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <th>Rework</th>
+            <td>3</td>
+            <td>0.06%</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <th>No Preprocessor</th>
+            <td>643</td>
+            <td>13.64%</td>
+            <td>-1.4%</td>
+        </tr>
+        <tr>
+            <th>Other</th>
+            <td>73</td>
+            <td>1.55%</td>
+            <td>-0.52%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-tall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What is your CSS Processing tool of choice? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q3-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q3-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q3.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q3.jpg" width="720" height="500" alt="What is your CSS Processing tool of choice? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Looking at the results, Sass is still the CSS processing tool of choice for the majority of respondents with <strong>63.39%</strong>.  When compared to last years results, Less usage has dropped slightly to 10.14% (down 5.05%).</p>
+<p>PostCSS showed good growth with 8.31% of respondents saying that they used it exclusively.  It’s usage is likely to be slightly higher in reality as this doesn’t account for those respondents who use it in combination with another processing tool.</p>
+<p>Interestingly, the percentage of respondents not using any CSS processing tool has dropped to 13.64%, down from 15.04% in 2015. This re-enforces how CSS processing is now a key skill in modern front-end development and one that the majority (86.36%) of front-end developers currently use in their own workflows.</p>
+<hr>
+<p><a name="css-processor-experience"></a></p>
+<h2 id="q4-css-processor-experience">Q4 – CSS Processor Experience</h2>
+<p>Following on from the last question, I wanted to find out more detail about knowledge levels across CSS processing tools with respondents asked to give their experience in each.</p>
+<p>Here is how people responded when asked – <strong>Please indicate your experience with the following CSS Processing tools</strong>:</p>
+<div class="table-wrapper">
+    <table class="table table--bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Never Heard of</th>
+                <th>Heard of/Read About</th>
+                <th>Used a little</th>
+                <th>Feel Comfortable Using</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Sass – Standard or SCSS syntax</th>
+                <td>0.57% (27)</td>
+                <td>11.11% (524)</td>
+                <td>17.16% (809)</td>
+                <td>71.16% (3,355)</td>
+            </tr>
+            <tr>
+                <th>Less</th>
+                <td>0.81% (38)</td>
+                <td>30.86% (1,455)</td>
+                <td>33.32% (1,571)</td>
+                <td>35.02% (1,651)</td>
+            </tr>
+            <tr>
+                <th>Stylus</th>
+                <td>24.22% (1,142)</td>
+                <td>57.26% (2,700)</td>
+                <td>11.11% (524)</td>
+                <td>7.40% (349)</td>
+            </tr>
+            <tr>
+                <th>PostCSS</th>
+                <td>21.76% (1,026)</td>
+                <td>45.37% (2,139)</td>
+                <td>18.73% (883)</td>
+                <td>14.15% (667)</td>
+            </tr>
+            <tr>
+                <th>Rework</th>
+                <td>78.43% (3,698)</td>
+                <td>20.17% (951)</td>
+                <td>0.91% (43)</td>
+                <td>0.49% (23)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="img img-mid">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following CSS Processing tools – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q4-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q4-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q4.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q4.jpg" width="720" height="500" alt="Please indicate your experience with the following CSS Processing tools – Bar Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>The tool with the highest knowledge levels was Sass by quite some distance, with <strong>71.16%</strong> of respondents saying that they felt comfortable using it.  In fact just 11.68% of people had never used it, with only 0.57% (27 people) having never heard of it at all.  When looking at this together with the results of question 3, Sass clearly dominates when it comes to both usage and knowledge levels across CSS processing tools.</p>
+<p>Looking at the other tools, 35.02% of respondents said that they felt comfortable using Less, followed by 14.15% that said the same with respect to PostCSS.  Interestingly, this number has almost doubled from the 7.15% of respondents who said that they felt comfortable using PostCSS in last years survey, showing an upwards trend in knowledge of the tool.</p>
+<hr>
+<p><a name="css-naming"></a></p>
+<h2 id="q5-css-naming-schemes">Q5 – CSS Naming Schemes</h2>
+<p>The next question was an area of CSS that I have a lot of interest in – CSS Naming Schemes.  Having used a naming scheme in my own work for a number of years now, I was interested to see if this was something that other front-end developers had adopted too.</p>
+<p>The question asked was – <strong>Do you use a naming scheme when writing CSS, such as BEM or SUIT?</strong></p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Answer</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Yes</th>
+            <td>2,170</td>
+            <td>46.02%</td>
+        </tr>
+        <tr>
+            <th>No – I’ve heard of CSS naming schemes but don’t use one</th>
+            <td>1,731</td>
+            <td>36.71%</td>
+        </tr>
+        <tr>
+            <th>No – I’ve never heard of CSS naming schemes</th>
+            <td>814</td>
+            <td>17.26%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-tall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a naming scheme when writing CSS, such as BEM or SUIT? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q5-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q5-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q5.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q5.jpg" width="720" height="500" alt="Do you use a naming scheme when writing CSS, such as BEM or SUIT? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>The results show a fairly even split, although just less than half of respondents (46.02%) said that they do use a CSS naming scheme in comparison to those that said that they did not (53.98%).</p>
+<p>It’s encouraging that overall 82.73% (3,901) of respondents had at least heard of CSS naming schemes, but 36.71% (1,731) had yet to use one.</p>
+<p>As you might expect, when looking at the respondents who rated themselves as having an advanced level of CSS knowledge or higher, the usage of CSS naming schemes rose to 56.94%.  This is compared to a usage of just 27.47% among those who rated themselves as an intermediate or lower.</p>
+<p>CSS naming schemes are a tool that I think will continue to grow in usage, so it’ll be interesting to see how these figures change in the future.</p>
+<hr>
+<p><a name="css-linting"></a></p>
+<h2 id="q6-css-linting">Q6 – CSS Linting</h2>
+<p>Next up was CSS Linting – is this a tool that a lot of developers use in their workflows?</p>
+<p>I asked <strong>Do you use a tool to lint your CSS?</strong></p>
+<p>The results were as follows:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Answer</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Yes</th>
+            <td>2,232</td>
+            <td>47.34%</td>
+        </tr>
+        <tr>
+            <th>No – I don’t lint my CSS</th>
+            <td>2,483</td>
+            <td>52.66%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-tall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a tool to lint your CSS? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q6-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q6-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q6.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q6.jpg" width="720" height="500" alt="Do you use a tool to lint your CSS? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Like the previous question, this was a pretty even split with 47.34% (2,232) of respondents saying that they do use a tool to lint their CSS, compared with 52.66% (2,483) of those that do not.</p>
+<p>Unsurprisingly, these numbers also rise as we look at those respondents with more advanced knowledge in CSS.  52.42% of respondents who rated themselves as having advanced or higher knowledge of CSS also said that they linted their CSS, compared to just 38.70% of those with beginner to intermediate knowledge.</p>
+<p>CSS linting is still relatively new in terms of tooling and usage, especially when compared with the amount of time that JavaScript linting has been around. As better tools, such as Stylelint, continue to be discovered by developers I’d expect usage to grow as this area of CSS tooling matures.</p>
+<hr>
+<p><a name="css-tool-experience"></a></p>
+<h2 id="q7-css-tool-experience">Q7 – CSS Tool Experience</h2>
+<p>The next three questions in the survey covered the knowledge levels and usage across a number of CSS tools and methodologies.  Firstly question 7 asked respondents to <strong>Please indicate your experience with the following CSS tools</strong>.</p>
+<p>Let’s look at the results:</p>
+<div class="table-wrapper">
+    <table class="table table--bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Never Heard of</th>
+                <th>Heard of/Read About</th>
+                <th>Used a little</th>
+                <th>Feel Comfortable Using</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Autoprefixer</th>
+                <td>18.28% (862)</td>
+                <td>17.18% (810)</td>
+                <td>15.93% (751)</td>
+                <td>48.61% (2,292)</td>
+            </tr>
+            <tr>
+                <th>Susy</th>
+                <td>55.02% (2,594)</td>
+                <td>29.78% (1,404)</td>
+                <td>9.69% (457)</td>
+                <td>5.51% (260)</td>
+            </tr>
+            <tr>
+                <th>Modernizr</th>
+                <td>6.64% (313)</td>
+                <td>22.93% (1,081)</td>
+                <td>37.96% (1,790)</td>
+                <td>32.47% (1,531)</td>
+            </tr>
+            <tr>
+                <th>Stylelint</th>
+                <td>54.68% (2,578)</td>
+                <td>24.35% (1,148)</td>
+                <td>10.39% (490)</td>
+                <td>10.58% (499)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following CSS tools – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q7-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q7-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q7.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q7.jpg" width="720" height="500" alt="Please indicate your experience with the following CSS tools – Bar Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Out of these, Autoprefixer, with 48.61% (2,292), was the CSS tool that the most respondents felt comfortable using, followed by Modernizr (32.47%), Stylelint (10.58%) and finally Susy (5.51%).</p>
+<p>However, when expanding this out to include those respondents who had used the tool a little, Modernizr then came out on top, with 70.43% compared with the 64.54% of respondents who said that they have at least a little experience in using Autoprefixer.</p>
+<p>The majority of respondents said that they had never heard of Stylelint (54.68%), a CSS Linting tool, and Susy (55.02%), a Sass layout tool.</p>
+<p>Interestingly, a high percentage of respondents who rated themselves as advanced or above in CSS and it’s tools had never heard of these two tools – 46.53% for Stylelint and 45.52% for Susy.  I think this illustrates just how difficult it can be for developers of any experience level, let alone beginners, to keep up with the tools available to us all.</p>
+<hr>
+<p><a name="css-methodologies"></a></p>
+<h2 id="q8-css-methodologies-and-naming-scheme-experience">Q8 – CSS Methodologies and Naming Scheme Experience</h2>
+<p>This next question followed on from the last by asking respondents to <strong>Please indicate your experience with the following CSS methodologies</strong>.</p>
+<p>The results looked like this:</p>
+<div class="table-wrapper">
+    <table class="table table--bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Never Heard of</th>
+                <th>Heard of/Read About</th>
+                <th>Used a little</th>
+                <th>Feel Comfortable Using</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>SMACSS</th>
+                <td>40.57% (1,913)</td>
+                <td>33.91% (1,599)</td>
+                <td>14.74% (695)</td>
+                <td>10.77% (508)</td>
+            </tr>
+            <tr>
+                <th>Object Oriented CSS (OOCSS)</th>
+                <td>28.27% (1,333)</td>
+                <td>41.80% (1,971)</td>
+                <td>17.77% (838)</td>
+                <td>12.15% (573)</td>
+            </tr>
+            <tr>
+                <th>Atomic Design</th>
+                <td>41.53% (1,958)</td>
+                <td>33.74% (1,591)</td>
+                <td>14.34% (676)</td>
+                <td>10.39% (490)</td>
+            </tr>
+            <tr>
+                <th>ITCSS</th>
+                <td>68.34% (3,222)</td>
+                <td>22.38% (1,055)</td>
+                <td>4.50% (212)</td>
+                <td>4.79% (226)</td>
+            </tr>
+            <tr>
+                <th>CSS Modules</th>
+                <td>27.42% (1,293)</td>
+                <td>44.77% (2,111)</td>
+                <td>15.95% (752)</td>
+                <td>11.86% (559)</td>
+            </tr>
+            <tr>
+                <th>BEM</th>
+                <td>24.90% (1,174)</td>
+                <td>23.52% (1,109)</td>
+                <td>18.49% (872)</td>
+                <td>33.09% (1,560)</td>
+            </tr>
+            <tr>
+                <th>SUIT CSS</th>
+                <td>69.42% (3,273)</td>
+                <td>24.14% (1,138)</td>
+                <td>3.90% (184)</td>
+                <td>2.55% (120)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following CSS methodologies – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q8-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q8-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q8.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q8.jpg" width="720" height="500" alt="Please indicate your experience with the following CSS methodologies – Bar Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Of these, BEM – a CSS naming scheme – was the most widely known with 33.09% of respondents saying that they felt comfortable using it.  This figure rises to 51.58% of respondents when including those who said they have used it a little.</p>
+<p>Surprisingly (to me at least), knowledge of many of the most well known CSS methodologies is pretty low.  Just 29.92% of developers said that they have used OOCSS either a little or feel comfortable using it in their projects, with 27.81% saying the same for CSS modules, 25.51% for SMACSS and 24.73% for Atomic design.</p>
+<p>Even among those with advanced or expert knowledge of CSS, none of these methodologies break the 20% mark in terms of the number of respondents that said that they felt comfortable using them.</p>
+<p>Digging into the responses a bit further shows that less than a third (29.20%) of respondents feel comfortable using at least one of the listed CSS methodologies – so that’s any one of SMACSS, OOCSS, Atomic Design, ITCSS and CSS Modules.  This rises to 55.02% of respondents if we consider those who say that they have used any one of these methodologies at least a little.</p>
+<p>Before drawing more conclusions from these results, let’s also take a look at question 9, which is closely related.</p>
+<hr>
+<p><a name="css-tool-usage"></a></p>
+<h2 id="q9-css-tool-usage">Q9 – CSS Tool Usage</h2>
+<p>Rounding off the survey’s questions on CSS, I asked respondents <strong>Which of these CSS methodologies or tools do you currently use on your projects?</strong></p>
+<p>Here are the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Tool/Methodology</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>SMACSS</th>
+            <td>613</td>
+            <td>13.00%</td>
+        </tr>
+        <tr>
+            <th>Object Oriented CSS (OOCSS)</th>
+            <td>696</td>
+            <td>14.76%</td>
+        </tr>
+        <tr>
+            <th>Atomic Design</th>
+            <td>680</td>
+            <td>14.42%</td>
+        </tr>
+        <tr>
+            <th>ITCSS</th>
+            <td>248</td>
+            <td>5.26%</td>
+        </tr>
+        <tr>
+            <th>CSS Modules</th>
+            <td>740</td>
+            <td>15.69%</td>
+        </tr>
+        <tr>
+            <th>BEM</th>
+            <td>1905</td>
+            <td>40.40%</td>
+        </tr>
+        <tr>
+            <th>SUIT CSS</th>
+            <td>111</td>
+            <td>2.35%</td>
+        </tr>
+        <tr>
+            <th>Autoprefixer</th>
+            <td>2,414</td>
+            <td>51.20%</td>
+        </tr>
+        <tr>
+            <th>Susy</th>
+            <td>237</td>
+            <td>5.03%</td>
+        </tr>
+        <tr>
+            <th>Modernizr</th>
+            <td>1,828</td>
+            <td>38.77%</td>
+        </tr>
+        <tr>
+            <th>Stylelint</th>
+            <td>682</td>
+            <td>14.46%</td>
+        </tr>
+        <tr>
+            <th>I don’t use any of these approaches or tools</th>
+            <td>1,095</td>
+            <td>23.22%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-extraTall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these CSS methodologies or tools do you currently use on your projects? – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q9-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q9-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q9.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q9.jpg" width="720" height="500" alt="Which of these CSS methodologies or tools do you currently use on your projects? – Bar Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+
+<p>Top in terms of actual usage was Autoprefixer (51.20%), followed by BEM (40.40%) and Modernizr (38.77%), which all saw good usage levels from respondents.</p>
+<p>Although individual usage levels of CSS methodologies is modest – even among those who stated advanced experience with CSS – when looking at usage across all of them together, 41.21% of respondents said that they were using at least one of SMACSS, OOCSS, Atomic Design, ITCSS or CSS Modules on their projects.</p>
+<p>It’s also a little surprising, due to the relative newness of the approach, to see that usage of CSS modules has higher usage than any of the other CSS methodologies.</p>
+<p>For me, the relatively low usage levels – and knowledge levels shown from question 8 – across CSS methodologies indicates two things.  The diversity of ways that people are writing their CSS is very broad – there isn’t any one method that developers seem drawn to when it comes to writing their CSS.</p>
+<p>Secondly – and perhaps slightly worryingly – a high number of front-end developers consider themselves to have an advanced knowledge of CSS when they don’t feel comfortable using some of the most well known CSS methodologies.</p>
+<p>This seems slightly contradictory and points to an issue I’ve seen fairly often.  CSS may be a simple language on the surface, but it can be a complex one to master and fully understand.</p>
+<hr>
+<p><a name="js-knowledge"></a></p>
+<h2 id="q10-javascript-knowledge">Q10 – JavaScript Knowledge</h2>
+<p>The second half of the survey focussed on JavaScript and it’s ecosystem of tools.</p>
+<p>First up, I asked respondents <strong>How do you rate your own knowledge of JavaScript and its associated tools and methodologies?</strong></p>
+<p>These were the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Knowledge</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Beginner</th>
+            <td>78</td>
+            <td>4.18%</td>
+        </tr>
+        <tr>
+            <th>Novice (between Beginner and Intermediate)</th>
+            <td>424</td>
+            <td>11.73%</td>
+        </tr>
+        <tr>
+            <th>Intermediate</th>
+            <td>1,243</td>
+            <td>32.98%</td>
+        </tr>
+        <tr>
+            <th>Advanced (between Intermediate and Expert)</th>
+            <td>2,203</td>
+            <td>35.72%</td>
+        </tr>
+        <tr>
+            <th>Expert</th>
+            <td>767</td>
+            <td>15.40%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-extraTall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="How do you rate your own knowledge of JavaScript and its associated tools and methodologies? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q10-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q10-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q10.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q10.jpg" width="720" height="500" alt="How do you rate your own knowledge of JavaScript and its associated tools and methodologies? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Responses showed a similar distribution across knowledge levels to those seen in relation to CSS.  The main exception comes in the number of respondents who rated themselves as having an advanced knowledge of JavaScript, which is 35.72%.</p>
+<p>By way of comparison, 51.12% of respondents rated themselves as having either an advanced of expert level of JavaScript knowledge, compared with 62.99% of respondents who said the same in relation to their knowledge of CSS.</p>
+<hr>
+<p><a name="js-task-runners"></a></p>
+<h2 id="q11-task-runners">Q11 – Task Runners</h2>
+<p>Task runners have become a very important part of many front-end developers’ workflows.  But has this area changed much over the last 12 months, or has usage stayed consistent across tools and approaches?</p>
+<p>The question that respondents were asked was <strong>What task runner do you prefer using in your typical project workflow?</strong></p>
+<p>Let’s take a look at the results – where possible I’ve included the percentage change from last years survey:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Task Runner</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+            <th>% Diff (to 2015)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Gulp</th>
+            <td>2,060</td>
+            <td>43.69%</td>
+            <td>-0.1%</td>
+        </tr>
+        <tr>
+            <th>NPM Scripts</th>
+            <td>1,223</td>
+            <td>25.94%</td>
+            <td>+22.78%</td>
+        </tr>
+        <tr>
+            <th>Grunt</th>
+            <td>554</td>
+            <td>11.75%</td>
+            <td>-15.81%</td>
+        </tr>
+        <tr>
+            <th>Make</th>
+            <td>54</td>
+            <td>1.15%</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <th>GUI Application (i.e. Codekit)</th>
+            <td>93</td>
+            <td>1.97%</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <th>Other (please specify)</th>
+            <td>214</td>
+            <td>4.54%</td>
+            <td>-0.34%</td>
+        </tr>
+        <tr>
+            <th>I don’t use a task runner</th>
+            <td>517</td>
+            <td>10.97%</td>
+            <td>-8.56%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-extraTall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What task runner do you prefer using in your typical project workflow? (if any) – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q11-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q11-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q11.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q11.jpg" width="720" height="500" alt="What task runner do you prefer using in your typical project workflow? (if any) – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Looking at the results, Gulp is still the clear leader when it comes to front-end task runners with <strong>43.69%</strong> (2,060) of responses.</p>
+<p>The biggest movement is in the usage NPM Scripts, which got a 25.94% (1,223) share of the response, making it the second most used task runner tool.  That’s an increase of 22.8% when compared to last years figures.  This suggests that more front-end developers are trying to simplify their build tasks and take away the abstraction layer that tools such as Gulp and Grunt provide.</p>
+<p>Meanwhile Grunt has seen a substantial drop in use, with just 11.75% of respondents saying that they prefer using the tool – a fall of over 15% from 2015.</p>
+<p>Interestingly, the number of respondents not using any task runner has fallen to just 10.97% – down from 19.5% last year – showing that the overwhelming majority of front-end developers now utilise a task running tool on their projects.</p>
+<hr>
+<p><a name="js-frameworks"></a></p>
+<h2 id="q12-knowledge-of-javascript-libraries-and-frameworks">Q12 – Knowledge of JavaScript Libraries and Frameworks</h2>
+<p>This was one of the questions I was most looking forward to seeing the responses to.  How have knowledge levels across the most popular JavaScript libraries and frameworks changed in the last year?</p>
+<p>At the time of the 2015 survey, React was a relative newcomer still gaining ground on Angular.  Since then, the Angular team has released version 2 of the framework, but have developers started to migrate over?</p>
+<p>Here’s what the results show:</p>
+<div class="table-wrapper">
+    <table class="table table--bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Never Heard of</th>
+                <th>Heard of/Read About</th>
+                <th>Used a little</th>
+                <th>Feel Comfortable Using</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>jQuery</th>
+                <td>0.11% (5)</td>
+                <td>0.85% (40)</td>
+                <td>12.17% (574)</td>
+                <td>86.87% (4,096)</td>
+            </tr>
+            <tr>
+                <th>Underscore</th>
+                <td>10.22% (482)</td>
+                <td>28.12% (1,326)</td>
+                <td>24.41% (1,151)</td>
+                <td>37.24% (1,756)</td>
+            </tr>
+            <tr>
+                <th>Lodash</th>
+                <td>15.89% (749)</td>
+                <td>26.70% (1,259)</td>
+                <td>19.75% (931)</td>
+                <td>37.67% (1,776)</td>
+            </tr>
+            <tr>
+                <th>Backbone</th>
+                <td>4.31% (203)</td>
+                <td>58.13% (2,741)</td>
+                <td>23.01% (1,085)</td>
+                <td>14.55% (686)</td>
+            </tr>
+            <tr>
+                <th>Angular 1</th>
+                <td>0.66% (31)</td>
+                <td>40.21% (1,896)</td>
+                <td>30.43% (1,435)</td>
+                <td>28.70% (1,353)</td>
+            </tr>
+            <tr>
+                <th>Angular 2</th>
+                <td>0.89% (42)</td>
+                <td>73.59% (3,470)</td>
+                <td>20.19% (952)</td>
+                <td>5.32% (251)</td>
+            </tr>
+            <tr>
+                <th>Ember</th>
+                <td>3.75% (177)</td>
+                <td>78.41% (3,697)</td>
+                <td>11.71% (552)</td>
+                <td>6.13% (289)</td>
+            </tr>
+            <tr>
+                <th>React</th>
+                <td>0.76% (36)</td>
+                <td>42.29% (1,994)</td>
+                <td>28.04% (1,322)</td>
+                <td>28.91% (1,363)</td>
+            </tr>
+            <tr>
+                <th>Polymer</th>
+                <td>13.55% (639)</td>
+                <td>72.68% (3,427)</td>
+                <td>11.75% (554)</td>
+                <td>2.01% (95)</td>
+            </tr>
+            <tr>
+                <th>Aurelia</th>
+                <td>43.71% (2,061)</td>
+                <td>50.03% (2,359)</td>
+                <td>3.20% (151)</td>
+                <td>3.05% (144)</td>
+            </tr>
+            <tr>
+                <th>Vue.js</th>
+                <td>14.68% (692)</td>
+                <td>66.55% (3,138)</td>
+                <td>13.11% (618)</td>
+                <td>5.66% (267)</td>
+            </tr>
+            <tr>
+                <th>MeteorJS</th>
+                <td>9.59% (452)</td>
+                <td>75.91% (3,579)</td>
+                <td>11.69% (551)</td>
+                <td>2.82% (133)</td>
+            </tr>
+            <tr>
+                <th>Knockout</th>
+                <td>16.14% (761)</td>
+                <td>66.62% (3,141)</td>
+                <td>11.33% (534)</td>
+                <td>5.92% (279)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="img img-short">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q12-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q12-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q12.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q12.jpg" width="720" height="500" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Bar Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>As was the case last year, jQuery is still the library or framework with the highest percentage of respondents – <strong>86.87%</strong> (4,096) – who said that they felt comfortable using it.  In fact over 99% of respondents said that they had used it at least a little, which is pretty remarkable for any tool.</p>
+<p>Both Underscore (37.24%) and Lodash (37.67%) also had a sizeable number of respondents who said they felt comfortable using them.</p>
+<p>When looking at the big hitting JS frameworks, the growth in knowledge of React is the most noticeable change from last year.  It has not only caught up with Angular 1 (the leading MV* framework last year), but it has managed to even slightly surpass it, with 28.91% (1,363) of developers saying that they feel comfortable using it compared with 28.70% (1,353) of those that said the same about Angular 1.</p>
+<p>It’s also interesting to see that Angular 2 uptake has been pretty slow so far, with 20.19% of respondents saying that they had used it a little but just 5.32% saying that they felt comfortable using it.  I would suspect this number will grow over time, but it will be interesting to see by how much and if it reaches the level that Angular 1 has currently.</p>
+<p>Looking at knowledge levels across the MV* frameworks – so everything in the list except jQuery, Underscore and Lodash – 62.23% of respondents said that they felt comfortable using at least one of these frameworks.  That’s up just over 12% (from 50.2%) who said the same in last years survey.</p>
+<p>As I noted last year, knowledge of at least one framework has become an important skill for many front-end developers.</p>
+<hr>
+<p><a name="js-framework-usage"></a></p>
+<h2 id="q13-which-javascript-libraries-and-or-frameworks-do-you-currently-use-most-frequently-on-projects-">Q13 – Which JavaScript libraries and/or frameworks do you currently use most frequently on projects?</h2>
+<p>The next question referred to actual usage of the libraries and frameworks listed in the previous question.</p>
+<p>The question was, <strong>Which JavaScript libraries and/or frameworks do you currently use most frequently on projects?</strong> with respondents invited to select all that applied.</p>
+<p>Here are the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>jQuery</th>
+            <td>3284</td>
+            <td>69.65%</td>
+        </tr>
+        <tr>
+            <th>Underscore</th>
+            <td>714</td>
+            <td>15.14%</td>
+        </tr>
+        <tr>
+            <th>Lodash</th>
+            <td>1527</td>
+            <td>32.39%</td>
+        </tr>
+        <tr>
+            <th>Backbone</th>
+            <td>301</td>
+            <td>6.38%</td>
+        </tr>
+        <tr>
+            <th>Angular 1</th>
+            <td>1180</td>
+            <td>25.03%</td>
+        </tr>
+        <tr>
+            <th>Angular 2</th>
+            <td>387</td>
+            <td>8.21%</td>
+        </tr>
+        <tr>
+            <th>Ember</th>
+            <td>280</td>
+            <td>5.94%</td>
+        </tr>
+        <tr>
+            <th>React</th>
+            <td>1776</td>
+            <td>37.67%</td>
+        </tr>
+        <tr>
+            <th>Polymer</th>
+            <td>87</td>
+            <td>1.85%</td>
+        </tr>
+        <tr>
+            <th>Aurelia</th>
+            <td>154</td>
+            <td>3.27%</td>
+        </tr>
+        <tr>
+            <th>Vue.js</th>
+            <td>456</td>
+            <td>9.67%</td>
+        </tr>
+        <tr>
+            <th>MeteorJS</th>
+            <td>115</td>
+            <td>2.44%</td>
+        </tr>
+        <tr>
+            <th>Knockout</th>
+            <td>156</td>
+            <td>3.31%</td>
+        </tr>
+        <tr>
+            <th>I don’t use any of these approaches or tools</th>
+            <td>132</td>
+            <td>2.80%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-extraTall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript libraries and/or frameworks do you currently use most frequently on projects? – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q13-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q13-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q13.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q13.jpg" width="720" height="500" alt="Which JavaScript libraries and/or frameworks do you currently use most frequently on projects? – Bar Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>jQuery usage was again very strong, with over two thirds (69.65%) of respondents saying that they used it frequently on their projects.</p>
+<p>Arguably more interesting is that 37.67% (1,776) of respondents said that they frequently use React, even though this is almost 10% more than the number who said that they felt comfortable using it when answering question 12.  It can therefore be concluded that a decent number of those who said that they have used it just a little are also using it frequently on their projects.</p>
+<p>In keeping with the results from question 12, Angular 1 was said to be used frequently by 25.03% (1,180) of respondents, while Angular 2 is currently well below that figure with 8.21% (387) usage.</p>
+<p>Although knowledge levels were similar between Lodash and Underscore in the results of question 12, Lodash received more than double the number of respondents who said that they still use it frequently on their projects – 32.39% (1,527) compared with just 15.14% (714) for Underscore.</p>
+<p>Also, a notable mention to Vue.js, which has been getting mentioned a lot recently, with 9.67% of respondents saying that they use frequently on their projects.</p>
+<div class="promotion separator-both">
+    <h2 class="promotion-header text-bg">Recommended Resource</h2>
+    <div class="promotion-content">
+        <a href="https://ReactForBeginners.com/friend/NOLAN">
+            <img class="promotion-img promotion-img--react" src="/assets/img/resources/react-for-beginners.jpg" />
+            <h3 class="promotion-title">React For Beginners</h2>
+            <p class="promotion-text">Upgrade your JavaScript skills – Learn React in just a couple of afternoons with this course by Web Bos.</p>
+        </a>
+    </div>
+</div>
+
+
+<p><a name="js-framework-essential"></a></p>
+<h2 id="q14-which-javascript-library-or-framework-would-you-regard-as-essential-to-you-on-the-majority-of-your-projects-">Q14 – Which JavaScript library or framework would you regard as essential to you on the majority of your projects?</h2>
+<p>Question 14 looked at what JavaScript library or framework respondents considered to be their most essential tool, with the question being <strong>Which JavaScript library or framework would you regard as essential to you on the majority of your projects?</strong></p>
+<p>Let’s take a look at the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>None of them are essential – I feel comfortable using native JavaScript on my projects</th>
+            <td>985</td>
+            <td>20.89%</td>
+        </tr>
+        <tr>
+            <th>jQuery</th>
+            <td>1468</td>
+            <td>31.13%</td>
+        </tr>
+        <tr>
+            <th>Underscore</th>
+            <td>38</td>
+            <td>0.81%</td>
+        </tr>
+        <tr>
+            <th>Lodash</th>
+            <td>262</td>
+            <td>5.56%</td>
+        </tr>
+        <tr>
+            <th>Backbone</th>
+            <td>38</td>
+            <td>0.81%</td>
+        </tr>
+        <tr>
+            <th>Angular 1</th>
+            <td>386</td>
+            <td>8.19%</td>
+        </tr>
+        <tr>
+            <th>Angular 2</th>
+            <td>129</td>
+            <td>2.74%</td>
+        </tr>
+        <tr>
+            <th>Ember</th>
+            <td>178</td>
+            <td>3.78%</td>
+        </tr>
+        <tr>
+            <th>React</th>
+            <td>857</td>
+            <td>18.18%</td>
+        </tr>
+        <tr>
+            <th>Polymer</th>
+            <td>16</td>
+            <td>0.34%</td>
+        </tr>
+        <tr>
+            <th>Aurelia</th>
+            <td>113</td>
+            <td>2.40%</td>
+        </tr>
+        <tr>
+            <th>Vue.js</th>
+            <td>148</td>
+            <td>3.14%</td>
+        </tr>
+        <tr>
+            <th>MeteorJS</th>
+            <td>8</td>
+            <td>0.17%</td>
+        </tr>
+        <tr>
+            <th>Knockout</th>
+            <td>17</td>
+            <td>0.36%</td>
+        </tr>
+        <tr>
+            <th>Other (please specify)</th>
+            <td>72</td>
+            <td>1.53%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-extraTall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript library or framework would you regard as essential to you on the majority of your projects? – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q14-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q14-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q14.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q14.jpg" width="720" height="500" alt="Which JavaScript library or framework would you regard as essential to you on the majority of your projects? – Bar Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>The tools that the most respondents said was essential to them was jQuery with 31.13% (1,468 responses), followed by React which received 18.18% (857) of the vote.</p>
+<p>20.89% (985) of respondents said that they did not think that any library or tool was essential – most likely due to the rise in knowledge of ES6 (also known as ES2015).</p>
+<p>These were the only answers that received more than a 10% share of the vote, with Angular 1 the next biggest choice with 8.19% (386) of responses.</p>
+<p>Perhaps most interesting is that even among those who rated themselves at having Intermediate level JS knowledge or higher, jQuery is still the most popular choice with 25.98% of responses in this category, compared with 20.06% for the next closest tool which is React.</p>
+<p>It’s clear that jQuery is still playing an important part in many front-end developers’ toolsets.</p>
+<hr>
+<p><a name="js-bundlers"></a></p>
+<h2 id="q15-javascript-module-bundlers">Q15 – JavaScript Module Bundlers</h2>
+<p>Looking at the results of last years survey, JavaScript module bundlers were still a tool used by a minority of front-end developers, with just 46.1% of respondents saying that they used one in their own workflow.</p>
+<p>Will this have changed just over 12 months on?  The question asked was <strong>Do you use a JavaScript module bundler in your workflow?</strong></p>
+<p>Let’s take a look at the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Module Bundler</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+            <th>% Diff (to 2015)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>I don’t use a module bundler</th>
+            <td>1516</td>
+            <td>32.15%</td>
+            <td>-21.75%</td>
+        </tr>
+        <tr>
+            <th>RequireJS</th>
+            <td>359</td>
+            <td>7.61%</td>
+            <td>-5.85%</td>
+        </tr>
+        <tr>
+            <th>Browserify</th>
+            <td>510</td>
+            <td>10.82%</td>
+            <td>-5.65%</td>
+        </tr>
+        <tr>
+            <th>Webpack</th>
+            <td>1962</td>
+            <td>41.61%</td>
+            <td>+31.11%</td>
+        </tr>
+        <tr>
+            <th>Rollup</th>
+            <td>79</td>
+            <td>1.68%</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <th>JSPM</th>
+            <td>108</td>
+            <td>2.29%</td>
+            <td>+0.07%</td>
+        </tr>
+        <tr>
+            <th>Other (please specify)</th>
+            <td>181</td>
+            <td>3.84%</td>
+            <td>+0.39%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-extraTall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q15-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q15-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q15.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q15.jpg" width="720" height="500" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>In a massive shift from last year, 41.61% (1,962) of respondents are now using Webpack to handle their module bundling in JavaScript, making it the clear leader in this category.</p>
+<p>The percentage of those now using any kind of module bundler has increased to 67.85% (3,199 responses), an increase of over 20% when compared to last years figures.</p>
+<p>In terms of other module bundling tools, both Browserify and RequireJS have both seen a 5% drop in usage, with 10.82% and 7.61% of respondents saying that they use these respective tools.</p>
+<p>Overall, it’s great to see so many developers embracing module bundlers.  Webpack has obviously struck a real chord with developers and is now considered the go-to tool when it comes to handling JavaScript module dependencies.</p>
+<hr>
+<p><a name="js-transpilers"></a></p>
+<h2 id="q16-javascript-transpilers">Q16 – JavaScript Transpilers</h2>
+<p>The next question in the survey is a subject that has been talked about a lot over the last 12-18 months.</p>
+<p>The use of a JS transpiler, such as Babel, enables developers to transpile their JavaScript from ES6 (ES2015) back to ES5 so that they can use the latest JS features while still providing support for older browsers.</p>
+<p>The question I asked was <strong>Are you using a tool to transpile your JavaScript from ES6 to ES5? (i.e. Babel)</strong></p>
+<p>Here are the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Answer</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Yes</th>
+            <td>2,942</td>
+            <td>62.40%</td>
+        </tr>
+        <tr>
+            <th>No – I’ve heard of these tools, but haven’t used one</th>
+            <td>1,443</td>
+            <td>30.60%</td>
+        </tr>
+        <tr>
+            <th>No – I’ve never heard of a JavaScript transpiler</th>
+            <td>330</td>
+            <td>7.00%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-tall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Are you using a tool to transpile your JavaScript from ES6 to ES5? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q16-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q16-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q16.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q16.jpg" width="720" height="500" alt="Are you using a tool to transpile your JavaScript from ES6 to ES5? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>The majority – <strong>62.40%</strong> (2,942) – of respondents indicated that they are now using a JavaScript transpiler.   Considering the short period of time these tools have been around, this shows just how valuable developers see working with ES6 features today.</p>
+<p>Only 7% (330) of respondents had never heard of a JavaScript transpiler, again showing the remarkable reach that has been achieved in a relatively short space of time.</p>
+<p>Looking at these results, it’s straightforward to conclude that having knowledge of a transpilation tool, such as Babel, is becoming a required skill for the modern front-end developer.</p>
+<div class="promotion separator-both">
+    <h2 class="promotion-header text-bg">Recommended Resource</h2>
+    <div class="promotion-content">
+        <a href="https://ES6.io/friend/NOLAN">
+            <img class="promotion-img promotion-img--es6" src="/assets/img/resources/es6.jpg" />
+            <h3 class="promotion-title">ES6 For Everyone</h2>
+            <p class="promotion-text">A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer, by Wes Bos.</p>
+        </a>
+    </div>
+</div>
+
+<p><a name="js-linters"></a></p>
+<h2 id="q17-javascript-linting">Q17 – JavaScript Linting</h2>
+<p>JavaScript Linting, once a polarizing topic, is now firmly embedded in many developers workflows.  But just how many people use one and is there a clear leader among tools that front-end developers use?</p>
+<p>The question I asked was <strong>Which tool do you use to lint your JavaScript? (if any)</strong></p>
+<p>Here are the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Tool</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>I don’t use a JavaScript linter</th>
+            <td>1,076</td>
+            <td>22.82%</td>
+        </tr>
+        <tr>
+            <th>JSLint</th>
+            <td>894</td>
+            <td>18.96%</td>
+        </tr>
+        <tr>
+            <th>JSHint</th>
+            <td>657</td>
+            <td>13.93%</td>
+        </tr>
+        <tr>
+            <th>ESLint</th>
+            <td>1,927</td>
+            <td>40.87%</td>
+        </tr>
+        <tr>
+            <th>xo</th>
+            <td>24</td>
+            <td>0.51%</td>
+        </tr>
+        <tr>
+            <th>Other (please specify)</th>
+            <td>137</td>
+            <td>2.91%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-tall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which tool do you use to lint your JavaScript? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q17-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q17-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q17.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q17.jpg" width="720" height="500" alt="Which tool do you use to lint your JavaScript? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>The majority of respondents – <strong>77.18%</strong> (3,639 people) – indicated that they do use a tool to lint their JavaScript.</p>
+<p>Comparing this to the results seen earlier in relation to CSS linting, there is an obvious gap between those who choose to lint their JavaScript and those who do the same with their CSS – a difference of 29.84% in fact, as just 47.34% of respondents indicated that they used a tool to lint their CSS.</p>
+<p>40.87% (1,927) of respondents said that ESLInt was the tool they used, making it the most popular linting tool, followed by JSLint with 18.96% (894) and JSHint with 13.93% (657).</p>
+<p>It’s great to see that linting is now considered the norm when developing JavaScript, especially considering the benefits it brings to code quality and consistency.</p>
+<hr>
+<p><a name="js-testing"></a></p>
+<h2 id="q18-javascript-testing">Q18 – JavaScript Testing</h2>
+<p>The next subject provided some of the most interesting results in last years survey.</p>
+<p>Last year the majority of respondents – 59.66% – said that they weren’t using a tool to help test their JavaScript.  Are more developers using JS testing tools a year on?</p>
+<p>The question I asked was <strong>Which tool do you use to test your JavaScript? (if any)</strong></p>
+<p>Let’s take a look at the results:</p>
+<table class="table table--bordered">
+    <thead>
+        <tr>
+            <th>Tool</th>
+            <th>Number of Votes</th>
+            <th>Percentage</th>
+            <th>% Diff (to 2015)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>I don’t use a tool to test my JS</th>
+            <td>2,241</td>
+            <td>47.53%</td>
+            <td>-12.13%</td>
+        </tr>
+        <tr>
+            <th>Jasmine</th>
+            <td>802</td>
+            <td>17.01%</td>
+            <td>+0.64</td>
+        </tr>
+        <tr>
+            <th>Mocha</th>
+            <td>1,061</td>
+            <td>22.50%</td>
+            <td>+7.46%</td>
+        </tr>
+        <tr>
+            <th>Tape</th>
+            <td>69</td>
+            <td>1.46%</td>
+            <td>-0.02%</td>
+        </tr>
+        <tr>
+            <th>Ava</th>
+            <td>84</td>
+            <td>1.78%</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <th>QUnit</th>
+            <td>199</td>
+            <td>4.22%</td>
+            <td>+0.37%</td>
+        </tr>
+        <tr>
+            <th>Jest</th>
+            <td>164</td>
+            <td>3.48%</td>
+            <td>+2.69%</td>
+        </tr>
+        <tr>
+            <th>Other (please specify)</th>
+            <td>95</td>
+            <td>2.01%</td>
+            <td>+0.33%</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="img img-tall">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which tool do you use to test your JavaScript? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q18-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q18-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q18.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q18.jpg" width="720" height="500" alt="Which tool do you use to test your JavaScript? – Pie Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>Looking at the results, the figures show some changes since last years survey.</p>
+<p>The split between those who test and those who don’t is now pretty even, with 47.53% (2,241) of respondents saying that they don’t use a tool to help with their JavaScript testing.  This figure is down 12.13% from last year.</p>
+<p>This means that the majority of respondents – <strong>52.47%</strong> (2,474) – are using a tool to test their JavaScript.  This indicates that more front-end developers are seeing the benefits of learning and using a tool to test their JavaScript, which – I personally think – is great news.</p>
+<p>Of those testing their JS, the most popular tools were Jasmine, with 17.01% of the responses, and Mocha, with 22.50%.  Mocha has seen the biggest gains, with a usage rise of 7.46% on last years figures, making it the most popular testing tool.</p>
+<p>Jest also saw a 2.69% rise in usage, with 3.48% (164) of respondents saying that they now use it as their primary JS testing tool.</p>
+<p>All in all, I think this shows a positive step from last years figures on JavaScript testing, but there is clearly more work to be done to reduce the gap in knowledge of testing tools among front-end developers.</p>
+<hr>
+<p><a name="js-misc"></a></p>
+<h2 id="q19-miscellaneous-tools">Q19 – Miscellaneous Tools</h2>
+<p>The final question of the survey was to find out more information on tools that don’t quite fit into the questions that have been asked so far.</p>
+<p>The list this year consisted of package management tools – Bower, NPM and Yarn – as well as Babel, a popular JS transpilation tool, Yeoman and TypeScript.</p>
+<p>Respondents were asked to <strong>Please indicate your experience with the following front-end tools</strong>.</p>
+<p>Here is how people responded:</p>
+<div class="table-wrapper">
+    <table class="table table--bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Never Heard of</th>
+                <th>Heard of/Read About</th>
+                <th>Used a little</th>
+                <th>Feel Comfortable Using</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Bower</th>
+                <td>2.52% (119)</td>
+                <td>21.34% (1,006)</td>
+                <td>33.96% (1,601)</td>
+                <td>42.18% (1,989)</td>
+            </tr>
+            <tr>
+                <th>NPM</th>
+                <td>1.76% (83)</td>
+                <td>4.01% (189)</td>
+                <td>14.15% (667)</td>
+                <td>80.08% (3,776)</td>
+            </tr>
+            <tr>
+                <th>Yarn</th>
+                <td>21.40% (1,009)</td>
+                <td>50.56% (2,384)</td>
+                <td>14.32% (675)</td>
+                <td>13.72% (647,409)</td>
+            </tr>
+            <tr>
+                <th>Babel</th>
+                <td>7.15% (337)</td>
+                <td>29.20% (1,377)</td>
+                <td>24.16% (1,139,387)</td>
+                <td>39.49% (1,862)</td>
+            </tr>
+            <tr>
+                <th>Yeoman</th>
+                <td>11.56% (545)</td>
+                <td>41.53% (1,958)</td>
+                <td>33.47% (1,578,387)</td>
+                <td>13.45% (634)</td>
+            </tr>
+            <tr>
+                <th>TypeScript</th>
+                <td>6.68% (315)</td>
+                <td>60.87% (2,870)</td>
+                <td>19.53% (921,387)</td>
+                <td>12.92% (609)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="img">
+    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following front-end tools – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2016/q19-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2016/q19-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2016/q19.jpg">
+        <noscript>
+            <img src="/assets/img/blog/tooling-survey/2016/q19.jpg" width="720" height="500" alt="Please indicate your experience with the following front-end tools – Bar Chart showing the results" />
+        </noscript>
+    </div>
+</div>
+
+<p>The most well-known tools in this list were NPM, with a huge 80.08% of respondents saying that they feel comfortable using it, Bower with 42.18% and Babel with 39.49%.</p>
+<p>It’s interesting to see that although Yarn has only been around a few months, 78.6% of respondents had at least heard of it or used it in some way.</p>
+<p>The number of respondents who felt comfortable using Yeoman, TypeScript and Yarn was fairly low, with these tools receiving between 12-14% in that category.</p>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>So that’s it – you made it through!  But what conclusions can we make from the survey overall?</p>
+<p>As with last years results, the adoption rate of front-end tools shows no signs of letting up, with tools such as Webpack and JavaScript transpilers becoming ever more essential in our workflows.</p>
+<p>Although there has been a lot of talk about front-end developers moving away from using jQuery, the results show that usage and knowledge levels are still unrivalled in comparison with any other JavaScript tool of it’s kind.</p>
+<p>The great news is that more people seem to be using a JavaScript testing tool than not, showing that more front-end developers are embracing the value that these tools provide.</p>
+<p>Looking specifically at CSS, the adoption of methodologies, linting and naming schemes seems to be a bit slower.  This is most noticeable when comparing the number of respondents linting their CSS compared to those doing the same with their JavaScript.</p>
+<p>Whether this is down to developers seeing less value in investing their time in learning these tools is unclear.  I’d encourage anyone reading this to put the time into learning some of the more popular CSS methodologies and tools such as SMACSS, OOCSS, CSS Modules and BEM.  They really do help broaden your knowledge of CSS in terms of learning ways to structure and maintain your CSS, so that you can then choose the approach that best works for you.</p>
+<p>If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, <a href="https://twitter.com/AshNolan_">message me on Twitter</a> and I’ll do my best to help!</p>
+
+
+
+
+
+
+			<p class="post-info separator-top">Article posted on the 29th November 2016</p>
+
+
+
+			<div id="disqus_thread" class="comments separator-top"></div>
+
+		</section>
+
+		<footer class="page-footer border-grey-white-top">
+			<!-- Social links -->
+			<nav class="links-social">
+				<ul>
+					<li class="links-social-item links-social-email"><a href="mailto:hello@ashleynolan.co.uk" title="Email Me" rel="external" target="_blank"><span class="links-social-icon icon-email-shaded"></span><span class="screen-reader-text">Email</span></a></li>
+					<li class="links-social-item links-social-twitter"><a href="http://twitter.com/AshNolan_" title="Find me on Twitter" rel="external" target="_blank"><span class="links-social-icon icon-twitter"></span><span class="screen-reader-text">Twitter</span></a></li>
+					<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" title="My LinkedIn Profile" rel="external" target="_blank"><span class="links-social-icon icon-linkedin"></span><span class="screen-reader-text">LinkedIn</span></a></li>
+				</ul>
+			</nav>
+		
+			 <div class="footer-content">
+				 <p>I'm Ashley Nolan, a Senior UI Engineer at JUST EAT.  Do take a look around, or contact me in any of the usual ways – it'd be great to hear from you.</p>
+			</div>
+		</footer>
+	</div>
+
+<script type="text/javascript">
+var disqus_config = function () {
+    this.page.url = 'https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016-results';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'The State of Front-End Tooling – 2016'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//ashleynolan.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-20668207-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>

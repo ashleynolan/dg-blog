@@ -1,6 +1,6 @@
 /* used to get rid of _blank so your code validates w3c stylee */
 function setExternalLinks() {
-	var $postLinks = $('.post a');
+	var $postLinks = $('.post a').not('.no-external a');
 	$postLinks.attr('rel', 'external');
 
   var el_list = document.getElementsByTagName('A');

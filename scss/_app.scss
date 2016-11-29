@@ -156,6 +156,35 @@ img.logo-dg {
 		width: 140%;
 		margin: 0 0 $verticalRhythm+px -20%;
 		text-align: center;
+		min-height: 380px;
+	}
+}
+
+.post .img-tall {
+	min-height: 220px;
+
+	@include respond-min(900) {
+		min-height: 500px;
+	}
+}
+
+.post .img-extraTall {
+	min-height: 220px;
+
+	@include respond-min(900) {
+		min-height: 580px;
+	}
+}
+
+.post .img-mid {
+	@include respond-min(900) {
+		min-height: 420px;
+	}
+}
+
+.post .img-short {
+	@include respond-min(900) {
+		min-height: 280px;
 	}
 }
 
