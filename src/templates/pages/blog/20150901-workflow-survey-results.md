@@ -7,7 +7,7 @@ description: "I asked front-end developers to fill in a survey about their their
 
 date: September 08, 2015
 posted: 2015-09-08T10:00
-updated: 2015-10-12T12:00
+updated: 2016-11-30T17:45
 
 post:
 - post
@@ -21,6 +21,12 @@ categories:
 ---
 
 {{#markdown}}
+
+---
+
+**Update 30/11/2016**
+
+If you’re interested in finding out more details about current Front-End Tooling trends, [I’ve now published the results from the 2016 Edition of this Survey](/blog/frontend-tooling-survey-2016-results).
 
 ---
 
@@ -321,7 +327,7 @@ Looking at knowledge levels across the MV* frameworks – so everything in the l
 
 One addition I would like to make if I ever run this survey again would be to see how many devs had started using ES2015 features – I’m sure this will be an area of huge growth and it will be interesting to see how the amount of knowledge in this area increases over time.
 
----
+{{> promos promo='react' }}
 
 ## Q5 – Which JavaScript library or framework do you use on the majority of your projects?
 
@@ -405,7 +411,9 @@ jQuery was the most used library or framework by quite some distance, with 56.47
 
 It’s interesting to see that most of the respondents still use jQuery on the majority of their projects – I would expect this number to decrease over time as people’s knowledge of ES2015 increases and move back towards using native JavaScript and smaller micro libraries.  Of course, there’s always the possibility that jQuery continues to adapt to the changing landscape and is therefore still used by developers.
 
----
+
+{{> promos promo='es6' }}
+
 
 ## Q6 – JavaScript Module Bundlers
 
