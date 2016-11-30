@@ -743,9 +743,9 @@ It’s also a little surprising, due to the relative newness of the approach, to
 
 For me, the relatively low usage levels – and knowledge levels shown from question 8 – across CSS methodologies indicates two things.  The diversity of ways that people are writing their CSS is very broad – there isn’t any one method that developers seem drawn to when it comes to writing their CSS.
 
-Secondly – and perhaps slightly worryingly – a high number of front-end developers consider themselves to have an advanced knowledge of CSS when they don’t feel comfortable using some of the most well known CSS methodologies.
+Secondly, from the responses a high number of front-end developers consider themselves to have an advanced knowledge of CSS when they don’t have knowledge of some of the most well known CSS methodologies.  Learning different approaches to writing CSS (such as SMACSS, OOCSS and ITCSS) helps give a better perspective to how you structure your own styles – irrespective of whether you choose to use them or not in your own workflow.
 
-This seems slightly contradictory and points to an issue I’ve seen fairly often.  CSS may be a simple language on the surface, but it can be a complex one to master and fully understand.
+CSS may be a simple language on the surface, but it can be a complex one to master and fully understand.
 
 
 ---
