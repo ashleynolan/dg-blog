@@ -265,7 +265,7 @@ module.exports = function (grunt) {
 				assets: '<%= site.destination %>/assets',
 				helpers: ['helper-moment', 'handlebars-helper-eachitems', 'handlebars-helper-paginate', 'src/helpers/helper-*.js'],
 
-				plugins: ['assemble-contrib-permalinks', 'assemble-middleware-rss'],
+				plugins: ['grunt-assemble-permalinks', 'assemble-middleware-rss'],
 
 				partials: ['src/templates/includes/**/*.hbs'],
 				flatten: false,
@@ -374,7 +374,7 @@ module.exports = function (grunt) {
 	 * run jshint, uglify and sass:dev
 	 */
 	// Default task
-	grunt.registerTask('default', [/**'readme', 'jshint',**/'clean', 'uglify', 'sass:dev', 'newer:assemble', 'copy:dist']);
+	grunt.registerTask('default', [/**'readme', 'jshint',**/'clean', 'sass:dev', 'newer:assemble', 'copy:dist']);
 
 
 	grunt.registerTask('serve', function (target) {
@@ -389,7 +389,7 @@ module.exports = function (grunt) {
 
 	/**
 	 * A task for your production environment
-	 * run jshint, uglify and sass:production
+	 * run jshint and sass:production
 	 */
 	grunt.registerTask('deploy', ['clean', 'sass:production', 'csso',  'assemble', 'copy:dist']);
 
@@ -400,7 +400,7 @@ module.exports = function (grunt) {
 
 	/**
 	 * A task for development
-	 * run jshint, uglify and sass:dev
+	 * run jshint  and sass:dev
 	 */
 	grunt.registerTask('dev', ['jshint', 'uglify', 'sass:dev']);
 

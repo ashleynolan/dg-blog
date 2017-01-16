@@ -23,9 +23,9 @@
     "grunt-contrib-clean": "~0.5.0"
   },
   "devDependencies": {
-    "assemble-contrib-permalinks": "~0.3.2",
+    "grunt-assemble-permalinks": "~0.1.1",
     "assemble-middleware-rss": "^0.2.5",
-    "grunt": "0.4.x",
+    "grunt": "0.4.1",
     "grunt-assemble": "^0.5.0",
     "grunt-autoprefixer": "~0.3.0",
     "grunt-connect-rewrite": "~0.2.0",
