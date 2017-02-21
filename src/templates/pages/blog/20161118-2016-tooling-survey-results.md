@@ -771,27 +771,27 @@ These were the results:
 	<tbody>
 		<tr>
 			<th>Beginner</th>
-			<td>78</td>
+			<td>197</td>
 			<td>4.18%</td>
 		</tr>
 		<tr>
 			<th>Novice (between Beginner and Intermediate)</th>
-			<td>424</td>
+			<td>553</td>
 			<td>11.73%</td>
 		</tr>
 		<tr>
 			<th>Intermediate</th>
-			<td>1,243</td>
+			<td>1555</td>
 			<td>32.98%</td>
 		</tr>
 		<tr>
 			<th>Advanced (between Intermediate and Expert)</th>
-			<td>2,203</td>
+			<td>1684</td>
 			<td>35.72%</td>
 		</tr>
 		<tr>
 			<th>Expert</th>
-			<td>767</td>
+			<td>726</td>
 			<td>15.40%</td>
 		</tr>
 	</tbody>
