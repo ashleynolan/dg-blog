@@ -7,6 +7,7 @@ description: "The results of the 2016 Front-End Tooling Survey are out! Check ou
 
 date: November 29, 2016
 posted: 2016-11-29T14:00
+updated: 2018-01-22T11:00
 
 post:
 - post
@@ -20,6 +21,12 @@ categories:
 ---
 
 {{#markdown}}
+
+---
+
+** Update 06/01/2017 **
+
+Since publishing the initial results, I have now closed the survey after receiving 5254 responses and have now updated the article and results data to reflect this.
 
 ---
 
@@ -116,33 +123,33 @@ Here are the results:
 	<tbody>
 		<tr>
 			<th>0-1 Year</th>
-			<td>232</td>
-			<td>4.92%</td>
+			<td>267</td>
+			<td>5.08%</td>
 		</tr>
 		<tr>
 			<th>1-2 Years</th>
-			<td>589</td>
-			<td>12.49%</td>
+			<td>670</td>
+			<td>12.75%</td>
 		</tr>
 		<tr>
 			<th>2-5 Years</th>
-			<td>1,508</td>
-			<td>31.98%</td>
+			<td>1,690</td>
+			<td>32.17%</td>
 		</tr>
 		<tr>
 			<th>5-10 Years</th>
-			<td>1,323</td>
-			<td>28.06%</td>
+			<td>1,452</td>
+			<td>27.64%</td>
 		</tr>
 		<tr>
 			<th>10-15 Years</th>
-			<td>673</td>
-			<td>14.27%</td>
+			<td>744</td>
+			<td>14.16%</td>
 		</tr>
 		<tr>
 			<th>Over 15 Years</th>
-			<td>390</td>
-			<td>8.27%</td>
+			<td>431</td>
+			<td>8.20%</td>
 		</tr>
 	</tbody>
 </table>
@@ -155,9 +162,9 @@ Here are the results:
 	</div>
 </div>
 
-The majority of respondents said that they have been working with front-end technologies for either 2-5 years or 5-10 years, which together accounted for 60.04% (2,831) of responses.
+The majority of respondents said that they have been working with front-end technologies for either 2-5 years or 5-10 years, which together accounted for 59.80% (3,142) of responses.
 
-Interestingly, there is a very even split between those who have been working with front-end for up to 5 years (49.39%) when compared to those with over 5 years experience (50.6%).  Positively, this implies that the results of the survey come from a fairly even distribution of experience levels.
+Interestingly, there is an even split between those who have been working with front-end for up to 5 years (50%) when compared to those with over 5 years experience (50%).  Positively, this implies that the results of the survey come from a fairly even distribution of experience levels.
 
 ---
 
@@ -184,28 +191,28 @@ Here’s what the responses looked like:
 	<tbody>
 		<tr>
 			<th>Beginner</th>
-			<td>78</td>
-			<td>1.65%</td>
+			<td>83</td>
+			<td>1.58%</td>
 		</tr>
 		<tr>
 			<th>Novice (between Beginner and Intermediate)</th>
-			<td>424</td>
-			<td>8.99%</td>
+			<td>483</td>
+			<td>9.19%</td>
 		</tr>
 		<tr>
 			<th>Intermediate</th>
-			<td>1,243</td>
-			<td>26.36%</td>
+			<td>1,428</td>
+			<td>27.18%</td>
 		</tr>
 		<tr>
 			<th>Advanced (between Intermediate and Expert)</th>
-			<td>2,203</td>
-			<td>46.72%</td>
+			<td>2,420</td>
+			<td>46.06%</td>
 		</tr>
 		<tr>
 			<th>Expert</th>
-			<td>767</td>
-			<td>16.27%</td>
+			<td>840</td>
+			<td>15.99%</td>
 		</tr>
 	</tbody>
 </table>
@@ -218,7 +225,7 @@ Here’s what the responses looked like:
 	</div>
 </div>
 
-Looking at the results, **89.36%** (4,213) of respondents rated themselves as having an intermediate level of CSS knowledge or higher, with most – 46.72% (2,203) – saying that they are at an advanced level.  Just 16.27% (767) of respondents rated themselves as having expert knowledge.
+Looking at the results, **89.23%** (4,688) of respondents rated themselves as having an intermediate level of CSS knowledge or higher, with most – 46.06% (2,420) – saying that they are at an advanced level.  Just 15.99% (840) of respondents rated themselves as having expert knowledge.
 
 When digging a little deeper into these results and filtering based on the answers given to question 1, of those who have up to 12 months experience working with front-end technologies 10% rated themselves as having advanced knowledge of CSS or higher (although no-one in this subcategory rated themselves as an expert).  That percentage rose to 22% for respondents with up to 2 years experience.
 
@@ -250,45 +257,45 @@ The results below also show the percentage difference between this years and las
 	<tbody>
 		<tr>
 			<th>Sass</th>
-			<td>2,989</td>
-			<td>63.39%</td>
-			<td>-0.56%</td>
+			<td>3,336</td>
+			<td>63.49%</td>
+			<td>-0.46%</td>
 		</tr>
 		<tr>
 			<th>Less</th>
-			<td>478</td>
-			<td>10.14%</td>
-			<td>-5.05%</td>
+			<td>537</td>
+			<td>10.22%</td>
+			<td>-4.97%</td>
 		</tr>
 		<tr>
 			<th>Stylus</th>
-			<td>137</td>
-			<td>2.91%</td>
-			<td>-0.84%</td>
+			<td>160</td>
+			<td>3.05%</td>
+			<td>-0.70%</td>
 		</tr>
 		<tr>
 			<th>PostCSS</th>
-			<td>392</td>
-			<td>8.31%</td>
+			<td>414</td>
+			<td>7.88%</td>
 			<td>N/A</td>
 		</tr>
 		<tr>
 			<th>Rework</th>
-			<td>3</td>
-			<td>0.06%</td>
+			<td>4</td>
+			<td>0.08%</td>
 			<td>N/A</td>
 		</tr>
 		<tr>
 			<th>No Preprocessor</th>
-			<td>643</td>
-			<td>13.64%</td>
-			<td>-1.4%</td>
+			<td>727</td>
+			<td>13.84%</td>
+			<td>-1.2%</td>
 		</tr>
 		<tr>
 			<th>Other</th>
-			<td>73</td>
-			<td>1.55%</td>
-			<td>-0.52%</td>
+			<td>76</td>
+			<td>1.45%</td>
+			<td>-0.62%</td>
 		</tr>
 	</tbody>
 </table>
@@ -301,11 +308,11 @@ The results below also show the percentage difference between this years and las
 	</div>
 </div>
 
-Looking at the results, Sass is still the CSS processing tool of choice for the majority of respondents with **63.39%**.  When compared to last years results, Less usage has dropped slightly to 10.14% (down 5.05%).
+Looking at the results, Sass is still the CSS processing tool of choice for the majority of respondents with **63.49%**.  When compared to last years results, Less usage has dropped slightly to 10.2% (down 4.97%).
 
-PostCSS showed good growth with 8.31% of respondents saying that they used it exclusively.  It’s usage is likely to be slightly higher in reality as this doesn’t account for those respondents who use it in combination with another processing tool.
+PostCSS showed good growth with 7.86% of respondents saying that they used it exclusively.  It’s usage is likely to be slightly higher in reality as this doesn’t account for those respondents who use it in combination with another processing tool.
 
-Interestingly, the percentage of respondents not using any CSS processing tool has dropped to 13.64%, down from 15.04% in 2015. This re-enforces how CSS processing is now a key skill in modern front-end development and one that the majority (86.36%) of front-end developers currently use in their own workflows.
+Interestingly, the percentage of respondents not using any CSS processing tool has dropped to 13.80%, down from 15.04% in 2015. This re-enforces how CSS processing is now a key skill in modern front-end development and one that the majority (86.2%) of front-end developers currently use in their own workflows.
 
 ---
 
@@ -331,38 +338,38 @@ Here is how people responded when asked – **Please indicate your experience wi
 		<tbody>
 			<tr>
 				<th>Sass – Standard or SCSS syntax</th>
-				<td>0.57% (27)</td>
-				<td>11.11% (524)</td>
-				<td>17.16% (809)</td>
-				<td>71.16% (3,355)</td>
+				<td>0.59% (31)</td>
+				<td>11.32% (595)</td>
+				<td>17.40% (914)</td>
+				<td>70.69% (3,714)</td>
 			</tr>
 			<tr>
 				<th>Less</th>
-				<td>0.81% (38)</td>
-				<td>30.86% (1,455)</td>
-				<td>33.32% (1,571)</td>
-				<td>35.02% (1,651)</td>
+				<td>0.88% (46)</td>
+				<td>31.14% (1,636)</td>
+				<td>33.33% (1,751)</td>
+				<td>34.66% (1,821)</td>
 			</tr>
 			<tr>
 				<th>Stylus</th>
-				<td>24.22% (1,142)</td>
-				<td>57.26% (2,700)</td>
-				<td>11.11% (524)</td>
-				<td>7.40% (349)</td>
+				<td>24.88% (1,307)</td>
+				<td>56.79% (2,984)</td>
+				<td>10.87% (571)</td>
+				<td>7.46% (392)</td>
 			</tr>
 			<tr>
 				<th>PostCSS</th>
-				<td>21.76% (1,026)</td>
-				<td>45.37% (2,139)</td>
-				<td>18.73% (883)</td>
-				<td>14.15% (667)</td>
+				<td>22.44% (1,179)</td>
+				<td>45.83% (2,408)</td>
+				<td>18.29% (961)</td>
+				<td>13.44% (706)</td>
 			</tr>
 			<tr>
 				<th>Rework</th>
-				<td>78.43% (3,698)</td>
-				<td>20.17% (951)</td>
-				<td>0.91% (43)</td>
-				<td>0.49% (23)</td>
+				<td>78.97% (4,149)</td>
+				<td>19.60% (1,030)</td>
+				<td>0.91% (48)</td>
+				<td>0.51% (27)</td>
 			</tr>
 		</tbody>
 	</table>
@@ -376,9 +383,9 @@ Here is how people responded when asked – **Please indicate your experience wi
 	</div>
 </div>
 
-The tool with the highest knowledge levels was Sass by quite some distance, with **71.16%** of respondents saying that they felt comfortable using it.  In fact just 11.68% of people had never used it, with only 0.57% (27 people) having never heard of it at all.  When looking at this together with the results of question 3, Sass clearly dominates when it comes to both usage and knowledge levels across CSS processing tools.
+The tool with the highest knowledge levels was Sass by quite some distance, with **70.69%** of respondents saying that they felt comfortable using it.  In fact just 11.91% of people had never used it, with only 0.59% (31 people) having never heard of it at all.  When looking at this together with the results of question 3, Sass clearly dominates when it comes to both usage and knowledge levels across CSS processing tools.
 
-Looking at the other tools, 35.02% of respondents said that they felt comfortable using Less, followed by 14.15% that said the same with respect to PostCSS.  Interestingly, this number has almost doubled from the 7.15% of respondents who said that they felt comfortable using PostCSS in last years survey, showing an upwards trend in knowledge of the tool.
+Looking at the other tools, 34.66% of respondents said that they felt comfortable using Less, followed by 13.44% that said the same with respect to PostCSS.  Interestingly, this number has almost doubled from the 7.15% of respondents who said that they felt comfortable using PostCSS in last years survey, showing an upwards trend in knowledge of the tool.
 
 ---
 
@@ -401,18 +408,18 @@ The question asked was – **Do you use a naming scheme when writing CSS, such a
 	<tbody>
 		<tr>
 			<th>Yes</th>
-			<td>2,170</td>
-			<td>46.02%</td>
+			<td>2,384</td>
+			<td>45.37%</td>
 		</tr>
 		<tr>
 			<th>No – I’ve heard of CSS naming schemes but don’t use one</th>
-			<td>1,731</td>
-			<td>36.71%</td>
+			<td>1,937</td>
+			<td>36.87%</td>
 		</tr>
 		<tr>
 			<th>No – I’ve never heard of CSS naming schemes</th>
-			<td>814</td>
-			<td>17.26%</td>
+			<td>933</td>
+			<td>17.76%</td>
 		</tr>
 	</tbody>
 </table>
@@ -425,11 +432,11 @@ The question asked was – **Do you use a naming scheme when writing CSS, such a
 	</div>
 </div>
 
-The results show a fairly even split, although just less than half of respondents (46.02%) said that they do use a CSS naming scheme in comparison to those that said that they did not (53.98%).
+The results show a fairly even split, although just less than half of respondents (45.37%) said that they do use a CSS naming scheme in comparison to those that said that they did not (54.63%).
 
-It’s encouraging that overall 82.73% (3,901) of respondents had at least heard of CSS naming schemes, but 36.71% (1,731) had yet to use one.
+It’s encouraging that overall 82.24% (4,321) of respondents had at least heard of CSS naming schemes, but 36.87% (1,937) had yet to use one.
 
-As you might expect, when looking at the respondents who rated themselves as having an advanced level of CSS knowledge or higher, the usage of CSS naming schemes rose to 56.94%.  This is compared to a usage of just 27.47% among those who rated themselves as an intermediate or lower.
+As you might expect, when looking at the respondents who rated themselves as having an advanced level of CSS knowledge or higher, the usage of CSS naming schemes rose to 56.38%.  This is compared to a usage of just 27.38% among those who rated themselves as an intermediate or lower.
 
 CSS naming schemes are a tool that I think will continue to grow in usage, so it’ll be interesting to see how these figures change in the future.
 
@@ -456,13 +463,13 @@ The results were as follows:
 	<tbody>
 		<tr>
 			<th>Yes</th>
-			<td>2,232</td>
-			<td>47.34%</td>
+			<td>2,447</td>
+			<td>46.57%</td>
 		</tr>
 		<tr>
 			<th>No – I don’t lint my CSS</th>
-			<td>2,483</td>
-			<td>52.66%</td>
+			<td>2,807</td>
+			<td>53.43%</td>
 		</tr>
 	</tbody>
 </table>
@@ -475,9 +482,9 @@ The results were as follows:
 	</div>
 </div>
 
-Like the previous question, this was a pretty even split with 47.34% (2,232) of respondents saying that they do use a tool to lint their CSS, compared with 52.66% (2,483) of those that do not.
+Like the previous question, this was a pretty even split with 46.57% (2,447) of respondents saying that they do use a tool to lint their CSS, compared with 53.43% (2,807) of those that do not.
 
-Unsurprisingly, these numbers also rise as we look at those respondents with more advanced knowledge in CSS.  52.42% of respondents who rated themselves as having advanced or higher knowledge of CSS also said that they linted their CSS, compared to just 38.70% of those with beginner to intermediate knowledge.
+Unsurprisingly, these numbers also rise as we look at those respondents with more advanced knowledge in CSS.  52.06% of respondents who rated themselves as having advanced or higher knowledge of CSS also said that they linted their CSS, compared to just 37.61% of those with beginner to intermediate knowledge.
 
 CSS linting is still relatively new in terms of tooling and usage, especially when compared with the amount of time that JavaScript linting has been around. As better tools, such as Stylelint, continue to be discovered by developers I’d expect usage to grow as this area of CSS tooling matures.
 
@@ -505,31 +512,31 @@ Let’s look at the results:
 		<tbody>
 			<tr>
 				<th>Autoprefixer</th>
-				<td>18.28% (862)</td>
-				<td>17.18% (810)</td>
-				<td>15.93% (751)</td>
-				<td>48.61% (2,292)</td>
+				<td>18.86% (991)</td>
+				<td>17.53% (921)</td>
+				<td>15.82% (831)</td>
+				<td>47.79% (2,511)</td>
 			</tr>
 			<tr>
 				<th>Susy</th>
-				<td>55.02% (2,594)</td>
-				<td>29.78% (1,404)</td>
-				<td>9.69% (457)</td>
-				<td>5.51% (260)</td>
+				<td>55.04% (2,892)</td>
+				<td>29.56% (1,553)</td>
+				<td>9.88% (519)</td>
+				<td>5.52% (290)</td>
 			</tr>
 			<tr>
 				<th>Modernizr</th>
-				<td>6.64% (313)</td>
-				<td>22.93% (1,081)</td>
-				<td>37.96% (1,790)</td>
-				<td>32.47% (1,531)</td>
+				<td>6.95% (365)</td>
+				<td>23.13% (1,215)</td>
+				<td>37.76% (1,984)</td>
+				<td>32.17% (1,690)</td>
 			</tr>
 			<tr>
 				<th>Stylelint</th>
-				<td>54.68% (2,578)</td>
-				<td>24.35% (1,148)</td>
-				<td>10.39% (490)</td>
-				<td>10.58% (499)</td>
+				<td>55.10% (2,895)</td>
+				<td>24.53% (1,289)</td>
+				<td>9.99% (525)</td>
+				<td>10.37% (545)</td>
 			</tr>
 		</tbody>
 	</table>
@@ -543,13 +550,13 @@ Let’s look at the results:
 	</div>
 </div>
 
-Out of these, Autoprefixer, with 48.61% (2,292), was the CSS tool that the most respondents felt comfortable using, followed by Modernizr (32.47%), Stylelint (10.58%) and finally Susy (5.51%).
+Out of these, Autoprefixer, with 47.79% (2,511), was the CSS tool that the most respondents felt comfortable using, followed by Modernizr (32.17%), Stylelint (10.37%) and finally Susy (5.52%).
 
-However, when expanding this out to include those respondents who had used the tool a little, Modernizr then came out on top, with 70.43% compared with the 64.54% of respondents who said that they have at least a little experience in using Autoprefixer.
+However, when expanding this out to include those respondents who had used the tool a little, Modernizr then came out on top, with 69.93% compared with the 63.61% of respondents who said that they have at least a little experience in using Autoprefixer.
 
-The majority of respondents said that they had never heard of Stylelint (54.68%), a CSS Linting tool, and Susy (55.02%), a Sass layout tool.
+The majority of respondents said that they had never heard of Stylelint (55.10%), a CSS Linting tool, and Susy (55.04%), a Sass layout tool.
 
-Interestingly, a high percentage of respondents who rated themselves as advanced or above in CSS and it’s tools had never heard of these two tools – 46.53% for Stylelint and 45.52% for Susy.  I think this illustrates just how difficult it can be for developers of any experience level, let alone beginners, to keep up with the tools available to us all.
+Interestingly, a high percentage of respondents who rated themselves as advanced or above in CSS and it’s tools had never heard of these two tools – 46.78% for Stylelint and 45.46% for Susy.  I think this illustrates just how difficult it can be for developers of any experience level, let alone beginners, to keep up with the tools available to us all.
 
 ---
 
@@ -575,52 +582,52 @@ The results looked like this:
 		<tbody>
 			<tr>
 				<th>SMACSS</th>
-				<td>40.57% (1,913)</td>
-				<td>33.91% (1,599)</td>
-				<td>14.74% (695)</td>
-				<td>10.77% (508)</td>
+				<td>40.90% (2,149)</td>
+				<td>34.07% (1,790)</td>
+				<td>14.37% (755)</td>
+				<td>10.66% (560)</td>
 			</tr>
 			<tr>
 				<th>Object Oriented CSS (OOCSS)</th>
-				<td>28.27% (1,333)</td>
-				<td>41.80% (1,971)</td>
-				<td>17.77% (838)</td>
-				<td>12.15% (573)</td>
+				<td>28.68% (1,507)</td>
+				<td>41.68% (2,190)</td>
+				<td>17.62% (926)</td>
+				<td>12.01% (631)</td>
 			</tr>
 			<tr>
 				<th>Atomic Design</th>
-				<td>41.53% (1,958)</td>
-				<td>33.74% (1,591)</td>
-				<td>14.34% (676)</td>
-				<td>10.39% (490)</td>
+				<td>41.97% (2,205)</td>
+				<td>33.35% (1,752)</td>
+				<td>14.48% (761)</td>
+				<td>10.20% (536)</td>
 			</tr>
 			<tr>
 				<th>ITCSS</th>
-				<td>68.34% (3,222)</td>
-				<td>22.38% (1,055)</td>
-				<td>4.50% (212)</td>
-				<td>4.79% (226)</td>
+				<td>69.01% (3,626)</td>
+				<td>21.93% (1,152)</td>
+				<td>4.43% (233)</td>
+				<td>4.63% (243)</td>
 			</tr>
 			<tr>
 				<th>CSS Modules</th>
-				<td>27.42% (1,293)</td>
-				<td>44.77% (2,111)</td>
-				<td>15.95% (752)</td>
-				<td>11.86% (559)</td>
+				<td>27.98% (1,470)</td>
+				<td>44.50% (2,338)</td>
+				<td>15.99% (840)</td>
+				<td>11.53% (606)</td>
 			</tr>
 			<tr>
 				<th>BEM</th>
-				<td>24.90% (1,174)</td>
-				<td>23.52% (1,109)</td>
-				<td>18.49% (872)</td>
-				<td>33.09% (1,560)</td>
+				<td>25.33% (1,331)</td>
+				<td>23.75% (1,248)</td>
+				<td>18.16% (954)</td>
+				<td>32.76% (1,721)</td>
 			</tr>
 			<tr>
 				<th>SUIT CSS</th>
-				<td>69.42% (3,273)</td>
-				<td>24.14% (1,138)</td>
-				<td>3.90% (184)</td>
-				<td>2.55% (120)</td>
+				<td>70.23% (3,690)</td>
+				<td>23.49% (1,234)</td>
+				<td>3.79% (199)</td>
+				<td>2.49% (131)</td>
 			</tr>
 		</tbody>
 	</table>
@@ -634,13 +641,13 @@ The results looked like this:
 	</div>
 </div>
 
-Of these, BEM – a CSS naming scheme – was the most widely known with 33.09% of respondents saying that they felt comfortable using it.  This figure rises to 51.58% of respondents when including those who said they have used it a little.
+Of these, BEM – a CSS naming scheme – was the most widely known with 32.76% of respondents saying that they felt comfortable using it.  This figure rises to 50.92% of respondents when including those who said they have used it a little.
 
-Surprisingly (to me at least), knowledge of many of the most well known CSS methodologies is pretty low.  Just 29.92% of developers said that they have used OOCSS either a little or feel comfortable using it in their projects, with 27.81% saying the same for CSS modules, 25.51% for SMACSS and 24.73% for Atomic design.
+Surprisingly (to me at least), knowledge of many of the most well known CSS methodologies is pretty low.  Just 29.63% of developers said that they have used OOCSS either a little or feel comfortable using it in their projects, with 27.52% saying the same for CSS modules, 25.03% for SMACSS and 24.68% for Atomic design.
 
 Even among those with advanced or expert knowledge of CSS, none of these methodologies break the 20% mark in terms of the number of respondents that said that they felt comfortable using them.
 
-Digging into the responses a bit further shows that less than a third (29.20%) of respondents feel comfortable using at least one of the listed CSS methodologies – so that’s any one of SMACSS, OOCSS, Atomic Design, ITCSS and CSS Modules.  This rises to 55.02% of respondents if we consider those who say that they have used any one of these methodologies at least a little.
+Digging into the responses a bit further shows that less than a third (28.80%) of respondents feel comfortable using at least one of the listed CSS methodologies – so that’s any one of SMACSS, OOCSS, Atomic Design, ITCSS and CSS Modules.  This rises to 54.64% of respondents if we consider those who say that they have used any one of these methodologies at least a little.
 
 Before drawing more conclusions from these results, let’s also take a look at question 9, which is closely related.
 
@@ -665,63 +672,63 @@ Here are the results:
 	<tbody>
 		<tr>
 			<th>SMACSS</th>
-			<td>613</td>
-			<td>13.00%</td>
+			<td>676</td>
+			<td>12.87%</td>
 		</tr>
 		<tr>
 			<th>Object Oriented CSS (OOCSS)</th>
-			<td>696</td>
-			<td>14.76%</td>
+			<td>771</td>
+			<td>14.67%</td>
 		</tr>
 		<tr>
 			<th>Atomic Design</th>
-			<td>680</td>
-			<td>14.42%</td>
+			<td>755</td>
+			<td>14.37%</td>
 		</tr>
 		<tr>
 			<th>ITCSS</th>
-			<td>248</td>
-			<td>5.26%</td>
+			<td>268</td>
+			<td>5.10%</td>
 		</tr>
 		<tr>
 			<th>CSS Modules</th>
-			<td>740</td>
-			<td>15.69%</td>
+			<td>816</td>
+			<td>15.53%</td>
 		</tr>
 		<tr>
 			<th>BEM</th>
-			<td>1905</td>
-			<td>40.40%</td>
+			<td>2,099</td>
+			<td>39.95%</td>
 		</tr>
 		<tr>
 			<th>SUIT CSS</th>
-			<td>111</td>
-			<td>2.35%</td>
+			<td>121</td>
+			<td>2.30%</td>
 		</tr>
 		<tr>
 			<th>Autoprefixer</th>
-			<td>2,414</td>
-			<td>51.20%</td>
+			<td>2,646</td>
+			<td>50.36%</td>
 		</tr>
 		<tr>
 			<th>Susy</th>
-			<td>237</td>
-			<td>5.03%</td>
+			<td>267</td>
+			<td>5.08%</td>
 		</tr>
 		<tr>
 			<th>Modernizr</th>
-			<td>1,828</td>
-			<td>38.77%</td>
+			<td>2,025</td>
+			<td>38.54%</td>
 		</tr>
 		<tr>
 			<th>Stylelint</th>
-			<td>682</td>
-			<td>14.46%</td>
+			<td>747</td>
+			<td>14.22%</td>
 		</tr>
 		<tr>
 			<th>I don’t use any of these approaches or tools</th>
-			<td>1,095</td>
-			<td>23.22%</td>
+			<td>1,236</td>
+			<td>23.52%</td>
 		</tr>
 	</tbody>
 </table>
@@ -735,15 +742,15 @@ Here are the results:
 </div>
 
 
-Top in terms of actual usage was Autoprefixer (51.20%), followed by BEM (40.40%) and Modernizr (38.77%), which all saw good usage levels from respondents.
+Top in terms of actual usage was Autoprefixer (50.36%), followed by BEM (39.95%) and Modernizr (38.54%), which all saw good usage levels from respondents.
 
-Although individual usage levels of CSS methodologies is modest – even among those who stated advanced experience with CSS – when looking at usage across all of them together, 41.21% of respondents said that they were using at least one of SMACSS, OOCSS, Atomic Design, ITCSS or CSS Modules on their projects.
+Although individual usage levels of CSS methodologies is modest – even among those who stated advanced experience with CSS – when looking at usage across all of them together, 41.09% of respondents said that they were using at least one of SMACSS, OOCSS, Atomic Design, ITCSS or CSS Modules on their projects.
 
 It’s also a little surprising, due to the relative newness of the approach, to see that usage of CSS modules has higher usage than any of the other CSS methodologies.
 
 For me, the relatively low usage levels – and knowledge levels shown from question 8 – across CSS methodologies indicates two things.  The diversity of ways that people are writing their CSS is very broad – there isn’t any one method that developers seem drawn to when it comes to writing their CSS.
 
-Secondly, from the responses a high number of front-end developers consider themselves to have an advanced knowledge of CSS when they don’t have knowledge of some of the most well known CSS methodologies.  Learning different approaches to writing CSS (such as SMACSS, OOCSS and ITCSS) helps give a better perspective to how you structure your own styles – irrespective of whether you choose to use them or not in your own workflow.
+Secondly, a high number of front-end developers consider themselves to have an advanced knowledge of CSS when they don’t have knowledge of some of the most well known CSS methodologies.  Learning different approaches to writing CSS (such as SMACSS, OOCSS and ITCSS) helps give a better perspective to how you structure your own styles – irrespective of whether you choose to use them or not in your own work-flow.
 
 CSS may be a simple language on the surface, but it can be a complex one to master and fully understand.
 
@@ -771,28 +778,28 @@ These were the results:
 	<tbody>
 		<tr>
 			<th>Beginner</th>
-			<td>197</td>
-			<td>4.18%</td>
+			<td>220</td>
+			<td>4.19%</td>
 		</tr>
 		<tr>
 			<th>Novice (between Beginner and Intermediate)</th>
-			<td>553</td>
-			<td>11.73%</td>
+			<td>638</td>
+			<td>12.14%</td>
 		</tr>
 		<tr>
 			<th>Intermediate</th>
-			<td>1555</td>
-			<td>32.98%</td>
+			<td>1,749</td>
+			<td>33.29%</td>
 		</tr>
 		<tr>
 			<th>Advanced (between Intermediate and Expert)</th>
-			<td>1684</td>
-			<td>35.72%</td>
+			<td>1,867</td>
+			<td>35.53%</td>
 		</tr>
 		<tr>
 			<th>Expert</th>
-			<td>726</td>
-			<td>15.40%</td>
+			<td>780</td>
+			<td>14.85%</td>
 		</tr>
 	</tbody>
 </table>
@@ -805,9 +812,9 @@ These were the results:
 	</div>
 </div>
 
-Responses showed a similar distribution across knowledge levels to those seen in relation to CSS.  The main exception comes in the number of respondents who rated themselves as having an advanced knowledge of JavaScript, which is 35.72%.
+Responses showed a similar distribution across knowledge levels to those seen in relation to CSS.  The main exception comes in the number of respondents who rated themselves as having an advanced knowledge of JavaScript, which is 35.53%.
 
-By way of comparison, 51.12% of respondents rated themselves as having either an advanced of expert level of JavaScript knowledge, compared with 62.99% of respondents who said the same in relation to their knowledge of CSS.
+By way of comparison, 50.38% of respondents rated themselves as having either an advanced of expert level of JavaScript knowledge, compared with 62.05% of respondents who said the same in relation to their knowledge of CSS.
 
 ---
 
@@ -833,45 +840,45 @@ Let’s take a look at the results – where possible I’ve included the percen
 	<tbody>
 		<tr>
 			<th>Gulp</th>
-			<td>2,060</td>
-			<td>43.69%</td>
-			<td>-0.1%</td>
+			<td>1,356</td>
+			<td>25.81%</td>
+			<td>-0.2%</td>
 		</tr>
 		<tr>
 			<th>NPM Scripts</th>
-			<td>1,223</td>
-			<td>25.94%</td>
-			<td>+22.78%</td>
+			<td>2,290</td>
+			<td>43.59%</td>
+			<td>+22.65%</td>
 		</tr>
 		<tr>
 			<th>Grunt</th>
-			<td>554</td>
-			<td>11.75%</td>
-			<td>-15.81%</td>
+			<td>626</td>
+			<td>11.91%</td>
+			<td>-15.65%</td>
 		</tr>
 		<tr>
 			<th>Make</th>
-			<td>54</td>
-			<td>1.15%</td>
+			<td>62</td>
+			<td>1.18%</td>
 			<td>N/A</td>
 		</tr>
 		<tr>
 			<th>GUI Application (i.e. Codekit)</th>
-			<td>93</td>
-			<td>1.97%</td>
+			<td>100</td>
+			<td>1.90%</td>
 			<td>N/A</td>
 		</tr>
 		<tr>
 			<th>Other (please specify)</th>
-			<td>214</td>
-			<td>4.54%</td>
-			<td>-0.34%</td>
+			<td>238</td>
+			<td>4.53%</td>
+			<td>-0.35%</td>
 		</tr>
 		<tr>
 			<th>I don’t use a task runner</th>
-			<td>517</td>
-			<td>10.97%</td>
-			<td>-8.56%</td>
+			<td>582</td>
+			<td>11.08%</td>
+			<td>-8.45%</td>
 		</tr>
 	</tbody>
 </table>
@@ -884,13 +891,13 @@ Let’s take a look at the results – where possible I’ve included the percen
 	</div>
 </div>
 
-Looking at the results, Gulp is still the clear leader when it comes to front-end task runners with **43.69%** (2,060) of responses.
+Looking at the results, Gulp is still the clear leader when it comes to front-end task runners with **43.59%** (2,290) of responses.
 
-The biggest movement is in the usage NPM Scripts, which got a 25.94% (1,223) share of the response, making it the second most used task runner tool.  That’s an increase of 22.8% when compared to last years figures.  This suggests that more front-end developers are trying to simplify their build tasks and take away the abstraction layer that tools such as Gulp and Grunt provide.
+The biggest movement is in the usage NPM Scripts, which got a 25.81% (1,356) share of the response, making it the second most used task runner tool.  That’s an increase of 22.65% when compared to last years figures.  This suggests that more front-end developers are trying to simplify their build tasks and take away the abstraction layer that tools such as Gulp and Grunt provide.
 
-Meanwhile Grunt has seen a substantial drop in use, with just 11.75% of respondents saying that they prefer using the tool – a fall of over 15% from 2015.
+Meanwhile Grunt has seen a substantial drop in use, with just 11.91% of respondents saying that they prefer using the tool – a fall of over 15% from 2015.
 
-Interestingly, the number of respondents not using any task runner has fallen to just 10.97% – down from 19.5% last year – showing that the overwhelming majority of front-end developers now utilise a task running tool on their projects.
+Interestingly, the number of respondents not using any task runner has fallen to just 11.08% – down from 19.5% last year – showing that the overwhelming majority of front-end developers now utilise a task running tool on their projects.
 
 ---
 
@@ -918,94 +925,94 @@ Here’s what the results show:
 		<tbody>
 			<tr>
 				<th>jQuery</th>
-				<td>0.11% (5)</td>
-				<td>0.85% (40)</td>
-				<td>12.17% (574)</td>
-				<td>86.87% (4,096)</td>
+				<td>0.10% (5)</td>
+				<td>0.88% (46)</td>
+				<td>12.31% (647)</td>
+				<td>86.71% (4,556)</td>
 			</tr>
 			<tr>
 				<th>Underscore</th>
-				<td>10.22% (482)</td>
-				<td>28.12% (1,326)</td>
-				<td>24.41% (1,151)</td>
-				<td>37.24% (1,756)</td>
+				<td>10.68% (561)</td>
+				<td>28.40% (1,492)</td>
+				<td>24.61% (1,293)</td>
+				<td>36.32% (1,908)</td>
 			</tr>
 			<tr>
 				<th>Lodash</th>
-				<td>15.89% (749)</td>
-				<td>26.70% (1,259)</td>
-				<td>19.75% (931)</td>
-				<td>37.67% (1,776)</td>
+				<td>16.56% (870)</td>
+				<td>27.10% (1,424)</td>
+				<td>19.55% (1,027)</td>
+				<td>36.79% (1,933)</td>
 			</tr>
 			<tr>
 				<th>Backbone</th>
-				<td>4.31% (203)</td>
-				<td>58.13% (2,741)</td>
-				<td>23.01% (1,085)</td>
-				<td>14.55% (686)</td>
+				<td>4.55% (239)</td>
+				<td>58.43% (3,070)</td>
+				<td>22.86% (1,201)</td>
+				<td>14.16% (744)</td>
 			</tr>
 			<tr>
 				<th>Angular 1</th>
-				<td>0.66% (31)</td>
-				<td>40.21% (1,896)</td>
-				<td>30.43% (1,435)</td>
-				<td>28.70% (1,353)</td>
+				<td>0.78% (41)</td>
+				<td>39.97% (2,100)</td>
+				<td>30.68% (1,612)</td>
+				<td>28.57% (1,501)</td>
 			</tr>
 			<tr>
 				<th>Angular 2</th>
-				<td>0.89% (42)</td>
-				<td>73.59% (3,470)</td>
-				<td>20.19% (952)</td>
-				<td>5.32% (251)</td>
+				<td>1.01% (53)</td>
+				<td>73.14% (3,843)</td>
+				<td>20.31% (1,067)</td>
+				<td>5.54% (291)</td>
 			</tr>
 			<tr>
 				<th>Ember</th>
-				<td>3.75% (177)</td>
-				<td>78.41% (3,697)</td>
-				<td>11.71% (552)</td>
-				<td>6.13% (289)</td>
+				<td>4.19% (220)</td>
+				<td>78.02% (4,099)</td>
+				<td>11.63% (611)</td>
+				<td>6.17% (324)</td>
 			</tr>
 			<tr>
 				<th>React</th>
-				<td>0.76% (36)</td>
-				<td>42.29% (1,994)</td>
-				<td>28.04% (1,322)</td>
-				<td>28.91% (1,363)</td>
+				<td>0.95% (50)</td>
+				<td>42.73% (2,245)</td>
+				<td>28.19% (1,481)</td>
+				<td>28.13% (1,478)</td>
 			</tr>
 			<tr>
 				<th>Polymer</th>
-				<td>13.55% (639)</td>
-				<td>72.68% (3,427)</td>
-				<td>11.75% (554)</td>
-				<td>2.01% (95)</td>
+				<td>14.52% (763)</td>
+				<td>72.00% (3,783)</td>
+				<td>11.44% (601)</td>
+				<td>2.04% (107)</td>
 			</tr>
 			<tr>
 				<th>Aurelia</th>
-				<td>43.71% (2,061)</td>
-				<td>50.03% (2,359)</td>
-				<td>3.20% (151)</td>
-				<td>3.05% (144)</td>
+				<td>44.14% (2,319)</td>
+				<td>49.77% (2,615)</td>
+				<td>3.08% (162)</td>
+				<td>3.01% (158)</td>
 			</tr>
 			<tr>
 				<th>Vue.js</th>
-				<td>14.68% (692)</td>
-				<td>66.55% (3,138)</td>
-				<td>13.11% (618)</td>
-				<td>5.66% (267)</td>
+				<td>15.70% (825)</td>
+				<td>66.01% (3,468)</td>
+				<td>12.81% (673)</td>
+				<td>5.48% (288)</td>
 			</tr>
 			<tr>
 				<th>MeteorJS</th>
-				<td>9.59% (452)</td>
-				<td>75.91% (3,579)</td>
-				<td>11.69% (551)</td>
-				<td>2.82% (133)</td>
+				<td>10.58% (556)</td>
+				<td>75.30% (3,956)</td>
+				<td>11.38% (598)</td>
+				<td>2.74% (144)</td>
 			</tr>
 			<tr>
 				<th>Knockout</th>
-				<td>16.14% (761)</td>
-				<td>66.62% (3,141)</td>
-				<td>11.33% (534)</td>
-				<td>5.92% (279)</td>
+				<td>16.94% (890)</td>
+				<td>65.76% (3,455)</td>
+				<td>11.44% (601)</td>
+				<td>5.86% (308)</td>
 			</tr>
 		</tbody>
 	</table>
@@ -1019,15 +1026,15 @@ Here’s what the results show:
 	</div>
 </div>
 
-As was the case last year, jQuery is still the library or framework with the highest percentage of respondents – **86.87%** (4,096) – who said that they felt comfortable using it.  In fact over 99% of respondents said that they had used it at least a little, which is pretty remarkable for any tool.
+As was the case last year, jQuery is still the library or framework with the highest percentage of respondents – **86.71%** (4,556) – who said that they felt comfortable using it.  In fact over 99% of respondents said that they had used it at least a little, which is pretty remarkable for any tool.
 
-Both Underscore (37.24%) and Lodash (37.67%) also had a sizeable number of respondents who said they felt comfortable using them.
+Both Underscore (36.32%) and Lodash (36.79%) also had a sizeable number of respondents who said they felt comfortable using them.
 
-When looking at the big hitting JS frameworks, the growth in knowledge of React is the most noticeable change from last year.  It has not only caught up with Angular 1 (the leading MV* framework last year), but it has managed to even slightly surpass it, with 28.91% (1,363) of developers saying that they feel comfortable using it compared with 28.70% (1,353) of those that said the same about Angular 1.
+When looking at the big hitting JS frameworks, the growth in knowledge of React is the most noticeable change from last year.  It has not only caught up with Angular 1 (the leading MV* framework last year), but it has managed to even slightly surpass it, with 28.13% (1,478) of developers saying that they feel comfortable using it compared with 28.57% (1,501) of those that said the same about Angular 1.
 
-It’s also interesting to see that Angular 2 uptake has been pretty slow so far, with 20.19% of respondents saying that they had used it a little but just 5.32% saying that they felt comfortable using it.  I would suspect this number will grow over time, but it will be interesting to see by how much and if it reaches the level that Angular 1 has currently.
+It’s also interesting to see that Angular 2 uptake has been pretty slow so far, with 20.31% of respondents saying that they had used it a little but just 5.54% saying that they felt comfortable using it.  I would suspect this number will grow over time, but it will be interesting to see by how much and if it reaches the level that Angular 1 has currently.
 
-Looking at knowledge levels across the MV* frameworks – so everything in the list except jQuery, Underscore and Lodash – 62.23% of respondents said that they felt comfortable using at least one of these frameworks.  That’s up just over 12% (from 50.2%) who said the same in last years survey.
+Looking at knowledge levels across the MV* frameworks – so everything in the list except jQuery, Underscore and Lodash – 61.71% of respondents said that they felt comfortable using at least one of these frameworks.  That’s up just over 11% (from 50.2%) who said the same in last years survey.
 
 As I noted last year, knowledge of at least one framework has become an important skill for many front-end developers.
 
@@ -1054,73 +1061,73 @@ Here are the results:
 	<tbody>
 		<tr>
 			<th>jQuery</th>
-			<td>3284</td>
-			<td>69.65%</td>
+			<td>3,691</td>
+			<td>70.25%</td>
 		</tr>
 		<tr>
 			<th>Underscore</th>
-			<td>714</td>
-			<td>15.14%</td>
+			<td>784</td>
+			<td>14.92%</td>
 		</tr>
 		<tr>
 			<th>Lodash</th>
-			<td>1527</td>
-			<td>32.39%</td>
+			<td>1,669</td>
+			<td>31.77%</td>
 		</tr>
 		<tr>
 			<th>Backbone</th>
-			<td>301</td>
-			<td>6.38%</td>
+			<td>330</td>
+			<td>6.28%</td>
 		</tr>
 		<tr>
 			<th>Angular 1</th>
-			<td>1180</td>
-			<td>25.03%</td>
+			<td>1,319</td>
+			<td>25.10%</td>
 		</tr>
 		<tr>
 			<th>Angular 2</th>
-			<td>387</td>
-			<td>8.21%</td>
+			<td>445</td>
+			<td>8.47%</td>
 		</tr>
 		<tr>
 			<th>Ember</th>
-			<td>280</td>
-			<td>5.94%</td>
+			<td>318</td>
+			<td>6.05%</td>
 		</tr>
 		<tr>
 			<th>React</th>
-			<td>1776</td>
-			<td>37.67%</td>
+			<td>1,939</td>
+			<td>36.91%</td>
 		</tr>
 		<tr>
 			<th>Polymer</th>
-			<td>87</td>
-			<td>1.85%</td>
+			<td>99</td>
+			<td>1.88%</td>
 		</tr>
 		<tr>
 			<th>Aurelia</th>
-			<td>154</td>
-			<td>3.27%</td>
+			<td>173</td>
+			<td>3.29%</td>
 		</tr>
 		<tr>
 			<th>Vue.js</th>
-			<td>456</td>
-			<td>9.67%</td>
+			<td>491</td>
+			<td>9.35%</td>
 		</tr>
 		<tr>
 			<th>MeteorJS</th>
-			<td>115</td>
-			<td>2.44%</td>
+			<td>120</td>
+			<td>2.28%</td>
 		</tr>
 		<tr>
 			<th>Knockout</th>
-			<td>156</td>
-			<td>3.31%</td>
+			<td>179</td>
+			<td>3.41%</td>
 		</tr>
 		<tr>
 			<th>I don’t use any of these approaches or tools</th>
-			<td>132</td>
-			<td>2.80%</td>
+			<td>143</td>
+			<td>2.72%</td>
 		</tr>
 	</tbody>
 </table>
@@ -1133,15 +1140,15 @@ Here are the results:
 	</div>
 </div>
 
-jQuery usage was again very strong, with over two thirds (69.65%) of respondents saying that they used it frequently on their projects.
+jQuery usage was again very strong, with over two thirds (70.25%) of respondents saying that they used it frequently on their projects.
 
-Arguably more interesting is that 37.67% (1,776) of respondents said that they frequently use React, even though this is almost 10% more than the number who said that they felt comfortable using it when answering question 12.  It can therefore be concluded that a decent number of those who said that they have used it just a little are also using it frequently on their projects.
+Arguably more interesting is that 36.91% (1,939) of respondents said that they frequently use React, even though this is almost 10% more than the number who said that they felt comfortable using it when answering question 12.  It can therefore be concluded that a decent number of those who said that they have used it just a little are also using it frequently on their projects.
 
-In keeping with the results from question 12, Angular 1 was said to be used frequently by 25.03% (1,180) of respondents, while Angular 2 is currently well below that figure with 8.21% (387) usage.
+In keeping with the results from question 12, Angular 1 was said to be used frequently by 25.10% (1,319) of respondents, while Angular 2 is currently well below that figure with 8.47% (445) usage.
 
-Although knowledge levels were similar between Lodash and Underscore in the results of question 12, Lodash received more than double the number of respondents who said that they still use it frequently on their projects – 32.39% (1,527) compared with just 15.14% (714) for Underscore.
+Although knowledge levels were similar between Lodash and Underscore in the results of question 12, Lodash received more than double the number of respondents who said that they still use it frequently on their projects – 31.77% (1,669) compared with just 14.92% (784) for Underscore.
 
-Also, a notable mention to Vue.js, which has been getting mentioned a lot recently, with 9.67% of respondents saying that they use frequently on their projects.
+Also, a notable mention to Vue.js, which has been getting mentioned a lot recently, with 9.35% of respondents saying that they use frequently on their projects.
 
 
 {{> promos promo='react' }}
@@ -1166,78 +1173,78 @@ Let’s take a look at the results:
 	<tbody>
 		<tr>
 			<th>None of them are essential – I feel comfortable using native JavaScript on my projects</th>
-			<td>985</td>
-			<td>20.89%</td>
+			<td>1,081</td>
+			<td>20.57%</td>
 		</tr>
 		<tr>
 			<th>jQuery</th>
-			<td>1468</td>
-			<td>31.13%</td>
+			<td>1,687</td>
+			<td>32.11%</td>
 		</tr>
 		<tr>
 			<th>Underscore</th>
-			<td>38</td>
-			<td>0.81%</td>
+			<td>43</td>
+			<td>0.82%</td>
 		</tr>
 		<tr>
 			<th>Lodash</th>
-			<td>262</td>
-			<td>5.56%</td>
+			<td>280</td>
+			<td>5.33%</td>
 		</tr>
 		<tr>
 			<th>Backbone</th>
-			<td>38</td>
-			<td>0.81%</td>
+			<td>43</td>
+			<td>0.82%</td>
 		</tr>
 		<tr>
 			<th>Angular 1</th>
-			<td>386</td>
-			<td>8.19%</td>
+			<td>428</td>
+			<td>8.15%</td>
 		</tr>
 		<tr>
 			<th>Angular 2</th>
-			<td>129</td>
-			<td>2.74%</td>
+			<td>148</td>
+			<td>2.82%</td>
 		</tr>
 		<tr>
 			<th>Ember</th>
-			<td>178</td>
-			<td>3.78%</td>
+			<td>198</td>
+			<td>3.77%</td>
 		</tr>
 		<tr>
 			<th>React</th>
-			<td>857</td>
-			<td>18.18%</td>
+			<td>935</td>
+			<td>17.80%</td>
 		</tr>
 		<tr>
 			<th>Polymer</th>
-			<td>16</td>
+			<td>18</td>
 			<td>0.34%</td>
 		</tr>
 		<tr>
 			<th>Aurelia</th>
-			<td>113</td>
-			<td>2.40%</td>
+			<td>122</td>
+			<td>2.32%</td>
 		</tr>
 		<tr>
 			<th>Vue.js</th>
-			<td>148</td>
-			<td>3.14%</td>
+			<td>158</td>
+			<td>3.01%</td>
 		</tr>
 		<tr>
 			<th>MeteorJS</th>
-			<td>8</td>
+			<td>9</td>
 			<td>0.17%</td>
 		</tr>
 		<tr>
 			<th>Knockout</th>
-			<td>17</td>
-			<td>0.36%</td>
+			<td>20</td>
+			<td>0.38%</td>
 		</tr>
 		<tr>
 			<th>Other (please specify)</th>
-			<td>72</td>
-			<td>1.53%</td>
+			<td>84</td>
+			<td>1.60%</td>
 		</tr>
 	</tbody>
 </table>
@@ -1250,13 +1257,13 @@ Let’s take a look at the results:
 	</div>
 </div>
 
-The tools that the most respondents said was essential to them was jQuery with 31.13% (1,468 responses), followed by React which received 18.18% (857) of the vote.
+The tools that the most respondents said was essential to them was jQuery with 32.11% (1,687 responses), followed by React which received 17.80% (935) of the vote.
 
-20.89% (985) of respondents said that they did not think that any library or tool was essential – most likely due to the rise in knowledge of ES6 (also known as ES2015).
+20.57% (1,081) of respondents said that they did not think that any library or tool was essential – most likely due to the rise in knowledge of ES6 (also known as ES2015).
 
-These were the only answers that received more than a 10% share of the vote, with Angular 1 the next biggest choice with 8.19% (386) of responses.
+These were the only answers that received more than a 10% share of the vote, with Angular 1 the next biggest choice with 8.15% (428) of responses.
 
-Perhaps most interesting is that even among those who rated themselves at having Intermediate level JS knowledge or higher, jQuery is still the most popular choice with 25.98% of responses in this category, compared with 20.06% for the next closest tool which is React.
+Perhaps most interesting is that even among those who rated themselves at having Intermediate level JS knowledge or higher, jQuery is still the most popular choice with 26.84% of responses in this category, compared with 19.65% for the next closest tool which is React.
 
 It’s clear that jQuery is still playing an important part in many front-end developers’ toolsets.
 
@@ -1284,45 +1291,45 @@ Let’s take a look at the results:
 	<tbody>
 		<tr>
 			<th>I don’t use a module bundler</th>
-			<td>1516</td>
-			<td>32.15%</td>
-			<td>-21.75%</td>
+			<td>1,716</td>
+			<td>32.66%</td>
+			<td>-21.24%</td>
 		</tr>
 		<tr>
 			<th>RequireJS</th>
-			<td>359</td>
-			<td>7.61%</td>
-			<td>-5.85%</td>
+			<td>407</td>
+			<td>7.75%</td>
+			<td>-5.71%</td>
 		</tr>
 		<tr>
 			<th>Browserify</th>
-			<td>510</td>
-			<td>10.82%</td>
-			<td>-5.65%</td>
+			<td>560</td>
+			<td>10.66%</td>
+			<td>-5.81%</td>
 		</tr>
 		<tr>
 			<th>Webpack</th>
-			<td>1962</td>
-			<td>41.61%</td>
-			<td>+31.11%</td>
+			<td>2,166</td>
+			<td>41.23%</td>
+			<td>+30.74%</td>
 		</tr>
 		<tr>
 			<th>Rollup</th>
-			<td>79</td>
-			<td>1.68%</td>
+			<td>89</td>
+			<td>1.69%</td>
 			<td>N/A</td>
 		</tr>
 		<tr>
 			<th>JSPM</th>
-			<td>108</td>
-			<td>2.29%</td>
-			<td>+0.07%</td>
+			<td>119</td>
+			<td>2.26%</td>
+			<td>+0.04%</td>
 		</tr>
 		<tr>
 			<th>Other (please specify)</th>
-			<td>181</td>
-			<td>3.84%</td>
-			<td>+0.39%</td>
+			<td>197</td>
+			<td>3.75%</td>
+			<td>+0.28%</td>
 		</tr>
 	</tbody>
 </table>
@@ -1335,11 +1342,11 @@ Let’s take a look at the results:
 	</div>
 </div>
 
-In a massive shift from last year, 41.61% (1,962) of respondents are now using Webpack to handle their module bundling in JavaScript, making it the clear leader in this category.
+In a massive shift from last year, 41.23% (2,166) of respondents are now using Webpack to handle their module bundling in JavaScript, making it the clear leader in this category.
 
-The percentage of those now using any kind of module bundler has increased to 67.85% (3,199 responses), an increase of over 20% when compared to last years figures.
+The percentage of those now using any kind of module bundler has increased to 67.34% (3,538 responses), an increase of over 20% when compared to last years figures.
 
-In terms of other module bundling tools, both Browserify and RequireJS have both seen a 5% drop in usage, with 10.82% and 7.61% of respondents saying that they use these respective tools.
+In terms of other module bundling tools, both Browserify and RequireJS have both seen a 5% drop in usage, with 10.66% and 7.75% of respondents saying that they use these respective tools.
 
 Overall, it’s great to see so many developers embracing module bundlers.  Webpack has obviously struck a real chord with developers and is now considered the go-to tool when it comes to handling JavaScript module dependencies.
 
@@ -1368,18 +1375,18 @@ Here are the results:
 	<tbody>
 		<tr>
 			<th>Yes</th>
-			<td>2,942</td>
-			<td>62.40%</td>
+			<td>3,245</td>
+			<td>61.76%</td>
 		</tr>
 		<tr>
 			<th>No – I’ve heard of these tools, but haven’t used one</th>
-			<td>1,443</td>
-			<td>30.60%</td>
+			<td>1,623</td>
+			<td>30.89%</td>
 		</tr>
 		<tr>
 			<th>No – I’ve never heard of a JavaScript transpiler</th>
-			<td>330</td>
-			<td>7.00%</td>
+			<td>386</td>
+			<td>7.35%</td>
 		</tr>
 	</tbody>
 </table>
@@ -1392,9 +1399,9 @@ Here are the results:
 	</div>
 </div>
 
-The majority – **62.40%** (2,942) – of respondents indicated that they are now using a JavaScript transpiler.   Considering the short period of time these tools have been around, this shows just how valuable developers see working with ES6 features today.
+The majority – **61.76%** (3,245) – of respondents indicated that they are now using a JavaScript transpiler.   Considering the short period of time these tools have been around, this shows just how valuable developers see working with ES6 features today.
 
-Only 7% (330) of respondents had never heard of a JavaScript transpiler, again showing the remarkable reach that has been achieved in a relatively short space of time.
+Only 7.35% (386) of respondents had never heard of a JavaScript transpiler, again showing the remarkable reach that has been achieved in a relatively short space of time.
 
 Looking at these results, it’s straightforward to conclude that having knowledge of a transpilation tool, such as Babel, is becoming a required skill for the modern front-end developer.
 
@@ -1421,33 +1428,33 @@ Here are the results:
 	<tbody>
 		<tr>
 			<th>I don’t use a JavaScript linter</th>
-			<td>1,076</td>
-			<td>22.82%</td>
+			<td>1,229</td>
+			<td>23.39%</td>
 		</tr>
 		<tr>
 			<th>JSLint</th>
-			<td>894</td>
-			<td>18.96%</td>
+			<td>992</td>
+			<td>18.88%</td>
 		</tr>
 		<tr>
 			<th>JSHint</th>
-			<td>657</td>
-			<td>13.93%</td>
+			<td>727</td>
+			<td>13.84%</td>
 		</tr>
 		<tr>
 			<th>ESLint</th>
-			<td>1,927</td>
-			<td>40.87%</td>
+			<td>2,123</td>
+			<td>40.41%</td>
 		</tr>
 		<tr>
 			<th>xo</th>
 			<td>24</td>
-			<td>0.51%</td>
+			<td>0.46%</td>
 		</tr>
 		<tr>
 			<th>Other (please specify)</th>
-			<td>137</td>
-			<td>2.91%</td>
+			<td>159</td>
+			<td>3.03%</td>
 		</tr>
 	</tbody>
 </table>
@@ -1460,11 +1467,11 @@ Here are the results:
 	</div>
 </div>
 
-The majority of respondents – **77.18%** (3,639 people) – indicated that they do use a tool to lint their JavaScript.
+The majority of respondents – **76.61%** (4,025 people) – indicated that they do use a tool to lint their JavaScript.
 
-Comparing this to the results seen earlier in relation to CSS linting, there is an obvious gap between those who choose to lint their JavaScript and those who do the same with their CSS – a difference of 29.84% in fact, as just 47.34% of respondents indicated that they used a tool to lint their CSS.
+Comparing this to the results seen earlier in relation to CSS linting, there is an obvious gap between those who choose to lint their JavaScript and those who do the same with their CSS – a difference of 30.04% in fact, as just 46.57% of respondents indicated that they used a tool to lint their CSS.
 
-40.87% (1,927) of respondents said that ESLInt was the tool they used, making it the most popular linting tool, followed by JSLint with 18.96% (894) and JSHint with 13.93% (657).
+40.41% (2,123) of respondents said that ESLInt was the tool they used, making it the most popular linting tool, followed by JSLint with 18.88% (992) and JSHint with 13.84% (727).
 
 It’s great to see that linting is now considered the norm when developing JavaScript, especially considering the benefits it brings to code quality and consistency.
 
@@ -1494,51 +1501,51 @@ Let’s take a look at the results:
 	<tbody>
 		<tr>
 			<th>I don’t use a tool to test my JS</th>
-			<td>2,241</td>
-			<td>47.53%</td>
-			<td>-12.13%</td>
+			<td>2,519</td>
+			<td>47.94%</td>
+			<td>-11.72%</td>
 		</tr>
 		<tr>
 			<th>Jasmine</th>
-			<td>802</td>
-			<td>17.01%</td>
-			<td>+0.64</td>
+			<td>889</td>
+			<td>16.92%</td>
+			<td>+0.55</td>
 		</tr>
 		<tr>
 			<th>Mocha</th>
-			<td>1,061</td>
-			<td>22.50%</td>
-			<td>+7.46%</td>
+			<td>1,174</td>
+			<td>22.34%</td>
+			<td>+7.3%</td>
 		</tr>
 		<tr>
 			<th>Tape</th>
-			<td>69</td>
-			<td>1.46%</td>
-			<td>-0.02%</td>
+			<td>77</td>
+			<td>1.47%</td>
+			<td>-0.01%</td>
 		</tr>
 		<tr>
 			<th>Ava</th>
-			<td>84</td>
-			<td>1.78%</td>
+			<td>88</td>
+			<td>1.67%</td>
 			<td>N/A</td>
 		</tr>
 		<tr>
 			<th>QUnit</th>
-			<td>199</td>
-			<td>4.22%</td>
-			<td>+0.37%</td>
+			<td>221</td>
+			<td>4.21%</td>
+			<td>+0.36%</td>
 		</tr>
 		<tr>
 			<th>Jest</th>
-			<td>164</td>
-			<td>3.48%</td>
-			<td>+2.69%</td>
+			<td>180</td>
+			<td>3.43%</td>
+			<td>+2.64%</td>
 		</tr>
 		<tr>
 			<th>Other (please specify)</th>
-			<td>95</td>
-			<td>2.01%</td>
-			<td>+0.33%</td>
+			<td>106</td>
+			<td>2.02%</td>
+			<td>+0.34%</td>
 		</tr>
 	</tbody>
 </table>
@@ -1553,13 +1560,13 @@ Let’s take a look at the results:
 
 Looking at the results, the figures show some changes since last years survey.
 
-The split between those who test and those who don’t is now pretty even, with 47.53% (2,241) of respondents saying that they don’t use a tool to help with their JavaScript testing.  This figure is down 12.13% from last year.
+The split between those who test and those who don’t is now pretty even, with 47.93% (2,519) of respondents saying that they don’t use a tool to help with their JavaScript testing.  This figure is down 11.72% from last year.
 
-This means that the majority of respondents – **52.47%** (2,474) – are using a tool to test their JavaScript.  This indicates that more front-end developers are seeing the benefits of learning and using a tool to test their JavaScript, which – I personally think – is great news.
+This means that the majority of respondents – **52.07%** (2,735) – are using a tool to test their JavaScript.  This indicates that more front-end developers are seeing the benefits of learning and using a tool to test their JavaScript, which – I personally think – is great news.
 
-Of those testing their JS, the most popular tools were Jasmine, with 17.01% of the responses, and Mocha, with 22.50%.  Mocha has seen the biggest gains, with a usage rise of 7.46% on last years figures, making it the most popular testing tool.
+Of those testing their JS, the most popular tools were Jasmine, with 16.92% of the responses, and Mocha, with 22.34%.  Mocha has seen the biggest gains, with a usage rise of 7.3% on last years figures, making it the most popular testing tool.
 
-Jest also saw a 2.69% rise in usage, with 3.48% (164) of respondents saying that they now use it as their primary JS testing tool.
+Jest also saw a 2.64% rise in usage, with 3.43% (180) of respondents saying that they now use it as their primary JS testing tool.
 
 All in all, I think this shows a positive step from last years figures on JavaScript testing, but there is clearly more work to be done to reduce the gap in knowledge of testing tools among front-end developers.
 
@@ -1591,45 +1598,45 @@ Here is how people responded:
 		<tbody>
 			<tr>
 				<th>Bower</th>
-				<td>2.52% (119)</td>
-				<td>21.34% (1,006)</td>
-				<td>33.96% (1,601)</td>
-				<td>42.18% (1,989)</td>
+				<td>2.70% (142)</td>
+				<td>21.70% (1,140)</td>
+				<td>33.44% (1,757)</td>
+				<td>42.16% (2,215)</td>
 			</tr>
 			<tr>
 				<th>NPM</th>
-				<td>1.76% (83)</td>
-				<td>4.01% (189)</td>
-				<td>14.15% (667)</td>
-				<td>80.08% (3,776)</td>
+				<td>1.87% (98)</td>
+				<td>4.15% (218)</td>
+				<td>14.39% (756)</td>
+				<td>79.60% (4,182)</td>
 			</tr>
 			<tr>
 				<th>Yarn</th>
-				<td>21.40% (1,009)</td>
-				<td>50.56% (2,384)</td>
-				<td>14.32% (675)</td>
-				<td>13.72% (647)</td>
+				<td>22.33% (1,173)</td>
+				<td>50.23% (2,639)</td>
+				<td>14.01% (736)</td>
+				<td>13.44% (706)</td>
 			</tr>
 			<tr>
 				<th>Babel</th>
-				<td>7.15% (337)</td>
-				<td>29.20% (1,377)</td>
-				<td>24.16% (1,139)</td>
-				<td>39.49% (1,862)</td>
+				<td>7.46% (392)</td>
+				<td>29.62% (1,556)</td>
+				<td>24.04% (1,263)</td>
+				<td>38.88% (2,043)</td>
 			</tr>
 			<tr>
 				<th>Yeoman</th>
-				<td>11.56% (545)</td>
-				<td>41.53% (1,958)</td>
-				<td>33.47% (1,578)</td>
-				<td>13.45% (634)</td>
+				<td>12.52% (658)</td>
+				<td>41.24% (2,167)</td>
+				<td>32.83% (1,725)</td>
+				<td>13.40% (704)</td>
 			</tr>
 			<tr>
 				<th>TypeScript</th>
-				<td>6.68% (315)</td>
-				<td>60.87% (2,870)</td>
-				<td>19.53% (921)</td>
-				<td>12.92% (609)</td>
+				<td>6.83% (359)</td>
+				<td>60.70% (3,189)</td>
+				<td>19.60% (1,030)</td>
+				<td>12.87% (676)</td>
 			</tr>
 		</tbody>
 	</table>
@@ -1643,9 +1650,9 @@ Here is how people responded:
 	</div>
 </div>
 
-The most well-known tools in this list were NPM, with a huge 80.08% of respondents saying that they feel comfortable using it, Bower with 42.18% and Babel with 39.49%.
+The most well-known tools in this list were NPM, with a huge 79.60% of respondents saying that they feel comfortable using it, Bower with 42.16% and Babel with 38.88%.
 
-It’s interesting to see that although Yarn has only been around a few months, 78.6% of respondents had at least heard of it or used it in some way.
+It’s interesting to see that although Yarn has only been around a few months, 77.68% of respondents had at least heard of it or used it in some way.
 
 The number of respondents who felt comfortable using Yeoman, TypeScript and Yarn was fairly low, with these tools receiving between 12-14% in that category.
 
