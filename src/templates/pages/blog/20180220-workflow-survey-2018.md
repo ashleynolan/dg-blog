@@ -29,7 +29,7 @@ categories:
 
 The Front-End Tooling Survey is back to shed some light on our tooling habits across the web development industry.
 
-Towards the end of 2016, 5,254 developers took part in the previous survey with [the results showing some interesting changes](blog/frontend-tooling-survey-2016-results) in the tools that people were using.
+Towards the end of 2016, 5,254 developers took part in the previous survey with [the results showing some interesting changes](/blog/frontend-tooling-survey-2016-results) in the tools that people were using.
 
 Back then, React knowledge across the industry had rocketed, while Sass was still by far the most popular CSS preprocessor.  Meanwhile tools like Vue.js, Jest and PostCSS were starting to see growing adoption over the previous 12 months.
 
