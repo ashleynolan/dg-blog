@@ -10,7 +10,9 @@
 
 			{{> promos }}
 
+			{{#if nodate}}{{else}}
 			<p class="post-info separator-top">Article posted on the {{moment posted format="Do MMMM YYYY" }}</p>
+			{{/if}}
 
 			{{#if updated}}
 				<p>Last updated on the <date>{{moment updated format="Do MMMM YYYY" }}</date></p>
@@ -23,6 +25,9 @@
 
 		{{> footer }}
 	</div>
+
+{{#if nocomments}}
+{{else}}
 
 <script type="text/javascript">
 var disqus_config = function () {
@@ -38,5 +43,7 @@ var disqus_config = function () {
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+{{/if}}
 
 {{> html_end }}

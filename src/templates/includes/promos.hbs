@@ -1,6 +1,10 @@
 {{#if promo}}
 <div class="promotion separator-both">
+	{{#if promotitle}}
+	<h2 class="promotion-header text-bg">{{promotitle}}</h2>
+	{{else}}
 	<h2 class="promotion-header text-bg">Recommended Resource</h2>
+	{{/if}}
 	<div class="promotion-content">
 	{{#ifCond promo 'sublime'}}
 		<a href="https://SublimeTextBook.com/friend/NOLAN">
@@ -23,6 +27,21 @@
 			<p class="promotion-text">A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer, by Wes Bos.</p>
 		</a>
 	{{/ifCond}}
+	{{#ifCond promo 'grid'}}
+		<a href="https://CSSGrid.io/friend/NOLAN">
+			<img class="promotion-img" src="/assets/img/resources/css-grid.png" />
+			<h3 class="promotion-title">Learn CSS Grid</h2>
+			<p class="promotion-text">Learn all about CSS Grid with Wes Bos in this free video series!</p>
+		</a>
+	{{/ifCond}}
+	{{#ifCond promo 'node'}}
+		<a href="https://LearnNode.com/friend/NOLAN">
+			<img class="promotion-img" src="/assets/img/resources/node.png" />
+			<h3 class="promotion-title">Learn Node</h2>
+			<p class="promotion-text">The best way to learn Node.js, Express, MongoDB, and Friends</p>
+		</a>
+	{{/ifCond}}
+
 	</div>
 </div>
 {{/if}}
