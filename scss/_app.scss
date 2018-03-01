@@ -157,6 +157,10 @@ img.logo-dg {
 		margin: 0 0 $verticalRhythm+px -20%;
 		text-align: center;
 		min-height: 380px;
+
+		&.img--logo {
+			min-height: 0;
+		}
 	}
 }
 

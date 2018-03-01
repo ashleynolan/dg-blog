@@ -229,6 +229,7 @@ module.exports = function (grunt) {
 						'img/work/work-*.{jpg,gif,png}',
 						'img/blog/tooling-survey/2015/*.{jpg,gif,png}',
 						'img/blog/tooling-survey/2016/*.{jpg,gif,png}',
+						'img/blog/tooling-survey/2018/*.{jpg,gif,png}',
 						'!**/*-small.{jpg,gif,png}',
 						'!**/*-mid.{jpg,gif,png}',
 

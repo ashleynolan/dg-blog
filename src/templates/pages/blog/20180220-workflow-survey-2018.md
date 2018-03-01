@@ -25,7 +25,13 @@ categories:
 
 \> **[Fill out the 2018 Survey Now](http://ashn.uk/survey-2018)**
 
----
+<div class="img img--logo">
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320" data-alt="The Front-End Tooling Survey 2018 Logo" data-img-320="/assets/img/blog/tooling-survey/2018/logo-small.png" data-img-max="/assets/img/blog/tooling-survey/2018/logo-mid.png">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2018/logo-mid.png" width="801" height="282" alt="The Front-End Tooling Survey 2018 Logo" />
+		</noscript>
+	</div>
+</div>
 
 The Front-End Tooling Survey is back to shed some light on our tooling habits across the web development industry.
 
