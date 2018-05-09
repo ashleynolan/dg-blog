@@ -42,8 +42,6 @@ Continuing on from [last years survey](/blog/frontend-tooling-survey-2015-result
 
 This year the survey was made up of 19 questions – up from 8 questions last year – covering a wide range of front-end tools and methodologies.
 
-For anyone who hasn’t completed the survey, I’ll be leaving it open for a couple more weeks and updating the results here, so please do [take the time to fill it in](http://ashn.uk/survey-tooling-2016).
-
 
 ### Quick Thanks
 
@@ -66,7 +64,7 @@ These results represent a sample of front-end developers working in the industry
 
 ## The responses
 
-As I mentioned above, this years survey has had 4,715 responses to date.  In comparison, when I released the first set of results in 2015, the survey had received just 648 responses which then rose to a final figure of 2,028 responses when the survey closed.  So that’s almost 2 and a half times the number of responses in comparison to last years final numbers, or a 132% increase for people who like percentages.
+As I mentioned above, this years survey received 5,254 responses.  In comparison, when I released the first set of results in 2015, the survey had received just 648 responses which then rose to a final figure of 2,028 responses when the survey closed.  So that’s almost 2 and a half times the number of responses in comparison to last years final numbers, or a 132% increase for people who like percentages.
 
 In terms of where the responses have come from, I posted the survey on Twitter, Reddit, HackerNews, DesignerNews, Echo.js, LinkedIn and Frontendfront.  It was also featured by a number of newsletters such as Responsive Design Weekly, Sitepoint Weekly and FrontEnd Focus, among others.
 
@@ -83,7 +81,7 @@ The reason I want to highlight these sources is to show that there has been a go
 {{#markdown}}
 
 1. [General Front-end Experience](#experience-general)
-1. [ CSS Knowledge Levels](#knowledge-css)
+1. [CSS Knowledge Levels](#knowledge-css)
 1. [CSS Processor Usage](#css-processors)
 1. [CSS Processor Experience](#css-processor-experience)
 1. [CSS Naming Schemes](#css-naming)
