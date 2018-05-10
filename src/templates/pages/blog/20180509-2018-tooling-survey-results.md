@@ -1,7 +1,7 @@
 ---
 layout: post.hbs
 
-title: The Front-End Tooling Survey 2018 – Results
+title: The Front-End Tooling Survey 2018 - Results
 url: frontend-tooling-survey-2018-results
 description: "The results of the 2018 Front-End Tooling Survey are out! Check out the results and analysis of the responses here."
 
@@ -2257,6 +2257,14 @@ Here is how people responded:
 	</div>
 </div>
 
+<div class="img img-tall">
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following front-end tools – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2018/q24-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2018/q24-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2018/q24.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2018/q24.jpg" width="850" height="500" alt="Please indicate your experience with the following front-end tools – Bar Chart showing the results" />
+		</noscript>
+	</div>
+</div>
+
 The biggest change from the 2016 results saw the number of respondents who feel comfortable using Yarn grow to 46.30%, a rise of +32.86%.  This figure is still some way below those that said the same about NPM (84.78%), most likely because developers who know Yarn will also implicitly know NPM, but not necessarily vice-versa.
 
 Babel experience grew slightly with 45.54% of respondents feeling comfortable using it, up +6.66%, while Bower and Yeoman knowledge levels have dropped slightly.  In the case of Bower, this is unsurprising given that the project maintainers have now advised using Yarn and Webpack [as an alternative](https://bower.io/blog/2017/how-to-migrate-away-from-bower/).
@@ -2287,9 +2295,38 @@ Looking across all of our front-end tools, it's clear that certain areas seem to
 
 Thanks again to everyone who has taken part – as I mentioned at the top, the survey will be open for a couple more weeks so if you haven't taken part yet, please [take the time to fill it in](http://ashn.uk/survey-2018).
 
-If anyone has any questions about any of the results, [message me on Twitter](https://twitter.com/AshNolan_) and I’ll do my best to help!
+If anyone has any questions about any of the results, [message me on Twitter](https://twitter.com/AshNolan_) and I’ll do my best to help.
+
+Also, if you'd like to receive emails about next year's survey when it launches, feel free to sign up below.
 
 {{/markdown}}
 
-
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://ashleynolan.us14.list-manage.com/subscribe/post?u=7df2babe441e95159f7ddc4d2&amp;id=c31e78838a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe to hear about next year's Survey</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7df2babe441e95159f7ddc4d2_c31e78838a" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
 
