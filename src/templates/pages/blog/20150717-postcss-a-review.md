@@ -127,7 +127,7 @@ _Nesting_ – via [postcss-nested](https://github.com/postcss/postcss-nested) �
 Importing files using the [postcss-imports](https://github.com/postcss/postcss-import) plugin is also possible, but is slightly less slick, defining partials in full, such as:
 
 <pre>
-<code class="language-scss">@imports '_variables.css';</code>
+<code class="language-scss">@import '_variables.css';</code>
 </pre>
 
 Using  _mixins_ is slightly more hit and miss.  Currently, the only plugin available – [postcss-mixins](https://github.com/postcss/postcss-mixins) – gives you a less-than intuitive syntax to work with – to me anyway, you can decide for yourself:
