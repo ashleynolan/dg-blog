@@ -1469,7 +1469,7 @@ Angular 1 usage fell by 14.68% from 2016, but this hasn't translated into simila
 
 Usage of all other frameworks was down from their respective figures in the 2016 results.
 
-{{> promos promo='react' }}
+{{> promos promo='advancedreact' }}
 
 
 <a name="js-framework-essential"></a>
@@ -1613,7 +1613,7 @@ It's clear overall that usage levels of jQuery, although still high, are startin
 
 For the time being though, React is clearly the JavaScript framework of choice among front-end developers.
 
-{{> promos promo='react' }}
+{{> promos promo='advancedreact' }}
 
 
 <a name="js-bundler"></a>
