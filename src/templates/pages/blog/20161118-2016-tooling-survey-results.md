@@ -24,7 +24,13 @@ categories:
 
 ---
 
-** Update 06/01/2017 **
+**Update 08/04/2019**
+
+This year's survey is currently live! [Please take part](https://ashn.uk/survey-2019) – every response is massively appreciated!
+
+---
+
+**Update 06/01/2017**
 
 Since publishing the initial results, I've closed the survey after receiving 5,254 responses and updated the article and results data to reflect this.
 

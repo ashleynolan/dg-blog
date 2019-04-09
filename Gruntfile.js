@@ -61,10 +61,10 @@ module.exports = function (grunt) {
 		requirejs: {
 			dist: {
 				options: {
-					mainConfigFile : "js/config.js",
-					optimize : 'uglify2',
-					generateSourceMaps : true,
-					preserveLicenseComments : false,
+					mainConfigFile: "js/config.js",
+					optimize: 'uglify2',
+					generateSourceMaps: true,
+					preserveLicenseComments: false,
 					out: distDir + "/app.min.js",
 				}
 			}
@@ -83,9 +83,9 @@ module.exports = function (grunt) {
 					unixNewlines: true,
 					style: 'expanded',
 					lineNumbers: false,
-					debugInfo : false,
-					precision : 8,
-					sourcemap : true
+					debugInfo: false,
+					precision: 8,
+					sourcemap: true
 				},
 				files: {
 					'css/kickoff.css': 'scss/kickoff.scss',
@@ -95,7 +95,7 @@ module.exports = function (grunt) {
 			production: {
 				options: {
 					style: 'compressed',
-					precision : 8
+					precision: 8
 				},
 				files: {
 					'css/kickoff.css': 'scss/kickoff.scss',
@@ -124,14 +124,14 @@ module.exports = function (grunt) {
 					'img/**/*.gif',
 					'img/**/*.png'
 				],
-				tasks : 'copy:img'
+				tasks: 'copy:img'
 			},
 
 			fonts: {
 				files: [
 					'fonts/**/*.*'
 				],
-				tasks : 'copy:fonts'
+				tasks: 'copy:fonts'
 			},
 
 			js: {
@@ -145,7 +145,7 @@ module.exports = function (grunt) {
 				tasks: ['requirejs', 'copy:js']
 			},
 
-			assemble : {
+			assemble: {
 				files: ['src/templates/**/*.hbs', 'src/templates/**/*.md'],
 				tasks: ['clean', 'assemble'],
 				options: {
@@ -171,7 +171,7 @@ module.exports = function (grunt) {
 				options: {
 					base: 'dist',
 
-					middleware: function(connect, options) {
+					middleware: function (connect, options) {
 						return [
 							rewriteRulesSnippet,
 							// Serve static files
@@ -198,7 +198,7 @@ module.exports = function (grunt) {
 		 * Auto prefixes your CSS using caniuse data
 		 */
 		autoprefixer: {
-			dist : {
+			dist: {
 				options: {
 					// Task-specific options go here - we are supporting
 					// the last 2 browsers, any browsers with >1% market share,
@@ -218,7 +218,7 @@ module.exports = function (grunt) {
 					sizes: [{
 						name: 'small',
 						width: 320
-					},{
+					}, {
 						name: 'mid',
 						width: 500
 					}]
@@ -230,6 +230,7 @@ module.exports = function (grunt) {
 						'img/blog/tooling-survey/2015/*.{jpg,gif,png}',
 						'img/blog/tooling-survey/2016/*.{jpg,gif,png}',
 						'img/blog/tooling-survey/2018/*.{jpg,gif,png}',
+						'img/blog/tooling-survey/2019/*.{jpg,gif,png}',
 						'!**/*-small.{jpg,gif,png}',
 						'!**/*-mid.{jpg,gif,png}',
 
@@ -393,7 +394,7 @@ module.exports = function (grunt) {
 	 * A task for your production environment
 	 * run jshint and sass:production
 	 */
-	grunt.registerTask('deploy', ['clean', 'sass:production', 'csso',  'assemble', 'copy:dist']);
+	grunt.registerTask('deploy', ['clean', 'sass:production', 'csso', 'assemble', 'copy:dist']);
 
 	/*
 		NEED TO UPDATE DEV AND PROD GRUNT BUILDS AS THESE ARE JUST PLACEHOLDERS
