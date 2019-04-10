@@ -6,7 +6,7 @@ url: frontend-tooling-survey-2019
 description: "The Front-end Tooling Survey is back! Please take part and help to provide insight into the tools we all use."
 
 date: April 9, 2019
-posted: 2019-03-01T08:00
+posted: 2019-04-08T08:00
 
 post:
 - post
