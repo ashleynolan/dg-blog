@@ -7,7 +7,7 @@ description: "The results of the 2016 Front-End Tooling Survey are out! Check ou
 
 date: November 29, 2016
 posted: 2016-11-29T14:00
-updated: 2018-07-24T08:00
+updated: 2019-04-09T14:00
 
 post:
 - post

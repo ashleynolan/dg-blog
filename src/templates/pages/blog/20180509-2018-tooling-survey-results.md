@@ -7,7 +7,7 @@ description: "The results of the 2018 Front-End Tooling Survey are out! Check ou
 
 date: May 09, 2018
 posted: 2018-05-09T13:15
-updated: 2018-07-26T08:00
+updated: 2019-04-09T14:00
 
 post:
 - post
@@ -21,6 +21,11 @@ categories:
 ---
 
 {{#markdown}}
+
+**Update 08/04/2019**
+
+This year's survey is currently live! [Please take part](https://ashn.uk/survey-2019) – every response is massively appreciated!
+
 
 **Update 25/07/2018**
 
