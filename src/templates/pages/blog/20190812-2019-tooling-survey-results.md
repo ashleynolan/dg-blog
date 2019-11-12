@@ -4,6 +4,7 @@ layout: post.hbs
 title: The Front-End Tooling Survey 2019 - Results
 url: frontend-tooling-survey-2019-results
 description: "The results of the 2019 Front-End Tooling Survey are out! Check out the results and analysis of the responses here."
+ogimage: /assets/img/blog/tooling-survey/2019/logo.jpg
 
 date: November 12, 2019
 posted: 2019-11-12T08:00
