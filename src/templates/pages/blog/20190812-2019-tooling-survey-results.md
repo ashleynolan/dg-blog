@@ -576,7 +576,7 @@ From these results, it's clear that usage levels in this area of tooling is stil
 
 Usage of CSS Linters has been gradually growing since we started asking respondents about the subject back in 2016.
 
-Last year, a majority of developers (49.44%) were still choosing not to lint their CSS, so it'll be interesting to see if this dynamic has changed a year on.
+Last year, a majority of developers (50.56%) were still choosing not to lint their CSS, so it'll be interesting to see if this dynamic has changed a year on.
 
 The question asked was – **Do you use a tool to lint your CSS?**
 
@@ -694,11 +694,11 @@ The results were as follows:
 	</div>
 </div>
 
-Out of the three tools, Autoprefixer is the most well known, with 50.52% of developers responding that they feel comfortable using it.
+Out of the three tools, Autoprefixer was the most well known, with 50.52% of developers responding that they feel comfortable using it.
 
-Stylelint knowledge levels rose the most over the last 12 months, with 23.03% of developers now feeling comfortable using the tool – a gain of 5.16%.
+Stylelint knowledge levels rose the most over the last 12 months, with 23.03% of developers now feeling comfortable using the tool – a gain of +5.16%.
 
-Modernizr knowledge levels fell a small amount, with the number of respondents saying that they had never heard of it rising and the number of those who said they felt comfortable using it falling (a drop of 3.49%, to 24.03%).
+Modernizr knowledge levels fell a small amount, with the number of respondents saying that they had never heard of it rising and the number who said they felt comfortable using it falling (a drop of -3.49%, to 24.03%).
 
 
 ---
@@ -817,13 +817,13 @@ The results were as follows:
 
 In a slight change to last year's results, most of the CSS methodologies referenced saw slight gains in their knowledge levels.
 
-BEM is still the methodology that the most respondents (43.53%) said they felt comfortable using, a rise of 5.37% from last year's results.
+BEM is still the methodology that the most respondents (43.53%) said they felt comfortable using, a rise of +5.37% from last year's results.
 
 The biggest 12-month gain was seen by CSS-in-JS, with the number of developers now saying that they feel comfortable using it rising by +7.6% to 27.52%.
 
-SMACSS, OOCSS, Atomic Design and ITCSS all saw the number of respondents who had at least heard of them, or used them a little, rise from last year's results, with Atomic Design and ITCSS seeing th most notable gains.
+SMACSS, OOCSS, Atomic Design and ITCSS all saw the number of respondents who had at least heard of them, or used them a little, rise from last year's results, with Atomic Design and ITCSS seeing the most notable gains.
 
-Looking specifically across the CSS architectural methodologies mentioned – so that’s of SMACSS, OOCSS, Atomic Design, ITCSS and CSS-in-JS – the percentage of respondents who said that they feel comfortable using at least one of these rose from 34.90% last year to 42.26% in 2019. That's a rise of +7.36%.  When looking at those respondents who said that they had used one of these CSS methodologies at least a little, this figure rises to 70.75% – up from 66.49% in 2018.
+Looking specifically across the CSS architectural methodologies mentioned – so that’s SMACSS, OOCSS, Atomic Design, ITCSS and CSS-in-JS – the percentage of respondents who said that they feel comfortable using at least one of these rose from 34.90% last year to 42.26% in 2019. That's a rise of +7.36%.  When looking at those respondents who said that they had used one of these CSS methodologies at least a little, this figure rises to 70.75% – up from 66.49% in 2018.
 
 These results indicate that knowledge levels across CSS methodolgies and naming schemes is trending upwards, with BEM, CSS-in-JS and Atomic Design the most well-known in this area.
 
@@ -925,7 +925,7 @@ _n.b. CSS-in-JS is omitted from the available answers below, as question 11 focu
 
 Autoprefixer saw the most usage out of these tools and methodologies (56.84%), followed by BEM (45.52%) and Stylelint (27.49%).  These figures were all a slight increase from the 2018 results, with Stylelint seeing the biggest gain with +4.71%.
 
-Modernizr usage fell by 8.24% over the last 12 months to 21.10%, continuing it's downward trend in usage that was observed in last years results.
+Modernizr usage fell by -8.24% over the last 12 months to 21.10%, continuing it's downward trend in usage that was observed in last years results.
 
 Although knowledge levels of CSS methodologies appear to have grown slightly, their usage levels have stayed fairly similar to those seen in 2018.  Atomic Design is still the most popular CSS design methodology with 15.41% of developers using it.
 
@@ -938,9 +938,9 @@ Overall, these figures suggest it's been a year of consolidation in this area fr
 
 ## Q11 – CSS-in-JS Usage
 
-The next question asks about an area that has seen a lot of interest over the last couple of year's – CSS-in-JS.
+The next question is a new question for this year's survey and asks about an area that has seen a lot of interest recently – CSS-in-JS.
 
-The number of developers using CSS-in-JS tools has grown to a point where it would be interesting to find out which tools are the most popular in this space.
+The number of developers using CSS-in-JS tools has grown to such a point where it'll be interesting to see which tools are the most popular in this space.
 
 So the question asked was – **What is your preferred CSS-in-JS tool?**
 
@@ -1012,7 +1012,7 @@ So the question asked was – **What is your preferred CSS-in-JS tool?**
 
 The majority of developers (55.31%) responded that they don't use a CSS-in-JS tool. This is still a relatively new area of tooling and given that it is specialised for certain use-cases, it's unsurprising to see that that is the case.
 
-As you may expect, when filtering by developers who said that they had advanced or expert JS skills, the percentage of respondents using a CSS-in-JS tool rose to 51.38%.  This is perhaps unsurprising, given that CSS-in-JS tooling is generally coupled to using a JavaScript framework.
+As you may expect, when filtering by developers who said that they had advanced or expert JS skills, the percentage of respondents using a CSS-in-JS tool rose to 51.38%.  This is perhaps unsurprising, given that CSS-in-JS is generally used in combination with a JavaScript framework.
 
 Overall, it's clear that CSS-in-JS is becoming an important part of many developers toolkits. It'll be interesting to see how these figures change in the future.
 
@@ -1023,11 +1023,11 @@ Overall, it's clear that CSS-in-JS is becoming an important part of many develop
 
 ## Q12 – CSS Feature Usage
 
-The final CSS related question focused on respondents knowledge of recent CSS features.
+The final CSS related question focused on respondents' knowledge of recent CSS features.
 
-With so much being written and talked about with respect to the latest CSS features, I thought it would be interesting to find out how many developers had started to put these features into practice and gained experience using them.
+With so much being written and talked about with respect to the latest CSS features, it's always interesting to find out how many developers have started to put these features into practice and gained experience using them.
 
-Therefore, I asked respondents to – **Please indicate your experience with the following CSS features**.
+The question asked was – **Please indicate your experience with the following CSS features**.
 
 Here are the results:
 
@@ -1102,9 +1102,9 @@ Here are the results:
 	</div>
 </div>
 
-Flexbox (up 12.81% to 80.40%), CSS Grid (up 10.11% to 28.59%) and CSS Custom Properties (up 8.86% to 27.89%) have all seen a rise in the number of developers that now feel comfortable using them.
+Flexbox (up +12.81% to 80.40%), CSS Grid (up +10.11% to 28.59%) and CSS Custom Properties (up +8.86% to 27.89%) have all seen a rise in the number of developers that now feel comfortable using them.
 
-Almost all developers questioned have now used Flexbox, with 97.07% of respondents saying that they had used it at least a little (this figure was 93.53% in 2018). It's safe to say that Flexbox knowledge is now an expected part of being a front-end developer.
+Almost all developers questioned have now used Flexbox, with 97.07% of respondents saying that they had used it at least a little (this figure was 93.53% in 2018). It's safe to say that Flexbox knowledge is now expected of all front-end developers.
 
 CSS Grid and CSS Custom Properties both saw large swings in the number of respondents moving from having heard of or read about them to having used the feature at least a little. Knowledge in these features still looks like it is growing, with more respondents saying that they've used them a little, than those who feel comfortable using them.
 
@@ -1171,7 +1171,7 @@ These were the results:
 
 Most of the respondents considered themselves at least at Intermediate level or higher (88.98%), with the majority saying that they were Advanced or Expert (59%).
 
-It would be wrong to say that this is a reflection of knowledge levels across the industry – it's more just a reflection of the knowledge levels of those taking a survey like this one. As you might expect within this context, the weighting is more towards the advanced end of the spectrum.
+It would be wrong to say that this is a reflection of knowledge levels across the whole of our industry – it's more likely just a reflection of the knowledge levels of those taking a survey like this one. As you might expect within this context, the weighting is more towards the advanced end of the spectrum.
 
 
 ---
@@ -1180,7 +1180,7 @@ It would be wrong to say that this is a reflection of knowledge levels across th
 
 ## Q14 – Task Runners
 
-Last year saw usage of NPM Scripts move ahead of Gulp by quite some margin in this category.  Have they consolidated their position 12 months on?
+Last year saw usage of NPM Scripts move ahead of Gulp by quite some margin.  Have they consolidated their position 12 months on?
 
 The question that respondents were asked was – **What task runner do you prefer using in your typical project workflow?**
 
@@ -1255,9 +1255,9 @@ It's clear from these results that NPM Scripting has firmly consolidated its pos
 
 Usage of almost all other tools in this category fell, with 18.54% of developers using Gulp (a fall of -11.02%) and just 2.53% of developers using Grunt (a fall of -3.26%).
 
-9.08% of respondents said that they didn't use a task runner, although this percentage is down 1.61% from last year's results.
+9.08% of respondents said that they didn't use a task runner, although this percentage is down -1.61% from last year's results.
 
-So following on from last year's trend, developers seem to be steadily migrating away from Gulp and Grunt, replacing them with NPM Scripts in their workflow.
+So the trend seems to be following on from last year's results, with developers steadily migrating away from Gulp and Grunt, to be replaced by NPM Scripts in their workflow.
 
 
 ---
@@ -1268,7 +1268,7 @@ So following on from last year's trend, developers seem to be steadily migrating
 
 In the following three questions, we asked respondents about their knowledge and usage levels of JavaScript libraries and frameworks.
 
-Last year, React, Vue and Angulr 2+ saw the largest gains in knowledge levels.  jQuery was still the tool that most developers felt comfortable using, but it's actual usage level dipped substantially.
+Last year, React, Vue and Angular 2+ saw the largest gains in knowledge levels.  jQuery was still the tool that most developers felt comfortable using, but it's actual usage level dipped substantially.
 
 This question looks at knowledge levels across the tools, asking respondents to indicate which JavaScript libraries and frameworks they have experience in.
 
@@ -1467,17 +1467,17 @@ Here are the results:
 </div>
 
 
-The tools which had the highest number of respondents who said they felt comfortable using them was jQuery (75.37%), React (48.35%), Lodash (40.67%), Underscore (28.45%) and Vue.js (23.19%).
+The tools which had the highest number of respondents who said they felt comfortable using them were jQuery (75.37%), React (48.35%), Lodash (40.67%), Underscore (28.45%) and Vue.js (23.19%).
 
 React and Vue were the two tools that saw the biggest gains in the number of developers that felt comfortable using them, with 48.35% saying that they now felt comfortable using React (+7.92% from 2018), and 23.19% saying the same for Vue (+6.12%).
 
 The number of respondents that said the same about jQuery was down slightly to 75.37% (down -4.36% from 2018).
 
-Knowledge levels of Lodash saw a small gain as well, with those using it a little (28.75%) and those that felt comfortable using it (40.67%) up 3.15% and 3.70% respectively.
+Knowledge levels of Lodash saw a small gain as well, with those using it a little (28.75%) and those that felt comfortable using it (40.67%) up +3.15% and +3.70% respectively.
 
-This year, D3.js was added as an option on this question for the first time, with 7.29% of developers saying they are comfortable using it.
+This year, D3.js was added as an option on this question for the first time, with 7.29% of developers saying they feel comfortable using it.
 
-Looking at knowledge levels across all the JavaScript MV* frameworks – so everything in the list except jQuery, Underscore, Lodash and D3.js – 78.54% of respondents said that they felt comfortable using at least one of these frameworks.  That figure is up 8.04% on last year's results, and up 28% since 2015, showing just how important it is for front-end developers to know at least one of these tools.
+Looking at knowledge levels across all the JavaScript MV* frameworks – so everything in the list except jQuery, Underscore, Lodash and D3.js – 78.54% of respondents said that they felt comfortable using at least one of these frameworks.  That figure is up 8.04% on last year's results, and up 28% [since 2016](http://localhost:9000/blog/frontend-tooling-survey-2016-results#js-frameworks), showing just how important it is for front-end developers to know at least one of these tools.
 
 
 ---
@@ -1486,9 +1486,9 @@ Looking at knowledge levels across all the JavaScript MV* frameworks – so ever
 
 ## Q16 – Most frequently used JavaScript tools
 
-Next the survey asked respondents **Which JavaScript libraries and/or frameworks do you currently use most frequently on projects?**
+Next respondents were asked – **Which JavaScript libraries and/or frameworks do you currently use most frequently on projects?**
 
-Respondents were invited to select all (or none) of the tools that they used on their projects.
+Respondents were invited to select all (or none) of the tools that they use on their projects.
 
 The responses were as follows:
 
@@ -1614,7 +1614,7 @@ The responses were as follows:
 
 For the first time since the survey started back in 2015, jQuery is no longer the most frequently used JS tool, with React now holding that position.
 
-52.21% of developers said that they use React frequently on their projects, a gain of 4.82% from last years results. 36.81% of respondents said that they used jQuery frequently, which shows a -14.24% drop from last year.
+52.21% of developers said that they use React frequently on their projects, a gain of +4.82% from last years results. 36.81% of respondents said that they used jQuery frequently, which shows a -14.24% drop from last year.
 
 Lodash (32.81%), Vue.js (27.15%) and Angular v2+ (15.71%) were the next most frequently used tools, seeing a change of -1.01%, +4.21% and +1.59% respectively compared with the 2018 results.
 
@@ -1625,7 +1625,7 @@ Lodash (32.81%), Vue.js (27.15%) and Angular v2+ (15.71%) were the next most fre
 
 ## Q17 – Most essential JavaScript framework/library
 
-The final JS framework question asked respondents **Which JavaScript library or framework would you regard as essential to you on the majority of your projects?**
+The final JS framework question asked respondents – **Which JavaScript library or framework would you regard as essential to you on the majority of your projects?**
 
 Last year, React gained the biggest share of responses from developers, but has anything changed 12 months on?
 
@@ -1737,7 +1737,7 @@ Let's take a look:
 				<th>D3.js</th>
 				<td>1</td>
 				<td>0.03%</td>
-				<td class="is-trendUp">+0.03%</td>
+				<td>N/A</td>
 			</tr>
 			<tr>
 				<th>Other (please specify)</th>
@@ -1757,17 +1757,17 @@ Let's take a look:
 	</div>
 </div>
 
-React has consolidated it's position in this year's results with 32.78% of respondents saying that they consider it their most essential JavaScript library or framework.  This figure is up 4.31% from last year's survey.
+React has consolidated it's position in this year's results with 32.78% of respondents saying that they consider it their most essential JavaScript library or framework.  This figure is up +4.31% from last year's survey.
 
-21.66% of developers said that they consider no tool as essential in this category.
+21.66% of developers said that they consider no tool as essential to them in this category.
 
 The next most essential tools were Vue.js with 13.44% (up +3.22% from last year), jQuery with 11.15% (down -8.59%) and Angular v2+ with 8.49% (up +2.3%).
 
-When filtering down into experience levels the results get more pronounced. 45.14% of those developers with 0-2 years front-end development experience said that React was essential to them.  This figure drops to 24.02% of respondents when looking at those developers with 10+ years experience, 28.06% of developers with that experience level saying that no library or tool is essential to them.
+When filtering down into experience levels the results get more pronounced. 45.14% of those developers with 0-2 years front-end development experience said that React was essential to them.  This figure drops to 24.02% of respondents when looking at those developers with 10+ years experience. 28.06% of developers with that level of experience also say that no library or tool is essential to them.
 
-Overall, looking at the results from all three questions relating to JS libraries and frameworks, React knowledge levels and usage is still growing, with Vue.js clearly the second most popular JavaScript framework (albeit some way behind React's popularity).
+Overall, looking at the results from all three questions relating to JS libraries and frameworks, React knowledge levels and usage is still growing, with Vue.js clearly the second most popular JavaScript framework (albeit still some way behind React's popularity).
 
-jQuery usage, although falling steadily, is still high – with it being used frequently by more respondents than Lodash.
+jQuery usage, although falling steadily, is still high – with it still being used frequently by more respondents than Lodash.
 
 
 {{> promos promo='advancedreact' }}
@@ -1856,7 +1856,7 @@ Here are the results:
 </div>
 
 
-Webpack has continued to grow over the last 12 months,with 73.34% of respondents saying that they use it as their module bundler. That's a 7.66% rise from last year's results.
+Webpack has continued to grow over the last 12 months,with 73.34% of respondents saying that they use it as their module bundler. That's a +7.66% rise from last year's results.
 
 The next most used modules bundlers were Parcel and Rollup with 2.83% and 2.06% of the responses.
 
@@ -1959,14 +1959,13 @@ Here's how the results looked:
 	</div>
 </div>
 
-<div class="img img-extraTall">
+<div class="img">
 	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which of these JavaScript task runners and/or bundlers you have experience in – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q19-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q19-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q19.jpg">
 		<noscript>
 			<img src="/assets/img/blog/tooling-survey/2019/q19.jpg" width="850" height="500" alt="Please indicate which of these JavaScript task runners and/or bundlers you have experience in – Pie Chart showing the results" />
 		</noscript>
 	</div>
 </div>
-
 
 Reflecting the results in previous questions, the tools that most respondents felt comfortable using were NPM Scripts (64.39%), Webpack (52.38%) and Gulp (45.79%).
 
@@ -2131,7 +2130,7 @@ Here are this year's results:
 	</div>
 </div>
 
-TypeScript is still the tool that the most respondents felt comfortable using, with 31.91% – a rise of 10.03% from last year's results.
+TypeScript is still the tool that the most respondents felt comfortable using, with 31.91% – a rise of +10.03% from last year's results.
 
 There was no real change in the figures for the other tools in this category, with no real growth or decline seen.
 
@@ -2208,7 +2207,9 @@ The question I asked was – **Which tool do you use to lint your JavaScript? (i
 	</div>
 </div>
 
-The results show a very clear trend, with ESLint usage still rising while all other linting tools seem to be trending downwards in their usage levels.  76.07% of respondents said that they use ESLint, a rise of 15.39% from last year's results.
+The results show a very clear trend, with ESLint usage still rising while all other linting tools seem to be trending downwards in their usage levels.  76.07% of respondents said that they use ESLint, a rise of +15.39% from last year's results.
+
+Some of the gain in ESLint usage could be down to the TSLint team’s decision back in February to deprecate TSLint and focus their efforts on [improving ESLint's TypeScript support](https://medium.com/palantir/tslint-in-2019-1a144c2317a9).
 
 The number of respondents who said that they don't use a JavaScript Linter also fell this year to 11.98%.  That means that 88.02% of developers are now using a tool to help them in this area - that's a rise of 3.42% from the 84.6% of respondents that said the same 12 months ago.
 
@@ -2318,9 +2319,9 @@ Here are the results:
 
 As within 2018, Jest is still the tool that most respondents are using, with 44.86%.  Mocha (26.12%), Jasmine (19.47%) and Enzyme (18.64%) were the next most popular tools with respondents.
 
-The percentage of developers using any tool to test their JavaScript rose to 64.36% – that's up 7.98% from last year's results.
+The percentage of developers using any tool to test their JavaScript rose to 64.36% – that's up +7.98% from last year's results.
 
-I think this year's results show that there is a good range of tools available when it comes to JavaScript testing. Even though Jest is currently the most popular tool, there are plenty of other popular options that are worth exploring to help in this area.
+I think this year's results show that there is now very broad range of tools available when it comes to JavaScript testing. Even though Jest is currently the most popular tool, there are plenty of other popular options that are worth exploring to help in this area.
 
 
 ---
@@ -2374,7 +2375,7 @@ Let's take a look at the results:
 				<td>10.55%</td>
 			</tr>
 			<tr>
-				<th>AMP</th>
+				<th>AMP (Accelerated Mobile Pages)</th>
 				<td>174</td>
 				<td>5.79%</td>
 			</tr>
@@ -2402,7 +2403,7 @@ Surprisingly, the second most popular option was "None of these tools", with 31.
 
 Of the other available options, 24.29% of developers said that they used WebPageTest and 23.13% of developers said that they were using Service Workers on their projects.
 
-It's also interesting to see that just 5.79% of developers said that they were implementing AMP (Accelerated Mobile Pages) on their projects. Given how hard Google has pushed for the implementation of AMP over the last few years, it seems that it's still fairly niche when it comes to usage levels among front-end developers.
+It's also interesting to see that just 5.79% of developers said that they were implementing AMP (Accelerated Mobile Pages) on their projects. Given how hard Google has pushed for the implementation of AMP over the last few years, it seems that it's still fairly niche when it comes to usage levels among respondents.
 
 
 ---
@@ -2413,7 +2414,7 @@ It's also interesting to see that just 5.79% of developers said that they were i
 
 Another new question for this year's survey, this looked to find out usage levels of accessibility testing tools among respondents.
 
-The question asked was **Which of these accessibility tools do you use to test your sites/applications?**
+The question asked was **Which of these accessibility tools do you use to test your sites/applications?**. Respondents could choose one or more of the options specified.
 
 Here are the results:
 
@@ -2476,7 +2477,7 @@ Looking at raw figures like this takes away the context of _why_ people aren't u
 
 Tools like Wave and Axe (mentioned by quite a few respondents under 'Other Tools') are extremely easy to use and I'd highly recommend checking them out if you haven't already done so.
 
-Hopefully, the more exposure that we can give to the value of using these tools, the more that these usage figures are likely to rise among developers.
+Hopefully, the more exposure that we can give to the value and ease of using these tools, the more that these usage figures are likely to rise among developers.
 
 
 ---
@@ -2485,7 +2486,7 @@ Hopefully, the more exposure that we can give to the value of using these tools,
 
 ## Q26 – JavaScript Package Managers
 
-The penultimate question of this year's survey was in relation to JS Package Managers, with the question being **Which JavaScript package manager do you primarily use in your workflow?**
+The penultimate question of this year's survey was in relation to JS Package Managers, with the question being – **Which JavaScript package manager do you primarily use in your workflow?**
 
 Last year, NPM was the most popular package manager, but has Yarn gained any ground over the last 12 months?
 
