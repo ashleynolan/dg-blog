@@ -24,9 +24,9 @@ categories:
 
 ---
 
-**Update 08/04/2019**
+**Update 12/09/2019**
 
-This year's survey is currently live! [Please take part](https://ashn.uk/survey-2019) – every response is massively appreciated!
+The results for the 2019 edition of the Front-end Tooling Survey are now available. If you'd like to view them, [check them out here](/blog/frontend-tooling-survey-2019-results).
 
 ---
 

@@ -411,84 +411,86 @@ Last year saw Bootstrap as the leader in this category, but has this changed 12 
 
 Let’s look at the results:
 
-<table class="table table--bordered">
-	<thead>
-		<tr>
-			<th>Answer</th>
-			<th>Number of Votes</th>
-			<th>Percentage</th>
-			<th>% Diff (to 2018)</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>No Framework</th>
-			<td>1,054</td>
-			<td>35.07%</td>
-			<td class="is-trendUp">+2.15%</td>
-		</tr>
-		<tr>
-			<th>Bootstrap</th>
-			<td>840</td>
-			<td>27.95%</td>
-			<td class="is-trendDown">-7.01%</td>
-		</tr>
-		<tr>
-			<th>Custom Framework</th>
-			<td>497</td>
-			<td>16.54%</td>
-			<td class="is-trendUp">+1.29%</td>
-		</tr>
-		<tr>
-			<th>Tailwind CSS</th>
-			<td>129</td>
-			<td>4.29%</td>
-			<td>N/A</td>
-		</tr>
-		<tr>
-			<th>Bulma</th>
-			<td>96</td>
-			<td>3.19%</td>
-			<td class="is-trendUp">+0.75%</td>
-		</tr>
-		<tr>
-			<th>Foundation</th>
-			<td>79</td>
-			<td>2.63%</td>
-			<td class="is-trendDown">-1.31%</td>
-		</tr>
-		<tr>
-			<th>Materialize</th>
-			<td>72</td>
-			<td>2.40%</td>
-			<td class="is-trendDown">-0.24%</td>
-		</tr>
-		<tr>
-			<th>Semantic UI</th>
-			<td>63</td>
-			<td>2.10%</td>
-			<td class="is-trendUp">+0.16%</td>
-		</tr>
-		<tr>
-			<th>Tachyons</th>
-			<td>25</td>
-			<td>0.83%</td>
-			<td>N/A</td>
-		</tr>
-		<tr>
-			<th>PureCSS</th>
-			<td>18</td>
-			<td>0.60%</td>
-			<td class="is-trendDown">-0.10%</td>
-		</tr>
-		<tr>
-			<th>Other</th>
-			<td>132</td>
-			<td>4.39%</td>
-			<td class="is-trendDown">-0.83%</td>
-		</tr>
-	</tbody>
-</table>
+<div class="responsiveTable">
+	<table class="table table--bordered">
+		<thead>
+			<tr>
+				<th>Answer</th>
+				<th>Number of Votes</th>
+				<th>Percentage</th>
+				<th>% Diff (to 2018)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>No Framework</th>
+				<td>1,054</td>
+				<td>35.07%</td>
+				<td class="is-trendUp">+2.15%</td>
+			</tr>
+			<tr>
+				<th>Bootstrap</th>
+				<td>840</td>
+				<td>27.95%</td>
+				<td class="is-trendDown">-7.01%</td>
+			</tr>
+			<tr>
+				<th>Custom Framework</th>
+				<td>497</td>
+				<td>16.54%</td>
+				<td class="is-trendUp">+1.29%</td>
+			</tr>
+			<tr>
+				<th>Tailwind CSS</th>
+				<td>129</td>
+				<td>4.29%</td>
+				<td>N/A</td>
+			</tr>
+			<tr>
+				<th>Bulma</th>
+				<td>96</td>
+				<td>3.19%</td>
+				<td class="is-trendUp">+0.75%</td>
+			</tr>
+			<tr>
+				<th>Foundation</th>
+				<td>79</td>
+				<td>2.63%</td>
+				<td class="is-trendDown">-1.31%</td>
+			</tr>
+			<tr>
+				<th>Materialize</th>
+				<td>72</td>
+				<td>2.40%</td>
+				<td class="is-trendDown">-0.24%</td>
+			</tr>
+			<tr>
+				<th>Semantic UI</th>
+				<td>63</td>
+				<td>2.10%</td>
+				<td class="is-trendUp">+0.16%</td>
+			</tr>
+			<tr>
+				<th>Tachyons</th>
+				<td>25</td>
+				<td>0.83%</td>
+				<td>N/A</td>
+			</tr>
+			<tr>
+				<th>PureCSS</th>
+				<td>18</td>
+				<td>0.60%</td>
+				<td class="is-trendDown">-0.10%</td>
+			</tr>
+			<tr>
+				<th>Other</th>
+				<td>132</td>
+				<td>4.39%</td>
+				<td class="is-trendDown">-0.83%</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
 <div class="img img-mid">
 	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which of the following CSS frameworks you use most frequently on your projects – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q5-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q5-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q5.jpg">
@@ -2492,43 +2494,44 @@ Last year, NPM was the most popular package manager, but has Yarn gained any gro
 
 This is how people responded:
 
-
-<table class="table table--bordered">
-	<thead>
-		<tr>
-			<th>Answer</th>
-			<th>Number of Votes</th>
-			<th>Percentage</th>
-			<th>% Diff (to 2018)</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>NPM</th>
-			<td>1,965</td>
-			<td>65.39%</td>
-			<td class="is-trendUp">+2.00%</td>
-		</tr>
-		<tr>
-			<th>Yarn</th>
-			<td>895</td>
-			<td>29.78%</td>
-			<td class="is-trendDown">-0.36%</td>
-		</tr>
-		<tr>
-			<th>I don’t use a package manager</th>
-			<td>135</td>
-			<td>4.49%</td>
-			<td class="is-trendDown">-1.24%</td>
-		</tr>
-		<tr>
-			<th>Other</th>
-			<td>10</td>
-			<td>0.33%</td>
-			<td class="is-trendDown">-0.40%</td>
-		</tr>
-	</tbody>
-</table>
+<div class="responsiveTable">
+	<table class="table table--bordered">
+		<thead>
+			<tr>
+				<th>Answer</th>
+				<th>Number of Votes</th>
+				<th>Percentage</th>
+				<th>% Diff (to 2018)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>NPM</th>
+				<td>1,965</td>
+				<td>65.39%</td>
+				<td class="is-trendUp">+2.00%</td>
+			</tr>
+			<tr>
+				<th>Yarn</th>
+				<td>895</td>
+				<td>29.78%</td>
+				<td class="is-trendDown">-0.36%</td>
+			</tr>
+			<tr>
+				<th>I don’t use a package manager</th>
+				<td>135</td>
+				<td>4.49%</td>
+				<td class="is-trendDown">-1.24%</td>
+			</tr>
+			<tr>
+				<th>Other</th>
+				<td>10</td>
+				<td>0.33%</td>
+				<td class="is-trendDown">-0.40%</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
 <div class="img img-tall">
 	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript package manager do you primarily use in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q26-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q26-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q26.jpg">
