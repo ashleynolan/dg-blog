@@ -24,6 +24,6 @@ This site is the result of a fair bit of work, not all from myself. Thanks goes 
 
 For those of you wondering who I am, check out [the brief history of me](http://www.ashleynolan.co.uk/blog/a-brief-history-of-me).  For those who don't have the time/inclination, I specialise in front-end web technologies, but my passion is all things web, and so posts will be about anything that interests me enough to write about it.  I'm also hoping to open up a labs section of the site in the not-too-distant future, which will have more hands-on code experiments - everything from simpler CSS3 demos, to more in-depth canvas and WebGL examples.
 
-It would be great to hear what people think of the site - positive or negative - so please do get in touch in the comments or on [Twitter](https://twitter.com/AshNolan_).
+It would be great to hear what people think of the site - positive or negative - so please do get in touch in the comments or on [Twitter](https://twitter.com/WelshAsh_).
 
 {{/markdown}}

@@ -1,6 +1,6 @@
 I'm not usually one for indulging in posts about myself, but I really enjoyed reading Remy's [short history](http://remysharp.com/about/) on his site when I was starting out, thus making him directly responsible for this post!
 
-So, hello - I'm Ashley Nolan.  I currently work as a Creative Technologist for TMW, pushing their front-end and digital creative output.  From an early age, my passion was digital - games were my first love and this evolved into a passion for all visually compelling aspects of digital (insert your own joke here).
+So, hello - I'm Ashley Watson-Nolan.  I currently work as a Creative Technologist for TMW, pushing their front-end and digital creative output.  From an early age, my passion was digital - games were my first love and this evolved into a passion for all visually compelling aspects of digital (insert your own joke here).
 
 I'm originally from the green, green grasslands of South Wales, more accurately a little village named [Caerleon](http://www.caerleon.net/).  I left home in 2002 to study Computer Science at the [University of Bath](http://www.bath.ac.uk/).
 

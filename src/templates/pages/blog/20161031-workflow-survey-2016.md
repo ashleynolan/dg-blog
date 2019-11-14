@@ -33,7 +33,7 @@ The focus of the survey is the same as last year; **To find out more details abo
 
 Once you have taken the time to fill in the survey yourself, it would be a massive help if you could also share it with other front-end developers that you know – quite simply, the more respondents the survey has, the more representative the results will be.
 
-I’m aiming to run the survey for up to a month, after which I’ll write up the results right here on my blog.  Keep an eye on my [Twitter ramblings](https://twitter.com/AshNolan_) for the link to this when it’s published.
+I’m aiming to run the survey for up to a month, after which I’ll write up the results right here on my blog.  Keep an eye on my [Twitter ramblings](https://twitter.com/WelshAsh_) for the link to this when it’s published.
 
 So what are you waiting for?! [Fill in the Survey right now](http://ashn.uk/survey-tooling-2016)!
 

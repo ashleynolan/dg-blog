@@ -56,7 +56,7 @@ As with previous years, I've tried to keep the survey as short as possible – i
 
 With that in mind, please share the survey with any other front-end developers you know or work with – quite simply, the more responses the survey has, the more representative the results will be.
 
-The survey will close in about a month, after which I'll write up the results and analysis as a series of articles.  If you'd like to know when this happens, [follow me on Twitter](https://twitter.com/AshNolan_) or you can leave your email at the end of the survey to receive information once this has been published.
+The survey will close in about a month, after which I'll write up the results and analysis as a series of articles.  If you'd like to know when this happens, [follow me on Twitter](https://twitter.com/WelshAsh_) or you can leave your email at the end of the survey to receive information once this has been published.
 
 So what are you waiting for?! [Go ahead and fill in the survey now](http://ashn.uk/survey-2018)!
 

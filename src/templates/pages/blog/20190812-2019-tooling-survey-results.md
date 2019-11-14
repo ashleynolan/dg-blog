@@ -2676,7 +2676,7 @@ Across the majority of tooling categories there are now clear leaders – someth
 
 Thanks again to everyone who took part this year.
 
-If anyone has any questions about any of the results, [message me on Twitter](https://twitter.com/AshNolan_) and I’ll do my best to help.
+If anyone has any questions about any of the results, [message me on Twitter](https://twitter.com/WelshAsh_) and I’ll do my best to help.
 
 Also, if you'd like to receive emails about when the next survey is launched, feel free to sign up below.
 

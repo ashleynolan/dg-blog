@@ -31,7 +31,7 @@ Browser support for CSS `text-shadow` [is excellent](http://caniuse.com/#feat=cs
 When applying text-shadow to your text, you can specify a color for your shadow, a shadow offset (x and y positions) and a blur radius.  Unlike `box-shadow`, you cannot specify the spread of the shadow, making applying just a single text-shadow to a piece of text fairly limited in what you can actually achieve.
 
 <figure>
-<p data-height="220" data-theme-id="11725" data-slug-hash="gbRZpo" data-default-tab="result" data-user="ashleynolan" class='codepen'>See the Pen <a href='http://codepen.io/ashleynolan/pen/gbRZpo/'>gbRZpo</a> by Ashley Nolan (<a href='http://codepen.io/ashleynolan'>@ashleynolan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="220" data-theme-id="11725" data-slug-hash="gbRZpo" data-default-tab="result" data-user="ashleynolan" class='codepen'>See the Pen <a href='http://codepen.io/ashleynolan/pen/gbRZpo/'>gbRZpo</a> by Ashley Watson-Nolan (<a href='http://codepen.io/ashleynolan'>@ashleynolan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <figcaption>A word with a simple `text-shadow` effect applied.</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ More frustrating than it’s support is the way in which `text-stroke` is implem
 Below is an example showing how `text-shadow` and `text-stroke` compare in practice when attempting to create a stroke effect on some text.
 
 <figure>
-<p data-height="535" data-theme-id="11725" data-slug-hash="pvwqEm" data-default-tab="result" data-user="ashleynolan" class='codepen'>See the Pen <a href='http://codepen.io/ashleynolan/pen/pvwqEm/'>Comparing text-shadow to text-stroke</a> by Ashley Nolan (<a href='http://codepen.io/ashleynolan'>@ashleynolan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="535" data-theme-id="11725" data-slug-hash="pvwqEm" data-default-tab="result" data-user="ashleynolan" class='codepen'>See the Pen <a href='http://codepen.io/ashleynolan/pen/pvwqEm/'>Comparing text-shadow to text-stroke</a> by Ashley Watson-Nolan (<a href='http://codepen.io/ashleynolan'>@ashleynolan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <figcaption>Comparing `text-shadow` and `text-stroke` when adding an outline or stroke to some text.</figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ While this worked in isolation, I found that as soon as `text-shadow` was applie
 Support for `background-clip: text` is currently non-standard and is therefore only available in webkit browsers when prefixed.
 
 <figure>
-<p data-height="360" data-theme-id="11725" data-slug-hash="ogevGP" data-default-tab="result" data-user="ashleynolan" class='codepen'>See the Pen <a href='http://codepen.io/ashleynolan/pen/ogevGP/'>ogevGP</a> by Ashley Nolan (<a href='http://codepen.io/ashleynolan'>@ashleynolan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="360" data-theme-id="11725" data-slug-hash="ogevGP" data-default-tab="result" data-user="ashleynolan" class='codepen'>See the Pen <a href='http://codepen.io/ashleynolan/pen/ogevGP/'>ogevGP</a> by Ashley Watson-Nolan (<a href='http://codepen.io/ashleynolan'>@ashleynolan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <figcaption>Example of using `background-clip` with `text-shadow`.</figcaption>
 </figure>
 

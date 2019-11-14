@@ -61,7 +61,7 @@ So that’s enough from me — [go ahead and take this year’s survey](http
 
 Every response is hugely appreciated. With that in mind please share the survey with any other front-end developers you know or work with – the more responses the survey has, the more representative the results will be.
 
-The survey will close at the end of April, with the results written up shortly after. If you’d like to know when this happens, [follow me on Twitter](https://twitter.com/AshNolan_) or leave your email at the end of the survey. You’ll then receive a link to the results articles once they are published.
+The survey will close at the end of April, with the results written up shortly after. If you’d like to know when this happens, [follow me on Twitter](https://twitter.com/WelshAsh_) or leave your email at the end of the survey. You’ll then receive a link to the results articles once they are published.
 
 So what are you waiting for?! [Go ahead and fill in the survey now](http://ashn.uk/survey-2019)!
 

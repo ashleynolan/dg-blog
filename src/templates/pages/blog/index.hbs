@@ -7,19 +7,19 @@ rss: false
 
 <section class="content blog articles separator-top">
 	<!--<h1 class="gigaHeading text-centre page-title">Page title example</h1>
-	<h2 class="text-intro text-centre">Blog and portfolio of Ashley Nolan</h2>-->
+	<h2 class="text-intro text-centre">Blog and portfolio of Ashley Watson-Nolan</h2>-->
 
-	 {{!-- {{list posts}} --}}
+	{{!-- {{list posts}} --}}
 	{{#withSort post 'data.posted'}}
-		{{#each this.pages}}
-			{{this.key}}
-			<a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}" class="articles-item separator-bottom">
-				<article>
-					<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
-					<h2 class="articles-item-title">{{ this.data.title }}</h2>
-					<p class="articles-item-description">{{ this.data.description }}</p>
-				</article>
-			</a>
-		{{/each}}
+	{{#each this.pages}}
+	{{this.key}}
+	<a href="{{replaceStr this.dirname 'dist' ''}}/{{this.data.url}}" class="articles-item separator-bottom">
+		<article>
+			<time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
+			<h2 class="articles-item-title">{{ this.data.title }}</h2>
+			<p class="articles-item-description">{{ this.data.description }}</p>
+		</article>
+	</a>
+	{{/each}}
 	{{/withSort}}
 </section>

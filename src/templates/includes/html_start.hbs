@@ -4,58 +4,67 @@
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
 
-{{#ifCond page.title 'null'}}
-		<title>AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
-		<meta name="description" content="AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
-{{else}}
-		<title>{{ page.title }} - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan</title>
-		<meta name="description" content="{{ page.title }} - AshleyNolan.co.uk - Blog and Portfolio for Ashley Nolan">
-{{/ifCond}}
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<link href="https://ashleynolan.co.uk/feed.xml" rel="alternate" type="application/rss+xml" title="Front-end development Blog and Portfolio for Ashley Nolan" />
+	{{#ifCond page.title 'null'}}
+	<title>AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan</title>
+	<meta name="description" content="AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan">
+	{{else}}
+	<title>{{ page.title }} - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan</title>
+	<meta name="description"
+		content="{{ page.title }} - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan">
+	{{/ifCond}}
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://ashleynolan.co.uk/feed.xml" rel="alternate" type="application/rss+xml"
+		title="Front-end development Blog and Portfolio for Ashley Watson-Nolan" />
 
-		<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
-		<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{{#ifCond page.title 'null'}}{{else}}
-		<!-- <meta property="og:url" content="{{ page.url }}" /> -->
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="{{ page.title }}" />
-		<meta property="og:description" content="{{#ifCond page.description undefined}}Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at Just Eat{{else}}{{ page.description }}{{/ifCond}}" />
-		<meta property="og:image" content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+	<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+	<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
 
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@AshNolan_" />
-		<meta name="twitter:title" content="{{ page.title }}" />
-		<meta name="twitter:description" content="{{#ifCond page.description undefined}}Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at Just Eat{{else}}{{ page.description }}{{/ifCond}}" />
-		<meta name="twitter:image" content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
-{{/ifCond}}
+	{{#ifCond page.title 'null'}}{{else}}
+	<!-- <meta property="og:url" content="{{ page.url }}" /> -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:description"
+		content="{{#ifCond page.description undefined}}Front-end development Blog and Portfolio for Ashley Watson-Nolan – Senior UI Engineer at Just Eat{{else}}{{ page.description }}{{/ifCond}}" />
+	<meta property="og:image"
+		content="{{#ifCond page.ogimage undefined}}https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png{{else}}{{ page.ogimage }}{{/ifCond}}" />
 
-		<!-- CSS -->
-		<link rel="stylesheet" href="/assets/css/kickoff.min.css">
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@WelshAsh_" />
+	<meta name="twitter:title" content="{{ page.title }}" />
+	<meta name="twitter:description"
+		content="{{#ifCond page.description undefined}}Front-end development Blog and Portfolio for Ashley Watson-Nolan – Senior UI Engineer at Just Eat{{else}}{{ page.description }}{{/ifCond}}" />
+	<meta name="twitter:image" content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+	{{/ifCond}}
 
-		<!-- Fonts – non blocking -->
-		<link href='https://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
-		<script>
-			(function(d) {
-				var config = {
-					kitId: 'xxf1gwm',
-					scriptTimeout: 3000
-				},
-				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-			})(document);
-		</script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/kickoff.min.css">
+
+	<!-- Fonts – non blocking -->
+	<link href='https://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+	<script>
+		(function (d) {
+			var config = {
+				kitId: 'xxf1gwm',
+				scriptTimeout: 3000
+			},
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = '//use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
 
 
-		<!-- Require include for JS -->
-		<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min" async></script>
+	<!-- Require include for JS -->
+	<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min" async></script>
 
-	</head>
-	<body>
+</head>
+
+<body>

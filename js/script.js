@@ -1,5 +1,5 @@
 /*	Author:
-		Ashley Nolan
+		Ashley Watson-Nolan
 */
 
 'use strict';
@@ -18,8 +18,8 @@ require([
 	'moment',
 	'prism'
 ],
-function ($, log, MBP, sw, ai, ext, Modernizr, App, moment, prism) {
+	function ($, log, MBP, sw, ai, ext, Modernizr, App, moment, prism) {
 
-	Prism.highlightAll();
+		Prism.highlightAll();
 
-});
+	});

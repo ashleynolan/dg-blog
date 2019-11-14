@@ -278,7 +278,7 @@ module.exports = function (grunt) {
 
 				rss: {
 					title: 'AshleyNolan.co.uk',
-					description: 'Front-end development Blog and Portfolio for Ashley Nolan – Senior UI Engineer at JUST EAT'
+					description: 'Front-end development Blog and Portfolio for Ashley Watson-Nolan – Principal UI Engineer at JUST EAT'
 				}
 			},
 

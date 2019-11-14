@@ -1676,7 +1676,7 @@ Looking specifically at CSS, the adoption of methodologies, linting and naming s
 
 Whether this is down to developers seeing less value in investing their time in learning these tools is unclear.  I’d encourage anyone reading this to put the time into learning some of the more popular CSS methodologies and tools such as SMACSS, OOCSS, CSS Modules and BEM.  They really do help broaden your knowledge of CSS in terms of learning ways to structure and maintain your CSS, so that you can then choose the approach that best works for you.
 
-If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, [message me on Twitter](https://twitter.com/AshNolan_) and I’ll do my best to help.
+If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, [message me on Twitter](https://twitter.com/WelshAsh_) and I’ll do my best to help.
 
 Also, if you'd like to receive emails about next year's survey when it launches, feel free to sign up below.
 

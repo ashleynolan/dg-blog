@@ -20,7 +20,7 @@ categories:
 
 I'm not usually one for indulging in posts about myself, but I really enjoyed reading Remy Sharp’s [short history](http://remysharp.com/about/) on his site when I was starting out, so the blame is put squarely on his shoulders as the inspiration for this post...!
 
-So, hello - I'm Ashley Nolan.  I currently work as a Senior Web UI Engineer for [JUST EAT](http://www.just-eat.co.uk/), within the International Platform Improvements team.
+So, hello - I'm Ashley Watson-Nolan.  I currently work as a Senior Web UI Engineer for [JUST EAT](http://www.just-eat.co.uk/), within the International Platform Improvements team.
 
 I'm originally from South Wales, more accurately a little village named [Caerleon](http://www.caerleon.net/) pretty close to the border, which is my excuse for having no trace of a Welsh accent (other than after a few pints).  From an early age, my passion has been digital – games were my first love and this has evolved into a passion for all visually compelling aspects of digital (insert your own joke here).
 

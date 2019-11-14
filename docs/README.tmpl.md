@@ -5,9 +5,9 @@
 
 ## Authors
 
-**Ashley Nolan*
+**Ashley Watson-Nolan*
 
-+ [twitter.com/AshNolan_](http://twitter.com/AshNolan_)
++ [twitter.com/WelshAsh_](http://twitter.com/WelshAsh_)
 + [github.com/ashleynolan](http://github.com/ashleynolan)
 
 

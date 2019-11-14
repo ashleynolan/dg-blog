@@ -40,6 +40,6 @@ The other tool I've come across is [Opera's Mobile Emulator](http://www.opera.co
 
 Opera's Mobile Emulator comes packed with a whole bunch of devices, including a variety of HTC, Samsung and Sony Phones and Tablets, as well as the Kindle Fire and the Nexus 7. The great thing about the emulator is that it sets the pixel density and resolution when choosing each device - very handy for comparing your site between high quality HD and less capable alternatives. It can also be hooked up to Opera Dragonfly so that you can debug straight into the emulator.
 
-I'd love to know what other tools people are currently using for local device testing, so please do let me know either through the comments or on [Twitter](https://twitter.com/AshNolan_).
+I'd love to know what other tools people are currently using for local device testing, so please do let me know either through the comments or on [Twitter](https://twitter.com/WelshAsh_).
 
 {{/markdown}}

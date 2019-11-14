@@ -36,11 +36,11 @@ Since putting the article live last month, responses to the survey have flooded 
 
 Interestingly, the results haven’t changed all that much from the initial results I published (based on 648 responses) – in fact the majority have only moved a couple of percent without affecting what can be drawn from the responses.
 
-I hope to run the survey again next year, to compare and see how current trends evolve, so if you’d like to be informed of when that happens, or have any questions regarding these results, [follow me or drop me a message on Twitter](https://twitter.com/AshNolan_).
+I hope to run the survey again next year, to compare and see how current trends evolve, so if you’d like to be informed of when that happens, or have any questions regarding these results, [follow me or drop me a message on Twitter](https://twitter.com/WelshAsh_).
 
 ---
 
-A couple of weeks ago, [I put out a request for front-end developers](https://twitter.com/AshNolan_/status/636499157079998464) to fill-out a very brief survey on front-end tooling.
+A couple of weeks ago, [I put out a request for front-end developers](https://twitter.com/WelshAsh_/status/636499157079998464) to fill-out a very brief survey on front-end tooling.
 
 The aim?  I simply wanted to find out more information about current knowledge and usage levels across the community.  I often hear that Sass is now the defacto preprocessor of choice, or that {insert JS framework here} is the latest and greatest thing since sliced bread, but I’ve often wondered how that would be reflected if I could ask developers directly about what tools they have knowledge of and use in their projects.
 
@@ -634,7 +634,7 @@ So, what can be summarised overall?  Well, it seems that the adoption rate of fr
 
 On the flip side, use of JavaScript testing tools seems to be lagging behind the adoption rate of tools in other areas – something that can only be solved by better edutcaion of how to use and integrate these tools into peoples projects and as importantly, how to write JavaScript that is easy to test.
 
-If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, [message me on Twitter](https://twitter.com/AshNolan_) and I’ll do my best to help!
+If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, [message me on Twitter](https://twitter.com/WelshAsh_) and I’ll do my best to help!
 
 {{/markdown}}
 
