@@ -1,4 +1,10 @@
 {{#if promo}}
+{{#ifCond promo 'carbon'}}
+<div class="promotion promotion--ad separator-both">
+	<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D5KQI&placement=ashleynolancouk"
+		id="_carbonads_js"></script>
+</div>
+{{else}}
 <div class="promotion separator-both">
 	{{#if promotitle}}
 	<h2 class="promotion-header text-bg">{{promotitle}}</h2>
@@ -48,7 +54,7 @@
 			<p class="promotion-text">The best way to learn Node.js, Express, MongoDB, and Friends</p>
 		</a>
 	{{/ifCond}}
-
 	</div>
 </div>
+{{/ifCond}}
 {{/if}}

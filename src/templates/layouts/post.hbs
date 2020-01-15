@@ -8,7 +8,10 @@
 
 			{{> body }}
 
-			{{> promos }}
+			{{#ifCond promo 'null'}}
+			{{else}}
+			{{> promos promo='carbon' }}
+			{{/ifCond}}
 
 			{{#if nodate}}{{else}}
 			<p class="post-info separator-top">Article posted on the {{moment posted format="Do MMMM YYYY" }}</p>

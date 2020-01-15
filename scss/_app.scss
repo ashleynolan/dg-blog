@@ -410,6 +410,10 @@ footer {
 			max-width: 800px;
 			text-align: center;
 		}
+
+		& > p {
+			max-width: none;
+		}
 	}
 
 

@@ -14,8 +14,6 @@ categories:
   - "Web Development"
   - "terminal"
 
-promo: sublime
-
 ---
 
 {{#markdown}}
