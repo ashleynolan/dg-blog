@@ -1480,7 +1480,7 @@ Knowledge levels of Lodash saw a small gain as well, with those using it a littl
 
 This year, D3.js was added as an option on this question for the first time, with 7.29% of developers saying they feel comfortable using it.
 
-Looking at knowledge levels across all the JavaScript MV* frameworks – so everything in the list except jQuery, Underscore, Lodash and D3.js – 78.54% of respondents said that they felt comfortable using at least one of these frameworks.  That figure is up 8.04% on last year's results, and up 28% [since 2016](http://localhost:9000/blog/frontend-tooling-survey-2016-results#js-frameworks), showing just how important it is for front-end developers to know at least one of these tools.
+Looking at knowledge levels across all the JavaScript MV* frameworks – so everything in the list except jQuery, Underscore, Lodash and D3.js – 78.54% of respondents said that they felt comfortable using at least one of these frameworks.  That figure is up 8.04% on last year's results, and up 28% [since 2016](/blog/frontend-tooling-survey-2016-results#js-frameworks), showing just how important it is for front-end developers to know at least one of these tools.
 
 
 ---

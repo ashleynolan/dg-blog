@@ -135,7 +135,7 @@
 <p>With a small amount of tinkering you should have little problem ensuring your site scores an A+ rating on the <a href="https://www.ssllabs.com/ssltest/">SSL Labs test</a>.</p>
 <h2 id="renewing-your-ssl-certificate">Renewing your SSL Certificate</h2>
 <p>By default, SSL certificates delivered by LetsEncrypt are valid for 90 days, so it’s important to make sure that you setup a crontab to renew your certificate automatically.</p>
-<p>To do this on an NGINX setup, I followed the steps detailed in <a href="https://letsecure.me/secure-web-deployment-with-lets-encrypt-and-nginx/">this article</a>.  The steps to do the same for an Apache setup are detailed in <a href="https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04">Step 4 of the Digital Ocean Tutorial I mentioned previously</a>.</p>
+<p>To do this on an NGINX setup, I followed an online tutorial (the page I used for this is no longer available – I recommend checking out the excellent <a href="https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04">Digital Ocean docs</a>).  The steps to do the same for an Apache setup are detailed in <a href="https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04">Step 4 of the Digital Ocean Tutorial I mentioned previously</a>.</p>
 <p>In short, to set this up on NGINX, save the following in a file called renewCerts.sh:</p>
 <pre>
 <code class="language-vim">

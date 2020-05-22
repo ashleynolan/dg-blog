@@ -53,7 +53,7 @@ With a small amount of tinkering you should have little problem ensuring your si
 
 By default, SSL certificates delivered by LetsEncrypt are valid for 90 days, so it’s important to make sure that you setup a crontab to renew your certificate automatically.
 
-To do this on an NGINX setup, I followed the steps detailed in [this article](https://letsecure.me/secure-web-deployment-with-lets-encrypt-and-nginx/).  The steps to do the same for an Apache setup are detailed in [Step 4 of the Digital Ocean Tutorial I mentioned previously](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04).
+To do this on an NGINX setup, I followed an online tutorial (the page I used for this is no longer available – I recommend checking out the excellent [Digital Ocean docs](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04)).  The steps to do the same for an Apache setup are detailed in [Step 4 of the Digital Ocean Tutorial I mentioned previously](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04).
 
 In short, to set this up on NGINX, save the following in a file called renewCerts.sh:
 
