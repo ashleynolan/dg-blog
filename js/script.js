@@ -16,10 +16,20 @@ require([
 	'modernizr',
 	'App',
 	'moment',
-	'prism'
+	'prism',
+	'disqus'
 ],
-	function ($, log, MBP, sw, ai, ext, Modernizr, App, moment, prism) {
+	function ($, log, MBP, sw, ai, ext, Modernizr, App, moment, prism, disqus) {
 
 		Prism.highlightAll();
+
+		disqusLoader( '.comments', {
+			scriptUrl: '//ashleynolan.disqus.com/embed.js',
+			disqusConfig: function ()
+			{
+				this.page.url       = window.disqusConfig.url;
+				this.page.identifier  = window.disqusConfig.identifier;
+			}
+		});
 
 	});

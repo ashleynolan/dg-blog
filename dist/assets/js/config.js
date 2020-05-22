@@ -20,6 +20,7 @@ require.config({
 		setExternalLinks: 'helpers/setExternalLinks',
 
 		modernizr: 'components/modernizr/modernizr.min',
+		disqus: 'libs/disqusLoader',
 
 
 		// ---------------------------------------------
