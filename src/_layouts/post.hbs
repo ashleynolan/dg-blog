@@ -1,0 +1,46 @@
+---
+permalink: "blog/{{ url }}.html"
+---
+
+{{> html_start }}
+
+	<div class="l-container">
+		{{> masthead }}
+
+		<section class="c-content c-content--post">
+			<h1>{{ title }}</h1>
+
+			{{{ content }}}
+
+			{{!-- {{#ifCond promo 'null' }}{{else}}
+			{{> promos promo='carbon' }}
+			{{/ifCond}} --}}
+
+			{{#if nodate}}{{else}}
+            <div class="c-content-info">
+			    <p>Article posted on the {{moment posted format="Do MMMM YYYY" }}</p>
+
+                {{#if updated}}
+                <p>Last updated on the <date>{{moment updated format="Do MMMM YYYY" }}</date>
+                </p>
+                {{/if}}
+            </div>
+			{{/if}}
+
+
+			<div id="disqus_thread" class="c-comments"></div>
+		</section>
+
+		{{> footer }}
+	</div>
+
+{{#if nocomments}}
+{{else}}
+    <script type="text/javascript">
+    window.disqusConfig = {
+        url: 'https://ashleynolan.co.uk{{ page.url }}',  // Replace PAGE_URL with your page's canonical URL variable
+        identifier: '{{ title }}' // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    </script>
+{{/if}}
+{{> html_end }}

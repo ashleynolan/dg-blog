@@ -1,0 +1,127 @@
+@use './settings/mq' as *;
+
+html {
+    box-sizing: border-box;
+
+    font-size: var(--base-font-size);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--primary-font-family);
+    background-color: var(--page-bg-color);
+    line-height: var(--base-leading);
+    color: var(--text-color);
+    font-weight: 400;
+
+    // TODO: Play around with 300 or 400 here
+    // 400 matches current site, 300 is slightly lighter
+
+    /*
+	font-weight: 300; */
+
+    // Smoothens type
+    // =========================================
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smooth: always;
+}
+
+
+.c-siteHeader {
+    display: flex;
+}
+
+.c-siteFooter {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.c-siteFooter-content {
+    padding: 0 3%;
+    margin: 20px auto 0;
+
+    @include media('>=narrow') {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    & > p {
+        max-width: none;
+    }
+}
+
+.c-content {
+    display: grid;
+    grid-template-columns: 1fr 22fr 1fr;
+    gap: 0;
+    max-width: 1200px;
+    margin: 40px auto 0;
+
+    transition: grid-template-columns 0.25s ease-in-out, gap 0.25s ease-in-out;
+
+    @include media('>=narrowMid') {
+        grid-template-columns: 2fr 640px 2fr;
+        gap: 0 calc(var(--grid-spacing) / 2);
+    }
+
+    @include media('>=wide') {
+        grid-template-columns: 2fr 680px 2fr;
+        gap: 0 var(--grid-spacing);
+    }
+
+    & > * {
+        grid-column: 2 / -2;
+    }
+}
+
+// Need SCSS suppprt to fix this
+// %u-separator-top {
+//     box-shadow: 0 -1px 0 var(--color-grey-dark);
+//     border-top: 1px solid var(--color-white);
+// }
+
+.c-content-info {
+    transition: padding 0.25s ease-in-out;
+
+    @include media('<mid') {
+        box-shadow: 0 -1px 0 var(--color-grey-dark);
+        border-top: 1px solid var(--color-white);
+
+        padding-top: calc(var(--vertical-spacing-base) * 4);
+    }
+
+    @include media('>=mid') {
+        grid-row: -1 / span 4;
+        grid-column: -2;
+
+        box-shadow: -3px 0 0 var(--color-grey-dark);
+        border-left: 4px solid var(--color-white);
+        padding-left: calc(var(--grid-spacing) / 2);
+        padding-right: calc(var(--grid-spacing) / 2);
+        align-self: start;
+        padding-bottom: 12px;
+
+        & > p {
+            font-size: 18px;
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+
+        & > :not(:first-child) {
+            border-top: 1px solid var(--color-grey-dark);
+            padding-top: 12px;
+        }
+
+        @include media('>=wide') {
+            padding-left: var(--grid-spacing);
+            padding-right: var(--grid-spacing);
+        }
+    }
+}
+

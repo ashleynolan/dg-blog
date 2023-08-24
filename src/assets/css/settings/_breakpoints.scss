@@ -1,0 +1,36 @@
+$unit-intervals: (
+    'px': 1,
+    'em': 0.001,
+    // We need more sensitivity, some browsers are very specific with breakpoints
+    'rem': 0.1,
+    '': 0
+);
+
+// stylelint-disable function-parentheses-newline-inside, function-comma-newline-after
+// Lifted out of the variables file to fix circular reference issues
+$breakpoints: (
+    narrow: 600px,
+    'narrowMid': 720px,
+    'mid': 1000px,
+    'wide': 1200px
+);
+// stylelint-enable function-parentheses-newline-inside, function-comma-newline-after
+
+// @function populate-breakpoints() {
+//     $breakpointString: '';
+//     $breakpointsPx: functions.map-to-px($fozzie-breakpoints, 16);
+
+//     @each $name,
+//         $value in $breakpointsPx {
+//         $breakpointString: $breakpointString +'#{$name}:#{$value},';
+//     }
+
+//     @return str-slice($breakpointString, 0, str-length($breakpointString) - 1);
+// }
+
+// @mixin breakpoints() {
+//     .c-screen-sizer {
+//         display: none;
+//         content: populate-breakpoints();
+//     }
+// }

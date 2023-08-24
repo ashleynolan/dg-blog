@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	{{#ifCond title undefined}}
+	<title>AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan</title>
+	<meta name="description" content="AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan">
+	{{else}}
+	<title>{{ title }} - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan</title>
+	<meta name="description"
+		content="{{ title }} - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan">
+	{{/ifCond}}
+
+	<link href="https://ashleynolan.co.uk/feed.xml" rel="alternate" type="application/rss+xml"
+		title="Front-end development Blog and Portfolio for Ashley Watson-Nolan" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+	<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+
+	<!-- Need to put in OG tags Here -->
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+	<!-- Fonts – non blocking -->
+	<link href='https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap' rel='stylesheet' type='text/css'>
+	<script>
+		(function (d) {
+			var config = {
+				kitId: 'xxf1gwm',
+				scriptTimeout: 3000
+			},
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = '//use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZBM0N2C9W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZBM0N2C9W');
+</script>
+
+<body>

@@ -1,0 +1,29 @@
+/** Global Custom Props **/
+:root {
+    /* GlobalTokens */
+    --color-white: #fff;
+    --color-eggshell: #dce4d7;
+    --color-red: #be1e2d;
+    --color-grey-dark: #4e5149;
+    --color-black-almost: #1a1a1a;
+    --primary-font-family: 'Muli', helvetica, arial, sans-serif;
+    --secondary-font-family: georgia, 'Times New Roman', times, serif;
+
+    /* TODO: Should review mono font choice */
+    --mono-font-family: menlo, monaco, 'Courier New', monospace;
+
+    /* Aliases */
+    --page-bg-color: var(--color-eggshell);
+    --logo-bg-color: var(--color-red);
+
+    /* Grid aliases */
+    --grid-spacing: 24px;
+    --vertical-spacing-base: 8px;
+
+    /* Typography sizes */
+    --text-color: var(--color-black-almost);
+    --base-font-size: 16px;
+    --base-leading: 1.6;
+    --font-size-heading--alpha: 36px;
+    --font-size-heading--alpha--wide: 48px;
+}

@@ -1,0 +1,45 @@
+@use './settings/mq' as *;
+
+h1,
+.h1,
+.alpha,
+h2,
+.h2,
+.beta,
+h3,
+.h3,
+.gamma,
+h4,
+.h4,
+.delta,
+h5,
+.h5,
+.epsilon,
+h6,
+.h6,
+.zeta {
+    font-weight: 700;
+}
+
+
+h1,
+.h1,
+.alpha {
+    font-size: var(--font-size-heading--alpha);
+    margin-top: 0;
+
+    @include media('>=narrow') {
+        font-size: var(--font-size-heading--alpha--wide);
+    }
+}
+
+/* TODO: Need to add other heading sizes here (and to variables) */
+
+p {
+    margin-top: 0;
+    margin-bottom: calc(var(--vertical-spacing-base) * 4);
+
+    @include media('>=narrow') {
+        font-size: 22px;
+    }
+}
