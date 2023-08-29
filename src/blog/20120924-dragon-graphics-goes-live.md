@@ -1,5 +1,5 @@
 ---
-layout: post.hbs
+layout: post
 
 title: Dragon Graphics goes live
 url: dragon-graphics-goes-live
