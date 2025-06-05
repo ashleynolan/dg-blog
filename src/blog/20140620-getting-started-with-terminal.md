@@ -19,7 +19,6 @@ categories:
 
 ---
 
-
 For around 18 months now I’ve been using the terminal more and more.  Perhaps the most suprising part of this has been just how enjoyable it is to use once you move past the very basics and become more proficient with what can at first seem on a level with black magic.
 
 Whereas historically it was unusual for a front-end dev to stare too deeply into the command line abyss, it has now become a tool that can aid many front-end tasks.  Whether using git, grunt or jekyll, there are many tools that require a small amount of terminal knowledge.
@@ -34,7 +33,7 @@ Note. The commands and shortcuts will refer directly to the OSX terminal, but ma
 The most basic terms you'll need to survive on the command line:
 
 <dl>
-	<dt><dfn>**cd**</dfn></dt>
+	<dt><dfn><strong>cd</strong></dfn></dt>
 	<dd>
 		<p>Short for change directory and will navigate to the directory specified after the command.</p>
 		<p>For example, `cd Users/Sites/` will move you into the Users/Sites folder.</p>
@@ -82,7 +81,7 @@ A useful reference if you'd like to see more detail about what specific characte
 
 
 
-##Useful Keyboard Shortcuts
+## Useful Keyboard Shortcuts
 
 <dl>
 	<dt><dfn>**Tab**</dfn></dt>
@@ -132,7 +131,7 @@ A useful reference if you'd like to see more detail about what specific characte
 </dl>
 
 
-##Building on the basics
+## Building on the basics
 
 <dl>
 
@@ -187,13 +186,13 @@ A useful reference if you'd like to see more detail about what specific characte
 </dl>
 
 
-##Aliases
+## Aliases
 
 Aliases are a godsend for making short work of commonly used commands.  They are basically a way of creating a shorthand of a longer command, so that you can then type the shorter command in order to execute it.
 
  I have written a separate article about [how to create terminal aliases and functions](/blog/beginners-guide-to-terminal-aliases-and-functions), so if you're interested in finding out more, go take a look.
 
-##iTerm
+## iTerm
 
 An emulator for the default terminal provided by Mac OSX, iTerm provides extra features that the default terminal doesn't.
 
@@ -202,7 +201,7 @@ Especially useful for creating profiles – shortcuts for common directories and
 If you want to know more about iTerm, [checkout its website](http://www.iterm2.com/).
 
 
- ##…and finally, for shits and giggles
+ ## …and finally, for shits and giggles
 
 <dl>
 	<dt><dfn>**See your most used terminal commands**</dfn></dt>
@@ -213,8 +212,6 @@ If you want to know more about iTerm, [checkout its website](http://www.iterm2.c
 </dl>
 
 
-##Got any more?
+## Got any more?
 
 I’m always interested in seeing what terminal commands people find most useful, so if you haveof a command that you can’t live without, I’d love to hear about it in the comments!
-
-

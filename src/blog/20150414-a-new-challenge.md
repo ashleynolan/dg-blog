@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 This year marked my 7th year living in London, a length of time I never envisiged spending here when I first moved back in 2008.  It will however also be my last year in London; next month I’ll be moving back to Wales to start a whole new adventure.
 
 ## Moving on
@@ -79,4 +78,3 @@ We also have plans to expand upon the [front-end guidelines](http://tech.tmw.co.
 ## To the future
 
 So that’s it really!  Hopefully, I’ll have a whole bunch of new things to write about when I start work at Just Eat, but if anyone has any particular questions that they’d like to find out about, get in touch in one of the usual ways and I’ll do my best to answer them.
-

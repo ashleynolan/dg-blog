@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 There has been a lot of talk about Simplicity on the web as of late.  It’s a good conversation to be having, but one that I think has cast an unfair scapegoat in our quest to keep things simple.
 
 That scapegoat seems to be our tools.
@@ -62,7 +61,6 @@ As Stephen Hay recently said at his talk at Beyond Tellerrand:
 
 > “Start a new project as simple as it can get and only add things if you really need them.”
 
-For me personally, this means grabbing a core structure of code and tools that enables me to just start coding.  To you, it might mean something different and that’s fine.  The main thing is that your chosen process gives you the simplicity that you need to start creating.
+For me personally, this means grabbing a core structure of code and tools that enable me to just start coding.  To you, it might mean something different and that’s fine.  The main thing is that your chosen process gives you the simplicity that you need to start creating.
 
 So let’s all stop blaming our tools for hindering simplicity; instead blame ourselves for the ways in which we choose to use them.
-

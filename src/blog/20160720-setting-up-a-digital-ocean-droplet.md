@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 A couple of weeks ago, I successfully made the switch from hosting my site on GoDaddy to setting up a droplet on Digital Ocean.
 
 My main reason for making the move was that I wanted a hosting environment that I felt I could truly control, as well as wanting to secure my site using HTTPS – [a potentially free service](/blog/moving-to-https-with-letsencrypt) that GoDaddy wanted to charge me for enabling.
@@ -108,4 +107,3 @@ Hopefully you can now see that setting up your own server isn’t such a dauntin
 In total I spent a couple of nights completing the above steps to migrate my site across to Digital Ocean, but I think the time spent was massively worthwhile.  I now feel a lot more confident configuring aspects of my server that I previously knew little about.
 
 If you have any questions or general comments about anything I’ve mentioned, please do get in touch – I’d love to hear other people’s experiences when setting up their own servers!
-

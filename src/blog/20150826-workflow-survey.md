@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 So I’m going to get straight to the point.
 
 If you could spare 2 minutes of your time to fill out a *very brief* [survey I’m running on front-end tools](http://ashn.uk/survey-tooling), I would massively appreciate it.
@@ -36,8 +35,3 @@ The survey is a number of very short multiple choice questions and should take l
 As an incentive, at the end of [the survey](http://ashn.uk/survey-tooling) there will be a big party with [cake for everyone](http://theportalwiki.com/wiki/Cake)*.
 
 <small>* The Cake is a lie.</small>
-
-
-
-
-

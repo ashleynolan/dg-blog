@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 Last week, I spent some time moving my site onto [Digital Ocean](https://www.digitalocean.com/).  Previously it had been hosted with GoDaddy, but I became tired with the relative lack of control they gave me with respect to my server setup.  That combined with the prospect of having to pay for an SSL certificate – which you can generate yourself for free (more on that in a second) – gave me the push I needed to make the switch.
 
 For those who don’t know anything about Digital Ocean, I highly recommend checking them out.  The [tutorials they provide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04) are excellent, irrespective of the server technologies you want to use – I learned a tonne about what goes on under the hood of my server by reading through a few of them.
@@ -50,4 +49,3 @@ If you’re interested in any of the things I’ve mentioned above, then check o
 
 - [Setting up a server on Digital Ocean](/blog/setting-up-a-site-on-digital-ocean) and
 - [Moving to HTTPS using LetsEncrypt](/blog/moving-to-https-with-letsencrypt)
-

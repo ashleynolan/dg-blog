@@ -1,0 +1,11 @@
+<!-- Global Navigation links -->
+<nav id="page-nav" class="c-globalNav">
+    <ul class="c-globalNav-list">
+        <li class="c-globalNav-item{{#ifCond page.fileSlug 'blog' }} c-globalNav--active{{/ifCond}}"><a href="/blog/"
+                data-hover="Blog">Blog</a><span class="c-globalNav-arrow"></span></li>
+        <li class="c-globalNav-item{{#ifCond page.fileSlug 'work' }} c-globalNav--active{{/ifCond}}"><a href="/work"
+                data-hover="Work">Work</a><span class="c-globalNav-arrow"></span></li>
+        <li class="c-globalNav-item c-globalNav-item--last{{#ifCond page.fileSlug 'about' }} c-globalNav--active{{/ifCond}}"><a href="/about"
+                data-hover="About">About</a><span class="c-globalNav-arrow"></span></li>
+    </ul>
+</nav>

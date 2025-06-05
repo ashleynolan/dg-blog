@@ -16,7 +16,6 @@ categories:
 
 ---
 
-
 On Friday, I had the pleasure of attending [Responsive Day Out](http://responsiveconf.com/) down in Brighton. Organised by [Jeremy Keith](https://twitter.com/adactio) and the guys at [Clearleft](https://twitter.com/clearleft), the day was full of great, well focussed talks on varying aspects of Responsive Web Design (RWD), which I'd highly recommend you check out when the videos are put online.
 
 There were a lot of things I took away from the day, some of which helped surface things I'd been mulling over for a little while. RWD is still in its relative infancy in lots of ways; designers are having to rethink not just their process, but the whole way they go about designing a website. Developers are making the best of the tools and standards available to them, while filling in the gaps with hacks (nothing has really changed here though has it?!).

@@ -1,0 +1,24 @@
+:root {
+    // Alias tokens
+    --separator-color: var(--color-white);
+    --separator-color--secondary: var(--page-border-color);
+}
+
+.u-separator-top,
+%u-separator-top {
+    box-shadow: 0 -1px 0 var(--separator-color--secondary);
+    border-top: 1px solid var(--separator-color);
+}
+
+.u-separator-bottom,
+%u-separator-bottom {
+    box-shadow: 0 1px 0 var(--separator-color);
+    border-bottom: 1px solid var(--separator-color--secondary);
+}
+
+.u-separator-both,
+%u-separator-both {
+    box-shadow: 0 -1px 0 var(--separator-color--secondary), 0 1px 0 var(--separator-color);
+    border-top: 1px solid var(--separator-color);
+    border-bottom: 1px solid var(--separator-color--secondary);
+}

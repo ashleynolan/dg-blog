@@ -19,9 +19,6 @@ categories:
 
 ---
 
-
----
-
 **Update 12/09/2019**
 
 The results for the 2019 edition of the Front-end Tooling Survey are now available. If you'd like to view them, [check them out here](/blog/frontend-tooling-survey-2019-results).
@@ -99,7 +96,6 @@ The reason I want to highlight these sources is to show that there has been a go
 
 </div>
 
-
 ---
 
 <a name="experience-general"></a>
@@ -110,7 +106,7 @@ The first question I asked was to get an idea of the experience level of those r
 
 Here are the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Answer</th>
@@ -178,7 +174,7 @@ The question was **How do you rate your own knowledge of CSS and its associated 
 
 Here’s what the responses looked like:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Level</th>
@@ -243,7 +239,7 @@ This question was asked on last years survey, with Sass being the choice for the
 
 The results below also show the percentage difference between this years and last years results where applicable.
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Preprocessor</th>
@@ -322,8 +318,8 @@ Following on from the last question, I wanted to find out more detail about know
 
 Here is how people responded when asked – **Please indicate your experience with the following CSS Processing tools**:
 
-<div class="table-wrapper">
-	<table class="table table--bordered">
+<div class="o-table-wrapper">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -395,7 +391,7 @@ The next question was an area of CSS that I have a lot of interest in – CSS Na
 
 The question asked was – **Do you use a naming scheme when writing CSS, such as BEM or SUIT?**
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Answer</th>
@@ -450,7 +446,7 @@ I asked **Do you use a tool to lint your CSS?**
 
 The results were as follows:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Answer</th>
@@ -496,8 +492,8 @@ The next three questions in the survey covered the knowledge levels and usage ac
 
 Let’s look at the results:
 
-<div class="table-wrapper">
-	<table class="table table--bordered">
+<div class="o-table-wrapper">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -566,8 +562,8 @@ This next question followed on from the last by asking respondents to **Please i
 
 The results looked like this:
 
-<div class="table-wrapper">
-	<table class="table table--bordered">
+<div class="o-table-wrapper">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -659,7 +655,7 @@ Rounding off the survey’s questions on CSS, I asked respondents **Which of the
 
 Here are the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Tool/Methodology</th>
@@ -765,7 +761,7 @@ First up, I asked respondents **How do you rate your own knowledge of JavaScript
 
 These were the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Knowledge</th>
@@ -826,7 +822,7 @@ The question that respondents were asked was **What task runner do you prefer us
 
 Let’s take a look at the results – where possible I’ve included the percentage change from last years survey:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Task Runner</th>
@@ -909,8 +905,8 @@ At the time of the 2015 survey, React was a relative newcomer still gaining grou
 
 Here’s what the results show:
 
-<div class="table-wrapper">
-	<table class="table table--bordered">
+<div class="o-table-wrapper">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -1048,7 +1044,7 @@ The question was, **Which JavaScript libraries and/or frameworks do you currentl
 
 Here are the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th></th>
@@ -1149,7 +1145,7 @@ Although knowledge levels were similar between Lodash and Underscore in the resu
 Also, a notable mention to Vue.js, which has been getting mentioned a lot recently, with 9.35% of respondents saying that they use frequently on their projects.
 
 
-{{> promos promo='react' }}
+{{> promos }}
 
 
 <a name="js-framework-essential"></a>
@@ -1160,7 +1156,7 @@ Question 14 looked at what JavaScript library or framework respondents considere
 
 Let’s take a look at the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th></th>
@@ -1277,7 +1273,7 @@ Will this have changed just over 12 months on?  The question asked was **Do you 
 
 Let’s take a look at the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Module Bundler</th>
@@ -1362,7 +1358,7 @@ The question I asked was **Are you using a tool to transpile your JavaScript fro
 
 Here are the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Answer</th>
@@ -1403,7 +1399,7 @@ Only 7.35% (386) of respondents had never heard of a JavaScript transpiler, agai
 
 Looking at these results, it’s straightforward to conclude that having knowledge of a transpilation tool, such as Babel, is becoming a required skill for the modern front-end developer.
 
-{{> promos promo='es6' }}
+{{> promos }}
 
 <a name="js-linters"></a>
 
@@ -1415,7 +1411,7 @@ The question I asked was **Which tool do you use to lint your JavaScript? (if an
 
 Here are the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Tool</th>
@@ -1487,7 +1483,7 @@ The question I asked was **Which tool do you use to test your JavaScript? (if an
 
 Let’s take a look at the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Tool</th>
@@ -1582,8 +1578,8 @@ Respondents were asked to **Please indicate your experience with the following f
 
 Here is how people responded:
 
-<div class="table-wrapper">
-	<table class="table table--bordered">
+<div class="o-table-wrapper">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -1674,7 +1670,6 @@ If anyone has any questions about any of the results, or would like me to look a
 
 Also, if you'd like to receive emails about next year's survey when it launches, feel free to sign up below.
 
-
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -1703,9 +1698,4 @@ Also, if you'd like to receive emails about next year's survey when it launches,
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-
-
-
-
-
 

@@ -16,7 +16,6 @@ categories:
 
 ---
 
-
 As I’m working in the OSX Terminal more and more these days, I'm always on the lookout for time saving shortcuts.
 
 A really useful tip that I picked up recently from [Zander Martineau](http://twitter.com/MrMartineau) is how to open up Sublime Text straight from the Terminal.  This is done by hooking into a CLI utility that Sublime provides called [subl](http://www.sublimetext.com/docs/2/osx_command_line.html).
@@ -25,29 +24,29 @@ The following instructions are based largely on the original [gist on Github](ht
 
 It’s a slightly different installation depending on whether you’re using Sublime Text 2 or 3, so I’ll split the two out below in the installaton; simply refer to the instructions that are relevant to you.
 
-##Installation
+## Installation
 
 Assuming you installed Sublime in the Applications folder, the following command should open up the editor when you type it into the Terminal:
 
-###For Sublime Text 2:
+### For Sublime Text 2:
 `open /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl`
 
-###For Sublime Text 3:
+### For Sublime Text 3:
 `open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl`
 
 If that worked, you're good to go.
 
 You now need to create a symlink called `sublime` which links the subl CLI to a folder where your system usually looks to execute these binaries.  To do this, type in:
 
-###For Sublime Text 2:
+### For Sublime Text 2:
 `ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime`
 
-###For Sublime Text 3:
+### For Sublime Text 3:
 `ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime`
 
 
 
-##Check your profile
+## Check your profile
 
 The final thing you need to do, is to check that your system profile is looking in the right place to see the symlink you have just created.
 
@@ -78,7 +77,7 @@ Finally, if you did have to add `/usr/local/bin` to your `PATH`, run the followi
 This will reload your .bash_profile with the newly added directory in your `PATH`.
 
 
-##Test it works!
+## Test it works!
 
 In your Terminal, the following commands should now work:
 
@@ -91,4 +90,3 @@ In your Terminal, the following commands should now work:
 And there you have it – you can now open any file or folder in Sublime straight from the Terminal.
 
 Thanks and credit for this great solution again goes to [Artero](https://www.github.com/artero).  If you have any problems getting it working, let me know and I’ll do my best to help you out.
-

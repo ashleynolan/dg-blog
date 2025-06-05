@@ -19,7 +19,6 @@ categories:
 
 ---
 
-
 Over the next couple of months, I'll be doing a new talk I've written called ‘Know Thy Interaction’ at a few different events.
 
 Tonight, it will be it's first run-out at [Shropgeek Rebellion](http://www.shropgeek.co.uk/events/rebellion-6-22-5-14/), up in Shrewsbury.  As the title suggests, the talk covers interaction and how design interaction has and is changing on the web at the moment.
@@ -106,5 +105,3 @@ These are the links I showed in the talk, and a few others I've picked out that 
 ## Further Reading
 
 [Interaction Evolved](http://12devsofxmas.co.uk/2013/12/day-3-interaction-evolved/) – an article I wrote for 12Devs at the start of the year.
-
-

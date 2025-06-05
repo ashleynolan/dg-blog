@@ -1,10 +1,21 @@
 ---
-layout: default.hbs
+layout: default
 title: Home
 
 rss: false
 ---
 
-<h1>This is my test heading</h1>
+<section class="c-content c-content--wide c-articles">
+    <h2 class="c-articles-title u-separator-bottom">Recent Posts</h2>
 
-{{ title }}
+    {{#withSort collections.post 'this.data.posted' limit="3" reverse="true" }}
+    <a href="/blog/{{this.data.url}}" class="c-articles-item u-separator-bottom">
+        <article>
+            <time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
+            <h2 class="c-articles-item-title">{{ this.data.title }}</h2>
+            <p class="c-articles-item-description">{{ this.data.description }}</p>
+        </article>
+    </a>
+    {{/withSort}}
+
+</section>

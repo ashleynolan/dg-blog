@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 **TL;DR**: If you can spare a few minutes of your time to fill out the [2016 Front-End Tooling Survey](http://ashn.uk/survey-tooling-2016), I would massively appreciate it.
 
 \> **[Fill out the Survey Now](http://ashn.uk/survey-tooling-2016)**
@@ -38,7 +37,3 @@ So what are you waiting for?! [Fill in the Survey right now](http://ashn.uk/surv
 ---
 
 N.b. Thanks to [Hugo Giraudel](https://twitter.com/HugoGiraudel), [Zander Martineau](https://twitter.com/MrMartineau) and [Damian Mullins](https://twitter.com/DamianMullins) for looking over the survey beforehand and providing feedback.
-
-
-
-

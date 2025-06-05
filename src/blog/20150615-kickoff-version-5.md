@@ -17,7 +17,6 @@ categories:
 
 ---
 
-
 After much tweaking and testing, [Version 5 of Kickoff](http://trykickoff.github.io/) has now been released!
 
 We’ve also been working hard to update Kickoff’s associated projects.  Both [Statix](https://github.com/TryKickoff/statix) and the [Kickoff generator](https://github.com/TryKickoff/generator-kickoff) have been developed to reflect the V5 changes.
@@ -89,4 +88,3 @@ Give it a try – take a look at [how to use the Kickoff Generator in our docume
 If you use [Kickoff](http://trykickoff.github.io/) or [Statix](https://github.com/TryKickoff/statix), we’d love to hear about how we can improve the framework in future releases – simply submit an issue or suggestion on the associated Github repo.  Likewise if you’d like to get involved in contributing to any of the projects, [just get in touch](mailto:trykickoff@gmail.com).  We’re always looking for new ideas that can add value to the framework and people that can help us to move faster in doing just that.
 
 Lastly, if you like using Kickoff or any of the Kickoff family of projects, please do give us a mention on Twitter.  As with any Open Source project, we rely massively on word-of-mouth to spread the reach of the framework and we’d love for as many developers to benefit from the work we do as possible :)
-

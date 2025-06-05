@@ -17,8 +17,6 @@ categories:
 
 ---
 
-
-
 It’s strange to remark that SVG is currently a technology to keep an eye on, simply as it’s been around for so long already.  However, there’s absolutely no doubt that SVG is going through something of a renaissance right now.  As someone who has been using it in some form or another for longer than I can really remember, it’s encouraging to see a technology that has been lurking in the web development shadows for so long now get the limelight it deserves.
 
 So let’s take a look at why it’s become more relevant among today’s web technologies and the techniques that are making SVG easier to include as part of modern web builds.
@@ -128,4 +126,3 @@ SVG has been ready for widespread use for a good while now, with articles on the
 In a lot of my work currently at TMW, I am actively encouraging the use of SVG to our designers, simply because of how flexible, lightweight and scalable it is across devices.  They are by no means suitable for every situation however and should be used in combination with a robust responsive image solution.
 
 So, if you’re not using SVG or have only briefly looked at using them, definitely take some time to take a deeper look into what they can offer you – it’ll be worth the effort spent, both for you and your users.
-

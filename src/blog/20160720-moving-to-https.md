@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 Moving my site to HTTPS had been on my to-do list for quite a while – too long in fact.  Having read [Tim Kadlec’s post](https://timkadlec.com/2015/12/taking-lets-encrypt-for-a-spin/) towards the end of last year regarding a tool called [LetsEncrypt](https://letsencrypt.org/), it made me believe that even a server noob like myself would be able to make the transition.
 
 So last week, I finally decided I would take LetsEncrypt for a spin and secure my site.
@@ -88,5 +87,3 @@ To sum up, moving to HTTPS isn’t a daunting task.  LetsEncrypt is an extremely
 There are also so many useful resources out there that explain the entire process extremely well, irrespective of the server technologies that you are using.
 
 So if you’ve not already taken steps to secure your own sites, take LetsEncrypt for a spin and let me know how you get on!
-
-

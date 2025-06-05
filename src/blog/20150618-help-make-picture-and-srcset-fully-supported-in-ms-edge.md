@@ -17,7 +17,6 @@ categories:
 
 ---
 
-
 **TL:DR**
 
 1. If you use [Picturefill](https://github.com/scottjehl/picturefill) on any of your websites, update it to v2.3.1.
@@ -60,5 +59,3 @@ Obviously, we’ll also need to kick Apple in the nuts to get native support for
 Responsive Images have come a long way, but there’s still a little way to go before we have native implementation across the board.
 
 By acting on the two simple steps above, you’ll be helping developers everywhere get a step closer to that goal.
-
-

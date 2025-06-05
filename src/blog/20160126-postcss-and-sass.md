@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 This morning, I got asked an interesting question on Twitter while discussing PostCSS:
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/WelshAsh_">@WelshAsh_</a> <a href="https://twitter.com/NaveenS16">@NaveenS16</a> Can you tell me exactly why you are using PostCSS with Sass, what does it offer you? Help me understand the need?</p>&mdash; Ahmad Awais (@mrahmadawais) <a href="https://twitter.com/mrahmadawais/status/691893845638930437">January 26, 2016</a></blockquote>
@@ -102,5 +101,3 @@ If you already use Autoprefixer, I honestly believe that setting up PostCSS in y
 If you don’t use Autoprefixer currently, then [take a look at the PostCSS plugins](http://postcss.parts/) that are currently available to see if PostCSS can help to improve your current workflow.
 
 If you want to find out a bit more about PostCSS, then check out [this excellent article](http://julian.io/some-things-you-may-think-about-postcss-and-you-might-be-wrong/) by Julian Ćwirko, or take a look at [my previous post on the subject](http://ashleynolan.co.uk/blog/postcss-a-review).
-
-

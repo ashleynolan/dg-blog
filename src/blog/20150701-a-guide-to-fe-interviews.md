@@ -17,7 +17,6 @@ categories:
 
 ---
 
-
 One of my former bosses used to tell me that even if you aren’t actively looking for a job, it can be a good idea to go along to a job interview once in a while to keep yourself sharp.
 
 Having very recently changed job myself, I can now see what he meant.
@@ -109,7 +108,6 @@ The best front-end developers I know don’t read about future web standards and
 This passion is impossible to teach and so if someone has it, they will always be sought after when looking for new roles.  The hard part can be showing it when you’re starting out – make sure you put your projects on [Github](https://github.com/) or [CodePen](http://codepen.io/) so you can send links in with your application, or blog about the things that you’re most passionate about.  The more visible you make your skills, the more you will stand out from the crowd.
 
 
-
 ## Basic CS knowledge
 
 There was one final aspect of interviewing that took me a little by surprise – an emphasis on basic Computer Science (CS) knowledge.
@@ -128,7 +126,3 @@ Interviewers ultimately want you to be successful – they aren’t trying to se
 I’ve avoided going over general interview advice, but make sure you do the expected groundwork around knowing a bit about what the company you’re applying for actually does – it usually helps!
 
 If you’ve had any recent experiences interviewing for front-end positions which you’d like to share, I’d love to hear from you in the comments.
-
-
-
-

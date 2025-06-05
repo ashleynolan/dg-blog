@@ -21,9 +21,6 @@ categories:
 
 ---
 
-
-
-
 Ever since Destiny launched on PS4 last month, I’ve been using the PSN app and website a fair bit.  Yesterday morning, while browsing on my mobile, I came across a small loading animation used on the mobile site that I really liked; so much so, that I decided to recreate it myself.
 
 The thing is, as I started to recreate it, I realised there were loads of variations on the same theme that could be put together easily by changing just a few lines of CSS.  So I made some more variations based on that initial theme.
@@ -37,4 +34,3 @@ I’ve tried to make the demo quite variable driven, so play around with the val
 I’m sure there are even more variations based on a simple row of 6 squares animating – if you have any ideas, fork the code and play around with it.  I’d love to see what other people can come up with and I’ll link to any other good examples here.
 
 [View the loaders on CodePen](http://codepen.io/ashleynolan/pen/owvcl)
-

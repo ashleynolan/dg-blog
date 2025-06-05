@@ -19,9 +19,6 @@ categories:
 
 ---
 
-
----
-
 **Update 30/11/2016**
 
 If you’re interested in finding out more details about current Front-End Tooling trends, [I’ve now published the results from the 2016 Edition of this Survey](/blog/frontend-tooling-survey-2016-results).
@@ -62,7 +59,7 @@ The possible answers included all the usual suspects, however I chose to leave P
 
 Here are the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Preprocessor</th>
@@ -121,8 +118,8 @@ Next, I wanted to find out how many devs had heard of so called 'post-processing
 
 The results were as follows:
 
-<div class="table-wrapper">
-	<table class="table table--bordered">
+<div class="o-tableWrapper">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -175,7 +172,7 @@ Looking at the NPM download stats, Grunt is downloaded roughly 1.45 million time
 
 So what did the survey results say?
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Task Runner</th>
@@ -237,8 +234,8 @@ Another question that really interested me was current knowledge levels across t
 
 Here is how people responded:
 
-<div class="table-wrapper">
-	<table class="table table--bordered">
+<div class="o-tableWrapper">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -325,7 +322,7 @@ Looking at knowledge levels across the MV* frameworks – so everything in the l
 
 One addition I would like to make if I ever run this survey again would be to see how many devs had started using ES2015 features – I’m sure this will be an area of huge growth and it will be interesting to see how the amount of knowledge in this area increases over time.
 
-{{> promos promo='react' }}
+{{> promos }}
 
 ## Q5 – Which JavaScript library or framework do you use on the majority of your projects?
 
@@ -335,7 +332,7 @@ The question was **Which JavaScript library or framework do you use on the major
 
 Here are the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th></th>
@@ -410,7 +407,7 @@ jQuery was the most used library or framework by quite some distance, with 56.47
 It’s interesting to see that most of the respondents still use jQuery on the majority of their projects – I would expect this number to decrease over time as people’s knowledge of ES2015 increases and move back towards using native JavaScript and smaller micro libraries.  Of course, there’s always the possibility that jQuery continues to adapt to the changing landscape and is therefore still used by developers.
 
 
-{{> promos promo='es6' }}
+{{> promos }}
 
 
 ## Q6 – JavaScript Module Bundlers
@@ -421,7 +418,7 @@ The question I therefore asked was **Do you use a JavaScript module bundler in y
 
 Responses were as follows:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Module Bundler</th>
@@ -487,7 +484,7 @@ The question I asked was **What tool do you use to test your JavaScript? (if any
 
 The results were as follows:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Tool</th>
@@ -568,8 +565,8 @@ The final question of the survey asked about tools typically used for package an
 
 Here is how people responded:
 
-<div class="table-wrapper">
-	<table class="table table--bordered">
+<div class="o-tableWrapper">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -633,7 +630,3 @@ So, what can be summarised overall?  Well, it seems that the adoption rate of fr
 On the flip side, use of JavaScript testing tools seems to be lagging behind the adoption rate of tools in other areas – something that can only be solved by better edutcaion of how to use and integrate these tools into peoples projects and as importantly, how to write JavaScript that is easy to test.
 
 If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, [message me on Twitter](https://twitter.com/WelshAsh_) and I’ll do my best to help!
-
-
-
-

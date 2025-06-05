@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 Whenever I get some downtime in work, I try to play around with a front-end technology that I may not have used too much in the past and see what potential it might have for creating some cool effects.
 
 Last week, I decided I’d take a look at the humble `text-shadow`.
@@ -112,4 +111,3 @@ If anyone has any ideas of other text effects they could create with `text-shado
 **[View my text-shadow demo on CodePen](http://codepen.io/ashleynolan/pen/QwvKaw?editors=110)**.
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-

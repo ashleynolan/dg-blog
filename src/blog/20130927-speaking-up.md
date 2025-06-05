@@ -16,7 +16,6 @@ categories:
 
 ---
 
-
 Over the last 6 months, I've been trying to get more active in an area that used to really scare the hell out of me; public speaking.
 
 Earlier this year I did my first short talk as a part of the Rising Stars track at jQuery UK. It was only 15 minutes long, but it was a great experience for a variety of reasons and one that has really encouraged me to apply to speak at more events in the future.

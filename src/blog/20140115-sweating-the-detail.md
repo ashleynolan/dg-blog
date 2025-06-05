@@ -16,7 +16,6 @@ categories:
 
 ---
 
-
 I‘m pretty awful at setting myself deadlines.  Unless there‘s a hard deadline which people are relying on me to hit, I can procrastinate like nobodies business.
 
 Case in point; the last time I redesigned this site.  What should have taken a few weeks to develop ended up dragging on for longer than I‘d even like to consider.  The problem is that the only person it affects is yourself.  Having many ongoing side projects can be somewhat self defeating; personally I‘m far better when focussed, completing the task and then moving on.
@@ -48,3 +47,4 @@ Think about your options, but recognise when you are digging yourself a bigger h
 I had to pull myself away from doing this a number of times, but if I hadn't, the site would still be half finished.  Spending too much time thinking about what‘s missing from what you‘re building detracts from what you‘ve already created.
 
 So make sure you give that the focus it deserves first before moving onto new goals.
+

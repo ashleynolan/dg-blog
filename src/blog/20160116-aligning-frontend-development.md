@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 Developing with front-end code is highly deceptive.  From a distance it seems straightforward; HTML, CSS and JavaScript are easy languages right?
 
 Not so much.
@@ -103,4 +102,3 @@ Trying to keep a consistent codebase which is being worked on by a number of dev
 Look at what causes you the most headaches – is there confusion over how to do simple things like compiling preprocessor code or image compressing?  If so, spend time on your workflow tooling.  Is your CSS hard to manage because the structure isn’t clear or there is too much inconsistency?  Look at how you can modularise your CSS and tools that can help ensure your team writes CSS in a more consistent manner.
 
 Putting the effort in to review your workflow and team processes will pay back handsomely over time.
-

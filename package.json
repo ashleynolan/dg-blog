@@ -5,7 +5,9 @@
   "scripts": {
     "build": "eleventy",
     "clean:dist": "rimraf dist",
-    "dev": "yarn clean:dist && eleventy --serve",
+    "dev": "yarn clean:dist && npx @11ty/eleventy --serve",
+    "lint": "stylelint ./src/**/*.{css,scss}",
+    "lint:fix": "yarn lint --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,29 +15,33 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "2.0.1",
-    "@justeattakeaway/stylelint-config-pie": "0.4.0",
-    "autoprefixer": "10.4.14",
-    "eleventy-plugin-clean": "1.2.5",
-    "eleventy-plugin-rev": "1.1.1",
-    "eleventy-sass": "2.2.3",
+    "@justeattakeaway/stylelint-config-pie": "0.8.0",
+    "autoprefixer": "10.4.20",
+    "eleventy-plugin-clean": "1.2.6",
+    "eleventy-plugin-rev": "2.0.0",
+    "eleventy-sass": "2.2.6",
+    "esbuild": "0.24.2",
     "get-value": "3.0.1",
     "handlebars-utils": "1.0.6",
     "helper-moment": "0.2.0",
     "include-media": "2.0.0",
-    "ltx": "3.0.0",
+    "ltx": "3.1.2",
     "normalize.css": "8.0.1",
-    "postcss": "8.4.24",
+    "postcss": "8.5.1",
     "postcss-csso": "6.0.1",
-    "resolve": "1.22.2",
-    "rimraf": "5.0.1",
-    "stylelint": "15.10.2",
-    "stylelint-config-standard-scss": "10.0.0"
+    "prismjs": "^1.29.0",
+    "resolve": "1.22.10",
+    "rimraf": "6.0.1",
+    "stylelint": "16.9.0",
+    "stylelint-config-standard-scss": "13.1.0"
   },
-  "dependencies": {},
   "browserslist": [
     "defaults and supports es6-module"
   ],
   "stylelint": {
-    "extends": "@justeattakeaway/stylelint-config-pie/base"
+    "extends": "@justeattakeaway/stylelint-config-pie/base",
+    "rules": {
+      "no-descending-specificity": null
+    }
   }
 }

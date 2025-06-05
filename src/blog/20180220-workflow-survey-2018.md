@@ -18,8 +18,6 @@ categories:
 
 ---
 
-
-
 **TL;DR**: Please take part in [this years survey](http://ashn.uk/survey-2018) – I would massively appreciate it!
 
 \> **[Fill out the 2018 Survey Now](http://ashn.uk/survey-2018)**
@@ -66,8 +64,4 @@ Wes runs some awesome courses, which – having taken a number of them myself �
 
 [Check out his courses – on 50% sale at the moment](/affiliates).
 
-{{> promos promo='es6' }}
-
-
-
-
+{{> promos }}

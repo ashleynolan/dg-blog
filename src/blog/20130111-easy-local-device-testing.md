@@ -16,7 +16,6 @@ categories:
 
 ---
 
-
 I've been doing a lot of device testing recently due to being involved in quite a few responsive builds. Earlier this week, courtesy of my colleague [Rick](https://twitter.com/ryck), I stumbled across a very handy service by the guys over at [37signals](http://37signals.com/) called xip.io.
 
 [Xip.io](http://xip.io/) lets you access any virtualhost you have setup locally on your computer from any device on your local network; the extra bonus is it's mega easy to use. Once setup, it simply gives you a domain to point your devices to and as if by magic, your local site is then viewable from any device you have to hand.  Xip.io has been around for a little while, so you may have already heard of it, but if not I would definitely recommend checking it out.

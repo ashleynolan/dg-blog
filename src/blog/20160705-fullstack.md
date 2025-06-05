@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 Next week, I’m excited to be making the short trip down the M4 to speak at FullStack 2016 in London.
 
 I’ll be talking about 'Developing for the Unknown' and how keeping this in mind has influenced the work that I’ve been a part of over the last year at JUST EAT.  Ultimately, the aim of my talk is to get more developers thinking about the long term implications of the work they do – something that I plan to write about in more detail in the near future.
@@ -30,4 +29,3 @@ I’m personally looking forward to learning more about the latest developments 
 ## Come along
 
 If you work with JavaScript and you’re based in and around London (or fancy making the trip down), be sure to [check out the full lineup for the event](https://skillsmatter.com/conferences/7278-fullstack-2016-the-conference-on-javascript-node-and-internet-of-things#overview) – it looks like it should be a great few days!
-

@@ -1,0 +1,169 @@
+@use './settings/mq' as *;
+
+h1,
+.h1,
+.alpha,
+h2,
+.h2,
+.beta,
+h3,
+.h3,
+.gamma,
+h4,
+.h4,
+.delta,
+h5,
+.h5,
+.epsilon,
+h6,
+.h6,
+.zeta {
+    font-weight: var(--font-weight-bold);
+}
+
+
+h1,
+.alpha {
+    font-size: var(--font-size-heading--alpha);
+    line-height: 1.3;
+    margin-top: 0;
+
+    @include media('>=narrow') {
+        font-size: var(--font-size-heading--alpha--wide);
+        line-height: 1.3;
+    }
+}
+
+h2,
+.beta {
+    font-size: var(--font-size-heading--beta);
+    margin-top: 0;
+    margin-bottom: var(--spacing-x2);
+
+    @include media('<narrow') {
+        line-height: 1.3;
+    }
+
+    @include media('>=narrow') {
+        font-size: var(--font-size-heading--beta--wide);
+        margin-bottom: var(--spacing-x2);
+    }
+}
+
+
+// h2, .h2, .beta {
+// 	margin-bottom: $vertical-rhythm/2 + px;
+
+// 	@include respond-max($breakpoint-mid) {
+// 		line-height: 1.3;
+// 	}
+
+// 	@include respond-min($breakpoint-mid) {
+// 		@include font-size(36);
+// 		margin-bottom: $vertical-rhythm + px;
+// 	}
+// }
+
+/* TODO: Need to add other heading sizes here (and to variables) */
+
+p {
+    margin-top: 0;
+    margin-bottom: calc(var(--vertical-spacing-base) * 4);
+
+    @include media('>=narrow') {
+        font-size: var(--base-font-size--wide);
+    }
+}
+
+small {
+    font-size: 75%;
+}
+
+/*
+   Lists
+   ========================================================================== */
+// Default list styles
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+// Unordered and Ordered lists
+// Add a .unstyled class to unordered/ordered lists if you want them to have bullets/numbers
+ul,
+ol {
+    padding: 0;
+    margin: 0 0 var(--spacing-x3) var(--spacing-x3);
+
+    & ul,
+    & ol {
+        // TODO: Use different variable
+        margin-left: calc(var(--base-line-height) * 2px);
+    }
+
+    & ul {
+        list-style-type: circle;
+
+        & ul {
+            list-style-type: square;
+        }
+    }
+
+    & ol {
+        list-style-type: upper-roman;
+
+        & ol {
+            list-style-type: lower-roman;
+        }
+    }
+
+    & ul,
+    & ol {
+        margin-bottom: 0;
+    }
+
+
+}
+
+li {
+    @include media('>=narrow') {
+        font-size: var(--base-font-size--wide);
+    }
+}
+
+.c-content ol {
+    margin: 0 0 var(--spacing-x2);
+
+    > li {
+        margin: 0 0 var(--spacing-x1) 20px;
+
+        @include media('>=narrow') {
+            margin: 0 0 var(--spacing-x1);
+        }
+    }
+}
+
+// TODO : move to nav scss file
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/*
+   Miscellaneous rules
+   ========================================================================== */
+// Horizontal rules
+hr {
+    margin: var(--spacing-x3) 0;
+    border: 0;
+    border-top: 1px solid var(--hr-border);
+    border-bottom: 1px solid var(--hr-border-alt);
+}
+

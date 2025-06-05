@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 It’s fairly old news that it’s a good idea to make as few requests as possible when creating a website of any size.
 
 Latency from HTTP requests can potentially be very expensive, [especially on mobile](https://developers.google.com/speed/docs/insights/mobile?hl=en) where it can take around 200-300 ms roundtrip on a 3G network and around 50-100 ms on 4G.  This can soon start to add up when requesting multiple assets on your website.
@@ -63,7 +62,3 @@ background-image: inline('img/icons/icon-arrow.svg'); // also inlines SVGs unenc
 This will then take the referenced asset and convert it to a data URI when the CSS is compiled, as well as keeping a reference to the original asset in your CSS should it need to be modified in the future – huzzah!
 
 So, the next time you think about putting a data URI straight into your CSS, take a look at [postcss-assets](https://github.com/borodean/postcss-assets) – it really could help you out when it comes to maintaining inline assets on a project.
-
-
-
-

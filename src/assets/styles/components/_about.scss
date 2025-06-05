@@ -1,0 +1,119 @@
+@use './settings/mq' as *;
+@use './components/separator' as *;
+
+/*
+   About Page
+   ========================================================================== */
+
+.c-about {
+    @include media('>mid') {
+        //TODO: Check these styles, may not need them
+        grid-template-columns: 2fr 1200px 2fr;
+        grid-template-areas: 'bio' 'social'
+                            'bio' 'skills'
+                            'speaking';
+		margin: 0 auto;
+        // max-width: 1200px;
+		// padding: 0;
+	}
+
+    @include media('>narrowMid') {
+        // overflow: hidden; //TODO: Needed?
+        margin: 0;
+        // padding: 0;
+    }
+}
+
+.about-title {
+	margin-bottom: calc(var(--vertical-rhythm)/2 * 1px);
+}
+.c-about-bio {
+	padding-top: calc(var(--vertical-rhythm) * 1px);
+    // split into 2 columns
+}
+
+	.about-module-title {
+		font-family: var(--secondary-font-family);
+        font-size: var(--h4-size);
+	}
+
+	.about-me {
+        // TODO
+		// @include respond-min($breakpoint-midupper) {
+		// 	border:0;
+		// 	box-shadow: none;
+		// }
+	}
+	.about-speaking {
+		width: 100%;
+	}
+
+	.about-facts,
+	.skills {
+		line-height: 2;
+		margin-bottom: 20px;
+	}
+		.about-facts-item,
+		.skills-item {
+			position: relative;
+			// padding-left: 30px;
+
+			&:before {
+				font-family: 'icons';
+				position: absolute;
+				left: 0;
+				top: -2px;
+			}
+		}
+
+		.skills-item:before {
+			text-align: center;
+			min-width: 20px;
+
+			font-weight: normal;
+			font-varient: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+// TODO
+@include media('>narrowMid') {
+	.c-about {
+		// overflow: hidden; //TODO: Needed?
+		margin: 0;
+		// padding: 0;
+	}
+
+    //TODO: Replace with Flex/Grid
+    .c-about-bio {
+        // float: left;
+
+        & > p {
+            max-width: 660px;
+        }
+    }
+    .about-me {
+        // width: 65%;
+        // padding-left: 2%;
+        // padding-right: 6%;
+
+        // TODO – switch out for separator helpers
+        box-shadow: 1px 0 0 var(--color-grey-dark);
+        border-right: 1px solid var(--color-white);
+    }
+    .about-speaking {
+        // padding-left: 2%;
+    }
+    .about-contact,
+    .about-skills {
+        // width: 35%;
+        // padding-left: 4%;
+        // padding-right: 4%;
+    }
+}
+
+@include media('>wide') {
+
+}
+
+

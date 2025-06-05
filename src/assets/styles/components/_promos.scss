@@ -1,0 +1,137 @@
+@use './settings/mq' as *;
+@use './helpers/extensions' as *;
+
+.c-promo {
+	margin-top: 60px;
+	padding-bottom: 40px;
+
+	& + p:not(.post-info) {
+		margin-top: 40px;
+	}
+}
+	.c-promo--ad {
+		padding: 0;
+
+		@include media('>=wide') {
+			position: absolute;
+			right: 0;
+			top: 40px;
+			padding: 0 10px;
+			margin-top: 0;
+			background-color: rgba(0, 0, 0, 0.1);
+			border-left: 1px solid #4e5149;
+			border-bottom: 1px solid #4e5149;
+
+			&.separator-both {
+				border-top: 0;
+				box-shadow: none;
+			}
+		}
+	}
+
+	.c-promo-header {
+		font-size: var(--base-font-size);
+	}
+	.c-promo-content {
+		overflow: hidden;
+		padding: 1px;
+	}
+		.c-promo-img,
+		.carbon-img {
+			float: left;
+			width: 80px;
+			margin-right: 20px;
+			margin-left: 1px;
+			border: 2px solid var(--separator-color);
+			box-shadow: 0 0 0 1px var(--separator-color--secondary);
+			line-height: 1;
+		}
+			.c-promo-img--react {
+				width: 100px;
+				min-height: 97px;
+			}
+			.c-promo-img--es6 {
+				width: 100px;
+			}
+		.c-promo-title {
+			margin-top: 0;
+			margin-bottom: 0;
+			line-height: 1.4;
+
+			a:hover & {
+				text-decoration: underline;
+			}
+		}
+		.c-promo-text,
+		.carbon-text {
+			margin-bottom: 0;
+			font-size: var(--base-font-size);
+			// color: $color-text;
+		}
+
+
+// Carbon promotional section
+// These selectors are forced by carbon markup
+
+#carbonads {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+#carbonads span {
+	overflow: hidden;
+}
+
+.carbon-wrap {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	align-items: center;
+	max-width: 330px;
+
+    @include media('>=wide') {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+
+.carbon-img {
+	display: block;
+	width: auto;
+}
+
+.carbon-img img {
+	display: block;
+}
+
+.carbon-text {
+	color: inherit;
+	font-size: var(--h6-size);
+
+	&:hover {
+		// color: $color-link-default;
+	}
+
+	@include media('>=wide') {
+        font-size: 13px;
+		padding-top: 10px;
+	}
+}
+
+
+.carbon-poweredby {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	font-size: 14px;
+
+    @extend %headerBg;
+
+	&:hover {
+		color: #f9f9f9;
+	}
+}

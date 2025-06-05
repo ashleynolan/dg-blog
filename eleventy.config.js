@@ -1,58 +1,46 @@
-const helpers = require('./src/_helpers');
-const clean = require("eleventy-plugin-clean");
-const eleventyPluginRev = require('eleventy-plugin-rev');
-const momentHelper = require('helper-moment');
+// const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 const fs = require('fs');
-var getDirName = require('path').dirname;
 
-
+const eleventyPluginRev = require('eleventy-plugin-rev');
+const eleventyPluginClean = require("eleventy-plugin-clean");
 const eleventySass = require("eleventy-sass");
-
 const postcss = require('postcss');
-// const syntax = require('postcss-scss');
-const csso = require('postcss-csso');
-// const atImport = require('postcss-import');
-// const includeMedia = require('postcss-include-media');
-// const postcssNesting = require('postcss-nesting');
-// const stripInlineComments = require('postcss-strip-inline-comments');
 const autoprefixer = require('autoprefixer');
-const stylelint = require('stylelint');
+const csso = require('postcss-csso');
+const esbuild = require('esbuild');
 
+const helpers = require('./src/_helpers');
+const momentHelper = require('helper-moment');
 
-// const lightningCSS = require("@11tyrocks/eleventy-plugin-lightningcss");
-
+var getDirName = require('path').dirname;
 
 module.exports = (eleventyConfig) => {
     // copy this directory to the dist folder
     eleventyConfig.addPassthroughCopy("src/assets/img");
 
 	eleventyConfig.addFilter("ifCond", helpers.ifCond);
-	eleventyConfig.addFilter("inlineSVG", helpers.inlineSVG);
+    eleventyConfig.addFilter("inlineSVG", helpers.inlineSVG);
+    eleventyConfig.addFilter("withSort", helpers.withSort);
     eleventyConfig.addFilter("printJson", helpers.printJson);
 
     eleventyConfig.addHandlebarsHelper("moment", momentHelper);
 
-    eleventyConfig.addPlugin(clean);
     eleventyConfig.addPlugin(eleventyPluginRev);
+    eleventyConfig.addPlugin(eleventyPluginClean);
 
+    // https://sass-lang.com/documentation/cli/dart-sass
     eleventyConfig.addPlugin(eleventySass, {
-        // output to /css instead of /scss
-        compileOptions: {
-            permalink: function (contents, inputPath) {
-                return (data) => {
-                    return data.page.filePathStem.replace(/^\/scss\//, "/css/") + ".css";
-                };
-            }
-        },
         postcss: postcss([
-            // require("stylelint")(),
             autoprefixer,
             csso
         ]),
-        // TODO: should enable this and change head <link>
-        // rev: true,
+        compileOptions: {
+            cache: false,
+        },
+        rev: true,
         sass: {
-            // Probably won't need this - used for loading other SCSS files
+            // Create friendlier imports for node_modules styles
             loadPaths: [
                 'node_modules/normalize.css',
                 'node_modules/include-media/dist',
@@ -61,55 +49,33 @@ module.exports = (eleventyConfig) => {
         },
     });
 
-    // CSS Output
-    // eleventyConfig.addTemplateFormats("css");
-    // eleventyConfig.addExtension('css', {
-    //     outputFileExtension: 'min.css',
-    //     compile: async (inputContent, inputPath) => {
-    //         if (inputPath !== './src/assets/css/styles.css') {
-    //             return;
-    //         }
+    // eleventyConfig.addPlugin(UpgradeHelper);
 
-    //         return async () => {
-    //             let output = await postcss([
-    //                 atImport({
-    //                     plugins: [
-    //                         require("stylelint")()
-    //                     ]
-	// 				}),
-	// 				stripInlineComments,
-	// 				autoprefixer,
-	// 				includeMedia({
-	// 					breakpoints: {
-    //                         narrow: '600px',
-    //                         narrowMid: '720px',
-    //                         mid: '1000px',
-	// 						wide: '1200px'
-	// 					}
-	// 				}),
-	// 				postcssNesting,
-	// 				csso
-    //             ]).process(inputContent, {
-    //                 from: inputPath,
-	// 				to: './dist/assets/css/styles.min.css',
-	// 				parser: syntax,
-    //                 map: {
-    //                     inline: false
-    //                 }
-    //             });
+    eleventyConfig.addTemplateFormats('js');
 
-    //             if (output.map) {
-    //                 fs.mkdir(getDirName(output.opts.to), { recursive: true }, function (err) {
-    //                     if (err) return cb(err);
+    eleventyConfig.addExtension('js', {
+        outputFileExtension: 'js',
+        compile: async (content, path) => {
+            if (path !== './src/assets/js/index.js') {
+                return;
+            }
 
-    //                     fs.writeFileSync(output.opts.to + '.map', output.map.toString())
-    //                 });
-    //             }
+            return async () => {
+                let output = await esbuild.build({
+                    target: 'es2020',
+                    entryPoints: [path],
+                    minify: true,
+                    bundle: true,
+                    write: false,
+                });
 
-    //             return output.css;
-    //         }
-    //     }
-    // });
+                return output.outputFiles[0].text;
+            }
+        }
+    });
+
+    // setup posts collection
+    eleventyConfig.addCollection('post', (collectionApi) => collectionApi.getFilteredByGlob('src/blog/**/*.md'));
 
     return {
         dir: {

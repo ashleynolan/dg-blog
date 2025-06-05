@@ -21,7 +21,6 @@ categories:
 
 ---
 
-
 I’ve been a little quiet on my blog of late – and for once it’s not just through laziness, but because I’ve been working on a little side project – [Christmas Tracker](http://www.christmastracker.com).
 
 Christmas Tracker watches what Christmassy things people are mentioning in realtime on Twitter.  It’s built using NodeJS and front–end technologies, with some heavy use of SVG for the illustrations.
@@ -39,4 +38,3 @@ The biggest thing that I learned is that getting your hands dirty with servers t
 I’m planning to write up a number of blog posts around this and the other things I’ve learned over the last couple of months, so if you’re interested in Node.js or realtime in general, keep your eyes peeled for them in the near future.
 
 Until then, I hope you [enjoy the site](http://www.christmastracker.com).  If you do, let me know on Twitter – I’d love to know what people think of the project.
-

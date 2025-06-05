@@ -19,7 +19,6 @@ categories:
 
 ---
 
-
 **Update 12/09/2019**
 
 The results for the 2019 edition of the Front-end Tooling Survey are now available. If you'd like to view them, [check them out here](/blog/frontend-tooling-survey-2019-results).
@@ -100,9 +99,7 @@ Where possible, you'll see that I've included the percentage change from the 201
 1. [JavaScript Package Managers](#js-packagemanagers)
 1. [Miscellaneous Tools](#js-misc)
 
-
 </div>
-
 
 ---
 
@@ -116,7 +113,7 @@ The question asked was – **Roughly how long have you been working with front-e
 
 Here are the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Answer</th>
@@ -180,7 +177,7 @@ The second question looked at how respondents rated their own knowledge of CSS, 
 
 Here’s what the responses looked like:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Level</th>
@@ -242,8 +239,8 @@ of choice?**
 
 In previous years, Sass has been the dominant tool in this area, but how do things look today?  The results were as follows:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Preprocessor</th>
@@ -315,9 +312,9 @@ Following on from the previous question, I asked respondents to indicate their e
 
 Here is how they responded:
 
-<div class="responsiveTable">
-	<div class="table-wrapper">
-		<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<div class="o-table-wrapper">
+		<table class="o-table o-table--bordered">
 			<thead>
 				<tr>
 					<th></th>
@@ -406,7 +403,7 @@ So the question asked was – **Please indicate which of the following CSS fr
 
 The results are as follows:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Answer</th>
@@ -491,8 +488,8 @@ Next up was CSS Naming Schemes.
 
 This question doesn't ask for detail around a specific naming scheme, instead simply asking – **Do you use a CSS naming scheme when writing CSS, such as BEM or SUIT?**
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Answer</th>
@@ -552,8 +549,8 @@ The question asked was – **Do you use a tool to lint your CSS?**
 
 The results are as follows:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Answer</th>
@@ -605,9 +602,9 @@ Firstly, Question 8 asked for respondents to state their experience with Autopre
 
 Let's take a look at the results:
 
-<div class="responsiveTable">
-	<div class="table-wrapper">
-		<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<div class="o-table-wrapper">
+		<table class="o-table o-table--bordered">
 			<thead>
 				<tr>
 					<th></th>
@@ -682,9 +679,9 @@ Following on from the previous question, respondents were asked to – **Please 
 
 The results were as follows:
 
-<div class="responsiveTable">
-	<div class="table-wrapper">
-		<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<div class="o-table-wrapper">
+		<table class="o-table o-table--bordered">
 			<thead>
 				<tr>
 					<th></th>
@@ -805,8 +802,8 @@ Rounding off the questions on CSS methodologies and tools, Question 10 asked res
 
 Would these results tally up with the experience levels shown in the previous two questions?  Let's take a look.
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Tool/Methodology</th>
@@ -921,9 +918,9 @@ Therefore, I asked respondents to – **Please indicate your experience with the
 Here are the results:
 
 
-<div class="responsiveTable">
-	<div class="table-wrapper">
-		<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<div class="o-table-wrapper">
+		<table class="o-table o-table--bordered">
 			<thead>
 				<tr>
 					<th></th>
@@ -974,7 +971,7 @@ Somewhat surprisingly, more respondents said that they felt comfortable using CS
 
 Looking at these figures, it seems a lot of people have dabbled with CSS Grid, but not that many have yet fully got to grips with it.  Looking at how developers now feel comfortable developing with flexbox, it's not unreasonable to think that these figures will increase fairly rapidly now that CSS Grid and Custom Properties are so well supported in modern browsers.
 
-{{> promos promo='grid' promotitle="Learn CSS Grid" }}
+{{> promos }}
 
 
 <a name="js-knowledge"></a>
@@ -987,7 +984,7 @@ Firstly, I asked respondents – **How do you rate your own knowledge of JavaScr
 
 These were the results:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Knowledge</th>
@@ -1050,8 +1047,8 @@ The question that respondents were asked was – **What task runner do you prefe
 
 Let’s take a look at the results:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Task Runner</th>
@@ -1139,9 +1136,9 @@ So how have things changed 18 months on?  Have any new tools emerged?
 
 First I asked respondents to indicate their experience with a number of JavaScript libraries and frameworks.  Here's how they replied:
 
-<div class="responsiveTable">
-	<div class="table-wrapper">
-		<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<div class="o-table-wrapper">
+		<table class="o-table o-table--bordered">
 			<thead>
 				<tr>
 					<th></th>
@@ -1345,8 +1342,8 @@ Respondents were invited to select all (or none) of the tools that they used on 
 
 The responses were as follows:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -1468,7 +1465,7 @@ Angular 1 usage fell by 14.68% from 2016, but this hasn't translated into simila
 
 Usage of all other frameworks was down from their respective figures in the 2016 results.
 
-{{> promos promo='advancedreact' }}
+{{> promos }}
 
 
 <a name="js-framework-essential"></a>
@@ -1481,8 +1478,8 @@ In 2016, jQuery was top of the pile with about a third of developers regarding i
 
 Let's see if that's still the case:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th></th>
@@ -1612,7 +1609,7 @@ It's clear overall that usage levels of jQuery, although still high, are startin
 
 For the time being though, React is clearly the JavaScript framework of choice among front-end developers.
 
-{{> promos promo='advancedreact' }}
+{{> promos }}
 
 
 <a name="js-bundler"></a>
@@ -1625,8 +1622,8 @@ So has anything changed since then, or has this lead continued to grow?  The que
 
 Let’s take a look at the results:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Module Bundler</th>
@@ -1715,9 +1712,9 @@ The next question asked respondents about their experience levels across the mod
 
 Here's how the results looked:
 
-<div class="responsiveTable">
-	<div class="table-wrapper">
-		<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<div class="o-table-wrapper">
+		<table class="o-table o-table--bordered">
 			<thead>
 				<tr>
 					<th></th>
@@ -1803,8 +1800,8 @@ The question I asked was – **Are you using a tool to transpile your JavaScript
 
 The results are as follows:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Answer</th>
@@ -1848,7 +1845,7 @@ As you may have expected, usage of transpilers has continued to grow, with 76.76
 
 As I mentioned in the 2016 results, knowledge of a tool such as Babel is now an essential part of modern JavaScript development.  If you haven't taken steps to integrate this into your workflow, I'd recommend that you do so in order to have access to the latest JavaScript features.
 
-{{> promos promo='es6' }}
+{{> promos }}
 
 <a name="js-extensions"></a>
 
@@ -1862,9 +1859,9 @@ The question asked was – **Please indicate your experience with the following 
 
 Here are the results:
 
-<div class="responsiveTable">
-	<div class="table-wrapper">
-		<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<div class="o-table-wrapper">
+		<table class="o-table o-table--bordered">
 			<thead>
 				<tr>
 					<th></th>
@@ -1936,8 +1933,8 @@ I asked – **Which tool do you use to lint your JavaScript? (if any)**
 
 Let's look at the results:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Tool</th>
@@ -2021,8 +2018,8 @@ The question I asked was – **Which tool do you use to test your JavaScript? (i
 
 Here are the results:
 
-<div class="responsiveTable">
-	<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<table class="o-table o-table--bordered">
 		<thead>
 			<tr>
 				<th>Tool</th>
@@ -2121,7 +2118,7 @@ Therefore, I asked – **Which JavaScript package manager do you primarily use i
 
 This is how people responded:
 
-<table class="table table--bordered">
+<table class="o-table o-table--bordered">
 	<thead>
 		<tr>
 			<th>Answer</th>
@@ -2177,9 +2174,9 @@ Respondents were asked to – **Please indicate your experience with the followi
 
 Here is how people responded:
 
-<div class="responsiveTable">
-	<div class="table-wrapper">
-		<table class="table table--bordered">
+<div class="o-responsiveTable">
+	<div class="o-table-wrapper">
+		<table class="o-table o-table--bordered">
 			<thead>
 				<tr>
 					<th></th>

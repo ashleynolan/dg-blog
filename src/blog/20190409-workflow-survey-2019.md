@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 **TL;DR**: Please take part in [this years survey](https://ashn.uk/survey-2019) – every response is massively appreciated!
 
 \> **[Fill out the 2019 Survey Now](https://ashn.uk/survey-2019)**
@@ -71,8 +70,4 @@ Wes runs some awesome courses, which – having taken a number of them myself �
 
 [Check out his courses](/affiliates).
 
-{{> promos promo='advancedreact' }}
-
-
-
-
+{{> promos }}

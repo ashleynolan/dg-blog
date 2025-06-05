@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 [PostCSS](https://github.com/postcss/postcss) first came onto my radar back in February when I read Ben Frain’s excellent article – [Breaking up with Sass: it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/).  I was extremely happy with my workflow at the time – using Sass for all of my preprocessing needs – but it piqued my interest in PostCSS enough to make sure that I filed it away in the 'must investigate later' part of my head (one that seems to be constantly overflowing).
 
 Upon joining [JUST EAT back in May](/blog/a-new-challenge), my first task has been to review and potentially redefine our front-end processes going forward.  As part of this review, I thought it was time to take a deeper look into PostCSS and what it has to offer.
@@ -263,9 +262,3 @@ As should be remembered when adopting any new tool however, there are going to b
 At JUST EAT, we’ve added PostCSS to our workflow, but currently only to provide additional functionality that Sass can’t, such as Autoprefixer.  I envisage that we will gradually shift over to using PostCSS as the ability to write more flexible plugins that can transform parsed SCSS files becomes available.  For our team it makes sense to keep a syntax that the majority of our developers feel comfortable writing – at least until PostCSS has become slightly more mature.
 
 But that doesn’t mean PostCSS isn’t right for your team or project – I would fully encourage you to take a look yourself at what PostCSS can offer you.  If PostCSS continues to develop and improve at the rate it is right now, it’s likely to be a part of many front-end developers workflows in the near future.
-
-
-
-
-
-

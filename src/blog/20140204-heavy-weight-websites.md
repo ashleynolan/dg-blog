@@ -16,7 +16,6 @@ categories:
 
 ---
 
-
 I love beautiful websites. They inspire the work we do and help move the industry forward in terms of what we know is achievable on the web.
 
 A recent trend on the web conflicts with this love; a large number of recently launched websites are putting a far greater emphasis on the beauty of the visual experience above and beyond considering the practical impact on the user.
@@ -83,8 +82,4 @@ While I see the reasoning of many of the points mentioned, I still feel a little
 It would be interesting to see some kind of stats behind the drop-off rates between people who hit the loading screen and people who actually start the experience.
 
 I do however agree whole-heartedly with Mikko's point that it would be a boring web without sites made purely for entertainment. I just think that if you are making a website of that size, you have a duty to think about why it's that size and do everything you can to mitigate it – which definitely includes using a strong CDN! ;)
-
-
-
-
 

@@ -19,7 +19,6 @@ categories:
 
 ---
 
-
 Working at an agency, I sometimes have the pleasure (misfortune?) of taking over a front–end project started by a freelancer that we’ve brought in. More regularly, I inherit some code written by a developer in our team at TMW, but front–end may not be their main skill.
 
 Taking over these projects can be an interesting experience.
@@ -295,5 +294,3 @@ So that’s all I’ve got for you!
 If you’re interested in reading further examples of bad CSS, check out Harry Roberts’ excellent article [‘Code Smells in CSS’](http://csswizardry.com/2012/11/code-smells-in-css/). It is in a very similar vein to this article (and I have crossed over with some of the points made on there).  He mentions a number of other great tips to look out for and avoid when authoring CSS.
 
 If you’ve got any examples of bad CSS you’ve encountered, I’d love to see them – get in touch in the comments or on Twitter.  If nothing else it’ll make me feel better knowing that the pain is shared by others :)
-
-

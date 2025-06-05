@@ -1,12 +1,7 @@
+
 <!doctype html>
 
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
 <html lang="en" class="no-js">
-<!--<![endif]-->
 
 <head>
 	<meta charset="utf-8">
@@ -24,27 +19,13 @@
 	<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
 	<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
 
-	
-	<!-- <meta property="og:url" content="frontend-tooling-survey-2015-results" /> -->
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="The State of Front-End Tooling – 2015" />
-	<meta property="og:description"
-		content="I asked front-end developers to fill in a survey about their their knowledge and usage patterns across a number of front-end tools.  Check out the results." />
-	<meta property="og:image"
-		content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
-
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@WelshAsh_" />
-	<meta name="twitter:title" content="The State of Front-End Tooling – 2015" />
-	<meta name="twitter:description"
-		content="I asked front-end developers to fill in a survey about their their knowledge and usage patterns across a number of front-end tools.  Check out the results." />
-	<meta name="twitter:image" content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+	<!-- Need to put in OG tags Here -->
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/assets/css/kickoff.min.css">
+    <link rel="stylesheet" href="/assets/styles/main-b4f0b3d6.css" />
 
 	<!-- Fonts – non blocking -->
-	<link href='https://fonts.googleapis.com/css?family=Muli:300,400&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap' rel='stylesheet' type='text/css'>
 	<script>
 		(function (d) {
 			var config = {
@@ -55,73 +36,61 @@
 		})(document);
 	</script>
 
-
-	<!-- Require include for JS -->
-	<script src="/assets/js/components/requirejs/require.js" data-main="/assets/js/dist/app.min" async></script>
-
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZBM0N2C9W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZBM0N2C9W');
+</script>
 
 <body>
 
-	<div class="container">
-		<header class="page-header">
-			<div id="page-logo" class="logo">
-					<span>Front-end development Blog and Portfolio for Ashley Watson-Nolan – Senior UI Engineer at Just
-						Eat</span>
-					<a href="/" class="logo-link">
-						<svg class="logo-dg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-							version="1.1" id="Layer_1" x="0px" y="0px" width="234px" height="244.082px"
-							viewBox="0 0 234 244.082" enable-background="new 0 0 234 244.082" xml:space="preserve">
-							<g>
-								<g>
-									<path clip-rule="evenodd"
-										d="M131.012 68.469c-20.294 5.482-35.874 16.834-38.992 43.7 C68.354 94.6 98.1 47 131 68.469z" />
-									<path clip-rule="evenodd"
-										d="M161.475 59.629c12.752-4.078 0 17.3 8.7 17.3 c-9.173 6.152-19.891-10.842-34.687-8.67C140.716 62 158 67.7 161.5 59.629z" />
-									<path clip-rule="evenodd"
-										d="M76.527 92.79c1.633 4.2 3.7 8.7 6.2 12.5 c2.608 3.9 6.1 7.4 11.2 7.159c-12.189 3.479-23.696 8.262-32.159 18.087c-8.423 9.783-13.461 22.025-16.949 34.3 c-9.061-6.983-14.794 8.593-17.451 14.883c-2.349 5.562-4.978 21.5 6.6 13.891c4.448-2.942 6.602-8.919 12.695-9.151 c-2.969 8.274-6.594 15.987-16.213 17.148c-6.54 0.793-13.054-1.491-18.517-4.962c-2.951-1.873-12.159-8.419-11.935-12.306 c0.512-8.898 10.552-1.189 11.557-8.245c0.624-4.385 0.271-8.806 1.136-13.17c0.908-4.596 2.435-9 2.911-13.689 c3.605 0.3 1.2 6.6 3.9 7.8c10.032-3.507 16.879-11.737 21.362-21.088c2.364-4.937 4.222-10.091 5.968-15.275 c1.456-4.331 1.404-9.623 4.134-13.46c2.841-3.982 7.878-4.951 12.226-6.405C68.082 99.2 72.8 96.4 76.5 92.79z" />
-									<path clip-rule="evenodd"
-										d="M99.255 119.897c9.81 1.9 10.7 5.8 14.9 10.4 c-6.827 6.479-9.902 22.673-5.977 28.901C95.175 156.3 96.8 135.4 99.3 119.897z" />
-									<path clip-rule="evenodd"
-										d="M121.206 137.488c4.894 3 4.4 9.1 6.3 13.9 c-4.936 6.197-10.997 10.411-12.33 22.914C112.079 163.8 115.3 148.9 121.2 137.488z" />
-									<path clip-rule="evenodd"
-										d="M121.605 0c-8.263 15.3 13.1 46.006-1.949 62.4 c-4.596 0.042-5.744-3.36-11.703-1.95C127.689 49.1 102.9 13.8 121.6 0z" />
-									<path clip-rule="evenodd"
-										d="M61.149 5.85c0.1 1.5 1.8 3.1 1.8 5.2 c0.022 2.82-1.059 5.84-1.923 8.48c-2.215 6.783-5.087 13.333-7.233 20.14c-2.608 8.272-5.14 16.396-3.13 25.2 c1.524 6.7 5.9 11.6 11.8 5.692c10.53-10.562 13.605-29.733 18.273-43.378c2.764-8.071 6.217-16.493 11.633-23.199 c-2.654 3.288-2.392 9.859-3.548 13.882c-1.621 5.636-4.147 11.421-3.27 17.417c1.068 7.3 7 7.1 12.4 4.2 c-2.96 1.573-4.405 7.437-6.289 9.995c-2.853 3.876-5.893 7.625-8.38 11.76c-5.954 9.899-8.374 20.95-6.517 32.4 c-7.399 4.952-11.64 13.063-25.353 11.702c-13.303 10.749-23.374 24.729-27.301 44.855c-8.519-20.394 8.5-46.808 19.502-60.457 c-2.158-18.473-6.726-26.699-3.901-40.953C43.038 31.9 62.5 25.6 61.1 5.85z" />
-									<path clip-rule="evenodd"
-										d="M174.777 89.915c4.768-4.601 12.5 8.9 24.8 5 c-3.096 9.324-6.504 18.33-7.452 29.802C186.195 113.3 185.1 96.9 174.8 89.915z" />
-									<path clip-rule="evenodd"
-										d="M96.251 171.615c-2.344 13.276-7.652 40.438-19.501 50.7 c-12.253 1.199-12.991-9.11-23.404-9.753c1.273-5.876 7.661-6.643 9.752-11.697c2.327-15.337-1.888-48.907-13.054-56.462 c6.053-10.196 13.143-22.067 26.409-25.055c-1.406 8.7 9.6 20.2 10 26.911c1.374 19.759-16.337 38.35-11.705 64.4 C85.648 209.1 89.4 183.7 96.3 171.615z" />
-									<path clip-rule="evenodd"
-										d="M192.558 129.948c5.485 9.1 6.5 22.7 14.6 29.3 c-5.582 5.123-22.907 35.464-17.555 23.41C189.939 164.4 194.5 150.4 192.6 129.948z" />
-								</g>
-								<path clip-rule="evenodd"
-									d="M99.087 116.263c0 0 10.719-54.502 47.354-40.207 c0 0 54.2 11.5 32.2 97.39C162.524 236 234 236 234 235.987s-109.006 42.894-101.854-68.795 C132.147 167.2 133.9 122.5 99.1 116.263z" />
-							</g>
-						</svg>
-						<img src="/assets/img/dg_logo.png" class="logo-dg" alt="Ashley Watson-Nolan">
+	<div class="l-container">
+		<header class="c-siteHeader">
+			<div id="page-logo" class="c-logo">
+					<span class="c-logo-srText">Front-end development Blog and Portfolio for Ashley Watson-Nolan – Principal UI Engineer at Just
+						Eat Takeaway.com</span>
+					<a href="/" class="c-logo-link">
+		                <svg class="c-logo-icon" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="234" height="244.082" viewBox="0 0 234 244.082">
+		                    <g clip-rule="evenodd">
+		                        <path
+		                            d="M131.012 68.469c-20.294 5.482-35.874 16.834-38.992 43.7C68.354 94.6 98.1 47 131 68.469zM161.475 59.629c12.752-4.078 0 17.3 8.7 17.3-9.173 6.152-19.891-10.842-34.687-8.67C140.716 62 158 67.7 161.5 59.629z" />
+		                        <path
+		                            d="M76.527 92.79c1.633 4.2 3.7 8.7 6.2 12.5 2.608 3.9 6.1 7.4 11.2 7.159-12.189 3.479-23.696 8.262-32.159 18.087-8.423 9.783-13.461 22.025-16.949 34.3-9.061-6.983-14.794 8.593-17.451 14.883-2.349 5.562-4.978 21.5 6.6 13.891 4.448-2.942 6.602-8.919 12.695-9.151-2.969 8.274-6.594 15.987-16.213 17.148-6.54.793-13.054-1.491-18.517-4.962-2.951-1.873-12.159-8.419-11.935-12.306.512-8.898 10.552-1.189 11.557-8.245.624-4.385.271-8.806 1.136-13.17.908-4.596 2.435-9 2.911-13.689 3.605.3 1.2 6.6 3.9 7.8 10.032-3.507 16.879-11.737 21.362-21.088 2.364-4.937 4.222-10.091 5.968-15.275 1.456-4.331 1.404-9.623 4.134-13.46 2.841-3.982 7.878-4.951 12.226-6.405C68.082 99.2 72.8 96.4 76.5 92.79zM99.255 119.897c9.81 1.9 10.7 5.8 14.9 10.4-6.827 6.479-9.902 22.673-5.977 28.901C95.175 156.3 96.8 135.4 99.3 119.897zM121.206 137.488c4.894 3 4.4 9.1 6.3 13.9-4.936 6.197-10.997 10.411-12.33 22.914-3.097-10.502.124-25.402 6.024-36.814zM121.605 0c-8.263 15.3 13.1 46.006-1.949 62.4-4.596.042-5.744-3.36-11.703-1.95C127.689 49.1 102.9 13.8 121.6 0z" />
+		                        <path
+		                            d="M61.149 5.85c.1 1.5 1.8 3.1 1.8 5.2.022 2.82-1.059 5.84-1.923 8.48-2.215 6.783-5.087 13.333-7.233 20.14-2.608 8.272-5.14 16.396-3.13 25.2 1.524 6.7 5.9 11.6 11.8 5.692C72.993 60 76.068 40.829 80.736 27.184c2.764-8.071 6.217-16.493 11.633-23.199-2.654 3.288-2.392 9.859-3.548 13.882-1.621 5.636-4.147 11.421-3.27 17.417 1.068 7.3 7 7.1 12.4 4.2-2.96 1.573-4.405 7.437-6.289 9.995-2.853 3.876-5.893 7.625-8.38 11.76-5.954 9.899-8.374 20.95-6.517 32.4-7.399 4.952-11.64 13.063-25.353 11.702-13.303 10.749-23.374 24.729-27.301 44.855-8.519-20.394 8.5-46.808 19.502-60.457-2.158-18.473-6.726-26.699-3.901-40.953C43.038 31.9 62.5 25.6 61.1 5.85zM174.777 89.915c4.768-4.601 12.5 8.9 24.8 5-3.096 9.324-6.504 18.33-7.452 29.802C186.195 113.3 185.1 96.9 174.8 89.915zM96.251 171.615c-2.344 13.276-7.652 40.438-19.501 50.7-12.253 1.199-12.991-9.11-23.404-9.753 1.273-5.876 7.661-6.643 9.752-11.697 2.327-15.337-1.888-48.907-13.054-56.462 6.053-10.196 13.143-22.067 26.409-25.055-1.406 8.7 9.6 20.2 10 26.911 1.374 19.759-16.337 38.35-11.705 64.4C85.648 209.1 89.4 183.7 96.3 171.615zM192.558 129.948c5.485 9.1 6.5 22.7 14.6 29.3-5.582 5.123-22.907 35.464-17.555 23.41.336-18.258 4.897-32.258 2.997-52.71z" />
+		                        <path
+		                            d="M99.087 116.263s10.719-54.502 47.354-40.207c0 0 54.2 11.5 32.2 97.39C162.524 236 234 236 234 235.987s-109.006 42.894-101.854-68.795c.001.008 1.754-44.692-33.046-50.929z" />
+		                    </g>
+		                </svg>
 					</a>
 					</div>
 		
 			<!-- main navigation links -->
-			<section id="nav-strip" class="nav-strip">
+			<section id="nav-strip" class="c-siteHeader-nav">
 				<!-- Global Navigation links -->
-				<nav id="page-nav" class="nav-global">
-					<ul>
-						<li class="nav-global-item"><a href="/blog/" data-hover="Blog">Blog</a><span class="navArrow"></span></li><!--
-						--><li class="nav-global-item"><a href="/work" data-hover="Work">Work</a><span class="navArrow"></span></li><!--
-						--><li class="nav-global-item last "><a href="/about" data-hover="About">About</a><span class="navArrow"></span></li>
-					</ul>
-				</nav>	</section>
+				<nav id="page-nav" class="c-globalNav">
+				    <ul class="c-globalNav-list">
+				        <li class="c-globalNav-item"><a href="/blog/"
+				                data-hover="Blog">Blog</a><span class="c-globalNav-arrow"></span></li>
+				        <li class="c-globalNav-item"><a href="/work"
+				                data-hover="Work">Work</a><span class="c-globalNav-arrow"></span></li>
+				        <li class="c-globalNav-item c-globalNav-item--last"><a href="/about"
+				                data-hover="About">About</a><span class="c-globalNav-arrow"></span></li>
+				    </ul>
+				</nav>
+			</section>
 		</header>
 
-		<section class="content post">
+		<section class="c-content c-content--post">
 			<h1>The State of Front-End Tooling – 2015</h1>
 
-			
-
-<hr>
-<p><strong>Update 30/11/2016</strong></p>
+			<p><strong>Update 30/11/2016</strong></p>
 <p>If you’re interested in finding out more details about current Front-End Tooling trends, <a href="/blog/frontend-tooling-survey-2016-results">I’ve now published the results from the 2016 Edition of this Survey</a>.</p>
 <hr>
 <p><strong>Update 12/10/2015</strong> – Thanks to the incredible response to the survey!</p>
@@ -134,607 +103,567 @@
 <p>Before I put the survey together, I was pretty conservative in terms of the number of responses I was aiming to reach.  People are busy actually doing work and getting them to fill out a survey without any tangible reward can be a pretty hard sell.  However, at the time of writing this article, I’ve had an incredible <strong>2028 responses</strong> – easily surpassing my modest expectations!  Thanks to all those who took the time to fill in the survey – I really do appreciate it.</p>
 <p>So, it’s time to go through the results!  Grab yourself a cup of tea/coffee and let’s take a look…</p>
 <hr>
-<h2 id="pre-amble-disclaimer">Pre-amble Disclaimer</h2>
+<h2>Pre-amble Disclaimer</h2>
 <p>These results represent a small sample of front-end developers working in the industry – therefore, they shouldn’t be taken as gospel, simply as pointing towards a rough trend.</p>
 <hr>
-<h2 id="q1-preprocessors">Q1 – Preprocessors</h2>
+<h2>Q1 – Preprocessors</h2>
 <p>The first question I asked was <strong>What is your CSS Preprocessing tool of choice?</strong></p>
-<p>The possible answers included all the usual suspects, however I chose to leave PostCSS off the list of answers simply as I didn’t want to confuse anyone who uses PostCSS in addition to another preprocessor in their workflow.  I figured people who did solely use PostCSS would use the &#39;Other&#39; option to specify this.</p>
+<p>The possible answers included all the usual suspects, however I chose to leave PostCSS off the list of answers simply as I didn’t want to confuse anyone who uses PostCSS in addition to another preprocessor in their workflow.  I figured people who did solely use PostCSS would use the 'Other' option to specify this.</p>
 <p>Here are the results:</p>
-<table class="table table--bordered">
-    <thead>
-        <tr>
-            <th>Preprocessor</th>
-            <th>Number of Votes</th>
-            <th>Percentage</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>Sass</th>
-            <td>1297</td>
-            <td>63.95%</td>
-        </tr>
-        <tr>
-            <th>Less</th>
-            <td>308</td>
-            <td>15.19%</td>
-        </tr>
-        <tr>
-            <th>Stylus</th>
-            <td>76</td>
-            <td>3.75%</td>
-        </tr>
-        <tr>
-            <th>No Preprocessor</th>
-            <td>305</td>
-            <td>15.04%</td>
-        </tr>
-        <tr>
-            <th>Other</th>
-            <td>42</td>
-            <td>2.07%</td>
-        </tr>
-    </tbody>
+<table class="o-table o-table--bordered">
+	<thead>
+		<tr>
+			<th>Preprocessor</th>
+			<th>Number of Votes</th>
+			<th>Percentage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Sass</th>
+			<td>1297</td>
+			<td>63.95%</td>
+		</tr>
+		<tr>
+			<th>Less</th>
+			<td>308</td>
+			<td>15.19%</td>
+		</tr>
+		<tr>
+			<th>Stylus</th>
+			<td>76</td>
+			<td>3.75%</td>
+		</tr>
+		<tr>
+			<th>No Preprocessor</th>
+			<td>305</td>
+			<td>15.04%</td>
+		</tr>
+		<tr>
+			<th>Other</th>
+			<td>42</td>
+			<td>2.07%</td>
+		</tr>
+	</tbody>
 </table>
-
 <div class="img">
-    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q1-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q1-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q1.jpg">
-        <noscript>
-            <img src="/assets/img/blog/tooling-survey/2015/q1.jpg" width="720" height="500" alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" />
-        </noscript>
-    </div>
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q1-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q1-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q1.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2015/q1.jpg" width="720" height="500" alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" />
+		</noscript>
+	</div>
 </div>
-
-<p>As you can see, Sass was the preprocessor of choice for the majority of respondents with <strong>63.95%</strong>.  Only 15.04% of those questioned use no preprocessing tool when authoring their CSS, indicating that we may now be close to &#39;peak preprocessor adoption&#39;!</p>
+<p>As you can see, Sass was the preprocessor of choice for the majority of respondents with <strong>63.95%</strong>.  Only 15.04% of those questioned use no preprocessing tool when authoring their CSS, indicating that we may now be close to 'peak preprocessor adoption'!</p>
 <p>One thing that I would take away from these results is that CSS preprocessing is without a doubt a skill that all front-end developers should learn if they haven’t got experience in this area already, as most projects and job roles will require it.</p>
-<p>Of those who specified &#39;Other&#39;, 29 respondents (1.4%) specified that they use PostCSS as their preprocessor of choice.</p>
+<p>Of those who specified 'Other', 29 respondents (1.4%) specified that they use PostCSS as their preprocessor of choice.</p>
 <hr>
-<h2 id="q2-postcss-and-rework">Q2 – PostCSS and Rework</h2>
-<p>Next, I wanted to find out how many devs had heard of so called &#39;post-processing&#39; tools such as PostCSS or Rework.  I therefore asked <strong>Have you heard of the following CSS processing tools?</strong></p>
+<h2>Q2 – PostCSS and Rework</h2>
+<p>Next, I wanted to find out how many devs had heard of so called 'post-processing' tools such as PostCSS or Rework.  I therefore asked <strong>Have you heard of the following CSS processing tools?</strong></p>
 <p>The results were as follows:</p>
-<div class="table-wrapper">
-    <table class="table table--bordered">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Heard of/Read About</th>
-                <th>Used a little</th>
-                <th>Feel Comfortable Using</th>
-                <th>Never Heard of</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>PostCSS</th>
-                <td>47.78% (969)</td>
-                <td>9.32% (189)</td>
-                <td>7.15% (145)</td>
-                <td>35.75% (725)</td>
-            </tr>
-            <tr>
-                <th>Rework</th>
-                <td>19.03% (386)</td>
-                <td>1.53% (31)</td>
-                <td>0.69% (14)</td>
-                <td>78.75% (1,597)</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="o-tableWrapper">
+	<table class="o-table o-table--bordered">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Heard of/Read About</th>
+				<th>Used a little</th>
+				<th>Feel Comfortable Using</th>
+				<th>Never Heard of</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>PostCSS</th>
+				<td>47.78% (969)</td>
+				<td>9.32% (189)</td>
+				<td>7.15% (145)</td>
+				<td>35.75% (725)</td>
+			</tr>
+			<tr>
+				<th>Rework</th>
+				<td>19.03% (386)</td>
+				<td>1.53% (31)</td>
+				<td>0.69% (14)</td>
+				<td>78.75% (1,597)</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
-
 <div class="img">
-    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q2-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q2-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q2.jpg">
-        <noscript>
-            <img src="/assets/img/blog/tooling-survey/2015/q2.jpg" width="801" height="282" alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" />
-        </noscript>
-    </div>
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q2-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q2-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q2.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2015/q2.jpg" width="801" height="282" alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" />
+		</noscript>
+	</div>
 </div>
-
 <p>Looking at the raw results, 64.25% of respondents had either heard of or used PostCSS, compared with just 21.25% for Rework.  Only a small percentage of developers responding said that they felt comfortable using either tool.</p>
 <p>Analysing the results further across both tools, 690 devs (just over 34%) said they hadn’t heard of either PostCSS or Rework, compared to 147 devs (7.2%) who said they felt comfortable using at least one of the two tools.</p>
 <p>I think these results reflect how new an area this is for many front-end developers and I would expect these numbers to rise in the future.</p>
 <hr>
-<h2 id="q3-task-runners">Q3 – Task Runners</h2>
+<h2>Q3 – Task Runners</h2>
 <p>Next up was one of the questions I was most interested in seeing the results to – <strong>What task runner do you prefer using, if any, in your typical project workflow?</strong></p>
 <p>Looking at the NPM download stats, Grunt is downloaded roughly 1.45 million times a month, with Gulp having 1.34 million, so in terms of shear usage stats, they seem very equal, although there seems to have been a shift towards people moving to using Gulp over Grunt recently.</p>
 <p>So what did the survey results say?</p>
-<table class="table table--bordered">
-    <thead>
-        <tr>
-            <th>Task Runner</th>
-            <th>Number of Votes</th>
-            <th>Percentage</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>Gulp</th>
-            <td>888</td>
-            <td>43.79%</td>
-        </tr>
-        <tr>
-            <th>Grunt</th>
-            <td>559</td>
-            <td>27.56%</td>
-        </tr>
-        <tr>
-            <th>NPM</th>
-            <td>64</td>
-            <td>3.16%</td>
-        </tr>
-        <tr>
-            <th>Broccoli</th>
-            <td>22</td>
-            <td>1.08%</td>
-        </tr>
-        <tr>
-            <th>Other</th>
-            <td>99</td>
-            <td>4.88%</td>
-        </tr>
-        <tr>
-            <th>Don’t Use a Task Runner</th>
-            <td>396</td>
-            <td>19.53%</td>
-        </tr>
-    </tbody>
+<table class="o-table o-table--bordered">
+	<thead>
+		<tr>
+			<th>Task Runner</th>
+			<th>Number of Votes</th>
+			<th>Percentage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Gulp</th>
+			<td>888</td>
+			<td>43.79%</td>
+		</tr>
+		<tr>
+			<th>Grunt</th>
+			<td>559</td>
+			<td>27.56%</td>
+		</tr>
+		<tr>
+			<th>NPM</th>
+			<td>64</td>
+			<td>3.16%</td>
+		</tr>
+		<tr>
+			<th>Broccoli</th>
+			<td>22</td>
+			<td>1.08%</td>
+		</tr>
+		<tr>
+			<th>Other</th>
+			<td>99</td>
+			<td>4.88%</td>
+		</tr>
+		<tr>
+			<th>Don’t Use a Task Runner</th>
+			<td>396</td>
+			<td>19.53%</td>
+		</tr>
+	</tbody>
 </table>
-
 <div class="img">
-    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q3-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q3-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q3.jpg">
-        <noscript>
-            <img src="/assets/img/blog/tooling-survey/2015/q3.jpg" width="720" height="500" alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" />
-        </noscript>
-    </div>
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q3-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q3-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q3.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2015/q3.jpg" width="720" height="500" alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" />
+		</noscript>
+	</div>
 </div>
-
 <p>Somewhat surprisingly, Gulp came out a fair distance ahead with <strong>43.79%</strong> of respondents saying they preferred using it compared with just <strong>27.56%</strong> for Grunt.</p>
 <p>19.5% of respondents said that they don’t use a task runner at all on their projects – signifying that the majority of front-end developers are seeing the benefits of using a task runner to help keep consistency across projects and teams.</p>
 <hr>
-<h2 id="q4-knowledge-of-javascript-libraries-and-frameworks">Q4 – Knowledge of JavaScript Libraries and Frameworks</h2>
+<h2>Q4 – Knowledge of JavaScript Libraries and Frameworks</h2>
 <p>Another question that really interested me was current knowledge levels across the most popular JavaScript libraries and frameworks, so this question was for respondents to indicate their experience levels in each.</p>
 <p>Here is how people responded:</p>
-<div class="table-wrapper">
-    <table class="table table--bordered">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Heard of/Read About</th>
-                <th>Used a little</th>
-                <th>Feel Comfortable Using</th>
-                <th>Never Heard of</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>jQuery</th>
-                <td>1.4% (28)</td>
-                <td>7.2% (146)</td>
-                <td>91.4% (1,854)</td>
-                <td>0% (0)</td>
-            </tr>
-            <tr>
-                <th>Underscore</th>
-                <td>34.5% (700)</td>
-                <td>20% (406)</td>
-                <td>35.4% (718)</td>
-                <td>10.1% (204)</td>
-            </tr>
-            <tr>
-                <th>Backbone</th>
-                <td>60.8% (1,234)</td>
-                <td>21.1% (427)</td>
-                <td>16.2% (328)</td>
-                <td>1.9% (39)</td>
-            </tr>
-            <tr>
-                <th>AngularJS</th>
-                <td>36.9% (748)</td>
-                <td>33.5% (680)</td>
-                <td>29.1% (590)</td>
-                <td>0.5% (10)</td>
-            </tr>
-            <tr>
-                <th>Ember</th>
-                <td>78.7% (1,595)</td>
-                <td>13.1% (265)</td>
-                <td>4% (82)</td>
-                <td>4.2% (86)</td>
-            </tr>
-            <tr>
-                <th>React</th>
-                <td>61.8% (1,253)</td>
-                <td>19.9% (404)</td>
-                <td>14.3% (290)</td>
-                <td>4% (81)</td>
-            </tr>
-            <tr>
-                <th>Polymer</th>
-                <td>70.4% (1,429)</td>
-                <td>11.4% (231)</td>
-                <td>2.5% (50)</td>
-                <td>15.7% (318)</td>
-            </tr>
-            <tr>
-                <th>Knockout</th>
-                <td>65.2% (1,321)</td>
-                <td>9.7% (197)</td>
-                <td>6.1% (124)</td>
-                <td>19% (386)</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="o-tableWrapper">
+	<table class="o-table o-table--bordered">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Heard of/Read About</th>
+				<th>Used a little</th>
+				<th>Feel Comfortable Using</th>
+				<th>Never Heard of</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>jQuery</th>
+				<td>1.4% (28)</td>
+				<td>7.2% (146)</td>
+				<td>91.4% (1,854)</td>
+				<td>0% (0)</td>
+			</tr>
+			<tr>
+				<th>Underscore</th>
+				<td>34.5% (700)</td>
+				<td>20% (406)</td>
+				<td>35.4% (718)</td>
+				<td>10.1% (204)</td>
+			</tr>
+			<tr>
+				<th>Backbone</th>
+				<td>60.8% (1,234)</td>
+				<td>21.1% (427)</td>
+				<td>16.2% (328)</td>
+				<td>1.9% (39)</td>
+			</tr>
+			<tr>
+				<th>AngularJS</th>
+				<td>36.9% (748)</td>
+				<td>33.5% (680)</td>
+				<td>29.1% (590)</td>
+				<td>0.5% (10)</td>
+			</tr>
+			<tr>
+				<th>Ember</th>
+				<td>78.7% (1,595)</td>
+				<td>13.1% (265)</td>
+				<td>4% (82)</td>
+				<td>4.2% (86)</td>
+			</tr>
+			<tr>
+				<th>React</th>
+				<td>61.8% (1,253)</td>
+				<td>19.9% (404)</td>
+				<td>14.3% (290)</td>
+				<td>4% (81)</td>
+			</tr>
+			<tr>
+				<th>Polymer</th>
+				<td>70.4% (1,429)</td>
+				<td>11.4% (231)</td>
+				<td>2.5% (50)</td>
+				<td>15.7% (318)</td>
+			</tr>
+			<tr>
+				<th>Knockout</th>
+				<td>65.2% (1,321)</td>
+				<td>9.7% (197)</td>
+				<td>6.1% (124)</td>
+				<td>19% (386)</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
-
 <div class="img">
-    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q4-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q4-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q4.jpg">
-        <noscript>
-            <img src="/assets/img/blog/tooling-survey/2015/q4.jpg" width="750" height="330" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" />
-        </noscript>
-    </div>
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q4-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q4-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q4.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2015/q4.jpg" width="750" height="330" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" />
+		</noscript>
+	</div>
 </div>
-
 <p>Unsurprisingly, jQuery was the JavaScript library or framework with the highest percentage – <strong>91.4%</strong> – of respondents saying that they felt comfortable using it.  In terms of pure knowledge levels it was by far the most far-reaching of any of the libraries or frameworks listed.</p>
 <p>Looking down the list of JS frameworks, Angular came out on top in terms of the number of developers (29.1%) who said they felt comfortable using it.  16.2% of respondents said they felt comfortable using Backbone, with 14.3% saying the same for React.</p>
 <p>Looking at knowledge levels across the MV* frameworks – so everything in the list except jQuery and Underscore – just over 50% of respondents (1018) said they felt comfortable using at least one of these frameworks.  Clearly being able to develop using at least one of these is an increasingly important skill for any front-end developer to have in their toolkit.</p>
 <p>One addition I would like to make if I ever run this survey again would be to see how many devs had started using ES2015 features – I’m sure this will be an area of huge growth and it will be interesting to see how the amount of knowledge in this area increases over time.</p>
-<div class="promotion separator-both">
-    <h2 class="promotion-header text-bg">Recommended Resource</h2>
-    <div class="promotion-content">
-        <a href="https://ReactForBeginners.com/friend/NOLAN">
-            <img class="promotion-img promotion-img--react" src="/assets/img/resources/react-for-beginners.jpg" />
-            <h3 class="promotion-title">React For Beginners</h2>
-            <p class="promotion-text">Upgrade your JavaScript skills – Learn React in just a couple of afternoons with this course by Wes Bos.</p>
-        </a>
-    </div>
-</div>
-
-<h2 id="q5-which-javascript-library-or-framework-do-you-use-on-the-majority-of-your-projects-">Q5 – Which JavaScript library or framework do you use on the majority of your projects?</h2>
+<p>false</p>
+<h2>Q5 – Which JavaScript library or framework do you use on the majority of your projects?</h2>
 <p>The next question was a late addition to the survey, as it was something I wished I had asked from the start.  Because of this, there were slightly fewer – 1415 – responses.</p>
 <p>The question was <strong>Which JavaScript library or framework do you use on the majority of your projects?</strong></p>
 <p>Here are the results:</p>
-<table class="table table--bordered">
-    <thead>
-        <tr>
-            <th></th>
-            <th>Number of Votes</th>
-            <th>Percentage</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>None – I just use native JS</th>
-            <td>120</td>
-            <td>8.48%</td>
-        </tr>
-        <tr>
-            <th>jQuery</th>
-            <td>799</td>
-            <td>56.47%</td>
-        </tr>
-        <tr>
-            <th>AngularJS</th>
-            <td>253</td>
-            <td>17.88%</td>
-        </tr>
-        <tr>
-            <th>React</th>
-            <td>124</td>
-            <td>8.76%</td>
-        </tr>
-        <tr>
-            <th>Backbone</th>
-            <td>42</td>
-            <td>2.97%</td>
-        </tr>
-        <tr>
-            <th>Ember</th>
-            <td>34</td>
-            <td>2.40%</td>
-        </tr>
-        <tr>
-            <th>Knockout</th>
-            <td>21</td>
-            <td>1.48%</td>
-        </tr>
-        <tr>
-            <th>Underscore</th>
-            <td>18</td>
-            <td>1.27%</td>
-        </tr>
-        <tr>
-            <th>Polymer</th>
-            <td>4</td>
-            <td>0.28%</td>
-        </tr>
-        <tr>
-            <th>Other (please specify)</th>
-            <td>0</td>
-            <td>0%</td>
-        </tr>
-    </tbody>
+<table class="o-table o-table--bordered">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Number of Votes</th>
+			<th>Percentage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>None – I just use native JS</th>
+			<td>120</td>
+			<td>8.48%</td>
+		</tr>
+		<tr>
+			<th>jQuery</th>
+			<td>799</td>
+			<td>56.47%</td>
+		</tr>
+		<tr>
+			<th>AngularJS</th>
+			<td>253</td>
+			<td>17.88%</td>
+		</tr>
+		<tr>
+			<th>React</th>
+			<td>124</td>
+			<td>8.76%</td>
+		</tr>
+		<tr>
+			<th>Backbone</th>
+			<td>42</td>
+			<td>2.97%</td>
+		</tr>
+		<tr>
+			<th>Ember</th>
+			<td>34</td>
+			<td>2.40%</td>
+		</tr>
+		<tr>
+			<th>Knockout</th>
+			<td>21</td>
+			<td>1.48%</td>
+		</tr>
+		<tr>
+			<th>Underscore</th>
+			<td>18</td>
+			<td>1.27%</td>
+		</tr>
+		<tr>
+			<th>Polymer</th>
+			<td>4</td>
+			<td>0.28%</td>
+		</tr>
+		<tr>
+			<th>Other (please specify)</th>
+			<td>0</td>
+			<td>0%</td>
+		</tr>
+	</tbody>
 </table>
-
 <div class="img">
-    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q5-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q5-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q5.jpg">
-        <noscript>
-            <img src="/assets/img/blog/tooling-survey/2015/q5.jpg" width="720" height="500" alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" />
-        </noscript>
-    </div>
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q5-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q5-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q5.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2015/q5.jpg" width="720" height="500" alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" />
+		</noscript>
+	</div>
 </div>
-
 <p>jQuery was the most used library or framework by quite some distance, with 56.47% (799 responses), followed by Angular with 17.88% (253).</p>
 <p>It’s interesting to see that most of the respondents still use jQuery on the majority of their projects – I would expect this number to decrease over time as people’s knowledge of ES2015 increases and move back towards using native JavaScript and smaller micro libraries.  Of course, there’s always the possibility that jQuery continues to adapt to the changing landscape and is therefore still used by developers.</p>
-<div class="promotion separator-both">
-    <h2 class="promotion-header text-bg">Recommended Resource</h2>
-    <div class="promotion-content">
-        <a href="https://ES6.io/friend/NOLAN">
-            <img class="promotion-img promotion-img--es6" src="/assets/img/resources/es6.jpg" />
-            <h3 class="promotion-title">ES6 For Everyone</h2>
-            <p class="promotion-text">A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer, by Wes Bos.</p>
-        </a>
-    </div>
-</div>
-
-
-<h2 id="q6-javascript-module-bundlers">Q6 – JavaScript Module Bundlers</h2>
+<p>false</p>
+<h2>Q6 – JavaScript Module Bundlers</h2>
 <p>Module bundlers are something I’ve been using for some time, but I wanted to know if the majority of front-end devs were also using them, and if so, which tool?</p>
 <p>The question I therefore asked was <strong>Do you use a JavaScript module bundler in your workflow?</strong></p>
 <p>Responses were as follows:</p>
-<table class="table table--bordered">
-    <thead>
-        <tr>
-            <th>Module Bundler</th>
-            <th>Number of Votes</th>
-            <th>Percentage</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>I don’t use a module bundler</th>
-            <td>1093</td>
-            <td>53.9%</td>
-        </tr>
-        <tr>
-            <th>Browserify</th>
-            <td>334</td>
-            <td>16.47%</td>
-        </tr>
-        <tr>
-            <th>RequireJS</th>
-            <td>273</td>
-            <td>13.46%</td>
-        </tr>
-        <tr>
-            <th>Webpack</th>
-            <td>213</td>
-            <td>10.5%</td>
-        </tr>
-        <tr>
-            <th>JSPM</th>
-            <td>45</td>
-            <td>2.22%</td>
-        </tr>
-        <tr>
-            <th>Other</th>
-            <td>70</td>
-            <td>3.45%</td>
-        </tr>
-    </tbody>
+<table class="o-table o-table--bordered">
+	<thead>
+		<tr>
+			<th>Module Bundler</th>
+			<th>Number of Votes</th>
+			<th>Percentage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>I don’t use a module bundler</th>
+			<td>1093</td>
+			<td>53.9%</td>
+		</tr>
+		<tr>
+			<th>Browserify</th>
+			<td>334</td>
+			<td>16.47%</td>
+		</tr>
+		<tr>
+			<th>RequireJS</th>
+			<td>273</td>
+			<td>13.46%</td>
+		</tr>
+		<tr>
+			<th>Webpack</th>
+			<td>213</td>
+			<td>10.5%</td>
+		</tr>
+		<tr>
+			<th>JSPM</th>
+			<td>45</td>
+			<td>2.22%</td>
+		</tr>
+		<tr>
+			<th>Other</th>
+			<td>70</td>
+			<td>3.45%</td>
+		</tr>
+	</tbody>
 </table>
-
 <div class="img">
-    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q6-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q6-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q6.jpg">
-        <noscript>
-            <img src="/assets/img/blog/tooling-survey/2015/q6.jpg" width="720" height="500" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
-        </noscript>
-    </div>
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q6-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q6-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q6.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2015/q6.jpg" width="720" height="500" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
+		</noscript>
+	</div>
 </div>
-
 <p>Overall, almost half of respondents (46.1%) are now using a module bundler to manage the dependencies in their JavaScript.  Of those, 16.47% use Browserify, 13.46% use RequireJS and 10.5% are using Webpack.  Webpack has been gaining a lot of traction of late and so it’s interesting to see that it isn’t all that far behind the two most well known tools in terms of usage.</p>
 <p>It’ll again be interesting to see how these numbers change as more developers jump on the ES2015 bandwagon and start using the tools that lend themself well to transpiling JavaScript using Babel.</p>
 <p>Overall though, it’s great to see so many developers embracing module bundlers and I’d fully expect the number of people using JS module bundlers to increase as knowledge levels continue to rise.</p>
 <hr>
-<h2 id="q7-javascript-testing">Q7 – JavaScript Testing</h2>
+<h2>Q7 – JavaScript Testing</h2>
 <p>Testing!  So, do people actually test their JavaScript, or is it still on everyones bucket list to setup on their project?</p>
 <p>The question I asked was <strong>What tool do you use to test your JavaScript? (if any)</strong></p>
 <p>The results were as follows:</p>
-<table class="table table--bordered">
-    <thead>
-        <tr>
-            <th>Tool</th>
-            <th>Number of Votes</th>
-            <th>Percentage</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>I don’t use a tool to test my JS</th>
-            <td>1210</td>
-            <td>59.66%</td>
-        </tr>
-        <tr>
-            <th>Jasmine</th>
-            <td>332</td>
-            <td>16.37%</td>
-        </tr>
-        <tr>
-            <th>Mocha</th>
-            <td>305</td>
-            <td>15.04%</td>
-        </tr>
-        <tr>
-            <th>QUnit</th>
-            <td>78</td>
-            <td>3.85%</td>
-        </tr>
-        <tr>
-            <th>Tape</th>
-            <td>30</td>
-            <td>1.48%</td>
-        </tr>
-        <tr>
-            <th>Jest</th>
-            <td>16</td>
-            <td>0.79%</td>
-        </tr>
-        <tr>
-            <th>Karma</th>
-            <td>15</td>
-            <td>0.74%</td>
-        </tr>
-        <tr>
-            <th>Intern</th>
-            <td>8</td>
-            <td>0.39%</td>
-        </tr>
-        <tr>
-            <th>Other</th>
-            <td>34</td>
-            <td>1.68%</td>
-        </tr>
-    </tbody>
+<table class="o-table o-table--bordered">
+	<thead>
+		<tr>
+			<th>Tool</th>
+			<th>Number of Votes</th>
+			<th>Percentage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>I don’t use a tool to test my JS</th>
+			<td>1210</td>
+			<td>59.66%</td>
+		</tr>
+		<tr>
+			<th>Jasmine</th>
+			<td>332</td>
+			<td>16.37%</td>
+		</tr>
+		<tr>
+			<th>Mocha</th>
+			<td>305</td>
+			<td>15.04%</td>
+		</tr>
+		<tr>
+			<th>QUnit</th>
+			<td>78</td>
+			<td>3.85%</td>
+		</tr>
+		<tr>
+			<th>Tape</th>
+			<td>30</td>
+			<td>1.48%</td>
+		</tr>
+		<tr>
+			<th>Jest</th>
+			<td>16</td>
+			<td>0.79%</td>
+		</tr>
+		<tr>
+			<th>Karma</th>
+			<td>15</td>
+			<td>0.74%</td>
+		</tr>
+		<tr>
+			<th>Intern</th>
+			<td>8</td>
+			<td>0.39%</td>
+		</tr>
+		<tr>
+			<th>Other</th>
+			<td>34</td>
+			<td>1.68%</td>
+		</tr>
+	</tbody>
 </table>
-
 <div class="img">
-    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q7-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q7-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q7.jpg">
-        <noscript>
-            <img src="/assets/img/blog/tooling-survey/2015/q7.jpg" width="720" height="500" alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" />
-        </noscript>
-    </div>
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q7-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q7-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q7.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2015/q7.jpg" width="720" height="500" alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" />
+		</noscript>
+	</div>
 </div>
-
 <p>So, the majority of respondents – <strong>59.66%</strong> – aren’t using any tool to help with their JavaScript testing.  Given how long the subject of testing in JavaScript has been around, I find this a surprisingly large percentage – but it is often the area that gets most overlooked in a project.</p>
 <p>Of those testing their JS, the majority of respondents are using either Jasmine – 16.37% – or Mocha – 15.04%.</p>
-<p>Looking at the answers entered when respondents choose the &#39;Other&#39; option, it was a little disconcerting to see how many people had replied with linting tools such as JSLint and JSHint.  Although good for applying consistent code formatting, these aren’t tools that test the functionality of JavaScript code.</p>
+<p>Looking at the answers entered when respondents choose the 'Other' option, it was a little disconcerting to see how many people had replied with linting tools such as JSLint and JSHint.  Although good for applying consistent code formatting, these aren’t tools that test the functionality of JavaScript code.</p>
 <p>All in all, there’s obviously still a gap in developer knowledge when it comes to JS testing.</p>
 <hr>
-<h2 id="q8-miscellaneous-tools">Q8 – Miscellaneous Tools</h2>
+<h2>Q8 – Miscellaneous Tools</h2>
 <p>The final question of the survey asked about tools typically used for package and workflow management, with me asking <strong>Which of these tools do you have experience in?</strong></p>
 <p>Here is how people responded:</p>
-<div class="table-wrapper">
-    <table class="table table--bordered">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Heard of/Read About</th>
-                <th>Used a little</th>
-                <th>Feel Comfortable Using</th>
-                <th>Never Heard of</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Bower</th>
-                <td>23.27% (472)</td>
-                <td>28.06% (569)</td>
-                <td>45.36% (920)</td>
-                <td>3.30% (67)</td>
-            </tr>
-            <tr>
-                <th>Yeoman</th>
-                <td>37.13% (753)</td>
-                <td>30.57% (620)</td>
-                <td>19.97% (405)</td>
-                <td>12.33% (250)</td>
-            </tr>
-            <tr>
-                <th>Ender</th>
-                <td>28.55% (579)</td>
-                <td>1.43% (29)</td>
-                <td>0.54% (11)</td>
-                <td>69.48% (1,409)</td>
-            </tr>
-            <tr>
-                <th>NPM</th>
-                <td>6.76% (137)</td>
-                <td>19.63% (398)</td>
-                <td>68.39% (1,387)</td>
-                <td>5.23% (106)</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="o-tableWrapper">
+	<table class="o-table o-table--bordered">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Heard of/Read About</th>
+				<th>Used a little</th>
+				<th>Feel Comfortable Using</th>
+				<th>Never Heard of</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Bower</th>
+				<td>23.27% (472)</td>
+				<td>28.06% (569)</td>
+				<td>45.36% (920)</td>
+				<td>3.30% (67)</td>
+			</tr>
+			<tr>
+				<th>Yeoman</th>
+				<td>37.13% (753)</td>
+				<td>30.57% (620)</td>
+				<td>19.97% (405)</td>
+				<td>12.33% (250)</td>
+			</tr>
+			<tr>
+				<th>Ender</th>
+				<td>28.55% (579)</td>
+				<td>1.43% (29)</td>
+				<td>0.54% (11)</td>
+				<td>69.48% (1,409)</td>
+			</tr>
+			<tr>
+				<th>NPM</th>
+				<td>6.76% (137)</td>
+				<td>19.63% (398)</td>
+				<td>68.39% (1,387)</td>
+				<td>5.23% (106)</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
-
 <div class="img">
-    <div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these tools do you have experience in? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q8-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q8-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q8.jpg">
-        <noscript>
-            <img src="/assets/img/blog/tooling-survey/2015/q8.jpg" width="776" height="302" alt="Which of these tools do you have experience in? – Pie Chart showing the results" />
-        </noscript>
-    </div>
+	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these tools do you have experience in? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q8-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q8-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q8.jpg">
+		<noscript>
+			<img src="/assets/img/blog/tooling-survey/2015/q8.jpg" width="776" height="302" alt="Which of these tools do you have experience in? – Pie Chart showing the results" />
+		</noscript>
+	</div>
 </div>
-
 <p>A large percentage of respondents felt comfortable using NPM and Bower, with a large number never having heard of Ender at all.</p>
 <p>Knowledge of Yeoman – in my opinion, one of the most useful tools I use – was quite low in terms of those that feel comfortable using it (19.97%), although not many people had never heard of it (12.33%).  In my experience, putting in the time to grips with it is hugely worthwhile, as it makes setting up projects so simple.</p>
 <hr>
-<h2 id="summary">Summary</h2>
+<h2>Summary</h2>
 <p>So, what can be summarised overall?  Well, it seems that the adoption rate of front-end tools across the board is pretty high.  If you’re someone who has been putting off learning more about workflow tools in whatever area, be it CSS, JavaScript module bundlers, or Task Runners, you are in the minority and these skills are now a very important part of being a front-end developer in 2015.</p>
 <p>On the flip side, use of JavaScript testing tools seems to be lagging behind the adoption rate of tools in other areas – something that can only be solved by better edutcaion of how to use and integrate these tools into peoples projects and as importantly, how to write JavaScript that is easy to test.</p>
 <p>If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, <a href="https://twitter.com/WelshAsh_">message me on Twitter</a> and I’ll do my best to help!</p>
 
 
-
-
-
-			<div class="promotion promotion--ad separator-both">
+			
+			<div class="c-promo c-promo--ad separator-both">
 				<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D5KQI&placement=ashleynolancouk"
 					id="_carbonads_js"></script>
 			</div>
 
 			
-			<p class="post-info separator-top">Article posted on the 8th September 2015</p>
+            <div class="c-content-info">
+			    <p>Article posted on the 8th September 2015</p>
 
-				<p>Last updated on the <date>30th November 2016</date></p>
+                <p>Last updated on the <date>30th November 2016</date>
+                </p>
+            </div>
 
 
-			<div id="disqus_thread" class="comments separator-top"></div>
-
+			<div id="disqus_thread" class="c-comments"></div>
 		</section>
 
-		<footer class="page-footer border-grey-white-top">
+		<footer class="c-siteFooter border-grey-white-top">
 			<!-- Social links -->
-			<nav class="links-social">
-				<ul>
-					<li class="links-social-item links-social-email"><a href="mailto:hello@ashleynolan.co.uk" title="Email Me"
-							rel="external" target="_blank"><span class="links-social-icon icon-email-shaded"></span><span
-								class="screen-reader-text">Email</span></a></li>
-					<li class="links-social-item links-social-twitter"><a href="http://twitter.com/WelshAsh_"
-							title="Find me on Twitter" rel="external" target="_blank"><span
-								class="links-social-icon icon-twitter"></span><span class="screen-reader-text">Twitter</span></a>
+			<nav class="c-socialLinks">
+				<ul class="c-socialLinks-list">
+					<li class="c-socialLinks-item c-socialLinks-email">
+						<a href="mailto:hello@ashleynolan.co.uk" class="c-socialLinks-link" title="Send me an Email"
+							rel="external" target="_blank">
+							<svg viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+						</a>
 					</li>
-					<li class="links-social-item links-social-linkedin"><a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684"
-							title="My LinkedIn Profile" rel="external" target="_blank"><span
-								class="links-social-icon icon-linkedin"></span><span class="screen-reader-text">LinkedIn</span></a>
+					<li class="c-socialLinks-item c-socialLinks-twitter">
+						<a href="http://twitter.com/WelshAsh_"
+							class="c-socialLinks-link" title="Find me on Twitter" rel="external" target="_blank">
+							<svg viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+						</a>
+					</li>
+					<li class="c-socialLinks-item c-socialLinks-linkedin">
+						<a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684"
+							class="c-socialLinks-link" title="Find me on LinkedIn" rel="external" target="_blank">
+							<svg viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+						</a>
 					</li>
 				</ul>
 			</nav>
 		
-			<div class="footer-content">
-				<p>I'm Ashley Watson-Nolan, a Principal UI Engineer at Just Eat. Do take a look around, or contact me in any of
+			<div class="c-siteFooter-content">
+				<p>I'm Ashley Watson-Nolan, a Principal UI Engineer at Just Eat Takeaway. Do take a look around, or contact me in any of
 					the usual ways – it'd be great to hear from you.</p>
 			</div>
 		</footer>
 	</div>
 
+    <script type="text/javascript">
+    window.disqusConfig = {
+        url: 'https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results.html',  // Replace PAGE_URL with your page's canonical URL variable
+        identifier: 'The State of Front-End Tooling – 2015' // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    </script>
+<!-- Require include for JS -->
+<script src="/assets/js/index.js" async></script>
 
-<script type="text/javascript">
-window.disqusConfig = {
-    url: 'https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results',  // Replace PAGE_URL with your page's canonical URL variable
-    identifier: 'The State of Front-End Tooling – 2015' // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-</script>
-
-
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-20668207-1', 'auto');
-		ga('send', 'pageview');
-	</script>
 </body>
 </html>

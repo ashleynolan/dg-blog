@@ -1,0 +1,253 @@
+@use './settings/mq' as *;
+
+// ===================
+// === TABLES.scss ===
+// ===================
+
+:root {
+    --color-table-bg: transparent; // overall background-color
+    --color-table-bg-accent: var(--color-black-opaque-90); // for striping
+    --color-table-bg-hover: var(--color-black-opaque-95); // for hover
+    --color-table-border: var(--color-black-almost); // table and cell border
+}
+
+// BASE TABLES
+// -----------------
+
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: var(--color-table-bg);
+}
+
+// BASELINE STYLES
+// ---------------
+
+table,
+.o-table {
+    width: 100%;
+    margin-bottom: calc(var(--vertical-spacing-base) * 4);
+
+    // Bottom align for column headings
+    & thead th {
+        vertical-align: bottom;
+        background-color: var(--color-table-bg-accent);
+    }
+
+    // Cells
+    & th,
+    & td {
+        max-width: 260px;
+        padding: var(--spacing-base);
+        line-height: var(--base-leading);
+        vertical-align: top;
+        border-top: 1px solid var(--color-table-border);
+
+        &:first-child {
+            text-align: left;
+        }
+
+        &:nth-child(n+2) {
+            text-align: center;
+        }
+    }
+
+    & th,
+    & tfoot td {
+        font-weight: var(--font-weight-bold);
+    }
+
+    // Remove top border from thead by default
+    & caption + thead,
+    & colgroup + thead,
+    & thead:first-child {
+        & tr:first-child th,
+        & tr:first-child td {
+            border-top: 0;
+        }
+    }
+
+    // Account for multiple tbody instances
+    & tbody + tbody {
+        border-top: 2px solid var(--color-table-border);
+    }
+}
+
+
+// CONDENSED TABLE W/ HALF PADDING
+// -------------------------------
+
+.o-table--condensed {
+    & th,
+    & td {
+        padding: 4px 5px;
+    }
+}
+
+
+// BORDERED VERSION
+// ----------------
+
+.o-table--bordered {
+    border: 1px solid var(--color-table-border);
+    border-left: 0;
+    border-collapse: separate; // This is so we can round table corners!
+    border-radius: 4px;
+
+    & th,
+    & td {
+        border-left: 1px solid var(--color-table-border);
+    }
+
+    // Prevent a double border
+    & caption + thead tr:first-child th,
+    & caption + tbody tr:first-child th,
+    & caption + tbody tr:first-child td,
+    & colgroup + thead tr:first-child th,
+    & colgroup + tbody tr:first-child th,
+    & colgroup + tbody tr:first-child td,
+    & thead:first-child tr:first-child th,
+    & tbody:first-child tr:first-child th,
+    & tbody:first-child tr:first-child td {
+        border-top: 0;
+    }
+
+    // For first th or td in the first row in the first thead or tbody
+    & thead:first-child tr:first-child th:first-child,
+    & tbody:first-child tr:first-child td:first-child {
+        border-radius: 4px 0 0;
+    }
+
+    & thead:first-child tr:first-child th:last-child,
+    & tbody:first-child tr:first-child td:last-child {
+        border-radius: 0 4px 0 0;
+    }
+
+    // For first th or td in the first row in the first thead or tbody
+    & thead:last-child tr:last-child th:first-child,
+    & tbody:last-child tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    & thead:last-child tr:last-child th:last-child,
+    & tbody:last-child tr:last-child td:last-child {
+        border-radius: 0 0 4px;
+    }
+}
+
+
+// ZEBRA-STRIPING
+// --------------
+
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+.o-table--striped {
+    & tbody {
+        & tr:nth-child(odd) {
+            & td,
+            & th {
+                background-color: var(--color-table-bg-accent);
+            }
+        }
+    }
+}
+
+
+// HOVER EFFECT
+// ------------
+// Placed here since it has to come after the potential zebra striping
+table,
+.o-table {
+    & tbody tr:hover {
+        & td,
+        & th {
+            background-color: var(--color-table-bg-hover);
+        }
+    }
+}
+
+table:not(:first-of-type),
+.o-responsiveTable {
+    display: none;
+}
+
+/**
+ * Responsive tables
+ * Wrap your tables in `.responsiveTable` and we'll make them mobile friendly by enabling horizontal scrolling. Only applies <768px. Everything above that will display normally.
+ *
+ * If you need more responsive tables, consider Tablesaw by the Filament Group:
+ * https://github.com/filamentgroup/tablesaw
+ */
+.o-responsiveTable {
+    @include media('<narrow') {
+        width: 100%;
+        margin-bottom: calc(var(--base-line-height) * 0.75px);
+        overflow: auto hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid var(--color-table-border);
+        -webkit-overflow-scrolling: touch; // TODO: Check this is still needed
+
+        // Tighten up spacing
+        table {
+            margin-bottom: 0;
+            border: 0;
+
+            > tbody {
+                th {
+                    min-width: 140px;
+                    white-space: normal;
+                }
+            }
+
+            // Ensure the content doesn't wrap
+            > thead,
+            > tbody,
+            > tfoot {
+                td {
+                    white-space: nowrap;
+
+                    // Nuke the appropriate borders so that the parent can handle them
+                    &:first-child {
+                        border-left: 0;
+                    }
+
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+
+            // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
+            // chances are there will be only one `tr` in a `thead` and that would
+            // remove the border altogether.
+            > tbody,
+            > tfoot tr:last-child {
+                > th,
+                > td {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.o-tableWrapper {
+    .post & {
+        @include media('<mid') {
+            width: 140%;
+            margin: 0 0 calc(var(--vertical-rhythm) * 1px) -20%;
+        }
+    }
+}
+
+.is-trendUp {
+    background-color: #f2fae2;
+}
+
+.is-trendDown {
+    background-color: #fee;
+}
+
+.is-trendEqual {
+    background-color: #ffebca;
+}

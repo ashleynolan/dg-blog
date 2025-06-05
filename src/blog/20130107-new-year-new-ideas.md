@@ -16,7 +16,6 @@ categories:
 
 ---
 
-
 Today was the first day of my working new year and as ever when returning enthusiastic from the holidays (for a few days/hours at least) I've got lots of ideas for the next 12 months.
 
 For 2013 I've decided to try not to set myself professional goals that seem pretty far removed from where I am right now. I've done this before and invariably I would just end the year having done plenty, but not necessarily around what I'd planned out from the start of the year. Instead, I've made some achievable paths to follow and just see how far I can take them over the next year. So here are my very open routes that I'm going to push myself towards in 2013.

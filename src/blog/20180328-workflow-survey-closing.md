@@ -18,7 +18,6 @@ categories:
 
 ---
 
-
 <div class="img img--logo">
 	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320" data-alt="The Front-End Tooling Survey 2018 Logo" data-img-320="/assets/img/blog/tooling-survey/2018/logo-small.png" data-img-max="/assets/img/blog/tooling-survey/2018/logo-mid.png">
 		<noscript>
@@ -48,7 +47,3 @@ Here's a couple of quick links:
 ## A Big Thank You
 
 Thanks again for your continued support and I'll be in touch with the results next month! :)
-
-
-
-
