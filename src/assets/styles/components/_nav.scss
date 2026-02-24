@@ -8,10 +8,13 @@
    ========================================================================== */
 
 .c-siteHeader-nav {
-    background: #000;
+    --nav-bg: var(--color-black);
+    --nav-font-size: 18px;
 
+    background: var(--nav-bg);
+
+    // TODO: Pretty sure not needed
     // display: block;
-
     // min-width: 0;
     // width: 100%;
     // height: auto;
@@ -48,28 +51,10 @@
 
     font-family: var(--secondary-font-family);
 
-    // @include font-size(18);
+    font-size: var(--nav-font-size);
 
-    // //border:1px solid $darkgrey;
 
-    // @include respond-min($breakpoint-midupper) {
-    //     width: auto;
-    //     border: none;
-    // }
-
-    // .no-box-sizing & {
-    //     width: 48.5%;
-    //     padding: 2px 0.5%;
-    // }
-
-    // &:first-child {
-    //     width: 34%;
-
-    //     @include respond-min($breakpoint-midupper) {
-    //         width: auto;
-    //     }
-    // }
-
+    // TODO: Pretty sure not needed
     // &:first-child,
     // &:nth-child(2) {
     //     border-bottom: 0;
@@ -88,8 +73,9 @@
     //     text-decoration: none;
 
     color: var(--link-color-inverse);
+    letter-spacing: 1px;
 
-    padding: 4px 0 2px;
+    padding: 8px 0 4px;
 
     //     @include prefixer(transition, color 250ms linear, webkit moz o spec);
 
@@ -108,7 +94,7 @@
 
         border-left: var(--arrow-width) solid transparent;
         border-right: var(--arrow-width) solid transparent;
-        border-top: var(--arrow-height) solid var(--color-purple);
+        border-top: var(--arrow-height) solid var(--nav-bg);
 
 
         position: absolute;
@@ -120,45 +106,13 @@
     }
 }
 
-// .c-globalNav-item a:hover,
-// .c-globalNav-item--active a {
-//     color: #fff;
+.c-globalNav-item a:hover,
+.c-globalNav-item--active a {
+    color: #fff;
 
-//     //background: #ced4c9;
-//     // &:before {
-//     // 	top: 0;
-//     // }
-
-//     @include prefixer(transition, 250ms ease-out, webkit moz o spec);
-// }
-
-// /* Arrow highlighting active
-// 			couldn't do with after, as they wouldn't animate on hover :(
-// 		*/
-.c-globalNav-arrow {
-    //     width: 0;
-    //     height: 0;
-    //     text-decoration: none;
-
-    //     border-left: 12px solid transparent;
-    //     border-right: 12px solid transparent;
-    //     border-top: 8px solid #000;
-
-
-    //     position: absolute;
-    //     z-index: 1;
-    //     left: 50%;
-    //     bottom: 0;
-    //     margin-left: -12px;
-
-    //     @include prefixer(transition, bottom 150ms linear, webkit moz o spec);
-
-    /* Arrow highlighting active */
-    .c-globalNav-item:hover &,
-    .c-globalNav-item--active & {
-        //     bottom: -8px;
-
-        //     @include prefixer(transition, bottom 150ms linear, webkit moz o spec);
+    &:before {
+    	top: 100%;
     }
 
+    transition: 250ms ease-out;
 }

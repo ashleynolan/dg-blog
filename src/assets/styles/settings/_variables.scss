@@ -6,6 +6,7 @@
     --color-grey-20: #f5f2f0;
     --color-grey-40: #b3b3b3;
     --color-eggshell: #dce4d7;
+    --color-eggshell-alt: #ced4c9;
     --color-red: #be1e2d;
     --color-grey-dark: #4e5149;
     --color-black: #000;
@@ -23,12 +24,11 @@
 
     /* Typography colours */
     --text-color: var(--color-black-almost);
-    --link-color-inverse: var(--color-eggshell);
+    --link-color-inverse: var(--color-eggshell-alt);
 
     // <hr> border colour
     --hr-border: var(--color-grey-40);
     --hr-border-alt: var(--color-white);
-    --hr-border: var(--color-grey-40);
 
     /*
     Typography
