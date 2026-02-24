@@ -19,6 +19,11 @@ h6,
 .h6,
 .zeta {
     font-weight: var(--font-weight-bold);
+
+    // Smoothens type
+    // =========================================
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
