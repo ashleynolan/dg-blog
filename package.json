@@ -2,8 +2,11 @@
   "name": "dg-blog",
   "version": "0.1.0",
   "description": "Front-end development Blog and Portfolio for Ashley Watson-Nolan – Principal Engineer at Just Eat Takeaway",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "build": "eleventy",
+    "build": "rimraf dist && eleventy",
     "clean:dist": "rimraf dist",
     "dev": "yarn clean:dist && npx @11ty/eleventy --serve",
     "lint": "stylelint ./src/**/*.{css,scss}",
@@ -14,14 +17,15 @@
   "author": "Ashley Watson-Nolan",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy": "3.1.2",
+    "@11ty/eleventy-plugin-handlebars": "1.0.0",
     "@justeattakeaway/stylelint-config-pie": "0.8.0",
     "autoprefixer": "10.4.20",
-    "eleventy-plugin-clean": "1.2.6",
     "eleventy-plugin-rev": "2.0.0",
-    "eleventy-sass": "2.2.6",
+    "eleventy-sass": "3.0.0-beta.0",
     "esbuild": "0.24.2",
     "get-value": "3.0.1",
+    "handlebars": "4.7.8",
     "handlebars-utils": "1.0.6",
     "helper-moment": "0.2.0",
     "include-media": "2.0.0",
