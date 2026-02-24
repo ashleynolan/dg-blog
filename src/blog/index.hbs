@@ -1,11 +1,17 @@
 ---
 layout: default.hbs
-
-title: Home
-
+title: Blog
 rss: false
 ---
 
-<h1>This is my blog header</h1>
-
-{{ page }}
+<section class="content blog articles separator-top">
+    {{#withSort collections.post 'data.posted' reverse=true}}
+    <a href="{{ this.url }}" class="articles-item separator-bottom">
+        <article>
+            <time>{{moment this.data.posted format="DD/MM/YYYY"}}</time>
+            <h2 class="articles-item-title">{{ this.data.title }}</h2>
+            <p class="articles-item-description">{{ this.data.description }}</p>
+        </article>
+    </a>
+    {{/withSort}}
+</section>
