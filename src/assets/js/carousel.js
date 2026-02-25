@@ -49,14 +49,14 @@ export function initCarousel() {
     btnLeft.className = 'c-homeCarousel-carLeft';
     btnLeft.href = '#';
     btnLeft.setAttribute('aria-label', 'Previous');
-    btnLeft.innerHTML = '&#8592;';
+    btnLeft.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 658 1024" aria-hidden="true"><path fill="currentColor" transform="translate(0,960) scale(1,-1)" d="M424 52l-372.571 372q-21.143 21.143-21.143 51.714t21.143 51.714l372.571 372q21.143 21.143 51.714 21.143t51.714-21.143l42.857-42.857q21.143-21.143 21.143-51.714t-21.143-51.714l-277.714-277.714 277.714-277.143q21.143-21.714 21.143-52t-21.143-51.429l-42.857-42.857q-21.143-21.143-51.714-21.143t-51.714 21.143z"/></svg>';
 
     const btnRight = document.createElement('a');
     btnRight.id = 'c-homeCarousel-carRight';
     btnRight.className = 'c-homeCarousel-carRight';
     btnRight.href = '#';
     btnRight.setAttribute('aria-label', 'Next');
-    btnRight.innerHTML = '&#8594;';
+    btnRight.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 658 1024" aria-hidden="true"><path fill="currentColor" transform="translate(0,960) scale(1,-1)" d="M628 475.428q0-29.714-21.143-52l-372.571-372q-21.143-21.143-51.429-21.143t-51.429 21.143l-43.429 42.857q-21.143 22.286-21.143 52 0 30.286 21.143 51.429l277.714 277.714-277.714 277.143q-21.143 22.286-21.143 52 0 30.286 21.143 51.429l43.429 42.857q20.571 21.714 51.429 21.714t51.429-21.714l372.571-372q21.143-21.143 21.143-51.429z"/></svg>';
 
     container.appendChild(btnLeft);
     container.appendChild(btnRight);
