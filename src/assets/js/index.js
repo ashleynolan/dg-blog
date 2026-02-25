@@ -1,5 +1,6 @@
 import Prism from "./libs/prism";
 import { initCarousel } from "./carousel.js";
+import { initDateHandler } from "./dateHandler.js";
 
 function ready(fn) {
     if (document.readyState !== 'loading') {
@@ -12,6 +13,7 @@ function ready(fn) {
 const init = function () {
     widowCheck();
     initCarousel();
+    initDateHandler();
 };
 
 const widowCheck = function () {
