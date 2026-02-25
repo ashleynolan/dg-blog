@@ -25,7 +25,6 @@ function parse (xml) {
 }
 
 module.exports = (path, options = {}) => {
-	console.log(path, process.cwd());
     if (typeof path !== 'string') {
         throw new Error('{{inlineSVG}} helper: invalid path. Path must be formatted as a string.');
     }
@@ -44,7 +43,15 @@ module.exports = (path, options = {}) => {
 
     const svg = parse(content);
 
-    Object.assign(svg.attrs, options.hash);
+    const hash = options.hash || {};
+    const { title, ...attributes } = hash;
+
+    Object.assign(svg.attrs, attributes);
+
+    if (typeof title === 'string' && title.trim()) {
+        const titleNode = ltx.parse(`<title>${Handlebars.escapeExpression(title.trim())}</title>`);
+        svg.children.unshift(titleNode);
+    }
 
     return new Handlebars.SafeString(svg.root().toString());
 };

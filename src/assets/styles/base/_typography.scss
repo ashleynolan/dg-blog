@@ -129,8 +129,6 @@ ol {
     & ol {
         margin-bottom: 0;
     }
-
-
 }
 
 li {
@@ -151,14 +149,27 @@ li {
     }
 }
 
-// TODO : move to nav scss file
+.unstyled,
 nav ul,
 nav ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    list-style-image: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-image: none;
 }
+
+// .content .unstyled,
+// .content ol {
+// 	margin: 0 0 $verticalRhythm + px;
+
+// 	> li {
+// 		margin: 0 0 $verticalRhythm/2 + px 20px;
+
+// 		@include respond-min($breakpoint-mid) {
+// 			margin: 0 0 $verticalRhythm/2 + px;
+// 		}
+// 	}
+// }
 
 
 /*

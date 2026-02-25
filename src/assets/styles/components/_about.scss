@@ -13,20 +13,14 @@
                             'bio' 'skills'
                             'speaking';
 		margin: 0 auto;
-
-        // max-width: 1200px;
-		// padding: 0;
 	}
 
     @include media('>narrowMid') {
-        // overflow: hidden; //TODO: Needed?
         margin: 0;
-
-        // padding: 0;
     }
 }
 
-.about-title {
+.c-about-title {
 	margin-bottom: calc(var(--vertical-rhythm) / 2 * 1px);
 }
 
@@ -36,51 +30,43 @@
     // split into 2 columns
 }
 
-	.about-module-title {
+.c-about-module {
+    padding-top: calc(var(--vertical-rhythm) * 1px);
+}
+
+	.c-about-module-title {
 		font-family: var(--secondary-font-family);
-        font-size: var(--h4-size);
+        font-size: calc(var(--h4-size) * 1px);
 	}
 
-	.about-me {
-        // TODO
-		// @include respond-min($breakpoint-midupper) {
-		// 	border:0;
-		// 	box-shadow: none;
-		// }
-	}
-
-	.about-speaking {
+	.c-about-speaking {
 		width: 100%;
 	}
 
-	.about-facts,
-	.skills {
+	.c-about-list {
 		line-height: 2;
 		margin-bottom: 20px;
+        padding-left: var(--spacing-x1);
 	}
 
-		.about-facts-item,
-		.skills-item {
-			position: relative;
+        .c-about-list-item {
+            display: flex;
+            align-items: center;
 
-			// padding-left: 30px;
-
-			&:before {
-				font-family: icons, sans-serif;
-				position: absolute;
-				left: 0;
-				top: -2px;
+			svg {
+				width: 20px;
+				height: 20px;
+                margin-inline-end: var(--spacing-x2);
+                margin-block-end: 2px;
 			}
 		}
 
-		.skills-item:before {
-			text-align: center;
-			min-width: 20px;
-
-			font-weight: 400;
-			font-variant: normal;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
+		.social-button-innie,
+		.social-button-outie {
+			svg {
+				width: 50%;
+				height: 50%;
+			}
 		}
 
 // TODO

@@ -2,32 +2,32 @@
 layout: default
 title: About me
 url: about
-age: <%= new Date("Apr 09 1984 00:00:00 GMT+0000 (GMT)") %>
+age: "1984-04-09"
 
 rss: false
 ---
 
 <section class="c-content c-about c-content--wide u-separator-top">
 	<section class="c-about-bio about-me u-separator-bottom">
-		<h1 class="about-title">{{title}}</h1>
-		<ul class="about-facts unstyled">
-			<li id="age" class="about-facts-item about-facts-age" data-age="{{age}}">{{inlineSVG "./src/assets/img/icons/calendar.svg"}}30</li>
-			<li class="about-facts-item about-facts-birthplace">{{inlineSVG "./src/assets/img/icons/home.svg"}}Caerleon, Wales</li>
-			<li class="about-facts-item about-facts-location">{{inlineSVG "./src/assets/img/icons/pin.svg"}}Newport/Bristol, UK</li>
+		<h1 class="c-about-title">{{title}}</h1>
+		<ul class="c-about-list unstyled">
+			<li id="age" class="c-about-list-item c-about-facts-age" data-age="{{age}}">{{inlineSVG "./src/assets/img/icons/calendar.svg" title="Age"}}41</li>
+			<li class="c-about-list-item c-about-facts-birthplace">{{inlineSVG "./src/assets/img/icons/home.svg" title="Birthplace"}}Caerleon, Wales</li>
+			<li class="c-about-list-item c-about-facts-location">{{inlineSVG "./src/assets/img/icons/pin.svg" title="Location"}}Cwmbran / Bristol, UK</li>
 		</ul>
 
-		<p>I'm Ashley Watson-Nolan, a Senior UI Engineer working at <a href="http://tech.just-eat.com/">Just Eat</a>.
+		<p>I'm Ashley Watson-Nolan, a Principal Engineer working at <a href="https://medium.com/justeattakeaway-tech">Just Eat Takeaway.com</a>.
 		</p>
-		<p>I enjoy architecting large scale front-ends, playing around with new technologies and the challenge of the
-			ever changing world of front-end technology.</p>
+		<p>I love design systems, front-end coding, playing around with new technologies and the challenge of the
+			ever changing world of web technology.</p>
 		<p>I’m also a passionate Welshman – although I couldn't sound less Welsh if I tried.</p>
 		<p>If you want to find out a bit more about me, <a title="A brief history of me"
 				href="blog/a-brief-history-of-me">go ahead and take a look</a>, find me on <a
 				href="http://www.twitter.com/WelshAsh_" rel="external">Twitter</a> or drop me an <a
 				href="mailto:hello@ashleynolan.co.uk">email</a> – it'd be great to hear from you.</p>
 	</section>
-	<section class="about-module about-contact u-separator-bottom">
-		<h2 class="about-module-title">Get in touch</h2>
+	<section class="c-about-module about-contact u-separator-bottom">
+		<h2 class="c-about-module-title">Get in touch</h2>
 		<nav class="buttons-social">
 			<ul>
 				<li class="buttons-social-item email">
@@ -101,28 +101,28 @@ rss: false
 		</nav>
 	</section>
 
-	<section class="about-module about-skills">
-		<h2 class="about-module-title">Skills</h2>
+	<section class="c-about-module about-skills">
+		<h2 class="c-about-module-title">Skills</h2>
 
-		<ul class="skills unstyled">
-			<li class="skills-item skills-html5">{{inlineSVG "./src/assets/img/icons/html5.svg"}}HTML5</li>
-			<li class="skills-item skills-css">{{inlineSVG "./src/assets/img/icons/css.svg"}}CSS &amp; CSS3</li>
-			<li class="skills-item skills-js">{{inlineSVG "./src/assets/img/icons/js.svg"}}JavaScript</li>
-			<li class="skills-item skills-git">{{inlineSVG "./src/assets/img/icons/git.svg"}}Git</li>
-			<li class="skills-item skills-pool">{{inlineSVG "./src/assets/img/icons/pool.svg"}}Pool shark</li>
+		<ul class="c-about-list unstyled">
+			<li class="c-about-list-item skills-html5">{{inlineSVG "./src/assets/img/icons/html5.svg"}}HTML5</li>
+			<li class="c-about-list-item skills-css">{{inlineSVG "./src/assets/img/icons/css.svg"}}CSS &amp; CSS3</li>
+			<li class="c-about-list-item skills-js">{{inlineSVG "./src/assets/img/icons/js.svg"}}JavaScript</li>
+			<li class="c-about-list-item skills-git">{{inlineSVG "./src/assets/img/icons/git.svg"}}Git</li>
+			<li class="c-about-list-item skills-pool">{{inlineSVG "./src/assets/img/icons/pool.svg"}}Pool shark</li>
 		</ul>
 	</section>
 
-	<section class="about-module about-speaking separator-top">
-		<h2 class="about-module-title">Speaking</h2>
+	<section class="c-about-module c-about-speaking u-separator-top">
+		<h2 class="c-about-module-title">Speaking</h2>
 
-		<h3 class="about-module-title">Future events</h3>
+		<h3 class="c-about-module-title">Future events</h3>
 		<!-- <ul>
 		</ul> -->
 		<p>I've got no future talks lined up right now. If you'd like me to speak at your event, please do <a
 				href="mailto:hello@ashleynolan.co.uk">get in touch</a>.</p>
 
-		<h3 class="about-module-title">Previous events</h3>
+		<h3 class="c-about-module-title">Previous events</h3>
 		<ul>
 			<li><a href="http://environmentsforhumans.com/2016/sass-summit/" rel="external">Sass Summit – December 14th
 					2016 – Extending Sass with PostCSS</a></li>
