@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Front-end development Blog and Portfolio for Ashley Watson-Nolan – Principal Engineer at Just Eat Takeaway",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "scripts": {
     "build": "rimraf dist && eleventy",
@@ -47,5 +47,8 @@
     "rules": {
       "no-descending-specificity": null
     }
+  },
+  "volta": {
+    "node": "22.22.2"
   }
 }

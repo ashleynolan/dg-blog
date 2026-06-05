@@ -4,13 +4,13 @@ title: Blog
 rss: false
 ---
 
-<section class="content blog articles separator-top">
+<section class="c-content c-blog c-articles u-separator-top">
     {{#withSort collections.post 'data.posted' reverse=true}}
-    <a href="{{ this.url }}" class="articles-item separator-bottom">
+    <a href="{{ this.url }}" class="c-articles-item u-separator-bottom">
         <article>
             <time>{{moment this.data.posted format="DD/MM/YYYY"}}</time>
-            <h2 class="articles-item-title">{{ this.data.title }}</h2>
-            <p class="articles-item-description">{{ this.data.description }}</p>
+            <h2 class="c-articles-item-title">{{ this.data.title }}</h2>
+            <p class="c-articles-item-description">{{ this.data.description }}</p>
         </article>
     </a>
     {{/withSort}}

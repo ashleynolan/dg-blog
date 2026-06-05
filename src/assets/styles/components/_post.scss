@@ -1,0 +1,55 @@
+@use './settings/mq' as *;
+
+.c-content--post .img {
+	margin: 0 0 calc(var(--vertical-rhythm) * 1px);
+
+	> img {
+		border: 1px solid #333;
+	}
+
+	@include media('>narrowMid') {
+		width: 140%;
+		margin: 0 0 calc(var(--vertical-rhythm) * 1px) -20%;
+		text-align: center;
+		min-height: 380px;
+
+		&.img--logo {
+			min-height: 0;
+		}
+	}
+}
+
+.c-content--post .img-tall {
+	min-height: 220px;
+
+	@include media('>narrowMid') {
+		min-height: 500px;
+	}
+}
+
+.c-content--post .img-extraTall {
+	min-height: 220px;
+
+	@include media('>narrowMid') {
+		min-height: 580px;
+	}
+}
+
+.c-content--post .img-mid {
+	@include media('>narrowMid') {
+		min-height: 420px;
+	}
+}
+
+.c-content--post .img-short {
+	@include media('>narrowMid') {
+		min-height: 280px;
+	}
+}
+
+.c-content--post .table-wrapper {
+	@include media('>narrowMid') {
+		width: 140%;
+		margin: 0 0 calc(var(--vertical-rhythm) * 1px) -20%;
+	}
+}

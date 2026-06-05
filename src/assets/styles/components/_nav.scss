@@ -12,32 +12,25 @@
     --nav-font-size: 18px;
 
     background: var(--nav-bg);
-
-    // TODO: Pretty sure not needed
-    // display: block;
-    // min-width: 0;
-    // width: 100%;
-    // height: auto;
-    // transition: margin .25s ease-in-out;
 }
 
 .c-globalNav {
-    // float: none;
-    // width: 100%;
-    // margin: 0 auto;
+    margin: 0 auto;
+
+    @include media('>narrowMid') {
+        max-width: 50%;
+    }
+    @include media('>wide') {
+        max-width: 600px;
+    }
 }
 
 .c-globalNav-list {
     display: flex;
     justify-content: space-evenly;
 
-    //     width: 100%;
-
     @include media('>narrowMid') {
         justify-content: center;
-
-        // text-align: center;
-        // margin-left: -162px;
     }
 }
 
@@ -45,12 +38,9 @@
 .c-globalNav-item {
     width: 100%;
 
-    // padding: 2px;
-
     margin-bottom: 0;
 
     font-family: var(--secondary-font-family);
-
     font-size: var(--nav-font-size);
 
 
@@ -64,25 +54,14 @@
 
 .c-globalNav-item a {
     position: relative;
-
-    //     z-index: 2;
-
     display: block;
+    padding: 8px 0 4px;
     text-align: center;
-
-    //     text-decoration: none;
 
     color: var(--link-color-inverse);
     letter-spacing: 1px;
 
-    padding: 8px 0 4px;
-
-    //     @include prefixer(transition, color 250ms linear, webkit moz o spec);
-
-    //     @include respond-min($breakpoint-midupper) {
-    //         width: 140px;
-    //         border: none;
-    //     }
+    transition: 250ms ease-out;
 
     &:before {
         --arrow-height: 8px;
@@ -96,7 +75,6 @@
         border-right: var(--arrow-width) solid transparent;
         border-top: var(--arrow-height) solid var(--nav-bg);
 
-
         position: absolute;
         top: calc(100% - var(--arrow-height));
         left: 50%;
@@ -109,10 +87,9 @@
 .c-globalNav-item a:hover,
 .c-globalNav-item--active a {
     color: #fff;
+    transition: 250ms ease-out;
 
     &:before {
     	top: 100%;
     }
-
-    transition: 250ms ease-out;
 }

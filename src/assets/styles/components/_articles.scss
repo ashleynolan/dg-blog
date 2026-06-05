@@ -1,13 +1,15 @@
+@use './settings/mq' as *;
+
 /*
    Article item
    ========================================================================== */
 
 .c-articles {
-    // Might not need this now - handled by grid layout
-    // width: 92%;
-    // max-width: 860px;
-    // margin: 0 auto;
-    // padding: 0;
+    grid: none;
+    width: 92%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .c-articles-title {
@@ -22,7 +24,8 @@
 .c-articles-item {
     // display: block;
     padding: 0 10px 20px 0;
-    border: 0 solid transparent;
+
+    // border: 0 solid transparent;
     border-right: 8px solid transparent;
     transition: 250ms ease-in-out;
 
@@ -39,10 +42,10 @@
         transition: 250ms ease-in-out;
     }
 
-    //     .blog &:last-child {
-    //         border-bottom: none;
-    //         box-shadow: none;
-    //     }
+    .c-blog &:last-child {
+        border-bottom: none;
+        box-shadow: none;
+    }
 }
 
 
