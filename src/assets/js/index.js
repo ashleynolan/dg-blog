@@ -1,6 +1,7 @@
 import Prism from "./libs/prism";
 import { initCarousel } from "./carousel.js";
 import { initDateHandler } from "./dateHandler.js";
+import { initExternalLinks } from "./externalLinks.js";
 import { initWork } from "./work.js";
 
 function ready(fn) {
@@ -15,6 +16,7 @@ const init = function () {
     widowCheck();
     initCarousel();
     initDateHandler();
+    initExternalLinks();
     initWork();
 };
 

@@ -6,18 +6,20 @@
    ========================================================================== */
 
 .c-about {
-    @include media('>mid') {
-        // TODO: Check these styles, may not need them
-        grid-template-columns: 2fr 1200px 2fr;
-        grid-template-areas: 'bio' 'social'
-                            'bio' 'skills'
-                            'speaking';
-		margin: 0 auto;
-	}
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
 
     @include media('>narrowMid') {
-        margin: 0;
-    }
+        display: grid;
+        width: 92%;
+        max-width: 1200px;
+        grid-template-columns: 65fr 35fr;
+        grid-template-areas: 'bio social'
+                             'bio skills'
+                             'speaking speaking';
+		margin: 0 auto;
+	}
 }
 
 .c-about-title {
@@ -25,9 +27,20 @@
 }
 
 .c-about-bio {
+	grid-area: bio;
 	padding-top: calc(var(--vertical-rhythm) * 1px);
+}
 
-    // split into 2 columns
+.c-about-contact {
+    grid-area: social;
+}
+
+.c-about-skills {
+    grid-area: skills;
+}
+
+.c-about-speaking {
+    grid-area: speaking;
 }
 
 .c-about-module {
@@ -61,56 +74,25 @@
 			}
 		}
 
-		.social-button-innie,
-		.social-button-outie {
-			svg {
-				width: 50%;
-				height: 50%;
-			}
-		}
-
-// TODO
 @include media('>narrowMid') {
-	.c-about {
-		// overflow: hidden; //TODO: Needed?
-		margin: 0;
-
-		// padding: 0;
-	}
-
-    // TODO: Replace with Flex/Grid
-    .c-about-bio {
-        // float: left;
-
+    .c-about-module {
         & > p {
             max-width: 660px;
         }
     }
 
-    .about-me {
-        // width: 65%;
-        // padding-left: 2%;
-        // padding-right: 6%;
+    .c-about-bio {
+        padding-left: 2%;
+        padding-right: 6%;
 
         // TODO – switch out for separator helpers
         box-shadow: 1px 0 0 var(--color-grey-dark);
         border-right: 1px solid var(--color-white);
     }
 
-    .about-speaking {
-        // padding-left: 2%;
-    }
-
-    .about-contact,
-    .about-skills {
-        // width: 35%;
-        // padding-left: 4%;
-        // padding-right: 4%;
+    .c-about-speaking {
+        padding-left: 2%;
     }
 }
-
-// @include media('>wide') {
-
-// }
 
 

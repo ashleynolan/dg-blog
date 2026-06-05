@@ -8,7 +8,7 @@ rss: false
 ---
 
 <section class="c-content c-about c-content--wide u-separator-top">
-	<section class="c-about-bio about-me u-separator-bottom">
+	<section class="c-about-module c-about-bio u-separator-bottom">
 		<h1 class="c-about-title">{{title}}</h1>
 		<ul class="c-about-list unstyled">
 			<li id="age" class="c-about-list-item c-about-facts-age" data-age="{{age}}">{{inlineSVG "./src/assets/img/icons/calendar.svg" title="Age"}}41</li>
@@ -16,98 +16,103 @@ rss: false
 			<li class="c-about-list-item c-about-facts-location">{{inlineSVG "./src/assets/img/icons/pin.svg" title="Location"}}Cwmbran / Bristol, UK</li>
 		</ul>
 
-		<p>I'm Ashley Watson-Nolan, a Principal Engineer working at <a href="https://medium.com/justeattakeaway-tech">Just Eat Takeaway.com</a>.
+		<p>I'm Ashley Watson-Nolan, a Principal Engineer working at <a href="https://medium.com/justeattakeaway-tech">Just&nbsp;Eat&nbsp;Takeaway.com</a>.
 		</p>
 		<p>I love design systems, front-end coding, playing around with new technologies and the challenge of the
 			ever changing world of web technology.</p>
 		<p>I’m also a passionate Welshman – although I couldn't sound less Welsh if I tried.</p>
-		<p>If you want to find out a bit more about me, <a title="A brief history of me"
-				href="blog/a-brief-history-of-me">go ahead and take a look</a>, find me on <a
-				href="http://www.twitter.com/WelshAsh_" rel="external">Twitter</a> or drop me an <a
-				href="mailto:hello@ashleynolan.co.uk">email</a> – it'd be great to hear from you.</p>
+		<p>If you want to find out a bit more about me, <a title="A brief history of me" href="blog/a-brief-history-of-me">go ahead and take a look</a>, find me on <a href="https://bsky.app/profile/ashn.uk" rel="external">Bluesky</a> or drop me an <a href="mailto:hello@ashleynolan.co.uk">email</a> – it'd be great to hear from you.</p>
 	</section>
-	<section class="c-about-module about-contact u-separator-bottom">
+	<section class="c-about-module c-about-contact u-separator-bottom">
 		<h2 class="c-about-module-title">Get in touch</h2>
-		<nav class="buttons-social">
+		<nav class="c-socialList">
 			<ul>
-				<li class="buttons-social-item email">
-					<div class="social-button">
-						<div class="social-button-reveal">
-							<a href="mailto:hello@ashleynolan.co.uk" class="social-button-btn" title="Email Me"
-								rel="external">
+				<li class="c-socialList-item c-socialList-item--email">
+					<div class="c-socialBtn">
+						<div class="c-socialBtn-reveal"><a href="mailto:hello@ashleynolan.co.uk" class="c-socialBtn-btn" title="Email Me" rel="external">
 								Email
 							</a>
 						</div>
-						<div class="social-button-cover">
-							<div class="social-button-innie">{{inlineSVG "./src/assets/img/icons/envelope.svg"}}</div>
-							<div class="social-button-spine"></div>
-							<div class="social-button-outie">{{inlineSVG "./src/assets/img/icons/envelope.svg"}}</div>
+						<div class="c-socialBtn-cover">
+							<div class="c-socialBtn-innie">{{inlineSVG "./src/assets/img/icons/envelope.svg"}}</div>
+							<div class="c-socialBtn-spine"></div>
+							<div class="c-socialBtn-outie">{{inlineSVG "./src/assets/img/icons/envelope.svg"}}</div>
 						</div>
-						<div class="social-button-shadow"></div>
+						<div class="c-socialBtn-shadow"></div>
 					</div>
 				</li>
-				<li class="buttons-social-item twitter">
-					<div class="social-button">
-						<div class="social-button-reveal">
-							<a href="https://twitter.com/WelshAsh_" class="social-button-btn social-button-small"
-								title="WelshAsh_ on Twitter" rel="external">
-								Twitter
+                <li class="c-socialList-item c-socialList-item--bluesky">
+					<div class="c-socialBtn">
+						<div class="c-socialBtn-reveal">
+							<a href="https://bsky.app/profile/ashn.uk" class="c-socialBtn-btn" title="ashn.uk on BlueSky" rel="external">
+								Bluesky
 							</a>
-							<a href="https://twitter.com/WelshAsh_" class="twitter-follow-button"
-								data-show-count="false" data-size="large">Follow @WelshAsh_</a>
-							<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
 						</div>
-						<div class="social-button-cover">
-							<div class="social-button-innie">{{inlineSVG "./src/assets/img/icons/twitter.svg"}}</div>
-							<div class="social-button-spine"></div>
-							<div class="social-button-outie">{{inlineSVG "./src/assets/img/icons/twitter.svg"}}</div>
+						<div class="c-socialBtn-cover">
+							<div class="c-socialBtn-innie">{{inlineSVG "./src/assets/img/icons/bluesky.svg"}}</div>
+							<div class="c-socialBtn-spine"></div>
+							<div class="c-socialBtn-outie">{{inlineSVG "./src/assets/img/icons/bluesky.svg"}}</div>
 						</div>
-						<div class="social-button-shadow"></div>
+						<div class="c-socialBtn-shadow"></div>
 					</div>
 				</li>
-				<li class="buttons-social-item github">
-					<div class="social-button">
-						<div class="social-button-reveal">
-							<a href="https://github.com/ashleynolan" class="social-button-btn"
-								title="AshleyNolan - github" rel="external">
+				<li class="c-socialList-item c-socialList-item--github">
+					<div class="c-socialBtn">
+						<div class="c-socialBtn-reveal">
+							<a href="https://github.com/ashleynolan" class="c-socialBtn-btn" title="AshleyNolan - github" rel="external">
 								Github
 							</a>
 						</div>
-						<div class="social-button-cover">
-							<div class="social-button-innie">{{inlineSVG "./src/assets/img/icons/github.svg"}}</div>
-							<div class="social-button-spine"></div>
-							<div class="social-button-outie">{{inlineSVG "./src/assets/img/icons/github.svg"}}</div>
+						<div class="c-socialBtn-cover">
+							<div class="c-socialBtn-innie">{{inlineSVG "./src/assets/img/icons/github.svg"}}</div>
+							<div class="c-socialBtn-spine"></div>
+							<div class="c-socialBtn-outie">{{inlineSVG "./src/assets/img/icons/github.svg"}}</div>
 						</div>
-						<div class="social-button-shadow"></div>
+						<div class="c-socialBtn-shadow"></div>
 					</div>
 				</li>
-				<li class="buttons-social-item linkedin">
-					<div class="social-button">
-						<div class="social-button-reveal">
-							<a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" class="social-button-btn"
-								title="My LinkedIn Profile" rel="external">
+                <li class="c-socialList-item c-socialList-item--linkedin">
+					<div class="c-socialBtn">
+						<div class="c-socialBtn-reveal">
+							<a href="http://uk.linkedin.com/pub/ashley-nolan/16/980/684" class="c-socialBtn-btn" title="My LinkedIn Profile" rel="external">
 								LinkedIn
 							</a>
 						</div>
-						<div class="social-button-cover">
-							<div class="social-button-innie">{{inlineSVG "./src/assets/img/icons/linkedin-shaded.svg"}}</div>
-							<div class="social-button-spine"></div>
-							<div class="social-button-outie">{{inlineSVG "./src/assets/img/icons/linkedin-shaded.svg"}}</div>
+						<div class="c-socialBtn-cover">
+							<div class="c-socialBtn-innie">{{inlineSVG "./src/assets/img/icons/linkedin-shaded.svg"}}</div>
+							<div class="c-socialBtn-spine"></div>
+							<div class="c-socialBtn-outie">{{inlineSVG "./src/assets/img/icons/linkedin-shaded.svg"}}</div>
 						</div>
-						<div class="social-button-shadow"></div>
+						<div class="c-socialBtn-shadow"></div>
+					</div>
+				</li>
+                <li class="c-socialList-item c-socialList-item--x">
+					<div class="c-socialBtn">
+						<div class="c-socialBtn-reveal">
+							<a href="https://x.com/WelshAsh_" class="c-socialBtn-btn"
+								title="WelshAsh_ on X" rel="external">
+								X
+							</a>
+						</div>
+						<div class="c-socialBtn-cover">
+							<div class="c-socialBtn-innie">{{inlineSVG "./src/assets/img/icons/x.svg"}}</div>
+							<div class="c-socialBtn-spine"></div>
+							<div class="c-socialBtn-outie">{{inlineSVG "./src/assets/img/icons/x.svg"}}</div>
+						</div>
+						<div class="c-socialBtn-shadow"></div>
 					</div>
 				</li>
 			</ul>
 		</nav>
 	</section>
 
-	<section class="c-about-module about-skills">
+	<section class="c-about-module c-about-skills">
 		<h2 class="c-about-module-title">Skills</h2>
 
 		<ul class="c-about-list unstyled">
-			<li class="c-about-list-item skills-html5">{{inlineSVG "./src/assets/img/icons/html5.svg"}}HTML5</li>
-			<li class="c-about-list-item skills-css">{{inlineSVG "./src/assets/img/icons/css.svg"}}CSS &amp; CSS3</li>
-			<li class="c-about-list-item skills-js">{{inlineSVG "./src/assets/img/icons/js.svg"}}JavaScript</li>
+			<li class="c-about-list-item skills-html5">{{inlineSVG "./src/assets/img/icons/html.svg"}}HTML</li>
+			<li class="c-about-list-item skills-css">{{inlineSVG "./src/assets/img/icons/css.svg"}}CSS</li>
+			<li class="c-about-list-item skills-js">{{inlineSVG "./src/assets/img/icons/js.svg"}}JavaScript (Vue & React)</li>
 			<li class="c-about-list-item skills-git">{{inlineSVG "./src/assets/img/icons/git.svg"}}Git</li>
 			<li class="c-about-list-item skills-pool">{{inlineSVG "./src/assets/img/icons/pool.svg"}}Pool shark</li>
 		</ul>
@@ -119,31 +124,21 @@ rss: false
 		<h3 class="c-about-module-title">Future events</h3>
 		<!-- <ul>
 		</ul> -->
-		<p>I've got no future talks lined up right now. If you'd like me to speak at your event, please do <a
-				href="mailto:hello@ashleynolan.co.uk">get in touch</a>.</p>
+		<p>I've got no future talks lined up right now. If you'd like me to speak at your event, please do <a href="mailto:hello@ashleynolan.co.uk">get in touch</a>.</p>
 
 		<h3 class="c-about-module-title">Previous events</h3>
 		<ul>
-			<li><a href="http://environmentsforhumans.com/2016/sass-summit/" rel="external">Sass Summit – December 14th
-					2016 – Extending Sass with PostCSS</a></li>
-			<li><a href="https://skillsmatter.com/skillscasts/8144-developing-for-the-unknown" rel="external">FullStack
-					2016 – July 13th 2016 – Developing for the Unknown</a></li>
-			<li><a href="https://www.mearso.co.uk/sketchnotes/port80-2016/" rel="external">Port80 – May 20th 2016 –
-					Developing for the Unknown</a></li>
-			<li><a href="https://ti.to/bristech-conference/bristech-2015/en" rel="external">Bristech</a> – October 15th 2015 – <a
-					href="https://www.youtube.com/watch?v=_ZhRTLDzKJw" rel="external">Exploring our Front-end
-					Workflows</a></li>
-			<li>Digital Croydon – July 16th 2015 –
-				Exploring our Front-end Workflows</li>
-			<li><a href="http://www.frontendlondon.co.uk/" rel="external">Front End London</a> – June 2014 – Know Thy
-				Interaction</li>
-			<li><a href="http://www.shropgeek.co.uk/events/rebellion-6-22-5-14/" rel="external">Shropgeek Rebellion</a>
-				– Shrewsbury – May 2014 – <a href="http://www.shropgeek.co.uk/shropgeek-tv/know-thy-interaction/"
-					rel="external">Know Thy Interaction</a></li>
-			<li>The Digital Barn – Barnsley – 2013 –
-				Scaling Responsively</li>
-			<li>Front-end London – One Day Event – 2013 –
-				<a href="https://www.slideshare.net/nolly00/scaling-responsively" rel="external">Scaling Responsively</a></li>
+            <li><a href="https://pixelpioneers.co/events/bristol-2025" rel="external">Pixel Pioneers Warm-up</a> – June 19th 2025 – Design System Accessibility at JET</li>
+            <li>Figma: In The File – May 16th 2024 – <a href="https://www.youtube.com/watch?v=VrLVsbebIXE&list=PLXDU_eVOJTx4b06OGKg6XqnK66skErN8i&index=7" rel="external">Unlocking Unity with JET's Global DS</a></li>
+			<li>Sass Summit – December 14th 2016 – <a href="http://environmentsforhumans.com/2016/sass-summit/" rel="external">Extending Sass with PostCSS</a></li>
+			<li>FullStack 2016 – July 13th 2016 – Developing for the Unknown</li>
+			<li>Port80 – May 20th 2016 – <a href="https://www.mearso.co.uk/sketchnotes/port80-2016/" rel="external">Developing for the Unknown</a></li>
+			<li><a href="https://ti.to/bristech-conference/bristech-2015/en" rel="external">Bristech</a> – October 15th 2015 – <a href="https://www.youtube.com/watch?v=_ZhRTLDzKJw" rel="external">Exploring our Front-end Workflows</a></li>
+			<li>Digital Croydon – July 16th 2015 – Exploring our Front-end Workflows</li>
+			<li><a href="https://frontendlondon.co.uk/archive/" rel="external">Front End London</a> – June 2014 – <a href="https://ashleynolan.co.uk/blog/know-thy-interaction" rel="external">Know Thy Interaction</a></li>
+			<li><a href="http://www.shropgeek.co.uk/events/rebellion-6-22-5-14/" rel="external">Shropgeek Rebellion</a> – Shrewsbury – May 2014 – <a href="http://www.shropgeek.co.uk/shropgeek-tv/know-thy-interaction/" rel="external">Know Thy Interaction</a></li>
+			<li>The Digital Barn – Barnsley – 2013 – Scaling Responsively</li>
+			<li>Front-end London – One Day Event – 2013 – <a href="https://www.slideshare.net/nolly00/scaling-responsively" rel="external">Scaling Responsively</a></li>
 			<li>AKQA Anoraks – London – 2013 – Scaling Responsively</li>
 		</ul>
 	</section>

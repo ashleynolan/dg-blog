@@ -56,6 +56,12 @@
     svg {
         fill: #fff;
         width: 100%;
+        transition: fill 250ms ease-in-out;
+    }
+
+    &:hover svg {
+        fill:var(--color-red);
+        transition: fill 250ms ease-in-out;
     }
 }
 

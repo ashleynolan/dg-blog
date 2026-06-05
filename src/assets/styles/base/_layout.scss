@@ -79,7 +79,7 @@ body {
     grid-template-columns: 1fr 22fr 1fr;
 
     @include media('>=mid') {
-        grid-template-columns: 2fr 860px 2fr;
+        grid-template-columns: 2fr 910px 2fr;
     }
 }
 
