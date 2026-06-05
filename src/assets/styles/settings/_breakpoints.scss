@@ -9,6 +9,7 @@ $unit-intervals: (
 // stylelint-disable function-parentheses-newline-inside, function-comma-newline-after
 // Lifted out of the variables file to fix circular reference issues
 $breakpoints: (
+    tiny: 420px,
     narrow: 600px,
     'narrowMid': 720px,
     mid: 1000px,
