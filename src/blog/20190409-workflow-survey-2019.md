@@ -23,11 +23,10 @@ categories:
 \> **[Fill out the 2019 Survey Now](https://ashn.uk/survey-2019)**
 
 <div class="img img--logo">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320" data-alt="The Front-End Tooling Survey 2019 Logo" data-img-320="/assets/img/blog/tooling-survey/2019/logo-small.png" data-img-max="/assets/img/blog/tooling-survey/2019/logo-mid.png">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/logo-mid.png" width="801" height="282" alt="The Front-End Tooling Survey 2019 Logo" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/logo-small.png">
+		<img src="/assets/img/blog/tooling-survey/2019/logo-mid.png" width="801" height="282" alt="The Front-End Tooling Survey 2019 Logo" />
+	</picture>
 </div>
 
 The Front-End Tooling Survey is back to shed some light on our tooling habits across the web development industry.

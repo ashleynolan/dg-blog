@@ -97,11 +97,11 @@ Here are the results:
 </table>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q1-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q1-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q1.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q1.jpg" width="720" height="500" alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q1-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q1-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q1.jpg" width="720" height="500" alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 As you can see, Sass was the preprocessor of choice for the majority of respondents with **63.95%**.  Only 15.04% of those questioned use no preprocessing tool when authoring their CSS, indicating that we may now be close to 'peak preprocessor adoption'!
@@ -149,11 +149,11 @@ The results were as follows:
 </div>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q2-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q2-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q2.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q2.jpg" width="801" height="282" alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q2-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q2-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q2.jpg" width="801" height="282" alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 Looking at the raw results, 64.25% of respondents had either heard of or used PostCSS, compared with just 21.25% for Rework.  Only a small percentage of developers responding said that they felt comfortable using either tool.
@@ -215,11 +215,11 @@ So what did the survey results say?
 </table>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q3-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q3-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q3.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q3.jpg" width="720" height="500" alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q3-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q3-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q3.jpg" width="720" height="500" alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 Somewhat surprisingly, Gulp came out a fair distance ahead with **43.79%** of respondents saying they preferred using it compared with just **27.56%** for Grunt.
@@ -307,11 +307,11 @@ Here is how people responded:
 </div>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q4-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q4-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q4.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q4.jpg" width="750" height="330" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q4-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q4-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q4.jpg" width="750" height="330" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" />
+	</picture>
 </div>
 
 Unsurprisingly, jQuery was the JavaScript library or framework with the highest percentage – **91.4%** – of respondents saying that they felt comfortable using it.  In terms of pure knowledge levels it was by far the most far-reaching of any of the libraries or frameworks listed.
@@ -395,11 +395,11 @@ Here are the results:
 </table>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q5-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q5-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q5.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q5.jpg" width="720" height="500" alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q5-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q5-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q5.jpg" width="720" height="500" alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 jQuery was the most used library or framework by quite some distance, with 56.47% (799 responses), followed by Angular with 17.88% (253).
@@ -461,11 +461,11 @@ Responses were as follows:
 </table>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q6-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q6-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q6.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q6.jpg" width="720" height="500" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q6-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q6-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q6.jpg" width="720" height="500" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 Overall, almost half of respondents (46.1%) are now using a module bundler to manage the dependencies in their JavaScript.  Of those, 16.47% use Browserify, 13.46% use RequireJS and 10.5% are using Webpack.  Webpack has been gaining a lot of traction of late and so it’s interesting to see that it isn’t all that far behind the two most well known tools in terms of usage.
@@ -542,11 +542,11 @@ The results were as follows:
 </table>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q7-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q7-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q7.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q7.jpg" width="720" height="500" alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q7-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q7-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q7.jpg" width="720" height="500" alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" />
+	</picture>
 </div>
 
 So, the majority of respondents – **59.66%** – aren’t using any tool to help with their JavaScript testing.  Given how long the subject of testing in JavaScript has been around, I find this a surprisingly large percentage – but it is often the area that gets most overlooked in a project.
@@ -610,11 +610,11 @@ Here is how people responded:
 </div>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these tools do you have experience in? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q8-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q8-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q8.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q8.jpg" width="776" height="302" alt="Which of these tools do you have experience in? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q8-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q8-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q8.jpg" width="776" height="302" alt="Which of these tools do you have experience in? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 A large percentage of respondents felt comfortable using NPM and Bower, with a large number never having heard of Ender at all.

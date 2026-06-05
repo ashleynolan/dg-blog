@@ -148,11 +148,11 @@ Here are the results:
 </table>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Roughly how long have you been working with front-end technologies? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q1-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q1-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q1.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q1.jpg" width="720" height="570" alt="Roughly how long have you been working with front-end technologies? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q1-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q1-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q1.jpg" width="720" height="570" alt="Roughly how long have you been working with front-end technologies? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 59.1% of respondents have been working with front-end technologies for over 5 years. This is up slightly from last year's results (54.18%), so this year's respondents have slightly more experience with front-end technologies.  However it's worth noting that this could be partly explained by a number of respondents also having participated in last year's survey, and will now (naturally) have more experience.
@@ -209,11 +209,11 @@ Here’s what the responses looked like:
 </table>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="How do you rate your own knowledge of CSS and its associated tools and methodologies? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q2-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q2-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q2.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q2.jpg" width="720" height="570" alt="How do you rate your own knowledge of CSS and its associated tools and methodologies? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q2-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q2-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q2.jpg" width="720" height="570" alt="How do you rate your own knowledge of CSS and its associated tools and methodologies? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 90.75% of respondents stated that their knowledge in CSS is at an intermediate level or above, with a majority (63.63%) rating themselves as either Advanced or an Expert.
@@ -288,11 +288,11 @@ Since the survey began back in 2016, Sass has been the dominant tool in this are
 </div>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What is your CSS Processing tool of choice? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q3-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q3-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q3.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q3.jpg" width="850" height="500" alt="What is your CSS Processing tool of choice? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q3-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q3-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q3.jpg" width="850" height="500" alt="What is your CSS Processing tool of choice? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 
@@ -373,11 +373,11 @@ Here are the results:
 </div>
 
 <div class="img img-mid">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following CSS Processing tools – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q4-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q4-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q4.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q4.jpg" width="850" height="590" alt="Please indicate your experience with the following CSS Processing tools – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q4-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q4-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q4.jpg" width="850" height="590" alt="Please indicate your experience with the following CSS Processing tools – Bar Chart showing the results" />
+	</picture>
 </div>
 
 These results are in-line with the results to the previous question, with more than three quarters of respondents (77.50%) saying that they felt comfortable using Sass while just 7.15% said that they had never used it.
@@ -483,11 +483,11 @@ Let’s look at the results:
 </div>
 
 <div class="img img-mid">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which of the following CSS frameworks you use most frequently on your projects – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q5-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q5-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q5.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q5.jpg" width="720" height="570" alt="Please indicate which of the following CSS frameworks you use most frequently on your projects – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q5-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q5-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q5.jpg" width="720" height="570" alt="Please indicate which of the following CSS frameworks you use most frequently on your projects – Bar Chart showing the results" />
+	</picture>
 </div>
 
 
@@ -547,11 +547,11 @@ The responses were as follows:
 </div>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a naming scheme when writing CSS, such as BEM or SUIT? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q6-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q6-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q6.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q6.jpg" width="720" height="570" alt="Do you use a naming scheme when writing CSS, such as BEM or SUIT? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q6-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q6-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q6.jpg" width="720" height="570" alt="Do you use a naming scheme when writing CSS, such as BEM or SUIT? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 For the first time since the survey started asking developers about CSS naming schemes back in 2016, a majority – 52.08% – responded that they use a CSS naming scheme, up +3.15% from last years results.
@@ -602,11 +602,11 @@ Here are the results:
 </div>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a tool to lint your CSS? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q7-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q7-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q7.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q7.jpg" width="720" height="570" alt="Do you use a tool to lint your CSS? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q7-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q7-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q7.jpg" width="720" height="570" alt="Do you use a tool to lint your CSS? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 As with CSS Naming Schemes, the results show that for the first time a majority of respondents (53.21%) are now choosing to lint their CSS, up +3.77% from the number that said the same in last years survey.
@@ -679,11 +679,11 @@ The results were as follows:
 </div>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following CSS tools – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q8-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q8-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q8.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q8.jpg" width="850" height="450" alt="Please indicate your experience with the following CSS tools – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q8-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q8-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q8.jpg" width="850" height="450" alt="Please indicate your experience with the following CSS tools – Bar Chart showing the results" />
+	</picture>
 </div>
 
 Out of the three tools, Autoprefixer was the most well known, with 50.52% of developers responding that they feel comfortable using it.
@@ -799,11 +799,11 @@ The results were as follows:
 </div>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following CSS methodologies – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q9-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q9-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q9.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q9.jpg" width="850" height="450" alt="Please indicate your experience with the following CSS methodologies – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q9-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q9-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q9.jpg" width="850" height="450" alt="Please indicate your experience with the following CSS methodologies – Bar Chart showing the results" />
+	</picture>
 </div>
 
 
@@ -908,11 +908,11 @@ _n.b. CSS-in-JS is omitted from the available answers below, as question 11 focu
 </div>
 
 <div class="img img-extraTall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these CSS methodologies or tools do you currently use on your projects? – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q10-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q10-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q10.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q10.jpg" width="850" height="590" alt="Which of these CSS methodologies or tools do you currently use on your projects? – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q10-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q10-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q10.jpg" width="850" height="590" alt="Which of these CSS methodologies or tools do you currently use on your projects? – Bar Chart showing the results" />
+	</picture>
 </div>
 
 Autoprefixer saw the most usage out of these tools and methodologies (56.84%), followed by BEM (45.52%) and Stylelint (27.49%).  These figures were all a slight increase from the 2018 results, with Stylelint seeing the biggest gain with +4.71%.
@@ -992,11 +992,11 @@ So the question asked was – **What is your preferred CSS-in-JS tool?**
 </div>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What is your preferred CSS-in-JS tool? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q11-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q11-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q11.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q11.jpg" width="720" height="420" alt="What is your preferred CSS-in-JS tool? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q11-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q11-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q11.jpg" width="720" height="420" alt="What is your preferred CSS-in-JS tool? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 
@@ -1087,11 +1087,11 @@ Here are the results:
 </div>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following CSS features – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q12-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q12-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q12.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q12.jpg" width="720" height="420" alt="Please indicate your experience with the following CSS features – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q12-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q12-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q12.jpg" width="720" height="420" alt="Please indicate your experience with the following CSS features – Bar Chart showing the results" />
+	</picture>
 </div>
 
 Flexbox (up +12.81% to 80.40%), CSS Grid (up +10.11% to 28.59%) and CSS Custom Properties (up +8.86% to 27.89%) have all seen a rise in the number of developers that now feel comfortable using them.
@@ -1153,11 +1153,11 @@ These were the results:
 </table>
 
 <div class="img img-extraTall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="How do you rate your own knowledge of JavaScript and its associated tools and methodologies? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q13-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q13-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q13.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q13.jpg" width="720" height="570" alt="How do you rate your own knowledge of JavaScript and its associated tools and methodologies? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q13-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q13-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q13.jpg" width="720" height="570" alt="How do you rate your own knowledge of JavaScript and its associated tools and methodologies? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 
@@ -1235,11 +1235,11 @@ The question that respondents were asked was – **What task runner do you prefe
 </div>
 
 <div class="img img-extraTall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What task runner do you prefer using in your typical project workflow? (if any) – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q14-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q14-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q14.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q14.jpg" width="720" height="570" alt="What task runner do you prefer using in your typical project workflow? (if any) – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q14-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q14-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q14.jpg" width="720" height="570" alt="What task runner do you prefer using in your typical project workflow? (if any) – Pie Chart showing the results" />
+	</picture>
 </div>
 
 
@@ -1451,11 +1451,11 @@ Here are the results:
 </div>
 
 <div class="img img-short">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q15-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q15-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q15.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q15.jpg" width="850" height="420" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q15-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q15-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q15.jpg" width="850" height="420" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Bar Chart showing the results" />
+	</picture>
 </div>
 
 
@@ -1597,11 +1597,11 @@ The responses were as follows:
 </div>
 
 <div class="img img-extraTall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript libraries and/or frameworks do you currently use most frequently on projects? – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q16-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q16-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q16.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q16.jpg" width="850" height="590" alt="Which JavaScript libraries and/or frameworks do you currently use most frequently on projects? – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q16-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q16-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q16.jpg" width="850" height="590" alt="Which JavaScript libraries and/or frameworks do you currently use most frequently on projects? – Bar Chart showing the results" />
+	</picture>
 </div>
 
 For the first time since the survey started back in 2015, jQuery is no longer the most frequently used JS tool, with React now holding that position.
@@ -1742,11 +1742,11 @@ Let's take a look:
 </div>
 
 <div class="img img-extraTall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript library or framework would you regard as essential to you on the majority of your projects? – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q17-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q17-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q17.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q17.jpg" width="850" height="590" alt="Which JavaScript library or framework would you regard as essential to you on the majority of your projects? – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q17-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q17-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q17.jpg" width="850" height="590" alt="Which JavaScript library or framework would you regard as essential to you on the majority of your projects? – Bar Chart showing the results" />
+	</picture>
 </div>
 
 React has consolidated its position in this year's results with 32.78% of respondents saying that they consider it their most essential JavaScript library or framework.  This figure is up +4.31% from last year's survey.
@@ -1840,11 +1840,11 @@ Here are the results:
 </div>
 
 <div class="img img-extraTall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q18-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q18-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q18.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q18.jpg" width="720" height="570" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q18-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q18-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q18.jpg" width="720" height="570" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 
@@ -1952,11 +1952,11 @@ Here's how the results looked:
 </div>
 
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which of these JavaScript task runners and/or bundlers you have experience in – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q19-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q19-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q19.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q19.jpg" width="850" height="500" alt="Please indicate which of these JavaScript task runners and/or bundlers you have experience in – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q19-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q19-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q19.jpg" width="850" height="500" alt="Please indicate which of these JavaScript task runners and/or bundlers you have experience in – Pie Chart showing the results" />
+	</picture>
 </div>
 
 Reflecting the results in previous questions, the tools that most respondents felt comfortable using were NPM Scripts (64.39%), Webpack (52.38%) and Gulp (45.79%).
@@ -2014,11 +2014,11 @@ The results are as follows:
 </div>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Are you using a tool to transpile your JavaScript from ES6 to ES5? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q20-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q20-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q20.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q20.jpg" width="720" height="570" alt="Are you using a tool to transpile your JavaScript from ES6 to ES5? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q20-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q20-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q20.jpg" width="720" height="570" alt="Are you using a tool to transpile your JavaScript from ES6 to ES5? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 Usage of transpilers has continued to grow, with 81.56% of respondents now using one in their workflow, a rise of +4.8%.
@@ -2115,11 +2115,11 @@ Here are this year's results:
 </div>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following extensions of JavaScript – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q21-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q21-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q21.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q21.jpg" width="850" height="500" alt="Please indicate your experience with the following extensions of JavaScript – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q21-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q21-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q21.jpg" width="850" height="500" alt="Please indicate your experience with the following extensions of JavaScript – Bar Chart showing the results" />
+	</picture>
 </div>
 
 TypeScript is still the tool that the most respondents felt comfortable using, with 31.91% – a rise of +10.03% from last year's results.
@@ -2192,11 +2192,11 @@ The question I asked was – **Which tool do you use to lint your JavaScript? (i
 </div>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which tool do you use to lint your JavaScript? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q22-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q22-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q22.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q22.jpg" width="850" height="500" alt="Which tool do you use to lint your JavaScript? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q22-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q22-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q22.jpg" width="850" height="500" alt="Which tool do you use to lint your JavaScript? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 The results show a very clear trend, with ESLint usage still rising while all other linting tools seem to be trending downwards in their usage levels.  76.07% of respondents said that they use ESLint, a rise of +15.39% from last year's results.
@@ -2302,11 +2302,11 @@ Here are the results:
 
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which tool do you use to test your JavaScript? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q23-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q23-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q23.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q23.jpg" width="720" height="570" alt="Which tool do you use to test your JavaScript? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q23-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q23-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q23.jpg" width="720" height="570" alt="Which tool do you use to test your JavaScript? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 As within 2018, Jest is still the tool that most respondents are using, with 44.86%.  Mocha (26.12%), Jasmine (19.47%) and Enzyme (18.64%) were the next most popular tools among respondents.
@@ -2382,11 +2382,11 @@ Let's take a look at the results:
 
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these tools, libraries or language features do you use to help with performance? (if any) – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q24-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q24-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q24.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q24.jpg" width="850" height="590" alt="Which of these tools, libraries or language features do you use to help with performance? (if any) – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q24-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q24-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q24.jpg" width="850" height="590" alt="Which of these tools, libraries or language features do you use to help with performance? (if any) – Bar Chart showing the results" />
+	</picture>
 </div>
 
 Lighthouse was the most popular option with respondents, with 52.11% saying that they used it when performance tetsing.
@@ -2452,11 +2452,11 @@ Here are the results:
 
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these accessibility tools do you use to test your sites/applications? – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q25-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q25-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q25.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q25.jpg" width="850" height="590" alt="Which of these accessibility tools do you use to test your sites/applications? – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q25-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q25-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q25.jpg" width="850" height="590" alt="Which of these accessibility tools do you use to test your sites/applications? – Bar Chart showing the results" />
+	</picture>
 </div>
 
 Somewhat surprisingly, 63.13% of respondents said that they didn't use any tools to accessibility test their projects.
@@ -2524,11 +2524,11 @@ This is how people responded:
 </div>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript package manager do you primarily use in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q26-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q26-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q26.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q26.jpg" width="720" height="570" alt="Which JavaScript package manager do you primarily use in your workflow? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q26-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q26-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q26.jpg" width="720" height="570" alt="Which JavaScript package manager do you primarily use in your workflow? – Pie Chart showing the results" />
+	</picture>
 </div>
 
 Looking at the results, NPM usage has grown very slightly with 65.39% of respondents saying that they now use it.
@@ -2625,11 +2625,11 @@ Here is how people responded:
 </div>
 
 <div class="img img-tall">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate your experience with the following front-end tools – Bar Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2019/q27-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2019/q27-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2019/q27.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2019/q27.jpg" width="850" height="500" alt="Please indicate your experience with the following front-end tools – Bar Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/q27-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2019/q27-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2019/q27.jpg" width="850" height="500" alt="Please indicate your experience with the following front-end tools – Bar Chart showing the results" />
+	</picture>
 </div>
 
 Out of these tools, NPM is the one that the most respondents say they feel comfortable using (87.02%). Yarn, with 50.62%, and Babel, with 49.62%, were the next most familiar tools with developers, with both of these tools seeing small rises in developer knowledge levels over the last 12 months.
