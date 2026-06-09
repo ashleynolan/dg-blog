@@ -1145,7 +1145,7 @@ Although knowledge levels were similar between Lodash and Underscore in the resu
 Also, a notable mention to Vue.js, which has been getting mentioned a lot recently, with 9.35% of respondents saying that they use frequently on their projects.
 
 
-{{> promos }}
+{{> promos promo='react' }}
 
 
 <a name="js-framework-essential"></a>
@@ -1399,7 +1399,7 @@ Only 7.35% (386) of respondents had never heard of a JavaScript transpiler, agai
 
 Looking at these results, it’s straightforward to conclude that having knowledge of a transpilation tool, such as Babel, is becoming a required skill for the modern front-end developer.
 
-{{> promos }}
+{{> promos promo='es6' }}
 
 <a name="js-linters"></a>
 

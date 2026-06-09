@@ -2,6 +2,7 @@ const fs = require('fs');
 const { rm } = require('fs/promises');
 
 const Handlebars = require('handlebars');
+const markdownIt = require('markdown-it');
 const eleventyPluginRev = require('eleventy-plugin-rev');
 const eleventyHandlebars = require('@11ty/eleventy-plugin-handlebars');
 const eleventySass = require("eleventy-sass");
@@ -14,6 +15,8 @@ const helpers = require('./src/_helpers');
 const momentHelper = require('helper-moment');
 
 module.exports = async (eleventyConfig) => {
+    const { feedPlugin } = await import('@11ty/eleventy-plugin-rss');
+
     // Clean fingerprinted asset directories before each build so stale
     // hashed files don't accumulate across watch rebuilds.
     eleventyConfig.on('eleventy.before', async () => {
@@ -83,15 +86,55 @@ module.exports = async (eleventyConfig) => {
         }
     });
 
+    // Custom markdown-it library: process inline code (backticks) within HTML blocks.
+    // By default, CommonMark type-6 HTML blocks (e.g. <dl>) are passed verbatim so
+    // backtick spans never reach the inline parser. This renderer fixes that, and
+    // mirrors Eleventy's own defaults (html: true, code rule disabled).
+    const md = markdownIt({ html: true });
+    md.disable('code');
+    md.renderer.rules.html_block = (tokens, idx) =>
+        tokens[idx].content
+            .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1">')
+            .replace(/`([^`\n]+)`/g, '<code>$1</code>')
+            .replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+    eleventyConfig.setLibrary('md', md);
+
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "rss",
+        outputPath: "/feed.xml",
+        collection: {
+            name: "post",
+            limit: 0,
+        },
+        metadata: {
+            language: "en",
+            title: "AshleyNolan.co.uk",
+            subtitle: "Front-end development Blog and Portfolio for Ashley Watson-Nolan",
+            base: "https://ashleynolan.co.uk/",
+            author: { name: "Ashley Watson-Nolan" },
+        },
+    });
+
     // setup posts collection
-    eleventyConfig.addCollection('post', (collectionApi) => collectionApi.getFilteredByGlob('src/blog/**/*.md'));
+    eleventyConfig.addCollection('post', (collectionApi) =>
+        collectionApi.getFilteredByGlob('src/blog/**/*.md')
+            .filter(item => item.data.published !== false)
+            .map(item => {
+                if (item.data.posted) {
+                    item.date = new Date(item.data.posted);
+                }
+                return item;
+            })
+            .sort((a, b) => a.date - b.date)
+    );
 
     return {
         dir: {
             input: "./src",
             output: "./dist",
             layouts: "_layouts"
-        }
-        // markdownTemplateEngine: "hbs"
+        },
+        markdownTemplateEngine: "hbs"
     }
 };

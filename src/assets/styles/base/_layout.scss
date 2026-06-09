@@ -26,6 +26,10 @@ body {
 	font-weight: 300; */
 }
 
+img, object, embed, video {
+    max-width: 100%;
+}
+
 
 .c-siteHeader {
     display: block;
@@ -72,6 +76,7 @@ body {
 
     & > * {
         grid-column: 2 / -2;
+        min-width: 0; // needed to make sure the grid shrinks on mobile
     }
 }
 
@@ -82,12 +87,6 @@ body {
         grid-template-columns: 2fr 910px 2fr;
     }
 }
-
-// Need SCSS suppprt to fix this
-// %u-separator-top {
-//     box-shadow: 0 -1px 0 var(--color-grey-dark);
-//     border-top: 1px solid var(--color-white);
-// }
 
 .c-content-info {
     transition: padding 0.25s ease-in-out;

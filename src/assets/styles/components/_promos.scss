@@ -4,38 +4,44 @@
 .c-promo {
 	margin-top: 60px;
 	padding-bottom: 40px;
+    font-size: 0;
 
 	& + p:not(.post-info) {
 		margin-top: 40px;
 	}
 }
+
 	.c-promo--ad {
 		padding: 0;
 
-		@include media('>=wide') {
+		@include media('>=xwide') {
 			position: absolute;
 			right: 0;
-			top: 40px;
-			padding: 0 10px;
+			top: 200px;
+			padding: 0 var(--spacing-x1) 0 var(--spacing-x2);
 			margin-top: 0;
 			background-color: rgba(0, 0, 0, 0.1);
-			border-left: 1px solid #4e5149;
-			border-bottom: 1px solid #4e5149;
+			border-left: 1px solid var(--separator-color--secondary);
+            border-top: 1px solid var(--separator-color--secondary);
+			border-bottom: 1px solid var(--separator-color--secondary);
 
-			&.separator-both {
-				border-top: 0;
+			&.u-separator-both {
 				box-shadow: none;
 			}
 		}
 	}
 
 	.c-promo-header {
+        @extend %header-bg;
+        @extend %header-upper;
 		font-size: var(--base-font-size);
 	}
+
 	.c-promo-content {
 		overflow: hidden;
 		padding: 1px;
 	}
+
 		.c-promo-img,
 		.carbon-img {
 			float: left;
@@ -46,13 +52,16 @@
 			box-shadow: 0 0 0 1px var(--separator-color--secondary);
 			line-height: 1;
 		}
+
 			.c-promo-img--react {
 				width: 100px;
 				min-height: 97px;
 			}
+
 			.c-promo-img--es6 {
 				width: 100px;
 			}
+
 		.c-promo-title {
 			margin-top: 0;
 			margin-bottom: 0;
@@ -62,11 +71,13 @@
 				text-decoration: underline;
 			}
 		}
+
 		.c-promo-text,
 		.carbon-text {
 			margin-bottom: 0;
 			font-size: var(--base-font-size);
-			// color: $color-text;
+
+			color: var(--text-color);
 		}
 
 
@@ -85,14 +96,15 @@
 
 .carbon-wrap {
 	display: flex;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: var(--spacing-x2);
+	padding-bottom: var(--spacing-x2);
 	align-items: center;
-	max-width: 330px;
+	max-width: 380px;
 
     @include media('>=wide') {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: var(--spacing-x2);
+		padding-bottom: var(--spacing-x2);
+        max-width: 330px;
 	}
 }
 
@@ -100,6 +112,10 @@
 .carbon-img {
 	display: block;
 	width: auto;
+
+    img {
+        max-width: none;
+    }
 }
 
 .carbon-img img {
@@ -114,24 +130,28 @@
 		// color: $color-link-default;
 	}
 
-	@include media('>=wide') {
+	@include media('>=xwide') {
         font-size: 13px;
-		padding-top: 10px;
+		padding-top: var(--spacing-x2);
 	}
 }
 
-
 .carbon-poweredby {
-	display: block;
 	position: absolute;
+	font-size: 14px;
 	top: 0;
 	right: 0;
 	text-align: center;
-	font-size: 14px;
 
-    @extend %headerBg;
+    @extend %header-bg;
+    @extend %header-upper;
+
+    @include media('>=xwide') {
+        right: calc(var(--spacing-x1) * -1);
+    }
 
 	&:hover {
 		color: #f9f9f9;
 	}
 }
+

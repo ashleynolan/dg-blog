@@ -971,7 +971,7 @@ Somewhat surprisingly, more respondents said that they felt comfortable using CS
 
 Looking at these figures, it seems a lot of people have dabbled with CSS Grid, but not that many have yet fully got to grips with it.  Looking at how developers now feel comfortable developing with flexbox, it's not unreasonable to think that these figures will increase fairly rapidly now that CSS Grid and Custom Properties are so well supported in modern browsers.
 
-{{> promos }}
+{{> promos promo='grid' }}
 
 
 <a name="js-knowledge"></a>
@@ -1465,7 +1465,7 @@ Angular 1 usage fell by 14.68% from 2016, but this hasn't translated into simila
 
 Usage of all other frameworks was down from their respective figures in the 2016 results.
 
-{{> promos }}
+{{> promos promo='advancedreact' }}
 
 
 <a name="js-framework-essential"></a>
@@ -1609,7 +1609,7 @@ It's clear overall that usage levels of jQuery, although still high, are startin
 
 For the time being though, React is clearly the JavaScript framework of choice among front-end developers.
 
-{{> promos }}
+{{> promos promo='advancedreact' }}
 
 
 <a name="js-bundler"></a>
@@ -1845,7 +1845,7 @@ As you may have expected, usage of transpilers has continued to grow, with 76.76
 
 As I mentioned in the 2016 results, knowledge of a tool such as Babel is now an essential part of modern JavaScript development.  If you haven't taken steps to integrate this into your workflow, I'd recommend that you do so in order to have access to the latest JavaScript features.
 
-{{> promos }}
+{{> promos promo='es6' }}
 
 <a name="js-extensions"></a>
 

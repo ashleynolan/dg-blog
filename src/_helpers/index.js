@@ -78,14 +78,14 @@ function withSort (array, prop, options) {
         return result;
     }
 
-    array.sort(function(a, b) {
+    array = array.slice().sort(function(a, b) {
         a = utils.get(a, prop);
         b = utils.get(b, prop);
         return a > b ? 1 : (a < b ? -1 : 0);
     });
 
     if (utils.get(options, 'hash.reverse')) {
-        array = array.reverse();
+        array = array.slice().reverse();
     }
 
     var alen = limit || array.length, j = -1;

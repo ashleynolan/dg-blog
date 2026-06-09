@@ -3,11 +3,16 @@
 .c-content--post .img {
 	margin: 0 0 calc(var(--vertical-rhythm) * 1px);
 
-	> img {
-		border: 1px solid #333;
+	img {
+		border: 1px solid var(--page-border-color);
+        height: auto;
 	}
 
-	@include media('>narrowMid') {
+    &.img--logo img {
+        border: 0;
+	}
+
+	@include media('>xNarrowMid') {
 		width: 140%;
 		margin: 0 0 calc(var(--vertical-rhythm) * 1px) -20%;
 		text-align: center;
@@ -15,6 +20,10 @@
 
 		&.img--logo {
 			min-height: 0;
+
+            & img {
+                border: 0 !important;
+            }
 		}
 	}
 }
@@ -22,7 +31,7 @@
 .c-content--post .img-tall {
 	min-height: 220px;
 
-	@include media('>narrowMid') {
+	@include media('>xNarrowMid') {
 		min-height: 500px;
 	}
 }
@@ -30,25 +39,25 @@
 .c-content--post .img-extraTall {
 	min-height: 220px;
 
-	@include media('>narrowMid') {
+	@include media('>xNarrowMid') {
 		min-height: 580px;
 	}
 }
 
 .c-content--post .img-mid {
-	@include media('>narrowMid') {
+	@include media('>xNarrowMid') {
 		min-height: 420px;
 	}
 }
 
 .c-content--post .img-short {
-	@include media('>narrowMid') {
+	@include media('>xNarrowMid') {
 		min-height: 280px;
 	}
 }
 
 .c-content--post .table-wrapper {
-	@include media('>narrowMid') {
+	@include media('>xNarrowMid') {
 		width: 140%;
 		margin: 0 0 calc(var(--vertical-rhythm) * 1px) -20%;
 	}

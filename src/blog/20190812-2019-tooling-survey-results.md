@@ -1102,7 +1102,7 @@ CSS Grid and CSS Custom Properties both saw large swings in the number of respon
 
 CSS Houdini – a set of APIs that help developers extend CSS natively – was asked about for the first time this year. 46.46% of respondents said that they had heard of or read about the feature, but only 1.79% had used it at least a little.  This feature is still bleeding edge, so it's perhaps unsurprising to see so few developers using it presently.
 
-{{> promos }}
+{{> promos promo='grid' promotitle="Learn CSS Grid" }}
 
 
 <a name="js-knowledge"></a>
@@ -1610,7 +1610,7 @@ For the first time since the survey started back in 2015, jQuery is no longer th
 
 Lodash (32.81%), Vue.js (27.15%) and Angular v2+ (15.71%) were the next most frequently used tools, seeing a change of -1.01%, +4.21% and +1.59% respectively compared with the 2018 results.
 
-{{> promos }}
+{{> promos promo='advancedreact' }}
 
 
 <a name="js-framework-essential"></a>
@@ -1762,7 +1762,7 @@ Overall, looking at the results from all three questions relating to JS librarie
 jQuery usage, although falling steadily, is still high – with it still being used frequently by more respondents than Lodash.
 
 
-{{> promos }}
+{{> promos promo='advancedreact' }}
 
 
 <a name="js-bundler"></a>
@@ -2026,7 +2026,7 @@ Usage of transpilers has continued to grow, with 81.56% of respondents now using
 As you might expect, developers with less experience in front-end development are less likely to be using a transpiler, with 70% of respondents with 0-2 years experience saying they did so.
 
 
-{{> promos }}
+{{> promos promo='es6' }}
 
 <a name="js-extensions"></a>
 

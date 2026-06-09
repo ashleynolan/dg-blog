@@ -63,4 +63,4 @@ Wes runs some awesome courses, which – having taken a number of them myself �
 
 [Check out his courses – on 50% sale at the moment](/affiliates).
 
-{{> promos }}
+{{> promos promo='es6' }}

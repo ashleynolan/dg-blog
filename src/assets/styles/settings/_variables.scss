@@ -58,6 +58,9 @@
     --font-size-heading--beta: 30px;
     --font-size-heading--beta--wide: 36px;
     --font-size-heading--gamma: 24px;
+    --font-size-heading--delta: 20px;
+    --font-size-heading--epsilon: 16px;
+    --font-size-heading--zeta: 14px;
     --font-weight-bold: 700;
 
     // Line heights
@@ -76,4 +79,7 @@
     --spacing-x3: calc(var(--spacing-base) * 3); // 24px
     --spacing-x4: calc(var(--spacing-base) * 4); // 32px
     --spacing-x5: calc(var(--spacing-base) * 5); // 40px
+
+    // border radius
+    --border-radius: 4px;
 }

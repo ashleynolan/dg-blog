@@ -1,6 +1,21 @@
-%headerBg {
+%header-bg {
     background-color: rgba(0, 0, 0, 0.35);
     padding: 2px 10px;
 
     text-shadow: var(--color-black) 1px 1px 1px;
+}
+
+%header-upper {
+    display: inline-block;
+    font-family: var(--secondary-font-family);
+    color: var(--time-text-color);
+}
+
+// Text overflow
+// @extend %text-overflow;
+// Requires inline-block or block for proper styling
+%text-overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }

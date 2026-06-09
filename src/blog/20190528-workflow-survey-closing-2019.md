@@ -21,7 +21,7 @@ categories:
 <div class="img img--logo">
 	<picture>
 		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2019/logo-small.png">
-		<img src="/assets/img/blog/tooling-survey/2019/logo-mid.png" width="801" height="282" alt="The Front-End Tooling Survey 2019 Logo" />
+		<img src="/assets/img/blog/tooling-survey/2019/logo-mid.png" alt="The Front-End Tooling Survey 2019 Logo" />
 	</picture>
 </div>
 

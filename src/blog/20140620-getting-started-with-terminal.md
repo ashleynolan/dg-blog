@@ -134,7 +134,6 @@ A useful reference if you'd like to see more detail about what specific characte
 ## Building on the basics
 
 <dl>
-
 	<dt><dfn>**clear**</dfn></dt>
 	<dd>
 		<p>Clears the current window, although you will still be able to scroll back up to see your history.  You can also use `Ctrl + L` as a shortcut.</p>
