@@ -95,6 +95,10 @@ function withSort (array, prop, options) {
     return result;
 }
 
+function cleanUrl (url) {
+    return url.replace(/\.html$/, '');
+}
+
 function typeOfInput (input) {
     // console.log('================================');
     // console.log(input);
@@ -103,6 +107,7 @@ function typeOfInput (input) {
 }
 
 module.exports = {
+    cleanUrl,
     contains,
     eachUpTo,
 	ifCond,

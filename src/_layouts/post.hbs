@@ -16,7 +16,7 @@ permalink: "blog/{{ url }}.html"
 			{{> promos promo='carbon' }}
 			{{/ifCond}}
 
-			{{#if nodate}}{{else}}
+			{{#unless nodate}}
             <div class="c-content-info">
 			    <p>Article posted on the {{moment posted format="Do MMMM YYYY" }}</p>
 
@@ -25,22 +25,21 @@ permalink: "blog/{{ url }}.html"
                 </p>
                 {{/if}}
             </div>
-			{{/if}}
+			{{/unless}}
 
 
-			<div id="disqus_thread" class="c-comments"></div>
+			{{#unless nocomments}}<div id="disqus_thread" class="c-comments"></div>{{/unless}}
 		</section>
 
 		{{> footer }}
 	</div>
 
-{{#if nocomments}}
-{{else}}
+{{#unless nocomments}}
     <script>
     var disqus_config = function () {
         this.page.url = 'https://ashleynolan.co.uk{{ page.url }}';
         this.page.identifier = '{{ title }}';
     };
     </script>
-{{/if}}
+{{/unless}}
 {{> html_end }}

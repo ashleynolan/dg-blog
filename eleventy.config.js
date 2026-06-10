@@ -25,7 +25,11 @@ module.exports = async (eleventyConfig) => {
 
     // copy this directory to the dist folder
     eleventyConfig.addPassthroughCopy("src/assets/img");
+    eleventyConfig.addPassthroughCopy({ ".htaccess": ".htaccess" });
+    eleventyConfig.addPassthroughCopy("src/humans.txt");
+    eleventyConfig.addPassthroughCopy("src/robots.txt");
 
+	eleventyConfig.addFilter("cleanUrl", helpers.cleanUrl);
 	eleventyConfig.addFilter("ifCond", helpers.ifCond);
     eleventyConfig.addFilter("inlineSVG", helpers.inlineSVG);
     eleventyConfig.addFilter("withSort", helpers.withSort);
@@ -100,9 +104,8 @@ module.exports = async (eleventyConfig) => {
             .replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
     eleventyConfig.setLibrary('md', md);
 
-    eleventyConfig.addPlugin(feedPlugin, {
+    const feedConfig = {
         type: "rss",
-        outputPath: "/feed.xml",
         collection: {
             name: "post",
             limit: 0,
@@ -114,7 +117,10 @@ module.exports = async (eleventyConfig) => {
             base: "https://ashleynolan.co.uk/",
             author: { name: "Ashley Watson-Nolan" },
         },
-    });
+    };
+
+    eleventyConfig.addPlugin(feedPlugin, { ...feedConfig, outputPath: "/feed.xml" });
+    eleventyConfig.addPlugin(feedPlugin, { ...feedConfig, outputPath: "/blog/feed.xml", inputPath: "eleventy-plugin-feed-blog-rss.njk" });
 
     // setup posts collection
     eleventyConfig.addCollection('post', (collectionApi) =>
