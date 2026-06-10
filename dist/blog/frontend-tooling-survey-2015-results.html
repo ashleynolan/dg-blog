@@ -5,26 +5,64 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>The State of Front-End Tooling – 2015 - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan</title>
 	<meta name="description"
-		content="The State of Front-End Tooling – 2015 - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan">
+		content="I asked front-end developers to fill in a survey about their their knowledge and usage patterns across a number of front-end tools.  Check out the results.">
 
 	<link href="https://ashleynolan.co.uk/feed.xml" rel="alternate" type="application/rss+xml"
 		title="Front-end development Blog and Portfolio for Ashley Watson-Nolan" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="canonical" href="https://www.ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results" />
 
+    <link rel="icon" href="/assets/img/logos/dg-logo-alt.svg" type="image/svg+xml">
 	<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
 	<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
 
 	<!-- Need to put in OG tags Here -->
+    
+	<meta property="og:site_name" content="AshleyNolan.co.uk" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="The State of Front-End Tooling – 2015" />
+	<meta property="og:description"
+		content="I asked front-end developers to fill in a survey about their their knowledge and usage patterns across a number of front-end tools.  Check out the results." />
+	<meta property="og:image"
+		content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+	<meta property="og:url" content="https://www.ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@WelshAsh_" />
+	<meta name="twitter:title" content="The State of Front-End Tooling – 2015" />
+	<meta name="twitter:description"
+		content="I asked front-end developers to fill in a survey about their their knowledge and usage patterns across a number of front-end tools.  Check out the results." />
+	<meta name="twitter:image" content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BlogPosting",
+		"headline": "The State of Front-End Tooling – 2015",
+		"description": "I asked front-end developers to fill in a survey about their their knowledge and usage patterns across a number of front-end tools.  Check out the results.",
+		"datePublished": "2015-09-08T10:00+01:00",
+		"dateModified": "2016-11-30T17:45+00:00",
+		"image": "https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png",
+		"url": "https://www.ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results",
+		"author": {
+			"@type": "Person",
+			"name": "Ashley Watson-Nolan",
+			"url": "https://www.ashleynolan.co.uk"
+		}
+	}
+	</script>
 
 	<!-- CSS -->
-    <link rel="stylesheet" href="/assets/styles/main-23faf51e.css" />
+    <link rel="stylesheet" href="/assets/styles/main-ce4c3df6.css" />
 
 	<!-- Fonts – non blocking -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://use.typekit.net" crossorigin>
 	<link href='https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap' rel='stylesheet' type='text/css'>
 	<script>
 		(function (d) {
@@ -147,11 +185,11 @@
 	</tbody>
 </table>
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q1-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q1-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q1.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q1.jpg" width="720" height="500" alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q1-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q1-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q1.jpg" width="720" height="500" alt="What is your CSS Pre-Processing tool of choice? – Pie Chart showing the results" />
+	</picture>
 </div>
 <p>As you can see, Sass was the preprocessor of choice for the majority of respondents with <strong>63.95%</strong>.  Only 15.04% of those questioned use no preprocessing tool when authoring their CSS, indicating that we may now be close to 'peak preprocessor adoption'!</p>
 <p>One thing that I would take away from these results is that CSS preprocessing is without a doubt a skill that all front-end developers should learn if they haven’t got experience in this area already, as most projects and job roles will require it.</p>
@@ -190,11 +228,11 @@
 	</table>
 </div>
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q2-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q2-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q2.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q2.jpg" width="801" height="282" alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q2-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q2-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q2.jpg" width="801" height="282" alt="Have you heard of the following CSS processing tools? – Pie Chart showing the results" />
+	</picture>
 </div>
 <p>Looking at the raw results, 64.25% of respondents had either heard of or used PostCSS, compared with just 21.25% for Rework.  Only a small percentage of developers responding said that they felt comfortable using either tool.</p>
 <p>Analysing the results further across both tools, 690 devs (just over 34%) said they hadn’t heard of either PostCSS or Rework, compared to 147 devs (7.2%) who said they felt comfortable using at least one of the two tools.</p>
@@ -246,11 +284,11 @@
 	</tbody>
 </table>
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q3-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q3-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q3.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q3.jpg" width="720" height="500" alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q3-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q3-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q3.jpg" width="720" height="500" alt="What task runner do you prefer using, if any, in your typical project workflow? – Pie Chart showing the results" />
+	</picture>
 </div>
 <p>Somewhat surprisingly, Gulp came out a fair distance ahead with <strong>43.79%</strong> of respondents saying they preferred using it compared with just <strong>27.56%</strong> for Grunt.</p>
 <p>19.5% of respondents said that they don’t use a task runner at all on their projects – signifying that the majority of front-end developers are seeing the benefits of using a task runner to help keep consistency across projects and teams.</p>
@@ -330,17 +368,26 @@
 	</table>
 </div>
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q4-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q4-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q4.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q4.jpg" width="750" height="330" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q4-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q4-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q4.jpg" width="750" height="330" alt="Please indicate which JavaScript libraries and/or frameworks you have experience in – Pie Chart showing the results" />
+	</picture>
 </div>
 <p>Unsurprisingly, jQuery was the JavaScript library or framework with the highest percentage – <strong>91.4%</strong> – of respondents saying that they felt comfortable using it.  In terms of pure knowledge levels it was by far the most far-reaching of any of the libraries or frameworks listed.</p>
 <p>Looking down the list of JS frameworks, Angular came out on top in terms of the number of developers (29.1%) who said they felt comfortable using it.  16.2% of respondents said they felt comfortable using Backbone, with 14.3% saying the same for React.</p>
 <p>Looking at knowledge levels across the MV* frameworks – so everything in the list except jQuery and Underscore – just over 50% of respondents (1018) said they felt comfortable using at least one of these frameworks.  Clearly being able to develop using at least one of these is an increasingly important skill for any front-end developer to have in their toolkit.</p>
 <p>One addition I would like to make if I ever run this survey again would be to see how many devs had started using ES2015 features – I’m sure this will be an area of huge growth and it will be interesting to see how the amount of knowledge in this area increases over time.</p>
-<p>false</p>
+<div class="c-promo u-separator-both">
+	<h2 class="c-promo-header text-bg">Recommended Resource</h2>
+	<div class="c-promo-content">
+		<a href="https://ReactForBeginners.com/friend/NOLAN">
+			<img class="c-promo-img c-promo-img--react" src="/assets/img/resources/react-for-beginners.jpg" />
+			<h3 class="c-promo-title">React For Beginners</h2>
+			<p class="c-promo-text">Upgrade your JavaScript skills – Learn React in just a couple of afternoons with this course by Wes Bos.</p>
+		</a>
+	</div>
+</div>
 <h2>Q5 – Which JavaScript library or framework do you use on the majority of your projects?</h2>
 <p>The next question was a late addition to the survey, as it was something I wished I had asked from the start.  Because of this, there were slightly fewer – 1415 – responses.</p>
 <p>The question was <strong>Which JavaScript library or framework do you use on the majority of your projects?</strong></p>
@@ -407,15 +454,24 @@
 	</tbody>
 </table>
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q5-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q5-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q5.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q5.jpg" width="720" height="500" alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q5-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q5-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q5.jpg" width="720" height="500" alt="Which JavaScript library or framework do you use on the majority of your projects? – Pie Chart showing the results" />
+	</picture>
 </div>
 <p>jQuery was the most used library or framework by quite some distance, with 56.47% (799 responses), followed by Angular with 17.88% (253).</p>
 <p>It’s interesting to see that most of the respondents still use jQuery on the majority of their projects – I would expect this number to decrease over time as people’s knowledge of ES2015 increases and move back towards using native JavaScript and smaller micro libraries.  Of course, there’s always the possibility that jQuery continues to adapt to the changing landscape and is therefore still used by developers.</p>
-<p>false</p>
+<div class="c-promo u-separator-both">
+	<h2 class="c-promo-header text-bg">Recommended Resource</h2>
+	<div class="c-promo-content">
+		<a href="https://ES6.io/friend/NOLAN">
+			<img class="c-promo-img c-promo-img--es6" src="/assets/img/resources/es6.jpg" />
+			<h3 class="c-promo-title">ES6 For Everyone</h2>
+			<p class="c-promo-text">A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer, by Wes Bos.</p>
+		</a>
+	</div>
+</div>
 <h2>Q6 – JavaScript Module Bundlers</h2>
 <p>Module bundlers are something I’ve been using for some time, but I wanted to know if the majority of front-end devs were also using them, and if so, which tool?</p>
 <p>The question I therefore asked was <strong>Do you use a JavaScript module bundler in your workflow?</strong></p>
@@ -462,11 +518,11 @@
 	</tbody>
 </table>
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q6-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q6-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q6.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q6.jpg" width="720" height="500" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q6-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q6-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q6.jpg" width="720" height="500" alt="Do you use a JavaScript module bundler in your workflow? – Pie Chart showing the results" />
+	</picture>
 </div>
 <p>Overall, almost half of respondents (46.1%) are now using a module bundler to manage the dependencies in their JavaScript.  Of those, 16.47% use Browserify, 13.46% use RequireJS and 10.5% are using Webpack.  Webpack has been gaining a lot of traction of late and so it’s interesting to see that it isn’t all that far behind the two most well known tools in terms of usage.</p>
 <p>It’ll again be interesting to see how these numbers change as more developers jump on the ES2015 bandwagon and start using the tools that lend themself well to transpiling JavaScript using Babel.</p>
@@ -533,11 +589,11 @@
 	</tbody>
 </table>
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q7-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q7-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q7.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q7.jpg" width="720" height="500" alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q7-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q7-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q7.jpg" width="720" height="500" alt="What tool do you use to test your JavaScript? (if any) – Pie Chart showing the results" />
+	</picture>
 </div>
 <p>So, the majority of respondents – <strong>59.66%</strong> – aren’t using any tool to help with their JavaScript testing.  Given how long the subject of testing in JavaScript has been around, I find this a surprisingly large percentage – but it is often the area that gets most overlooked in a project.</p>
 <p>Of those testing their JS, the majority of respondents are using either Jasmine – 16.37% – or Mocha – 15.04%.</p>
@@ -591,11 +647,11 @@
 	</table>
 </div>
 <div class="img">
-	<div class="adaptive-image" data-adaptive="" data-adaptive-image-breakpoints="320 500" data-alt="Which of these tools do you have experience in? – Pie Chart showing the results" data-img-320="/assets/img/blog/tooling-survey/2015/q8-small.jpg" data-img-500="/assets/img/blog/tooling-survey/2015/q8-mid.jpg" data-img-max="/assets/img/blog/tooling-survey/2015/q8.jpg">
-		<noscript>
-			<img src="/assets/img/blog/tooling-survey/2015/q8.jpg" width="776" height="302" alt="Which of these tools do you have experience in? – Pie Chart showing the results" />
-		</noscript>
-	</div>
+	<picture>
+		<source media="(max-width: 320px)" srcset="/assets/img/blog/tooling-survey/2015/q8-small.jpg">
+		<source media="(max-width: 500px)" srcset="/assets/img/blog/tooling-survey/2015/q8-mid.jpg">
+		<img src="/assets/img/blog/tooling-survey/2015/q8.jpg" width="776" height="302" alt="Which of these tools do you have experience in? – Pie Chart showing the results" />
+	</picture>
 </div>
 <p>A large percentage of respondents felt comfortable using NPM and Bower, with a large number never having heard of Ender at all.</p>
 <p>Knowledge of Yeoman – in my opinion, one of the most useful tools I use – was quite low in terms of those that feel comfortable using it (19.97%), although not many people had never heard of it (12.33%).  In my experience, putting in the time to grips with it is hugely worthwhile, as it makes setting up projects so simple.</p>
@@ -607,12 +663,11 @@
 
 
 			
-			<div class="c-promo c-promo--ad separator-both">
+			<div class="c-promo c-promo--ad u-separator-both">
 				<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D5KQI&placement=ashleynolancouk"
 					id="_carbonads_js"></script>
 			</div>
 
-			
             <div class="c-content-info">
 			    <p>Article posted on the 8th September 2015</p>
 
@@ -634,10 +689,10 @@
 							<svg viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
 						</a>
 					</li>
-					<li class="c-socialLinks-item c-socialLinks-twitter">
-						<a href="http://twitter.com/WelshAsh_"
-							class="c-socialLinks-link" title="Find me on Twitter" rel="external" target="_blank">
-							<svg viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+					<li class="c-socialLinks-item c-socialLinks-bluesky">
+						<a href="https://bsky.app/profile/ashn.uk"
+							class="c-socialLinks-link" title="Find me on Bluesky" rel="external" target="_blank">
+							<svg fill="none" viewBox="0 0 64 57" width="28"><path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/></svg>
 						</a>
 					</li>
 					<li class="c-socialLinks-item c-socialLinks-linkedin">
@@ -656,10 +711,10 @@
 		</footer>
 	</div>
 
-    <script type="text/javascript">
-    window.disqusConfig = {
-        url: 'https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results.html',  // Replace PAGE_URL with your page's canonical URL variable
-        identifier: 'The State of Front-End Tooling – 2015' // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results.html';
+        this.page.identifier = 'The State of Front-End Tooling – 2015';
     };
     </script>
 <!-- Require include for JS -->

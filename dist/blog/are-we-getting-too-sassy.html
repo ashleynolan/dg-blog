@@ -5,26 +5,64 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>Are we getting too Sassy? - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan</title>
 	<meta name="description"
-		content="Are we getting too Sassy? - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan">
+		content="A look at the recent trend of micro-optimisation versus maintainability">
 
 	<link href="https://ashleynolan.co.uk/feed.xml" rel="alternate" type="application/rss+xml"
 		title="Front-end development Blog and Portfolio for Ashley Watson-Nolan" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="canonical" href="https://www.ashleynolan.co.uk/blog/are-we-getting-too-sassy" />
 
+    <link rel="icon" href="/assets/img/logos/dg-logo-alt.svg" type="image/svg+xml">
 	<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
 	<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
 
 	<!-- Need to put in OG tags Here -->
+    
+	<meta property="og:site_name" content="AshleyNolan.co.uk" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Are we getting too Sassy?" />
+	<meta property="og:description"
+		content="A look at the recent trend of micro-optimisation versus maintainability" />
+	<meta property="og:image"
+		content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+	<meta property="og:url" content="https://www.ashleynolan.co.uk/blog/are-we-getting-too-sassy" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@WelshAsh_" />
+	<meta name="twitter:title" content="Are we getting too Sassy?" />
+	<meta name="twitter:description"
+		content="A look at the recent trend of micro-optimisation versus maintainability" />
+	<meta name="twitter:image" content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BlogPosting",
+		"headline": "Are we getting too Sassy?",
+		"description": "A look at the recent trend of micro-optimisation versus maintainability",
+		"datePublished": "2014-05-29T09:00+01:00",
+		"dateModified": "2014-05-29T09:00+01:00",
+		"image": "https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png",
+		"url": "https://www.ashleynolan.co.uk/blog/are-we-getting-too-sassy",
+		"author": {
+			"@type": "Person",
+			"name": "Ashley Watson-Nolan",
+			"url": "https://www.ashleynolan.co.uk"
+		}
+	}
+	</script>
 
 	<!-- CSS -->
-    <link rel="stylesheet" href="/assets/styles/main-23faf51e.css" />
+    <link rel="stylesheet" href="/assets/styles/main-ce4c3df6.css" />
 
 	<!-- Fonts – non blocking -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://use.typekit.net" crossorigin>
 	<link href='https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap' rel='stylesheet' type='text/css'>
 	<script>
 		(function (d) {
@@ -210,12 +248,11 @@
 
 
 			
-			<div class="c-promo c-promo--ad separator-both">
+			<div class="c-promo c-promo--ad u-separator-both">
 				<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D5KQI&placement=ashleynolancouk"
 					id="_carbonads_js"></script>
 			</div>
 
-			
             <div class="c-content-info">
 			    <p>Article posted on the 29th May 2014</p>
 
@@ -235,10 +272,10 @@
 							<svg viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
 						</a>
 					</li>
-					<li class="c-socialLinks-item c-socialLinks-twitter">
-						<a href="http://twitter.com/WelshAsh_"
-							class="c-socialLinks-link" title="Find me on Twitter" rel="external" target="_blank">
-							<svg viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+					<li class="c-socialLinks-item c-socialLinks-bluesky">
+						<a href="https://bsky.app/profile/ashn.uk"
+							class="c-socialLinks-link" title="Find me on Bluesky" rel="external" target="_blank">
+							<svg fill="none" viewBox="0 0 64 57" width="28"><path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/></svg>
 						</a>
 					</li>
 					<li class="c-socialLinks-item c-socialLinks-linkedin">
@@ -257,10 +294,10 @@
 		</footer>
 	</div>
 
-    <script type="text/javascript">
-    window.disqusConfig = {
-        url: 'https://ashleynolan.co.uk/blog/are-we-getting-too-sassy.html',  // Replace PAGE_URL with your page's canonical URL variable
-        identifier: 'Are we getting too Sassy?' // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://ashleynolan.co.uk/blog/are-we-getting-too-sassy.html';
+        this.page.identifier = 'Are we getting too Sassy?';
     };
     </script>
 <!-- Require include for JS -->
