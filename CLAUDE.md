@@ -46,6 +46,27 @@ eleventy.config.js  Main config (CommonJS)
 
 **Build pipeline:** SCSS → eleventy-sass → PostCSS (autoprefixer + csso) → fingerprinted. JS → esbuild (ES2020, minified, bundled from `src/assets/js/index.js`).
 
+## Work Image Pipeline
+
+The `work-image-srcset` transform in `eleventy.config.js` auto-generates responsive image variants for the work/portfolio page (`work.html` only) using `@11ty/eleventy-img`. It runs as a post-build HTML transform (via `posthtml`) over the rendered page.
+
+**Authoring:** drop a single full-size image into `src/assets/img/work/` and reference it with a plain `<img>` — no `srcset`/`sizes` needed. The transform adds them:
+
+```html
+<img src="/assets/img/work/work-example.jpg" alt="..." width="900" height="510" loading="lazy">
+```
+
+**What the transform does** to any `<img>` whose `src` starts with `/assets/img/work/`:
+
+All images are converted to `<picture>` with a WebP `<source>` and the original format as fallback. Three widths are generated: 320w, 480w, and original.
+
+- **Static images** (jpg/png): WebP source + original format fallback.
+- **Animated GIFs**: animated WebP source (`sharpOptions: { animated: true }`, quality 60/effort 6) + resized GIF fallback. Quality tuned so WebP is always smaller than the GIF.
+
+Generated files are hash-named and written to `dist/assets/img/work/`. Source images are still passthrough-copied, so reference them by their original path.
+
+**Scope:** only `work.html`. Homepage carousel and blog-post images are untouched — they use plain `<img>` tags. To extend responsive handling elsewhere, widen the `outputPath` check in the transform.
+
 ## Module System
 
 - **Node.js tooling** (`eleventy.config.js`, `src/_helpers/`): CommonJS (`require` / `module.exports`)

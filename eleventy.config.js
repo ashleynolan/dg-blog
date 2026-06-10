@@ -1,7 +1,9 @@
 const fs = require('fs');
 const { rm } = require('fs/promises');
+const path = require('path');
 
 const Handlebars = require('handlebars');
+const eleventyImage = require('@11ty/eleventy-img');
 const markdownIt = require('markdown-it');
 const eleventyPluginRev = require('eleventy-plugin-rev');
 const eleventyHandlebars = require('@11ty/eleventy-plugin-handlebars');
@@ -28,6 +30,70 @@ module.exports = async (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({ ".htaccess": ".htaccess" });
     eleventyConfig.addPassthroughCopy("src/humans.txt");
     eleventyConfig.addPassthroughCopy("src/robots.txt");
+
+    // Generate responsive variants for work images and inject srcset automatically.
+    // Scoped to work.html only. All images become <picture> with a WebP source and
+    // original format fallback. Animated GIFs use sharp's animated option to preserve
+    // animation in both the WebP and GIF outputs.
+    const WORK_IMG_SIZES = '(max-width: 480px) 480px, 900px';
+    const srcsetFrom = imgs => imgs.map(img => `${img.url} ${img.width}w`).join(', ');
+
+    eleventyConfig.addTransform('work-image-srcset', async function(content) {
+        if (!this.page?.outputPath?.endsWith('/work.html')) return content;
+
+        const posthtml = require('posthtml');
+        const result = await posthtml([
+            async tree => {
+                const nodes = [];
+                tree.walk(node => {
+                    if (node.tag === 'img' && node.attrs?.src?.startsWith('/assets/img/work/')) {
+                        nodes.push(node);
+                    }
+                    return node;
+                });
+
+                await Promise.all(nodes.map(async node => {
+                    const src = node.attrs.src;
+                    const absPath = path.join('./src', src);
+                    const isGif = src.endsWith('.gif');
+                    try {
+                        const metadata = await eleventyImage(absPath, {
+                            widths: [320, 480, 'auto'],
+                            formats: isGif ? ['webp', 'gif'] : ['webp', 'auto'],
+                            outputDir: './dist/assets/img/work/',
+                            urlPath: '/assets/img/work/',
+                            ...(isGif && {
+                                sharpOptions: { animated: true },
+                                sharpWebpOptions: { quality: 60, effort: 6 },
+                            }),
+                        });
+
+                        const fallbackKey = isGif ? 'gif' : Object.keys(metadata).at(-1);
+                        const imgAttrs = { ...node.attrs };
+                        node.tag = 'picture';
+                        node.attrs = {};
+                        node.content = [
+                            { tag: 'source', attrs: {
+                                type: 'image/webp',
+                                srcset: srcsetFrom(metadata.webp),
+                                sizes: WORK_IMG_SIZES,
+                            } },
+                            { tag: 'img', attrs: {
+                                ...imgAttrs,
+                                src: metadata[fallbackKey].at(-1).url,
+                                srcset: srcsetFrom(metadata[fallbackKey]),
+                                sizes: WORK_IMG_SIZES,
+                            } },
+                        ];
+                    } catch(err) {
+                        console.warn(`[work-images] Could not process ${src}: ${err.message}`);
+                    }
+                }));
+            }
+        ]).process(content);
+
+        return result.html;
+    });
 
 	eleventyConfig.addFilter("cleanUrl", helpers.cleanUrl);
 	eleventyConfig.addFilter("ifCond", helpers.ifCond);
