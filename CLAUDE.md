@@ -32,8 +32,19 @@ src/
 ├── _includes/      Handlebars partials (.hbs)
 ├── _layouts/       Page layouts (default.hbs, post.hbs)
 ├── assets/
+│   ├── fonts/      Web fonts (passthrough-copied to dist/)
 │   ├── img/        Static images (passthrough-copied to dist/)
+│   │   ├── blog/       Blog post images
+│   │   ├── icons/      SVG icons (used by inlineSVG helper)
+│   │   ├── logos/      Brand logos
+│   │   ├── resources/  Resource/promo images
+│   │   └── work/       Portfolio images (processed by work-image-srcset transform)
 │   ├── js/         Client-side JS (ES modules, bundled by esbuild, entry: index.js)
+│   │   ├── carousel.js
+│   │   ├── dateHandler.js
+│   │   ├── externalLinks.js
+│   │   ├── work.js
+│   │   └── libs/       disqus.js, prism.js
 │   └── styles/     SCSS source (compiled by eleventy-sass + PostCSS)
 │       ├── settings/   Design tokens, breakpoints, variables
 │       ├── base/       Global resets
@@ -44,7 +55,20 @@ src/
 eleventy.config.js  Main config (CommonJS)
 ```
 
+Passthrough-copied root files: `.htaccess`, `src/humans.txt`, `src/robots.txt`.
+
 **Build pipeline:** SCSS → eleventy-sass → PostCSS (autoprefixer + csso) → fingerprinted. JS → esbuild (ES2020, minified, bundled from `src/assets/js/index.js`).
+
+## Post Collection
+
+Posts are sourced from `src/blog/**/*.md`, filtered to those with `published !== false`, and sorted by the `posted` front matter field (not the file date). The collection name is `post`.
+
+## RSS Feeds
+
+Two feeds are generated via `@11ty/eleventy-plugin-rss`:
+
+- `/feed.xml` — full site feed
+- `/blog/feed.xml` — blog-only feed (uses `eleventy-plugin-feed-blog-rss.njk`)
 
 ## Work Image Pipeline
 
@@ -106,18 +130,43 @@ Do not mix these conventions.
 
 **Key design tokens** (defined in `settings/_variables.scss`):
 ```css
---color-white, --color-grey-10/20/40, --color-eggshell, --color-red, --color-purple
+/* Colours */
+--color-white, --color-black, --color-black-almost (#333)
+--color-grey-10, --color-grey-20, --color-grey-40, --color-grey-dark
+--color-eggshell, --color-eggshell-alt
+--color-red, --color-purple, --color-yellow-light
+--color-black-opaque-65, --color-black-opaque-90, --color-black-opaque-95
+
+/* Semantic aliases */
+--page-bg-color, --page-border-color, --logo-bg-color
+--text-color, --link-color-inverse
+--hr-border, --hr-border-alt
+
+/* Typography */
 --primary-font-family, --secondary-font-family, --mono-font-family
---spacing-base (8px), --spacing-x1/x2/x3/x4, --grid-spacing (24px)
+--base-font-size (16px), --base-font-size--wide (22px)
+--font-weight-bold (700), --base-leading (1.6)
+
+/* Spacing */
+--spacing-base (8px), --spacing-x1/x2/x3/x4/x5, --grid-spacing (24px)
+
+/* Misc */
+--border-radius (4px)
 ```
 
 ## Handlebars
 
 - Partials in `src/_includes/` — included with `{{> partial_name }}`
 - Layouts in `src/_layouts/` — set via `layout: post.hbs` in front matter
-- Custom helpers: `ifCond`, `inlineSVG`, `withSort`, `printJson`, `moment`
+- Custom helpers: `ifCond`, `inlineSVG`, `withSort`, `printJson`, `moment`, `contains`, `eachUpTo`, `cleanUrl`, `typeOfInput`
 - Inline SVG: `{{inlineSVG "./src/assets/img/icons/filename.svg"}}`
-- Asset references use the `rev` filter: `{{ '/assets/styles/main.css' | rev }}`
+- Asset references use the `rev` filter: `{{ '/assets/styles/main.css' | rev }}` / `{{ '/assets/js/index.js' | rev }}`
+
+## Markdown
+
+The config uses a custom `markdown-it` instance with the `code` rule disabled and a custom `html_block` renderer. This allows inline backticks, bold, italic, and image syntax to work inside raw HTML blocks (e.g. `<dl>`, `<table>`) in blog posts — by default CommonMark passes these blocks verbatim, so backticks would never be processed.
+
+If you edit the markdown library config in `eleventy.config.js`, test HTML blocks with inline code in a post to confirm they still render correctly.
 
 ## Blog Post Front Matter
 
@@ -136,11 +185,11 @@ published: true
 categories:
   - "Web Development"
 # Optional:
-ogimage: /assets/img/blog/image.jpg
-nodate: true
-nocomments: true
-promo: carbon
-updated: 2026-02-01
+ogimage: /assets/img/blog/image.jpg   # Open Graph image
+nodate: true                          # Hides the date display
+nocomments: true                      # Disables Disqus comments
+promo: carbon                         # Shows a Carbon ad promo
+updated: 2026-02-01                   # Shows "last updated" date
 ---
 ```
 
@@ -150,3 +199,14 @@ updated: 2026-02-01
 - `const` over `let`; avoid `var`
 - No TypeScript — do not add `.ts` files or JSDoc `@type` annotations
 - Error handling: wrap filesystem ops in `try/catch`, re-throw with context (e.g., `throw new Error(\`{{inlineSVG}} helper: ${err}\`)`)
+
+## Common Pitfalls
+
+- **`@import` in SCSS** — use `@use`/`@forward` only; `@import` is deprecated
+- **Raw media queries** — always use the `include-media` mixin
+- **Hard-coded colour/spacing** — use CSS custom properties
+- **Keep Node.js helpers as CommonJS** — do not convert to ES modules
+- **`dist/` is committed** — run `yarn build` and commit `dist/` when changes affect the build output
+- **No TypeScript** — do not add `.ts` files
+- **No test framework** — do not add Jest, Vitest, etc. unless explicitly asked
+- **Markdown HTML blocks** — the custom `html_block` renderer handles inline code/bold/images inside raw HTML; don't remove it without testing

@@ -51,8 +51,19 @@ src/
 ├── _includes/      Handlebars partials (.hbs)
 ├── _layouts/       Page layouts (default.hbs, post.hbs)
 ├── assets/
+│   ├── fonts/      Web fonts (passthrough-copied to dist/)
 │   ├── img/        Static images (passthrough-copied to dist/)
-│   ├── js/         Client-side JS (ES modules, bundled by esbuild)
+│   │   ├── blog/       Blog post images
+│   │   ├── icons/      SVG icons (used by inlineSVG helper)
+│   │   ├── logos/      Brand logos
+│   │   ├── resources/  Resource/promo images
+│   │   └── work/       Portfolio images (processed by work-image-srcset transform)
+│   ├── js/         Client-side JS (ES modules, bundled by esbuild, entry: index.js)
+│   │   ├── carousel.js
+│   │   ├── dateHandler.js
+│   │   ├── externalLinks.js
+│   │   ├── work.js
+│   │   └── libs/       disqus.js, prism.js
 │   └── styles/     SCSS source (compiled by eleventy-sass + PostCSS)
 │       ├── settings/   Design tokens, breakpoints, variables
 │       ├── base/       Global resets and element styles
@@ -62,6 +73,50 @@ src/
 └── blog/           Markdown blog posts with YAML front matter
 eleventy.config.js  Main Eleventy configuration (CommonJS)
 ```
+
+Passthrough-copied root files: `.htaccess`, `src/humans.txt`, `src/robots.txt`.
+
+---
+
+## Post Collection
+
+Posts are sourced from `src/blog/**/*.md`, filtered to those with `published !== false`, and sorted by the `posted` front matter field (not the file date). The collection name is `post`.
+
+---
+
+## RSS Feeds
+
+Two feeds are generated via `@11ty/eleventy-plugin-rss`:
+
+- `/feed.xml` — full site feed
+- `/blog/feed.xml` — blog-only feed (uses `eleventy-plugin-feed-blog-rss.njk`)
+
+---
+
+## Work Image Pipeline
+
+The `work-image-srcset` transform in `eleventy.config.js` auto-generates responsive image variants for the work/portfolio page (`work.html` only) using `@11ty/eleventy-img`. It runs as a post-build HTML transform (via `posthtml`) over the rendered page.
+
+**Authoring:** drop a single full-size image into `src/assets/img/work/` and reference it with a plain `<img>` — no `srcset`/`sizes` needed. The transform adds them automatically.
+
+**What the transform does** to any `<img>` whose `src` starts with `/assets/img/work/`:
+
+All images are converted to `<picture>` with a WebP `<source>` and the original format as fallback. Three widths are generated: 320w, 480w, and original.
+
+- **Static images** (jpg/png): WebP source + original format fallback.
+- **Animated GIFs**: animated WebP source (`sharpOptions: { animated: true }`, quality 60/effort 6) + resized GIF fallback.
+
+Generated files are hash-named and written to `dist/assets/img/work/`. Source images are still passthrough-copied, so reference them by their original path.
+
+**Scope:** only `work.html`. Homepage carousel and blog-post images are untouched. To extend responsive handling elsewhere, widen the `outputPath` check in the transform.
+
+---
+
+## Markdown
+
+The config uses a custom `markdown-it` instance with the `code` rule disabled and a custom `html_block` renderer. This allows inline backticks, bold, italic, and image syntax to work inside raw HTML blocks (e.g. `<dl>`, `<table>`) in blog posts — by default CommonMark passes these blocks verbatim, so backticks would never be processed.
+
+If you edit the markdown library config in `eleventy.config.js`, test HTML blocks with inline code in a post to confirm they still render correctly.
 
 ---
 
@@ -166,16 +221,28 @@ Always use CSS custom properties for colours, spacing, and typography. Do not
 hard-code values. Key tokens defined in `:root` (see `settings/_variables.scss`):
 
 ```css
-/* Colour */
---color-white, --color-grey-10/20/40, --color-eggshell, --color-red, --color-purple
---page-bg-color, --text-color, --link-color-inverse
+/* Colours */
+--color-white, --color-black, --color-black-almost (#333)
+--color-grey-10, --color-grey-20, --color-grey-40, --color-grey-dark
+--color-eggshell, --color-eggshell-alt
+--color-red, --color-purple, --color-yellow-light
+--color-black-opaque-65, --color-black-opaque-90, --color-black-opaque-95
+
+/* Semantic aliases */
+--page-bg-color, --page-border-color, --logo-bg-color
+--text-color, --link-color-inverse
+--hr-border, --hr-border-alt
 
 /* Typography */
 --primary-font-family, --secondary-font-family, --mono-font-family
---base-font-size (16px), --font-weight-bold, --base-leading (1.6)
+--base-font-size (16px), --base-font-size--wide (22px)
+--font-weight-bold (700), --base-leading (1.6)
 
 /* Spacing */
---spacing-base (8px), --spacing-x1/x2/x3/x4, --grid-spacing (24px)
+--spacing-base (8px), --spacing-x1/x2/x3/x4/x5, --grid-spacing (24px)
+
+/* Misc */
+--border-radius (4px)
 ```
 
 ### Linting
@@ -195,7 +262,7 @@ considering a task complete.
 
 - Partials live in `src/_includes/` — include with `{{> partial_name }}`
 - Layouts live in `src/_layouts/` — referenced in front matter: `layout: post.hbs`
-- Custom helpers available: `ifCond`, `inlineSVG`, `withSort`, `printJson`, `moment`
+- Custom helpers: `ifCond`, `inlineSVG`, `withSort`, `printJson`, `moment`, `contains`, `eachUpTo`, `cleanUrl`, `typeOfInput`
 
 ### Inline SVGs
 
@@ -248,15 +315,19 @@ File naming convention: `YYYYMMDD-post-slug.md`
 | Package | Purpose |
 |---------|---------|
 | `@11ty/eleventy` | Static site generator |
+| `@11ty/eleventy-plugin-handlebars` | Handlebars template support |
+| `@11ty/eleventy-plugin-rss` | RSS feed generation |
+| `@11ty/eleventy-img` | Responsive image generation (work image pipeline) |
 | `eleventy-sass` | SCSS compilation |
+| `eleventy-plugin-rev` | Asset fingerprinting/cache-busting |
 | `esbuild` | Client-side JS bundling (ES2020 target, minified) |
 | `autoprefixer` | CSS vendor prefixes via PostCSS |
 | `postcss-csso` | CSS minification via PostCSS |
-| `eleventy-plugin-rev` | Asset fingerprinting/cache-busting |
 | `stylelint` | CSS/SCSS linting |
 | `prismjs` | Client-side syntax highlighting |
 | `include-media` | Sass media query helper |
 | `normalize.css` | CSS reset |
+| `posthtml` | HTML transform used by the work image pipeline |
 
 ---
 
@@ -270,3 +341,4 @@ File naming convention: `YYYYMMDD-post-slug.md`
   `dist/` output when making changes that affect the build
 - **No TypeScript** — do not add `.ts` files or install TypeScript tooling
 - **No test framework** — do not add Jest, Vitest, etc. unless explicitly instructed
+- **Markdown HTML blocks** — the custom `html_block` renderer handles inline code/bold/images inside raw HTML blocks; don't remove it without testing blog posts that use `<dl>` or similar
