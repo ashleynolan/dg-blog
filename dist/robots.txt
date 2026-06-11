@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Disallow: /cgi-bin/
-Sitemap: http://www.dragongraphics.co.uk/sitemap.xml
+Sitemap: https://ashleynolan.co.uk/sitemap.xml

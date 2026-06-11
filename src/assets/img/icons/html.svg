@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+    <path transform="translate(0,960) scale(1,-1)" d="M128 448l256 256h-128l-256-256 256-256h128zM768 704h-128l256-256-256-256h128l256 256zM544 832l-160-768h96l160 768z"/>
+</svg>

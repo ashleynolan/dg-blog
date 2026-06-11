@@ -1,7 +1,0 @@
-###
-# Site variables
-###
-
-production: <%= production %>
-
-destination: ./dist

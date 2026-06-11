@@ -3,11 +3,11 @@
 
 # TEAM
 
-    Ashley Watson-Nolan -- UI Engineer -- http://twitter.com/WelshAsh_
+    Ashley Watson-Nolan -- UI Engineer -- https://ashleynolan.co.uk
 
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
-    Sublime Text
+    Eleventy (11ty), Handlebars, SCSS, esbuild
+    VS Code

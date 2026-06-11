@@ -1,9 +1,13 @@
-AshleyNolan.co.uk
-=================
+## Usage
 
-My web space - sligth redesign based on old design, but built on assemble so it's easier to update
+To run the site in dev mode, pull down the repo and then run:
 
-####Tech Stack
-- Assemble
+```bash
+# install dependencies
+$ yarn
 
+# run dev server
+$ yarn dev
+```
 
+This will spin up a dev server at [http://localhost:8080/](http://localhost:8080/)

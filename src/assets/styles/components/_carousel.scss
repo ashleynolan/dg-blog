@@ -1,0 +1,198 @@
+@use './settings/mq' as *;
+
+/*
+   Homepage Carousel
+   ========================================================================== */
+
+.c-homeCarousel {
+    --canvas-width: 618px;
+
+    position: relative;
+    left: 0;
+
+    width: 100%;
+    overflow: hidden;
+    height: 412px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.c-homeCarousel-title {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    z-index: 2;
+    background: var(--color-red);
+    border: 1px solid var(--color-white);
+
+    box-shadow: 0 0 0 1px var(--color-black-almost);
+
+    width: 204px;
+    padding: 15px 15px 10px;
+    margin-left: -102px;
+
+    font-family: var(--secondary-font-family);
+    font-size: 28px;
+    color: var(--color-white);
+    text-align: center;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        width: 0;
+        height: 0;
+        margin-left: -7px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+
+        border-top: 15px solid var(--color-red);
+    }
+}
+
+.c-homeCarousel-wrapper {
+    background: color-mix(in srgb, var(--color-eggshell), #000 10%);
+    border-top: 1px solid var(--color-black-almost);
+    border-bottom: 1px solid var(--color-black-almost);
+
+    position: relative;
+    width: 3180px;
+    height: 322px;
+
+    left: -1590px;
+    margin: 29px 0 0 50%;
+}
+
+.c-homeCarousel-carousel {
+    float: left;
+    width: 10000px;
+    margin: 10px 0;
+    padding: 13px 0;
+}
+
+.c-homeCarousel-carousel-item {
+    position: relative;
+    float: left;
+    border: 2px solid var(--color-black);
+    margin-right: 18px;
+}
+
+.c-homeCarousel-carousel-item img {
+    float: left;
+}
+
+.c-homeCarousel-carousel-item-title {
+    opacity: 0;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+    transition: opacity 250ms, bottom 250ms;
+}
+
+.c-homeCarousel-carousel-item-title h3 {
+    display: inline-block;
+    background: var(--color-black);
+    padding: 4px 16px;
+
+    font-family: var(--secondary-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-eggshell-alt);
+
+    border: 1px solid var(--color-white);
+}
+
+.c-homeCarousel a:hover .c-homeCarousel-carousel-item-title {
+    opacity: 1;
+    bottom: -20px;
+    transition: opacity 250ms, bottom 250ms;
+}
+
+.c-homeCarousel-canvasFrame {
+    position: absolute;
+    z-index: 1;
+    top: 105px;
+    left: 50%;
+    margin-left: calc(var(--canvas-width) * -0.5);
+
+    background: color-mix(in srgb, var(--color-eggshell), #000 10%);
+
+    border: 1px solid var(--color-black-almost);
+    border-top: none;
+    border-bottom: none;
+
+    font-size: 0;
+}
+
+.c-homeCarousel-canvasFrame-link {
+    display: block;
+}
+
+.c-homeCarousel-canvasFrame-canvas {
+    margin: 0;
+}
+
+.c-homeCarousel a:hover {
+    cursor: pointer;
+}
+
+.c-homeCarousel-carLeft,
+.c-homeCarousel-carRight {
+    position: absolute;
+    top: 54%;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+
+    background: var(--color-black-almost);
+    box-shadow: 0 0 9px 0 var(--color-black) inset;
+    border-radius: 50%;
+
+    color: #ccc;
+    text-decoration: none;
+
+    transition: 250ms ease-out;
+
+    svg {
+        width: 40%;
+        height: 40%;
+    }
+
+    @include media('>=mid') {
+        width: 90px;
+        height: 90px;
+        top: 50%;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--color-white);
+    }
+}
+
+.c-homeCarousel-carLeft {
+    left: -20px;
+    border-radius: 0 50% 50% 0;
+    transition: left 250ms linear, color 250ms ease-out;
+
+    &:hover {
+        left: -10px;
+    }
+}
+
+.c-homeCarousel-carRight {
+    right: -20px;
+    border-radius: 50% 0 0 50%;
+    transition: right 250ms linear, color 250ms ease-out;
+
+    &:hover {
+        right: -10px;
+    }
+}

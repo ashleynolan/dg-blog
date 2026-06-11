@@ -1,0 +1,45 @@
+---
+permalink: "blog/{{ url }}.html"
+---
+
+{{> html_start }}
+
+	<div class="l-container">
+		{{> masthead }}
+
+		<section class="c-content c-content--post">
+			<h1>{{ title }}</h1>
+
+			{{{ content }}}
+
+			{{#ifCond promo 'null' }}{{else}}
+			{{> promos promo='carbon' }}
+			{{/ifCond}}
+
+			{{#unless nodate}}
+            <div class="c-content-info">
+			    <p>Article posted on the {{moment posted format="Do MMMM YYYY" }}</p>
+
+                {{#if updated}}
+                <p>Last updated on the <date>{{moment updated format="Do MMMM YYYY" }}</date>
+                </p>
+                {{/if}}
+            </div>
+			{{/unless}}
+
+
+			{{#unless nocomments}}<div id="disqus_thread" class="c-comments"></div>{{/unless}}
+		</section>
+
+		{{> footer }}
+	</div>
+
+{{#unless nocomments}}
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://ashleynolan.co.uk{{ page.url }}';
+        this.page.identifier = '{{ title }}';
+    };
+    </script>
+{{/unless}}
+{{> html_end }}

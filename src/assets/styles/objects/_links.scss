@@ -1,0 +1,54 @@
+/*
+   Links
+   ========================================================================== */
+
+// Variables
+:root {
+    --color-link-default: var(--color-red);
+    --color-link-visited: var(--color-red);
+    --color-link-hover: var(--color-black-almost);
+    --color-link-active: var(--color-black-almost);
+}
+
+a {
+    color: var(--color-link-default);
+    text-decoration: none;
+
+    &:visited {
+        // color: var(--color-link-visited);
+        text-decoration: none;
+    }
+
+    &:active {
+        color: var(--color-link-active);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--color-link-hover);
+
+        p & {
+            text-decoration: underline;
+        }
+    }
+
+    // transition link states nicely for hover and focus
+    h1 &,
+    h2 &,
+    h3 &,
+    h4 &,
+    h5 &,
+    h6 & {
+        &,
+        &:visited {
+            transition: 200ms ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+            transition: 200ms ease-in-out;
+        }
+    }
+
+
+}

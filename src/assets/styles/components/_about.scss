@@ -1,0 +1,98 @@
+@use './settings/mq' as *;
+@use './components/separator' as *;
+
+/*
+   About Page
+   ========================================================================== */
+
+.c-about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
+
+    @include media('>narrowMid') {
+        display: grid;
+        width: 92%;
+        max-width: 1200px;
+        grid-template-columns: 65fr 35fr;
+        grid-template-areas: 'bio social'
+                             'bio skills'
+                             'speaking speaking';
+		margin: 0 auto;
+	}
+}
+
+.c-about-title {
+	margin-bottom: calc(var(--vertical-rhythm) / 2 * 1px);
+}
+
+.c-about-bio {
+	grid-area: bio;
+	padding-top: calc(var(--vertical-rhythm) * 1px);
+}
+
+.c-about-contact {
+    grid-area: social;
+}
+
+.c-about-skills {
+    grid-area: skills;
+}
+
+.c-about-speaking {
+    grid-area: speaking;
+}
+
+.c-about-module {
+    padding-top: calc(var(--vertical-rhythm) * 1px);
+}
+
+	.c-about-module-title {
+		font-family: var(--secondary-font-family);
+        font-size: calc(var(--h4-size) * 1px);
+	}
+
+	.c-about-speaking {
+		width: 100%;
+	}
+
+	.c-about-list {
+		line-height: 2;
+		margin-bottom: 20px;
+        padding-left: var(--spacing-x1);
+	}
+
+        .c-about-list-item {
+            display: flex;
+            align-items: center;
+
+			svg {
+				width: 20px;
+				height: 20px;
+                margin-inline-end: var(--spacing-x2);
+                margin-block-end: 2px;
+			}
+		}
+
+@include media('>narrowMid') {
+    .c-about-module {
+        & > p {
+            max-width: 660px;
+        }
+    }
+
+    .c-about-bio {
+        padding-left: 2%;
+        padding-right: 6%;
+
+        // TODO – switch out for separator helpers
+        box-shadow: 1px 0 0 var(--color-grey-dark);
+        border-right: 1px solid var(--color-white);
+    }
+
+    .c-about-speaking {
+        padding-left: 2%;
+    }
+}
+
+

@@ -2,6 +2,9 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Examples: https://github.com/github/gitignore
 
+node_modules/
+.vscode
+
 # SASS #
 ########
 .sass-cache/
@@ -19,15 +22,10 @@ ehthumbs.db
 Thumbs.db
 
 
-# Random
-*.sublime-*
-
-node_modules/
-
 # Ignore these if we are building js/Sass on the server #
 #########################################################
 # dist/
 *.map
 
-# Jekyll
-the-visual-web/
+# Eleventy Clean plugin cache
+.plugin-clean

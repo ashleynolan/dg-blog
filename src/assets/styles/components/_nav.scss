@@ -1,0 +1,95 @@
+@use './settings/mq' as *;
+
+/* =============================================================================
+   Navigation Elements
+   ========================================================================== */
+
+/* Main Navigation Bar
+   ========================================================================== */
+
+.c-siteHeader-nav {
+    --nav-bg: var(--color-black);
+    --nav-font-size: 18px;
+
+    background: var(--nav-bg);
+}
+
+.c-globalNav {
+    margin: 0 auto;
+
+    @include media('>narrowMid') {
+        max-width: 50%;
+    }
+    @include media('>wide') {
+        max-width: 600px;
+    }
+}
+
+.c-globalNav-list {
+    display: flex;
+    justify-content: space-evenly;
+
+    @include media('>narrowMid') {
+        justify-content: center;
+    }
+}
+
+
+.c-globalNav-item {
+    width: 100%;
+
+    margin-bottom: 0;
+
+    font-family: var(--secondary-font-family);
+    font-size: var(--nav-font-size);
+
+
+    // TODO: Pretty sure not needed
+    // &:first-child,
+    // &:nth-child(2) {
+    //     border-bottom: 0;
+    //     border-right: 0;
+    // }
+}
+
+.c-globalNav-item a {
+    position: relative;
+    display: block;
+    padding: 8px 0 4px;
+    text-align: center;
+
+    color: var(--link-color-inverse);
+    letter-spacing: 1px;
+
+    transition: 250ms ease-out;
+
+    &:before {
+        --arrow-height: 8px;
+        --arrow-width: 12px;
+
+        content: '';
+        width: 0;
+        height: 0;
+
+        border-left: var(--arrow-width) solid transparent;
+        border-right: var(--arrow-width) solid transparent;
+        border-top: var(--arrow-height) solid var(--nav-bg);
+
+        position: absolute;
+        top: calc(100% - var(--arrow-height));
+        left: 50%;
+        margin-left: calc(var(--arrow-width) * -1);
+
+        transition: 250ms ease-out;
+    }
+}
+
+.c-globalNav-item a:hover,
+.c-globalNav-item--active a {
+    color: #fff;
+    transition: 250ms ease-out;
+
+    &:before {
+    	top: 100%;
+    }
+}

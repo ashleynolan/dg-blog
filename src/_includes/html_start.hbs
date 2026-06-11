@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+
+	{{#ifCond title undefined}}
+	<title>AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan</title>
+	<meta name="description" content="AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan">
+	{{else}}
+	<title>{{ title }} - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan</title>
+	<meta name="description"
+		content="{{#ifCond description undefined}}{{ title }} - AshleyNolan.co.uk - Blog and Portfolio for Ashley Watson-Nolan{{else}}{{ description }}{{/ifCond}}">
+	{{/ifCond}}
+
+	<link href="https://ashleynolan.co.uk/feed.xml" rel="alternate" type="application/rss+xml"
+		title="Front-end development Blog and Portfolio for Ashley Watson-Nolan" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="canonical" href="https://www.ashleynolan.co.uk{{cleanUrl page.url}}" />
+
+    <link rel="icon" href="/assets/img/logos/dg-logo-alt.svg" type="image/svg+xml">
+	<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+	<link rel="apple-touch-icon" href="/assets/img/icons/apple_touch_icon.png">
+
+	<!-- Need to put in OG tags Here -->
+    {{#ifCond title 'null'}}{{else}}
+	<meta property="og:site_name" content="AshleyNolan.co.uk" />
+	<meta property="og:type" content="{{#ifCond layout 'post.hbs'}}article{{else}}website{{/ifCond}}" />
+	<meta property="og:title" content="{{ title }}" />
+	<meta property="og:description"
+		content="{{#ifCond description undefined}}Front-end development Blog and Portfolio for Ashley Watson-Nolan – Principal Engineer at Just Eat Takeaway{{else}}{{ description }}{{/ifCond}}" />
+	<meta property="og:image"
+		content="{{#ifCond ogimage undefined}}https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png{{else}}{{ ogimage }}{{/ifCond}}" />
+	<meta property="og:url" content="https://www.ashleynolan.co.uk{{cleanUrl page.url}}" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@WelshAsh_" />
+	<meta name="twitter:title" content="{{ title }}" />
+	<meta name="twitter:description"
+		content="{{#ifCond description undefined}}Front-end development Blog and Portfolio for Ashley Watson-Nolan – Principal Engineer at Just Eat Takeaway{{else}}{{ description }}{{/ifCond}}" />
+	<meta name="twitter:image" content="https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png" />
+
+	{{#ifCond layout 'post.hbs'}}{{#ifCond nodate undefined}}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BlogPosting",
+		"headline": "{{ title }}",
+		"description": "{{#ifCond description undefined}}{{ title }}{{else}}{{ description }}{{/ifCond}}",
+		"datePublished": "{{moment posted format="YYYY-MM-DDTHH:mmZ"}}",
+		"dateModified": "{{#if updated}}{{moment updated format="YYYY-MM-DDTHH:mmZ"}}{{else}}{{moment posted format="YYYY-MM-DDTHH:mmZ"}}{{/if}}",
+		"image": "{{#ifCond ogimage undefined}}https://www.ashleynolan.co.uk/assets/img/icons/logo-tcard.png{{else}}https://www.ashleynolan.co.uk{{ ogimage }}{{/ifCond}}",
+		"url": "https://www.ashleynolan.co.uk{{cleanUrl page.url}}",
+		"author": {
+			"@type": "Person",
+			"name": "Ashley Watson-Nolan",
+			"url": "https://www.ashleynolan.co.uk"
+		}
+	}
+	</script>
+	{{/ifCond}}{{/ifCond}}
+	{{/ifCond}}
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="{{ rev '/assets/styles/main.css' url }}" />
+
+	<!-- Fonts – non blocking -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+	<link href='https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap' rel='stylesheet' type='text/css'>
+	<script>
+		(function (d) {
+			var config = {
+				kitId: 'xxf1gwm',
+				scriptTimeout: 3000
+			},
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = '//use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZBM0N2C9W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZBM0N2C9W');
+</script>
+
+<body>

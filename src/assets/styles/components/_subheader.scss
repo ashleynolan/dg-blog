@@ -1,0 +1,11 @@
+@use './helpers/extensions' as *;
+
+.c-subheader {
+    display: inline-block;
+    font-family: var(--alt-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-grey-10);
+
+    @extend %header-bg;
+}

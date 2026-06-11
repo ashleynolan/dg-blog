@@ -1,0 +1,80 @@
+---
+layout: default
+title: Home
+
+rss: false
+---
+
+<section class="c-content c-content--wide c-articles">
+    <h2 class="c-articles-title u-separator-bottom">Recent Posts</h2>
+
+    {{#withSort collections.post 'this.data.posted' limit="3" reverse="true" }}
+    <a href="/blog/{{this.data.url}}" class="c-articles-item u-separator-bottom">
+        <article>
+            <time>{{moment this.data.posted format="DD/MM/YYYY" }}</time>
+            <h2 class="c-articles-item-title">{{ this.data.title }}</h2>
+            <p class="c-articles-item-description">{{ this.data.description }}</p>
+        </article>
+    </a>
+    {{/withSort}}
+
+</section>
+
+<section id="c-homeCarousel" class="c-homeCarousel">
+    <h2 class="c-homeCarousel-title">Recent Work</h2>
+
+    <div class="c-homeCarousel-wrapper">
+        <div class="c-homeCarousel-carousel">
+            <article id="workArticle1" class="c-homeCarousel-carousel-item" data-name="Just Eat Takeaway.com">
+                <a href="work#justeat" title="Just Eat Takeaway.com">
+                    <img class="c-homeCarousel-featureImg" src="/assets/img/work/home-jet.png" alt="Just Eat Takeaway.com Logo">
+                    <div class="c-homeCarousel-carousel-item-title">
+                        <h3>Just Eat Takeaway.com</h3>
+                    </div>
+                </a>
+            </article>
+            <article id="workArticle2" class="c-homeCarousel-carousel-item" data-name="Yoto Animal Facts">
+                <a href="work#labs-animal-facts" title="Yoto Animal Facts">
+                    <img class="c-homeCarousel-featureImg" src="/assets/img/work/home-animalfacts.png" alt="Animal Facts Logo">
+                    <div class="c-homeCarousel-carousel-item-title">
+                        <h3>Yoto Animal Facts</h3>
+                    </div>
+                </a>
+            </article>
+            <article id="workArticle3" class="c-homeCarousel-carousel-item" data-name="PIE Design System">
+                <a href="work#pie" title="PIE Design System">
+                    <img class="c-homeCarousel-featureImg" src="/assets/img/work/home-pie.png" alt="PIE Logo">
+                    <div class="c-homeCarousel-carousel-item-title">
+                        <h3>PIE Design System</h3>
+                    </div>
+                </a>
+            </article>
+
+            <article id="workArticle4" class="c-homeCarousel-carousel-item" data-name="Frontend Guidelines">
+                <a href="work#labs-frontend-guidelines" title="Frontend Guidelines">
+                    <img class="c-homeCarousel-featureImg" src="/assets/img/work/home-feguidelines.png" alt="Frontend Guidelines Logo">
+                    <div class="c-homeCarousel-carousel-item-title">
+                        <h3>Frontend Guidelines</h3>
+                    </div>
+                </a>
+            </article>
+            <article id="workArticle5" class="c-homeCarousel-carousel-item" data-name="BBC GoodFood">
+                <a href="work#bbcgoodfood" title="BBC GoodFood">
+                    <img class="c-homeCarousel-featureImg" src="/assets/img/work/home-bbc.png" alt="BBC GoodFood Logo">
+                    <div class="c-homeCarousel-carousel-item-title">
+                        <h3>BBC GoodFood</h3>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </div>
+
+    <div id="c-homeCarousel-canvasFrame" class="c-homeCarousel-canvasFrame">
+        <a href="work#justeat" id="c-homeCarousel-canvasFrame-link" class="c-homeCarousel-canvasFrame-link">
+            <canvas id="c-homeCarousel-canvasFrame-canvas" class="c-homeCarousel-canvasFrame-canvas" width="618" height="274"></canvas>
+            <div class="c-homeCarousel-carousel-item-title">
+                <h3>Just Eat Takeaway.com</h3>
+            </div>
+        </a>
+    </div>
+</section>
