@@ -8,8 +8,30 @@
     <description>Front-end development Blog and Portfolio for Ashley Watson-Nolan</description>
     <language>en</language>
     <item>
+      <title>Hello again (and a new look)</title>
+      <link>https://ashleynolan.co.uk/blog/hello-again.html</link><description>After far too long a break from writing, I&#39;ve given my site a fresh coat of paint.</description>
+      <content:encoded>&lt;p&gt;It&#39;s been almost 7 years since my last blog post.&lt;/p&gt;
+&lt;p&gt;Just writing that down makes me sad (and cringe a little bit too!). Being fair to myself, that time away lines up with when my eldest daughter Alice came on the scene…and to be doubly fair, her sister Izzy turned up a couple of years after that too.&lt;/p&gt;
+&lt;p&gt;So, although I haven&#39;t been writing much, it&#39;s been a busy 7 years.&lt;/p&gt;
+&lt;h2&gt;What have I been up to?&lt;/h2&gt;
+&lt;p&gt;So what have I been doing since my last post…&lt;/p&gt;
+&lt;p&gt;Well, besides the whole looking after two small children thing, I was promoted to a Principal Engineer at Just Eat Takeaway, &lt;a href=&quot;https://ashleynolan.co.uk/work#pie&quot;&gt;leading the creation of our global design system, PIE&lt;/a&gt; – which amazingly won an award in the &lt;a href=&quot;https://awards.zeroheight.com/&quot;&gt;Zeroheight Design System awards last year&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I also developed a dynamic Yoto card as part of the &lt;a href=&quot;https://yoto.space/news/post/the-developer-challenge-2025-winners-bbCk0Y8q8fK6JNY&quot;&gt;2025 Yoto developer challenge&lt;/a&gt; called &lt;a href=&quot;https://ashleynolan.co.uk/work#labs-animal-facts&quot;&gt;Animal Facts&lt;/a&gt;, which my daughter, Alice, narrates. There&#39;s too much to cover about this little adventure here, so I&#39;ll save that for another post in the coming weeks.&lt;/p&gt;
+&lt;p&gt;And a couple of months ago, I launched the &lt;a href=&quot;https://www.youtube.com/@FrontendGuidelines&quot;&gt;Frontend Guidelines YouTube channel&lt;/a&gt;. As of this writing, I&#39;ve only published one video, but now I&#39;ve finished reworking this site the plan is that I&#39;ll have more time to spend on putting together the content I want to across both places now. That&#39;s the plan in my head anyway as I write this.&lt;/p&gt;
+&lt;p&gt;So that&#39;s the high level summary. Expect more posts about all of those things in the not so distant future.&lt;/p&gt;
+&lt;h2&gt;A fresh start&lt;/h2&gt;
+&lt;p&gt;I&#39;m very much seeing this new coat of paint as a fresh start.&lt;/p&gt;
+&lt;p&gt;I&#39;ve really missed having an outlet to just write down my thoughts and send them out onto the web for others to make of what they will. That&#39;s what I loved about this space (and the web in general) in the first place and that&#39;s my plan for it going forward. Fingers crossed, you might even get something out of what I write down too 🙂&lt;/p&gt;
+&lt;p&gt;Oh, and I can promise you no AI slop posts here too – this is all just me mashing my fingers into the keyboard (and for the record, I just like using em–dashes, that&#39;s me too). I&#39;ll be writing about AI, but not using AI to write.&lt;/p&gt;
+&lt;p&gt;As ever – if you&#39;ve got any thoughts, comments, ideas, I&#39;d love to hear from you. Drop me a comment on this post, an email, or a message on Bluesky.&lt;/p&gt;
+</content:encoded><pubDate>Thu, 11 Jun 2026 10:00:00 +0100</pubDate>
+      <dc:creator>Ashley Watson-Nolan</dc:creator>
+      <guid>https://ashleynolan.co.uk/blog/hello-again.html</guid>
+    </item>
+    <item>
       <title>The Front-End Tooling Survey 2019 - Results</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019-results.html</link><description>&lt;p&gt;It&#39;s been a little while coming, but the results from the 2019 Front-End Tooling Survey are now here!&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019-results.html</link><description>The results of the 2019 Front-End Tooling Survey are out! Check out the results and analysis of the responses here.</description>
+      <content:encoded>&lt;p&gt;It&#39;s been a little while coming, but the results from the 2019 Front-End Tooling Survey are now here!&lt;/p&gt;
 &lt;p&gt;This year, 3,005 developers answered 27 questions covering a wide range of front-end tools and methodologies. As always, a massive thank you from me to every single person that took the time to fill it in. Organising and writing up the survey has been especially challenging this year with the addition of a baby girl to our family (thus the delay in these results!).&lt;/p&gt;
 &lt;p&gt;As always it&#39;s super interesting to look at what’s changed over the last 12 months in front-end tooling and see if our thoughts and opinions are shared by other developers in the industry. These results (hopefully) help give an insight into the current usage trends and knowledge levels across front-end tools, as well as showing how these are changing over time by looking at &lt;a href=&quot;https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018-results&quot;&gt;the figures from previous surveys&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Quick Thanks&lt;/h3&gt;
@@ -2319,13 +2341,14 @@
 &lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
 &lt;!--End mc_embed_signup--&gt;
-</description><pubDate>Tue, 12 Nov 2019 08:00:00 +0000</pubDate>
+</content:encoded><pubDate>Tue, 12 Nov 2019 08:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019-results.html</guid>
     </item>
     <item>
       <title>2019 Tooling Survey Closes this Week</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-survey-2019-update.html</link><description>&lt;div class=&quot;img img--logo&quot;&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-survey-2019-update.html</link><description>Please spend 5 minutes to take part before the survey closes at the end of May.</description>
+      <content:encoded>&lt;div class=&quot;img img--logo&quot;&gt;
 	&lt;picture&gt;
 		&lt;source media=&quot;(max-width: 320px)&quot; srcset=&quot;https://ashleynolan.co.uk/assets/img/blog/tooling-survey/2019/logo-small.png&quot;&gt;
 		&lt;img src=&quot;https://ashleynolan.co.uk/assets/img/blog/tooling-survey/2019/logo-mid.png&quot; alt=&quot;The Front-End Tooling Survey 2019 Logo&quot;&gt;
@@ -2344,13 +2367,14 @@
 &lt;/ul&gt;
 &lt;h2&gt;A Big Thank You&lt;/h2&gt;
 &lt;p&gt;Thanks again for your continued support and I&#39;ll be in touch with the results shortly! :)&lt;/p&gt;
-</description><pubDate>Tue, 28 May 2019 12:00:00 +0100</pubDate>
+</content:encoded><pubDate>Tue, 28 May 2019 12:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-survey-2019-update.html</guid>
     </item>
     <item>
       <title>Announcing the Front-End Tooling Survey 2019</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019.html</link><description>&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: Please take part in &lt;a href=&quot;https://ashn.uk/survey-2019&quot;&gt;this years survey&lt;/a&gt; – every response is massively appreciated!&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019.html</link><description>The Front-end Tooling Survey is back! Please take part and help to provide insight into the tools we all use.</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: Please take part in &lt;a href=&quot;https://ashn.uk/survey-2019&quot;&gt;this years survey&lt;/a&gt; – every response is massively appreciated!&lt;/p&gt;
 &lt;p&gt;&amp;gt; &lt;strong&gt;&lt;a href=&quot;https://ashn.uk/survey-2019&quot;&gt;Fill out the 2019 Survey Now&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;img img--logo&quot;&gt;
 	&lt;picture&gt;
@@ -2387,13 +2411,14 @@
 		&lt;/h3&gt;&lt;/a&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-</description><pubDate>Mon, 08 Apr 2019 08:00:00 +0100</pubDate>
+</content:encoded><pubDate>Mon, 08 Apr 2019 08:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019.html</guid>
     </item>
     <item>
       <title>The Front-End Tooling Survey 2018 - Results</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018-results.html</link><description>&lt;p&gt;&lt;strong&gt;Update 12/09/2019&lt;/strong&gt;&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018-results.html</link><description>The results of the 2018 Front-End Tooling Survey are out! Check out the results and analysis of the responses here.</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;Update 12/09/2019&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The results for the 2019 edition of the Front-end Tooling Survey are now available. If you&#39;d like to view them, &lt;a href=&quot;https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019-results&quot;&gt;check them out here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update 25/07/2018&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Since publishing the initial results, I&#39;ve updated the survey after receiving 5,461 responses and updated the article and results data to reflect this.&lt;/p&gt;
@@ -4404,13 +4429,14 @@ of choice?&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
 &lt;!--End mc_embed_signup--&gt;
-</description><pubDate>Wed, 09 May 2018 13:15:00 +0100</pubDate>
+</content:encoded><pubDate>Wed, 09 May 2018 13:15:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018-results.html</guid>
     </item>
     <item>
       <title>Final Few Days to Make Your Voice Heard</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-update.html</link><description>&lt;div class=&quot;img img--logo&quot;&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-update.html</link><description>Please spend 5 minutes to take part before the survey closes at the end of March.</description>
+      <content:encoded>&lt;div class=&quot;img img--logo&quot;&gt;
 	&lt;picture&gt;
 		&lt;source media=&quot;(max-width: 320px)&quot; srcset=&quot;https://ashleynolan.co.uk/assets/img/blog/tooling-survey/2018/logo-small.png&quot;&gt;
 		&lt;img src=&quot;https://ashleynolan.co.uk/assets/img/blog/tooling-survey/2018/logo-mid.png&quot; width=&quot;801&quot; height=&quot;282&quot; alt=&quot;The Front-End Tooling Survey 2018 Logo&quot;&gt;
@@ -4429,13 +4455,14 @@ of choice?&lt;/strong&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;A Big Thank You&lt;/h2&gt;
 &lt;p&gt;Thanks again for your continued support and I&#39;ll be in touch with the results next month! :)&lt;/p&gt;
-</description><pubDate>Tue, 27 Mar 2018 08:00:00 +0100</pubDate>
+</content:encoded><pubDate>Tue, 27 Mar 2018 08:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-update.html</guid>
     </item>
     <item>
       <title>Announcing the Front-End Tooling Survey 2018</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018.html</link><description>&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: Please take part in &lt;a href=&quot;http://ashn.uk/survey-2018&quot;&gt;this years survey&lt;/a&gt; – I would massively appreciate it!&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018.html</link><description>The Front-end Tooling Survey is back!  Please take part and help to provide insight into the tools we all use.</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: Please take part in &lt;a href=&quot;http://ashn.uk/survey-2018&quot;&gt;this years survey&lt;/a&gt; – I would massively appreciate it!&lt;/p&gt;
 &lt;p&gt;&amp;gt; &lt;strong&gt;&lt;a href=&quot;http://ashn.uk/survey-2018&quot;&gt;Fill out the 2018 Survey Now&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;img img--logo&quot;&gt;
 	&lt;picture&gt;
@@ -4470,13 +4497,14 @@ of choice?&lt;/strong&gt;&lt;/p&gt;
 		&lt;/h3&gt;&lt;/a&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-</description><pubDate>Thu, 01 Mar 2018 08:00:00 +0000</pubDate>
+</content:encoded><pubDate>Thu, 01 Mar 2018 08:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018.html</guid>
     </item>
     <item>
       <title>2016 – My Year in Review</title>
-      <link>https://ashleynolan.co.uk/blog/2016-my-year-in-review.html</link><description>&lt;p&gt;So another year passes and it seems as usual to have passed by in the blink of an eye.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/2016-my-year-in-review.html</link><description>A quick look back at 2016 from both a personal and professional perspective.</description>
+      <content:encoded>&lt;p&gt;So another year passes and it seems as usual to have passed by in the blink of an eye.&lt;/p&gt;
 &lt;p&gt;It’s nice to take some time to reflect on the year that’s passed before getting stuck in to the year ahead – as well as it now becoming somewhat of a tradition for me to write an yearly review post.&lt;/p&gt;
 &lt;p&gt;First off, I want to thank anyone who has taken the time to read and share anything that I’ve written on the site.  I really do love writing and pushing my work out onto the web and it’s nice to know that people find what I have to say vaguely interesting while hopefully learning a little something from it along the way.&lt;/p&gt;
 &lt;hr&gt;
@@ -4508,13 +4536,14 @@ of choice?&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;Your turn…&lt;/h2&gt;
 &lt;p&gt;As ever – you’ve read my year in review, but how about yourself?  Take a few minutes to look back on your own 2016.  What did you achieve and were there things that you hoped that you might achieve that you should prioritise for the year ahead.&lt;/p&gt;
 &lt;p&gt;Here’s to a very Happy and fruitful 2017!&lt;/p&gt;
-</description><pubDate>Mon, 16 Jan 2017 13:00:00 +0000</pubDate>
+</content:encoded><pubDate>Mon, 16 Jan 2017 13:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/2016-my-year-in-review.html</guid>
     </item>
     <item>
       <title>The State of Front-End Tooling 2016 - Results</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016-results.html</link><description>&lt;p&gt;&lt;strong&gt;Update 12/09/2019&lt;/strong&gt;&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016-results.html</link><description>The results of the 2016 Front-End Tooling Survey are out! Check out the results and analysis of the responses here.</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;Update 12/09/2019&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The results for the 2019 edition of the Front-end Tooling Survey are now available. If you&#39;d like to view them, &lt;a href=&quot;https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019-results&quot;&gt;check them out here&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Update 06/01/2017&lt;/strong&gt;&lt;/p&gt;
@@ -5943,13 +5972,14 @@ of choice?&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
 &lt;!--End mc_embed_signup--&gt;
-</description><pubDate>Tue, 29 Nov 2016 14:00:00 +0000</pubDate>
+</content:encoded><pubDate>Tue, 29 Nov 2016 14:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016-results.html</guid>
     </item>
     <item>
       <title>Front-End Tooling Survey – 2016</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016.html</link><description>&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: If you can spare a few minutes of your time to fill out the &lt;a href=&quot;http://ashn.uk/survey-tooling-2016&quot;&gt;2016 Front-End Tooling Survey&lt;/a&gt;, I would massively appreciate it.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016.html</link><description>The Front-end Tooling Survey is back for 2016!  Take a look at how you can help to provide insight into the tools we all use.</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: If you can spare a few minutes of your time to fill out the &lt;a href=&quot;http://ashn.uk/survey-tooling-2016&quot;&gt;2016 Front-End Tooling Survey&lt;/a&gt;, I would massively appreciate it.&lt;/p&gt;
 &lt;p&gt;&amp;gt; &lt;strong&gt;&lt;a href=&quot;http://ashn.uk/survey-tooling-2016&quot;&gt;Fill out the Survey Now&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;After an &lt;em&gt;incredible&lt;/em&gt; response to the Front-End Tooling Survey I ran last year – a fantastic &lt;strong&gt;2028 responses&lt;/strong&gt; – I thought it would be interesting to repeat the survey a year on to find out how our tooling has moved on (or perhaps hasn’t in some cases).&lt;/p&gt;
@@ -5959,13 +5989,14 @@ of choice?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;So what are you waiting for?! &lt;a href=&quot;http://ashn.uk/survey-tooling-2016&quot;&gt;Fill in the Survey right now&lt;/a&gt;!&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;N.b. Thanks to &lt;a href=&quot;https://twitter.com/HugoGiraudel&quot;&gt;Hugo Giraudel&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/MrMartineau&quot;&gt;Zander Martineau&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/DamianMullins&quot;&gt;Damian Mullins&lt;/a&gt; for looking over the survey beforehand and providing feedback.&lt;/p&gt;
-</description><pubDate>Mon, 31 Oct 2016 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Mon, 31 Oct 2016 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016.html</guid>
     </item>
     <item>
       <title>Setting up a site on Digital Ocean</title>
-      <link>https://ashleynolan.co.uk/blog/setting-up-a-site-on-digital-ocean.html</link><description>&lt;p&gt;A couple of weeks ago, I successfully made the switch from hosting my site on GoDaddy to setting up a droplet on Digital Ocean.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/setting-up-a-site-on-digital-ocean.html</link><description>An explanation of the steps involved in moving your hosting to Digital Ocean.</description>
+      <content:encoded>&lt;p&gt;A couple of weeks ago, I successfully made the switch from hosting my site on GoDaddy to setting up a droplet on Digital Ocean.&lt;/p&gt;
 &lt;p&gt;My main reason for making the move was that I wanted a hosting environment that I felt I could truly control, as well as wanting to secure my site using HTTPS – &lt;a href=&quot;https://ashleynolan.co.uk/blog/moving-to-https-with-letsencrypt&quot;&gt;a potentially free service&lt;/a&gt; that GoDaddy wanted to charge me for enabling.&lt;/p&gt;
 &lt;h2&gt;Why Digital Ocean?&lt;/h2&gt;
 &lt;p&gt;I had done a bit of research into hosting providers along with their costs and they seemed very reasonable for the service provided.  Also, being a bit of a server noob, the extensive step-by-step tutorials they provide really appealed to me.  Having now completed the switch I can safely say that their articles were extremely useful throughout the process.&lt;/p&gt;
@@ -6007,13 +6038,14 @@ of choice?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Hopefully you can now see that setting up your own server isn’t such a daunting task.  There are lots of great tutorials out there explaining how, and more importantly why, you can configure your server in certain ways, giving you help every step of the way.&lt;/p&gt;
 &lt;p&gt;In total I spent a couple of nights completing the above steps to migrate my site across to Digital Ocean, but I think the time spent was massively worthwhile.  I now feel a lot more confident configuring aspects of my server that I previously knew little about.&lt;/p&gt;
 &lt;p&gt;If you have any questions or general comments about anything I’ve mentioned, please do get in touch – I’d love to hear other people’s experiences when setting up their own servers!&lt;/p&gt;
-</description><pubDate>Wed, 20 Jul 2016 10:00:00 +0100</pubDate>
+</content:encoded><pubDate>Wed, 20 Jul 2016 10:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/setting-up-a-site-on-digital-ocean.html</guid>
     </item>
     <item>
       <title>Moving to HTTPS with LetsEncrypt</title>
-      <link>https://ashleynolan.co.uk/blog/moving-to-https-with-letsencrypt.html</link><description>&lt;p&gt;Moving my site to HTTPS had been on my to-do list for quite a while – too long in fact.  Having read &lt;a href=&quot;https://timkadlec.com/2015/12/taking-lets-encrypt-for-a-spin/&quot;&gt;Tim Kadlec’s post&lt;/a&gt; towards the end of last year regarding a tool called &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;LetsEncrypt&lt;/a&gt;, it made me believe that even a server noob like myself would be able to make the transition.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/moving-to-https-with-letsencrypt.html</link><description>An overview of how you can easily make your sites secure by enabling HTTPS.</description>
+      <content:encoded>&lt;p&gt;Moving my site to HTTPS had been on my to-do list for quite a while – too long in fact.  Having read &lt;a href=&quot;https://timkadlec.com/2015/12/taking-lets-encrypt-for-a-spin/&quot;&gt;Tim Kadlec’s post&lt;/a&gt; towards the end of last year regarding a tool called &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;LetsEncrypt&lt;/a&gt;, it made me believe that even a server noob like myself would be able to make the transition.&lt;/p&gt;
 &lt;p&gt;So last week, I finally decided I would take LetsEncrypt for a spin and secure my site.&lt;/p&gt;
 &lt;h2&gt;Installing LetsEncrypt on NGINX or Apache&lt;/h2&gt;
 &lt;p&gt;In short, moving to HTTPS is incredibly straightforward whether your site is hosted on NGINX or Apache.&lt;/p&gt;
@@ -6054,13 +6086,14 @@ nginx -t &amp;&amp; nginx -s reload
 &lt;p&gt;To sum up, moving to HTTPS isn’t a daunting task.  LetsEncrypt is an extremely accessible tool and one that I couldn’t recommend more highly.&lt;/p&gt;
 &lt;p&gt;There are also so many useful resources out there that explain the entire process extremely well, irrespective of the server technologies that you are using.&lt;/p&gt;
 &lt;p&gt;So if you’ve not already taken steps to secure your own sites, take LetsEncrypt for a spin and let me know how you get on!&lt;/p&gt;
-</description><pubDate>Wed, 20 Jul 2016 09:45:00 +0100</pubDate>
+</content:encoded><pubDate>Wed, 20 Jul 2016 09:45:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/moving-to-https-with-letsencrypt.html</guid>
     </item>
     <item>
       <title>Some Updates…</title>
-      <link>https://ashleynolan.co.uk/blog/some-updates.html</link><description>&lt;p&gt;Last week, I spent some time moving my site onto &lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;Digital Ocean&lt;/a&gt;.  Previously it had been hosted with GoDaddy, but I became tired with the relative lack of control they gave me with respect to my server setup.  That combined with the prospect of having to pay for an SSL certificate – which you can generate yourself for free (more on that in a second) – gave me the push I needed to make the switch.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/some-updates.html</link><description>A brief post on some of the updates I’ve made to my site’s hosting recently.</description>
+      <content:encoded>&lt;p&gt;Last week, I spent some time moving my site onto &lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;Digital Ocean&lt;/a&gt;.  Previously it had been hosted with GoDaddy, but I became tired with the relative lack of control they gave me with respect to my server setup.  That combined with the prospect of having to pay for an SSL certificate – which you can generate yourself for free (more on that in a second) – gave me the push I needed to make the switch.&lt;/p&gt;
 &lt;p&gt;For those who don’t know anything about Digital Ocean, I highly recommend checking them out.  The &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04&quot;&gt;tutorials they provide&lt;/a&gt; are excellent, irrespective of the server technologies you want to use – I learned a tonne about what goes on under the hood of my server by reading through a few of them.&lt;/p&gt;
 &lt;p&gt;Rather than convolute this article with how I went about making the switch, I’ve written a &lt;a href=&quot;https://ashleynolan.co.uk/blog/setting-up-a-site-on-digital-ocean&quot;&gt;separate article&lt;/a&gt; about the steps involved in setting up a site on Digital Ocean using NGINX.&lt;/p&gt;
 &lt;h2&gt;Moving to HTTPS&lt;/h2&gt;
@@ -6077,25 +6110,27 @@ nginx -t &amp;&amp; nginx -s reload
 &lt;li&gt;&lt;a href=&quot;https://ashleynolan.co.uk/blog/setting-up-a-site-on-digital-ocean&quot;&gt;Setting up a server on Digital Ocean&lt;/a&gt; and&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://ashleynolan.co.uk/blog/moving-to-https-with-letsencrypt&quot;&gt;Moving to HTTPS using LetsEncrypt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description><pubDate>Wed, 20 Jul 2016 09:30:00 +0100</pubDate>
+</content:encoded><pubDate>Wed, 20 Jul 2016 09:30:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/some-updates.html</guid>
     </item>
     <item>
       <title>Attending FullStack 2016</title>
-      <link>https://ashleynolan.co.uk/blog/fullstack-2016.html</link><description>&lt;p&gt;Next week, I’m excited to be making the short trip down the M4 to speak at FullStack 2016 in London.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/fullstack-2016.html</link><description>A short overview of what I’ll be talking about at FullStack 2016 next week.</description>
+      <content:encoded>&lt;p&gt;Next week, I’m excited to be making the short trip down the M4 to speak at FullStack 2016 in London.&lt;/p&gt;
 &lt;p&gt;I’ll be talking about &#39;Developing for the Unknown&#39; and how keeping this in mind has influenced the work that I’ve been a part of over the last year at JUST EAT.  Ultimately, the aim of my talk is to get more developers thinking about the long term implications of the work they do – something that I plan to write about in more detail in the near future.&lt;/p&gt;
 &lt;p&gt;So if you want to hear about how we approach front-end development at JUST EAT and some of the best practices I recommend when working with CSS and JavaScript, then my talk is most definitely for you.&lt;/p&gt;
 &lt;p&gt;I’m personally looking forward to learning more about the latest developments around developing progressive web applications and how other companies – such as the BBC – are building scalable JavaScript applications and the processes that they are using that can help inform the work that we do.&lt;/p&gt;
 &lt;h2&gt;Come along&lt;/h2&gt;
 &lt;p&gt;If you work with JavaScript and you’re based in and around London (or fancy making the trip down), be sure to &lt;a href=&quot;https://skillsmatter.com/conferences/7278-fullstack-2016-the-conference-on-javascript-node-and-internet-of-things#overview&quot;&gt;check out the full lineup for the event&lt;/a&gt; – it looks like it should be a great few days!&lt;/p&gt;
-</description><pubDate>Tue, 05 Jul 2016 10:00:00 +0100</pubDate>
+</content:encoded><pubDate>Tue, 05 Jul 2016 10:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/fullstack-2016.html</guid>
     </item>
     <item>
       <title>Extending Sass with PostCSS</title>
-      <link>https://ashleynolan.co.uk/blog/extend-sass-with-postcss.html</link><description>&lt;p&gt;This morning, I got asked an interesting question on Twitter while discussing PostCSS:&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/extend-sass-with-postcss.html</link><description>A brief overview of why I find it useful extending Sass by adding PostCSS into the mix.</description>
+      <content:encoded>&lt;p&gt;This morning, I got asked an interesting question on Twitter while discussing PostCSS:&lt;/p&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot; data-conversation=&quot;none&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/WelshAsh_&quot;&gt;@WelshAsh_&lt;/a&gt; &lt;a href=&quot;https://twitter.com/NaveenS16&quot;&gt;@NaveenS16&lt;/a&gt; Can you tell me exactly why you are using PostCSS with Sass, what does it offer you? Help me understand the need?&lt;/p&gt;&amp;mdash; Ahmad Awais (@mrahmadawais) &lt;a href=&quot;https://twitter.com/mrahmadawais/status/691893845638930437&quot;&gt;January 26, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 &lt;p&gt;I figured writing a quick post would be easier than trying to fit my answer into 140 characters, so here’s a brief explanation of how I use PostCSS in combination with Sass.&lt;/p&gt;
@@ -6146,13 +6181,14 @@ nginx -t &amp;&amp; nginx -s reload
 &lt;p&gt;If you already use Autoprefixer, I honestly believe that setting up PostCSS in your workflow is a no-brainer, as it will enable you to explore and have easy access to the rest of the PostCSS plugin ecosystem.&lt;/p&gt;
 &lt;p&gt;If you don’t use Autoprefixer currently, then &lt;a href=&quot;http://postcss.parts/&quot;&gt;take a look at the PostCSS plugins&lt;/a&gt; that are currently available to see if PostCSS can help to improve your current workflow.&lt;/p&gt;
 &lt;p&gt;If you want to find out a bit more about PostCSS, then check out &lt;a href=&quot;http://julian.io/some-things-you-may-think-about-postcss-and-you-might-be-wrong/&quot;&gt;this excellent article&lt;/a&gt; by Julian Ćwirko, or take a look at &lt;a href=&quot;http://ashleynolan.co.uk/blog/postcss-a-review&quot;&gt;my previous post on the subject&lt;/a&gt;.&lt;/p&gt;
-</description><pubDate>Tue, 26 Jan 2016 13:30:00 +0000</pubDate>
+</content:encoded><pubDate>Tue, 26 Jan 2016 13:30:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/extend-sass-with-postcss.html</guid>
     </item>
     <item>
       <title>Aligning your Front End Process</title>
-      <link>https://ashleynolan.co.uk/blog/aligning-frontend-process.html</link><description>&lt;p&gt;Developing with front-end code is highly deceptive.  From a distance it seems straightforward; HTML, CSS and JavaScript are easy languages right?&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/aligning-frontend-process.html</link><description>A few tips for helping to align your processes across your team to help with consistency in your projects.</description>
+      <content:encoded>&lt;p&gt;Developing with front-end code is highly deceptive.  From a distance it seems straightforward; HTML, CSS and JavaScript are easy languages right?&lt;/p&gt;
 &lt;p&gt;Not so much.&lt;/p&gt;
 &lt;p&gt;As a project scales, the structure of your front-end code becomes essential.  How you choose to do things when your website has just a few pages and one developer working on it can quickly come back to bite you if you neglect to think about the future.&lt;/p&gt;
 &lt;p&gt;At JUST EAT we have a number of developers working on the front-end of any one of our products.  As with any project, ensuring that those developers are working together, and not against each other, is of massive importance.&lt;/p&gt;
@@ -6192,13 +6228,14 @@ nginx -t &amp;&amp; nginx -s reload
 &lt;p&gt;Trying to keep a consistent codebase which is being worked on by a number of developers isn’t easy, especially as new members join and your team grows.  The key is to put the right processes in place that will gain you and your team the most value over time.&lt;/p&gt;
 &lt;p&gt;Look at what causes you the most headaches – is there confusion over how to do simple things like compiling preprocessor code or image compressing?  If so, spend time on your workflow tooling.  Is your CSS hard to manage because the structure isn’t clear or there is too much inconsistency?  Look at how you can modularise your CSS and tools that can help ensure your team writes CSS in a more consistent manner.&lt;/p&gt;
 &lt;p&gt;Putting the effort in to review your workflow and team processes will pay back handsomely over time.&lt;/p&gt;
-</description><pubDate>Sat, 16 Jan 2016 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Sat, 16 Jan 2016 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/aligning-frontend-process.html</guid>
     </item>
     <item>
       <title>2015 – My Year in Review</title>
-      <link>https://ashleynolan.co.uk/blog/2015-my-year-in-review.html</link><description>&lt;p&gt;So, didn’t 2015 go pretty quick?!&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/2015-my-year-in-review.html</link><description>A quick look back at 2015 from both a personal and professional perspective.</description>
+      <content:encoded>&lt;p&gt;So, didn’t 2015 go pretty quick?!&lt;/p&gt;
 &lt;p&gt;At the start of last year, I wrote a post with the aim of documenting some of the achievements of the previous 12 months, while setting out some goals for the forthcoming year.  It’s nice to have these documented somewhere to be able to look back on them in the future and so I wanted to do the same at the start of 2016.&lt;/p&gt;
 &lt;p&gt;As a side note – the fact that you’re reading this means that in all likelihood you’ll have visited this site previously and have helped contribute to the growth of this site over the last 12 months – and for that I’m really grateful :)&lt;/p&gt;
 &lt;h2&gt;Professionally&lt;/h2&gt;
@@ -6233,22 +6270,24 @@ nginx -t &amp;&amp; nginx -s reload
 &lt;p&gt;So that’s my year in review – how about yourself?  What have you achieved in 2015?&lt;/p&gt;
 &lt;p&gt;If you haven’t done so already, take a few moments and think about the work you’ve done throughout 2015, setting yourself some rough goals for the year ahead.&lt;/p&gt;
 &lt;p&gt;…and Happy New Year!&lt;/p&gt;
-</description><pubDate>Wed, 13 Jan 2016 11:30:00 +0000</pubDate>
+</content:encoded><pubDate>Wed, 13 Jan 2016 11:30:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/2015-my-year-in-review.html</guid>
     </item>
     <item>
       <title>CSS text-shadow video tutorial</title>
-      <link>https://ashleynolan.co.uk/blog/css-text-shadow-video-tutorial.html</link><description>&lt;p&gt;Last year, I wrote a post about &lt;a href=&quot;https://ashleynolan.co.uk/blog/playing-around-with-css-text-shadow&quot;&gt;Playing around with the CSS text-shadow property&lt;/a&gt;.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/css-text-shadow-video-tutorial.html</link><description>A video tutorial of my post on text-shadow is now available to view on Youtube.</description>
+      <content:encoded>&lt;p&gt;Last year, I wrote a post about &lt;a href=&quot;https://ashleynolan.co.uk/blog/playing-around-with-css-text-shadow&quot;&gt;Playing around with the CSS text-shadow property&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Well, handily the folks at Webucator have produced a video tutorial based on my post which is now &lt;a href=&quot;https://www.youtube.com/watch?v=48Y9D6uH_Tc&amp;amp;feature=youtu.be&quot;&gt;available to view on Youtube&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Webucator have a bunch of &lt;a href=&quot;https://www.webucator.com/webdesign/css.cfm&quot;&gt;CSS training resources&lt;/a&gt; – both free and paid for – so if you think they could be useful for you, check them out.&lt;/p&gt;
-</description><pubDate>Wed, 13 Jan 2016 09:30:00 +0000</pubDate>
+</content:encoded><pubDate>Wed, 13 Jan 2016 09:30:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/css-text-shadow-video-tutorial.html</guid>
     </item>
     <item>
       <title>The State of Front-End Tooling – 2015</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results.html</link><description>&lt;p&gt;&lt;strong&gt;Update 30/11/2016&lt;/strong&gt;&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results.html</link><description>I asked front-end developers to fill in a survey about their their knowledge and usage patterns across a number of front-end tools.  Check out the results.</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;Update 30/11/2016&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If you’re interested in finding out more details about current Front-End Tooling trends, &lt;a href=&quot;https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016-results&quot;&gt;I’ve now published the results from the 2016 Edition of this Survey&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Update 12/10/2015&lt;/strong&gt; – Thanks to the incredible response to the survey!&lt;/p&gt;
@@ -6780,13 +6819,14 @@ nginx -t &amp;&amp; nginx -s reload
 &lt;p&gt;So, what can be summarised overall?  Well, it seems that the adoption rate of front-end tools across the board is pretty high.  If you’re someone who has been putting off learning more about workflow tools in whatever area, be it CSS, JavaScript module bundlers, or Task Runners, you are in the minority and these skills are now a very important part of being a front-end developer in 2015.&lt;/p&gt;
 &lt;p&gt;On the flip side, use of JavaScript testing tools seems to be lagging behind the adoption rate of tools in other areas – something that can only be solved by better edutcaion of how to use and integrate these tools into peoples projects and as importantly, how to write JavaScript that is easy to test.&lt;/p&gt;
 &lt;p&gt;If anyone has any questions about any of the results, or would like me to look at other cross sections of the responses, &lt;a href=&quot;https://twitter.com/WelshAsh_&quot;&gt;message me on Twitter&lt;/a&gt; and I’ll do my best to help!&lt;/p&gt;
-</description><pubDate>Tue, 08 Sep 2015 10:00:00 +0100</pubDate>
+</content:encoded><pubDate>Tue, 08 Sep 2015 10:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results.html</guid>
     </item>
     <item>
       <title>Front-End Tooling Survey – Help Needed!</title>
-      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015.html</link><description>&lt;p&gt;So I’m going to get straight to the point.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015.html</link><description>As part of some research I’m doing into modern front-end workflows and tooling, it would be super useful if you could spend 2 minutes to answer a couple of brief questions…</description>
+      <content:encoded>&lt;p&gt;So I’m going to get straight to the point.&lt;/p&gt;
 &lt;p&gt;If you could spare 2 minutes of your time to fill out a &lt;em&gt;very brief&lt;/em&gt; &lt;a href=&quot;http://ashn.uk/survey-tooling&quot;&gt;survey I’m running on front-end tools&lt;/a&gt;, I would massively appreciate it.&lt;/p&gt;
 &lt;p&gt;&amp;gt; &lt;strong&gt;&lt;a href=&quot;http://ashn.uk/survey-tooling&quot;&gt;Fill out the Survey Now&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -6795,13 +6835,14 @@ nginx -t &amp;&amp; nginx -s reload
 &lt;p&gt;The survey is a number of very short multiple choice questions and should take less than a couple of minutes to answer, so if you could fill it in – as well as passing it on and sharing it with other front-end developers that you know – I’d be really grateful.&lt;/p&gt;
 &lt;p&gt;As an incentive, at the end of &lt;a href=&quot;http://ashn.uk/survey-tooling&quot;&gt;the survey&lt;/a&gt; there will be a big party with &lt;a href=&quot;http://theportalwiki.com/wiki/Cake&quot;&gt;cake for everyone&lt;/a&gt;*.&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;* The Cake is a lie.&lt;/small&gt;&lt;/p&gt;
-</description><pubDate>Tue, 25 Aug 2015 08:45:00 +0100</pubDate>
+</content:encoded><pubDate>Tue, 25 Aug 2015 08:45:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/frontend-tooling-survey-2015.html</guid>
     </item>
     <item>
       <title>Managing Inline Images in CSS</title>
-      <link>https://ashleynolan.co.uk/blog/managing-inline-images-in-css.html</link><description>&lt;p&gt;It’s fairly old news that it’s a good idea to make as few requests as possible when creating a website of any size.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/managing-inline-images-in-css.html</link><description>A look into the best ways of managing inline images for use in your CSS files.</description>
+      <content:encoded>&lt;p&gt;It’s fairly old news that it’s a good idea to make as few requests as possible when creating a website of any size.&lt;/p&gt;
 &lt;p&gt;Latency from HTTP requests can potentially be very expensive, &lt;a href=&quot;https://developers.google.com/speed/docs/insights/mobile?hl=en&quot;&gt;especially on mobile&lt;/a&gt; where it can take around 200-300 ms roundtrip on a 3G network and around 50-100 ms on 4G.  This can soon start to add up when requesting multiple assets on your website.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://css-tricks.com/data-uris/&quot;&gt;Inlining images&lt;/a&gt; in your CSS using data URIs is one way to help minify these requests, but this can lead to a couple of issues,  namely:&lt;/p&gt;
 &lt;ol&gt;
@@ -6830,13 +6871,14 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;/pre&gt;
 &lt;p&gt;This will then take the referenced asset and convert it to a data URI when the CSS is compiled, as well as keeping a reference to the original asset in your CSS should it need to be modified in the future – huzzah!&lt;/p&gt;
 &lt;p&gt;So, the next time you think about putting a data URI straight into your CSS, take a look at &lt;a href=&quot;https://github.com/borodean/postcss-assets&quot;&gt;postcss-assets&lt;/a&gt; – it really could help you out when it comes to maintaining inline assets on a project.&lt;/p&gt;
-</description><pubDate>Thu, 06 Aug 2015 09:30:00 +0100</pubDate>
+</content:encoded><pubDate>Thu, 06 Aug 2015 09:30:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/managing-inline-images-in-css.html</guid>
     </item>
     <item>
       <title>PostCSS – Sass Killer or Preprocessing Pretender?</title>
-      <link>https://ashleynolan.co.uk/blog/postcss-a-review.html</link><description>&lt;p&gt;&lt;a href=&quot;https://github.com/postcss/postcss&quot;&gt;PostCSS&lt;/a&gt; first came onto my radar back in February when I read Ben Frain’s excellent article – &lt;a href=&quot;http://benfrain.com/breaking-up-with-sass-postcss/&quot;&gt;Breaking up with Sass: it’s not you, it’s me&lt;/a&gt;.  I was extremely happy with my workflow at the time – using Sass for all of my preprocessing needs – but it piqued my interest in PostCSS enough to make sure that I filed it away in the &#39;must investigate later&#39; part of my head (one that seems to be constantly overflowing).&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/postcss-a-review.html</link><description>I take a look at a front-end tool that’s been gathering a fair bit of attention as of late.</description>
+      <content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/postcss/postcss&quot;&gt;PostCSS&lt;/a&gt; first came onto my radar back in February when I read Ben Frain’s excellent article – &lt;a href=&quot;http://benfrain.com/breaking-up-with-sass-postcss/&quot;&gt;Breaking up with Sass: it’s not you, it’s me&lt;/a&gt;.  I was extremely happy with my workflow at the time – using Sass for all of my preprocessing needs – but it piqued my interest in PostCSS enough to make sure that I filed it away in the &#39;must investigate later&#39; part of my head (one that seems to be constantly overflowing).&lt;/p&gt;
 &lt;p&gt;Upon joining &lt;a href=&quot;https://ashleynolan.co.uk/blog/a-new-challenge&quot;&gt;JUST EAT back in May&lt;/a&gt;, my first task has been to review and potentially redefine our front-end processes going forward.  As part of this review, I thought it was time to take a deeper look into PostCSS and what it has to offer.&lt;/p&gt;
 &lt;p&gt;So is PostCSS the future of preprocessing?  Here’s my thoughts on the subject.&lt;/p&gt;
 &lt;hr&gt;
@@ -6978,13 +7020,14 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;p&gt;As should be remembered when adopting any new tool however, there are going to be some edge cases that need to be ironed out.  Ensure you thoroughly research whether PostCSS will give you all of the things you need it to before deciding on whether it is ready to use in your workflow.&lt;/p&gt;
 &lt;p&gt;At JUST EAT, we’ve added PostCSS to our workflow, but currently only to provide additional functionality that Sass can’t, such as Autoprefixer.  I envisage that we will gradually shift over to using PostCSS as the ability to write more flexible plugins that can transform parsed SCSS files becomes available.  For our team it makes sense to keep a syntax that the majority of our developers feel comfortable writing – at least until PostCSS has become slightly more mature.&lt;/p&gt;
 &lt;p&gt;But that doesn’t mean PostCSS isn’t right for your team or project – I would fully encourage you to take a look yourself at what PostCSS can offer you.  If PostCSS continues to develop and improve at the rate it is right now, it’s likely to be a part of many front-end developers workflows in the near future.&lt;/p&gt;
-</description><pubDate>Fri, 17 Jul 2015 09:30:00 +0100</pubDate>
+</content:encoded><pubDate>Fri, 17 Jul 2015 09:30:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/postcss-a-review.html</guid>
     </item>
     <item>
       <title>A Guide to the Front-End Interview Process</title>
-      <link>https://ashleynolan.co.uk/blog/a-guide-to-front-end-interviews.html</link><description>&lt;p&gt;One of my former bosses used to tell me that even if you aren’t actively looking for a job, it can be a good idea to go along to a job interview once in a while to keep yourself sharp.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/a-guide-to-front-end-interviews.html</link><description>Having recently been an interviewer and interviewee, I wanted to put together a brief guide for those preparing to interview for front-end roles.</description>
+      <content:encoded>&lt;p&gt;One of my former bosses used to tell me that even if you aren’t actively looking for a job, it can be a good idea to go along to a job interview once in a while to keep yourself sharp.&lt;/p&gt;
 &lt;p&gt;Having very recently changed job myself, I can now see what he meant.&lt;/p&gt;
 &lt;p&gt;Interviewing for the first time in over 3 years was tough.  Although, as front-end developers, we’re very lucky to be working in an industry in which there are plenty of jobs available, the very best roles are – as expected – looking for the very best devs and the interview process can be very rigourous.&lt;/p&gt;
 &lt;p&gt;So I wanted to share what I have learned from my recent experiences as a candidate and previously as an interviewer.  Although my observations come from my experience with front-end roles, some of the points raised could easily be relevant when applying for any technical role.&lt;/p&gt;
@@ -7044,13 +7087,14 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;p&gt;Interviewers ultimately want you to be successful – they aren’t trying to set you up to fail.  These points should help you focus on some of the key areas that you should prepare for.&lt;/p&gt;
 &lt;p&gt;I’ve avoided going over general interview advice, but make sure you do the expected groundwork around knowing a bit about what the company you’re applying for actually does – it usually helps!&lt;/p&gt;
 &lt;p&gt;If you’ve had any recent experiences interviewing for front-end positions which you’d like to share, I’d love to hear from you in the comments.&lt;/p&gt;
-</description><pubDate>Wed, 01 Jul 2015 09:30:00 +0100</pubDate>
+</content:encoded><pubDate>Wed, 01 Jul 2015 09:30:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/a-guide-to-front-end-interviews.html</guid>
     </item>
     <item>
       <title>Help to get Picture and Srcset fully implemented in Microsoft Edge</title>
-      <link>https://ashleynolan.co.uk/blog/help-make-picture-and-srcset-fully-implemented-in-ms-edge.html</link><description>&lt;p&gt;&lt;strong&gt;TL:DR&lt;/strong&gt;&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/help-make-picture-and-srcset-fully-implemented-in-ms-edge.html</link><description>If you care about the future of Responsive Images, please carry out the following two requests.</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;TL:DR&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;If you use &lt;a href=&quot;https://github.com/scottjehl/picturefill&quot;&gt;Picturefill&lt;/a&gt; on any of your websites, update it to v2.3.1.&lt;/p&gt;
@@ -7075,13 +7119,14 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;h2&gt;Do your bit&lt;/h2&gt;
 &lt;p&gt;Responsive Images have come a long way, but there’s still a little way to go before we have native implementation across the board.&lt;/p&gt;
 &lt;p&gt;By acting on the two simple steps above, you’ll be helping developers everywhere get a step closer to that goal.&lt;/p&gt;
-</description><pubDate>Thu, 18 Jun 2015 11:30:00 +0100</pubDate>
+</content:encoded><pubDate>Thu, 18 Jun 2015 11:30:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/help-make-picture-and-srcset-fully-implemented-in-ms-edge.html</guid>
     </item>
     <item>
       <title>Kickoff Version 5 released</title>
-      <link>https://ashleynolan.co.uk/blog/kickoff-version-5-released.html</link><description>&lt;p&gt;After much tweaking and testing, &lt;a href=&quot;http://trykickoff.github.io/&quot;&gt;Version 5 of Kickoff&lt;/a&gt; has now been released!&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/kickoff-version-5-released.html</link><description>A new version of the lightweight front-end framework has been released.</description>
+      <content:encoded>&lt;p&gt;After much tweaking and testing, &lt;a href=&quot;http://trykickoff.github.io/&quot;&gt;Version 5 of Kickoff&lt;/a&gt; has now been released!&lt;/p&gt;
 &lt;p&gt;We’ve also been working hard to update Kickoff’s associated projects.  Both &lt;a href=&quot;https://github.com/TryKickoff/statix&quot;&gt;Statix&lt;/a&gt; and the &lt;a href=&quot;https://github.com/TryKickoff/generator-kickoff&quot;&gt;Kickoff generator&lt;/a&gt; have been developed to reflect the V5 changes.&lt;/p&gt;
 &lt;p&gt;You may notice that Kickoff and it’s related projects have been moved into a shiny new &lt;a href=&quot;https://github.com/trykickoff/&quot;&gt;Github organisation – TryKickoff&lt;/a&gt;.  We did this mainly to move aweay from being aligned to a specific company – especially as I recently moved from TMW to &lt;a href=&quot;https://ashleynolan.co.uk/blog/a-new-challenge&quot;&gt;work at Just Eat&lt;/a&gt;.  We’ve got big plans for these projects and are looking for contributors to help us so if you’d like to get involved, please do &lt;a href=&quot;mailto:trykickoff@gmail.com&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you’ve never heard of Kickoff or any of it’s related projects, here’s a quick overview along with the most recent updates.&lt;/p&gt;
@@ -7122,13 +7167,14 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;h2&gt;Help Contribute!&lt;/h2&gt;
 &lt;p&gt;If you use &lt;a href=&quot;http://trykickoff.github.io/&quot;&gt;Kickoff&lt;/a&gt; or &lt;a href=&quot;https://github.com/TryKickoff/statix&quot;&gt;Statix&lt;/a&gt;, we’d love to hear about how we can improve the framework in future releases – simply submit an issue or suggestion on the associated Github repo.  Likewise if you’d like to get involved in contributing to any of the projects, &lt;a href=&quot;mailto:trykickoff@gmail.com&quot;&gt;just get in touch&lt;/a&gt;.  We’re always looking for new ideas that can add value to the framework and people that can help us to move faster in doing just that.&lt;/p&gt;
 &lt;p&gt;Lastly, if you like using Kickoff or any of the Kickoff family of projects, please do give us a mention on Twitter.  As with any Open Source project, we rely massively on word-of-mouth to spread the reach of the framework and we’d love for as many developers to benefit from the work we do as possible :)&lt;/p&gt;
-</description><pubDate>Tue, 16 Jun 2015 09:00:00 +0100</pubDate>
+</content:encoded><pubDate>Tue, 16 Jun 2015 09:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/kickoff-version-5-released.html</guid>
     </item>
     <item>
       <title>A New Challenge</title>
-      <link>https://ashleynolan.co.uk/blog/a-new-challenge.html</link><description>&lt;p&gt;This year marked my 7th year living in London, a length of time I never envisiged spending here when I first moved back in 2008.  It will however also be my last year in London; next month I’ll be moving back to Wales to start a whole new adventure.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/a-new-challenge.html</link><description>Looking forward to new challenges and experiences as I move out of London.</description>
+      <content:encoded>&lt;p&gt;This year marked my 7th year living in London, a length of time I never envisiged spending here when I first moved back in 2008.  It will however also be my last year in London; next month I’ll be moving back to Wales to start a whole new adventure.&lt;/p&gt;
 &lt;h2&gt;Moving on&lt;/h2&gt;
 &lt;p&gt;The last 6 years have had their own unique challenges.&lt;/p&gt;
 &lt;p&gt;Shortly after moving to London, I met my girlfriend &lt;a href=&quot;http://twitter.com/Super_sair&quot;&gt;Sarah&lt;/a&gt;, and true to &lt;a href=&quot;http://en.wikipedia.org/wiki/Sod%27s_law&quot;&gt;Sod’s law&lt;/a&gt; she lived in the exact area that I had just moved away from – South Wales.&lt;/p&gt;
@@ -7156,13 +7202,14 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;p&gt;We also have plans to expand upon the &lt;a href=&quot;http://tech.tmw.co.uk/code/TMW-frontend-guidelines/&quot;&gt;front-end guidelines&lt;/a&gt; that have been written during my time at TMW and build these into a more specific set of resources for developers.  More details to come on that in the coming months.&lt;/p&gt;
 &lt;h2&gt;To the future&lt;/h2&gt;
 &lt;p&gt;So that’s it really!  Hopefully, I’ll have a whole bunch of new things to write about when I start work at Just Eat, but if anyone has any particular questions that they’d like to find out about, get in touch in one of the usual ways and I’ll do my best to answer them.&lt;/p&gt;
-</description><pubDate>Thu, 16 Apr 2015 09:00:00 +0100</pubDate>
+</content:encoded><pubDate>Thu, 16 Apr 2015 09:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/a-new-challenge.html</guid>
     </item>
     <item>
       <title>Playing around with CSS text-shadow</title>
-      <link>https://ashleynolan.co.uk/blog/playing-around-with-css-text-shadow.html</link><description>&lt;p&gt;Whenever I get some downtime in work, I try to play around with a front-end technology that I may not have used too much in the past and see what potential it might have for creating some cool effects.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/playing-around-with-css-text-shadow.html</link><description>What I learned playing around with CSS text-shadow for a couple of hours.</description>
+      <content:encoded>&lt;p&gt;Whenever I get some downtime in work, I try to play around with a front-end technology that I may not have used too much in the past and see what potential it might have for creating some cool effects.&lt;/p&gt;
 &lt;p&gt;Last week, I decided I’d take a look at the humble &lt;code&gt;text-shadow&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Exploring the property&lt;/h2&gt;
 &lt;p&gt;Browser support for CSS &lt;code&gt;text-shadow&lt;/code&gt; &lt;a href=&quot;http://caniuse.com/#feat=css-textshadow&quot;&gt;is excellent&lt;/a&gt;, but the &lt;a href=&quot;http://www.w3.org/TR/2003/CR-css3-text-20030514/#text-shadows&quot;&gt;way in which it’s defined&lt;/a&gt; makes it a little bit of a strange property.&lt;/p&gt;
@@ -7220,13 +7267,14 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;p&gt;If anyone has any ideas of other text effects they could create with &lt;code&gt;text-shadow&lt;/code&gt;, fork the demo and let me know what you come up with – I think that I’ve only really scratched the surface with my efforts.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://codepen.io/ashleynolan/pen/QwvKaw?editors=110&quot;&gt;View my text-shadow demo on CodePen&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-</description><pubDate>Thu, 29 Jan 2015 16:00:00 +0000</pubDate>
+</content:encoded><pubDate>Thu, 29 Jan 2015 16:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/playing-around-with-css-text-shadow.html</guid>
     </item>
     <item>
       <title>2014 – My Year in Review</title>
-      <link>https://ashleynolan.co.uk/blog/2014-my-year-in-review.html</link><description>&lt;p&gt;It’s that time of the year when it can be nice to take a quick breather, look back and reflect on the achievements of the last 12 months.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/2014-my-year-in-review.html</link><description>A quick look back at my 2014.</description>
+      <content:encoded>&lt;p&gt;It’s that time of the year when it can be nice to take a quick breather, look back and reflect on the achievements of the last 12 months.&lt;/p&gt;
 &lt;p&gt;So I wanted to take a look over some of the things I’ve been focussing on this last year and documenting their progress.  That way when 2015 comes to a close, I can look back and see how things have moved on.&lt;/p&gt;
 &lt;p&gt;This post is primarily for future me to look back on and remember what 2014 was all about, but hopefully others may find it an interesting read as well :)&lt;/p&gt;
 &lt;h2&gt;Professionally&lt;/h2&gt;
@@ -7261,13 +7309,14 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;p&gt;So that’s my year in review – how about yourself?  What have you achieved in 2014?&lt;/p&gt;
 &lt;p&gt;If you haven’t done so already, take a few moments and think about the work you’ve done throughout 2014, setting yourself some rough goals for the year ahead.&lt;/p&gt;
 &lt;p&gt;…and Happy New Year!&lt;/p&gt;
-</description><pubDate>Mon, 05 Jan 2015 15:00:00 +0000</pubDate>
+</content:encoded><pubDate>Mon, 05 Jan 2015 15:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/2014-my-year-in-review.html</guid>
     </item>
     <item>
       <title>Christmas Tracker – A Node.js Realtime Experiment</title>
-      <link>https://ashleynolan.co.uk/blog/christmas-tracker-a-node-realtime-experiment.html</link><description>&lt;p&gt;I’ve been a little quiet on my blog of late – and for once it’s not just through laziness, but because I’ve been working on a little side project – &lt;a href=&quot;http://www.christmastracker.com&quot;&gt;Christmas Tracker&lt;/a&gt;.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/christmas-tracker-a-node-realtime-experiment.html</link><description>Check out my latest side project – a realtime Christmas word watcher built in NodeJS and SVG.</description>
+      <content:encoded>&lt;p&gt;I’ve been a little quiet on my blog of late – and for once it’s not just through laziness, but because I’ve been working on a little side project – &lt;a href=&quot;http://www.christmastracker.com&quot;&gt;Christmas Tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Christmas Tracker watches what Christmassy things people are mentioning in realtime on Twitter.  It’s built using NodeJS and front–end technologies, with some heavy use of SVG for the illustrations.&lt;/p&gt;
 &lt;p&gt;The illustrations on the site were designed by my good friends &lt;a href=&quot;https://www.behance.net/lorenateruel&quot;&gt;Lorena Teruel&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/kinslowdian&quot;&gt;Simon Kinslow&lt;/a&gt; – they did a beautiful job in a very short space of time and I’m really happy with how the site looks!  I’ve also separated out the illustration effect and &lt;a href=&quot;http://codepen.io/ashleynolan/pen/WbxNap&quot;&gt;posted it up on CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Aside from the illustrations, my other favourite feature is the top words view which you can see by clicking the &#39;See Top Words&#39; button in the top left of the site.  I’m storing all of the historical data for each day and plan to graph this to see if there are any interesting data insights as Christmas approaches.&lt;/p&gt;
@@ -7276,26 +7325,28 @@ background-image: inline(&#39;img/icons/icon-arrow.svg&#39;); // also inlines SV
 &lt;p&gt;The biggest thing that I learned is that getting your hands dirty with servers that can cope with a decent amount of traffic isn’t an easy task, especially as a front-end dev with literally no experience in doing so beforehand.&lt;/p&gt;
 &lt;p&gt;I’m planning to write up a number of blog posts around this and the other things I’ve learned over the last couple of months, so if you’re interested in Node.js or realtime in general, keep your eyes peeled for them in the near future.&lt;/p&gt;
 &lt;p&gt;Until then, I hope you &lt;a href=&quot;http://www.christmastracker.com&quot;&gt;enjoy the site&lt;/a&gt;.  If you do, let me know on Twitter – I’d love to know what people think of the project.&lt;/p&gt;
-</description><pubDate>Wed, 17 Dec 2014 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Wed, 17 Dec 2014 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/christmas-tracker-a-node-realtime-experiment.html</guid>
     </item>
     <item>
       <title>A collection of subtle loading effects using CSS transforms and animations</title>
-      <link>https://ashleynolan.co.uk/blog/a-collection-of-animated-loaders.html</link><description>&lt;p&gt;Ever since Destiny launched on PS4 last month, I’ve been using the PSN app and website a fair bit.  Yesterday morning, while browsing on my mobile, I came across a small loading animation used on the mobile site that I really liked; so much so, that I decided to recreate it myself.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/a-collection-of-animated-loaders.html</link><description>Some cool, but subtle, loading animations I knocked up on Codepen in a spare few hours.</description>
+      <content:encoded>&lt;p&gt;Ever since Destiny launched on PS4 last month, I’ve been using the PSN app and website a fair bit.  Yesterday morning, while browsing on my mobile, I came across a small loading animation used on the mobile site that I really liked; so much so, that I decided to recreate it myself.&lt;/p&gt;
 &lt;p&gt;The thing is, as I started to recreate it, I realised there were loads of variations on the same theme that could be put together easily by changing just a few lines of CSS.  So I made some more variations based on that initial theme.&lt;/p&gt;
 &lt;p&gt;Check out the &lt;a href=&quot;http://codepen.io/ashleynolan/pen/owvcl&quot;&gt;result on Codepen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;All of the examples use a simple combination of CSS3 transforms and animation.  The thing I like about them is that they are nice and subtle, especially when browsing on a mobile device.&lt;/p&gt;
 &lt;p&gt;I’ve tried to make the demo quite variable driven, so play around with the values at the top of the CSS and see how it affects the animations.&lt;/p&gt;
 &lt;p&gt;I’m sure there are even more variations based on a simple row of 6 squares animating – if you have any ideas, fork the code and play around with it.  I’d love to see what other people can come up with and I’ll link to any other good examples here.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://codepen.io/ashleynolan/pen/owvcl&quot;&gt;View the loaders on CodePen&lt;/a&gt;&lt;/p&gt;
-</description><pubDate>Wed, 08 Oct 2014 08:30:00 +0100</pubDate>
+</content:encoded><pubDate>Wed, 08 Oct 2014 08:30:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/a-collection-of-animated-loaders.html</guid>
     </item>
     <item>
       <title>Writing CSS (and Sass) that doesn’t suck</title>
-      <link>https://ashleynolan.co.uk/blog/writing-css-and-sass-that-doesnt-suck.html</link><description>&lt;p&gt;Working at an agency, I sometimes have the pleasure (misfortune?) of taking over a front–end project started by a freelancer that we’ve brought in. More regularly, I inherit some code written by a developer in our team at TMW, but front–end may not be their main skill.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/writing-css-and-sass-that-doesnt-suck.html</link><description>A list of some of the issues that I’ve come across when inheriting CSS that you should avoid when authoring your own projects. </description>
+      <content:encoded>&lt;p&gt;Working at an agency, I sometimes have the pleasure (misfortune?) of taking over a front–end project started by a freelancer that we’ve brought in. More regularly, I inherit some code written by a developer in our team at TMW, but front–end may not be their main skill.&lt;/p&gt;
 &lt;p&gt;Taking over these projects can be an interesting experience.&lt;/p&gt;
 &lt;p&gt;Often when taking over others work, you can learn new techniques from seeing how other developers approach a problem that you may look at completely differently.  The flip side of this is seeing the mistakes in approach that are present in the code you inherit.&lt;/p&gt;
 &lt;p&gt;We’ve all been there – sometimes they’re the small mistakes that make your eyes narrow slightly.  Occasionally you’ll hit the jackpot and encouter pieces of code that make you want to repeatedly facepalm while screaming “WHAT DID I DO TO MAKE YOU HATE ME?!?!?11!”.&lt;/p&gt;
@@ -7469,13 +7520,14 @@ $bp-huge              : 1600;&lt;/code&gt;
 &lt;p&gt;So that’s all I’ve got for you!&lt;/p&gt;
 &lt;p&gt;If you’re interested in reading further examples of bad CSS, check out Harry Roberts’ excellent article &lt;a href=&quot;http://csswizardry.com/2012/11/code-smells-in-css/&quot;&gt;‘Code Smells in CSS’&lt;/a&gt;. It is in a very similar vein to this article (and I have crossed over with some of the points made on there).  He mentions a number of other great tips to look out for and avoid when authoring CSS.&lt;/p&gt;
 &lt;p&gt;If you’ve got any examples of bad CSS you’ve encountered, I’d love to see them – get in touch in the comments or on Twitter.  If nothing else it’ll make me feel better knowing that the pain is shared by others :)&lt;/p&gt;
-</description><pubDate>Tue, 30 Sep 2014 11:30:00 +0100</pubDate>
+</content:encoded><pubDate>Tue, 30 Sep 2014 11:30:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/writing-css-and-sass-that-doesnt-suck.html</guid>
     </item>
     <item>
       <title>A Retort on Simplicity</title>
-      <link>https://ashleynolan.co.uk/blog/a-retort-on-simplicity.html</link><description>&lt;p&gt;There has been a lot of talk about Simplicity on the web as of late.  It’s a good conversation to be having, but one that I think has cast an unfair scapegoat in our quest to keep things simple.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/a-retort-on-simplicity.html</link><description>Simplicity isn’t about using out development tools less – it’s about using the right tool for the right task.</description>
+      <content:encoded>&lt;p&gt;There has been a lot of talk about Simplicity on the web as of late.  It’s a good conversation to be having, but one that I think has cast an unfair scapegoat in our quest to keep things simple.&lt;/p&gt;
 &lt;p&gt;That scapegoat seems to be our tools.&lt;/p&gt;
 &lt;p&gt;The reasoning seems to be that development tools put layers of complexity in the way of what we are actually doing, and by doing so, hinder simplicity by abstraction.  But the problem isn’t our tools, simply how we as developers use them.&lt;/p&gt;
 &lt;h2&gt;Tea Break&lt;/h2&gt;
@@ -7500,25 +7552,27 @@ $bp-huge              : 1600;&lt;/code&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;For me personally, this means grabbing a core structure of code and tools that enable me to just start coding.  To you, it might mean something different and that’s fine.  The main thing is that your chosen process gives you the simplicity that you need to start creating.&lt;/p&gt;
 &lt;p&gt;So let’s all stop blaming our tools for hindering simplicity; instead blame ourselves for the ways in which we choose to use them.&lt;/p&gt;
-</description><pubDate>Mon, 04 Aug 2014 23:20:00 +0100</pubDate>
+</content:encoded><pubDate>Mon, 04 Aug 2014 23:20:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/a-retort-on-simplicity.html</guid>
     </item>
     <item>
       <title>Creating button effects with box shadows and border radius</title>
-      <link>https://ashleynolan.co.uk/blog/creating-button-effects-with-box-shadows-and-border-radius.html</link><description>&lt;p&gt;As I had a free evening last night, I decided to have a bit of a play around on CodePen – yeh, I know, I totally know how to live.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/creating-button-effects-with-box-shadows-and-border-radius.html</link><description>How to make some simple looking button effects using box-shadow and border-radius. </description>
+      <content:encoded>&lt;p&gt;As I had a free evening last night, I decided to have a bit of a play around on CodePen – yeh, I know, I totally know how to live.&lt;/p&gt;
 &lt;p&gt;I wanted to make use of an &lt;a href=&quot;http://beemuse.com/paper&quot;&gt;effect I saw a while ago on the Beemuse site&lt;/a&gt;, which used CSS3 box-shadows and border-radius to create a kind of 3D paper effect in the way the elements were styled.  Thinking this could be used to make some simple but nice looking buttons with interesting state effects, &lt;a href=&quot;http://codepen.io/ashleynolan/full/djpCG/&quot;&gt;I made this demo&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The effect uses box-shadows, borders and border-radius to vary the depth when the user interacts with each button.&lt;/p&gt;
 &lt;p&gt;Hopefully it‘s clear from looking through the code how each effect has been created, but get in touch if you have any questions about any of the effects in the demo.&lt;/p&gt;
 &lt;p&gt;As I started to play around with different effects last night, I kept finding new and interesting variations on the same theme.  I‘m sure you can probably think of some more – if you can, &lt;a href=&quot;http://codepen.io/ashleynolan/details/djpCG/&quot;&gt;fork the demo&lt;/a&gt; and play around with the code yourself; I‘d love to see what you all can think of and create!&lt;/p&gt;
 &lt;p&gt;Since I put up the demo last night, it‘s actually hit the CodePen homepage top picks list, and has now been viewed over 2000 times and hearted 70+ times (and counting).  Thanks for the great feedback so far!&lt;/p&gt;
-</description><pubDate>Wed, 16 Jul 2014 08:20:00 +0100</pubDate>
+</content:encoded><pubDate>Wed, 16 Jul 2014 08:20:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/creating-button-effects-with-box-shadows-and-border-radius.html</guid>
     </item>
     <item>
       <title>Getting started with the OSX terminal</title>
-      <link>https://ashleynolan.co.uk/blog/getting-started-with-terminal.html</link><description>&lt;p&gt;For around 18 months now I’ve been using the terminal more and more.  Perhaps the most suprising part of this has been just how enjoyable it is to use once you move past the very basics and become more proficient with what can at first seem on a level with black magic.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/getting-started-with-terminal.html</link><description>An intro guide to the terminal, going over my most commonly used shortcuts and commands.</description>
+      <content:encoded>&lt;p&gt;For around 18 months now I’ve been using the terminal more and more.  Perhaps the most suprising part of this has been just how enjoyable it is to use once you move past the very basics and become more proficient with what can at first seem on a level with black magic.&lt;/p&gt;
 &lt;p&gt;Whereas historically it was unusual for a front-end dev to stare too deeply into the command line abyss, it has now become a tool that can aid many front-end tasks.  Whether using git, grunt or jekyll, there are many tools that require a small amount of terminal knowledge.&lt;/p&gt;
 &lt;p&gt;So I wanted to jot down the basics when starting out with the terminal and share some of the most common and useful commands that I tend to use most often.&lt;/p&gt;
 &lt;p&gt;Note. The commands and shortcuts will refer directly to the OSX terminal, but many of the basics cross over to Windows command line as well.&lt;/p&gt;
@@ -7648,13 +7702,14 @@ $bp-huge              : 1600;&lt;/code&gt;
 &lt;/dl&gt;
 &lt;h2&gt;Got any more?&lt;/h2&gt;
 &lt;p&gt;I’m always interested in seeing what terminal commands people find most useful, so if you haveof a command that you can’t live without, I’d love to hear about it in the comments!&lt;/p&gt;
-</description><pubDate>Tue, 24 Jun 2014 13:00:00 +0100</pubDate>
+</content:encoded><pubDate>Tue, 24 Jun 2014 13:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/getting-started-with-terminal.html</guid>
     </item>
     <item>
       <title>Are we getting too Sassy?</title>
-      <link>https://ashleynolan.co.uk/blog/are-we-getting-too-sassy.html</link><description>&lt;p&gt;I love Sass.  I use it everyday in my front-end workflow and know that my productivity would suffer if it were taken away.  It’s an awesome tool and one that has truly pushed CSS standards forward.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/are-we-getting-too-sassy.html</link><description>A look at the recent trend of micro-optimisation versus maintainability</description>
+      <content:encoded>&lt;p&gt;I love Sass.  I use it everyday in my front-end workflow and know that my productivity would suffer if it were taken away.  It’s an awesome tool and one that has truly pushed CSS standards forward.&lt;/p&gt;
 &lt;p&gt;Sass gives us the power to do all sorts of amazing things to make writing CSS more succinct and maintainable, with the barrier to entry being fairly low.  However, reading &lt;a href=&quot;http://alistapart.com/article/dry-ing-out-your-sass-mixins&quot;&gt;a recent A List Apart article&lt;/a&gt;, confirmed a thought that had been niggling away at me for a little while now.&lt;/p&gt;
 &lt;p&gt;Are we abusing the power of Sass to perform pre-processing micro optimisations that shouldn&#39;t be done in the first place?&lt;/p&gt;
 &lt;p&gt;The above ALA article was written by &lt;a href=&quot;https://twitter.com/Snugug&quot;&gt;Sam Richard&lt;/a&gt; and he nails some really great points on some simple ways to &lt;a href=&quot;http://en.wikipedia.org/wiki/Don&#39;t_repeat_yourself&quot;&gt;DRY&lt;/a&gt; out your Sass.  Placeholder selectors can be very useful.  I don’t personally use &lt;code&gt;@extend&lt;/code&gt; that much, mainly due to the unexpected output it can sometimes generate, but I definitely don’t have a problem with anyone else using it and can see it’s value in keeping your Sass well structured.&lt;/p&gt;
@@ -7771,13 +7826,14 @@ $bp-huge              : 1600;&lt;/code&gt;
 &lt;p&gt;So before we all start attempting to create the DRY-est mixins the world has ever seen, take a step back and think of the DRY-est form of CSS we can create; CSS itself.&lt;/p&gt;
 &lt;p&gt;The problem tackled by the mixin above can also be solved by defining an extra class and adding that classname to each button element in the markup, extending each buttons specific properties.  It is slightly less succinct, but is much more maintainable and any developer would be able to understand and build upon it.&lt;/p&gt;
 &lt;p&gt;If you find you are duplicating properties to the point of needing a mixin, then by all means go ahead and create one.  But don’t micro-optimise to the n-th degree if it means only you will understand how to modify that code in the future.&lt;/p&gt;
-</description><pubDate>Thu, 29 May 2014 09:00:00 +0100</pubDate>
+</content:encoded><pubDate>Thu, 29 May 2014 09:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/are-we-getting-too-sassy.html</guid>
     </item>
     <item>
       <title>Know Thy Interaction</title>
-      <link>https://ashleynolan.co.uk/blog/know-thy-interaction.html</link><description>&lt;p&gt;Over the next couple of months, I&#39;ll be doing a new talk I&#39;ve written called ‘Know Thy Interaction’ at a few different events.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/know-thy-interaction.html</link><description>Some useful and interesting links, in reference to my talk at Shropgeek, up in Shrewsbury.</description>
+      <content:encoded>&lt;p&gt;Over the next couple of months, I&#39;ll be doing a new talk I&#39;ve written called ‘Know Thy Interaction’ at a few different events.&lt;/p&gt;
 &lt;p&gt;Tonight, it will be it&#39;s first run-out at &lt;a href=&quot;http://www.shropgeek.co.uk/events/rebellion-6-22-5-14/&quot;&gt;Shropgeek Rebellion&lt;/a&gt;, up in Shrewsbury.  As the title suggests, the talk covers interaction and how design interaction has and is changing on the web at the moment.&lt;/p&gt;
 &lt;p&gt;During the talk, I show quite a few examples, and reference even more, so I just wanted to put all of the links in one place for those that see the talk and want a reference for the links, or for anyone who is interested in what is being covered but isn&#39;t lucky enough to get to see the talk in person ;)&lt;/p&gt;
 &lt;p&gt;The slides are &lt;a href=&quot;http://www.slideshare.net/nolly00/know-thy-interaction-how-interaction-is-changing-what-we-create-on-the-web&quot;&gt;available online&lt;/a&gt; and here are the accompanying links.&lt;/p&gt;
@@ -7846,13 +7902,14 @@ $bp-huge              : 1600;&lt;/code&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Further Reading&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;http://12devsofxmas.co.uk/2013/12/day-3-interaction-evolved/&quot;&gt;Interaction Evolved&lt;/a&gt; – an article I wrote for 12Devs at the start of the year.&lt;/p&gt;
-</description><pubDate>Thu, 22 May 2014 10:00:00 +0100</pubDate>
+</content:encoded><pubDate>Thu, 22 May 2014 10:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/know-thy-interaction.html</guid>
     </item>
     <item>
       <title>A beginners guide to terminal aliases and functions</title>
-      <link>https://ashleynolan.co.uk/blog/beginners-guide-to-terminal-aliases-and-functions.html</link><description>&lt;p&gt;By far the simplest time saving tools I’ve found since working more in the OSX terminal are aliases and functions.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/beginners-guide-to-terminal-aliases-and-functions.html</link><description>An intro guide to creating time saving terminal aliases and functions in Mac OSX.</description>
+      <content:encoded>&lt;p&gt;By far the simplest time saving tools I’ve found since working more in the OSX terminal are aliases and functions.&lt;/p&gt;
 &lt;p&gt;Aliases stay true to the saying that lazy developers are efficient developers; they are simple shorthand commands that you can define to reference longer commands you find yourself commonly using.&lt;/p&gt;
 &lt;p&gt;So for example, if you use git on the command line you can find yourself typing out commands like &lt;code&gt;git commit -m &#39;message&#39;&lt;/code&gt;, &lt;code&gt;git status -s&lt;/code&gt; or &lt;code&gt;git branch -r&lt;/code&gt; pretty often.  Sure, they aren&#39;t huge commands to type out, but if you’re using them regularly it can get pretty repetitive.&lt;/p&gt;
 &lt;p&gt;Likewise, you may find yourself doing the same few commands in a row over and over again.  Ever create a new directory in the terminal and then cd straight into it afterwards?&lt;/p&gt;
@@ -7894,13 +7951,14 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;p&gt;A full list of my &lt;a href=&quot;https://github.com/ashleynolan/dotfiles/blob/master/.aliases&quot;&gt;system aliases are up on github&lt;/a&gt; as well as a &lt;a href=&quot;https://github.com/ashleynolan/dotfiles/blob/master/.functions&quot;&gt;separate set of functions&lt;/a&gt;.  These have been built upon and edited from the excellent set of &lt;a href=&quot;https://github.com/mathiasbynens/dotfiles&quot;&gt;dot files by Mathias Bynens&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you use git, or want to start using git, on the command line, aliases can help you out big-time.  I recommend taking a look at the excellent &lt;a href=&quot;https://github.com/jakearchibald/git-convenience&quot;&gt;git-convenience tools&lt;/a&gt; by Jake Archibald, or check out my &lt;a href=&quot;https://github.com/ashleynolan/dotfiles/blob/master/.git-shortcuts.sh&quot;&gt;git alias file&lt;/a&gt; which is an extended set of aliases built on top of what you&#39;ll find in the git convenience tools.&lt;/p&gt;
 &lt;p&gt;Finally, if you just want to have a look at the sort of things that are possible using aliases and functions, check out &lt;a href=&quot;https://ashleynolan.co.uk/blog/alias.sh&quot;&gt;alias.sh&lt;/a&gt;, which has tonnes of useful snippets to copy and use in yur own script files.&lt;/p&gt;
-</description><pubDate>Thu, 01 May 2014 10:00:00 +0100</pubDate>
+</content:encoded><pubDate>Thu, 01 May 2014 10:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/beginners-guide-to-terminal-aliases-and-functions.html</guid>
     </item>
     <item>
       <title>The fall and rise of SVG – how SVG is more relevant than ever</title>
-      <link>https://ashleynolan.co.uk/blog/the-fall-and-rise-of-svg.html</link><description>&lt;p&gt;It’s strange to remark that SVG is currently a technology to keep an eye on, simply as it’s been around for so long already.  However, there’s absolutely no doubt that SVG is going through something of a renaissance right now.  As someone who has been using it in some form or another for longer than I can really remember, it’s encouraging to see a technology that has been lurking in the web development shadows for so long now get the limelight it deserves.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/the-fall-and-rise-of-svg.html</link><description>There’s no doubting that SVG is going through a rennaisance right now.  I take a look at at how modern techniques are bringing this old gem back to the forefront of front-end development.</description>
+      <content:encoded>&lt;p&gt;It’s strange to remark that SVG is currently a technology to keep an eye on, simply as it’s been around for so long already.  However, there’s absolutely no doubt that SVG is going through something of a renaissance right now.  As someone who has been using it in some form or another for longer than I can really remember, it’s encouraging to see a technology that has been lurking in the web development shadows for so long now get the limelight it deserves.&lt;/p&gt;
 &lt;p&gt;So let’s take a look at why it’s become more relevant among today’s web technologies and the techniques that are making SVG easier to include as part of modern web builds.&lt;/p&gt;
 &lt;h2&gt;Why now?&lt;/h2&gt;
 &lt;p&gt;SVG has benefited in no small part to the rise of Responsive Design as developers look for solutions that scale better across multiple devices.  SVG is lightweight and scale extremely well when resized, making them an extremely attractive alternative to standard images and icons in certain use cases.&lt;/p&gt;
@@ -7963,13 +8021,14 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;p&gt;SVG has been ready for widespread use for a good while now, with articles on the subject &lt;a href=&quot;http://dbushell.com/2012/04/03/svg-use-it-already/&quot;&gt;dating back at least a couple of years&lt;/a&gt;.  I think the difference now is that the &lt;a href=&quot;http://gruntjs.com/&quot;&gt;tools we have available to us&lt;/a&gt; take away some of the more fiddly aspects of maintaining SVG, in turn making it more accessible to developers.&lt;/p&gt;
 &lt;p&gt;In a lot of my work currently at TMW, I am actively encouraging the use of SVG to our designers, simply because of how flexible, lightweight and scalable it is across devices.  They are by no means suitable for every situation however and should be used in combination with a robust responsive image solution.&lt;/p&gt;
 &lt;p&gt;So, if you’re not using SVG or have only briefly looked at using them, definitely take some time to take a deeper look into what they can offer you – it’ll be worth the effort spent, both for you and your users.&lt;/p&gt;
-</description><pubDate>Thu, 20 Feb 2014 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Thu, 20 Feb 2014 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/the-fall-and-rise-of-svg.html</guid>
     </item>
     <item>
       <title>Launch Sublime Text 2 or 3 from the Mac OSX Terminal</title>
-      <link>https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal.html</link><description>&lt;p&gt;As I’m working in the OSX Terminal more and more these days, I&#39;m always on the lookout for time saving shortcuts.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal.html</link><description>A really quick win to open up Sublime Text using one quick command from the Mac OSX terminal.</description>
+      <content:encoded>&lt;p&gt;As I’m working in the OSX Terminal more and more these days, I&#39;m always on the lookout for time saving shortcuts.&lt;/p&gt;
 &lt;p&gt;A really useful tip that I picked up recently from &lt;a href=&quot;http://twitter.com/MrMartineau&quot;&gt;Zander Martineau&lt;/a&gt; is how to open up Sublime Text straight from the Terminal.  This is done by hooking into a CLI utility that Sublime provides called &lt;a href=&quot;http://www.sublimetext.com/docs/2/osx_command_line.html&quot;&gt;subl&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The following instructions are based largely on the original &lt;a href=&quot;https://gist.github.com/artero/1236170&quot;&gt;gist on Github&lt;/a&gt; by &lt;a href=&quot;https://github.com/artero&quot;&gt;Artero&lt;/a&gt;, so credit for this solution should be directed to them and not myself.&lt;/p&gt;
 &lt;p&gt;It’s a slightly different installation depending on whether you’re using Sublime Text 2 or 3, so I’ll split the two out below in the installaton; simply refer to the instructions that are relevant to you.&lt;/p&gt;
@@ -8009,13 +8068,14 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;/ul&gt;
 &lt;p&gt;And there you have it – you can now open any file or folder in Sublime straight from the Terminal.&lt;/p&gt;
 &lt;p&gt;Thanks and credit for this great solution again goes to &lt;a href=&quot;https://www.github.com/artero&quot;&gt;Artero&lt;/a&gt;.  If you have any problems getting it working, let me know and I’ll do my best to help you out.&lt;/p&gt;
-</description><pubDate>Mon, 17 Feb 2014 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Mon, 17 Feb 2014 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal.html</guid>
     </item>
     <item>
       <title>Controlling heavy weight websites</title>
-      <link>https://ashleynolan.co.uk/blog/controlling-heavy-weight-websites.html</link><description>&lt;p&gt;I love beautiful websites. They inspire the work we do and help move the industry forward in terms of what we know is achievable on the web.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/controlling-heavy-weight-websites.html</link><description>The worringing trend of creating beautiful websites at the cost of performance.</description>
+      <content:encoded>&lt;p&gt;I love beautiful websites. They inspire the work we do and help move the industry forward in terms of what we know is achievable on the web.&lt;/p&gt;
 &lt;p&gt;A recent trend on the web conflicts with this love; a large number of recently launched websites are putting a far greater emphasis on the beauty of the visual experience above and beyond considering the practical impact on the user.&lt;/p&gt;
 &lt;p&gt;The site that has led me to write about this is the recently launched &lt;a href=&quot;http://heartofthearctic.ca/&quot;&gt;Heart of the Arctic&lt;/a&gt; website.  Straight up, I want to say that I&#39;m not trying to single out this one website; it simply exaggerates the points I had been thinking about writing about.&lt;/p&gt;
 &lt;h2&gt;But it looks great…&lt;/h2&gt;
@@ -8048,13 +8108,14 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;p&gt;While I see the reasoning of many of the points mentioned, I still feel a little uneasy about any web experience that weighs 100MB up front.  Some of it does come down to the goals of the project and the audience, but that is still a huge chunk of loading time to sit through for anyone, especially when you start decreasing your bandwidth.  The difference between installing a game (or app) and loading a website is that the game continues to download and install when you get bored waiting for it to finish.  The same isn&#39;t true on the web; someone who leaves while waiting will probably never return.&lt;/p&gt;
 &lt;p&gt;It would be interesting to see some kind of stats behind the drop-off rates between people who hit the loading screen and people who actually start the experience.&lt;/p&gt;
 &lt;p&gt;I do however agree whole-heartedly with Mikko&#39;s point that it would be a boring web without sites made purely for entertainment. I just think that if you are making a website of that size, you have a duty to think about why it&#39;s that size and do everything you can to mitigate it – which definitely includes using a strong CDN! ;)&lt;/p&gt;
-</description><pubDate>Tue, 04 Feb 2014 12:00:00 +0000</pubDate>
+</content:encoded><pubDate>Tue, 04 Feb 2014 12:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/controlling-heavy-weight-websites.html</guid>
     </item>
     <item>
       <title>Sweating the detail</title>
-      <link>https://ashleynolan.co.uk/blog/sweating-the-detail.html</link><description>&lt;p&gt;I‘m pretty awful at setting myself deadlines.  Unless there‘s a hard deadline which people are relying on me to hit, I can procrastinate like nobodies business.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/sweating-the-detail.html</link><description>The last time I redesigned my blog, it took me over a year to have something to show for it. This time I gave myself a week.</description>
+      <content:encoded>&lt;p&gt;I‘m pretty awful at setting myself deadlines.  Unless there‘s a hard deadline which people are relying on me to hit, I can procrastinate like nobodies business.&lt;/p&gt;
 &lt;p&gt;Case in point; the last time I redesigned this site.  What should have taken a few weeks to develop ended up dragging on for longer than I‘d even like to consider.  The problem is that the only person it affects is yourself.  Having many ongoing side projects can be somewhat self defeating; personally I‘m far better when focussed, completing the task and then moving on.&lt;/p&gt;
 &lt;p&gt;Just before Christmas I decided it was time for a site refresh.  My old site was fine and could have lasted a while longer, but having my content in a CMS made no sense; it simply put too much baggage in the way of me actually writing.  I wanted to remove as many potential barriers as I could so that I minimised any excuses future me would be able to think up.&lt;/p&gt;
 &lt;p&gt;When I went back to work in January, I made myself a deal. I had a free week of evenings. I would therefore try to turn around the resdesign in a week. No time to drag my feet, no time for procrastination. Just enough time to do it.&lt;/p&gt;
@@ -8070,37 +8131,40 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;p&gt;Think about your options, but recognise when you are digging yourself a bigger hole instead of simply moving forward.  If your main goal is to get a site out with feature x, don‘t spend days playing around with feature y if it holds up feature x.  Complete feature x, release, then make new goals relating to feature y.  It‘s what all the great companies have done in the past to ensure they focus their priorities and their time; it works the same across any project, irrespective of scale.&lt;/p&gt;
 &lt;p&gt;I had to pull myself away from doing this a number of times, but if I hadn&#39;t, the site would still be half finished.  Spending too much time thinking about what‘s missing from what you‘re building detracts from what you‘ve already created.&lt;/p&gt;
 &lt;p&gt;So make sure you give that the focus it deserves first before moving onto new goals.&lt;/p&gt;
-</description><pubDate>Wed, 15 Jan 2014 12:30:00 +0000</pubDate>
+</content:encoded><pubDate>Wed, 15 Jan 2014 12:30:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/sweating-the-detail.html</guid>
     </item>
     <item>
       <title>Speaking up</title>
-      <link>https://ashleynolan.co.uk/blog/speaking-up.html</link><description>&lt;p&gt;Over the last 6 months, I&#39;ve been trying to get more active in an area that used to really scare the hell out of me; public speaking.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/speaking-up.html</link><description>Where I&#39;ll be speaking towards the end of 2013.</description>
+      <content:encoded>&lt;p&gt;Over the last 6 months, I&#39;ve been trying to get more active in an area that used to really scare the hell out of me; public speaking.&lt;/p&gt;
 &lt;p&gt;Earlier this year I did my first short talk as a part of the Rising Stars track at jQuery UK. It was only 15 minutes long, but it was a great experience for a variety of reasons and one that has really encouraged me to apply to speak at more events in the future.&lt;/p&gt;
 &lt;p&gt;A couple of weeks ago I gave my first full length talk at AKQA Anoraks (soon to be rebranded as &lt;a href=&quot;http://www.techinsight.io/&quot;&gt;London Tech Insight&lt;/a&gt;, on my experience as part of the BBC Good Food responsive redesign over the last year. Thanks to those who came along. Those I chatted to after the event were really positive; hearing that at least a few people learned something from me talking about my experiences makes it&#39;s a worthwhile thing to keep on doing. The abject terror of the first few talks I did has definitely now subsided to just healthy nerves!&lt;/p&gt;
 &lt;p&gt;I&#39;ll be giving the talk a couple more times in the coming months, with the first being at Front End London this weekend, followed by a trip up to Barnsley at the start of October for &lt;a href=&quot;http://lanyrd.com/2013/digitalbarn/&quot;&gt;The Digital Barn&lt;/a&gt;.  Tickets for the former have already been snapped up, but for those interested in coming along to The Digital Barn, you can use the discount code AshleyTEN to get an extra £10 off the price of ticket.&lt;/p&gt;
 &lt;p&gt;I&#39;m really excited to get going as both events are another step up in the number of faces staring back at me (ideally not blankly!).&lt;/p&gt;
 &lt;p&gt;If you&#39;re going along to either event, hope to see you there.&lt;/p&gt;
-</description><pubDate>Fri, 27 Sep 2013 09:00:00 +0100</pubDate>
+</content:encoded><pubDate>Fri, 27 Sep 2013 09:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/speaking-up.html</guid>
     </item>
     <item>
       <title>BBC GoodFood - The last year of my life</title>
-      <link>https://ashleynolan.co.uk/blog/the-last-year-of-my-life.html</link><description>&lt;p&gt;Today, after more than a year on the project, the redesigned &lt;a href=&quot;http://www.bbcgoodfood.com/&quot;&gt;BBC Good Food website&lt;/a&gt; has gone live.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/the-last-year-of-my-life.html</link><description>After a year working on the BBC Good Food responsive redesign, the site has now gone live!</description>
+      <content:encoded>&lt;p&gt;Today, after more than a year on the project, the redesigned &lt;a href=&quot;http://www.bbcgoodfood.com/&quot;&gt;BBC Good Food website&lt;/a&gt; has gone live.&lt;/p&gt;
 &lt;p&gt;The old website, like many BBC brands, was very well loved, but it was definitely starting to look it&#39;s age in terms of it&#39;s design and maintainability.  The GF team would like to think we&#39;ve managed to design a site that is both great to look at while retaining what made people love using the original site.&lt;/p&gt;
 &lt;p&gt;The new site is also fully responsive, which is crucial going forward for the business with roughly half of the site&#39;s traffic coming from mobile and tablet devices.  Using the site on a phone or tablet should feel as easy as using it on a laptop or desktop.&lt;/p&gt;
 &lt;p&gt;The back-end of the site is powered by Drupal, and a big thanks to the back-end guys and themers who have done a great job making such a large scale build a reality using the platform.&lt;/p&gt;
 &lt;p&gt;Leading the front-end side of the project since it kicked off last year, I&#39;ve learned a hell of a lot from working on such a large scale project - I&#39;ll be writing some more specific articles around some of these topics in the coming weeks and will be talking more about the project at events later in the year as well.&lt;/p&gt;
 &lt;p&gt;Although this week is my last week working directly on the project, the GF team will still be working on improving the site over the coming months and rolling out features that we didn&#39;t have chance to fit in before pushing the site live; if you have any feedback on any area of the site,  &lt;a href=&quot;http://www.bbcgoodfood.com/node/275231&quot;&gt;check out the surveys on the website&lt;/a&gt; where you can let us know what you think of the site.  If it&#39;s something more dev specific, let me know what you think on &lt;a href=&quot;https://twitter.com/WelshAsh_&quot;&gt;twitter&lt;/a&gt; - always really valuable to hear opinions whether positive or negative.&lt;/p&gt;
-</description><pubDate>Thu, 20 Jun 2013 09:00:00 +0100</pubDate>
+</content:encoded><pubDate>Thu, 20 Jun 2013 09:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/the-last-year-of-my-life.html</guid>
     </item>
     <item>
       <title>JQuery UK 2013</title>
-      <link>https://ashleynolan.co.uk/blog/jquery-uk-2013.html</link><description>&lt;p&gt;On Friday, I made the short trip across to Oxford for the 2013 jQuery UK conference.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/jquery-uk-2013.html</link><description>Making the short trip to Oxford to attend and speak at jQuery UK 2013.</description>
+      <content:encoded>&lt;p&gt;On Friday, I made the short trip across to Oxford for the 2013 jQuery UK conference.&lt;/p&gt;
 &lt;p&gt;I was especially excited to be attending, as not only would I be giving a talk at the event myself, but I had managed to bag entry to the speakers dinner the night before the conference thanks to rather luckily winning a Twitter competition run by &lt;a href=&quot;https://twitter.com/WhiteOctober&quot;&gt;White October&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The speakers dinner was a massive highlight for me.  Meeting some of the people I most admire in our industry would have been awesome at the best of times, but was especially true when sharing a beer on a canal boat traveling along the Oxford canals. The conversation was excellent and as someone trying to get into speaking myself, was really inspiring for me personally.&lt;/p&gt;
 &lt;p&gt;The event itself was as slickly organised as you would expect, and the talks didn&#39;t disappoint. Of the many things I took away from the talks, a few topics particularly peaked my interest.&lt;/p&gt;
@@ -8108,13 +8172,14 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;p&gt;The other talk that really interested me was &lt;a href=&quot;https://twitter.com/dougneiner&quot;&gt;Doug Neiner&lt;/a&gt;&#39;s introduction to &lt;a href=&quot;https://github.com/ifandelse/machina.js&quot;&gt;Machina.js&lt;/a&gt;, a finite state machine framework created by Jim Cowart. It enables you to keep track of state in your applications in a very clean way, avoiding the need for potentially complex nested  comparisons littered throughout your code. I would definitely recommend watching Doug&#39;s talk when it gets put online, as I think Machina could be a very useful framework and has great potential in it&#39;s application on projects.&lt;/p&gt;
 &lt;p&gt;Of course, the other highlight of the conference for me was getting to give my talk about Responsive Interaction Patterns on the Rising Stars track.  Although taking place at the same time as the main conference speakers, I was really grateful that around 40 people came to see my talk.  Thanks to those who tweeted me afterwards saying they enjoyed it; it was a great experience for me and has really whet my appetite to speak at future events.&lt;/p&gt;
 &lt;p&gt;My slides are &lt;a href=&quot;https://speakerdeck.com/dragongraphics/responsive-interaction-patterns&quot;&gt;available online now&lt;/a&gt;, and do get in touch if you have any feedback or questions relating to the talk.&lt;/p&gt;
-</description><pubDate>Mon, 22 Apr 2013 09:00:00 +0100</pubDate>
+</content:encoded><pubDate>Mon, 22 Apr 2013 09:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/jquery-uk-2013.html</guid>
     </item>
     <item>
       <title>Responsively winging it, together</title>
-      <link>https://ashleynolan.co.uk/blog/responsively-winging-it-together.html</link><description>&lt;p&gt;On Friday, I had the pleasure of attending &lt;a href=&quot;http://responsiveconf.com/&quot;&gt;Responsive Day Out&lt;/a&gt; down in Brighton. Organised by &lt;a href=&quot;https://twitter.com/adactio&quot;&gt;Jeremy Keith&lt;/a&gt; and the guys at &lt;a href=&quot;https://twitter.com/clearleft&quot;&gt;Clearleft&lt;/a&gt;, the day was full of great, well focussed talks on varying aspects of Responsive Web Design (RWD), which I&#39;d highly recommend you check out when the videos are put online.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/responsively-winging-it-together.html</link><description>After returning from Responsive Day out, I felt reflective about the state of RWD.</description>
+      <content:encoded>&lt;p&gt;On Friday, I had the pleasure of attending &lt;a href=&quot;http://responsiveconf.com/&quot;&gt;Responsive Day Out&lt;/a&gt; down in Brighton. Organised by &lt;a href=&quot;https://twitter.com/adactio&quot;&gt;Jeremy Keith&lt;/a&gt; and the guys at &lt;a href=&quot;https://twitter.com/clearleft&quot;&gt;Clearleft&lt;/a&gt;, the day was full of great, well focussed talks on varying aspects of Responsive Web Design (RWD), which I&#39;d highly recommend you check out when the videos are put online.&lt;/p&gt;
 &lt;p&gt;There were a lot of things I took away from the day, some of which helped surface things I&#39;d been mulling over for a little while. RWD is still in its relative infancy in lots of ways; designers are having to rethink not just their process, but the whole way they go about designing a website. Developers are making the best of the tools and standards available to them, while filling in the gaps with hacks (nothing has really changed here though has it?!).&lt;/p&gt;
 &lt;p&gt;Both &lt;a href=&quot;https://twitter.com/sazzy&quot;&gt;Sarah&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/laurakalbag&quot;&gt;Laura&lt;/a&gt; both mentioned in their talks that they feel like they&#39;ve been &#39;Winging it&#39; as they&#39;ve been working with RWD, and I completely agree with that sentiment. Speaking to others at the event there was definitely a sense that many of us were there to ensure that we have been winging it in the right direction.&lt;/p&gt;
 &lt;p&gt;I&#39;ve been working on a large scale responsive redesign for the past year. When the project started back in May last year, a lot of the design decisions we were making could best be described as making calculated best guesses.  RWD was very much the buzz word at the time, with smaller blogs and sites showing basic usage. Components like multi-level navigation and search filtering patterns were non-existent on these sites, and these design patterns are still only relatively recently starting to emerge as larger websites redesign their sites responsively. A lot of the inspiration we took when making decisions came from native applications which had been faced with similar design issues previously.&lt;/p&gt;
@@ -8123,13 +8188,14 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;p&gt;When asked how much of a shift RWD has made in our industry, &lt;a href=&quot;https://twitter.com/markboulton&quot;&gt;Mark Boulton&lt;/a&gt; summed it up by saying that the shift has been so big, it has not only impacted on our way of thinking and working, but has reached far beyond - clients, advertisers, marketers, managers have all had to rethink their ways of working with the web.  Again, it&#39;s a testament to what the web community is doing in terms of educating and promoting RWD best practice that it&#39;s uptake has been so well received by these groups of people who can be wary about budgetting extra cash for a project unless it makes sound business sense.&lt;/p&gt;
 &lt;p&gt;RWD brought about a change in the way we previously thought about the web, not just a change in technique; no fixed widths, no set devices, and a future where we will have less and less control over how people choose to interact with the websites we create.&lt;/p&gt;
 &lt;p&gt;If theres one thing we can guarantee, it&#39;s that our industry will never be standing still, but events like Responsive Day Out really show how much our community cares about addressing emerging issues in the right way, and more importantly that we are all winging it in the same direction.&lt;/p&gt;
-</description><pubDate>Sat, 02 Mar 2013 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Sat, 02 Mar 2013 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/responsively-winging-it-together.html</guid>
     </item>
     <item>
       <title>Easy local device testing</title>
-      <link>https://ashleynolan.co.uk/blog/easy-local-device-testing.html</link><description>&lt;p&gt;I&#39;ve been doing a lot of device testing recently due to being involved in quite a few responsive builds. Earlier this week, courtesy of my colleague &lt;a href=&quot;https://twitter.com/ryck&quot;&gt;Rick&lt;/a&gt;, I stumbled across a very handy service by the guys over at &lt;a href=&quot;http://37signals.com/&quot;&gt;37signals&lt;/a&gt; called xip.io.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/easy-local-device-testing.html</link><description>Checking out some alternatives for local device testing.</description>
+      <content:encoded>&lt;p&gt;I&#39;ve been doing a lot of device testing recently due to being involved in quite a few responsive builds. Earlier this week, courtesy of my colleague &lt;a href=&quot;https://twitter.com/ryck&quot;&gt;Rick&lt;/a&gt;, I stumbled across a very handy service by the guys over at &lt;a href=&quot;http://37signals.com/&quot;&gt;37signals&lt;/a&gt; called xip.io.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://xip.io/&quot;&gt;Xip.io&lt;/a&gt; lets you access any virtualhost you have setup locally on your computer from any device on your local network; the extra bonus is it&#39;s mega easy to use. Once setup, it simply gives you a domain to point your devices to and as if by magic, your local site is then viewable from any device you have to hand.  Xip.io has been around for a little while, so you may have already heard of it, but if not I would definitely recommend checking it out.&lt;/p&gt;
 &lt;p&gt;To set it up, you&#39;ll simply need to know your current IP address, your virtualhost address and some very basic knowledge of editing your local server config.  As an example, if you have setup a virtualhost called mysite.local, your IP is 10.0.0.1 and you are using Apache for your local server, then you need to add the following to your httpd.conf file inside the related &lt;VirtualHost&gt; declaration:&lt;/VirtualHost&gt;&lt;/p&gt;
 &lt;p&gt;ServerAlias mysite.local.*.xip.io&lt;/p&gt;
@@ -8141,13 +8207,14 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;p&gt;The other tool I&#39;ve come across is &lt;a href=&quot;http://www.opera.com/developer/tools/mobile/&quot;&gt;Opera&#39;s Mobile Emulator&lt;/a&gt;. Although emulation can never be as good as the real thing, we don&#39;t all have every phone since 2004 sitting on our desks. This emulator goes some way to help fill in any gaps you might have and device testing your site with an emulator is better than not device testing it at all.&lt;/p&gt;
 &lt;p&gt;Opera&#39;s Mobile Emulator comes packed with a whole bunch of devices, including a variety of HTC, Samsung and Sony Phones and Tablets, as well as the Kindle Fire and the Nexus 7. The great thing about the emulator is that it sets the pixel density and resolution when choosing each device - very handy for comparing your site between high quality HD and less capable alternatives. It can also be hooked up to Opera Dragonfly so that you can debug straight into the emulator.&lt;/p&gt;
 &lt;p&gt;I&#39;d love to know what other tools people are currently using for local device testing, so please do let me know either through the comments or on &lt;a href=&quot;https://twitter.com/WelshAsh_&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
-</description><pubDate>Fri, 11 Jan 2013 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Fri, 11 Jan 2013 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/easy-local-device-testing.html</guid>
     </item>
     <item>
       <title>New Year, New Ideas</title>
-      <link>https://ashleynolan.co.uk/blog/new-year-new-ideas.html</link><description>&lt;p&gt;Today was the first day of my working new year and as ever when returning enthusiastic from the holidays (for a few days/hours at least) I&#39;ve got lots of ideas for the next 12 months.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/new-year-new-ideas.html</link><description>Scrapping resolutions and making some realistic plans.</description>
+      <content:encoded>&lt;p&gt;Today was the first day of my working new year and as ever when returning enthusiastic from the holidays (for a few days/hours at least) I&#39;ve got lots of ideas for the next 12 months.&lt;/p&gt;
 &lt;p&gt;For 2013 I&#39;ve decided to try not to set myself professional goals that seem pretty far removed from where I am right now. I&#39;ve done this before and invariably I would just end the year having done plenty, but not necessarily around what I&#39;d planned out from the start of the year. Instead, I&#39;ve made some achievable paths to follow and just see how far I can take them over the next year. So here are my very open routes that I&#39;m going to push myself towards in 2013.&lt;/p&gt;
 &lt;h2&gt;Writing&lt;/h2&gt;
 &lt;p&gt;This first post marks the start of my first path; I&#39;d like to write a lot more. When I put this site up a few months ago I had a lot of grand plans for it. Unfortunately, I&#39;ve realised since then that it&#39;s very hard to combine those plans with my day job, writing for publications, outside projects I&#39;m working on and the other things I want to pursue this year. As Mark &lt;a href=&quot;https://twitter.com/markboulton/status/288298852317028354&quot;&gt;put it today&lt;/a&gt; though (great timing btw), there&#39;s something raw I really love about being able to write without having to go through editing, and so I&#39;d be sad to neglect my own blog into irrelevance.&lt;/p&gt;
@@ -8161,13 +8228,14 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;h2&gt;2013&lt;/h2&gt;
 &lt;p&gt;I&#39;ve got a few exciting things I can&#39;t wait to talk about in the coming months. The project I&#39;m currently working on has been a massive learning curve for me and one that I can&#39;t wait to talk about when the site goes up in a few months.&lt;/p&gt;
 &lt;p&gt;If 2013 can be as exciting professionally for me as 2012 was, then there&#39;s plenty to look forward to.&lt;/p&gt;
-</description><pubDate>Mon, 07 Jan 2013 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Mon, 07 Jan 2013 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/new-year-new-ideas.html</guid>
     </item>
     <item>
       <title>WebDevConf 2012</title>
-      <link>https://ashleynolan.co.uk/blog/webdevconf-2012.html</link><description>&lt;p&gt;On the 19th of October I made the short journey to Bristol for &lt;a href=&quot;http://2012.webdevconf.com/&quot;&gt;WebDevConf 2012&lt;/a&gt;. I had attended the previous year and, as well as being one of the best value conferences around, always has a great blend of experienced speakers and new faces sharing their thoughts and opinions.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/webdevconf-2012.html</link><description>Making the short journey to Bristol to attend WebDevConf.</description>
+      <content:encoded>&lt;p&gt;On the 19th of October I made the short journey to Bristol for &lt;a href=&quot;http://2012.webdevconf.com/&quot;&gt;WebDevConf 2012&lt;/a&gt;. I had attended the previous year and, as well as being one of the best value conferences around, always has a great blend of experienced speakers and new faces sharing their thoughts and opinions.&lt;/p&gt;
 &lt;p&gt;This year was no different, with a great range of talks from &lt;a href=&quot;https://twitter.com/Phishtitz&quot;&gt;David Burton&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/Jack_Franklin&quot;&gt;Jack Franklin&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/iamkeir&quot;&gt;Keir Moffatt&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/shane_tomlinson&quot;&gt;Shane Tomlinson&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/sydlawrence&quot;&gt;Syd Lawrence&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/andspo&quot;&gt;Andrew Spooner&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/rougebert&quot;&gt;Robbie Manson&lt;/a&gt;. All of the talks had something to take away from them, but a few really stood out for me.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/iamkeir&quot;&gt;Keir Moffatt&#39;s&lt;/a&gt; talk on the Wild Wild Web was spot on in many respects, looking at how our industry shares many characteristics to those seen in the Wild West.&lt;/p&gt;
 &lt;p&gt;Pointing towards the pace of change, he remarked how Kickstarter and app development has created a gold rush of sorts, with many developers believing that creating a startup or app is the way to instant success. I agreed with Keir in this being somewhat of a fools gold; with every famous KickStarter project, there are hundreds more that aren&#39;t successful.&lt;/p&gt;
@@ -8179,24 +8247,26 @@ mkdir -p &amp;quot;$@&amp;quot; &amp;amp;&amp;amp; cd &amp;quot;$@&amp;quot;
 &lt;p&gt;I thought the content he covered was very thought provoking, touching on points around how we can ensure our sites consider empathy by speaking to users, ensuring feedback is easy, learning by testing and the correct use of personas. One of my favourite points from the talk was that design doesn&#39;t solve problems, as that presumes a definite solution. As there is no clear right or wrong, design should instead seek problems.&lt;/p&gt;
 &lt;p&gt;His final takeaways hit on the importance of documenting work better, so we can see the value of our decision making - using &lt;a href=&quot;http://www.f-i.com/nickelodeon/kids-choice-awards/&quot;&gt;Fi showcases&lt;/a&gt; as an example of this to aspire towards. He ended by stating that if we want to do our best work we need to think about why; always start with the experience and work back to the tech, and this will in turn build more empathy in your work.&lt;/p&gt;
 &lt;p&gt;This rounded off a great day of inspiring and thought provoking talks. A big thanks should go out to &lt;a href=&quot;https://twitter.com/alexolder&quot;&gt;Alex Older&lt;/a&gt; who again organised an excellent event - one which I hope to attend once again next year.&lt;/p&gt;
-</description><pubDate>Thu, 15 Nov 2012 09:00:00 +0000</pubDate>
+</content:encoded><pubDate>Thu, 15 Nov 2012 09:00:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/webdevconf-2012.html</guid>
     </item>
     <item>
       <title>Media Query Mario</title>
-      <link>https://ashleynolan.co.uk/blog/media-query-mario.html</link><description>&lt;p&gt;A couple of weeks ago at &lt;a href=&quot;http://2012.webdevconf.com/&quot;&gt;WDC2012&lt;/a&gt;, I watched a talk by &lt;a href=&quot;https://twitter.com/sydlawrence&quot;&gt;Syd Lawrence&lt;/a&gt; empowering developers to just get out there and hack stuff together. Taking this a little bit literally, I got home and saw a tweet about the &lt;a href=&quot;https://twitter.com/mozhacks/status/258669800786640896&quot;&gt;October Mozilla Dev Derby&lt;/a&gt; and thought it could be as good a place as any to start.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/media-query-mario.html</link><description>The result of spending some time hacking about with CSS3 and mashing it together with Mario 3…</description>
+      <content:encoded>&lt;p&gt;A couple of weeks ago at &lt;a href=&quot;http://2012.webdevconf.com/&quot;&gt;WDC2012&lt;/a&gt;, I watched a talk by &lt;a href=&quot;https://twitter.com/sydlawrence&quot;&gt;Syd Lawrence&lt;/a&gt; empowering developers to just get out there and hack stuff together. Taking this a little bit literally, I got home and saw a tweet about the &lt;a href=&quot;https://twitter.com/mozhacks/status/258669800786640896&quot;&gt;October Mozilla Dev Derby&lt;/a&gt; and thought it could be as good a place as any to start.&lt;/p&gt;
 &lt;p&gt;The result of this logical thinking is &lt;a href=&quot;https://developer.mozilla.org/en-US/demos/detail/media-query-mario&quot;&gt;Media Query Mario&lt;/a&gt;, a mashup of Media Queries, CSS3 animations and HTML5 audio, which I posted up to the competition last night (leaving it close to the deadline as ever!).  It runs smooth as silk in Firefox, but is a little rough around the edges in Webkit due to strange implementation of some CSS3 animation properties.  The main aim for me with this was to really push CSS3 animations in a different way and see how much we can actually do with them right now and I&#39;d like to think it&#39;s achieved that.  If anyone is interested in the code, it‘s available to view on &lt;a href=&quot;http://codepen.io/ashleynolan/pen/rpjHg&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To say I&#39;m happy with the feedback so far would be an understatement - after posting it to Hacker News, it hit no. 3 for most of the afternoon and is still lingering on the front page as I write this.&lt;/p&gt;
 &lt;p&gt;I&#39;d love it if people posted feedback, positive or negative, in the comments here or to me on Twitter - I&#39;m planning on writing up how it was put together when I get chance too, so if anyone wants to know anything specific, just let me know and I&#39;ll try and include it in that.&lt;/p&gt;
 &lt;p&gt;Also, if you do like the demo, please &#39;like&#39; it on the &lt;a href=&quot;https://developer.mozilla.org/en-US/demos/detail/media-query-mario&quot;&gt;Mozilla demo studio&lt;/a&gt; - it might push it to glory in the dev derby with a bit of luck!&lt;/p&gt;
-</description><pubDate>Thu, 01 Nov 2012 09:30:00 +0000</pubDate>
+</content:encoded><pubDate>Thu, 01 Nov 2012 09:30:00 +0000</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/media-query-mario.html</guid>
     </item>
     <item>
       <title>Conditional CSS – an alternative</title>
-      <link>https://ashleynolan.co.uk/blog/conditional-css-an-alternative.html</link><description>&lt;p&gt;This is a simple solution to a responsive problem I was having recently - in essence it&#39;s similar to a problem &lt;a href=&quot;http://adactio.com/journal/5429/&quot;&gt;Jeremy Keith&lt;/a&gt; wrote about back in April.  I needed my JavaScript to recognise which media queries were currently being fired, so that it could in turn execute some related functionality. This also needed to run when the browser was resized, firing when different min-width conditions were met.  So in context, this could be binding a click event to open a lightbox at larger breakpoints, and then unbinding this event when we hit lower widths.&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/conditional-css-an-alternative.html</link><description>After reading several other solutions to the problem of linking up CSS media queries and JavaScript, here&#39;s my go at solving it.</description>
+      <content:encoded>&lt;p&gt;This is a simple solution to a responsive problem I was having recently - in essence it&#39;s similar to a problem &lt;a href=&quot;http://adactio.com/journal/5429/&quot;&gt;Jeremy Keith&lt;/a&gt; wrote about back in April.  I needed my JavaScript to recognise which media queries were currently being fired, so that it could in turn execute some related functionality. This also needed to run when the browser was resized, firing when different min-width conditions were met.  So in context, this could be binding a click event to open a lightbox at larger breakpoints, and then unbinding this event when we hit lower widths.&lt;/p&gt;
 &lt;p&gt;This should be pretty simple; surely just compare the media query width to the current window width in JavaScript?  Unfortunately, &lt;a href=&quot;http://iamkeir.com/post/26647025450/firefox-media-query-breakpoints-wtf&quot;&gt;differing ideas&lt;/a&gt; of what true window size should be - Firefox includes the vertical scrollbar in the total window size, whereas webkit browsers don&#39;t - means checking for a window width of 800px will not always give consistent results across browsers.&lt;/p&gt;
 &lt;p&gt;For anyone lucky enough to be working on projects that don&#39;t suport IE8&amp;lt;, MatchMedia takes care of this problem (with a fix for resize support).  Unfortunately, I needed to support down to IE7 and there isn&#39;t a polyfill to patch MatchMedia with resizing for IE7/8 as yet.&lt;/p&gt;
 &lt;p&gt;Having previously read Jeremy&#39;s blog post, I knew that a version of what I wanted existed using pseudo elements.  It wasn&#39;t until speaking to a friend of mine, &lt;a href=&quot;https://twitter.com/middric&quot;&gt;Rich&lt;/a&gt;, about the problem, that he suggested manipulating the z-index of an arbitrary](http://paulirish.com/2009/throttled-smartresize-jquery-event-handler/) div to perform this role.  This is the resulting solution that came out of his suggestion.&lt;/p&gt;
@@ -8248,13 +8318,14 @@ window.fireEvent(&#39;resize&#39;); //trigger resize on load for first run&lt;/c
 &lt;/pre&gt;
 &lt;p&gt;We keep a track of our lastminwidth to ensure checks only happen when our media queries actually change, rather than every time the window resizes.  One caveat here is that getComputedStyle isn&#39;t supported by lower versions of IE.  You have two optons to solve this; you can &lt;a href=&quot;http://snipplr.com/view/13523/&quot;&gt;patch it&lt;/a&gt;, or if you&#39;re using jQuery, you can return the z-index using &lt;code&gt;$(&#39;#breakpoint-test&#39;).css(&#39;zIndex&#39;)&lt;/code&gt; instead.&lt;/p&gt;
 &lt;p&gt;This now lets you fire different functions based on your minwidth checks.  I think it&#39;s a fairly elegant cross-browser solution, but if you have any ideas as to how it can be improved, let me know in the comments.&lt;/p&gt;
-</description><pubDate>Mon, 24 Sep 2012 13:00:00 +0100</pubDate>
+</content:encoded><pubDate>Mon, 24 Sep 2012 13:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/conditional-css-an-alternative.html</guid>
     </item>
     <item>
       <title>A brief history of me</title>
-      <link>https://ashleynolan.co.uk/blog/a-brief-history-of-me.html</link><description>&lt;p&gt;I&#39;m not usually one for indulging in posts about myself, but I really enjoyed reading Remy Sharp’s &lt;a href=&quot;http://remysharp.com/about/&quot;&gt;short history&lt;/a&gt; on his site when I was starting out, so the blame is put squarely on his shoulders as the inspiration for this post...!&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/a-brief-history-of-me.html</link><description>For the curious/crazy stalkers among you, a brief &#39;Who am I&#39;, and how I&#39;ve fallen into doing whatever it is that I do.</description>
+      <content:encoded>&lt;p&gt;I&#39;m not usually one for indulging in posts about myself, but I really enjoyed reading Remy Sharp’s &lt;a href=&quot;http://remysharp.com/about/&quot;&gt;short history&lt;/a&gt; on his site when I was starting out, so the blame is put squarely on his shoulders as the inspiration for this post...!&lt;/p&gt;
 &lt;p&gt;So, hello - I&#39;m Ashley Watson-Nolan.  I currently work as a Senior Web UI Engineer for &lt;a href=&quot;http://www.just-eat.co.uk/&quot;&gt;JUST EAT&lt;/a&gt;, within the International Platform Improvements team.&lt;/p&gt;
 &lt;p&gt;I&#39;m originally from South Wales, more accurately a little village named &lt;a href=&quot;http://www.caerleon.net/&quot;&gt;Caerleon&lt;/a&gt; pretty close to the border, which is my excuse for having no trace of a Welsh accent (other than after a few pints).  From an early age, my passion has been digital – games were my first love and this has evolved into a passion for all visually compelling aspects of digital (insert your own joke here).&lt;/p&gt;
 &lt;p&gt;I left home in 2002 to study Computer Science at the &lt;a href=&quot;http://www.bath.ac.uk/&quot;&gt;University of Bath&lt;/a&gt;.  During my 3rd year at uni I got my first real job in the industry; a placement year at &lt;a href=&quot;http://www.thelearningeye.com/&quot;&gt;The Learning Eye&lt;/a&gt;.  As part of a relatively small team, I got to work on some really great projects, creating learning materials for Toyota, Lexus and BMW.  I also got my first taste of 3D, playing around with modelling effects in 3D Studio Max.&lt;/p&gt;
@@ -8266,17 +8337,18 @@ window.fireEvent(&#39;resize&#39;); //trigger resize on load for first run&lt;/c
 &lt;p&gt;That brings you up-to-date to my role now at JUST EAT, where it’s my job to help improve the platform and processes that the company uses across all of JUST EAT’s International properties.&lt;/p&gt;
 &lt;p&gt;I feel incredibly lucky to have worked alongside people who I consider to be among the most talented in our industry.  I&#39;m still as excited, if not more so, by the state of the web today and the challenges it offers up.&lt;/p&gt;
 &lt;p&gt;The web community has provided so many free resources to me since I got into the industry, which was part of the original reason for creating this blog.  Hopefully it will help me to give a little back; and if you find something useful on here that you end up using, especially in production, do get in touch; I’d love to hear about it :)&lt;/p&gt;
-</description><pubDate>Mon, 24 Sep 2012 09:30:00 +0100</pubDate>
+</content:encoded><pubDate>Mon, 24 Sep 2012 09:30:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/a-brief-history-of-me.html</guid>
     </item>
     <item>
       <title>Dragon Graphics goes live</title>
-      <link>https://ashleynolan.co.uk/blog/dragon-graphics-goes-live.html</link><description>&lt;p&gt;After months of finishing touches/procrastination, my redesign has finally been pushed out into the world to fend for itself!&lt;/p&gt;
+      <link>https://ashleynolan.co.uk/blog/dragon-graphics-goes-live.html</link><description>After months of finishing touches/procrastination, the redesign of my blog, Dragon Graphics, has finally been pushed out into the world to fend for itself.</description>
+      <content:encoded>&lt;p&gt;After months of finishing touches/procrastination, my redesign has finally been pushed out into the world to fend for itself!&lt;/p&gt;
 &lt;p&gt;This site is the result of a fair bit of work, not all from myself. Thanks goes out to &lt;a href=&quot;http://www.linkedin.com/pub/andrea-philippou/2/69a/823&quot;&gt;Andrea Philippou&lt;/a&gt; for designing the site&#39;s beautiful logo, &lt;a href=&quot;http://twitter.com/#!/eboyrichards&quot;&gt;Ed Richards&lt;/a&gt; for knocking up some great base designs on which the rest of the site has been built, and &lt;a href=&quot;http://twitter.com/#!/owzzz&quot;&gt;Owain Llewellyn&lt;/a&gt; for filling in the gaps in my design knowledge when required.  A massive thanks to all of you guys.&lt;/p&gt;
 &lt;p&gt;For those of you wondering who I am, check out &lt;a href=&quot;http://www.ashleynolan.co.uk/blog/a-brief-history-of-me&quot;&gt;the brief history of me&lt;/a&gt;.  For those who don&#39;t have the time/inclination, I specialise in front-end web technologies, but my passion is all things web, and so posts will be about anything that interests me enough to write about it.  I&#39;m also hoping to open up a labs section of the site in the not-too-distant future, which will have more hands-on code experiments - everything from simpler CSS3 demos, to more in-depth canvas and WebGL examples.&lt;/p&gt;
 &lt;p&gt;It would be great to hear what people think of the site - positive or negative - so please do get in touch in the comments or on &lt;a href=&quot;https://twitter.com/WelshAsh_&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
-</description><pubDate>Mon, 24 Sep 2012 09:00:00 +0100</pubDate>
+</content:encoded><pubDate>Mon, 24 Sep 2012 09:00:00 +0100</pubDate>
       <dc:creator>Ashley Watson-Nolan</dc:creator>
       <guid>https://ashleynolan.co.uk/blog/dragon-graphics-goes-live.html</guid>
     </item>

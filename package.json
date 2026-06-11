@@ -6,9 +6,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "rimraf dist && eleventy",
+    "build": "yarn clean:dist && eleventy",
     "clean:dist": "rimraf dist",
-    "dev": "yarn clean:dist && npx @11ty/eleventy --serve",
+    "dev": "yarn clean:dist && eleventy --serve",
     "lint": "stylelint ./src/**/*.{css,scss}",
     "lint:fix": "yarn lint --fix",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,6 +1,10 @@
 module.exports = {
     eleventyComputed: {
+        summary: (data) => data.description || null,
         permalink: (data) => {
+            if (data.published === false) {
+                return false;
+            }
             // Post url fields are bare slugs (no slashes).
             // Eleventy's own page.url always contains slashes, so this
             // safely targets only front-matter url fields.

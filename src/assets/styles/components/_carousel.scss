@@ -171,7 +171,8 @@
         top: 50%;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: var(--color-white);
     }
 }
