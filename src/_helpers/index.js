@@ -96,6 +96,7 @@ function withSort (array, prop, options) {
 }
 
 function cleanUrl (url) {
+    if (typeof url !== 'string') return '';
     return url.replace(/\.html$/, '');
 }
 
