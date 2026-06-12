@@ -39,7 +39,7 @@ module.exports = async (eleventyConfig) => {
     const srcsetFrom = imgs => imgs.map(img => `${img.url} ${img.width}w`).join(', ');
 
     eleventyConfig.addTransform('work-image-srcset', async function(content) {
-        if (!this.page?.outputPath?.endsWith('/work.html')) return content;
+        if (typeof this.page?.outputPath !== 'string' || !this.page.outputPath.endsWith('/work.html')) return content;
 
         const posthtml = require('posthtml');
         const result = await posthtml([
